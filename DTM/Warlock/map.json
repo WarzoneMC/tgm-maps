@@ -1,0 +1,93 @@
+{
+	"name": "Warlock",
+	"authors": ["McSpider"],
+	"version": "1.3.5",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 12,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 12,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "133.5, 22, 0.5, 90" },
+		{ "teams": ["red"], "coords": "40,6,-30, 0" },
+		{ "teams": ["blue"], "coords": "40,6,31, 180" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "77,1,-36",
+					"max": "78,3,-37"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument ",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "77,1,37",
+					"max": "78,3,38"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "diamond pickaxe", "slot": 2},
+				{"material": "iron axe", "slot": 3},
+
+				{"material": "glass", "slot": 5, "amount": 64},
+				{"material": "wood", "slot": 6, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate", "enchantments": ["blast_protection:1"]},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}
+	],
+	"filters": [
+		{ 
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], 
+			"regions": ["blue-spawn-protection-1", "blue-spawn-protection-2", "red-spawn-protection-1", "red-spawn-protection-2"], 
+			"message": "&cYou are not allowed to modify terrain here." 
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection-1", "type": "cuboid", "min": "36,5,39", "max": "55,11,26" },
+		{ "id": "blue-spawn-protection-2", "type": "cuboid", "min": "54,5,32", "max": "61,11,39" },
+
+
+		{ "id": "red-spawn-protection-1", "type": "cuboid", "min": "36,5,-38", "max": "55,11,-25" },
+		{ "id": "red-spawn-protection-2", "type": "cuboid", "min": "54,5,-31", "max": "61,11,-38" }
+	]
+}
+
+
