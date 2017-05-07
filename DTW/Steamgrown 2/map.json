@@ -1,0 +1,82 @@
+{
+	"name": "Steamgrown 2",
+	"authors": ["Pixelific"],
+	"version": "1.3.5",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 12,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 12,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "336, 62, 300, 90" },
+		{ "teams": ["red"], "coords": "300, 12, 224, 0" },
+		{ "teams": ["blue"], "coords": "300, 12, 376, 180" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "334, 14, 240",
+					"max": "266, 20, 238"
+				},
+				"health": 5
+			},
+			{
+				"name": "Monument ",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "266, 14, 360",
+					"max": "334, 20, 362"
+				},
+				"health": 5
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "iron axe", "slot": 2},
+				{"material": "wood", "slot": 3, "amount": 8, "data": 1},
+				{"material": "arrow", "slot": 7, "amount": 32},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate"},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "iron boots"}
+			]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "302, 12, 378", "max": "298, 18, 370" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "298, 12, 222", "max": "302, 18, 230" }
+	]
+}
