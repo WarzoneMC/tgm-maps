@@ -71,7 +71,7 @@
 		"iron sword", "bow", "iron pickaxe", "iron axe", "iron helmet",
 		"iron spade", "stone", "cooked beef", "arrow",
 		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
-		"cooked beef", "dirt", "cobblestone", "gravel"
+		"cooked beef", "dirt", "cobblestone", "gravel", "wool"
 	],
 	"filters": [
 		{

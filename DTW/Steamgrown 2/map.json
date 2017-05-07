@@ -65,6 +65,12 @@
 			]
 		}
 	],
+	"itemremove": [
+		"iron sword", "bow", "stone pickaxe", "leather helmet",
+		"stone", "cooked beef", "arrow", "leather helmet",
+		"chainmail chestplate", "leather leggings", "iron boots",
+		"cooked beef", "wood", "wool"
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
