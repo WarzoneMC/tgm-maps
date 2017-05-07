@@ -1,0 +1,112 @@
+{
+	"name": "Deepwind Jungle",
+	"authors": ["PandaBattalion", "Rokosnocone"],
+	"version": "1.2.3",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 10,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-50,59,0, 90" },
+		{ "teams": ["red"], "coords": "-1,9,73, 180" },
+		{ "teams": ["blue"], "coords": "-1,9,-76, 0" }
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Cyan",
+				"color": "cyan",
+				"teams": ["blue"],
+				"region": {"min": "-2,10,-81", "max": "-2,10,-81"}
+			},
+			{
+				"name": "Green",
+				"color": "green",
+				"teams": ["blue"],
+				"region": {"min": "1,10,-81", "max": "1,10,-81"}
+			},
+
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["red"],
+				"region": {"min": "-2,10,81", "max": "-2,10,81"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["red"],
+				"region": {"min": "1,10,81", "max": "1,10,81"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "diamond pickaxe", "slot": 2},
+				{"material": "iron axe", "slot": 3},
+
+				{"material": "glass", "slot": 5, "amount": 64},
+				{"material": "wood", "slot": 6, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate", "enchantments": ["blast_protection:1"]},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", 
+		"glass", "wood", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
+		"beacon"
+	],
+	"filters": [
+		{ 
+			"type": "build", "evaluate": "deny", "teams": ["red"], 
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "green-room", "cyan-room"], 
+			"message": "&cYou are not allowed to modify terrain here." 
+		},
+		{ 
+			"type": "build", "evaluate": "deny", "teams": ["blue"], 
+			"regions": ["blue-spawn-protection", "blue-spawn-protection", "purple-room", "yellow-room"], 
+			"message": "&cYou are not allowed to modify terrain here." 
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-room", "cyan-room"], "message": "&cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "purple-room", "yellow-room"], "message": "&cYou may not enter this region." }
+	],
+	"regions": [
+		{"id": "green-room", "min": "17,0,66", "max": "37,256,79"},
+		{"id": "cyan-room", "min": "-17,0,66", "max": "-37,256,79"},
+
+		{"id": "purple-room", "min": "-17,0,-65", "max": "-37,256,-78"},
+		{"id": "yellow-room", "min": "17,0,-65", "max": "37,256,-78"},
+
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-7,0,-55", "max": "7,256,-82" },
+		{ "id": "red-spawn-protection-1", "type": "cuboid", "min": "-7,0,56", "max": "7,256,83" }
+	]
+}
+
+
