@@ -54,8 +54,8 @@
 			"items": [
 				{"material": "iron sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "diamond spade", "slot": 2},
-				{"material": "wood", "slot": 4, "amount": 8},
+				{"material": "iron spade", "slot": 2},
+				{"material": "wood", "slot": 4, "amount": 8, "data": 5},
 				{"material": "iron axe", "slot": 3},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 7, "amount": 8},
