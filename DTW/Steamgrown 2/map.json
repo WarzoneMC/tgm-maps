@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "336, 62, 300, 90" },
-		{ "teams": ["red"], "coords": "300, 12, 224, 0" },
-		{ "teams": ["blue"], "coords": "300, 12, 376, 180" }
+		{ "teams": ["spectators"], "coords": "336.5, 62, 300.5, 90" },
+		{ "teams": ["red"], "coords": "300.5, 12, 224.5, 0" },
+		{ "teams": ["blue"], "coords": "300.5, 12, 376.5, 180" }
 	],
 	"dtm": {
 		"monuments": [
