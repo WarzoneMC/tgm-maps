@@ -69,9 +69,9 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "iron helmet",
-		"iron spade", "wood", "cooked beef", "arrow",
+		"iron spade", "stone", "cooked beef", "arrow",
 		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
-		"cooked beef"
+		"cooked beef", "dirt", "cobblestone", "gravel", "slab"
 	],
 	"filters": [
 		{
