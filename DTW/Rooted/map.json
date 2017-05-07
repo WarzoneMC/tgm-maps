@@ -57,7 +57,7 @@
 				{"material": "iron spade", "slot": 2},
 				{"material": "iron axe", "slot": 3},
 				{"material": "iron pickaxe", "slot": 4},
-				{"material": "wood", "slot": 5, "amount": 8, "data": 5},
+				{"material": "wood", "slot": 5, "amount": 64, "data": 5},
 				{"material": "arrow", "slot": 7, "amount": 8},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "helmet", "material": "iron helmet"},
