@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "142, 34.5, -191, -90" },
-		{ "teams": ["red"], "coords": "178, 7, -96, 180" },
-		{ "teams": ["blue"], "coords": "178, 7, -286, 0" }
+		{ "teams": ["spectators"], "coords": "142.5, 34.5, -191.5, -90" },
+		{ "teams": ["red"], "coords": "178.5, 7, -96,5, 180" },
+		{ "teams": ["blue"], "coords": "178.5, 7, -285.5, 0" }
 	],
 	"dtm": {
 		"monuments": [
@@ -54,8 +54,8 @@
 			"items": [
 				{"material": "iron sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "diamond shovel", "slot": 2},
-				{"material": "wood", "slot": 4, "amount": 64},
+				{"material": "diamond spade", "slot": 2},
+				{"material": "wood", "slot": 4, "amount": 8},
 				{"material": "iron axe", "slot": 3},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 7, "amount": 8},
