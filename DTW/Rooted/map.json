@@ -2,7 +2,7 @@
 	"name": "Rooted",
 	"authors": ["rockymine"],
 	"version": "1.3.5",
-	"gametype": "DTW",
+	"gametype": "DTM",
 	"teams": [
 		{
 			"id": "blue",
