@@ -54,7 +54,7 @@
 				"name": "Blue",
 				"color": "blue",
 				"teams": ["red"],
-				"region": {"min": "27, 10, 116", "max": "47, 38, 139"}
+				"region": {"min": "-5 10 -78", "max": "-5 10 -78"}
 			}
 		]
 	},
