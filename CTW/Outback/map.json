@@ -26,7 +26,7 @@
 	"spawns": [
 		{ "teams": ["spectators"], "coords": "0.5, 50, 0.5, 90" },
 		{ "teams": ["red"], "coords": "0.5, 9, -76.5, 0" },
-		{ "teams": ["blue"], "coords": "1.5, 9, 77.5, 180" }
+		{ "teams": ["blue"], "coords": "0.5, 9, 77.5, 180" }
 	],
 
 
