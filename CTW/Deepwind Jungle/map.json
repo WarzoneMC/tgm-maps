@@ -77,21 +77,21 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", 
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
 		"glass", "wood", "cooked beef", "arrow",
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
 		"beacon"
 	],
 	"filters": [
-		{ 
-			"type": "build", "evaluate": "deny", "teams": ["red"], 
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "green-room", "cyan-room"], 
-			"message": "&cYou are not allowed to modify terrain here." 
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "green-room", "cyan-room"],
+			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ 
-			"type": "build", "evaluate": "deny", "teams": ["blue"], 
-			"regions": ["blue-spawn-protection", "blue-spawn-protection", "purple-room", "yellow-room"], 
-			"message": "&cYou are not allowed to modify terrain here." 
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
 		},
 
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-room", "cyan-room"], "message": "&cYou may not enter this region." },
@@ -108,5 +108,3 @@
 		{ "id": "red-spawn-protection-1", "type": "cuboid", "min": "-7,0,56", "max": "7,256,83" }
 	]
 }
-
-

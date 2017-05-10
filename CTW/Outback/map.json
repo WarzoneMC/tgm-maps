@@ -1,0 +1,118 @@
+{
+	"name": "Outback",
+	"authors": ["Rockymine"],
+	"version": "1.2.3",
+	"gametype": "CTW",
+
+
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 10,
+			"min": 1
+		}
+	],
+
+
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "0, 50, 0, 90" },
+		{ "teams": ["red"], "coords": "0, 9, -76, 0" },
+		{ "teams": ["blue"], "coords": "0, 9, 77, 180" }
+	],
+
+
+	"ctw": {
+		"wools": [
+			{
+				"name": "Magenta",
+				"color": "magenta",
+				"teams": ["blue"],
+				"region": {"min": "-5, 10, 78", "max": "-5, 10, 78"}
+			},
+			{
+				"name": "Pink",
+				"color": "pink",
+				"teams": ["blue"],
+				"region": {"min": "5, 10, 78", "max": "5, 10, 78"}
+			},
+			{
+				"name": "Light Blue",
+				"color": "light blue",
+				"teams": ["red"],
+				"region": {"min": "5, 10, -78", "max": "5, 10, -78"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"teams": ["red"],
+				"region": {"min": "27, 10, 116", "max": "47, 38, 139"}
+			}
+		]
+	},
+
+
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "diamond pickaxe", "slot": 2},
+				{"material": "iron axe", "slot": 3},
+				{"material": "glass", "slot": 5, "amount": 64},
+				{"material": "wood", "slot": 6, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 64},
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate", "enchantments": ["blast_protection:1"]},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "iron boots"}
+			]
+		}
+	],
+
+
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
+		"glass", "wood", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots",
+		"beacon"
+	],
+
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "magenta-room", "pink-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "light-blue-room", "blue-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "light-blue-room", "blue-room"], "message": "&cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "magenta-room", "pink-room"], "message": "&cYou may not enter this region." }
+	],
+
+	"regions": [
+		{"id": "light-blue-room", "min": "-44, 10, 116", "max": "-26, 38, 138"},
+		{"id": "blue-room", "min": "27, 10, 116", "max": "47, 38, 139"},
+
+		{"id": "magenta-room", "min": "27, 10, -115", "max": "46, 38, -140"},
+		{"id": "pink-room", "min": "-25, 10, -115", "max": "-46, 28, -139"},
+
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-11 0 104", "max": "11 17 73" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "11 0 -104", "max": "-11 17 -73" }
+	]
+}
