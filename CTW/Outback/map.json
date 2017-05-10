@@ -92,12 +92,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "magenta-room", "pink-room"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "light-blue-room", "blue-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "light-blue-room", "blue-room"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "magenta-room", "pink-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
