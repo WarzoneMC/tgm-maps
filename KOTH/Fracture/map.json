@@ -8,14 +8,14 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 5,
+			"max": 50,
 			"min": 1
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 5,
+			"max": 50,
 			"min": 1
 		}
 	],
