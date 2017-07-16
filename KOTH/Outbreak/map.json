@@ -1,0 +1,71 @@
+{
+	"name": "Outbreak",
+	"authors": ["Glayzed, Teejers, Reddemptr"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "x": -33.5, "y": 20, "z": 1457.5, "yaw": 90 },
+		{ "teams": ["blue"], "x": -33.5, "y": 28, "z": 1432.5, "yaw": 0 },
+		{ "teams": ["red"], "x": -33.5, "y": 28, "z": 1482.5, "yaw": -90 }
+	],
+	"points": {
+		"target": 250
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Center",
+				"region": {
+					"min": { "x": -37, "y": 18, "z": 1460 },
+					"max": { "x": -31, "y": 23, "z": 1454 }
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0},
+				{"material": "cooked beef", "slot": 1, "amount": 64},
+				{"material": "golden apple", "slot": 2, "amount": 1},
+
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "leather chestplate", "enchantments": ["blast_protection:3"]},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "leather helmet",
+		"stone", "cooked beef", "arrow", "leather helmet", "log",
+		"leather chestplate", "leather leggings", "leather boots",
+		"cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
+	],
+	"filters": [
+		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "min": "-37,27,1435", "max": "-31,32,1430" },
+		{ "id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37,32,1484" },
+	]
+}
