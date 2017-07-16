@@ -1,0 +1,90 @@
+{
+	"name": "Snowdrift",
+	"authors": ["_Rascal and Ceboo"],
+	"version": "1.2.3",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "7.5, 70, 71.5, 180" },
+		{ "teams": ["red"], "coords": "103.5, 26, 5.5, 90" },
+		{ "teams": ["blue"], "coords": "-88.5, 26, 5.5, -90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Wools",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "65, 22, 56",
+					"max": "67, 24, 58"
+				},
+				"health": 10
+			},
+			{
+				"name": "Wools ",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-51, 22, -46",
+					"max": "-53, 24, -48"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "stone axe", "slot": 2},
+				{"material": "snow block", "slot": 3, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate"},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "iron boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "stone axe", "leather helmet",
+		"stone", "cooked beef", "arrow", "leather helmet",
+		"chainmail chestplate", "leather leggings", "iron boots",
+		"cooked beef", "dirt", "sandstone", "wood", "wool", "log", "snow block"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "red-wool-protection", "blue-wool-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-85, 25, 2", "max": "-91, oo, 8" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "100, 25, 8", "max": "106, oo, 2" },
+
+		{ "id": "blue-wool-protection", "type": "cuboid", "min": "-47, 20, -42", "max": "-55, oo, -50" },
+		{ "id": "red-wool-protection", "type": "cuboid", "min": "62, 20, 53", "max": "70, oo, 61" }
+	]
+}
