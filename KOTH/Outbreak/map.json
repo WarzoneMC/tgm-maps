@@ -62,10 +62,10 @@
 	"filters": [
 		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here." },
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
 		{ "id": "blue-spawn-protection", "min": "-37,27,1435", "max": "-31,32,1430" },
-		{ "id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37,32,1484" },
+		{ "id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37,32,1484" }
 	]
 }
