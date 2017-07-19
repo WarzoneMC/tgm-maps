@@ -58,7 +58,7 @@
 				{"material": "oak planks", "slot": 3, "amount": 64},
 				{"material": "oak planks", "slot": 4, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
-				{"material": "arrow", "slot": 9, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
 				{"type": "helmet", "material": "leather helmet"},
 				{"type": "chestplate", "material": "chainmail chestplate"},
 				{"type": "leggings", "material": "leather leggings"},
