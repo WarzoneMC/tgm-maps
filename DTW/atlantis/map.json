@@ -1,0 +1,54 @@
+{
+	"game": "warzone",
+	"name": "Atlantis",
+	"builder": "RetroMudkip and BlockHeads36",
+	"locations": [
+		{
+			"name": "spectate-spawn",
+			"coords": "-49, 119, 0",
+			"yaw": "-90"
+		},
+		{
+			"name": "red-spawn",
+			"coords": "5, 99, 89",
+			"yaw": "180"
+		},
+		{
+			"name": "blue-spawn",
+			"coords": "4, 99, -90",
+			"yaw": "0"
+		},
+		{
+			"name": "tower-red-1:1",
+			"coords": "22, 99, 58"
+		},
+		{
+			"name": "tower-red-1:2",
+			"coords": "28, 110, 64"
+		},
+		{
+			"name": "tower-red-2:1",
+			"coords": "-13, 100, 58"
+		},
+		{
+			"name": "tower-red-2:2",
+			"coords": "-19, 111, 64"
+		},
+		{
+			"name": "tower-blue-1:1",
+			"coords": "-13, 99, -59"
+		},
+		{
+			"name": "tower-blue-1:2",
+			"coords": "-19, 109, -65"
+		},
+		{
+			"name": "tower-blue-2:1",
+			"coords": "22, 100, -59"
+		},
+		{
+			"name": "tower-blue-2:2",
+			"coords": "28, 110, -65"
+		}
+	]
+}
