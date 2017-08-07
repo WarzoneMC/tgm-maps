@@ -1,0 +1,54 @@
+{
+	"game": "warzone",
+	"name": "Arctic",
+	"builder": "Dubstep_Cat, JustADev, and StarRaidz",
+	"locations": [
+		{
+			"name": "spectate-spawn",
+			"coords": "-53, 81, -59",
+			"yaw": "-90"
+		},
+		{
+			"name": "red-spawn",
+			"coords": "-6, 67, 17",
+			"yaw": "-180"
+		},
+		{
+			"name": "blue-spawn",
+			"coords": "-5, 66, -136",
+			"yaw": "0"
+		},
+		{
+			"name": "tower-red-1:1",
+			"coords": "22, 65, -5"
+		},
+		{
+			"name": "tower-red-1:2",
+			"coords": "28, 72, -11"
+		},
+		{
+			"name": "tower-red-2:1",
+			"coords": "-29, 73, -7"
+		},
+		{
+			"name": "tower-red-2:2",
+			"coords": "-35, 66, -13"
+		},
+		{
+			"name": "tower-blue-1:1",
+			"coords": "-37, 65, -109"
+		},
+		{
+			"name": "tower-blue-1:2",
+			"coords": "-43, 72, -115"
+		},
+		{
+			"name": "tower-blue-2:1",
+			"coords": "20, 63, -116"
+		},
+		{
+			"name": "tower-blue-2:2",
+			"coords": "26, 70, -110"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"game": "warzone",
+	"name": "Stonehenge",
+	"locations": [
+		{
+			"name": "spectate-spawn",
+			"coords": "63, 86, -44",
+			"yaw": "90"
+		},
+		{
+			"name": "red-spawn",
+			"coords": "0, 74, -124",
+			"yaw": "0"
+		},
+		{
+			"name": "blue-spawn",
+			"coords": "0, 74, 32",
+			"yaw": "180"
+		},
+		{
+			"name": "tower-red-1:1",
+			"coords": "37, 84, -118"
+		},
+		{
+			"name": "tower-red-1:2",
+			"coords": "29, 72, -110"
+		},
+		{
+			"name": "tower-red-2:1",
+			"coords": "-30, 84, -118"
+		},
+		{
+			"name": "tower-red-2:2",
+			"coords": "-38, 72, -110"
+		},
+		{
+			"name": "tower-blue-1:1",
+			"coords": "-39, 84, 18"
+		},
+		{
+			"name": "tower-blue-1:2",
+			"coords": "-31, 72, 26"
+		},
+		{
+			"name": "tower-blue-2:1",
+			"coords": "28, 84, 26"
+		},
+		{
+			"name": "tower-blue-2:2",
+			"coords": "36, 72, 18"
+		}
+	]
+}
