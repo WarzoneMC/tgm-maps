@@ -54,7 +54,7 @@
 			"items": [
 				{"material": "iron sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "stone axe", "slot": 2},
+				{"material": "stone shovel", "slot": 2},
 				{"material": "snow block", "slot": 3, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
@@ -66,7 +66,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "stone axe", "leather helmet",
+		"iron sword", "bow", "stone shovel", "leather helmet",
 		"stone", "cooked beef", "arrow", "leather helmet",
 		"chainmail chestplate", "leather leggings", "iron boots",
 		"cooked beef", "dirt", "sandstone", "wood", "wool", "log", "snow block"
