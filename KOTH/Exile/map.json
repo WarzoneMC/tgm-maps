@@ -44,7 +44,7 @@
 			"items": [
 				{"material": "stone sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-
+                                {"material": "stone axe", "slot": 4},
 				{"material": "wood", "slot": 5, "amount": 16},
 
 				{"material": "arrow", "slot": 7, "amount": 12},
@@ -60,7 +60,7 @@
 	"itemremove": [
 		"stone sword", "bow", "arrow", "chainmail helmet",
 		"chainmail chestplate", "chainmail leggings", "iron boots",
-		"golden helmet", "stick", "arrow"
+		"gold helmet", "stick", "arrow"
 	],
 	"filters": [
 		{ "type": "build", "evaluate": "deny", "teams": ["green", "purple"], "regions": ["green-spawn-protection", "purple-spawn-protection"], "message": "&cSorry! No spawn camping on this map!" },
