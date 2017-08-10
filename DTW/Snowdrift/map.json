@@ -54,7 +54,7 @@
 			"items": [
 				{"material": "iron sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "stone shovel", "slot": 2},
+				{"material": "stone spade", "slot": 2},
 				{"material": "snow block", "slot": 3, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
