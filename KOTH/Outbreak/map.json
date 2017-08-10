@@ -43,8 +43,7 @@
 			"name": "Default",
 			"items": [
 				{"material": "stone sword", "slot": 0},
-				{"material": "cooked beef", "slot": 1, "amount": 64},
-				{"material": "golden apple", "slot": 2, "amount": 1},
+				{"material": "golden apple", "slot": 1, "amount": 1},
 
 				{"type": "helmet", "material": "leather helmet"},
 				{"type": "chestplate", "material": "leather chestplate", "enchantments": ["blast_protection:3"]},
