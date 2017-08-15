@@ -1,0 +1,62 @@
+{
+	"name": "Pier",
+	"authors": ["TehRaptor", "Kasperio", "Glayzed", "I'm sorry if I missed anybody ;-;"],
+	"gametype": "Infected",
+	"version": "1.0.0",
+	"teams": [
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Infected",
+			"name": "Infected",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "522,33,492, 90" },
+		{ "teams": ["infected"], "coords": "518,7,514, 90" },
+		{ "teams": ["humans"], "coords": "441,10,492, -90" }
+	],
+	"infection": {
+		"length": 7
+	},
+	"kits": [
+		{
+			"name": "Humans",
+			"teams": ["humans"],
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 64},
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate"},
+				{"type": "leggings", "material": "chainmail leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}, {
+			"name": "Infected",
+			"teams": ["infected"],
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 64},
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "leather chestplate"},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+	]
+}
