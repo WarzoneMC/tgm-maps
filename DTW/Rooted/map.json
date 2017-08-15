@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wools",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
@@ -37,12 +37,12 @@
 				"health": 5
 			},
 			{
-				"name": "Wools ",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "216, 6, -280",
-					"max": "206, 11, -278"
+					"min": "215, 7, -279",
+					"max": "207, 10, -279"
 				},
 				"health": 5
 			}
@@ -68,10 +68,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "iron helmet",
-		"iron spade", "stone", "cooked beef", "arrow",
-		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
-		"cooked beef", "dirt", "cobblestone", "gravel", "wool", "wood"
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
 	],
 	"filters": [
 		{
