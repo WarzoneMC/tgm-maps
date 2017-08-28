@@ -1,0 +1,92 @@
+{
+	"name": "Muchtastic",
+	"authors": ["Aurrra, YoutubeJr"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "500.5, 60, 500.5, 180" },
+		{ "teams": ["red"], "coords": "359.5, 4, 500.5, -90" },
+		{ "teams": ["blue"], "coords": "641.5, 4, 500.5, 90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "392, 5, 482",
+					"max": "392, 6, 482"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument ",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "608, 5, 482",
+					"max": "608, 6, 482"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "diamond pickaxe", "slot": 2},
+				{"material": "iron axe", "slot": 3},
+				{"material": "wood", "slot": 4, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "helmet", "material": "leather helmet"},
+				{"type": "chestplate", "material": "chainmail chestplate"},
+				{"type": "leggings", "material": "leather leggings"},
+				{"type": "boots", "material": "leather boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
+		"beacon", "obsidian"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "644, 3, 503", "max": "638, oo, 497" },
+
+		{ "id": "spec-spawn-protection", "type": "cuboid", "min": "510, 55, 510", "max": "490, oo, 490" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "362, 3, 503", "max": "356, oo, 497" }
+	]
+}
