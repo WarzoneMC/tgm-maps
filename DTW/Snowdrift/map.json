@@ -52,16 +52,17 @@
 		{
 			"name": "Default",
 			"items": [
-				{"material": "iron sword", "slot": 0},
-				{"material": "bow", "slot": 1},
-				{"material": "stone spade", "slot": 2},
-				{"material": "snow block", "slot": 3, "amount": 64},
-				{"material": "cooked beef", "slot": 8, "amount": 64},
-				{"material": "arrow", "slot": 9, "amount": 32},
-				{"type": "helmet", "material": "leather helmet"},
-				{"type": "chestplate", "material": "chainmail chestplate"},
-				{"type": "leggings", "material": "leather leggings"},
-				{"type": "boots", "material": "iron boots"}
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone spade", "slot": 2},
+				{"type": "item", "material": "snow block", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
 			]
 		}
 	],
