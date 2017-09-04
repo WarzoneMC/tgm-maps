@@ -77,12 +77,12 @@
 				{"type": "item", "material": "stone axe", "slot": 2},
 				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
-				{"type": "item", "material": "leather helmet"},
-				{"type": "item", "material": "chainmail chestplate"},
-				{"type": "item", "material": "leather leggings"},
-				{"type": "item", "material": "iron boots"}
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
 			]
 		}
 	],
