@@ -2,7 +2,7 @@
 	"name": "Facility",
 	"authors": ["samthecat43, Ny_, Mikeg542, Teejers"],
 	"gametype": "TDM",
-	"version": "1.0",
+	"version": "1.1",
     "teams": [
 		{
 			"id": "blue",
@@ -25,20 +25,15 @@
 		{ "teams": ["red"], "coords": "-106.5, 8, 32.5, 0" }
 	],
     "points":{
-        "target": 10
+        "target": 100
     },
 		"kits": [
 			{
 				"name": "default",
 				"items": [
-					{"type": "item", "material": "iron sword", "slot": 0},
-					{"type": "item", "material": "bow", "slot": 1},
-					{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-					{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
-
 					{"type": "item", "material": "leather helmet", "slot": "helmet"},
-					{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
-					{"type": "item", "material": "chainmail leggings", "slot": "leggings"},
+					{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+					{"type": "item", "material": "leather leggings", "slot": "leggings"},
 					{"type": "item", "material": "leather boots", "slot": "boots"}
 				],
 				"itemremove": [
