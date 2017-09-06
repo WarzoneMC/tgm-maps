@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "&6Gold&r",
+				"name": "&6Gold",
 				"teams": ["red"],
 				"materials": ["gold_block"],
 				"region": {
@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "&6Gold&r",
+				"name": "&6Gold&r",
 				"teams": ["blue"],
 				"materials": ["gold_block"],
 				"region": {
@@ -68,14 +68,14 @@
 			]
 		},
 		{
-			"name": "Blue Glass",
+			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
 				{"type": "item", "material": "stained glass", "slot": 4, "amount": 64, "durability": 11},
 			]
 		},
 		{
-			"name": "Red Glass",
+			"name": "Red",
 			"teams": ["red"],
 			"items": [
 				{"type": "item", "material": "stained glass", "slot": 4, "amount": 64, "durability": 14},
