@@ -20,14 +20,14 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "330, 129, -22, 90" },
-		{ "teams": ["red"], "coords": "279, 24, 37, 90" },
-		{ "teams": ["blue"], "coords": "212, 24, -92, -90" }
+		{ "teams": ["spectators"], "coords": "330.5, 129, -22.5, 90" },
+		{ "teams": ["red"], "coords": "279.5, 24, 37.5, 90" },
+		{ "teams": ["blue"], "coords": "212.5, 24, -92.5, -90" }
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "&6Gold",
+				"name": "&6Gold&r",
 				"teams": ["red"],
 				"materials": ["gold_block"],
 				"region": {
@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "&6Gold",
+				"name": "&6Gold&r",
 				"teams": ["blue"],
 				"materials": ["gold_block"],
 				"region": {
@@ -53,9 +53,9 @@
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"]},
-				{"type": "item", "material": "diamond axe", "slot": 1},
-				{"type": "item", "material": "bow", "slot": 2},
-				{"type": "item", "material": "wooden pickaxe", "slot": 3},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond axe", "slot": 2},
+				{"type": "item", "material": "wood pickaxe", "slot": 3},
 
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
