@@ -27,19 +27,19 @@
     "points":{
         "target": 100
     },
-		"kits": [
-			{
-				"name": "default",
-				"items": [
-					{"type": "item", "material": "leather helmet", "slot": "helmet"},
-					{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
-					{"type": "item", "material": "leather leggings", "slot": "leggings"},
-					{"type": "item", "material": "leather boots", "slot": "boots"}
-				],
-				"itemremove": [
-					"leather helmet", "leather chestplate", "leather leggings",
-					"leather boots", "chainmail leggings", "chainmail chestplate"
-				]
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
 		}
+	]
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings",
+		"leather boots", "chainmail leggings", "chainmail chestplate"
 	]
 }

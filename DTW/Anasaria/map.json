@@ -47,7 +47,7 @@
 				"health": 5
 			},
 			{
-				"name": "Right Wool",
+				"name": "Right Wool&r",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
@@ -57,7 +57,7 @@
 				"health": 5
 			},
 			{
-				"name": "Left Wool",
+				"name": "Left Wool&r",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {

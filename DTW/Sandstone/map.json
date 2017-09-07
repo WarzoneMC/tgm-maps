@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "Wools ",
+				"name": "Wools&r",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
