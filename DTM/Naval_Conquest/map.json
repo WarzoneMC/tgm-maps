@@ -55,7 +55,9 @@
 				{"type": "item", "material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"]},
 				{"type": "item", "material": "bow", "slot": 1},
 				{"type": "item", "material": "diamond axe", "slot": 2},
-				{"type": "item", "material": "wood pickaxe", "slot": 3},
+				{"type": "item", "material": "stone pickaxe", "slot": 3},
+
+				{"type": "item", "material": "wood", "slot": 5, "amount": 32},
 
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
