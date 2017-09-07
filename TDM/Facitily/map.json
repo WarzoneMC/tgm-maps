@@ -37,7 +37,7 @@
 				{"type": "item", "material": "leather boots", "slot": "boots"}
 			]
 		}
-	]
+	],
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings",
 		"leather boots", "chainmail leggings", "chainmail chestplate"
