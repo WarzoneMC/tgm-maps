@@ -20,7 +20,7 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "330.5, 129, -22.5, 90" },
+		{ "teams": ["spectators"], "coords": "330.5, 129, -21.5, 90" },
 		{ "teams": ["red"], "coords": "279.5, 24, 37.5, 90" },
 		{ "teams": ["blue"], "coords": "212.5, 24, -92.5, -90" }
 	],
@@ -52,39 +52,43 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"]},
-				{"type": "item", "material": "bow", "slot": 1},
-				{"type": "item", "material": "diamond axe", "slot": 2},
-				{"type": "item", "material": "stone pickaxe", "slot": 3},
-				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond axe", "slot": 2, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "boat spruce", "slot": 6},
 
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 64},
 
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 10},
+				{"material": "cooked beef", "slot": 8, "amount": 10},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "iron chestplate", "slot": "chestplate"},
-				{"type": "item", "material": "iron leggings", "slot": "leggings"},
-				{"type": "item", "material": "leather boots", "slot": "boots"}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"effect": "saturation", "duration": 999999999, "amplifier": 255, "particles": false},
+				{"effect": "speed", "duration": 80, "amplifier": 3, "particles": false}
 			]
 		},
 		{
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"type": "item", "material": "stained glass", "slot": 5, "amount": 64, "durability": 11},
+				{"material": "stained glass", "slot": 4, "amount": 32, "durability": 11}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"type": "item", "material": "stained glass", "slot": 5, "amount": 64, "durability": 14},
+				{"material": "stained glass", "slot": 4, "amount": 32, "durability": 14}
 			]
 		}
 	],
 	"itemremove": [
-		"leather helmet", "iron chestplate", "iron leggings", "leather boots", "gold block"
+		"leather helmet", "iron chestplate", "iron leggings", "leather boots", "gold block", "iron block"
 	],
 	"filters": [
 		{
