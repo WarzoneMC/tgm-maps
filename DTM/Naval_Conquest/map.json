@@ -68,8 +68,7 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"effect": "saturation", "duration": 999999999, "amplifier": 255, "particles": false},
-				{"effect": "speed", "duration": 80, "amplifier": 3, "particles": false}
+				{"effect": "saturation", "duration": 999999999, "amplifier": 255, "particles": false}
 			]
 		},
 		{
