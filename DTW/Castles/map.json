@@ -1,0 +1,88 @@
+{
+	"name": "Castles",
+	"authors": ["Loks and NinjaTrev"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-74.5, 154, 84.5, -180" },
+		{ "teams": ["red"], "coords": "-160.5, 101, 0.5, -90" },
+		{ "teams": ["blue"], "coords": "13.5, 101, 0.5, 90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-149, 99, -24",
+					"max": "325, 17, -79"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "1, 99, 24",
+					"max": "-3, 107, -24"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "iron spade", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "iron pickaxe", "slot": 4},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64, "data": 5},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "8, 99, -5", "max": "18, oo, 5" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-156, 99, 5", "max": "-166, oo, -5" }
+	]
+}
