@@ -31,6 +31,11 @@
 		{
 			"name": "default",
 			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				
 				{"material": "leather helmet", "slot": "helmet"},
 				{"material": "chainmail chestplate", "slot": "chestplate"},
 				{"material": "iron leggings", "slot": "leggings"},
