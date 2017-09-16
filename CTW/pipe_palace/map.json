@@ -1,0 +1,105 @@
+{
+	"name": "Pipe Palace",
+	"authors": ["oib5, TheJRRNinja"],
+	"version": "1.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "87.5, 63, 0.5, 90" },
+		{ "teams": ["red"], "coords": "2.5, 12, 112.5, 180" },
+		{ "teams": ["blue"], "coords": "2.5, 12, -111.5, 0" }
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["blue"],
+				"region": {"min": "72, 0, -85", "max": "56, oo, -103"}
+			},
+			{
+				"name": "Green",
+				"color": "green",
+				"teams": ["blue"],
+				"region": {"min": "-52, 0, -85", "max": "-68, oo, -103"}
+			},
+
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["red"],
+				"region": {"min": "-68, 0, 85", "max": "-52, oo, 103"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["red"],
+				"region": {"min": "56, 0, 85", "max": "72, oo, 103"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "iron axe", "slot": 3},
+
+				{"material": "wood", "slot": 6, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"material": "arrow", "slot": 28, "amount": 64},
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["protection:1"]},
+				{"material": "chainmail leggings", "slot": "leggings"},
+				{"material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather helmet", "leather chestplate", "chainmail leggings", "leather boots",
+		"beacon"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "green-room", "purple-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "orange-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "green-room", "purple-room"], "message": "&cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region." }
+	],
+	"regions": [
+		{"id": "green-room", "min": "-52, 0, -85", "max": "-68, oo, -103"},
+		{"id": "purple-room", "min": "72, 0, -85", "max": "56, oo, -103"},
+
+		{"id": "orange-room", "min": "-68, 0, 85", "max": "-52, oo, 103"},
+		{"id": "yellow-room", "min": "56, 0, 85", "max": "72, oo, 103"},
+
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -103", "max": "11, oo, -121" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-7, 0, 121", "max": "11, oo, 103" }
+	]
+}

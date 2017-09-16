@@ -1,0 +1,45 @@
+{
+	"name": "Golden Gate",
+	"authors": ["DoomRobotBoy"],
+	"gametype": "TDM",
+	"version": "1.1",
+    "teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "50.5, 30, 40.5, 0" },
+		{ "teams": ["blue"], "coords": "148.5, 26, 40.5, 90" },
+		{ "teams": ["red"], "coords": "-47.5, 26, 40.5, -90" }
+	],
+    "points":{
+        "target": 100
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate"},
+				{"material": "iron leggings", "slot": "leggings"},
+				{"material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings",
+		"leather boots", "iron leggings", "chainmail chestplate"
+	]
+}
