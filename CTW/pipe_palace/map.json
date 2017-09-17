@@ -59,7 +59,7 @@
 			"items": [
 				{"material": "stone sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "iron axe", "slot": 3},
+				{"material": "iron axe", "slot": 2},
 
 				{"material": "wood", "slot": 6, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
