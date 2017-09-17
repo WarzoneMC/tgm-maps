@@ -1,0 +1,88 @@
+{
+	"name": "Twin Peaks",
+	"authors": ["Scoolins"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "96.5, 89, -40.5, 180" },
+		{ "teams": ["red"], "coords": "1.5, 80, -124.5, -90" },
+		{ "teams": ["blue"], "coords": "193.5, 80, -124.5, 90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Wools",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "20, 103, -158",
+					"max": "16, 107, -162"
+				},
+				"health": 10
+			},
+			{
+				"name": "Wools&r",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "174, 103, -158",
+					"max": "178, 108, -162"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone axe", "slot":2},
+				{"type": "item", "material": "iron pickaxe", "slot":3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "iron chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "iron chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-6, 9, -52", "max": "-12, oo, -58" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "196, 79, -110", "max": "182, oo, -140" }
+	]
+}
