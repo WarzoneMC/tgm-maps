@@ -40,6 +40,10 @@
 				{"material": "chainmail chestplate", "slot": "chestplate"},
 				{"material": "iron leggings", "slot": "leggings"},
 				{"material": "leather boots", "slot": "boots"}
+			],
+			"effects": [
+				{"effect": "speed", "duration": 999999999, "amplifier": 2, "particles": false},
+				{"effect": "jump boost", "duration": 999999999, "amplifier": 0, "particles": false}
 			]
 		}
 	],
