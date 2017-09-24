@@ -52,7 +52,7 @@
 			},
 			{
 				"name": "Lime Green",
-				"color": "lime green",
+				"color": "lime",
 				"teams": ["red"],
 				"region": {"min": "-67, 15, 0", "max": "-67, 15, 0"}
 			}
@@ -84,7 +84,7 @@
 
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
-		"beacon", "string"
+		"beacon", "string", "wool"
 	],
 
 
