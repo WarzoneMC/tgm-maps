@@ -48,13 +48,13 @@
 				"name": "Green",
 				"color": "green",
 				"teams": ["red"],
-				"region": {"min": "-67, 15, -1", "max": "-67, 15, -1"}
+				"region": {"min": "-67, 15, 0", "max": "-67, 15, 0"}
 			},
 			{
 				"name": "Lime Green",
 				"color": "lime",
 				"teams": ["red"],
-				"region": {"min": "-67, 15, 0", "max": "-67, 15, 0"}
+				"region": {"min": "-67, 15, -1", "max": "-67, 15, -1"}
 			}
 		]
 	},
