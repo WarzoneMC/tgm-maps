@@ -43,7 +43,7 @@
 			],
 			"effects": [
 				{"effect": "speed", "duration": 99999999, "amplifier": 2, "particles": false},
-				{"effect": "jump boost", "duration": 99999999, "amplifier": 0, "particles": false}
+				{"effect": "jump", "duration": 99999999, "amplifier": 0, "particles": false}
 			]
 		}
 	],
