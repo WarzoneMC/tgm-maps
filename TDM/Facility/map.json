@@ -35,11 +35,23 @@
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
 				{"type": "item", "material": "leather leggings", "slot": "leggings"},
 				{"type": "item", "material": "leather boots", "slot": "boots"}
+			],
+			"effects": [
+				{"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings",
 		"leather boots", "chainmail leggings", "chainmail chestplate"
+	],
+	"filters": [
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51" }
 	]
 }
