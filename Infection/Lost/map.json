@@ -25,7 +25,7 @@
 		{ "teams": ["humans"], "coords": "527.5, 171, 285.5, 180" }
 	],
 	"infection": {
-		"length": 10
+		"length": 7
 	},
 	"kits": [
 		{
