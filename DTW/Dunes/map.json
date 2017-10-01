@@ -59,10 +59,10 @@
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
-				{"material": "iron helmet", "slot": "helmet", "unbreakable": true},
-				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
-				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
