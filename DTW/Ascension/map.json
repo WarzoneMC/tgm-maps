@@ -78,7 +78,7 @@
 		},
 		{
 			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-wooly", "red-wooly"]
+			"regions": ["blue-wooly", "red-wooly, blue-spawn-protection, red-spawn-protection"]
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
