@@ -77,7 +77,7 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "block-explode": "deny", "teams": ["blue", "red"],
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-wooly", "red-wooly"]
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
