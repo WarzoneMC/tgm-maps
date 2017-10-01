@@ -61,10 +61,11 @@
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "shears", "slot": 29},
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "iron boots", "slot": "boots"}
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate"},
+				{"material": "leather leggings", "slot": "leggings"},
+				{"material": "iron boots", "slot": "boots"}
 			]
 		}
 	],
