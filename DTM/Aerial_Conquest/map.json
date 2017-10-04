@@ -1,0 +1,107 @@
+{
+	"name": "Aerial Conquest",
+	"authors": ["Scoolins"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Royal Navy",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Pirates",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "315.5, 78, -28.5, 90" },
+		{ "teams": ["red"], "coords": "279.5, 24, 37.5, 90" },
+		{ "teams": ["blue"], "coords": "212.5, 24, -92.5, -90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "&6Gold",
+				"teams": ["red"],
+				"materials": ["gold_block"],
+				"region": {
+					"min": "276, 14, 33 ",
+					"max": "277, 17, 40"
+				},
+				"health": 10
+			},
+			{
+				"name": "&6Gold&r",
+				"teams": ["blue"],
+				"materials": ["gold_block"],
+				"region": {
+					"min": "214, 14, -97",
+					"max": "216, 17, -89"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond axe", "slot": 2, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
+
+				{"material": "arrow", "slot": 9, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 10},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"effect": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 11}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 14}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "iron chestplate", "iron leggings", "leather boots", "gold block", "iron block"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "208, 22, -99", "max": "228, 26, -87" },
+
+		{ "id": "spec-spawn-protection", "type": "cuboid", "min": "323, 70, -31", "max": "341, oo, -13" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "283, 22, 43", "max": "263, 26, 31" }
+	]
+}
