@@ -1,0 +1,91 @@
+{
+	"name": "Desolate",
+	"authors": ["Scoolins"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "light blue",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-35.5, 52, 51.5, 180" },
+		{ "teams": ["yellow"], "coords": "36.5, 41, -22.5, 90" },
+		{ "teams": ["blue"], "coords": "-107.5, 41, -22.5, -90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Yellow Wool",
+				"teams": ["yellow"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-92, 34, -24",
+					"max": "-94, 38, -22"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "22, 38, -24",
+					"max": "20, 34, -22"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "iron leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "yellow"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-floor-protection", "yellow-floor-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-102, 41, -13", "max": "-111, oo, -33" },
+		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "30, 41, -33", "max": "39, oo, -13" },
+
+		{ "id": "blue-floor-protection", "type": "cuboid", "min": "-86, 33, -30", "max": "-100, 33, -16" },
+		{ "id": "yellow-floor-protection", "type": "cuboid", "min": "14, 33, -16", "max": "28, 33, -30" }
+	]
+}
