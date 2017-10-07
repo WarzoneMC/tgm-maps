@@ -12,9 +12,9 @@
 			"min": 1
 		},
 		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "light blue",
+			"id": "aqua",
+			"name": "Aqua",
+			"color": "aqua",
 			"max": 50,
 			"min": 1
 		}
@@ -22,7 +22,7 @@
 	"spawns": [
 		{ "teams": ["spectators"], "coords": "-35.5, 52, 51.5, 180" },
 		{ "teams": ["yellow"], "coords": "36.5, 41, -22.5, 90" },
-		{ "teams": ["blue"], "coords": "-107.5, 41, -22.5, -90" }
+		{ "teams": ["aqua"], "coords": "-107.5, 41, -22.5, -90" }
 	],
 	"dtm": {
 		"monuments": [
@@ -37,8 +37,8 @@
 				"health": 10
 			},
 			{
-				"name": "Blue Wool",
-				"teams": ["blue"],
+				"name": "Aqua Wool",
+				"teams": ["aqua"],
 				"materials": ["wool"],
 				"region": {
 					"min": "22, 38, -24",
@@ -74,18 +74,18 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "yellow"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-floor-protection", "yellow-floor-protection"],
+			"type": "build", "evaluate": "deny", "teams": ["aqua", "yellow"],
+			"regions": ["aqua-spawn-protection", "red-spawn-protection", "aqua-floor-protection", "yellow-floor-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["aqua"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["aqua-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-102, 41, -13", "max": "-111, oo, -33" },
+		{ "id": "aqua-spawn-protection", "type": "cuboid", "min": "-102, 41, -13", "max": "-111, oo, -33" },
 		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "30, 41, -33", "max": "39, oo, -13" },
 
-		{ "id": "blue-floor-protection", "type": "cuboid", "min": "-86, 33, -30", "max": "-100, 33, -16" },
+		{ "id": "aqua-floor-protection", "type": "cuboid", "min": "-86, 33, -30", "max": "-100, 33, -16" },
 		{ "id": "yellow-floor-protection", "type": "cuboid", "min": "14, 33, -16", "max": "28, 33, -30" }
 	]
 }
