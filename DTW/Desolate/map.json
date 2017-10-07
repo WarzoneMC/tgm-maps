@@ -53,9 +53,9 @@
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "iron pickaxe", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -82,8 +82,8 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["aqua-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "aqua-spawn-protection", "type": "cuboid", "min": "-102, 41, -13", "max": "-111, oo, -33" },
-		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "30, 41, -33", "max": "39, oo, -13" },
+		{ "id": "aqua-spawn-protection", "type": "cuboid", "min": "-102, 40, -13", "max": "-111, oo, -33" },
+		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "30, 40, -33", "max": "39, oo, -13" },
 
 		{ "id": "aqua-floor-protection", "type": "cuboid", "min": "-86, 33, -30", "max": "-100, 33, -16" },
 		{ "id": "yellow-floor-protection", "type": "cuboid", "min": "14, 33, -16", "max": "28, 33, -30" }
