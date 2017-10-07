@@ -27,8 +27,8 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Yellow Wool",
-				"teams": ["yellow"],
+				"name": "Aqua Wool",
+				"teams": ["aqua"],
 				"materials": ["wool"],
 				"region": {
 					"min": "-92, 34, -24",
@@ -37,8 +37,8 @@
 				"health": 10
 			},
 			{
-				"name": "Aqua Wool",
-				"teams": ["aqua"],
+				"name": "Yellow Wool",
+				"teams": ["yellow"],
 				"materials": ["wool"],
 				"region": {
 					"min": "22, 38, -24",
