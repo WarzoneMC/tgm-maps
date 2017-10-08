@@ -58,7 +58,6 @@
 				{"type": "item", "material": "iron axe", "slot": 3},
 				{"type": "item", "material": "wood", "amount": 64, "slot": 4},
 				{"type": "item", "material": "wood", "amount": 64, "slot": 5},
-        {"type": "item", "material": "snowball", "amount": 8, "slot": 8},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
