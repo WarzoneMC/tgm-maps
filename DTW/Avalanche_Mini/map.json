@@ -1,0 +1,112 @@
+{
+	"name": "Avalanche Mini",
+	"authors": ["oib5"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-19.5, 35, -61.5, 0" },
+		{ "teams": ["red"], "coords": "60.5, 18, 0.5, 90" },
+		{ "teams": ["orange"], "coords": "-98.5, 18, 0.5, -90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "48, 36, -1",
+					"max": "50, 33, 1"
+				},
+				"health": 7
+			},
+			{
+				"name": "Orange Wool",
+				"teams": ["orange"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-88, 36, -1",
+					"max": "-86, 33, 1"
+				},
+				"health": 7
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "wood", "amount": 64, "slot": 4},				                                  {"type": "item", "material": "wood", "amount": 64, "slot": 5},
+                                {"type": "item", "material": "snowball", "amount": 8, "slot": 8},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool", "diamond pickaxe", "stone spade", "arrow", "iron axe", "bow", "stone sword", "wood", "snowball"
+	],
+
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
+			"regions": ["orange-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["orange", "red"],
+			"regions": ["orange-wool", "red-wool", "orange-spawn-protection", "red-spawn-protection"]
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
+			"regions": ["middle-protection"]
+			"message": "&cYou are not allowed to modify the center."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
+			"regions": ["elixir-protection-1", "elixir-protection-2"]
+			"message": "&cYou are not allowed to modify the elixir region."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection", "red-hull"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection", "orange-hull"], "message": "&cYou may not enter the enemy spawn." }
+	],
+
+
+	"regions": [
+		{ "id": "orange-spawn-protection", "type": "cylinder", "base": "-98, 17, 0", "radius": "20", "height": "5" },
+		{ "id": "red-spawn-protection", "type": "cylinder", "base": "60, 17, 0", "radius": "20", "height": "5" },
+		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 21, 2" },
+		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 21, -2" },
+		{ "id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14" },
+		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-78, 8, -2", "radius": "2", "height": "3" },
+		{ "id": "elixir-protection-2", "type": "cylinder", "base": "40, 8, 2", "radius": "2", "height": "3" },
+		{ "id": "red-wool", "type": "cuboid", "min": "48, 36, 1", "max": "50, 33, -1" },
+		{ "id": "orange-wool", "type": "cuboid", "min": "-88, 36, -1", "max": "-86, 33, 1" }
+	]
+}
