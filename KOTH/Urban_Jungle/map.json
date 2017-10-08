@@ -32,8 +32,8 @@
 			{
 				"name": "Center",
 				"region": {
-					"min": { "x": 3, "y": 71, "z": -3 },
-					"max": { "x": -3, "y": 74, "z": 3 }
+					"min": { "x": 3, "y": 71, "z": 3 },
+					"max": { "x": -3, "y": 74, "z": -3 }
 				}
 			}
 		]
@@ -73,7 +73,7 @@
 	"regions": [
 		{ "id": "blue-spawn-protection", "min": "39,66,9", "max": "52,54,22" },
 		{ "id": "red-spawn-protection", "min": "-39,54,-9", "max": "-52,66,-22" },
-		{ "id": "hill-protection", "min": "4,71,-4", "max": "-4,71,4" },
+		{ "id": "hill-protection", "min": "4,71,-4", "max": "-4,74,4" },
 		{ "id": "pad-1", "min": "-19,56,16", "max": "-19,56,16" },
 		{ "id": "pad-2", "min": "19,56,-16", "max": "19,56,-16" }
 	]
