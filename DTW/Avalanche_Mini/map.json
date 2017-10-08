@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-19.5, 35, -61.5, 0" },
+		{ "teams": ["spectators"], "coords": "-18.5, 35, -60.5, 0" },
 		{ "teams": ["red"], "coords": "60.5, 18, 0.5, 90" },
-		{ "teams": ["orange"], "coords": "-98.5, 18, 0.5, -90" }
+		{ "teams": ["orange"], "coords": "-97.5, 18, 0.5, -90" }
 	],
 	"dtm": {
 		"monuments": [
@@ -56,8 +56,9 @@
 				{"type": "item", "material": "bow", "slot": 1},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2},
 				{"type": "item", "material": "iron axe", "slot": 3},
-				{"type": "item", "material": "wood", "amount": 64, "slot": 4},				                                  {"type": "item", "material": "wood", "amount": 64, "slot": 5},
-                                {"type": "item", "material": "snowball", "amount": 8, "slot": 8},
+				{"type": "item", "material": "wood", "amount": 64, "slot": 4},
+				{"type": "item", "material": "wood", "amount": 64, "slot": 5},
+        {"type": "item", "material": "snowball", "amount": 8, "slot": 8},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -81,16 +82,16 @@
 		},
 		{
 			"type": "block-explode", "evaluate": "deny", "teams": ["orange", "red"],
-			"regions": ["orange-wool", "red-wool", "orange-spawn-protection", "red-spawn-protection"]
+			"regions": ["orange-wool", "red-wool", "orange-spawn-protection", "red-spawn-protection", "middle-protection"]
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
-			"regions": ["middle-protection"]
+			"regions": ["middle-protection"],
 			"message": "&cYou are not allowed to modify the center."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
-			"regions": ["elixir-protection-1", "elixir-protection-2"]
+			"regions": ["elixir-protection-1", "elixir-protection-2"],
 			"message": "&cYou are not allowed to modify the elixir region."
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection", "red-hull"], "message": "&cYou may not enter the enemy spawn." },
