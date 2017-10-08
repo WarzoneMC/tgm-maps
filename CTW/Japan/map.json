@@ -9,7 +9,7 @@
 		{
 			"id": "orange",
 			"name": "Orange",
-			"color": "orange",
+			"color": "gold",
 			"max": 25,
 			"min": 1
 		},
@@ -24,9 +24,9 @@
 
 
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "15.5, 23, -50.5, 180" },
+		{ "teams": ["spectators"], "coords": "15.5, 22, -49.5, 0" },
 		{ "teams": ["green"], "coords": "62.5, 11, 21.5, -90" },
-		{ "teams": ["orange"], "coords": "-34.5, 11, -47.5, 90" }
+		{ "teams": ["orange"], "coords": "-33.5, 11, -46.5, 90" }
 	],
 
 
@@ -61,10 +61,11 @@
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "shears", "slot": 29},
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "iron boots", "slot": "boots"}
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate"},
+				{"material": "leather leggings", "slot": "leggings"},
+				{"material": "iron boots", "slot": "boots"}
 			]
 		}
 	],
