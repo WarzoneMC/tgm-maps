@@ -1,6 +1,6 @@
 {
-	"name": "Town",
-	"authors": ["_Rascal"],
+	"name": "Village 2",
+	"authors": ["_Rascal, BlockHeads36"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -20,7 +20,7 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "492.5, 40, 428.5, 0" },
+		{ "teams": ["spectators"], "coords": "492.5, 38, 549.5, 180" },
 		{ "teams": ["red"], "coords": "581.5, 11, 500.5, 0" },
 		{ "teams": ["blue"], "coords": "403.5, 11, 500.5, 180" }
 	],
