@@ -1,0 +1,80 @@
+{
+	"name": "Urban Jungle",
+	"authors": ["Plastix"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "x": 0.5, "y": 70, "z": 110.5, "yaw": 0 },
+		{ "teams": ["blue"], "x": 46.5, "y": 57, "z": 16.5, "yaw": 90 },
+		{ "teams": ["red"], "x": -46.5, "y": 57, "z": -15.5, "yaw": -90 }
+	],
+	"points": {
+		"target": 250
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Center",
+				"region": {
+					"min": { "x": 3, "y": 71, "z": -3 },
+					"max": { "x": -3, "y": 74, "z": 3 }
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone pickaxe", "slot": 2},
+				{"type": "item", "material": "arrow", "amount": 64, "slot": 8},
+				{"type": "item", "material": "glass", "amount": 64, "slot": 3},
+				{"type": "item", "material": "cooked beef", "amount": 16, "slot": 4},
+				{"type": "item", "material": "golden apple", "slot": 5},
+
+				{"type": "item", "material": "gold helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "gold helmet",
+		"stone", "cooked beef", "arrow", "cobblestone", "log",
+		"leather chestplate", "leather leggings", "leather boots",
+		"wood", "wool"
+	],
+	"filters": [
+		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here." },
+		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify the hill." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "allow", "teams": ["blue", "red"], "regions": ["pad-1", "pad-2"], "message": "&6Jump! &7This is a jump pad." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "min": "39,66,9", "max": "52,54,22" },
+		{ "id": "red-spawn-protection", "min": "-39,54,-9", "max": "-52,66,-22" },
+		{ "id": "hill-protection", "min": "4,71,-4", "max": "-4,71,4" },
+		{ "id": "pad-1", "min": "-19,56,16", "max": "-19,56,16" },
+		{ "id": "pad-2", "min": "19,56,-16", "max": "19,56,-16" }
+	]
+}
