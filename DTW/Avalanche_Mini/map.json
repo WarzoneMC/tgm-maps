@@ -77,12 +77,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
-			"regions": ["orange-spawn-protection", "red-spawn-protection"],
+			"regions": ["orange-spawn-protection", "red-spawn-protection", "red-hull", "orange-hull"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "block-explode", "evaluate": "deny", "teams": ["orange", "red"],
-			"regions": ["orange-wool", "red-wool", "orange-spawn-protection", "red-spawn-protection", "middle-protection"]
+			"regions": ["orange-wool", "red-wool", "orange-spawn-protection", "red-spawn-protection", "middle-protection", "elixir-protection-1", "elixir-protection-2"]
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
@@ -94,19 +94,19 @@
 			"regions": ["elixir-protection-1", "elixir-protection-2"],
 			"message": "&cYou are not allowed to modify the elixir region."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection", "red-hull"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection", "orange-hull"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 
 
 	"regions": [
-		{ "id": "orange-spawn-protection", "type": "cylinder", "base": "-98, 17, 0", "radius": "20", "height": "5" },
-		{ "id": "red-spawn-protection", "type": "cylinder", "base": "60, 17, 0", "radius": "20", "height": "5" },
+		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-91, 18, -3", "max": "-103, 23, 4" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "56, 17, 4", "max": "64, 23, -4" },
 		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 21, 2" },
 		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 21, -2" },
 		{ "id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14" },
-		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-78, 8, -2", "radius": "2", "height": "3" },
-		{ "id": "elixir-protection-2", "type": "cylinder", "base": "40, 8, 2", "radius": "2", "height": "3" },
+		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 9, -2", "radius": "3", "height": "3" },
+		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 9, 2", "radius": "3", "height": "3" },
 		{ "id": "red-wool", "type": "cuboid", "min": "48, 36, 1", "max": "50, 33, -1" },
 		{ "id": "orange-wool", "type": "cuboid", "min": "-88, 36, -1", "max": "-86, 33, 1" }
 	]
