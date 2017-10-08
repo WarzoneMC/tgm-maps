@@ -57,8 +57,7 @@
 				{"type": "item", "material": "diamond pickaxe", "slot": 2},
 				{"type": "item", "material": "iron axe", "slot": 3},
 				{"type": "item", "material": "wood", "amount": 64, "slot": 4},
-				{"type": "item", "material": "wood", "amount": 64, "slot": 5},
-        {"type": "item", "material": "snowball", "amount": 8, "slot": 8},
+
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -100,13 +99,13 @@
 
 
 	"regions": [
-		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-91, 18, -3", "max": "-103, 23, 4" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "56, 17, 4", "max": "64, 23, -4" },
+		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-91, 16, -3", "max": "-103, 23, 4" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "56, 16, 4", "max": "64, 23, -4" },
 		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 21, 2" },
 		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 21, -2" },
 		{ "id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14" },
-		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 9, -2", "radius": "3", "height": "3" },
-		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 9, 2", "radius": "3", "height": "3" },
+		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 7, -2", "radius": "3", "height": "3" },
+		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 7, 2", "radius": "3", "height": "3" },
 		{ "id": "red-wool", "type": "cuboid", "min": "48, 36, 1", "max": "50, 33, -1" },
 		{ "id": "orange-wool", "type": "cuboid", "min": "-88, 36, -1", "max": "-86, 33, 1" }
 	]
