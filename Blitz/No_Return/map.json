@@ -59,9 +59,10 @@
 				"type": "item",
 				"material": "bow",
 				"enchantments": ["arrow damage:1", "arrow infinite:1", "damage all:2", "knockback:2"],
-				"slot": 0},
-
-				{"type": "item",
+				"slot": 0
+			},
+			{
+				"type": "item",
 				"material": "stone sword",
 				"slot": 0
 			},
