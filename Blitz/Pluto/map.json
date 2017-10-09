@@ -3,7 +3,7 @@
 	"authors": ["Boats", "Vovl", "Luuke"],
 	"gametype": "Blitz",
     "version": "1.0.0",
-    
+
     "teams": [
 		{
 			"id": "blue",
@@ -18,23 +18,16 @@
 			"color": "red",
 			"max": 25,
 			"min": 1
-		},
-        {
-			"id": "green",
-			"name": "Green",
-			"color": "green",
-			"max": 25,
-			"min": 1
 		}
 	],
-    
+
     "spawns": [
 		{ "teams": ["spectators"], "coords": "-15.5, 83, 37.5, -90" },
 		{ "teams": ["blue"], "coords": "0.5, 75, -5.5, -12" },
 		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" },
-        { "teams": ["green"], "coords": "14.5, 75, 80.5, 168" }
+
 	],
-    
+
     "blitz" : {
         "death-title": "&cYou died!",
         "death-subtitle": "&aRemaining lives: &e%lives%",
@@ -47,14 +40,10 @@
             {
                 "team": "red",
                 "lives": 3
-            },
-            {
-                "team": "green",
-                "lives": 3
             }
         ]
     },
-    
+
     "kits": [
 		{
 			"name": "Default",

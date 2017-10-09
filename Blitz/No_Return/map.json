@@ -95,7 +95,18 @@
 				"material": "iron boots",
 				"slot": "boots"
 			}
+		],
+		"filters": [
+			{
+				"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+				"regions": ["noblox"],
+				"message": "&cYou are not allowed to modify terrain here."
+			}
+		],
+		"regions": [
+			{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
 		]
-	}],
+	}
+],
 	"max-build-height": "0"
 }
