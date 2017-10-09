@@ -1,0 +1,75 @@
+{
+	"name": "Ping Bomb",
+	"authors": ["majjus and ShinyDialga"],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+	"teams": [{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 25,
+			"min": 1
+		}
+	],
+	"spawns": [{
+			"teams": [
+				"spectators"
+			],
+			"coords": "24.5, 24, -5.5, 90"
+		},
+		{
+			"teams": [
+				"blue"
+			],
+			"coords": "0.5, 26, 47.5, 180"
+		},
+		{
+			"teams": [
+				"red"
+			],
+			"coords": "0.5, 26, -59.5, 0"
+		}
+	],
+	"blitz": {
+		"death-title": "&cYou died!",
+		"death-subtitle": "&aRemaining lives: &e%lives%",
+		"lives": [{
+				"team": "blue",
+				"lives": 1
+			},
+			{
+				"team": "red",
+				"lives": 1
+			}
+		]
+	},
+	"itemremove": [
+		"leather helmet", "leather chestplate",
+		"bread"
+	],
+	"kits": [{
+		"name": "Default",
+		"items": [{
+				"type": "item",
+				"material": "end bricks",
+				"slot": 1,
+				"amount": 12
+			},
+			{
+				"material": "leather helmet",
+				"slot": "helmet"
+			},
+			{
+				"material": "leather chestplate",
+				"slot": "chestplate"
+			}
+		]
+	}]
+}
