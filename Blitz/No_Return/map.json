@@ -45,24 +45,21 @@
 				"lives": 1
 			},
 			{
-				"team": "red",
+				"team": "purple",
 				"lives": 1
 			}
 		]
 	},
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
+		"bread", "golden apple", "bow", "arrow"
 	],
 	"kits": [{
 		"name": "Default",
 		"items": [{
 				"type": "item",
 				"material": "bow",
-				"enchantments": ["arrow damage:1", "arrow infinite:1", "damage all:2", "knockback:2"],
-				"slot": 0},
-
-				{"type": "item",
-				"material": "stone sword",
+				"enchantments": ["arrow_damage:1", "arrow infinite:1", "damage all:2", "knockback:2"],
 				"slot": 0
 			},
 			{
@@ -98,19 +95,18 @@
 				"material": "iron boots",
 				"slot": "boots"
 			}
+		],
+		"filters": [
+			{
+				"type": "build", "evaluate": "deny", "teams": ["blue", "purple"],
+				"regions": ["noblox"],
+				"message": "&cYou are not allowed to modify terrain here."
+			}
+		],
+		"regions": [
+			{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
 		]
-		}
-	],
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["noblox"],
-			"message": "&cYou are not allowed to modify terrain here."
-		}
-	],
-	"regions": [
-		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
-	],
-
-	"max-build-height": "50"
+	}
+],
+	"max-build-height": "0"
 }
