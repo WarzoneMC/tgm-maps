@@ -102,8 +102,8 @@
 	"regions": [
 		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-94, 16, -4", "max": "-103, 23, 4" },
 		{ "id": "red-spawn-protection", "type": "cuboid", "min": "56, 16, 4", "max": "64, 23, -4" },
-		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 21, 2" },
-		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 21, -2" },
+		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 18, 2" },
+		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 18, -2" },
 		{ "id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14" },
 		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 7, -2", "radius": "3", "height": "6" },
 		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 7, 2", "radius": "3", "height": "6" },
