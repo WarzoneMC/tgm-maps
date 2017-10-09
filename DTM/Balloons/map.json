@@ -1,0 +1,91 @@
+{
+	"name": "BalloonsDTM",
+	"authors": ["Pandaboy999"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "0.5, 64, 0.5, 180" },
+		{ "teams": ["red"], "coords": "23.5, 9, 27.5, 90" },
+		{ "teams": ["blue"], "coords": "-23.5, 9, -27.5, -90" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0,22,48",
+					"max": "0,20,48"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0,22,-48",
+					"max": "0,20,48"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "enchantments": ["dig_speed:1"]},
+				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["dig_speed:3"]},
+
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
+
+				{"type": "item", "material": "bread", "slot": 8, "amount": 16},
+
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "pumpkin", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["protection_projectile:2"]},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "stone axe", "leather helmet",
+		"glass", "wood", "bread", "arrow",
+		"pumpkin", "chainmail chestplate", "leather leggings", "leather boots",
+		"obsidian"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection-1", "red-spawn-protection-1"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection-1", "type": "cuboid", "min": "-17,8,-21", "max": "-27,15,-33" },
+		{ "id": "red-spawn-protection-1", "type": "cuboid", "min": "17,8,21", "max": "27,15,33" }
+	]
+}
