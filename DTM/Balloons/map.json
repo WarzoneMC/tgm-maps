@@ -37,7 +37,7 @@
 				"health": 2
 			},
 			{
-				"name": "Monument",
+				"name": "Monument&r",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
