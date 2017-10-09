@@ -51,7 +51,7 @@
 		]
 	},
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"kits": [{
 		"name": "Default",
