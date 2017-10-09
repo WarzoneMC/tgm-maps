@@ -20,12 +20,10 @@
 			"min": 1
 		}
 	],
-
     "spawns": [
 		{ "teams": ["spectators"], "coords": "-15.5, 83, 37.5, -90" },
 		{ "teams": ["blue"], "coords": "0.5, 75, -5.5, -12" },
-		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" },
-
+		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" }
 	],
 
     "blitz" : {
@@ -40,7 +38,7 @@
             {
                 "team": "red",
                 "lives": 3
-            }
+            }e
         ]
     },
 
