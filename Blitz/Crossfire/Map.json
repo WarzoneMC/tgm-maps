@@ -1,0 +1,807 @@
+{
+   "@proto": "1.3.6",
+   "name": "Crossfire",
+   "version": "1.5.5",
+   "slug": "crossfire",
+   "objective": "Runners must get from one side of the map to the other without getting killed by the Defenders.",
+   "gamemode": [
+      "ad",
+      "blitz"
+   ],
+   "authors": [
+      {
+         "@uuid": "6e347123-c684-4d7e-996c-44d4924ff172"
+      }
+   ],
+   "contributors": [
+      {
+         "@contribution": "Feedback",
+         "#text": "BlockDrop74"
+      },
+      {
+         "@contribution": "Feedback",
+         "#text": "dinner1111"
+      },
+      {
+         "@contribution": "Minor Terraforming",
+         "#text": "Avaleer"
+      },
+      {
+         "@contribution": "Help with Oberver Spawn",
+         "#text": "yoyo_power"
+      },
+      {
+         "@contribution": "XML Help",
+         "#text": "Anthonny"
+      }
+   ],
+   "rules": [
+      "Fall Damage is Disabled.",
+      "Do NOT Hide in the Houses!"
+   ],
+   "broadcasts": {
+      "tip": {
+         "@filter": "defenders-only",
+         "@after": "5s",
+         "@every": "1m",
+         "#text": "Use the feather to go fast across the tracks"
+      }
+   },
+   "destroyables": {
+      "destroyable": {
+         "@owner": "Defenders",
+         "@name": "Monument",
+         "@region": "monument",
+         "@materials": "sponge",
+         "@required": "true"
+      }
+   },
+   "blitz": {
+      "lives": "1",
+      "broadcastLives": "true",
+      "title": "Rush"
+   },
+   "include": {
+      "@src": "blitz-global.xml"
+   },
+   "teams": [
+      {
+         "@color": "light purple",
+         "@max": "25",
+         "@max-overfill": "30",
+         "@plural": "true",
+         "#text": "Runners"
+      },
+      {
+         "@color": "dark blue",
+         "@max": "4",
+         "@plural": "true",
+         "#text": "Defenders"
+      }
+   ],
+   "kits": [
+      {
+         "@name": "hunger",
+         "saturation": "20",
+         "foodlevel": "20"
+      },
+      {
+         "@name": "magenta",
+         "@parents": "hunger",
+         "helmet": {
+            "@color": "EBD2F5",
+            "#text": "leather helmet"
+         },
+         "chestplate": {
+            "@color": "EBD2F5",
+            "#text": "leather chestplate"
+         },
+         "leggings": {
+            "@color": "EBD2F5",
+            "#text": "leather leggings"
+         },
+         "boots": {
+            "@color": "FFFFFF",
+            "#text": "leather boots"
+         },
+         "item": [
+            {
+               "@slot": "0",
+               "@damage": "61",
+               "#text": "wood sword"
+            },
+            {
+               "@slot": "1",
+               "#text": "boat"
+            }
+         ]
+      },
+      {
+         "@name": "dark-blue",
+         "@parents": "hunger",
+         "helmet": {
+            "@color": "293878",
+            "#text": "leather helmet"
+         },
+         "chestplate": {
+            "@color": "293878",
+            "#text": "leather chestplate"
+         },
+         "leggings": {
+            "@color": "293878",
+            "#text": "leather leggings"
+         },
+         "boots": {
+            "@color": "191919",
+            "#text": "leather boots"
+         },
+         "potion": {
+            "@duration": "600",
+            "@amplifier": "2",
+            "#text": "speed"
+         },
+         "item": [
+            {
+               "@slot": "1",
+               "@unbreakable": "true",
+               "@enchantment": "ARROW_KNOCKBACK:1;ARROW_DAMAGE:3;ARROW_INFINITE:1",
+               "#text": "bow"
+            },
+            {
+               "@slot": "8",
+               "@lore": "`4Speedy Feather",
+               "@attributes": "generic.movementSpeed:base:0.3",
+               "#text": "feather"
+            },
+            {
+               "@slot": "28",
+               "@amount": "1",
+               "#text": "arrow"
+            }
+         ]
+      },
+      {
+         "@name": "heal",
+         "potion": {
+            "@duration": "3",
+            "@amplifier": "4",
+            "#text": "heal"
+         }
+      }
+   ],
+   "itemremove": [
+      "string",
+      "sponge",
+      "arrow",
+      "stick",
+      "wood"
+   ],
+   "toolrepair": {
+      "tool": "wood sword"
+   },
+   "killreward": {
+      "filter": {
+         "all": {
+            "team": "Defenders",
+            "kill-streak": {
+               "@count": "3"
+            }
+         }
+      },
+      "kit": {
+         "@force": "true",
+         "item": {
+            "@slot": "1",
+            "@enchantment": "ARROW_KNOCKBACK:1;ARROW_DAMAGE:5;ARROW_INFINITE:1",
+            "@name": "`AUpgraded Bow",
+            "#text": "bow"
+         }
+      }
+   },
+   "timelock": "on",
+   "filters": [
+      {
+         "@name": "monument-cobwebs",
+         "@parents": "deny-all",
+         "allow": {
+            "any": [
+               "web",
+               "sponge"
+            ]
+         }
+      },
+      {
+         "@name": "defenders-only",
+         "@parents": "deny-players",
+         "allow": {
+            "team": "Defenders"
+         }
+      }
+   ],
+   "regions": {
+      "block": [
+         {
+            "@name": "monument",
+            "#text": "756.5,45,1085.5"
+         },
+         {
+            "@name": "Start-A",
+            "#text": "787.5,48,441.5"
+         },
+         {
+            "@name": "Start-B",
+            "#text": "725.5,48,441.5"
+         }
+      ],
+      "cuboid": [
+         {
+            "@name": "spawnHouse",
+            "@min": "743,45,431",
+            "@max": "770,52,445"
+         },
+         {
+            "@name": "town",
+            "@min": "744,36,500",
+            "@max": "769,45,552"
+         },
+         {
+            "@name": "Mainland",
+            "@min": "743,0,431",
+            "@max": "770,256,1087"
+         },
+         {
+            "@name": "Runner-Spawn",
+            "@min": "748,47.5,437",
+            "@max": "765,47.5,442"
+         },
+         {
+            "@name": "Defender-Spawn",
+            "@min": "756,87,405",
+            "@max": "757,87,406"
+         },
+         {
+            "@name": "Observer-Spawn",
+            "@min": "756,95,375",
+            "@max": "757,95,376"
+         },
+         {
+            "@name": "Portal-A",
+            "@min": "792,47,468",
+            "@max": "793,48,1032"
+         },
+         {
+            "@name": "Portal-B",
+            "@min": "720,47,468",
+            "@max": "721,48,1032"
+         }
+      ],
+      "rectangle": {
+         "@name": "Heal-1",
+         "@min": "742,761",
+         "@max": "770,762"
+      },
+      "union": [
+         {
+            "@name": "Spawn-A",
+            "cuboid": [
+               {
+                  "@min": "761,86,405",
+                  "@max": "762,87,409"
+               },
+               {
+                  "@min": "759,86,408",
+                  "@max": "762,87,409"
+               }
+            ]
+         },
+         {
+            "@name": "Spawn-B",
+            "cuboid": [
+               {
+                  "@min": "751,86,405",
+                  "@max": "752,87,409"
+               },
+               {
+                  "@min": "751,86,408",
+                  "@max": "754,87,409"
+               }
+            ]
+         }
+      ],
+      "apply": [
+         {
+            "@block": "monument-cobwebs",
+            "@message": "You may only break cobwebs!",
+            "rectangle": {
+               "@min": "-oo,-oo",
+               "@max": "oo,oo"
+            }
+         },
+         {
+            "@kit": "heal",
+            "region": {
+               "@name": "Heal-1"
+            }
+         },
+         {
+            "@enter": "deny-all",
+            "@message": "You may not re-enter your spawn",
+            "region": {
+               "@name": "spawnHouse"
+            }
+         }
+      ]
+   },
+   "spawns": {
+      "spawn": [
+         {
+            "@team": "Runners",
+            "@kit": "magenta",
+            "regions": {
+               "@yaw": "0",
+               "region": {
+                  "@name": "Runner-Spawn"
+               }
+            }
+         },
+         {
+            "@team": "Defenders",
+            "@kit": "dark-blue",
+            "regions": {
+               "@yaw": "0",
+               "region": {
+                  "@name": "Defender-Spawn"
+               }
+            }
+         }
+      ],
+      "default": {
+         "regions": {
+            "@yaw": "0",
+            "region": {
+               "@name": "Observer-Spawn"
+            }
+         }
+      }
+   },
+   "portals": [
+      {
+         "@yaw": "@-45",
+         "@region": "Spawn-A",
+         "@destination": "Start-A"
+      },
+      {
+         "@yaw": "@45",
+         "@region": "Spawn-B",
+         "@destination": "Start-B"
+      },
+      {
+         "@x": "-69",
+         "@y": "@49",
+         "@z": "10",
+         "@region": "Portal-A"
+      },
+      {
+         "@x": "69",
+         "@y": "@49",
+         "@z": "10",
+         "@region": "Portal-B"
+      }
+   ],
+   "time": {
+      "@result": "Defenders",
+      "#text": "6m"
+   },
+   "gamerules": {
+      "naturalRegeneration": "false"
+   },
+   "hunger": {
+      "depletion": "off"
+   },
+   "disabledamage": {
+      "damage": "fall"
+   }
+}{
+   "@proto": "1.3.6",
+   "name": "Crossfire",
+   "version": "1.5.5",
+   "slug": "crossfire",
+   "objective": "Runners must get from one side of the map to the other without getting killed by the Defenders.",
+   "gamemode": [
+      "ad",
+      "blitz"
+   ],
+   "authors": [
+      {
+         "@uuid": "6e347123-c684-4d7e-996c-44d4924ff172"
+      }
+   ],
+   "contributors": [
+      {
+         "@contribution": "Feedback",
+         "#text": "BlockDrop74"
+      },
+      {
+         "@contribution": "Feedback",
+         "#text": "dinner1111"
+      },
+      {
+         "@contribution": "Minor Terraforming",
+         "#text": "Avaleer"
+      },
+      {
+         "@contribution": "Help with Oberver Spawn",
+         "#text": "yoyo_power"
+      },
+      {
+         "@contribution": "XML Help",
+         "#text": "Anthonny"
+      }
+   ],
+   "rules": [
+      "Fall Damage is Disabled.",
+      "Do NOT Hide in the Houses!"
+   ],
+   "broadcasts": {
+      "tip": {
+         "@filter": "defenders-only",
+         "@after": "5s",
+         "@every": "1m",
+         "#text": "Use the feather to go fast across the tracks"
+      }
+   },
+   "destroyables": {
+      "destroyable": {
+         "@owner": "Defenders",
+         "@name": "Monument",
+         "@region": "monument",
+         "@materials": "sponge",
+         "@required": "true"
+      }
+   },
+   "blitz": {
+      "lives": "1",
+      "broadcastLives": "true",
+      "title": "Rush"
+   },
+   "include": {
+      "@src": "blitz-global.xml"
+   },
+   "teams": [
+      {
+         "@color": "light purple",
+         "@max": "25",
+         "@max-overfill": "30",
+         "@plural": "true",
+         "#text": "Runners"
+      },
+      {
+         "@color": "dark blue",
+         "@max": "4",
+         "@plural": "true",
+         "#text": "Defenders"
+      }
+   ],
+   "kits": [
+      {
+         "@name": "hunger",
+         "saturation": "20",
+         "foodlevel": "20"
+      },
+      {
+         "@name": "magenta",
+         "@parents": "hunger",
+         "helmet": {
+            "@color": "EBD2F5",
+            "#text": "leather helmet"
+         },
+         "chestplate": {
+            "@color": "EBD2F5",
+            "#text": "leather chestplate"
+         },
+         "leggings": {
+            "@color": "EBD2F5",
+            "#text": "leather leggings"
+         },
+         "boots": {
+            "@color": "FFFFFF",
+            "#text": "leather boots"
+         },
+         "item": [
+            {
+               "@slot": "0",
+               "@damage": "61",
+               "#text": "wood sword"
+            },
+            {
+               "@slot": "1",
+               "#text": "boat"
+            }
+         ]
+      },
+      {
+         "@name": "dark-blue",
+         "@parents": "hunger",
+         "helmet": {
+            "@color": "293878",
+            "#text": "leather helmet"
+         },
+         "chestplate": {
+            "@color": "293878",
+            "#text": "leather chestplate"
+         },
+         "leggings": {
+            "@color": "293878",
+            "#text": "leather leggings"
+         },
+         "boots": {
+            "@color": "191919",
+            "#text": "leather boots"
+         },
+         "potion": {
+            "@duration": "600",
+            "@amplifier": "2",
+            "#text": "speed"
+         },
+         "item": [
+            {
+               "@slot": "1",
+               "@unbreakable": "true",
+               "@enchantment": "ARROW_KNOCKBACK:1;ARROW_DAMAGE:3;ARROW_INFINITE:1",
+               "#text": "bow"
+            },
+            {
+               "@slot": "8",
+               "@lore": "`4Speedy Feather",
+               "@attributes": "generic.movementSpeed:base:0.3",
+               "#text": "feather"
+            },
+            {
+               "@slot": "28",
+               "@amount": "1",
+               "#text": "arrow"
+            }
+         ]
+      },
+      {
+         "@name": "heal",
+         "potion": {
+            "@duration": "3",
+            "@amplifier": "4",
+            "#text": "heal"
+         }
+      }
+   ],
+   "itemremove": [
+      "string",
+      "sponge",
+      "arrow",
+      "stick",
+      "wood"
+   ],
+   "toolrepair": {
+      "tool": "wood sword"
+   },
+   "killreward": {
+      "filter": {
+         "all": {
+            "team": "Defenders",
+            "kill-streak": {
+               "@count": "3"
+            }
+         }
+      },
+      "kit": {
+         "@force": "true",
+         "item": {
+            "@slot": "1",
+            "@enchantment": "ARROW_KNOCKBACK:1;ARROW_DAMAGE:5;ARROW_INFINITE:1",
+            "@name": "`AUpgraded Bow",
+            "#text": "bow"
+         }
+      }
+   },
+   "timelock": "on",
+   "filters": [
+      {
+         "@name": "monument-cobwebs",
+         "@parents": "deny-all",
+         "allow": {
+            "any": [
+               "web",
+               "sponge"
+            ]
+         }
+      },
+      {
+         "@name": "defenders-only",
+         "@parents": "deny-players",
+         "allow": {
+            "team": "Defenders"
+         }
+      }
+   ],
+   "regions": {
+      "block": [
+         {
+            "@name": "monument",
+            "#text": "756.5,45,1085.5"
+         },
+         {
+            "@name": "Start-A",
+            "#text": "787.5,48,441.5"
+         },
+         {
+            "@name": "Start-B",
+            "#text": "725.5,48,441.5"
+         }
+      ],
+      "cuboid": [
+         {
+            "@name": "spawnHouse",
+            "@min": "743,45,431",
+            "@max": "770,52,445"
+         },
+         {
+            "@name": "town",
+            "@min": "744,36,500",
+            "@max": "769,45,552"
+         },
+         {
+            "@name": "Mainland",
+            "@min": "743,0,431",
+            "@max": "770,256,1087"
+         },
+         {
+            "@name": "Runner-Spawn",
+            "@min": "748,47.5,437",
+            "@max": "765,47.5,442"
+         },
+         {
+            "@name": "Defender-Spawn",
+            "@min": "756,87,405",
+            "@max": "757,87,406"
+         },
+         {
+            "@name": "Observer-Spawn",
+            "@min": "756,95,375",
+            "@max": "757,95,376"
+         },
+         {
+            "@name": "Portal-A",
+            "@min": "792,47,468",
+            "@max": "793,48,1032"
+         },
+         {
+            "@name": "Portal-B",
+            "@min": "720,47,468",
+            "@max": "721,48,1032"
+         }
+      ],
+      "rectangle": {
+         "@name": "Heal-1",
+         "@min": "742,761",
+         "@max": "770,762"
+      },
+      "union": [
+         {
+            "@name": "Spawn-A",
+            "cuboid": [
+               {
+                  "@min": "761,86,405",
+                  "@max": "762,87,409"
+               },
+               {
+                  "@min": "759,86,408",
+                  "@max": "762,87,409"
+               }
+            ]
+         },
+         {
+            "@name": "Spawn-B",
+            "cuboid": [
+               {
+                  "@min": "751,86,405",
+                  "@max": "752,87,409"
+               },
+               {
+                  "@min": "751,86,408",
+                  "@max": "754,87,409"
+               }
+            ]
+         }
+      ],
+      "apply": [
+         {
+            "@block": "monument-cobwebs",
+            "@message": "You may only break cobwebs!",
+            "rectangle": {
+               "@min": "-oo,-oo",
+               "@max": "oo,oo"
+            }
+         },
+         {
+            "@kit": "heal",
+            "region": {
+               "@name": "Heal-1"
+            }
+         },
+         {
+            "@enter": "deny-all",
+            "@message": "You may not re-enter your spawn",
+            "region": {
+               "@name": "spawnHouse"
+            }
+         }
+      ]
+   },
+   "spawns": {
+      "spawn": [
+         {
+            "@team": "Runners",
+            "@kit": "magenta",
+            "regions": {
+               "@yaw": "0",
+               "region": {
+                  "@name": "Runner-Spawn"
+               }
+            }
+         },
+         {
+            "@team": "Defenders",
+            "@kit": "dark-blue",
+            "regions": {
+               "@yaw": "0",
+               "region": {
+                  "@name": "Defender-Spawn"
+               }
+            }
+         }
+      ],
+      "default": {
+         "regions": {
+            "@yaw": "0",
+            "region": {
+               "@name": "Observer-Spawn"
+            }
+         }
+      }
+   },
+   "portals": [
+      {
+         "@yaw": "@-45",
+         "@region": "Spawn-A",
+         "@destination": "Start-A"
+      },
+      {
+         "@yaw": "@45",
+         "@region": "Spawn-B",
+         "@destination": "Start-B"
+      },
+      {
+         "@x": "-69",
+         "@y": "@49",
+         "@z": "10",
+         "@region": "Portal-A"
+      },
+      {
+         "@x": "69",
+         "@y": "@49",
+         "@z": "10",
+         "@region": "Portal-B"
+      }
+   ],
+   "time": {
+      "@result": "Defenders",
+      "#text": "6m"
+   },
+   "gamerules": {
+      "naturalRegeneration": "false"
+   },
+   "hunger": {
+      "depletion": "off"
+   },
+   "disabledamage": {
+      "damage": "fall"
+   }
+}
