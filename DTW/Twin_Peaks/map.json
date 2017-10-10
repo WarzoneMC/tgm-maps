@@ -1,7 +1,7 @@
 {
 	"name": "Twin Peaks",
 	"authors": ["Scoolins"],
-	"version": "1.0",
+	"version": "2.0",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -21,28 +21,28 @@
 	],
 	"spawns": [
 		{ "teams": ["spectators"], "coords": "96.5, 89, -40.5, 180" },
-		{ "teams": ["red"], "coords": "1.5, 80, -124.5, -90" },
-		{ "teams": ["blue"], "coords": "193.5, 80, -124.5, 90" }
+		{ "teams": ["red"], "coords": "5.5, 68, -128.5, -90" },
+		{ "teams": ["blue"], "coords": "189.5, 68, -129.5, 90" }
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wools",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "20, 103, -158",
-					"max": "16, 107, -162"
+					"min": "19, 67, -166",
+					"max": "17, 71, -168"
 				},
 				"health": 10
 			},
 			{
-				"name": "Wools&r",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "174, 103, -158",
-					"max": "178, 108, -162"
+					"min": "175, 67, -93",
+					"max": "177, 71, -91"
 				},
 				"health": 10
 			}
@@ -81,8 +81,8 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "196, 79, -110", "max": "182, oo, -140" },
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "180, 0, -145", "max": "194, oo, -115" },
 
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-2, 79, -140", "max": "12, oo, -110" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "14, 0, -114", "max": "0, oo, -144" }
 	]
 }

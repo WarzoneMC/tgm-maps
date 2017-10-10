@@ -1,0 +1,117 @@
+{
+	"name": "No Return",
+	"authors": ["AntonyMo"],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+	"teams": [{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark_purple",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 25,
+			"min": 1
+		}
+	],
+	"spawns": [{
+			"teams": [
+				"spectators"
+			],
+			"coords": "51.5, 36, 0.5, -90"
+		},
+		{
+			"teams": [
+				"blue"
+			],
+			"coords": "0.5, 19, -54.5, 0"
+		},
+		{
+			"teams": [
+				"purple"
+			],
+			"coords": "0.5, 19, 54.5, 180"
+		}
+	],
+	"blitz": {
+		"death-title": "&cYou died!",
+		"death-subtitle": "&aRemaining lives: &e%lives%",
+		"lives": [{
+				"team": "blue",
+				"lives": 1
+			},
+			{
+				"team": "purple",
+				"lives": 1
+			}
+		]
+	},
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots"
+	],
+	"kits": [{
+		"name": "Default",
+		"items": [{
+				"type": "item",
+				"material": "bow",
+				"enchantments": ["arrow damage:1", "arrow infinite:1", "damage all:2", "knockback:2"],
+				"slot": 0
+			},
+			{
+				"type": "item",
+				"material": "stone sword",
+				"slot": 1
+			},
+			{
+				"type": "item",
+				"material": "bread",
+				"slot": 8,
+				"amount": 8
+			},
+			{
+				"type": "item",
+				"material": "golden apple",
+				"slot": 2
+			},
+			{
+				"type": "item",
+				"material": "arrow",
+				"slot": 28,
+				"amount": 64
+			},
+			{
+				"material": "leather helmet",
+				"slot": "helmet"
+			},
+			{
+				"material": "leather chestplate",
+				"slot": "chestplate"
+			},
+			{
+				"material": "leather leggings",
+				"slot": "leggings"
+			},
+			{
+				"material": "iron boots",
+				"slot": "boots"
+			}
+		]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "purple"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
+	],
+
+	"max-build-height": "50"
+}

@@ -1,0 +1,68 @@
+{
+	"name": "Pluto",
+	"authors": ["Boats", "Vovl", "Luuke"],
+	"gametype": "Blitz",
+    "version": "1.0.0",
+
+    "teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 25,
+			"min": 1
+		}
+	],
+    "spawns": [
+		{ "teams": ["spectators"], "coords": "-15.5, 83, 37.5, -90" },
+		{ "teams": ["blue"], "coords": "0.5, 75, -5.5, -12" },
+		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" }
+	],
+
+    "blitz" : {
+        "death-title": "&cYou died!",
+        "death-subtitle": "&aRemaining lives: &e%lives%",
+        "actionbar": "&bRemaining lives: &a%lives%",
+        "lives": [
+            {
+                "team": "blue",
+                "lives": 3
+            },
+            {
+                "team": "red",
+                "lives": 3
+            }
+        ]
+    },
+
+    "kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"type": "item", "material": "shears", "slot": 29},
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate"},
+				{"material": "leather leggings", "slot": "leggings"},
+				{"material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+
+	"max-build-height": "90"
+}

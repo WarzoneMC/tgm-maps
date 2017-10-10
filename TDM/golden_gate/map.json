@@ -25,7 +25,7 @@
 		{ "teams": ["red"], "coords": "-47.5, 26, 40.5, -90" }
 	],
     "points":{
-        "target": 100
+        "target": 50
     },
 	"kits": [
 		{
@@ -40,6 +40,10 @@
 				{"material": "chainmail chestplate", "slot": "chestplate"},
 				{"material": "iron leggings", "slot": "leggings"},
 				{"material": "leather boots", "slot": "boots"}
+			],
+			"effects": [
+				{"effect": "speed", "duration": 99999999, "amplifier": 2, "particles": false},
+				{"effect": "jump", "duration": 99999999, "amplifier": 0, "particles": false}
 			]
 		}
 	],
