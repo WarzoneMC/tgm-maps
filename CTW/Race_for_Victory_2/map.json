@@ -59,7 +59,7 @@
 			"items": [
 				{"material": "iron sword", "slot": 0},
 				{"material": "bow", "slot": 1},
-				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"] "slot": 2},
+				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2},
 				{"material": "log", "slot": 3, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "ladder", "slot": 6, "amount": 32},
