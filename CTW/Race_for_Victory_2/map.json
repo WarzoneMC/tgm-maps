@@ -1,0 +1,115 @@
+{
+	"name": "Race for Victory 2",
+	"authors": ["Plastix", "Apple", "Anxuiz", "IM_A_H0B0"],
+	"version": "1.0.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "44, 8, 7, -90" },
+		{ "teams": ["red"], "coords": "0, 4, 69, -180" },
+		{ "teams": ["blue"], "coords": "0, 4, -55, 0" }
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["blue"],
+				"region": {"min": "-1, 5, -64", "max": "-1, 5, -64"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["blue"],
+				"region": {"min": "1, 5, -64", "max": "1, 5, -64"}
+			},
+
+			{
+				"name": "Lime",
+				"color": "lime",
+				"teams": ["red"],
+				"region": {"min": "1, 5, 78", "max": "1, 5, 78"}
+			},
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["red"],
+				"region": {"min": "-1, 5, 78", "max": "-1, 5, 78"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2},
+				{"material": "log", "slot": 3, "amount": 64},
+				{"material": "glass", "slot": 5, "amount": 64},
+				{"material": "ladder", "slot": 6, "amount": 32},
+
+				{"material": "cooked fish", "slot": 7, "amount": 64},
+
+				{"material": "arrow", "slot": 8, "amount": 64},
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "leather chestplate", "slot": "chestplate"},
+				{"material": "leather leggings", "slot": "leggings"},
+				{"material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron pickaxe", "log", "wood", "leather helmet",
+		"glass", "ladder", "cooked fish", "arrow",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots",
+		"beacon", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "lime-room", "orange-room", "red-base-center", "blue-base-center", "base-left", "base-right", "blue-base-back", "red-base-back"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "yellow-room", "red-base-center", "blue-base-center", "base-left", "base-right", "blue-base-back", "red-base-back"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "yellow-room"], "message": "&cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "orange-room"], "message": "&cYou may not enter this region." }
+	],
+	"regions": [
+		{"id": "lime-room", "min": "-5, 255, -119", "max": "-16, 0, -105"},
+		{"id": "orange-room", "min": "16, 0, -105", "max": "5, 255, -119"},
+
+		{"id": "purple-room", "min": "5, 0, 133", "max": "16, 255, 119"},
+		{"id": "yellow-room", "min": "-16, 0, 119", "max": "-5, 13, 133"},
+
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -69", "max": "7, 9, -41" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "7, 0, 83", "max": "-7, 9, 55" },
+		{ "id": "red-base-center", "type": "cuboid", "min": "-4, 255, 133", "max": "4, 0, 84" },
+		{ "id": "blue-base-center", "type": "cuboid", "min": "-4, 255, -119", "max": "-4, 0, -70" },
+		{ "id": "base-left", "type": "cuboid", "min": "-17, 0, -119", "max": "-17, 255, 133" },
+		{ "id": "base-right", "type": "cuboid", "min": "19, 255, 134", "max": "17, 0, -119" },
+		{ "id": "blue-base-back", "type": "cuboid", "min": "17, 0, -120", "max": "-17, 255, -120" },
+		{ "id": "red-base-back", "type": "cuboid", "min": "17, 0, 134", "max": "-17, 255, 134" }
+	]
+}
