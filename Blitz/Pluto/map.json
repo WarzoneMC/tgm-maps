@@ -26,7 +26,7 @@
 		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" }
 	],
 
-    "gametype-settings" : {
+    "blitz" : {
         "death-title": "&cYou died!",
         "death-subtitle": "&aRemaining lives: &e%lives%",
         "actionbar": "&bRemaining lives: &a%lives%",

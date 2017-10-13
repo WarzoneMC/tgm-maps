@@ -24,7 +24,7 @@
 		{ "teams": ["red"], "coords": "-1,9,73, 180" },
 		{ "teams": ["blue"], "coords": "-1,9,-76, 0" }
 	],
-	"gametype-settings": {
+	"ctw": {
 		"wools": [
 			{
 				"name": "Cyan",

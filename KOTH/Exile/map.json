@@ -27,7 +27,7 @@
 	"points": {
 		"target": 300
 	},
-	"gametype-settings": {
+	"koth": {
 		"hills": [
 			{
 				"name": "Center",

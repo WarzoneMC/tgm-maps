@@ -24,7 +24,7 @@
 		{ "teams": ["red"], "coords": "2.5, 12, 112.5, 180" },
 		{ "teams": ["blue"], "coords": "2.5, 12, -111.5, 0" }
 	],
-	"gametype-settings": {
+	"ctw": {
 		"wools": [
 			{
 				"name": "Purple",

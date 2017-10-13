@@ -24,7 +24,7 @@
 		{ "teams": ["red"], "coords": "40,6,-30, -90" },
 		{ "teams": ["blue"], "coords": "40,6,31, -90" }
 	],
-	"gametype-settings": {
+	"dtm": {
 		"monuments": [
 			{
 				"name": "Monument",

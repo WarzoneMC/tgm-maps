@@ -24,7 +24,7 @@
 		{ "teams": ["infected"], "coords": "10.5, 14, -42.5, 90" },
 		{ "teams": ["humans"], "coords": "-147.5, 17, -30.5, -90" }
 	],
-	"gametype-settings": {
+	"infection": {
 		"length": 7
 	},
 	"kits": [

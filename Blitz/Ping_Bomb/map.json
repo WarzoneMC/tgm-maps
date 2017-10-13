@@ -37,7 +37,7 @@
 			"coords": "0.5, 26, -59.5, 0"
 		}
 	],
-	"gametype-settings": {
+	"blitz": {
 		"death-title": "&cYou died!",
 		"death-subtitle": "&aRemaining lives: &e%lives%",
 		"lives": [{
