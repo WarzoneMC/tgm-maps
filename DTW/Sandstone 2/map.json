@@ -75,7 +75,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "yellow"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-floor-protection", "yellow-floor-protection"],
+			"regions": ["blue-spawn-protection", "yellow-spawn-protection", "blue-floor-protection", "yellow-floor-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
