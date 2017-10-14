@@ -55,7 +55,7 @@
 				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"], "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond axe", "slot": 2, "unbreakable": true},
-				{"material": "diamond pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
 
 				{"material": "arrow", "slot": 9, "amount": 64},
 

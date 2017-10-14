@@ -64,7 +64,7 @@
 
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 
-				{"type": "item", "material": "pumpkin", "slot": "helmet"},
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["protection_projectile:2"]},
 				{"type": "item", "material": "leather leggings", "slot": "leggings"},
 				{"type": "item", "material": "leather boots", "slot": "boots"}
@@ -72,10 +72,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "stone axe", "leather helmet",
-		"glass", "wood", "bread", "arrow",
-		"pumpkin", "chainmail chestplate", "leather leggings", "leather boots",
-		"obsidian"
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "obsidian"
 	],
 	"filters": [
 		{

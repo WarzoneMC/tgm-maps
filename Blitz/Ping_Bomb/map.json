@@ -1,8 +1,8 @@
 {
 	"name": "Ping Bomb",
-	"authors": ["majjus and ShinyDialga"],
+	"authors": ["majjus, ShinyDialga and Teejers"],
 	"gametype": "Blitz",
-	"version": "1.0.0",
+	"version": "1.1",
 	"teams": [{
 			"id": "red",
 			"name": "Red",
@@ -28,13 +28,13 @@
 			"teams": [
 				"blue"
 			],
-			"coords": "0.5, 26, 47.5, 180"
+			"coords": "41.5, 32, 3.5, 0"
 		},
 		{
 			"teams": [
 				"red"
 			],
-			"coords": "0.5, 26, -59.5, 0"
+			"coords": "41.5, 32, -14.5, 0"
 		}
 	],
 	"blitz": {
@@ -51,24 +51,15 @@
 		]
 	},
 	"itemremove": [
-		"leather helmet", "leather chestplate",
-		"bread"
+		"glowstone"
 	],
 	"kits": [{
 		"name": "Default",
 		"items": [{
 				"type": "item",
-				"material": "end bricks",
-				"slot": 1,
-				"amount": 12
-			},
-			{
-				"material": "leather helmet",
-				"slot": "helmet"
-			},
-			{
-				"material": "leather chestplate",
-				"slot": "chestplate"
+				"material": "glowstone",
+				"slot": 4,
+				"amount": 1
 			}
 		]
 	}]
