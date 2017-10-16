@@ -1,0 +1,213 @@
+{
+   "name":"Haunted Blocks",
+   "authors":[
+      "pepsidawg00, IM_A_H0B0"
+   ],
+   "version":"1.0",
+   "gametype":"DTM",
+   "teams":[
+      {
+         "id":"blue",
+         "name":"Blue",
+         "color":"blue",
+         "max":50,
+         "min":1
+      },
+      {
+         "id":"red",
+         "name":"Red",
+         "color":"red",
+         "max":50,
+         "min":1
+      }
+   ],
+   "spawns":[
+      {
+         "teams":[
+            "spectators"
+         ],
+         "coords":"17.5, 35, -17.5, 0"
+      },
+      {
+         "teams":[
+            "red"
+         ],
+         "coords":"122.5, 26, 72.5, 90"
+      },
+      {
+         "teams":[
+            "blue"
+         ],
+         "coords":"-90.5, 26, 72.5, -90"
+      }
+   ],
+   "dtm":{
+      "monuments":[
+         {
+            "name":"Red Wool",
+            "teams":[
+               "red"
+            ],
+            "materials":[
+               "wool"
+            ],
+            "region":{
+               "min":"-48, 45, 41",
+               "max":"-44, 40, 102"
+            },
+            "health":10
+         },
+         {
+            "name":"Blue Wool",
+            "teams":[
+               "blue"
+            ],
+            "materials":[
+               "wool"
+            ],
+            "region":{
+               "min":"81, 45, 41",
+               "max":"77, 40, 102"
+            },
+            "health":10
+         }
+      ]
+   },
+   "kits":[
+      {
+         "name":"Default",
+         "items":[
+            {
+               "type":"item",
+               "material":"diamond sword",
+               "slot":0,
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"bow",
+               "slot":1,
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"diamond pickaxe",
+               "slot":2,
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"iron axe",
+               "slot":3,
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"wood",
+               "slot":4,
+               "amount":64
+            },
+            {
+               "type":"item",
+               "material":"arrow",
+               "slot":9,
+               "amount":64
+            },
+            {
+               "type":"item",
+               "material":"arrow",
+               "slot":10,
+               "amount":64
+            },
+            {
+               "type":"item",
+               "material":"cooked beef",
+               "slot":8,
+               "amount":64
+            },
+            {
+               "type":"item",
+               "material":"leather helmet",
+               "slot":"helmet",
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"leather chestplate",
+               "slot ":"chestplate ",
+               "unbreakable ":true
+            },
+            {
+               "type":"item",
+               "material":"leather leggings",
+               "slot":"leggings",
+               "unbreakable":true
+            },
+            {
+               "type":"item",
+               "material":"leather boots",
+               "slot":"boots",
+               "unbreakable":true
+            }
+         ]
+      }
+   ],
+   "itemremove":[
+      "leather helmet",
+      "leather chestplate",
+      "leather leggings",
+      "leather boots",
+      "wool"
+   ],
+   "filters":[
+      {
+         "type":"build",
+         "evaluate":"deny",
+         "teams":[
+            "blue",
+            "red"
+         ],
+         "regions":[
+            "blue-spawn-protection",
+            "red-spawn-protection"
+         ],
+         "message":"&cYou are not allowed to modify terrain here."
+      },
+      {
+         "type":"enter",
+         "evaluate":"deny",
+         "teams":[
+            "blue"
+         ],
+         "regions":[
+            "red-spawn-protection"
+         ],
+         "message":"&cYou may not enter the enemy spawn."
+      },
+      {
+         "type":"enter",
+         "evaluate":"deny",
+         "teams":[
+            "red"
+         ],
+         "regions":[
+            "blue-spawn-protection"
+         ],
+         "message":"&cYou may not enter the enemy spawn."
+      }
+   ],
+   "regions":[
+      {
+         "id":"blue-spawn-protection",
+         "type":"cuboid",
+         "min":"-83, 37, 86",
+         "max ":"-96, 20, 57"
+      },
+      {
+         "id":"red-spawn-protection",
+         "type":"cuboid",
+         "min":"116, 37, 86",
+         "max ":"129, 20, 57"
+      }
+   ]
+}
