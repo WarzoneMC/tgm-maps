@@ -55,7 +55,7 @@
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
-				{"material": "wooden pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
 				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 1},
 
 				{"material": "arrow", "slot": 9, "amount": 64},
@@ -68,14 +68,14 @@
 			]
 		},
 		{
-			"name": "Blue",
+			"name": "Ghouls",
 			"teams": ["blue"],
 			"items": [
 				{"material": "skull", "slot": "helmet", "durability": 0}
 			]
 		},
 		{
-			"name": "Red",
+			"name": "Ghasts",
 			"teams": ["red"],
 			"items": [
 				{"material": "skull", "slot": "helmet", "durability": 1}
