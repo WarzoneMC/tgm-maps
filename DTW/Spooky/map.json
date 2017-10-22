@@ -1,0 +1,102 @@
+{
+	"name": "Spooky",
+	"authors": ["Scoolins"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Ghouls",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Ghasts",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "52.5, 130, 1.5, 90" },
+		{ "teams": ["red"], "coords": "-19.5, 43, 74.5, -135" },
+		{ "teams": ["blue"], "coords": "30.5, 43, -69.5, 45" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "35, 50, 64",
+					"max": "37, 55, 62"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-25, 50, -60",
+					"max": "-27, 55, -58"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "wooden pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 1},
+
+				{"material": "arrow", "slot": 9, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 10},
+
+				{"material": "diamond chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "skull", "slot": "helmet", "durability": 0}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "skull", "slot": "helmet", "durability": 1}
+			]
+		}
+	],
+	"itemremove": [
+		"skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "25, 42, -65", "max": "34, oo, -74" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-15, 42, 69", "max": "-24, oo, 78" }
+	]
+}
