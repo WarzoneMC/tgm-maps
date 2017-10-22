@@ -41,7 +41,7 @@
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "night vision", "duration": oo, "amplifier": 25, "particles": false}
+				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false}
 			]
 		}
 	],
