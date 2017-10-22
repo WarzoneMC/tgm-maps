@@ -24,7 +24,7 @@
 		{ "teams": ["red"], "coords": "79.5, 49, 13.5, 180" },
 		{ "teams": ["blue"], "coords": "89.5, 49, -102.5, 0" }
 	],
-	"dtm": {
+	"gametype-settings": {
 		"monuments": [
 			{
 				"name": "Red Wool",
