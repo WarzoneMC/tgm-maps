@@ -2,9 +2,9 @@
 	"name": "Bill's Town Blitz",
 	"authors": ["Yoyo_, Diamyx"],
 	"gametype": "Blitz",
-    "version": "1.0.1",
+	"version": "1.0.1",
 
-    "teams": [
+	"teams": [
 		{
 			"id": "purple",
 			"name": "Purple",
@@ -21,13 +21,13 @@
 		}
 	],
 
-    "spawns": [
+	"spawns": [
 		{ "teams": ["spectators"], "coords": "933.9, 20, -1188.9, 180"},
 		{ "teams": ["purple"], "coords": "968, 6, -1197.5"},
 		{ "teams": ["orange"], "coords": "863, 6, -1219.5, 180"}
 	],
 
-    "kits": [
+	"kits": [
 		{
 			"name": "Default",
 			"items": [
@@ -41,10 +41,11 @@
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
 				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
-				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL":1"], "unbreakable": true}
+				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:1"], "unbreakable": true}
 			],
+
 			"effects": [
-				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false},
+				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false}
 			]
 		}
 	],
