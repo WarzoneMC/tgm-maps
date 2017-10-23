@@ -20,29 +20,29 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-66.5, 52, 1056.5" },
-		{ "teams": ["red"], "coords": "24.5, 17, 1107.5, 145" },
-		{ "teams": ["blue"], "coords": "-57.5, 17, 1107.5, -145" }
+		{ "teams": ["spectators"], "coords": "-66.5, 51, 1056.5" },
+		{ "teams": ["red"], "coords": "24.5, 16, 1107.5, 145" },
+		{ "teams": ["blue"], "coords": "-157.5, 16, 1107.5, 215 " }
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wools",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "-1, 31, 1104",
-					"max": "-1, 38, 1109"
+					"min": "-1, 31, 1102",
+					"max": "-1, 38, 1110"
 				},
 				"health": 10
 			},
 			{
-				"name": "Wools",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "-133, 31, 1104",
-					"max": "-133, 38, 1109"
+					"min": "-133, 31, 1102",
+					"max": "-133, 38, 1110"
 				},
 				"health": 10
 			}
@@ -56,7 +56,7 @@
 				{"type": "item", "material": "bow", "slot": 1},
 				{"type": "item", "material": "wooden pickaxe", "slot": 2},
 				{"type": "item", "material": "stone axe", "slot":3},
-				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
