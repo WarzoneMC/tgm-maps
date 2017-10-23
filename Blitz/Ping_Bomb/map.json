@@ -53,16 +53,6 @@
 	"itemremove": [
 		"glowstone"
 	],
-	"kits": [{
-		"name": "Default",
-		"items": [{
-				"type": "item",
-				"material": "glowstone",
-				"slot": 4,
-				"amount": 1
-			}
-		]
-	}],
 
 	"max-build-height": "30"
 }
