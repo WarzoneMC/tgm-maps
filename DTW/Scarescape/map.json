@@ -2,7 +2,7 @@
 	"name": "Scarescape",
 	"authors": ["Synconix, ViceWatercolour, _Rascal"],
 	"version": "1.0",
-	"gametype": "DTW",
+	"gametype": "DTM",
 	"teams": [
 		{
 			"id": "orange",
