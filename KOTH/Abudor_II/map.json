@@ -5,16 +5,9 @@
 	"gametype": "KOTH",
 	"teams": [
 		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
-			"max": 15,
-			"min": 1
-		},
-		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "gold",
 			"max": 15,
 			"min": 1
 		},
@@ -26,9 +19,16 @@
 			"min": 1
 		},
 		{
-			"id": "yellow",
-			"name": "Yellow",
-			"color": "gold",
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 15,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
 			"max": 15,
 			"min": 1
 		}
