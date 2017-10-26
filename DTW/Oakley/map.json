@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "84.5, 55, -43.5, -90" },
-		{ "teams": ["red"], "coords": "79.5, 49, 13.5, 180" },
-		{ "teams": ["blue"], "coords": "89.5, 49, -102.5, 0" }
+		{ "teams": ["spectators"], "coords": "124.5, 75, 94.5, 90" },
+		{ "teams": ["red"], "coords": "95.5, 49, 151.5, -145" },
+		{ "teams": ["blue"], "coords": "105.5, 49, 35.5, 25" }
 	],
 	"dtm": {
 		"monuments": [
@@ -31,8 +31,8 @@
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "44, 47, 6",
-					"max": "40, oo, 2"
+					"min": "56, 53, 140",
+					"max": "60, 47, 144" 
 				},
 				"health": 10
 			},
@@ -41,8 +41,8 @@
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "124, 47, -96",
-					"max": "128, oo, -92"
+					"min": "140, 47, 42",
+					"max": "144, 53, 46"
 				},
 				"health": 10
 			}
@@ -79,7 +79,7 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "87, 48, -101", "max": "91, 53, -105" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "81, 48, 11", "max": "77, 53, 15" }
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "109, 48, 40", "max": "100, oo, 30" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "91, 48, 11", "max": "100, oo, 145" }
 	]
 }
