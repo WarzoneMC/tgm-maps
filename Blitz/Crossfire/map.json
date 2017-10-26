@@ -3,7 +3,7 @@
 	"authors": ["SheriffSoco"],
 	"gametype": "Blitz",
 	"version": "1.0.0",
-    
+
     "teams": [{
 			"id": "runners",
 			"name": "Runners",
@@ -15,11 +15,11 @@
 			"id": "defenders",
 			"name": "Defenders",
 			"color": "light purple",
-			"max": 25,
+			"max": 5,
 			"min": 1
 		}
 	],
-    
+
     "spawns": [{
 			"teams": [
 				"spectators"
@@ -39,7 +39,7 @@
 			"coords": "758.5, 34, 434.5"
 		}
 	],
-    
+
     "kits": [
         {
             "name": "runners",
@@ -155,9 +155,9 @@
 				"defenders"
 			],
 			"sound": true
-		}        
+		}
     ],
-    
+
     "itemremove": ["string", "sponge", "arrow", "stick", "wood", "sign"]
-    
+
 }
