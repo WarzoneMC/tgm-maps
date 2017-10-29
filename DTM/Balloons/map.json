@@ -42,7 +42,7 @@
 				"materials": ["obsidian"],
 				"region": {
 					"min": "0,22,-48",
-					"max": "0,20,48"
+					"max": "0,20,-48"
 				},
 				"health": 2
 			}
