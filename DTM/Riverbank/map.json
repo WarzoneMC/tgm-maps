@@ -1,0 +1,109 @@
+{
+	"name": "Riverbank",
+	"authors": ["rockymine and yoyo_power"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 25,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-16.5, 7, 0.5, -180" },
+		{ "teams": ["red"], "coords": "-70.5, 20, -5.5, -135" },
+		{ "teams": ["blue"], "coords": "37.5, 20, 6.5, 45" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Back Obby",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-76, 13, 25",
+					"max": "-76, 13, 25"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Obby",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-30, 9, -30",
+					"max": "-30, 9, -30"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Obby &r",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "42, 13, -25",
+					"max": "42, 13, -25"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Obby &r",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-4, 9, 30",
+					"max": "-4, 9, 30"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "boat spruce", "slot": 7},
+
+				{"material": "baked potato", "slot": 8, "amount": 32},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
+	],
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" },
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "28, 9, 15", "max": "38, 24, 5" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-62, 9, -15", "max": "-72, 24, -5" }
+	]
+}
