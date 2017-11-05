@@ -7,14 +7,14 @@
 		{
 			"id": "yellow",
 			"name": "Yellow",
-			"color": "gold",
+			"color": "yellow",
 			"max": 15,
 			"min": 1
 		},
 		{
 			"id": "green",
 			"name": "Green",
-			"color": "dark_green",
+			"color": "green",
 			"max": 15,
 			"min": 1
 		},
