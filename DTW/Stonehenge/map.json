@@ -70,6 +70,7 @@
 				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+				{"type": "item", "material": "iron pickaxe", "slot": 4, "amount": 1},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet"},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
@@ -79,6 +80,21 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool", "iron pickaxe"
+	],
+		"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou are not allowed to build/destroy blocks in this area."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou are not allowed to enter the spawn area." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter the spawn area." }
+	],
+
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-12, 0, 46", "max": "11, oo, 21"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "11, 0, -139", "max": "-13, oo, -113"}
 	]
 }
