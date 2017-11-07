@@ -1,0 +1,127 @@
+{
+	"name": "Golden Drought: DTW",
+	"authors": ["Reshif and Thrasilias"],
+	"version": "4.0",
+	"gametype": "DTM",
+
+
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 25,
+			"min": 1
+		}
+	],
+
+
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "0, 20, 48, 180" },
+		{ "teams": ["red"], "coords": "119.0, 14, 0.0, -90" },
+		{ "teams": ["blue"], "coords": "-120.0, 14, -1.0, 90" }
+	],
+
+
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-127, 14, 25",
+					"max": "-124, 18, 22"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-127, 14, -23",
+					"max": "-124, 18, -26"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "126, 14, -26",
+					"max": "123, 18, -23"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "126, 14, 22",
+					"max": "123, 18, 25"
+				},
+				"health": 10
+			}
+		]
+	},
+
+
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "iron pickaxe", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+
+
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots",
+		"beacon", "string", "wool"
+	],
+
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&f[&9&l!&f] &cYou may not edit the spawn area."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&f[&9&l!&f] &cYou may not edit the spawn area."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&f[&9&l!&f] &cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&f[&9&l!&f] &cYou may not enter this region." }
+	],
+
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "133, 0, -11", "max": "64, oo, 11"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-137, 0, 10", "max": "-65, oo, -12"}
+	]
+}
