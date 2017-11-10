@@ -1,0 +1,109 @@
+{
+	"name": "Midnight Train",
+	"authors": ["pepsidawg00 and dinner1111"],
+	"version": "1.2.6",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 40,
+			"min": 1
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"max": 40,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90" },
+		{ "teams": ["green"], "coords": "-87.0, 29, -201.0" },
+		{ "teams": ["purple"], "coords": "-87.0, 29, -14.9, 180" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-136, 28, -180",
+					"max": "-136, 28, -180"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 28, -182",
+					"max": "-39, 28, -182"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-136, 28, -35",
+					"max": "-136, 28, -35"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 28, -37",
+					"max": "-39, 28, -37"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
+		"glass", "cooked beef", "arrow", "leather helmet", "chainmail chestplate",
+		"leather leggings", "leather boots", "beacon", "obsidian"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["green", "purple"],
+			"regions": ["green-spawn-protection", "purple-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189" },
+		{ "id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6" }
+	]
+}

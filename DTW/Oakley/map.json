@@ -80,6 +80,6 @@
 	],
 	"regions": [
 		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "109, 48, 40", "max": "100, oo, 30" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "91, 48, 11", "max": "100, oo, 145" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "90, 48, 145", "max": "100, oo, 157" }
 	]
 }
