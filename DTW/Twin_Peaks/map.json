@@ -81,8 +81,8 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "180, 0, -145", "max": "194, oo, -115" },
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "177, 0, -145", "max": "200, oo, -115" },
 
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "14, 0, -114", "max": "0, oo, -144" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "17, 0, -114", "max": "-3, oo, -144" }
 	]
 }
