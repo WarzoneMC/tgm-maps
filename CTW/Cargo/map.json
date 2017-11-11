@@ -60,7 +60,7 @@
 				{"material": "bow", "slot": 1},
 				{"material": "iron axe", "slot": 2},
 
-				{"material": "leaves", "slot": 4, "amount": 32},
+				{"material": "wood", "slot": 4, "amount": 64},
 				{"material": "ladder", "slot": 5, "amount": 64},
 
 				{"material": "cooked beef", "slot": 8, "amount": 16},
