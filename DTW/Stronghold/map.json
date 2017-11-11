@@ -24,6 +24,11 @@
 		{ "teams": ["red"], "coords": "500.5, 18, 586.5, 180" },
 		{ "teams": ["blue"], "coords": "500.5, 18, 414.5, 0" }
 	],
+        "killstreaks": [
+                { "count": 1,
+                "repeat": true,
+                "commands": ["give %killername% arrow 8"] }
+        ],
 	"dtm": {
 		"monuments": [
 			{
