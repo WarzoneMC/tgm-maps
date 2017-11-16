@@ -27,7 +27,7 @@
         "killstreaks": [
                 { "count": 1,
                 "repeat": true,
-                "commands": ["give %killername% arrow 8"] }
+                "commands": ["give %killername% arrow 4"] }
         ],
 	"dtm": {
 		"monuments": [
