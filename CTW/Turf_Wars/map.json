@@ -1,0 +1,111 @@
+{
+	"name": "Turf Wars",
+	"authors": ["Chickolympics and moo88888888"],
+	"version": "1.0.7",
+	"gametype": "CTW",
+
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 50, 0.5"},
+		{"teams": ["red"], "coords": "0.5, 128.5, 142.5, 180"},
+		{"teams": ["blue"], "coords": "0.5, 128.5, -142.5"}
+	],
+
+	"ctw": {
+		"wools": [
+			{
+				"name": "Magenta",
+				"color": "magenta",
+				"teams": ["blue"],
+				"region": {"min": "1, 21, -123", "max": "1, 21, -123"}
+			},
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["blue"],
+				"region": {"min": "-1, 21, -123", "max": "-1, 21, -123"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["red"],
+				"region": {"min": "-1, 21, 123", "max": "-1, 21, 123"}
+			},
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["red"],
+				"region": {"min": "1, 21, 123", "max": "1, 21, 123"}
+			}
+		]
+	},
+
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "iron pickaxe", "slot": 2},
+				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots",
+		"beacon", "string", "wool", "arrow"
+	],
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "orange-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "magenta-room", "purple-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "magenta-room", "purple-room"], "message": "&cYou may not enter this region." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region." }
+	],
+
+	"regions": [
+		{"id": "orange-room", "min": "84, 0, -74", "max": "68, oo, -58"},
+		{"id": "yellow-room", "min": "-68, 0, -74", "max": "-84, oo, -58"},
+
+		{"id": "magenta-room", "min": "68, 0, 58", "max": "84, oo, 74"},
+		{"id": "purple-room", "min": "-68, 0, 58", "max": "-84, oo, 74"},
+
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-25, 0, -158", "max": "25, oo, -109"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-25, 0, 109", "max": "25, oo, 158"}
+	]
+}
