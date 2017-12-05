@@ -1,0 +1,108 @@
+{
+	"name": "Merry Drought",
+	"authors": ["Reshif"],
+	"version": "1.1.2",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "116.5, 12, -460.5, 45" },
+		{ "teams": ["red"], "coords": "2.5, 16, -480.5, -45" },
+		{ "teams": ["green"], "coords": "136.5, 16, -346.5, 135" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-35, 20, -489",
+					"max": "-35, 20, -489"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-6, 20, -518",
+					"max": "-6, 20, -518"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "173, 20, -339",
+					"max": "173, 20, -339"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "144, 20, -310",
+					"max": "144, 20, -310"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "quartz block", "slot": 3, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked chicken", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "gold boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "cooked chicken",
+		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
+			"regions": ["red-spawn-protection", "green-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "6, 13, -485", "max": "-2, oo, -477"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "140, 13, -351", "max": "132, oo, -343"}
+	]
+}
