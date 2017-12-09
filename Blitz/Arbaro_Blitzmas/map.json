@@ -1,0 +1,60 @@
+{
+	"name": "Arbaro Blitzmas",
+	"authors": ["PenguinsCubed and carterpaul"],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 20,
+			"min": 1
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 20,
+			"min": 1
+		}
+	],
+
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "55.5, 73, 57.5, 180"},
+		{ "teams": ["red"], "coords": "-0.5, 42, 1.5, -90"},
+		{ "teams": ["green"], "coords": "113.5, 42, 0.5, 90"}
+	],
+
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["ARROW_DAMAGE:1"], "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 12},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:1"], "unbreakable": true}
+			]
+		}
+	],
+
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
+	],
+
+	"max-build-height": "50"
+}

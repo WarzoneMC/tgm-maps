@@ -1,0 +1,134 @@
+{
+	"name": "Steamgrown",
+	"authors": ["Pixelific"],
+	"version": "1.2.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "81.5, 121, 85.5, 90"},
+		{"teams": ["red"], "coords": "46.5, 75, 17.5" },
+		{"teams": ["blue"], "coords": "46.5, 75, 153.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": { 
+					"min": "12, 79, 25",
+					"max": "80, 73, 23" 
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "12, 79, 147",
+					"max": "80, 73, 145"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone axe", "slot": 2},
+				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+	],	
+	"killstreaks": [
+        {
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% arrow 3"]
+		},
+		{
+			"count": 5,
+			"repeat": false,
+			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3"],
+			"message": "%killercolor%%killername% &7is on a kill streak of &2&l%count%&r&7!"
+		},
+		{
+			"count": 10,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.ambient master @a ~ ~ ~ 7",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &6&l%count%&r&7!"
+		},
+		{
+			"count": 25,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.enderdragon.growl master @a ~ ~ ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &c&l%count%&r&7!"
+		},
+		{
+			"count": 50,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.spawn master @a ~ ~ ~ 1000 1.4",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &3&l%count%&r&7!"
+		},
+		{
+			"count": 100,
+			"repeat": false,
+			"commands": [
+				"execute @a ~ ~ ~ playsound ui.toast.challenge_complete master @p ~ ~100 ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16766776],FadeColors:[I;16774912]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
+		}
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "44, 0, 151", "max": "48, oo, 155" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "44, 0, 15", "max": "48, oo, 20" }
+	]
+}

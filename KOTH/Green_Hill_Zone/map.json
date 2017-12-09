@@ -1,0 +1,88 @@
+{
+	"name": "Green Hill Zone",
+	"authors": ["pepsidawg00 and Dinner1111"],
+	"version": "1.0.5",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"max": 32,
+			"min": 1
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"max": 32,
+			"min": 1
+		}
+	],
+
+	"spawns": [
+		{ "teams": ["spectators"], "x": 154.5, "y": 35, "z": 124.5, "yaw": -90 },
+		{ "teams": ["orange"], "x": 147.5, "y": 10, "z": 159.5, "yaw": -45 },
+		{ "teams": ["purple"], "x": 147.5, "y": 10, "z": 89.5, "yaw": -130 }
+	],
+
+	"points": {
+		"target": 600
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Point A",
+				"region": {
+					"min": {"x": 177, "y": 22, "z": 26},
+					"max": {"x": 185, "y": 32, "z": 34}
+				}
+			},
+			{
+				"name": "Center",
+				"region": {
+					"min": {"x": 145, "y": 34, "z": 118},
+					"max": {"x": 157, "y": 44, "z": 130}
+				}
+			},
+			{
+				"name": "Point B",
+				"region": {
+					"min": {"x": 177, "y": 22, "z": 214},
+					"max": {"x": 185, "y": 32, "z": 222}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "wood", "slot": 3, "amount": 24},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreaking": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreaking": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreaking": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "arrow", "chainmail chestplate", "leather boots",
+		"golden apple", "dirt", "golden carrot", "leather leggings"
+	],
+	"filters": [
+		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{ "type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+
+	],
+	"regions": [
+		{"id": "orange-spawn-protection", "min": "156, 8, 189", "max": "140, 23, 156"},
+		{"id": "purple-spawn-protection", "min": "156, 8, 59", "max": "140, 23, 94"}
+	]
+}
