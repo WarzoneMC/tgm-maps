@@ -1,0 +1,88 @@
+{
+	"name": "Festive",
+	"authors": ["_Rascal"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 25,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-22.5, 110, 123.5, 90"},
+		{"teams": ["red"], "coords": "-86.5, 73, 219.5, 180"},
+		{"teams": ["green"], "coords": "-88.5, 73, 27.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-138, 74, 207",
+					"max": "-142, 70, 203"
+				},
+				"health": 10
+			},
+			{
+				"name": "Green Wool",
+				"teams": ["green"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-34, 70, 43",
+					"max": "-38, 74, 39"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "iron spade", "slot": 3, "unbreakable": true},
+				{"material": "wood", "slot": 4, "amount": 64},
+				
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
+			"regions": ["red-spawn-protection", "green-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-82, 0, 231", "max": "-91, oo, 215" },
+
+		{ "id": "green-spawn-protection", "type": "cuboid", "min": "-85, 0, 31", "max": "-94, oo, 15" }
+	]
+}

@@ -1,7 +1,7 @@
 {
 	"name": "SunTest",
-	"authors": ["Teejers"],
-	"version": "1.0.0",
+	"authors": ["Teejers and Scoolins"],
+	"version": "1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "8.5, 10, 8.5, 0" },
-		{ "teams": ["red"], "coords": "29.5, 4, 8.5, 90" },
-		{ "teams": ["blue"], "coords": "-11.5, 4, 8.5, -90" }
+		{ "teams": ["spectators"], "coords": "7.5, 122, 8.5, 180" },
+		{ "teams": ["red"], "coords": "7.5, 104, -78.5" },
+		{ "teams": ["blue"], "coords": "7.5, 104, 95.5, 180" }
 	],
 	"dtm": {
 		"monuments": [
@@ -31,8 +31,8 @@
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "3, 99, 3",
-					"max": "13, 109, 13"
+					"min": "4, 113, 6",
+					"max": "9, 109, 11"
 				},
 				"health": 10
 			},
@@ -41,8 +41,8 @@
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "3, 99, 3",
-					"max": "13, 109, 13"
+					"min": "4, 113, 6",
+					"max": "9, 109, 11"
 				},
 				"health": 10
 			}
@@ -79,7 +79,7 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "53, 30, 45", "max": "38, oo, 28" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "227, 30, 28", "max": "242, oo, 46" }
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "4, 0, 88", "max": "10, 102, 97" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "4, 0, -81", "max": "10, oo, -72" }
 	]
 }
