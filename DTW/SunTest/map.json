@@ -29,7 +29,7 @@
 			{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["gold_block"],
 				"region": {
 					"min": "4, 113, 6",
 					"max": "9, 109, 11"
@@ -39,7 +39,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["gold_block"],
 				"region": {
 					"min": "4, 113, 6",
 					"max": "9, 109, 11"
