@@ -1,0 +1,87 @@
+{
+	"name": "Scarescape",
+	"authors": ["Synconix, ViceWatercolour, _Rascal"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "orange",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-90.5, 76, 1564.5, 90" },
+		{ "teams": ["orange"], "coords": "-136.5, 37, 1670.5, 180" },
+		{ "teams": ["yellow"], "coords": "-137.5, 37, 1457.5, 0" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Orange Wool",
+				"teams": ["orange"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-135, 37, 1633",
+					"max": "-138, 40, 1630"
+				},
+				"health": 10
+			},
+			{
+				"name": "Yellow Wool",
+				"teams": ["yellow"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-138, 37, 1494",
+					"max": "-135, 40, 1497"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "stone pickaxe", "slot": 1},
+				{"type": "item", "material": "stone axe", "slot": 2},
+				{"type": "item", "material": "bow", "slot": 3, "amount": 32},
+				{"type": "item", "material": "log", "slot": 4, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron helmet", "leather chestplate", "chainmail leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "yellow"],
+			"regions": ["orange-spawn-protection", "yellow-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-127, 36, 1660", "max": "-146, oo, 1672" },
+
+		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "-146, 36, 1467", "max": "-127, oo, 1455" }
+	]
+}
