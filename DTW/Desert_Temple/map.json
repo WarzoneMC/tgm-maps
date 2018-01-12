@@ -1,0 +1,88 @@
+{
+	"name": "Desert Temple",
+	"authors": ["crewly, Emooji"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "130, 35, 371" },
+		{ "teams": ["red"], "coords": "186, 14, 300" },
+		{ "teams": ["blue"], "coords": "186, 14, 442" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "156, 16, 307",
+					"max": "152, 20, 311"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "216, 16, 435",
+					"max": "220, 20, 431"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "iron axe", "slot":2},
+				{"type": "item", "material": "iron pickaxe", "slot":3},
+				{"type": "item", "material": "birch plank", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "iron chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "iron chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "184, 15, 443", "max": "191, 16, 435" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "182, 16, 307", "max": "188, 15, 299" }
+	]
+}
