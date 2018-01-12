@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Red Wool",
+				"name": "Gold",
 				"teams": ["red"],
 				"materials": ["gold_block"],
 				"region": {
@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "Blue Wool",
+				"name": "Gold&r",
 				"teams": ["blue"],
 				"materials": ["gold_block"],
 				"region": {
@@ -54,8 +54,9 @@
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0},
 				{"type": "item", "material": "bow", "slot": 1},
-				{"type": "item", "material": "stone axe", "slot": 2},
-				{"type": "item", "material": "log", "slot": 3, "amount": 64},
+				{"type": "item", "material": "stone pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
