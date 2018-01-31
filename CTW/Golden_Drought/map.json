@@ -111,7 +111,7 @@
 		{"id": "magenta-room", "min": "-119, 13, 29", "max": "-130, oo, 18"},
 		{"id": "pink-room", "min": "-119, 13, -19", "max": "-130, oo, -30"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "122, 13, -4", "max": "87, oo, 3"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-123, 13, 3", "max": "-88, oo, -4"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 17, -11", "max": "123, 6, 13"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 17, 10", "max": "-124, 1, -12"}
 	]
 }
