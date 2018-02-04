@@ -1,0 +1,65 @@
+{
+	"name": "Terminal",
+	"authors": ["Brakkie"],
+	"gametype": "Infected",
+	"version": "1.0",
+	"teams": [
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Infected",
+			"name": "Infected",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-118.5, 64, 72.5, 180" },
+		{ "teams": ["infected"], "coords": "-92.5, 61, 62.5, 90" },
+		{ "teams": ["humans"], "coords": "-100.5, 63, 34.5, -45" }
+	],
+	"infection": {
+		"length": 7
+	},
+	"kits": [
+		{
+			"name": "Humans",
+			"teams": ["humans"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		},
+		{
+			"name": "Infected",
+			"teams": ["infected"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+	]
+}
