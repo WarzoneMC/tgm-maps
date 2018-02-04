@@ -1,0 +1,109 @@
+{
+	"name": "Ring Race",
+	"authors": ["Mikeg542"],
+	"version": "1.2.3",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark_purple",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "89.4, 31, 44.5, 180"},
+		{ "teams": ["orange"], "coords": "159.4, 17, -2.5, 90"},
+		{ "teams": ["purple"], "coords": "19.5, 17, -2.5, -90"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Lime",
+				"color": "lime",
+				"teams": ["orange"],
+				"region": {"min": "165, 18, -5", "max": "165, 18, -5"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"teams": ["orange"],
+				"region": {"min": "165, 18, -1", "max": "165, 18, -1"}
+			},
+
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["purple"],
+				"region": {"min": "13, 18, -5", "max": "13, 18, -5"}
+			},
+			{
+				"name": "Red",
+				"color": "red",
+				"teams": ["purple"],
+				"region": {"min": "13, 18, -1", "max": "13, 18, -1"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0},
+				{"material": "bow", "slot": 1},
+				{"material": "diamond pickaxe", "slot": 2},
+				{"material": "iron axe", "slot": 3},
+
+				{"material": "glass", "slot": 5, "amount": 64},
+				{"material": "wood", "slot": 6, "amount": 64},
+
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
+				{"material": "leather leggings", "slot": "leggings"},
+				{"material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
+		"glass", "wood", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
+		"beacon"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection", "red-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple"],
+			"regions": ["purple-spawn-protection", "orange-spawn-protection", "lime-room", "blue-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "yellow-room", "red-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "lime-room", "blue-room"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "lime-room", "min": "-43, 0, -64", "max": "-63, oo, -44"},
+		{"id": "blue-room", "min": "-43, 0, 58", "max": "-63, oo, 38"},
+
+		{"id": "yellow-room", "min": "221, 0, 38", "max": "241, oo, 58"},
+		{"id": "red-room", "min": "221, 0, -64", "max": "241, oo, -44"},
+
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "152, 14, 9", "max": "166, oo, -15"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "12, 14, 9", "max": "26, oo, -15"}
+	]
+}
