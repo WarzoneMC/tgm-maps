@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wools",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "Wools&r",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
