@@ -14,10 +14,10 @@
 	],
 	"ctw": {
 		"wools": [
-			{"name": "Purple", "color": "purple", "teams": ["blue"], "region": {"min": "-2, 10, -81", "max": "-2, 10, -81"},
-			{"name": "Magenta", "color": "magenta", "teams": ["blue"], "region": {"min": "1, 10, -81", "max": "1, 10, -81"},
-			{"name": "Cyan", "color": "cyan", "teams": ["red"], "region": {"min": "-3, 24, 31", "max": "-3, 24, 31"},
-			{"name": "Blue", "color": "light blue", "teams": ["red"], "region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}
+			{"name": "Purple", "color": "purple", "teams": ["blue"], "region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}},
+			{"name": "Magenta", "color": "magenta", "teams": ["blue"], "region": {"min": "1, 10, -81", "max": "1, 10, -81"}},
+			{"name": "Cyan", "color": "cyan", "teams": ["red"], "region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}},
+			{"name": "Blue", "color": "light blue", "teams": ["red"], "region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}}
 		]
 	},
 	"kits": [
@@ -37,12 +37,11 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "leather leggings", "leather helmet",
-		"glass", "wood", "cooked beef", "arrow", "beacon", "leather boots", "chainmail chestplate",
+		"iron sword", "bow", "stone axe", "leather helmet", "leather leggings", "leather helmet", "wood", "cooked beef", "leather boots", "chainmail chestplate"
 	],
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room"], "message": "&cYou are not allowed to modify terrain here."}
 	],
 	"regions": [
 		{"id": "blue-room", "min": "31, 22, 41", "max": "37, 30, 37"},
@@ -50,6 +49,5 @@
 
 		{"id": "purple-room", "min": "-7, 22, 27", "max": "-13, 30, 23"},
 		{"id": "pink-room", "min": "-13, 30, 37", "max": "-7, 22, 41"}
-
 	]
 }
