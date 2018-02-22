@@ -1,0 +1,57 @@
+{
+	"name": "Itty Bitty",
+	"authors": ["_Rascal"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{"id": "blue", "name": "Blue", "color": "blue", "min": 1, "max": 50},
+		{"id": "red", "name": "Red", "color": "red", "min": 1, "max": 50}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "12.5, 35, 14" },
+		{ "teams": ["red"], "coords": "-1, 23, 32" },
+		{ "teams": ["blue"], "coords": "26, 23, 32.5" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "25, 23, 25",
+					"max": "30, 27, 39"
+				},
+				"health": 10
+			},
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-6, 27, 25",
+					"max": "-1, 23, 39"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "wood", "slot": 3, "amount": 8},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
+	]
+}
