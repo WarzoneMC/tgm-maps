@@ -1,0 +1,106 @@
+{
+	"name": "Yellowstone",
+	"authors": ["timaeusTestified"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "moon",
+			"name": "Moon Tribe",
+			"color": "dark aqua",
+			"max": 25,
+			"min": 1
+		},
+		{
+			"id": "sun",
+			"name": "Sun Tribe",
+			"color": "yellow",
+			"max": 25,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "97.5, 60, -126.5, 90"},
+		{"teams": ["moon"], "coords": "0.5, 8, -258.5"},
+		{"teams": ["sun"], "coords": "0.5, 8, 5.4, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["moon"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "69, 22, -234",
+					"max": "69, 22, -234" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["moon"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-69, 22, -234",
+					"max": "-69, 22, -234" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["sun"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-69, 22, -20",
+					"max": "-69, 22, -20"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["sun"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "69, 22, -20",
+					"max": "69, 22, -20"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "cobblestone", "slot": 3, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "stone sword"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["moon", "sun"],
+			"regions": ["moon-spawn-protection", "sun-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["moon"], "regions": ["sun-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{"type": "enter", "evaluate": "deny", "teams": ["sun"], "regions": ["moon-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "moon-spawn-protection", "type": "cuboid", "min": "-8, 0, -266", "max": "8, oo, -252"},
+		{"id": "sun-spawn-protection", "type": "cuboid", "min": "-8, 0, 12", "max": "8, oo, 12"}
+	]
+}
