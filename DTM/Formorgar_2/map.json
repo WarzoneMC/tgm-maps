@@ -1,0 +1,107 @@
+{
+	"name": "Formorgar 2",
+	"authors": ["timaeusTestified, Xuph, and Edans"],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "light purple",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-70.5, 110, 129.5, -90"},
+		{"teams": ["purple"], "coords": "7.5, 81, 234.5, 180"},
+		{"teams": ["yellow"], "coords": "7.5, 81, 24.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-23, 87, 251",
+					"max": "-23, 87, 251" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "37, 87, 251",
+					"max": "37, 87, 251" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "37, 87, 7",
+					"max": "37, 87, 7"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-23, 87, 7",
+					"max": "-23, 87, 7"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "yellow"],
+			"regions": ["purple-spawn-protection", "yellow-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-3, 0, 212", "max": "17, oo, 243"},
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-3, 0, 15", "max": "17, oo, 46"}
+	]
+}
