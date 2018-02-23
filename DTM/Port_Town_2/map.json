@@ -1,0 +1,107 @@
+{
+	"name": "Port Town 2",
+	"authors": ["timaeusTestified and Fouled"],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "light purple",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-85.5, 40, 23.5, -90"},
+		{"teams": ["purple"], "coords": "0.5, 14, 137.5, 180"},
+		{"teams": ["green"], "coords": "0.5, 14, -88.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-20, 16, 70",
+					"max": "-20, 16, 70" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "20, 16, 70",
+					"max": "20, 16, 70" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "20, 16, -22",
+					"max": "20, 16, -22"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-20, 16, -22",
+					"max": "-20, 16, -22"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "green"],
+			"regions": ["purple-spawn-protection", "green-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "4, 0, 142", "max": "-4, oo, 142"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "4, 0, -94", "max": "-4, oo, -67"}
+	]
+}
