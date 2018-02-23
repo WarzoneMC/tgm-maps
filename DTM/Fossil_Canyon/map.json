@@ -1,0 +1,127 @@
+{
+	"name": "Fossil Canyon",
+	"authors": ["Kagayamas"],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "22.5, 122, 4.5, 90"},
+		{"teams": ["blue"], "coords": "-7.5, 72, 91.5, 135"},
+		{"teams": ["red"], "coords": "-65.5, 72, -84.5, -45"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument C",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-9, 76, 59",
+					"max": "-9, 76, 59" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-66, 72, 88",
+					"max": "-66, 72, 88" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-40, 73, 39",
+					"max": "-40, 73, 39" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument C&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-65, 76, -53",
+					"max": "-65, 76, -53"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-8, 72, -82",
+					"max": "-8, 72, -82"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-34, 73, -33",
+					"max": "-34, 73, -33"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "wood"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-3, 0, 96", "max": "-14, oo, 85"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-61, 0, -80", "max": "-71, oo, -90"}
+	]
+}
