@@ -1,0 +1,107 @@
+{
+	"name": "Wonderland",
+	"authors": ["IzJust4Fun and Crazy_Clownz"],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "white",
+			"name": "White",
+			"color": "white",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-690.5, 93, -1223.5, 180"},
+		{"teams": ["white"], "coords": "-690.5, 55, -1344.5"},
+		{"teams": ["red"], "coords": "-690.5, 55, -1102.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["white"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-647, 57, -1345",
+					"max": "-647, 57, -1345" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["white"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-735, 57, -1345",
+					"max": "-735, 57, -1345" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-735, 57, -1103",
+					"max": "-735, 57, -1103"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-647, 57, -1103",
+					"max": "-647, 57, -1103"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["white", "red"],
+			"regions": ["white-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "white-spawn-protection", "type": "cuboid", "min": "-686, 0, -1340", "max": "-696, oo, -1350"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-686, 0, -1098", "max": "-696, oo, -1108"}
+	]
+}
