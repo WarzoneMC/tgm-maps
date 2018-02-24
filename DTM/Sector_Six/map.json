@@ -1,0 +1,127 @@
+{
+	"name": "Sector Six",
+	"authors": ["Ogrey"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark aqua",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "106.5, 83, -74.5, 90"},
+		{"teams": ["orange"], "coords": "0.5, 35, -154.5"},
+		{"teams": ["cyan"], "coords": "0.5, 35, 0.5, -180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Back Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "0, 38, -226",
+					"max": "0, 38, -226" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "71, 38, -155",
+					"max": "71, 38, -155" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-71, 38, -155",
+					"max": "-71, 38, -155" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Monument&r",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0, 38, 71",
+					"max": "0, 38, 71"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-71, 38, 0",
+					"max": "-71, 38, 0"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "71, 38, 0",
+					"max": "71, 38, 0"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "cyan"],
+			"regions": ["orange-spawn-protection", "cyan-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-8, 0, -163", "max": "8, oo, -147"},
+		{"id": "cyan-spawn-protection", "type": "cuboid", "min": "-8, 0, -8", "max": "8, oo, 8"}
+	]
+}
