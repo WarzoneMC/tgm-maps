@@ -1,0 +1,76 @@
+{
+	"name": "Cavum",
+	"authors": ["thestrangeboy1 and moo88888888"],
+	"gametype": "TDM",
+	"version": "1.0",
+    "teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 15,
+			"min": 1
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "light purple",
+			"max": 15,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 15,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 15,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-0.5, 85, -0.5"},
+		{"teams": ["blue"], "coords": "-52, 42, 45, -135"},
+		{"teams": ["red"], "coords": "52, 42, -45, 45"},
+		{"teams": ["purple"], "coords": "45, 42, 52, 135"},
+		{"teams": ["yellow"], "coords": "-45, 42, -52, -45"}
+	],
+    "points":{
+        "target": 60
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+				
+				{"material": "leather helmet", "slot": "helmet"},
+				{"material": "chainmail chestplate", "slot": "chestplate"},
+				{"material": "iron leggings", "slot": "leggings"},
+				{"material": "leather boots", "slot": "boots"}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "iron leggings", "chainmail chestplate"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "purple", "yellow"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
