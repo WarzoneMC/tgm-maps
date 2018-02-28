@@ -3,8 +3,9 @@
 	"authors": ["SheriffSoco"],
 	"gametype": "Blitz",
 	"version": "1.0.0",
-
-    "teams": [{
+    "stats": {"disable": true},
+    "teams": [
+        {
 			"id": "runners",
 			"name": "Runners",
 			"color": "gray",
@@ -19,98 +20,35 @@
 			"min": 1
 		}
 	],
-
-    "spawns": [{
-			"teams": [
-				"spectators"
-			],
-			"coords": "756.5, 95, 375.5, 0"
-		},
-		{
-			"teams": [
-				"runners"
-			],
-			"coords": "754.5, 34, 434.5"
-		},
-		{
-			"teams": [
-				"defenders"
-			],
-			"coords": "758.5, 34, 434.5"
-		}
+    "spawns": [
+        {"teams": ["spectators"], "coords": "756.5, 95, 375.5, 0"},
+		{"teams": ["runners"], "coords": "754.5, 34, 434.5"},
+		{"teams": ["defenders"], "coords": "758.5, 34, 434.5"}
 	],
-
     "kits": [
         {
             "name": "runners",
             "teams": ["runners"],
             "items": [
-                {
-                    "type": "item",
-                    "material": "wood sword",
-                    "slot": 0,
-                    "amount": 1
-                },{
-                    "type": "item",
-                    "material": "boat",
-                    "slot": 1,
-                    "amount": 1
-                },
-                {
-                    "material": "leather helmet",
-                    "slot": "helmet"
-                },
-                {
-                    "material": "leather chestplate",
-                    "slot": "chestplate"
-                },
-                {
-                    "material": "leather leggings",
-                    "slot": "leggings"
-                },
-                {
-                    "material": "leather boots",
-                    "slot": "boots"
-                }
+                {"type": "item", "material": "wood sword", "slot": 0, "amount": 1},
+                {"type": "item", "material": "boat", "slot": 1, "amount": 1},
+                {"material": "leather helmet", "slot": "helmet"},
+                {"material": "leather chestplate", "slot": "chestplate"},
+                {"material": "leather leggings", "slot": "leggings"},
+                {"material": "leather boots", "slot": "boots"}
             ]
         },
         {
             "name": "defenders",
             "teams": ["defenders"],
             "items": [
-                {
-                    "type": "item",
-                    "material": "bow",
-                    "slot": 0,
-                    "amount": 1
-                },
-                {
-                    "type": "item",
-                    "material": "feather",
-                    "slot": 8,
-                    "amount": 1
-                },{
-                    "type": "item",
-                    "material": "arrow",
-                    "slot": 8,
-                    "amount": 1
-                },
-                {
-                    "material": "leather helmet",
-                    "slot": "helmet"
-                },
-                {
-                    "material": "leather chestplate",
-                    "slot": "chestplate"
-                },
-                {
-                    "material": "leather leggings",
-                    "slot": "leggings"
-                },
-                {
-                    "material": "leather boots",
-                    "slot": "boots"
-                }
+                {"type": "item", "material": "bow", "slot": 0, "amount": 1},
+                {"type": "item", "material": "feather", "slot": 8, "amount": 1},
+                {"type": "item", "material": "arrow", "slot": 8, "amount": 1},
+                {"material": "leather helmet", "slot": "helmet"},
+                {"material": "leather chestplate", "slot": "chestplate"},
+                {"material": "leather leggings", "slot": "leggings"},
+                {"material": "leather boots", "slot": "boots"}
             ],
             "effects": [
 				{"effect": "speed", "duration": 600, "amplifier": 2, "particles": false}
@@ -157,7 +95,5 @@
 			"sound": true
 		}
     ],
-
     "itemremove": ["string", "sponge", "arrow", "stick", "wood", "sign"]
-
 }
