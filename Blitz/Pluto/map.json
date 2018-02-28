@@ -1,9 +1,9 @@
 {
 	"name": "Pluto",
-	"authors": ["Boats", "Vovl", "Luuke"],
+	"authors": ["Boats, Vovl, and Luuke"],
 	"gametype": "Blitz",
     "version": "1.0.0",
-
+    "max-build-height": "90",
     "teams": [
 		{
 			"id": "blue",
@@ -21,27 +21,19 @@
 		}
 	],
     "spawns": [
-		{ "teams": ["spectators"], "coords": "-15.5, 83, 37.5, -90" },
-		{ "teams": ["blue"], "coords": "0.5, 75, -5.5, -12" },
-		{ "teams": ["red"], "coords": "14.5, 75, 80.5, 168" }
+		{"teams": ["spectators"], "coords": "-15.5, 83, 37.5, -90"},
+		{"teams": ["blue"], "coords": "0.5, 75, -5.5, -12"},
+		{"teams": ["red"], "coords": "14.5, 75, 80.5, 168"}
 	],
-
     "blitz" : {
         "death-title": "&cYou died!",
         "death-subtitle": "&aRemaining lives: &e%lives%",
         "actionbar": "&bRemaining lives: &a%lives%",
         "lives": [
-            {
-                "team": "blue",
-                "lives": 3
-            },
-            {
-                "team": "red",
-                "lives": 3
-            }
+            {"team": "blue", "lives": 3},
+            {"team": "red", "lives": 3}
         ]
     },
-
     "kits": [
 		{
 			"name": "Default",
@@ -62,7 +54,5 @@
 				{"material": "iron boots", "slot": "boots"}
 			]
 		}
-	],
-
-	"max-build-height": "90"
+	]
 }

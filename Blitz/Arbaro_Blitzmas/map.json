@@ -3,7 +3,6 @@
 	"authors": ["PenguinsCubed and carterpaul"],
 	"gametype": "Blitz",
 	"version": "1.0.0",
-
 	"teams": [
 		{
 			"id": "red",
@@ -20,13 +19,11 @@
 			"min": 1
 		}
 	],
-
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "55.5, 73, 57.5, 180"},
-		{ "teams": ["red"], "coords": "-0.5, 42, 1.5, -90"},
-		{ "teams": ["green"], "coords": "113.5, 42, 0.5, 90"}
+		{"teams": ["spectators"], "coords": "55.5, 73, 57.5, 180"},
+		{"teams": ["red"], "coords": "-0.5, 42, 1.5, -90"},
+		{"teams": ["green"], "coords": "113.5, 42, 0.5, 90"}
 	],
-
 	"kits": [
 		{
 			"name": "Default",
@@ -44,7 +41,6 @@
 			]
 		}
 	],
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
@@ -53,8 +49,6 @@
 		}
 	],
 	"regions": [
-		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	],
-
-	"max-build-height": "50"
 }

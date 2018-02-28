@@ -1,9 +1,8 @@
 {
 	"name": "Bill's Town Blitz",
-	"authors": ["Yoyo_, Diamyx"],
+	"authors": ["Yoyo_ and Diamyx"],
 	"gametype": "Blitz",
 	"version": "1.0.1",
-
 	"teams": [
 		{
 			"id": "purple",
@@ -20,13 +19,11 @@
 			"min": 1
 		}
 	],
-
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "933.9, 20, -1188.9, 180"},
-		{ "teams": ["purple"], "coords": "968, 6, -1197.5"},
-		{ "teams": ["orange"], "coords": "863, 6, -1219.5, 180"}
+		{"teams": ["spectators"], "coords": "933.9, 20, -1188.9, 180"},
+		{"teams": ["purple"], "coords": "968, 6, -1197.5"},
+		{"teams": ["orange"], "coords": "863, 6, -1219.5, 180"}
 	],
-
 	"kits": [
 		{
 			"name": "Default",
@@ -36,7 +33,6 @@
 				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
-
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
@@ -57,9 +53,6 @@
 		}
 	],
 	"regions": [
-		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" }
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	],
-
-	"max-build-height": "50"
 }
-

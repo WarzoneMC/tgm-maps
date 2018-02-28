@@ -21,7 +21,7 @@
 		}
 	],
     "spawns": [
-        {"teams": ["spectators"], "coords": "756.5, 95, 375.5, 0"},
+		{"teams": ["spectators"], "coords": "756.5, 95, 375.5, 0"},
 		{"teams": ["runners"], "coords": "754.5, 34, 434.5"},
 		{"teams": ["defenders"], "coords": "758.5, 34, 434.5"}
 	],
