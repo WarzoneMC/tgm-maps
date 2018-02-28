@@ -3,9 +3,17 @@
 	"authors": ["majjus, ShinyDialga, and Teejers"],
 	"gametype": "Blitz",
 	"version": "1.1",
-	"itemremove": ["glowstone"],
+	"itemremove": ["glowstone", "leather helmet"],
 	"stats": {"disable": true},
 	"max-build-height": "30",
+	"kits":  [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+			]
+		}
+	],
 	"teams": [
 		{
 			"id": "red",
