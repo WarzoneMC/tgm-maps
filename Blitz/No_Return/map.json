@@ -24,12 +24,9 @@
 		{"teams": ["blue"], "coords": "0.5, 19, -54.5, 0"},
 		{"teams": ["purple"], "coords": "0.5, 19, 54.5, 180"}
 	],
-	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "iron boots"
-	],
 	"kits": [
 		{
-		"name": "Default",
+			"name": "Default",
 			"items": [
 				{"type": "item", "material": "bow", "enchantments": ["arrow damage:1", "arrow infinite:1", "damage all:2", "knockback:2"], "slot": 0},
 				{"type": "item", "material": "stone sword", "slot": 1},
@@ -49,6 +46,9 @@
 			"regions": ["noblox"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"regions": [
 		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
