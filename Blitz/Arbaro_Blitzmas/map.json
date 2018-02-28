@@ -50,5 +50,5 @@
 	],
 	"regions": [
 		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	],
+	]
 }

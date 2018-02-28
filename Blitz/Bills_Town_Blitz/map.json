@@ -39,7 +39,6 @@
 				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:1"], "unbreakable": true}
 			],
-
 			"effects": [
 				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false}
 			]
@@ -54,5 +53,5 @@
 	],
 	"regions": [
 		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	],
+	]
 }
