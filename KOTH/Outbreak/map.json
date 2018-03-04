@@ -42,13 +42,13 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0},
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "golden apple", "slot": 1, "amount": 1},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["blast_protection:3"]},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "leather boots", "slot": "boots"}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["blast_protection:3"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],

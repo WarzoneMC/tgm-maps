@@ -52,18 +52,18 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0},
-				{"type": "item", "material": "bow", "slot": 1},
-				{"type": "item", "material": "iron pickaxe", "slot": 2},
-				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64, "data": 5},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
-				{"type": "item", "material": "iron helmet", "slot": "helmet"},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "iron boots", "slot": "boots"}
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],

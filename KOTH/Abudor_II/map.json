@@ -79,8 +79,8 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0},
-				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
 				{"type": "item", "material": "golden carrot", "slot": 7, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 8, "amount": 64},

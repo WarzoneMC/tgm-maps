@@ -72,20 +72,20 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0},
-				{"type": "item", "material": "bow", "slot": 1},
-				{"type": "item", "material": "diamond pickaxe", "slot": 2},
-				{"type": "item", "material": "iron axe", "slot": 3},
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
 				{"type": "item", "material": "log", "slot": 5, "amount": 64},
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "leather boots", "slot": "boots"}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],

@@ -35,10 +35,10 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "leather helmet", "slot": "helmet"},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate"},
-				{"type": "item", "material": "leather leggings", "slot": "leggings"},
-				{"type": "item", "material": "leather boots", "slot": "boots"}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
 				{"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}

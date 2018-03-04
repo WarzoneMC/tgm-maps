@@ -56,10 +56,10 @@
 		{
 			"name": "Default",
 			"items": [
-				{"material": "iron sword", "slot": 0},
-				{"material": "bow", "slot": 1},
-				{"material": "iron pickaxe", "slot": 2},
-				{"material": "iron axe", "slot": 3},
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"material": "log", "slot": 5, "amount": 64},
 
@@ -67,9 +67,9 @@
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
-				{"material": "leather chestplate", "slot": "chestplate"},
-				{"material": "chainmail leggings", "slot": "leggings"},
-				{"material": "leather boots", "slot": "boots"}
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
