@@ -3,6 +3,7 @@
 	"authors": ["N11ck", "Teejers", "BennyDoesStuff", "TehRaptor", "Bearinx"],
 	"gametype": "Infected",
 	"version": "1.2.0",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "humans",

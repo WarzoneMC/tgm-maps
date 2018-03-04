@@ -3,6 +3,7 @@
 	"authors": ["N11ck", "Teejers", "RedDemptr", "Pixelific"],
 	"gametype": "Infected",
 	"version": "1.0",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "humans",

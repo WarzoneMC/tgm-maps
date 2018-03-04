@@ -3,6 +3,7 @@
 	"authors": ["TehRaptor", "Kasperio", "Nightsent", "LordRobot_"],
 	"gametype": "Infected",
 	"version": "1.0.0",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "humans",
