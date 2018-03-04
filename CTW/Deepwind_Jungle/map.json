@@ -57,10 +57,10 @@
 		{
 			"name": "Default",
 			"items": [
-				{"material": "iron sword", "slot": 0},
-				{"material": "bow", "slot": 1},
-				{"material": "diamond pickaxe", "slot": 2},
-				{"material": "iron axe", "slot": 3},
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "wood", "slot": 6, "amount": 64},
@@ -69,10 +69,10 @@
 
 				{"material": "arrow", "slot": 28, "amount": 64},
 
-				{"material": "leather helmet", "slot": "helmet"},
-				{"material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"]},
-				{"material": "leather leggings", "slot": "leggings"},
-				{"material": "leather boots", "slot": "boots"}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],

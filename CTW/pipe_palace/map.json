@@ -57,20 +57,20 @@
 		{
 			"name": "Default",
 			"items": [
-				{"material": "stone sword", "slot": 0},
-				{"material": "bow", "slot": 1},
-				{"material": "iron axe", "slot": 2},
-				{"material": "iron pickaxe", "slot": 3},
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
 				{"material": "wood", "slot": 4, "amount": 64},
 				
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"material": "arrow", "slot": 28, "amount": 64},
 
-				{"material": "leather helmet", "slot": "helmet"},
-				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["protection:1"]},
-				{"material": "chainmail leggings", "slot": "leggings"},
-				{"material": "leather boots", "slot": "boots"}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["protection:1"], "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
