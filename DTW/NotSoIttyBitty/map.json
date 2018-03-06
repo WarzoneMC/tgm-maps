@@ -1,0 +1,140 @@
+{
+	"name": "Not So Itty Bitty",
+	"authors": ["_Rascal"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"stats": {"disable": true},
+	"teams": [
+		{"id": "blue", "name": "Blue", "color": "blue", "min": 1, "max": 50},
+		{"id": "red", "name": "Red", "color": "red", "min": 1, "max": 50}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "133.5, 74, -11.5, 180"},
+		{ "teams": ["red"], "coords": "-90.5, 27, -133.5, -90"},
+		{ "teams": ["blue"], "coords": "358.5, 27, -135.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Wool A",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "342, 27, -231",
+					"max": "342, 27, -231"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool B",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "421, 79, -199",
+					"max": "421, 79, -199"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool C",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "358, 77, -136",
+					"max": "358, 77, -136"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool D",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "421, 79, -72",
+					"max": "421, 79, -72"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool E",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "342, 27, -40",
+					"max": "342, 27, -40"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool A&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-75, 27, -39",
+					"max": "-75, 27, -39"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool B&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-154, 79, -71",
+					"max": "-154, 79, -71"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool C&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-91, 77, -134",
+					"max": "-91, 77, -134"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool D&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-154, 79, -198",
+					"max": "-154, 79, -198"
+				},
+				"health": 1
+			},
+			{
+				"name": "Wool E&r",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-75, 27, -230",
+					"max": "-75, 27, -230"
+				},
+				"health": 1
+			},
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "wood", "slot": 2, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "iron sword", "stone axe"
+	]
+}
