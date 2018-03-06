@@ -1,0 +1,99 @@
+{
+    "name": "Immitis FFA",
+    "version": "1.0.0",
+    "gametype": "FFA",
+    "authors": ["last_username"],
+    "stats": {"disable": true},
+    "teams": [
+        {"id": "players", "name": "Players", "color": "dark_aqua", "min": 1, "max": 40}
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-41.5, 267, 21.5, -135"},
+		{"teams": ["players"], "coords": "-43.5, 22, -10.5"},
+		{"teams": ["players"], "coords": "-17.5, 24, 15.5"},
+		{"teams": ["players"], "coords": "2.5, 24, 11.5"},
+		{"teams": ["players"], "coords": "30.5, 5, 14.5"},
+		{"teams": ["players"], "coords": "9.5, 10, -1.5"},
+		{"teams": ["players"], "coords": "-6.5, 24, -22.5"},
+		{"teams": ["players"], "coords": "-26.5, 16, -47.5"},
+		{"teams": ["players"], "coords": "-33.5, 6, -19.5"},
+		{"teams": ["players"], "coords": "8.5, 16, -72.5"}
+    ],
+    "ffa": {
+        "timeLimit": {
+            "enabled": true,
+            "limit": 600
+        },
+        "killLimit": 25
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "stone sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
+                {"material": "arrow", "slot": 2, "amount": 10},
+                {"material": "golden apple", "slot": 8},
+                {"material": "cooked beef", "slot": 8, "amount": 32},
+                
+                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
+            ]
+        }
+    ],
+    "killstreaks": [
+        {
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
+		{
+			"count": 5,
+			"repeat": false,
+			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3"],
+			"message": "%killercolor%%killername% &7is on a kill streak of &2&l%count%&r&7!"
+		},
+		{
+			"count": 10,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.ambient master @a ~ ~ ~ 7",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &6&l%count%&r&7!"
+		},
+		{
+			"count": 25,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.enderdragon.growl master @a ~ ~ ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &c&l%count%&r&7!"
+		},
+		{
+			"count": 50,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.spawn master @a ~ ~ ~ 1000 1.4",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &3&l%count%&r&7!"
+		},
+		{
+			"count": 100,
+			"repeat": false,
+			"commands": [
+				"execute @a ~ ~ ~ playsound ui.toast.challenge_complete master @p ~ ~100 ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16766776],FadeColors:[I;16774912]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
+		}
+	],
+    "itemremove": ["stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"]
+}
