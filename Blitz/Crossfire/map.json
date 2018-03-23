@@ -32,8 +32,7 @@
             "items": [
                 {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
                 {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-                {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"material": "leather boots", "slot": "boots", "unbreakable": true}
+                {"material": "leather leggings", "slot": "leggings", "unbreakable": true}
             ]
         },
         {
