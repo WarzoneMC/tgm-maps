@@ -7,14 +7,14 @@
 		{
 			"id": "blue",
 			"name": "Blue",
-			"color": "dark blue",
+			"color": "blue",
 			"max": 50,
 			"min": 1
 		},
 		{
 			"id": "red",
 			"name": "Red",
-			"color": "dark red",
+			"color": "red",
 			"max": 50,
 			"min": 1
 		}
@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Red Wool",
+				"name": "&4Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
@@ -37,7 +37,7 @@
 				"health": 10
 			},
 			{
-				"name": "Blue Wool",
+				"name": "&1Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
