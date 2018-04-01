@@ -1,19 +1,4 @@
-Stonehenge
-WarlockDTW
-Sandstone 2
-Yellowstone
-Village 2
-Castles
-Deepwind Jungle
-Golden Drought
-Rooted
-Avalanche Mini
-Stronghold
-Aerial Conquest
-Sandstone
-Ring Race
-Terrace
-Cargo
-Twin Peaks
-Terrace 2
-Gardens
+Weird Arches
+Terrace 3
+DriftSnow
+Skygrounds
