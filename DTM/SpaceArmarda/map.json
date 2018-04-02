@@ -1,0 +1,89 @@
+{
+	"name": "Space Armarda",
+	"authors": ["_Rascal and Mega_Rascal"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Federation",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "orange",
+			"name": "Space Pirates",
+			"color": "gold",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-113.5, 78, 59.5"},
+		{"teams": ["blue"], "coords": "-19.5, 25, 2.5, -90"},
+		{"teams": ["orange"], "coords": "-207.5, 25, 116.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Nexus",
+				"teams": ["blue"],
+				"materials": ["pumpkin"],
+				"region": { 
+					"min": "-51, 14, 2",
+					"max": "-51, 14, 2" 
+				},
+				"health": 25
+			},
+			{
+				"name": "Nexus&r",
+				"teams": ["orange"],
+				"materials": ["pumpkin"],
+				"region": {
+					"min": "-177, 14, 116",
+					"max": "-177, 14, 116"
+				},
+				"health": 25
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"material": "stained glass", "slot": 3, "amount": 64, "durability": 8},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "pumpkin"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "orange"],
+			"regions": ["blue-spawn-protection", "orange-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["blue-nexus", "orange-nexus"], "message": ""},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-8, 21, 1", "max": "-25, 27, 3"},
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-203, 27, 115", "max": "-220, 21, 117"},
+
+		{"id": "orange-nexus", "type": "cuboid", "min": "-175, 19, 108", "max": "-205, 12, 123"},
+		{"id": "blue-nexus", "type": "cuboid", "min": "-23, 12, -5", "max": "-54, 19, 9"}
+	]
+}
