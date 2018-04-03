@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map name="Quintus: Origins" version="1.1.0" spec="1.0.0">
+    <include src="defaults.xml"/>
+    <gametype>dtm</gametype>
+    <include src="Shared/reward-one-gap.xml"/>
+    <authors>
+        <author uuid="3893a242cc17447e9b1c774fc8941af8"/> <!-- G_SKIPPY -->
+    </authors>
+    <teams>
+        <team id="purple" color="purple" min="2" max="15">{colors.purple}</team>
+        <team id="cyan" color="cyan" min="2" max="15">{colors.cyan}</team>
+    </teams>
+    <spawns>
+        <!-- Spectator spawn -->
+        <spawn>
+            <regions>
+                <point yaw="-90">-30.5, 90, -839.5</point>
+            </regions>
+        </spawn>
+        <!-- Team spawns -->
+        <spawn team="purple" loadout="default" yaw="180">
+            <regions>
+                <point yaw="180">40.5, 34, -776.5</point>
+            </regions>
+        </spawn>
+        <spawn team="cyan" loadout="default" yaw="0">
+            <regions>
+                <point yaw="0">40.5, 34, -902.5</point>
+            </regions>
+        </spawn>
+    </spawns>
+    <objectives>
+        <monuments materials="obsidian">
+            <monuments owner="purple">
+                <monument name="{directions.front-left}">
+                    <region>
+                        <block>73, 37, -777</block>
+                    </region>
+                </monument>
+                <monument name="{directions.front-right}">
+                    <region>
+                        <block>7, 37, -777</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-middle}">
+                    <region>
+                        <block>40, 37, -744</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-left}">
+                    <region>
+                        <block>73, 37, -744</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-right}">
+                    <region>
+                        <block>7, 37, -744</block>
+                    </region>
+                </monument>
+            </monuments>
+            <monuments owner="cyan">
+                <monument name="{directions.front-left}">
+                    <region>
+                        <block>7, 37, -903</block>
+                    </region>
+                </monument>
+                <monument name="{directions.front-right}">
+                    <region>
+                        <block>73, 37, -903</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-middle}">
+                    <region>
+                        <block>40, 37, -936</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-left}">
+                    <region>
+                        <block>7, 37, -936</block>
+                    </region>
+                </monument>
+                <monument name="{directions.back-right}">
+                    <region>
+                        <block>73, 37, -936</block>
+                    </region>
+                </monument>
+            </monuments>
+        </monuments>
+    </objectives>
+    <loadouts>
+        <loadout id="default">
+            <helmet team-color="true" material="leather helmet"/>
+            <chestplate team-color="true" material="leather chestplate"/>
+            <leggings team-color="true" material="leather leggings"/>
+            <boots team-color="true" material="leather boots"/>
+            <item slot="0" material="iron sword"/>
+            <item slot="1" material="bow">
+                <enchantment>arrow infinite</enchantment>
+            </item>
+            <item slot="2" material="diamond pickaxe">
+                <enchantment>dig speed</enchantment>
+            </item>
+            <item slot="3" material="golden apple" amount="2"/>
+            <item slot="4" material="glass" amount="64"/>
+            <item slot="5" material="log" amount="32"/>
+            <item slot="6" material="cooked fish" amount="16"/>
+            <item slot="28" material="arrow"/>
+        </loadout>
+        <loadout id="kill-reward">
+            <item material="golden apple"/>
+        </loadout>
+    </loadouts>
+    <kills>
+        <rewards>
+            <reward loadout="kill-reward"/>
+        </rewards>
+    </kills>
+    <regions>
+        <join id="kill-farm">
+            <cuboid min="49, 35, -798" max="31, 32, -804"/> <!-- Purple -->
+            <cuboid min="31, 35, -882" max="49, 32, -876"/> <!-- Cyan -->
+        </join>
+        <join id="spawns">
+            <cylinder base="40, 32, -777" radius="9" height="6"/> <!-- Purple -->
+            <cylinder base="40, 32, -903" radius="9" height="6"/> <!-- Cyan -->
+        </join>
+        <join id="pathway">
+            <cuboid min="41, 32, -786" max="39, 35, -813"/> <!-- Purple -->
+            <cuboid min="41, 35, -867" max="39, 32, -895"/> <!-- Cyan -->
+        </join>
+    </regions>
+    <zones>
+        <zone modify="never" region="spawns">
+            <message>{errors.spawn-restricted}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <join>
+                    <region id="kill-farm"/>
+                    <region id="pathway"/>
+                </join>
+            </region>
+            <message>{errors.cannot-build}</message>
+        </zone>
+        <zone modify="never">
+            <region>
+                <join>
+                    <cuboid min="47, 33, -881" max="47, 33, -877"/> <!-- Cyan 1 -->
+                    <cuboid min="33, 33, -881" max="33, 33, -877"/> <!-- Cyan 2 -->
+                    <cuboid min="42, 33, -874" max="38, 33, -874"/> <!-- Cyan 3 -->
+                    <cuboid min="47, 33, -799" max="47, 33, -803"/> <!-- Purple 1 -->
+                    <cuboid min="33, 33, -799" max="33, 33, -803"/> <!-- Purple 2 -->
+                    <cuboid min="38, 33, -806" max="42, 33, -806"/> <!-- Purple 3 -->
+                </join>
+            </region>
+            <message>{errors.cannot-build}</message>
+        </zone>
+    </zones>
+    <items>
+        <remove-drops>
+            <any>
+                <material>leather helmet</material>
+                <material>leather chestplate</material>
+                <material>leather leggings</material>
+                <material>leather boots</material>
+                <material>cooked fish</material>
+                <material>golden apple</material>
+            </any>
+        </remove-drops>
+        <repair-tools>
+            <any>
+                <material>iron sword</material>
+                <material>bow</material>
+                <material>diamond pickaxe</material>
+            </any>
+        </repair-tools>
+    </items>
+</map>
