@@ -1,0 +1,172 @@
+{
+	"name": "Quintus",
+	"authors": ["G_SKIPPY"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark aqua",
+			"max": 40,
+			"min": 1
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"max": 40,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-31.5, 90, -840.5, -90" },
+		{ "teams": ["cyan"], "coords": "40.5, 33, -903.5, 0" },
+		{ "teams": ["purple"], "coords": "40.5, 33, -777.5, 180" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Front Left",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "7, 37, -903",
+					"max": "7, 37, -903"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Right",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "73, 37, -903",
+					"max": "73, 37, -903"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Middle",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "40, 37, -936",
+					"max": "40, 37, -936"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Left",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "7, 37, -936",
+					"max": "7, 37, -936"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Right",
+				"teams": ["cyan"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "73, 37, -936",
+					"max": "73, 37, -936"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Left&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "73, 37, -777",
+					"max": "73, 37, -777"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Right&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "7, 37, -777",
+					"max": "7, 37, -777"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Middle&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "40, 37, -744",
+					"max": "40, 37, -744"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Left&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "73, 37, -744",
+					"max": "73, 37, -744"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Right&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "7, 37, -744",
+					"max": "7, 37, -744"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["arrow_infinite:1"], "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "enchantments": ["dig_speed:1"], "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 3, "unbreakable": true, "amount": 2},
+				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
+				{"type": "item", "material": "log", "slot": 5, "amount": 32},
+
+				{"type": "item", "material": "cooked fish", "slot": 6, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
+		"glass", "cooked beef", "arrow", "leather helmet", "leather chestplate",
+		"leather leggings", "leather boots", "obsidian"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["cyan", "purple"],
+			"regions": ["cyan-spawn-protection", "purple-spawn-protection", "path-prot-cyan", "path-prot-purple"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "cyan-spawn-protection", "type": "cylinder", "base": "40, 30, -903", "radius": "9", "height": "5" },
+		{ "id": "purple-spawn-protection", "type": "cylinder", "base": "40, 30, -777", "radius": "9", "height": "5" },
+{ "id": "path-prot-cyan", "type": "cuboid", "min": "37, 34, -894", "max": "43, 27, -882" },
+{ "id": "path-prot-purple", "type": "cuboid", "min": "37, 34, -786", "max": "43, 27, -798" }
+	]
+}
