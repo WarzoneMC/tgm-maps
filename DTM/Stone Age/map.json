@@ -1,7 +1,7 @@
 {
 	"name": "Stone Age",
-	"authors": ["_Rascal"],
-	"version": "1.0",
+	"authors": ["_Rascal and Teejers"],
+	"version": "1.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -34,7 +34,7 @@
 					"min": "-152, 91, -169",
 					"max": "-152, 91, -169"
 				},
-				"health": 1
+				"health": 5
 			},
 			{
 				"name": "Beacon&r",
@@ -44,7 +44,7 @@
 					"min": "38, 91, -3",
 					"max": "38, 91, -3"
 				},
-				"health": 1
+				"health": 5
 			}
 		]
 	},
@@ -52,7 +52,8 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "stone axe", "slot": 0}
+				{"type": "item", "material": "stone axe", "slot": 0},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate"}
 			]
 		}
 	],
