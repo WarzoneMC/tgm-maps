@@ -1,0 +1,108 @@
+{
+	"name": "Kyoto",
+	"authors": ["KyotoSquid, D_A_N_G_E_R, and Blaszczak"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "white",
+			"name": "White",
+			"color": "white",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "76.5, 115, 61.5"},
+		{"teams": ["yellow"], "coords": "-1.5, 75, 156.5, 180"},
+		{"teams": ["white"], "coords": "-1.5, 75, -39.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-45, 67, 145",
+					"max": "-45, 67, 145" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "41, 67, 145",
+					"max": "41, 67, 145" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["white"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 67, -29",
+					"max": "41, 67, -29"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["white"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-45, 67, -29",
+					"max": "-45, 67, -29"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "logs", "slot": 4, "amount": 48},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 32},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "golden chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "golden chestplate", "chainmail leggings", "leather boots", "arrow", "iron sword", "golden apple"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],
+			"regions": ["yellow-spawn-protection", "white-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "8, 0, 147", "max": "-8, 78, 158"},
+		{"id": "white-spawn-protection", "type": "cuboid", "min": "4, 0, -42", "max": "-11, 72, -32"}
+	]
+}
