@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-108.5, 95, -43.5, -135" },
-		{ "teams": ["red"], "coords": "-145.5, 44, -159.5, -45" },
-		{ "teams": ["blue"], "coords": "32.5, 44, -11.5, 135" }
+		{"teams": ["spectators"], "coords": "-108.5, 95, -43.5, -135"},
+		{"teams": ["red"], "coords": "-145.5, 44, -159.5, -45"},
+		{"teams": ["blue"], "coords": "32.5, 44, -11.5, 135"}
 	],
 	"dtm": {
 		"monuments": [
@@ -64,7 +64,7 @@
 		}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "29, 43, -15", "max": "35, 43, -9" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-143, 43, -157", "max": "-149, 43, -163"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "29, 43, -15", "max": "35, 43, -9"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-143, 43, -157", "max": "-149, 43, -163"}
 	]
 }
