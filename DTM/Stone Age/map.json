@@ -52,7 +52,7 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "wooden axe", "slot": 0}
+				{"type": "item", "material": "stone axe", "slot": 0}
 			]
 		}
 	],
