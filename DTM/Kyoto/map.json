@@ -72,12 +72,12 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
-				{"type": "item", "material": "logs", "slot": 4, "amount": 48},
-				{"type": "item", "material": "glass", "slot": 5, "amount": 32},
+				{"type": "item", "material": "logs", "slot": 4, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 48},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
@@ -90,7 +90,7 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "iron sword", "golden apple"
+		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
 	],	
 	"filters": [
 		{
