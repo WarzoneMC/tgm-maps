@@ -57,6 +57,9 @@
 			]
 		}
 	],
+	"itemremove": [
+		"leather chestplate", "snowball", "egg"
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
