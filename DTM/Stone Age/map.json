@@ -31,8 +31,8 @@
 				"teams": ["red"],
 				"materials": ["beacon"],
 				"region": {
-					"min": "-152, 91, -169",
-					"max": "-152, 91, -169"
+					"min": "-153, 92, -170",
+					"max": "-151, 90, -168"
 				},
 				"health": 5
 			},
@@ -41,8 +41,8 @@
 				"teams": ["blue"],
 				"materials": ["beacon"],
 				"region": {
-					"min": "38, 91, -3",
-					"max": "38, 91, -3"
+					"min": "39, 92, -4",
+					"max": "37, 90, -2"
 				},
 				"health": 5
 			}
