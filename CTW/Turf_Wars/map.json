@@ -30,25 +30,25 @@
 	"ctw": {
 		"wools": [
 			{
-				"name": "Magenta",
+				"name": "Magenta Wool",
 				"color": "magenta",
 				"teams": ["blue"],
 				"region": {"min": "1, 21, -123", "max": "1, 21, -123"}
 			},
 			{
-				"name": "Purple",
+				"name": "Purple Wool",
 				"color": "purple",
 				"teams": ["blue"],
 				"region": {"min": "-1, 21, -123", "max": "-1, 21, -123"}
 			},
 			{
-				"name": "Yellow",
+				"name": "Yellow Wool",
 				"color": "yellow",
 				"teams": ["red"],
 				"region": {"min": "-1, 21, 123", "max": "-1, 21, 123"}
 			},
 			{
-				"name": "Orange",
+				"name": "Orange Wool",
 				"color": "orange",
 				"teams": ["red"],
 				"region": {"min": "1, 21, 123", "max": "1, 21, 123"}

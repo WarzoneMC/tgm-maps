@@ -27,26 +27,26 @@
 	"ctw": {
 		"wools": [
 			{
-				"name": "Purple",
+				"name": "Purple Wool",
 				"color": "purple",
 				"teams": ["red"],
 				"region": {"min": "3, 13, 122", "max": "3, 13, 122"}
 			},
 			{
-				"name": "Green",
+				"name": "Green Wool",
 				"color": "green",
 				"teams": ["red"],
 				"region": {"min": "1, 13, 122", "max": "1, 13, 122"}
 			},
 
 			{
-				"name": "Orange",
+				"name": "Orange Wool",
 				"color": "orange",
 				"teams": ["blue"],
 				"region": {"min": "1, 13, -122", "max": "1, 13, -122"}
 			},
 			{
-				"name": "Yellow",
+				"name": "Yellow Wool",
 				"color": "yellow",
 				"teams": ["blue"],
 				"region": {"min": "3, 13, -122", "max": "3, 13, -122"}
@@ -62,7 +62,7 @@
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
 				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
 				{"material": "wood", "slot": 4, "amount": 64},
-				
+
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"material": "arrow", "slot": 28, "amount": 64},

@@ -33,13 +33,13 @@
 	"ctw": {
 		"wools": [
 			{
-				"name": "Cyan",
+				"name": "Cyan Wool",
 				"color": "cyan",
 				"teams": ["orange"],
 				"region": {"min": "-32, 12, -47", "max": "-32, 12, -47"}
 			},
 			{
-				"name": "Red",
+				"name": "Red Wool",
 				"color": "red",
 				"teams": ["green"],
 				"region": {"min": "60, 12, 21", "max": "60, 12, 21"}

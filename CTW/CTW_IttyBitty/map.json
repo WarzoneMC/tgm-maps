@@ -15,10 +15,10 @@
 	],
 	"ctw": {
 		"wools": [
-			{"name": "Purple", "color": "purple", "teams": ["blue"], "region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}},
-			{"name": "Magenta", "color": "magenta", "teams": ["blue"], "region": {"min": "1, 10, -81", "max": "1, 10, -81"}},
-			{"name": "Cyan", "color": "cyan", "teams": ["red"], "region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}},
-			{"name": "Blue", "color": "light blue", "teams": ["red"], "region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}}
+			{"name": "Purple Wool", "color": "purple", "teams": ["blue"], "region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}},
+			{"name": "Magenta Wool", "color": "magenta", "teams": ["blue"], "region": {"min": "1, 10, -81", "max": "1, 10, -81"}},
+			{"name": "Cyan Wool", "color": "cyan", "teams": ["red"], "region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}},
+			{"name": "Blue Wool", "color": "light blue", "teams": ["red"], "region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}}
 		]
 	},
 	"kits": [
