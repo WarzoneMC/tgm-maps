@@ -1,9 +1,10 @@
 {
-	"name": "Wonder Land",
+	"name": "Shroom Land",
 	"authors": ["AtlasGames"],
 	"gametype": "Blitz",
-    "version": "1.0",
-    "teams": [
+  "version": "1.0",
+	"stats": {"disable": true},
+  "teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -19,12 +20,12 @@
 			"min": 1
 		}
 	],
-    "spawns": [
+  "spawns": [
 		{"teams": ["spectators"], "coords": "190.5, 82, -43.5"},
 		{"teams": ["blue"], "coords": "278.5, 82, -1.5, 90"},
 		{"teams": ["red"], "coords": "101.5, 82, 0.5, -90"}
 	],
-    "kits": [
+  "kits": [
 		{
 			"name": "Default",
 			"items": [

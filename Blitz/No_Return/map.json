@@ -2,7 +2,7 @@
 	"name": "No Return",
 	"authors": ["AntonyMo"],
 	"gametype": "Blitz",
-	"version": "1.0.0",
+	"version": "1.0",
 	"stats": {"disable": true},
 	"teams": [
 		{

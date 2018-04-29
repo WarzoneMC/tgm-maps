@@ -3,6 +3,7 @@
 	"authors": ["N11cK, TehRaptor, Attendants, and BennyDoesStuff"],
 	"gametype": "Infected",
 	"version": "1.0",
+	"stats": {"disable": true},
 	"teams": [
 		{"id": "humans", "name": "Humans", "color": "blue", "min": 1, "max": 50},
 		{"id": "infected", "name": "Infected", "color": "green", "min": 1, "max": 50}
