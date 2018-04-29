@@ -44,14 +44,20 @@
 			]
 		}
 	],
+
+	"killstreaks": [
+		{
+	"count": 1,
+	"repeat": true,
+	"commands": ["give %killername% minecraft:arrow 1"]
+		}
+	],
+
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["noblox"],
+			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
 	],
-	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	]
 }
