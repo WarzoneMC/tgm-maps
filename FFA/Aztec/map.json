@@ -17,7 +17,18 @@
 		{"teams": ["players"], "coords": "-56.5, 28, 12.5"},
 		{"teams": ["players"], "coords": "-50.5, 34, -36.5"},
 		{"teams": ["players"], "coords": "-28.5, 30, -32.5"},
-		{"teams": ["players"], "coords": "-14.5, 41, -32.5"}
+		{"teams": ["players"], "coords": "-14.5, 41, -32.5"},
+		{"teams": ["players"], "coords": "-75.5, 39, 41.5"},
+		{"teams": ["players"], "coords": "-67.5, 40, 5.5"},
+		{"teams": ["players"], "coords": "-70.5, 34, -22.5"},
+		{"teams": ["players"], "coords": "-30.5, 38, -14.5"},
+		{"teams": ["players"], "coords": "30.5, 42, -42.5"},
+		{"teams": ["players"], "coords": "30.5, 48, -16.5"},
+		{"teams": ["players"], "coords": "5.5, 33, -17.5"},
+		{"teams": ["players"], "coords": "-15.5, 31, 9.5"},
+		{"teams": ["players"], "coords": "-21.5, 45, -38.5"},
+		{"teams": ["players"], "coords": "-29.5, 40, 11.5"},
+		{"teams": ["players"], "coords": "7.5, 32, 4.5"}
     ],
     "ffa": {
         "timeLimit": {

@@ -9,15 +9,22 @@
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "-41.5, 267, 21.5, -135"},
-		{"teams": ["players"], "coords": "-43.5, 22, -10.5"},
-		{"teams": ["players"], "coords": "-17.5, 24, 15.5"},
-		{"teams": ["players"], "coords": "2.5, 24, 11.5"},
-		{"teams": ["players"], "coords": "30.5, 5, 14.5"},
-		{"teams": ["players"], "coords": "9.5, 10, -1.5"},
-		{"teams": ["players"], "coords": "-6.5, 24, -22.5"},
-		{"teams": ["players"], "coords": "-26.5, 16, -47.5"},
-		{"teams": ["players"], "coords": "-33.5, 6, -19.5"},
-		{"teams": ["players"], "coords": "8.5, 16, -72.5"}
+		{"teams": ["players"], "coords": "-43.5, 22, -10.5, -45"},
+		{"teams": ["players"], "coords": "-17.5, 24, 15.5, -160"},
+		{"teams": ["players"], "coords": "2.5, 24, 11.5, 140"},
+		{"teams": ["players"], "coords": "30.5, 5, 14.5, 135"},
+		{"teams": ["players"], "coords": "9.5, 10, -1.5, -90"},
+		{"teams": ["players"], "coords": "-6.5, 24, -22.5, 135"},
+		{"teams": ["players"], "coords": "-26.5, 16, -47.5", -45},
+		{"teams": ["players"], "coords": "-33.5, 6, -19.5, -90"},
+		{"teams": ["players"], "coords": "8.5, 16, -72.5"},
+		{"teams": ["players"], "coords": "8.5, 10, -32.5, -180"},
+		{"teams": ["players"], "coords": "44.5, 16.1, -26.5"},
+		{"teams": ["players"], "coords": "64.5, 22, -74.5, 90"},
+		{"teams": ["players"], "coords": "64.5, 22, -74.5, -45"},
+		{"teams": ["players"], "coords": "38.5, 26, -26.5, 90"},
+		{"teams": ["players"], "coords": "-1.5, 8, 8.5, -135"},
+		{"teams": ["players"], "coords": "20.5, 21, -55.5, -90"}
     ],
     "ffa": {
         "timeLimit": {
