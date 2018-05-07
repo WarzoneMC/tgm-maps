@@ -60,7 +60,7 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
-				{"material": "golden apple", "slot": 1, "amount": 1},
+				{"material": "golden apple", "slot": 4, "amount": 1},
 
 				{"material": "cooked beef", "slot": 6, "amount": 64},
 				{"material": "glass", "slot": 7, "amount": 64},
