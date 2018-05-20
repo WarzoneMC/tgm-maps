@@ -21,9 +21,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-1112,45,-856, 180" },
-		{ "teams": ["infected"], "coords": "-998,33,-969, 90" },
-		{ "teams": ["humans"], "coords": "-1112,33.5,-856, 180" }
+		{"teams": ["spectators"], "coords": "-1112, 45, -856, 180"},
+		{"teams": ["infected"], "coords": "-998, 33, -969, 90"},
+		{"teams": ["humans"], "coords": "-1112, 33.5, -856, 180"}
 	],
 	"infection": {
 		"length": 7
@@ -62,5 +62,15 @@
 	],
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "orange"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
