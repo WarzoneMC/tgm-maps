@@ -1,6 +1,6 @@
 {
 	"name": "StrikeZone",
-	"authors": ["N11cK, TehRaptor, Attendants, and BennyDoesStuff"],
+	"authors": ["N11cK", "TehRaptor", "Attendants", "BennyDoesStuff"],
 	"gametype": "Infected",
 	"version": "1.0",
 	"stats": {"disable": true},

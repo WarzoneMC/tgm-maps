@@ -5,25 +5,13 @@
 	"gametype": "Infected",
 	"stats": {"disable": true},
 	"teams": [
-		{
-			"id": "humans",
-			"name": "Humans",
-			"color": "blue",
-			"max": 50,
-			"min": 1
-		},
-		{
-			"id": "Infected",
-			"name": "Infected",
-			"color": "green",
-			"max": 50,
-			"min": 1
-		}
+		{"id": "humans", "name": "Humans", "color": "blue", "max": 50, "min": 1},
+		{"id": "Infected", "name": "Infected", "color": "green", "max": 50, "min": 1}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-17,58,9, 180"},
-		{"teams": ["infected"], "coords": "-51,13,-29, -120"},
-		{"teams": ["humans"], "coords": "45,13,-80, 45"}
+		{"teams": ["spectators"], "coords": "-17, 58, 9, 180"},
+		{"teams": ["infected"], "coords": "-51, 13, -29, -120"},
+		{"teams": ["humans"], "coords": "45, 13, -80, 45"}
 	],
 	"infection": {
 		"length": 7
