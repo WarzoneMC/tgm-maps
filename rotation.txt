@@ -1,12 +1,13 @@
 Stonehenge
-Icebound
+Thrive V2
+Egypt
 WarlockDTW
 Sandstone 2
 Arizona
 Village 2
 Castles
 Deepwind Jungle
-Arctic v2
+Ancient Cistern
 Rooted
 Avalanche Mini
 Stronghold
@@ -18,5 +19,5 @@ Cargo
 Twin Peaks
 Terrace 2
 Gardens
-DesertCountry
+Desert Country
 Kyoto

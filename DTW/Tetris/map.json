@@ -20,14 +20,14 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-0.5, 63, -0.5, 90" },
-		{ "teams": ["red"], "coords": "6.5, 10, 56.5, 180" },
-		{ "teams": ["blue"], "coords": "-8.5, 10, -54.5, 0" }
+		{"teams": ["spectators"], "coords": "-0.5, 63, -0.5, 90"},
+		{"teams": ["red"], "coords": "6.5, 10, 56.5, 180"},
+		{"teams": ["blue"], "coords": "-13.5, 10, -51.5"}
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wools",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
@@ -37,12 +37,12 @@
 				"health": 10
 			},
 			{
-				"name": "Wools&r",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "23, 14, -48",
-					"max": "28, 18, -43"
+					"min": "18, 17, -41",
+					"max": "23, 14, -46"
 				},
 				"health": 10
 			}
@@ -56,7 +56,6 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot":2, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
-
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
@@ -76,12 +75,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-6, 9, -52", "max": "-12, oo, -58" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "3, 9, 53", "max": "9, oo, 59" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-2, 0, -46", "max": "-16, oo, -54"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "8, 0, 58", "max": "-6, oo, 50"}
 	]
 }
