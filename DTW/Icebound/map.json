@@ -76,11 +76,17 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-wooly", "red-wooly", "blue-spawn-protection", "red-spawn-protection"]
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-79, 0, 70", "max": "-100, oo, 54"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "0, 0, -214 ", "max": "-21, oo, -230"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "0, 0, -214 ", "max": "-21, oo, -230"},
+		{ "id": "red-wooly", "type": "cuboid", "min": "-69, 23, -209", "max": "-71, 27, -207" },
+		{ "id": "blue-wooly", "type": "cuboid", "min": "-29, 27, 47", "max": "-31, 23, 49" }
 	]
 }
