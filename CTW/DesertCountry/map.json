@@ -86,14 +86,17 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."},
 	],
 	"regions": [
 		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
 		{"id": "blue-wool", "min": "523, 0, -354", "max": "545, oo, -338"},
 
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "530, 0, -135", "max": "539, oo, -120"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "529, 0, -333", "max": "538, oo, -318"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "529, 0, -333", "max": "538, oo, -318"},
+
+		{"id": "red-wool-protection", "type": "cuboid", "min": "534, 0, -118", "max": "534, oo, -75"},
+		{"id": "blue-wool-protection", "type": "cuboid", "min": "534, 0, -335", "max": "534, oo, -375"},
 	]
 }
