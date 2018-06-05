@@ -2,7 +2,7 @@
     "name": "Immitis FFA",
     "version": "1.0.0",
     "gametype": "FFA",
-    "authors": ["last_username"],
+    "authors": ["JTr"],
     "stats": {"disable": true},
     "teams": [
         {"id": "players", "name": "Players", "color": "dark_aqua", "min": 1, "max": 40}
