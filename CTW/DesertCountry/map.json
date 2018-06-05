@@ -77,12 +77,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
