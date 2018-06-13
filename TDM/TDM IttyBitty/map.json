@@ -1,0 +1,46 @@
+{
+	"name": "TDM IttyBitty",
+	"authors": ["_Rascal"],
+	"gametype": "TDM",
+	"version": "1.0",
+	"stats": {"disable": true},
+    "teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "12.5, 38, 5.5"},
+		{"teams": ["blue"], "coords": "29.5, 27, 32.5, 90"},
+		{"teams": ["red"], "coords": "-4.5, 27, 32.5, -90"}
+	],
+    "points":{
+        "target": 25
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+	],
+}
