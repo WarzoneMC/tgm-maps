@@ -1,0 +1,45 @@
+{
+	"name": "Vanilla",
+	"authors": ["Luuke"],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 10,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "20, 14, 12, 90"},
+		{"teams": ["blue"], "coords": "-1.5, 7, 36, 180"},
+		{"teams": ["red"], "coords": "-1.5, 7, -12"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "wood", "slot": 2, "amount": 12},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 8},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	]
+}
