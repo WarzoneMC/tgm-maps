@@ -2,7 +2,7 @@
 	"name": "Chunky",
 	"authors": ["JackJack33"],
 	"version": "1.0",
-	"gametype": "DTW",
+	"gametype": "DTM",
 	"teams": [
 		{
 			"id": "blue",
