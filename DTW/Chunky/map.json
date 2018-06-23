@@ -1,7 +1,7 @@
 {
 	"name": "Chunky",
 	"authors": ["JackJack33"],
-	"version": "1.0",
+	"version": "1.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -29,7 +29,7 @@
 			{
 				"name": "Red Core",
 				"teams": ["red"],
-				"materials": ["lapis_block"],
+				"materials": ["iron_block"],
 				"region": {
 					"min": "7, 104, 8",
 					"max": "8, 100, 7"
@@ -39,7 +39,7 @@
 			{
 				"name": "Blue Core",
 				"teams": ["blue"],
-				"materials": ["redstone_block"],
+				"materials": ["iron_block"],
 				"region": {
 					"min": "135, 104, 135",
 					"max": "136, 100, 136"
@@ -54,9 +54,9 @@
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+				{"type": "item", "material": "shears", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "wool", "slot": 3, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 48},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
