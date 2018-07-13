@@ -53,7 +53,7 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["infection", "humans"],
+			"type": "build", "evaluate": "deny", "teams": ["infected", "humans"],
 			"regions": ["noblox"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
