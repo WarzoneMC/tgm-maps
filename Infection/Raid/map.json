@@ -62,5 +62,15 @@
 	],
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["humans", "infected"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
