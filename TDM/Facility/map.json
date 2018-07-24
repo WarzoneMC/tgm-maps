@@ -1,6 +1,6 @@
 {
 	"name": "Facility",
-	"authors": ["samthecat43, Ny_, Mikeg542, Teejers"],
+	"authors": ["samthecat43", "Ny_", "Mikeg542"],
 	"gametype": "TDM",
 	"version": "1.1",
 	"stats": {"disable": true},
