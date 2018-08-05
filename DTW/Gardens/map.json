@@ -1,6 +1,6 @@
 {
 	"name": "Gardens",
-	"authors": ["_Rascal, HesAlrightIGuess, and Pndq"],
+	"authors": ["_Rascal", "HesAlrightIGuess", "Pndq"],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "125.5, 119, 122.5, 90"},
-		{ "teams": ["red"], "coords": "67.5, 83, 37.5"},
-		{ "teams": ["blue"], "coords": "69.5, 83, 207.5, 180"}
+		{"teams": ["spectators"], "coords": "125.5, 119, 122.5, 90"},
+		{"teams": ["red"], "coords": "67.5, 83, 37.5"},
+		{"teams": ["blue"], "coords": "69.5, 83, 207.5, 180"}
 	],
 	"dtm": {
 		"monuments": [
@@ -76,11 +76,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "59, 0, 209", "max": "79, oo, 197"},
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "57, 0, 47", "max": "77, oo, 35"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "59, 0, 209", "max": "79, oo, 197"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "57, 0, 47", "max": "77, oo, 35"}
 	]
 }
