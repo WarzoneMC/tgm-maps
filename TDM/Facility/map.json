@@ -4,7 +4,7 @@
 	"gametype": "TDM",
 	"version": "1.1",
 	"stats": {"disable": true},
-    "teams": [
+        "teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -20,17 +20,14 @@
 			"min": 1
 		}
 	],
-
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-76.5, 16, 99.5, -90" },
-		{ "teams": ["blue"], "coords": "-106.5, 8, 166.5, 0" },
-		{ "teams": ["red"], "coords": "-106.5, 8, 32.5, 0" }
+		{"teams": ["spectators"], "coords": "-76.5, 16, 99.5, -90"},
+		{"teams": ["blue"], "coords": "-106.5, 8, 166.5, 0"},
+		{"teams": ["red"], "coords": "-106.5, 8, 32.5, 0"}
 	],
-
     "points":{
         "target": 100
     },
-
 	"kits": [
 		{
 			"name": "default",
@@ -45,7 +42,6 @@
 			]
 		}
 	],
-
 	"killstreaks": [
 		{
 			"count": 1,
@@ -53,19 +49,17 @@
 			"commands": ["effect %killername% night_vision 2 1 true"]
 		}
 	],
-
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings",
 		"leather boots", "chainmail leggings", "chainmail chestplate"
 	],
 	"filters": [
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"}
 	]
 }
