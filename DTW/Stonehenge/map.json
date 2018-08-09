@@ -80,5 +80,20 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
+	],
+		"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou are not allowed to build/destroy blocks in this area."
+		},
+
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou are not allowed to enter the spawn area." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter the spawn area." }
+	],
+
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-12, 0, 46", "max": "11, oo, 21"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "11, 0, -139", "max": "-13, oo, -113"}
 	]
 }
