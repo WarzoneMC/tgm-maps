@@ -18,21 +18,14 @@
 			"min": 1
 		}
 	],
-	"spawns": [{
-			"teams": ["spectators"],
-			"coords": "119, 51, -1110.0, 90"
-		},
-		{
-			"teams": ["red"],
-			"coords": "47.0, 25, -1170.5, 0"
-		},
-		{
-			"teams": ["blue"],
-			"coords": "47.0, 25, 500.5, 180"
-		}
+	"spawns": [
+		{"teams": ["spectators"], "coords": "119, 51, -1110.0, 90"},
+		{"teams": ["red"], "coords": "47.0, 25, -1170.5, 0"},
+		{"teams": ["blue"], "coords": "47.0, 25, 500.5, 18"}
 	],
 	"dtm": {
-		"monuments": [{
+		"monuments": [
+			{
 				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
@@ -56,107 +49,31 @@
 	},
 	"kits": [{
 		"name": "Default",
-		"items": [{
-				"type": "item",
-				"material": "stone sword",
-				"slot": 0,
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "bow",
-				"slot": 1,
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "iron axe",
-				"slot": 2,
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "log",
-				"slot": 3,
-				"amount": 32,
-				"durability": 1
-			},
-			{
-				"type": "item",
-				"material": "arrow",
-				"slot": 9,
-				"amount": 16
-			},
-			{
-				"type": "item",
-				"material": "cooked beef",
-				"slot": 8,
-				"amount": 16
-			},
-
-			{
-				"type": "item",
-				"material": "chainmail helmet",
-				"slot": "helmet",
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "leather chestplate",
-				"slot": "chestplate",
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "chainmail leggings",
-				"slot": "leggings",
-				"unbreakable": true
-			},
-			{
-				"type": "item",
-				"material": "leather boots",
-				"slot": "boots",
-				"unbreakable": true
-			}
+		"items": [
+			{"material": "stone sword", "slot": 0, "unbreakable": true},
+			{"material": "bow", "slot": 1, "unbreakable": true},
+			{"material": "iron axe", "slot": 2, "unbreakable": true},
+			{"material": "log", "slot": 3, "unbreakable": true},
+			{"material": "arrow", "slot": 9, "amount": 16},
+			{"material": "cooked beef", "slot": 8, "amount": 64},
+			
+			{"material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
+			{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+			{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+			{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			
 		]
 	}],
 	"itemremove": [
 		"chainmail helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool"
 	],
-	"filters": [{
-			"type": "build",
-			"evaluate": "deny",
-			"teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection"],
-			"message": "&cYou are not allowed to modify terrain here."
-		},
-		{
-			"type": "enter",
-			"evaluate": "deny",
-			"teams": ["blue"],
-			"regions": ["red-spawn-protection"],
-			"message": "&cYou may not enter the enemy spawn."
-		},
-		{
-			"type": "enter",
-			"evaluate": "deny",
-			"teams": ["red"],
-			"regions": ["blue-spawn-protection"],
-			"message": "&cYou may not enter the enemy spawn."
-		}
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
-	"regions": [{
-			"id": "blue-spawn-protection",
-			"type": "cuboid",
-			"min": "52, 14, -1058",
-			"max": "41, oo, -1048"
-		},
-
-		{
-			"id": "red-spawn-protection",
-			"type": "cuboid",
-			"min": "41, 14, -1165",
-			"max": "52, oo, -1175"
-		}
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "52, 14, -1058", "max": "41, oo, -1048"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "41, 14, -1165", "max": "52, oo, -1175"}
 	]
 }
