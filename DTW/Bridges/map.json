@@ -32,7 +32,7 @@
 				"materials": ["wool"],
 				"region": {
 					"min": "-44, 25, -48",
-					"max": "-42, 28, -50"
+					"max": "-42, 29, -50"
 				},
 				"health": 10
 			},
@@ -41,8 +41,8 @@
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
-					"min": "42, 25, 48",
-					"max": "44, 29, 50"
+					"min": "44, 29, 50",
+					"max": "42, 25, 48"
 				},
 				"health": 10
 			}
@@ -79,8 +79,8 @@
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "8, 99, -5", "max": "18, oo, 5" },
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "48, 0, 5", "max": "38, oo, 5" },
 
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-156, 99, 5", "max": "-166, oo, -5" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-48, 0, 5", "max": "-38, oo, -5" }
 	]
 }
