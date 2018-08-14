@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["Blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-54,25,23",
-					"max": "-54,25,23" 
+					"max": "-54,25,23"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["Blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-49,25,-17",
-					"max": "-49,25,-17" 
+					"max": "-49,25,-17"
 				},
 				"health": 1
 			},
@@ -50,21 +50,21 @@
 				"name": "Center Monument",
 				"teams": ["Blue"],
 				"materials": ["emerald_block"],
-				"region": { 
+				"region": {
 					"min": "-63, 13, 3",
-					"max": "-67, 19, -3" 
+					"max": "-67, 19, -3"
 				},
 				"health": 28
 			},
-			
-			
+
+
 			{
 				"name": "Left Monument&r",
 				"teams": ["Red"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "49,25,-17",
-					"max": "49,25,-17" 
+					"max": "49,25,-17"
 				},
 				"health": 1
 			},
@@ -72,9 +72,9 @@
 				"name": "Right Monument&r",
 				"teams": ["Red"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "54,25,23",
-					"max": "54,25,23" 
+					"max": "54,25,23"
 				},
 				"health": 1
 			},
@@ -82,9 +82,9 @@
 				"name": "Center Monument&r",
 				"teams": ["Red"],
 				"materials": ["emerald_block"],
-				"region": { 
+				"region": {
 					"min": "63, 13, -3",
-					"max": "67, 19, 3" 
+					"max": "67, 19, 3"
 				},
 				"health": 28
 			},
@@ -112,8 +112,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather boots", "leather chestplate", "leather leggings", "arrow", "stone sword", "golden apple"
-	],	
+		"leather helmet", "leather boots", "leather chestplate", "leather leggings", "arrow", "stone sword", "golden apple", "cooked fish", "stained glass", "log", "iron axe", "diamond pickaxe", "bow", "stone sword"
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["Blue", "Red"],
