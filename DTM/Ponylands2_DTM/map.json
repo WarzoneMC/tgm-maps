@@ -1,6 +1,6 @@
 {
 	"name": "Ponylands 2",
-	"authors": ["Clijmart, Xuph, KirillSemyonkin"],
+	"authors": ["Clijmart", "Xuph", "KirillSemyonkin"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -21,8 +21,8 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0, 33, 0"},
-		{"teams": ["Blue"], "coords": "-97.5,42,1.5,-90,0"},
-		{"teams": ["Red"], "coords": "98.5,42,1.5,90,0"}
+		{"teams": ["Blue"], "coords": "-97.5, 42,1.5, -90,0"},
+		{"teams": ["Red"], "coords": "98.5, 42,1.5, 90,0"}
 	],
 	"dtm": {
 		"monuments": [

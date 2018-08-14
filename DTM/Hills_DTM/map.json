@@ -1,6 +1,6 @@
 {
 	"name": "Hills",
-	"authors": ["Clijmart, MilkyWayRules"],
+	"authors": ["Clijmart", "MilkyWayRules"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -21,8 +21,8 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0, 100, 0"},
-		{"teams": ["Blue"], "coords": "83.5,99,77.5,135,0"},
-		{"teams": ["Red"], "coords": "-82.5,99,-76.5,-45,0"}
+		{"teams": ["Blue"], "coords": "83.5, 99, 77.5, 135,0"},
+		{"teams": ["Red"], "coords": "-82.5, 99, -76.5, -45,0"}
 	],
 	"dtm": {
 		"monuments": [
