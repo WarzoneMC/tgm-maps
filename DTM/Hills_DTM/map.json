@@ -28,27 +28,27 @@
 		"monuments": [
 			{
 				"name": "Left Monument",
-				"teams": ["Blue"],
+				"teams": ["Red"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-83,100,-11",
-					"max": "-83,100,-11" 
+					"max": "-83,100,-11"
 				},
 				"health": 1
 			},
 			{
 				"name": "Right Monument",
-				"teams": ["Blue"],
+				"teams": ["Red"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-9,104,-77",
-					"max": "-9,104,-77" 
+					"max": "-9,104,-77"
 				},
 				"health": 1
 			},
 			{
 				"name": "Left Monument&r",
-				"teams": ["Red"],
+				"teams": ["Blue"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "83,100,11",
@@ -58,7 +58,7 @@
 			},
 			{
 				"name": "Right Monument&r",
-				"teams": ["Red"],
+				"teams": ["Blue"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "9,104,77",
@@ -89,7 +89,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "leather boots", "arrow", "stone sword", "golden apple"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
