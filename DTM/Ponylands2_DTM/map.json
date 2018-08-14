@@ -1,0 +1,130 @@
+{
+	"name": "Ponylands 2",
+	"authors": ["Clijmart, Xuph, KirillSemyonkin"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "Blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0, 33, 0"},
+		{"teams": ["Blue"], "coords": "-97.5,42,1.5,-90,0"},
+		{"teams": ["Red"], "coords": "98.5,42,1.5,90,0"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["Blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-54,25,23",
+					"max": "-54,25,23" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["Blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-49,25,-17",
+					"max": "-49,25,-17" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Center Monument",
+				"teams": ["Blue"],
+				"materials": ["emerald_block"],
+				"region": { 
+					"min": "-63, 13, 3",
+					"max": "-67, 19, -3" 
+				},
+				"health": 28
+			},
+			
+			
+			{
+				"name": "Left Monument&r",
+				"teams": ["Red"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "49,25,-17",
+					"max": "49,25,-17" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["Red"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "54,25,23",
+					"max": "54,25,23" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Center Monument&r",
+				"teams": ["Red"],
+				"materials": ["emerald_block"],
+				"region": { 
+					"min": "63, 13, -3",
+					"max": "67, 19, 3" 
+				},
+				"health": 28
+			},
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "stained glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
+				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather boots", "leather chestplate", "leather leggings", "arrow", "stone sword", "golden apple"
+	],	
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["Blue", "Red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["Blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["Red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-79, 13, 30", "max": "-101, oo, 30"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "79, 13, 30", "max": "101, oo, 74"}
+	]
+}
