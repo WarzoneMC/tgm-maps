@@ -1,6 +1,6 @@
 {
 	"name": "Cake",
-	"authors": ["Clijmart", "Sam", "mepii"],
+	"authors": ["Clijmart", "cellish", "mepii"],
 	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [
@@ -60,8 +60,8 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
-				
-				
+
+
 				{"material": "stained glass", "slot": 4, "amount": 64},
 				{"material": "log", "slot": 5, "amount": 64},
 				{"material": "sandstone", "slot": 6, "amount": 64},
