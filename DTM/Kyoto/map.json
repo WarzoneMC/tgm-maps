@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-45, 67, 145",
-					"max": "-45, 67, 145" 
+					"max": "-45, 67, 145"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "41, 67, 145",
-					"max": "41, 67, 145" 
+					"max": "41, 67, 145"
 				},
 				"health": 1
 			},
@@ -91,18 +91,20 @@
 	],
 	"itemremove": [
 		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],
 			"regions": ["yellow-spawn-protection", "white-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{ "type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 	"regions": [
-		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "8, 0, 147", "max": "-8, 78, 158"},
-		{"id": "white-spawn-protection", "type": "cuboid", "min": "4, 0, -42", "max": "-11, 72, -32"}
+		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "8, 0, 147", "max": "-8, 78, 158"},
+		{ "id": "white-spawn-protection", "type": "cuboid", "min": "4, 0, -42", "max": "-11, 72, -32"},
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 90, oo", "max": "-oo, oo, -oo"}
 	]
 }

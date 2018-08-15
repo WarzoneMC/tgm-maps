@@ -95,7 +95,8 @@
 			"message": "&cYou are not allowed to modify the elixir region."
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 
 
@@ -108,6 +109,7 @@
 		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 7, -2", "radius": "3", "height": "6" },
 		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 7, 2", "radius": "3", "height": "6" },
 		{ "id": "red-wool", "type": "cuboid", "min": "47, 41, 2", "max": "51, 32, -2" },
-		{ "id": "orange-wool", "type": "cuboid", "min": "-85, 41, -2", "max": "-89, 32, 2" }
+		{ "id": "orange-wool", "type": "cuboid", "min": "-85, 41, -2", "max": "-89, 32, 2" },
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 60, oo", "max": "-oo, oo, -oo"}
 	]
 }

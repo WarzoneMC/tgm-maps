@@ -77,11 +77,14 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 	"regions": [
 		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-92, 3, 196", "max": "-98, 23, 202" },
 
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-98, 3, 58", "max": "-92, 23, 52" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-98, 3, 58", "max": "-92, 23, 52" },
+
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 40, oo", "max": "-oo, oo, -oo"}
 	]
 }
