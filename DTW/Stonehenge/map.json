@@ -3,7 +3,7 @@
 	"authors": ["Unknown"],
     "version": "1.0",
 	"gametype": "DTM",
-    
+
 	"teams": [
 		{
 			"id": "blue",
@@ -20,7 +20,7 @@
 			"min": 1
 		}
 	],
-    
+
 	"spawns": [
 		{
 			"teams": ["blue"],
@@ -34,8 +34,8 @@
             "teams": ["spectators"],
 			"coords": "-1.5, 133, -42.5, -177"
 		}
-	],	
-    
+	],
+
     "dtm": {
 		"monuments": [
 			{
@@ -80,5 +80,19 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-15, 69, 19", "max": "12, oo, 44" },
+
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "13, 69, -111", "max": "-14, oo, -136" }
 	]
 }
