@@ -77,12 +77,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
@@ -96,7 +96,9 @@
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "523, 0, -135", "max": "545, oo, -114"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "523, 0, -339", "max": "545, oo, -318"},
 
-		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, -91", "max": "523, oo, -100"},
-		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -361", "max": "545, oo, -353"}
+		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
+		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
+                {"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo ,oo, -oo"}
 	]
 }
+	
