@@ -1,0 +1,91 @@
+{
+	"name": "WarlockTM",
+	"authors": ["McSpider"],
+	"version": "1.2.3",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "77.5, 18, -7.5"},
+		{"teams": ["red"], "coords": "99.5, 6, -65.5"},
+		{"teams": ["blue"], "coords": "99.5, 6, 50.5, 145"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "76, 6, -71",
+					"max": "78, 9, -69"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "76, 9, 53",
+					"max": "78, 6, 55"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "sandstone", "cobblestone", "quartz_block", "stone", "step", "smooth_brick", "iron_fence"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-wooly", "red-wooly", "blue-spawn-protection", "red-spawn-protection"]
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "93, 0, 41", "max": "113, oo, 57"},
+		{"id": "red-wooly", "type": "cuboid", "min": "76, 6, -71", "max": "78, 9, -69"},
+		{"id": "blue-wooly", "type": "cuboid", "min": "76, 9, 53", "max": "78, 6, 55"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "93, 0, -57", "max": "113, oo, -73"}
+	]
+}
