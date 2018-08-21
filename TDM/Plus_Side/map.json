@@ -67,9 +67,6 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "arrow"
 	],
-	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
