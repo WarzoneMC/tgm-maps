@@ -77,26 +77,28 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "red-wool-protection", "blue-wool-protection"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "blue-wool-protection", "red-wool-protection"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
 		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
-		{"id": "blue-wool", "min": "523, 0, -354", "max": "545, oo, -338"},
+		{"id": "blue-wool", "min": "523, 0, -353", "max": "545, oo, -338"},
 
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "530, 0, -135", "max": "539, oo, -120"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "529, 0, -333", "max": "538, oo, -318"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "523, 0, -139", "max": "545, oo, -114"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "523, 0, -339", "max": "545, oo, -313"},
 
-		{"id": "red-wool-protection", "type": "cuboid", "min": "541, 0, -95", "max": "527, oo, -95"},
-		{"id": "blue-wool-protection", "type": "cuboid", "min": "541, 0, -335", "max": "527, oo, -335"}
+		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
+		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
+                {"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo ,oo, -oo"}
 	]
 }
+	
