@@ -48,6 +48,57 @@
 			}
 		]
 	},
+	"killstreaks": [
+        {
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:arrow 3"]
+		},
+		{
+			"count": 5,
+			"repeat": false,
+			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				     "give %killername% minecraft:golden_apple 1"
+	                 ],
+			"message": "%killercolor%%killername% &7is on a kill streak of &2&l%count%&r&7!"
+		},
+		{
+			"count": 10,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.ambient master @a ~ ~ ~ 7",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &6&l%count%&r&7!"
+		},
+		{
+			"count": 25,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.enderdragon.growl master @a ~ ~ ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &c&l%count%&r&7!"
+		},
+		{
+			"count": 50,
+			"repeat": false,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.wither.spawn master @a ~ ~ ~ 1000 1.4",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &3&l%count%&r&7!"
+		},
+		{
+			"count": 100,
+			"repeat": false,
+			"commands": [
+				"execute @a ~ ~ ~ playsound ui.toast.challenge_complete master @p ~ ~100 ~ 1000",
+				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16766776],FadeColors:[I;16774912]}]}}}}"
+			],
+			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
+		}
+	],
 	"kits": [
 		{
 			"name": "Default",
