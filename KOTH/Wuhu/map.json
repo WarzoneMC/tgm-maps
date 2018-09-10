@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-1222.5, 46, 459.5"},
-		{ "teams": ["blue"], "coords": "-1268.5, 24, 512.5, -90"},
-		{ "teams": ["red"], "coords": "-1128.5, 24, 523.5, 90"}
+		{"teams": ["spectators"], "coords": "-1222.5, 46, 459.5"},
+		{"teams": ["blue"], "coords": "-1268.5, 24, 512.5, -90"},
+		{"teams": ["red"], "coords": "-1128.5, 24, 523.5, 90"}
 	],
 
 	"points": {
@@ -99,7 +99,7 @@
 					"min": {"coords": "-1418, 21, 886"},
 					"max": {"coords": "-1424, 32, 880"}
 				}
-			},
+			}
 		]
 	},
 	"kits": [
@@ -119,12 +119,11 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "arrow", "chainmail chestplate", "leather boots",
-		"dirt", "golden carrot", "leather leggings"
+		"stone sword", "arrow", "chainmail chestplate", "leather boots", "dirt", "golden carrot", "leather leggings"
 	],
 	"filters": [
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "min": "-1261, 22, 505", "max": "-1274, 31, 518"},
