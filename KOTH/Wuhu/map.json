@@ -1,6 +1,6 @@
 {
 	"name": "Wuhu Island",
-	"authors": ["Tizona (Ported by JackJack33)"],
+	"authors": ["Tizona"],
 	"version": "1.0.0",
 	"gametype": "KOTH",
 	"teams": [
@@ -19,9 +19,8 @@
 			"min": 1
 		}
 	],
-
 	"spawns": [
-		{ "teams": ["spectators"], "x": -1222.5, "y": 46, "z": 459.5, "yaw": 0 },
+		{ "teams": ["spectators"], "x": -1222.5, "y": 46, "z": 459.5 },
 		{ "teams": ["blue"], "x": -1268.5, "y": 24, "z": 512.5, "yaw": -90 },
 		{ "teams": ["red"], "x": -1128.5, "y": 24, "z": 523.5, "yaw": 90 }
 	],
@@ -126,7 +125,6 @@
 	"filters": [
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
-
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "min": "-1261, 22, 505", "max": "-1274, 31, 518"},
