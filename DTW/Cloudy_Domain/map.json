@@ -48,6 +48,13 @@
 			}
 		]
 	},
+	"killstreaks": [
+        {
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"],
+		        "commands": ["give %killername% minecraft:planks 5"]
+		},
 	"kits": [
 		{
 			"name": "Default",
@@ -56,6 +63,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
+		                {"type": "item", "material": "wood", "slot": 4, "amount": 64},
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
