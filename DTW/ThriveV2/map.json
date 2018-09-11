@@ -56,7 +56,7 @@
 		},
 		{
 			"count": 5,
-			"repeat": false,
+			"repeat": true,
 			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
 				     "give %killername% minecraft:arrow 10"
 	                 ],
