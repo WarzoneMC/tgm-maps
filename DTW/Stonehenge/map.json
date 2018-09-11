@@ -66,7 +66,7 @@
 			"repeat": true,
 			"commands": ["give %killername% minecraft:golden_apple 1"],
 		        "commands": ["give %killername% minecraft:arrow 3"]
-		}
+		},
     "kits": [
 			{
 			"name": "Default",
