@@ -64,14 +64,8 @@
         {
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% minecraft:arrow 3"]
-		},
-		{
-			"count": 5,
-			"repeat": false,
-			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
-				     "give %killername% minecraft:golden_apple 1"
-	                 ],
+			"commands": ["give %killername% minecraft:golden_apple 1"],
+		        "commands": ["give %killername% minecraft:arrow 3"]
 		}
     "kits": [
 			{
