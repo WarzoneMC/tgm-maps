@@ -9,12 +9,14 @@ Cloudy Domain
 Arizona
 Egypt
 Village 2
+Persisto
 Electri City
 Castles
 Mayan Apocalypse
 Deepwind Jungle
 Ancient Cistern
 Rooted
+Balloons
 Festive
 Avalanche Mini
 Stronghold
@@ -28,5 +30,6 @@ Twin Peaks
 Terrace 2
 Gardens
 Desert Country
+Outback
 Kyoto
 Pipe Palace
