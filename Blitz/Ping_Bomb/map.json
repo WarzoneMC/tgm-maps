@@ -1,6 +1,6 @@
 {
 	"name": "Ping Bomb",
-	"authors": ["majjus, ShinyDialga, and Teejers"],
+	"authors": ["Flashee, ShinyDialga, and majjus_"],
 	"gametype": "Blitz",
 	"version": "1.1",
 	"itemremove": ["glowstone"],

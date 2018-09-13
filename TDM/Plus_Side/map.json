@@ -1,0 +1,80 @@
+{
+	"name": "Plus Side",
+	"authors": ["JETUB1", "BlockDrop74"],
+	"gametype": "TDM",
+	"version": "1.4.5",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 10,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 10,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "742, 61, 567, 135"},
+		{"teams": ["yellow"], "coords": "608, 51, 513, -90"},
+		{"teams": ["green"], "coords": "688, 51, 593, 180"},
+		{"teams": ["blue"], "coords": "688, 51, 433"},
+		{"teams": ["red"], "coords": "768, 51, 513, 90"}
+	],
+	"points": {
+		"target": 30
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
+				
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% arrow 1"]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "arrow"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}

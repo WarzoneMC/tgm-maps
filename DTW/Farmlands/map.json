@@ -56,7 +56,6 @@
 		]
 	}],
 
-
 	"kits": [
 		{
 			"name": "Default",
@@ -91,4 +90,3 @@
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "2, 0, -54", "max": "-6, oo, -44"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-4, 0, 54", "max": "4, oo, 44"}
 	]
-}

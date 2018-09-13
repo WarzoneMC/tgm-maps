@@ -27,7 +27,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Monument B",
+				"name": "Left Monument",
 				"teams": ["cynx"],
 				"materials": ["obsidian"],
 				"region": { 
@@ -37,7 +37,7 @@
 				"health": 1
 			},
 			{
-				"name": "Monument A",
+				"name": "Right Monument",
 				"teams": ["cynx"],
 				"materials": ["obsidian"],
 				"region": { 
@@ -47,7 +47,7 @@
 				"health": 1
 			},
 			{
-				"name": "Monument B&r",
+				"name": "Left Monument&r",
 				"teams": ["cyprone"],
 				"materials": ["obsidian"],
 				"region": {
@@ -57,7 +57,7 @@
 				"health": 1
 			},
 			{
-				"name": "Monument A&r",
+				"name": "Right Monument&r",
 				"teams": ["cyprone"],
 				"materials": ["obsidian"],
 				"region": {

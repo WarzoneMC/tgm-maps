@@ -1,0 +1,131 @@
+{
+	"name": "Wuhu Island",
+	"authors": ["Tizona"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 100,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 100,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-1222.5, 46, 459.5"},
+		{"teams": ["blue"], "coords": "-1268.5, 24, 512.5, -90"},
+		{"teams": ["red"], "coords": "-1128.5, 24, 523.5, 90"}
+	],
+	"points": {
+		"target": 725
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Town",
+				"region": {
+					"min": {"x": -1257, "y": 16, "z": 571},
+					"max": {"x": -1251, "y": 27, "z": 565}
+				}
+			},
+			{
+				"name": "Lighthouse",
+				"region": {
+					"min": {"x": -1375, "y": 27, "z": 473},
+					"max": {"x": -1369, "y": 38, "z": 479}
+				}
+			},
+			{
+				"name": "Club",
+				"region": {
+					"min": {"x": -1298, "y": 26, "z": 318},
+					"max": {"x": -1292, "y": 37, "z": 324}
+				}
+			},
+			{
+				"name": "Cave",
+				"region": {
+					"min": {"x": -1281, "y": 20, "z": 391},
+					"max": {"x": -1275, "y": 31, "z": 385}
+				}
+			},
+			{
+				"name": "Castle",
+				"region": {
+					"min": {"x": -1208, "y": 48, "z": 397},
+					"max": {"x": -1202, "y": 59, "z": 403}
+				}
+			},
+			{
+				"name": "Ruins",
+				"region": {
+					"min": {"x": -1149, "y": 25, "z": 272},
+					"max": {"x": -1143, "y": 36, "z": 266}
+				}
+			},
+			{
+				"name": "Volcano",
+				"region": {
+					"min": {"x": -1126, "y": 63, "z": 366},
+					"max": {"x": -1132, "y": 69, "z": 372}
+				}
+			},
+			{
+				"name": "Hill",
+				"region": {
+					"min": {"x": -1123, "y": 40, "z": 425},
+					"max": {"x": -1117, "y": 51, "z": 419}
+				}
+			},
+			{
+				"name": "Resort",
+				"region": {
+					"min": {"x": -1033, "y": 16, "z": 434},
+					"max": {"x": -1039, "y": 27, "z": 440}
+				}
+			},
+			{
+				"name": "Wedge",
+				"region": {
+					"min": {"x": -1418, "y": 21, "z": 886},
+					"max": {"x": -1424, "y": 32, "z": 880}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "boat", "slot": 6, "amount": 1},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreaking": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreaking": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreaking": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "arrow", "chainmail chestplate", "leather boots", "dirt", "golden carrot", "leather leggings"
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "min": "-1261, 22, 505", "max": "-1274, 31, 518"},
+		{"id": "red-spawn-protection", "min": "-1124, 23, 527", "max": "-1135, 29, 520"}
+	]
+}	

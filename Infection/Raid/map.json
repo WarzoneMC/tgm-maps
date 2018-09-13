@@ -5,8 +5,20 @@
 	"version": "1.2.0",
 	"stats": {"disable": true},
 	"teams": [
-		{"id": "humans", "name": "Humans", "color": "blue", "max": 50, "min": 1},
-		{"id": "Infected", "name": "Infected", "color": "green", "max": 50, "min": 1}
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Infected",
+			"name": "Infected",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-980, 57, -990, 180"},
@@ -53,7 +65,7 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["purple", "orange"],
+			"type": "build", "evaluate": "deny", "teams": ["humans", "infected"],
 			"regions": ["noblox"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}

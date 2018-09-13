@@ -1,0 +1,101 @@
+{
+	"name": "TechnoWar",
+	"authors": ["_Rascal"],
+	"version": "1.0.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 99, 0.5, -90"},
+		{"teams": ["red"], "coords": "0.5, 56, -87"},
+		{"teams": ["blue"], "coords": "0.5, 56, 88.5, 180"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Cyan",
+				"color": "cyan",
+				"teams": ["red"],
+				"region": {"min": "-1, 57, -92", "max": "-1, 57, -92"}
+			},
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["red"],
+				"region": {"min": "1, 57, -92", "max": "1, 57, -92"}
+			},
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["blue"],
+				"region": {"min": "-1, 57, 92", "max": "-1, 57, 92"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["blue"],
+				"region": {"min": "1, 57, 92", "max": "1, 57, 92"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "wood", "slot": 3, "amount": 64},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 16},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron axe", "leather helmet", "wood", "arrow", "golden apple", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "yellow-wool", "orange-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "cyan-wool", "purple-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "cyan-wool", "purple-wool"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-wool", "orange-wool"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-17, 0, -81", "max": "17, oo, -95"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-17, 0, 81", "max": "17, oo, 95"},
+
+		{"id": "cyan-wool", "type": "cuboid", "min": "-80, 0, 63", "max": "-97, oo, 75"},
+		{"id": "purple-wool", "type": "cuboid", "min": "80, 0, 43", "max": "97, oo, 31"},
+		{"id": "orange-wool", "type": "cuboid", "min": "-80, 0, -43", "max": "-97, oo, -31"},
+		{"id": "yellow-wool", "type": "cuboid", "min": "80, 0, -63", "max": "97, oo, -75"}
+	]
+}

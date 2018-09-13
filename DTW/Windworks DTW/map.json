@@ -48,6 +48,7 @@
 			}
 		]
 	},
+
 	"killstreaks": [{
 		"count": 1,
 		"repeat": true,
@@ -55,7 +56,6 @@
 			"give %killername% minecraft:arrow 1"
 		]
 	}],
-
 
 	"kits": [
 		{
@@ -95,4 +95,4 @@
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-4, 0, 74", "max": "10, oo, 88"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-74, 0, 4", "max": "-88, oo, -10"}
 	]
-}
+
