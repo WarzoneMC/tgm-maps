@@ -20,7 +20,7 @@
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "0.5, 94, 22.5, -90" },
+		{ "teams": ["spectators"], "coords": "0.5, 44, 22.5, -90" },
 		{ "teams": ["red"], "coords": "0.5, 7, -49.5, 0" },
 		{ "teams": ["blue"], "coords": "0.5, 8.5, 91.5, 180" }
 	],
@@ -48,22 +48,28 @@
 			}
 		]
 	},
+	"killstreaks": [{
+		"count": 1,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1"]
+	                 }
+               ],
 	"kits": [
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "iron sword", "slot": 0},
+				{"type": "item", "material": "bow", "slot": 1},
+				{"type": "item", "material": "stone pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot":3},
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+				{"type": "item", "material": "leather helmet", "slot": "helmet"},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate"},
+				{"type": "item", "material": "leather leggings", "slot": "leggings"},
+				{"type": "item", "material": "iron boots", "slot": "boots"}
 			]
 		}
 	],

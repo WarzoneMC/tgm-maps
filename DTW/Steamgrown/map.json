@@ -30,9 +30,9 @@
 				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
-				"region": { 
+				"region": {
 					"min": "12, 79, 25",
-					"max": "80, 73, 23" 
+					"max": "80, 73, 23"
 				},
 				"health": 10
 			},
@@ -48,6 +48,15 @@
 			}
 		]
 	},
+	"killstreaks": [{
+		"count": 1,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1",
+			"give %killername% minecraft:arrow 1"
+		]
+	}],
+
+
 	"kits": [
 		{
 			"name": "Default",
@@ -68,7 +77,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"killstreaks": [
         {
 			"count": 1,
@@ -117,7 +126,7 @@
 			],
 			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],

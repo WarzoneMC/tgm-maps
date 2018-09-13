@@ -48,6 +48,15 @@
 			}
 		]
 	},
+	"killstreaks": [{
+		"count": 1,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1",
+			"give %killername% minecraft:arrow 1"
+		]
+	}],
+
+
 	"kits": [
 		{
 			"name": "Default",
@@ -114,7 +123,7 @@
 			],
 			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
-	],	
+	],
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
 	],
