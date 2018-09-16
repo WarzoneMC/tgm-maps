@@ -3,8 +3,7 @@
 	"authors": ["Thallid and Pud96"],
 	"version": "1.0.0",
 	"gametype": "DTM",
-	"teams": [
-		{
+	"teams": [{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
@@ -19,14 +18,21 @@
 			"min": 1
 		}
 	],
-	"spawns": [
-		{ "teams": ["spectators"], "coords": "140.5, 91, 37.5, 90" },
-		{ "teams": ["red"], "coords": "234.5, 31, 37.5, 90" },
-		{ "teams": ["blue"], "coords": "46.5, 31, 37.5, -90" }
+	"spawns": [{
+			"teams": ["spectators"],
+			"coords": "140.5, 91, 37.5, 90"
+		},
+		{
+			"teams": ["red"],
+			"coords": "234.5, 31, 37.5, 90"
+		},
+		{
+			"teams": ["blue"],
+			"coords": "46.5, 31, 37.5, -90"
+		}
 	],
 	"dtm": {
-		"monuments": [
-			{
+		"monuments": [{
 				"name": "Right Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
@@ -68,38 +74,120 @@
 			}
 		]
 	},
-	"kits": [
+	"killstreaks": [{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
 		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
-
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			"count": 5,
+			"repeat": true,
+			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:planks 30"
 			]
 		}
 	],
+	"kits": [{
+		"name": "Default",
+		"items": [{
+				"type": "item",
+				"material": "iron sword",
+				"slot": 0,
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "bow",
+				"slot": 1,
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "stone axe",
+				"slot": 2,
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "wood",
+				"slot": 3,
+				"amount": 64
+			},
+			{
+				"type": "item",
+				"material": "cooked beef",
+				"slot": 8,
+				"amount": 64
+			},
+			{
+				"type": "item",
+				"material": "arrow",
+				"slot": 9,
+				"amount": 64
+			},
+
+			{
+				"type": "item",
+				"material": "leather helmet",
+				"slot": "helmet",
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "chainmail chestplate",
+				"slot": "chestplate",
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "leather leggings",
+				"slot": "leggings",
+				"unbreakable": true
+			},
+			{
+				"type": "item",
+				"material": "iron boots",
+				"slot": "boots",
+				"unbreakable": true
+			}
+		]
+	}],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
 	],
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+	"filters": [{
+			"type": "build",
+			"evaluate": "deny",
+			"teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{
+			"type": "enter",
+			"evaluate": "deny",
+			"teams": ["blue"],
+			"regions": ["red-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "enter",
+			"evaluate": "deny",
+			"teams": ["red"],
+			"regions": ["blue-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		}
 	],
-	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "53, 30, 45", "max": "38, oo, 28" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "227, 30, 28", "max": "242, oo, 46" }
+	"regions": [{
+			"id": "blue-spawn-protection",
+			"type": "cuboid",
+			"min": "53, 30, 45",
+			"max": "38, oo, 28"
+		},
+		{
+			"id": "red-spawn-protection",
+			"type": "cuboid",
+			"min": "227, 30, 28",
+			"max": "242, oo, 46"
+		}
 	]
 }
