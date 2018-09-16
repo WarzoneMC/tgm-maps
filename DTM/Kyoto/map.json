@@ -1,6 +1,6 @@
 {
 	"name": "Kyoto",
-	"authors": ["KyotoSquid, D_A_N_G_E_R, and Blaszczak"],
+	"authors": ["JapaneseSquid, D_A_N_G_E_R, and Blaszczak"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-45, 67, 145",
-					"max": "-45, 67, 145" 
+					"max": "-45, 67, 145"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "41, 67, 145",
-					"max": "41, 67, 145" 
+					"max": "41, 67, 145"
 				},
 				"health": 1
 			},
@@ -68,7 +68,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right &r"
+				"name": "Right &r",
 				"teams": ["white"],
 				"materials": ["obsidian"],
 				"region": {
@@ -108,7 +108,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],
