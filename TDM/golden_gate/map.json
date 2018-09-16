@@ -1,6 +1,6 @@
 {
 	"name": "Golden Gate",
-	"authors": ["DoomRobotBoy"],
+	"authors": ["DoomyBoy"],
 	"gametype": "TDM",
 	"version": "1.1",
     "teams": [
@@ -35,7 +35,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
-				
+
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},

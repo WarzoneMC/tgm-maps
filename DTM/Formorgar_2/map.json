@@ -1,6 +1,6 @@
 {
 	"name": "Formorgar 2",
-	"authors": ["timaeusTestified, Xuph, and Edans"],
+	"authors": ["shoe0nhead, Xuph, and Edans"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument B",
 				"teams": ["purple"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-23, 87, 251",
-					"max": "-23, 87, 251" 
+					"max": "-23, 87, 251"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Monument A",
 				"teams": ["purple"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "37, 87, 251",
-					"max": "37, 87, 251" 
+					"max": "37, 87, 251"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple", "yellow"],

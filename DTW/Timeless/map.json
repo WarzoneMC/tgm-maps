@@ -1,6 +1,6 @@
 {
 	"name": "Timeless",
-	"authors": ["MdsCool, JackJack2822, Mikaatjuhh and Disastur"],
+	"authors": ["MdsCool", "JackJack2822", "Mikaatjuhh", "Disastur"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -114,7 +114,7 @@
 			],
 			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
-	],	
+	],
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
 	],

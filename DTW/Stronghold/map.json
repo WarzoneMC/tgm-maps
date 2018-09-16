@@ -1,6 +1,6 @@
 {
 	"name": "Stronghold",
-	"authors": ["_Rascal, Pndq and Echological"],
+	"authors": ["_Rascal", "Pndq", "Merfolk_Forge"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,7 +30,7 @@
 		"repeat": true,
 		"commands": ["give %killername% arrow 4"]
 	}
-    ],	
+    ],
     "dtm": {
 		"monuments": [
 			{

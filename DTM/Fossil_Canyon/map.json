@@ -1,6 +1,6 @@
 {
 	"name": "Fossil Canyon",
-	"authors": ["Kagayamas"],
+	"authors": ["shoe0nhead"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument C",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-9, 76, 59",
-					"max": "-9, 76, 59" 
+					"max": "-9, 76, 59"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Monument B",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-66, 72, 88",
-					"max": "-66, 72, 88" 
+					"max": "-66, 72, 88"
 				},
 				"health": 1
 			},
@@ -50,9 +50,9 @@
 				"name": "Monument A",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-40, 73, 39",
-					"max": "-40, 73, 39" 
+					"max": "-40, 73, 39"
 				},
 				"health": 1
 			},
@@ -110,7 +110,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "wood"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],

@@ -1,6 +1,6 @@
 {
 	"name": "Plus Side",
-	"authors": ["JETUB1", "BlockDrop74"],
+	"authors": ["Jetub", "BlockDrop74"],
 	"gametype": "TDM",
 	"version": "1.4.5",
 	"teams": [
@@ -49,7 +49,7 @@
 			"items": [
 				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
-				
+
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},

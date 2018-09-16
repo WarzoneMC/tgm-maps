@@ -1,6 +1,6 @@
 {
 	"name": "Formorgar 1",
-	"authors": ["Ogrey"],
+	"authors": ["shoe0nhead"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "18, 67, -131",
-					"max": "18, 67, -131" 
+					"max": "18, 67, -131"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-20, 67, -131",
-					"max": "-20, 67, -131" 
+					"max": "-20, 67, -131"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "purple"],

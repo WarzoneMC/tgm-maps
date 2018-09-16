@@ -1,6 +1,6 @@
 {
 	"name": "Pluto",
-	"authors": ["Boats, Vovl, and Luuke"],
+	"authors": ["Boats", "Vovl", "Luuke"],
 	"gametype": "Blitz",
     "version": "1.0.0",
     "max-build-height": "90",

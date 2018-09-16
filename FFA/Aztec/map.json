@@ -2,7 +2,7 @@
     "name": "Aztec FFA",
     "version": "1.0.0",
     "gametype": "FFA",
-    "authors": ["yoyo_"],
+    "authors": ["Yoyo_"],
     "stats": {"disable": true},
     "teams": [
         {"id": "players", "name": "Players", "color": "dark_aqua", "min": 1, "max": 40}
@@ -46,7 +46,7 @@
                 {"material": "arrow", "slot": 2, "amount": 10},
                 {"material": "golden apple", "slot": 8},
                 {"material": "cooked beef", "slot": 8, "amount": 32},
-                
+
                 {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},

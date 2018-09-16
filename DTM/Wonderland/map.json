@@ -1,6 +1,6 @@
 {
 	"name": "Wonderland",
-	"authors": ["IzJust4Fun and Crazy_Clownz"],
+	"authors": ["IzJust4Fun", "Clownyo"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["white"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-647, 57, -1345",
-					"max": "-647, 57, -1345" 
+					"max": "-647, 57, -1345"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["white"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-735, 57, -1345",
-					"max": "-735, 57, -1345" 
+					"max": "-735, 57, -1345"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["white", "red"],

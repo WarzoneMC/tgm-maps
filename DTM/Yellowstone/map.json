@@ -1,6 +1,6 @@
 {
 	"name": "Yellowstone",
-	"authors": ["timaeusTestified"],
+	"authors": ["shoe0nhead"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument B",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "69, 22, -234",
-					"max": "69, 22, -234" 
+					"max": "69, 22, -234"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Monument A",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-69, 22, -234",
-					"max": "-69, 22, -234" 
+					"max": "-69, 22, -234"
 				},
 				"health": 1
 			},
@@ -89,7 +89,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "stone sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["moon", "sun"],

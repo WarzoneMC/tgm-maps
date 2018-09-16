@@ -1,6 +1,6 @@
 {
 	"name": "Electri City",
-	"authors": ["leTea", "KyotoSquid"],
+	"authors": ["leTea", "JapaneseSquid"],
 	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [
@@ -88,7 +88,7 @@
 			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "cyan-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		
+
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "purple-room", "cyan-room"], "message": "&cYou may not enter this region."}
 	],
