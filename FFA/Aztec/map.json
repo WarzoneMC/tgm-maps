@@ -106,5 +106,17 @@
 			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
 	],
-    "itemremove": ["stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"]
+    "itemremove": [
+    	"stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"
+    ],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["noblox"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
 }
