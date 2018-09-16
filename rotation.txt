@@ -3,6 +3,7 @@ Anasaria
 Thrive V2
 WindWorks DTW
 A New Day
+Yellowstone
 WarlockDTW
 Sandstone 2
 Cloudy Domain
@@ -24,7 +25,6 @@ Aerial Conquest
 Sandstone
 Rendezvous Redux
 Ring Race
-Yellowstone
 Terrace
 Port Town 2
 Cargo
