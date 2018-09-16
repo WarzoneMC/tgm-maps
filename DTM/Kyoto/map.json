@@ -85,7 +85,7 @@
 		"commands": ["give %killername% minecraft:golden_apple 1"]
 	                 }
                ],
-	"kits": [
+	"kits":[
 		{
 			"name": "Default",
 			"items": [
