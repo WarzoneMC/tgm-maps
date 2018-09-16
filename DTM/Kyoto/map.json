@@ -47,7 +47,7 @@
 				"health": 1
 			},
 			{
-                                "name": "Left Monument ",
+                                "name": "Left Monument &r",
                                 "teams": ["white"],
                                 "materials": ["obsidian"],
                                 "region": {
@@ -57,7 +57,7 @@
                                 "health": 1
                         },
 			{
-				"name": "Right Monument ",
+				"name": "Right Monument &r",
 				"teams": ["white"],
 				"materials": ["obsidian"],
 				"region": {
