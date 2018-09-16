@@ -57,9 +57,9 @@
 		"count": 1,
 		"repeat": true,
 		"commands": ["give %killername% minecraft:golden_apple 1",
-			"give %killername% minecraft:arrow 1"
-		]
-	}],
+			"give %killername% minecraft:arrow 1"]
+	             }
+	        ],
 	"kits": [
 		{
 			"name": "Default",
