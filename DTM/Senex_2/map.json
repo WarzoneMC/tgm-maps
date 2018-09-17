@@ -1,6 +1,6 @@
 {
 	"name": "Senex 2",
-	"authors": ["ParaPhoenix and ParaPenguin"],
+	"authors": ["ParaPhoenix", "ParaPenguin"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "178, 28, -770",
-					"max": "178, 28, -770" 
+					"max": "178, 28, -770"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "178, 28, -808",
-					"max": "178, 28, -808" 
+					"max": "178, 28, -808"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "stone sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "blue"],

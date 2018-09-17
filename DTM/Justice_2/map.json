@@ -1,6 +1,6 @@
 {
 	"name": "Justice 2",
-	"authors": ["Ogrey"],
+	"authors": ["shoe0nhead"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-1269, 30, -247",
-					"max": "-1269, 30, -247" 
+					"max": "-1269, 30, -247"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-1131, 30, -247",
-					"max": "-1131, 30, -247" 
+					"max": "-1131, 30, -247"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "red"],

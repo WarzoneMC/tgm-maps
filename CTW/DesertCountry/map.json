@@ -1,6 +1,6 @@
 {
 	"name": "Desert Country",
-	"authors": ["OCNs_OMEN", "nigges60", "Sp33fr3ak", "Valkyyyy", "OCNs_Loki"],
+	"authors": ["OCNs_OMEN", "nigges60", "Sp33dfr3ak", "MarkusMoser", "LunaticReturns"],
 	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [
@@ -101,4 +101,3 @@
                 {"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo ,oo, -oo"}
 	]
 }
-	

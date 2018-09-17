@@ -1,6 +1,6 @@
 {
 	"name": "Sector Six",
-	"authors": ["Ogrey"],
+	"authors": ["shoe0nhead"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Back Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "0, 38, -226",
-					"max": "0, 38, -226" 
+					"max": "0, 38, -226"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Left Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "71, 38, -155",
-					"max": "71, 38, -155" 
+					"max": "71, 38, -155"
 				},
 				"health": 1
 			},
@@ -50,9 +50,9 @@
 				"name": "Right Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-71, 38, -155",
-					"max": "-71, 38, -155" 
+					"max": "-71, 38, -155"
 				},
 				"health": 1
 			},
@@ -110,7 +110,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "cyan"],

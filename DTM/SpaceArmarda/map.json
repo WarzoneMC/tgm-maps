@@ -1,6 +1,6 @@
 {
 	"name": "Space Armarda",
-	"authors": ["_Rascal and Mega_Rascal"],
+	"authors": ["_Rascal", "Mega_Rascal"],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Nexus",
 				"teams": ["blue"],
 				"materials": ["pumpkin"],
-				"region": { 
+				"region": {
 					"min": "-51, 14, 2",
-					"max": "-51, 14, 2" 
+					"max": "-51, 14, 2"
 				},
 				"health": 25
 			},
@@ -68,7 +68,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "pumpkin"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "orange"],

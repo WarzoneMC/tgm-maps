@@ -1,6 +1,6 @@
 {
 	"name": "Balloons",
-	"authors": ["Pandaboy999"],
+	"authors": ["TheNoChillDude", "Beebou", "Dinner1111"],
 	"version": "2.2.1",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "0, 20, -48",
-					"max": "0, 22, -48" 
+					"max": "0, 22, -48"
 				},
 				"health": 2
 			},
@@ -71,7 +71,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],

@@ -2,10 +2,7 @@
 	"name": "Icescar",
 	"version": "1.2.1",
 	"gametype": "DTM",
-	"authors": [
-		"Draco_Rogue",
-		"dragonsrule9"
-	],
+	"authors": ["Draeyx", "_Drago"],
 	"teams": [
 		{
 			"id": "green",
@@ -36,7 +33,7 @@
 				{"type": "item", "material": "splash_potion", "slot": 6, "amount": 3, "potion": {"type": "instant heal", "upgrade": true}},
 				{"type": "item", "material": "bread", "slot": 7, "amount": 32},
 				{"type": "item", "material": "gold ingot", "slot": 8},
-                
+
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
 			],
@@ -55,7 +52,7 @@
 	],
 	"dtm": {
         "monuments": [
-        
+
 			{
 				"name": "Lower Monument",
 				"teams": ["green"],
@@ -70,9 +67,9 @@
 				"name": "Central Monument",
 				"teams": ["green"],
 				"materials": ["emerald block", "diamond block"],
-				"region": { 
+				"region": {
 					"min": "72, 12, -38",
-					"max": "74, 14, -36" 
+					"max": "74, 14, -36"
 				},
 				"health": 5
 			},
@@ -80,13 +77,13 @@
 				"name": "Upper Monument",
 				"teams": ["green"],
 				"materials": ["emerald block", "diamond block"],
-				"region": { 
+				"region": {
 					"min": "123, 12, 32",
-					"max": "125, 14, 34" 
+					"max": "125, 14, 34"
 				},
 				"health": 5
 			},
-            
+
             {
 				"name": "Lower Monument&r",
 				"teams": ["purple"],
@@ -101,9 +98,9 @@
 				"name": "Central Monument&r",
 				"teams": ["purple"],
 				"materials": ["emerald block", "diamond block"],
-				"region": { 
+				"region": {
 					"min": "-74, 12, -38",
-					"max": "-72, 14, -36" 
+					"max": "-72, 14, -36"
 				},
 				"health": 5
 			},
@@ -111,9 +108,9 @@
 				"name": "Upper Monument&r",
 				"teams": ["purple"],
 				"materials": ["emerald block", "diamond block"],
-				"region": { 
+				"region": {
 					"min": "-125, 12, 32",
-					"max": "-123, 14, 34" 
+					"max": "-123, 14, 34"
 				},
 				"health": 5
 			}
@@ -144,7 +141,7 @@
             "teams": ["green"],
             "sound": true
         },
-        
+
         {
             "from": "portal-purple-upper",
             "to": "-130.5, 15, -77.5, -90",
@@ -170,17 +167,17 @@
             "sound": true
         }
     ],
-    
+
     "regions": [
-    
+
         {"id": "green-spawn", "type": "cuboid", "min": "112, 11, -67", "max": "152, 51, -107"},
         {"id": "purple-spawn", "type": "cuboid", "min": "-112, 11, -67", "max": "-152, 51, -107"},
-        
+
         {"id": "portal-green-upper", "type": "cuboid", "min": "105, 10, 40", "max": "105, 14, 40"},
         {"id": "portal-green-central", "type": "cuboid", "min": "51, 10, -12", "max": "51, 14, -12"},
         {"id": "portal-green-lower", "type": "cuboid", "min": "53, 10, -99", "max": "53, 14, -99"},
         {"id": "portal-green-outer", "type": "cuboid", "min": "68, 10, 107", "max": "68, 14, 107"},
-        
+
 		{"id": "portal-purple-upper", "type": "cuboid", "min": "-105, 10, 40", "max": "-105, 14, 40"},
         {"id": "portal-purple-central", "type": "cuboid", "min": "-51, 10, -12", "max": "-51, 14, -12"},
         {"id": "portal-purple-lower", "type": "cuboid", "min": "-53, 10, -99", "max": "-53, 14, -99"},

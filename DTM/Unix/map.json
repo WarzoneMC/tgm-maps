@@ -1,6 +1,6 @@
 {
 	"name": "Unix",
-	"authors": ["Red_Dead and Izjust4fun"],
+	"authors": ["Clownyo", "Izjust4fun"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,7 +30,7 @@
 				"name": "Left Monument",
 				"teams": ["cynx"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-718, 29, -1096",
 					"max": "-718, 29, -1096"
 				},
@@ -40,7 +40,7 @@
 				"name": "Right Monument",
 				"teams": ["cynx"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-614, 29, -1096",
 					"max": "-614, 29, -1096"
 				},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["cynx", "cyprone"],

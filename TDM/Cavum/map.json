@@ -1,6 +1,6 @@
 {
 	"name": "Cavum",
-	"authors": ["thestrangeboy1", "moo88888888"],
+	"authors": ["thestrangeboy1", "Moo8x8"],
 	"gametype": "TDM",
 	"version": "1.0",
     "teams": [
@@ -52,7 +52,7 @@
 				{"type": "item", "material": "golden apple", "slot": 7},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
-				
+
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},

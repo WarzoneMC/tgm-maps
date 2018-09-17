@@ -1,6 +1,6 @@
 {
 	"name": "Senex III",
-	"authors": ["ParaPenguin and Wulfcaspice"],
+	"authors": ["ParaPenguin", "gobernment"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument B",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "36, 13, -919",
-					"max": "36, 13, -919" 
+					"max": "36, 13, -919"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Monument A",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "36, 13, -839",
-					"max": "36, 13, -839" 
+					"max": "36, 13, -839"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],

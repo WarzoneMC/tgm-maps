@@ -1,6 +1,6 @@
 {
 	"name": "Rendezvous Redux",
-	"authors": ["ParaPenguin and Pavlo"],
+	"authors": ["ParaPenguin", "Pavlo"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-84, 37, -832",
-					"max": "-84, 37, -832" 
+					"max": "-84, 37, -832"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Right Monument",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-84, 37, -764",
-					"max": "-84, 37, -764" 
+					"max": "-84, 37, -764"
 				},
 				"health": 1
 			},
@@ -91,7 +91,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],

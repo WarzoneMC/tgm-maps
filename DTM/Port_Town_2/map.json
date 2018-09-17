@@ -1,6 +1,6 @@
 {
 	"name": "Port Town 2",
-	"authors": ["timaeusTestified and Fouled"],
+	"authors": ["shoe0nhead", "Fouled"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -30,9 +30,9 @@
 				"name": "Monument B",
 				"teams": ["purple"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-20, 16, 70",
-					"max": "-20, 16, 70" 
+					"max": "-20, 16, 70"
 				},
 				"health": 1
 			},
@@ -40,9 +40,9 @@
 				"name": "Monument A",
 				"teams": ["purple"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "20, 16, 70",
-					"max": "20, 16, 70" 
+					"max": "20, 16, 70"
 				},
 				"health": 1
 			},
@@ -90,7 +90,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple", "green"],
