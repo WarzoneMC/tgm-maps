@@ -5,39 +5,39 @@
 	"gametype": "KOTH",
 	"teams": [
 		{
-			"id": "yellow", 
-			"name": "Yellow", 
+			"id": "yellow",
+			"name": "Yellow",
 			"color": "yellow",
-			"max": 100, 
+			"max": 100,
 			"min": 3
 		},
 		{
-			"id": "green", 
-			"name": "Green", 
-			"color": "green", 
-			"max": 100, 
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"max": 100,
 			"min": 3
 		},
 		{
 			"id": "blue", 
-			"name": "Blue", 
-			"color": "blue", 
-			"max": 100, 
+			"name": "Blue",
+			"color": "blue",
+			"max": 100,
 			"min": 3
 		},
 		{
-			"id": "red", 
-			"name": "Red", 
-			"color": "red", 
-			"max": 100, 
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 100,
 			"min": 3
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-1222.5, 46, 459.5"},
-		{"teams": ["yellow"], "coords": "-1184.5, 25, 332.5, 90"},
-		{"teams": ["green"], "coords": "-1276.5, 47, 449.5, -90"},
-		{"teams": ["blue"], "coords": "-1268.5, 24, 512.5, -90"},
+		{"teams": ["yellow"], "coords": "-1152.5, 31, 373.5, 90"},
+		{"teams": ["green"], "coords": "-1165.5, 61, 354.5"},
+		{"teams": ["blue"], "coords": "-1337.5, 29, 510.5, -135"},
 		{"teams": ["red"], "coords": "-1057.5, 24, 480.5, 90"}
 	],
 	"points": {
@@ -117,17 +117,16 @@
 			}
 		]
 	},
-    "portals": [ 
-        {"from": "wuhu-island", "to": "-1358.5, 21, 901.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true},
-        {"from": "wedge-island", "to": "-1221.5, 22, 603.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true}
-    ],
+	"portals": [ 
+		{"from": "wuhu-island", "to": "-1358.5, 21, 901.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true},
+		{"from": "wedge-island", "to": "-1221.5, 22, 603.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true}
+	],
 	"kits": [
 		{
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "boat", "slot": 2, "amount": 1},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
@@ -153,9 +152,9 @@
 		{"id": "global", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
 		{"id": "wuhu-island", "min": "-1219, 23, 614", "max": "-1217, 26, 616"},
 		{"id": "wedge-island", "min": "-1331, 23, 912", "max": "-1329, 26, 910"},
-		{"id": "yellow-spawn", "min": "-1188, 0, 319", "max": "-1181, oo, 326"},
-		{"id": "green-spawn", "min": "-1280, 0, 453", "max": "-1273, oo, 446"},
-		{"id": "blue-spawn", "min": "-1261, 22, 505", "max": "-1274, 31, 518"},
+		{"id": "yellow-spawn", "min": "-1150, 30, 369", "max": "-1158, 36, 377"},
+		{"id": "green-spawn", "min": "-1162, 60, 358", "max": "-1169, 67, 351"},
+		{"id": "blue-spawn", "min": "-1335, 0, 507", "max": "-1340, oo, 512"},
 		{"id": "red-spawn", "min": "-1062, 0, 484", "max": "-1055, oo, 477"}
 	]
 }
