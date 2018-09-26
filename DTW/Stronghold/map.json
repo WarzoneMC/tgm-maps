@@ -24,13 +24,19 @@
 		{ "teams": ["red"], "coords": "500.5, 18, 586.5, 180" },
 		{ "teams": ["blue"], "coords": "500.5, 18, 414.5, 0" }
 	],
-    "killstreaks": [
-        {
-		"count": 1,
-		"repeat": true,
-		"commands": ["give %killername% arrow 4"]
-	}
-    ],	
+            "killstreaks": [{
+                 "count": 1,
+                 "repeat": true,
+                 "commands": ["give %killername% minecraft:golden_apple 1"]
+               },
+               {
+                 "count": 5,
+		 "repeat": true,
+		 "commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+                             "give %killername% minecraft:arrow 10"
+                           ]
+                     }
+            ],
     "dtm": {
 		"monuments": [
 			{
@@ -55,6 +61,15 @@
 			}
 		]
 	},
+	"killstreaks": [{
+		"count": 1,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1",
+			"give %killername% minecraft:arrow 1"
+		]
+	}],
+
+
 	"kits": [
 		{
 			"name": "Default",
