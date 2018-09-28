@@ -1,7 +1,7 @@
 {
 	"name": "Yellowstone",
 	"authors": ["Ogrey"],
-	"version": "1.0",
+	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -20,9 +20,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "97.5, 60, -126.5, 90"},
-		{"teams": ["moon"], "coords": "0.5, 8, -258.5"},
-		{"teams": ["sun"], "coords": "0.5, 8, 5.4, 180"}
+		{"teams": ["spectators"], "coords": "97, 60, -126"},
+		{"teams": ["moon"], "coords": "0, 9, -260"},
+		{"teams": ["sun"], "coords": "0, 9, 7"}
 	],
 	"dtm": {
 		"monuments": [
