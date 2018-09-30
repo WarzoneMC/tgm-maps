@@ -1,6 +1,6 @@
 {
 	"name": "Skylands Reborn",
-	"authors": ["BennyDoesStuff, _Rascal, and MatrixTunnel"],
+	"authors": ["BennyDoesStuff", "_Rascal", "MatrixTunnel"],
 	"version": "2.0",
 	"gametype": "DTM",
 	"teams": [
@@ -72,7 +72,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-portal", "red-portal"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
@@ -80,6 +80,8 @@
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"},
+		{"id": "blue-portal", "type": "cuboid", "min": "67, 0, 0", "max": "71, oo, 4"},
+		{"id": "red-portal", "type": "cuboid", "min": "17, 0, 24", "max": "21, oo, 28"}
 	]
 }

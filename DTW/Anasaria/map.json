@@ -68,6 +68,18 @@
 			}
 		]
 	},
+	"killstreaks": [{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
+		{
+			"count": 5,
+			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:planks 30"
+			]
+		}
+	],
 	"kits": [
 		{
 			"name": "Default",

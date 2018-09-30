@@ -1,6 +1,6 @@
 {
 	"name": "Cavum",
-	"authors": ["thestrangeboy1 and moo88888888"],
+	"authors": ["thestrangeboy1", "moo88888888"],
 	"gametype": "TDM",
 	"version": "1.0",
     "teams": [
@@ -40,7 +40,7 @@
 		{"teams": ["purple"], "coords": "45, 42, 52, 135"},
 		{"teams": ["yellow"], "coords": "-45, 42, -52, -45"}
 	],
-    "points":{
+    "points": {
         "target": 60
     },
 	"kits": [

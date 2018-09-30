@@ -24,7 +24,7 @@
 		{ "teams": ["blue"], "coords": "148.5, 26, 40.5, 90" },
 		{ "teams": ["red"], "coords": "-47.5, 26, 40.5, -90" }
 	],
-    "points":{
+    "points": {
         "target": 50
     },
 	"kits": [

@@ -48,6 +48,20 @@
 			}
 		]
 	},
+	"killstreaks": [{
+				"killstreaks": [{
+						"count": 1,
+						"repeat": true,
+						"commands": ["give %killername% minecraft:golden_apple 1"]
+					},
+					{
+						"count": 5,
+						"repeat": true,
+						"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+							"give %killername% minecraft:arrow 10"
+						]
+					}
+				],
 	"kits": [
 		{
 			"name": "Default",
@@ -75,13 +89,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-3, 16, -6", "max": "5, 25, 1"},
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "3, 16, -92", "max": "-5, 25, -99"},
-		{ "id": "height-limit", "type": "cuboid", "min": "oo, 70 ,oo", "max": "-oo, oo, -oo"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-3, 16, -6", "max": "5, 25, 1"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "3, 16, -92", "max": "-5, 25, -99"}
 	]
 }

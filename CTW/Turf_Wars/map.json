@@ -65,6 +65,7 @@
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 

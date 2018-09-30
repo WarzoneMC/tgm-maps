@@ -1,6 +1,6 @@
 {
 	"name": "Kyoto",
-	"authors": ["KyotoSquid, D_A_N_G_E_R, and Blaszczak"],
+	"authors": ["JapaneseSquid", "D_A_N_G_E_R", "Blaszczak"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -47,17 +47,17 @@
 				"health": 1
 			},
 			{
-				"name": "Left Monument&r",
-				"teams": ["white"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "41, 67, -29",
-					"max": "41, 67, -29"
-				},
-				"health": 1
-			},
+         "name": "Left Monument ",
+         "teams": ["white"],
+         "materials": ["obsidian"],
+         "region": {
+            "min": "41, 67, -29",
+            "max": "41, 67, -29"
+         },
+         "health": 1
+      },
 			{
-				"name": "Right Monument&r",
+				"name": "Right Monument ",
 				"teams": ["white"],
 				"materials": ["obsidian"],
 				"region": {
@@ -68,7 +68,13 @@
 			}
 		]
 	},
-	"kits": [
+	"killstreaks": [{
+		"count": 2,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1"]
+	                 }
+               ],
+	"kits":[
 		{
 			"name": "Default",
 			"items": [
