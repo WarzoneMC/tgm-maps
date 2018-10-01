@@ -8,14 +8,14 @@
 			"id": "blue",
 			"name": "Royal Navy",
 			"color": "blue",
-			"max": 50,
+			"max": 25,
 			"min": 1
 		},
 		{
 			"id": "red",
 			"name": "Pirates",
 			"color": "red",
-			"max": 50,
+			"max": 25,
 			"min": 1
 		}
 	],
