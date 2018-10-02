@@ -1,7 +1,7 @@
 {
 	"name": "Yellowstone",
-	"authors": ["timaeusTestified"],
-	"version": "1.0",
+	"authors": ["Ogrey"],
+	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -20,34 +20,54 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "97.5, 60, -126.5, 90"},
-		{"teams": ["moon"], "coords": "0.5, 8, -258.5"},
-		{"teams": ["sun"], "coords": "0.5, 8, 5.4, 180"}
+		{"teams": ["spectators"], "coords": "97, 60, -126"},
+		{"teams": ["moon"], "coords": "0, 9, -260"},
+		{"teams": ["sun"], "coords": "0, 9, 7"}
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Monument B",
+				"name": "Back Right",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "69, 22, -234",
-					"max": "69, 22, -234" 
+					"max": "69, 22, -234"
 				},
 				"health": 1
 			},
 			{
-				"name": "Monument A",
+				"name": "Back Left",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-69, 22, -234",
-					"max": "-69, 22, -234" 
+					"max": "-69, 22, -234"
 				},
 				"health": 1
 			},
 			{
-				"name": "Monument B&r",
+				"name": "Front Right",
+				"teams": ["moon"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "29, 28, -193",
+					"max": "29, 28, -193"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Left",
+				"teams": ["moon"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-29, 28, -193",
+					"max": "-29, 28, -193"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Right&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -57,12 +77,33 @@
 				"health": 1
 			},
 			{
-				"name": "Monument A&r",
+				"name": "Back Left&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "69, 22, -20",
 					"max": "69, 22, -20"
+				},
+				"health": 1
+			},
+
+			{
+				"name": "Front Right&r",
+				"teams": ["sun"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-29, 28, -61",
+					"max": "-29, 28, -61"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Left&r",
+				"teams": ["sun"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "29, 28, -61",
+					"max": "29, 28, -61"
 				},
 				"health": 1
 			}
@@ -71,8 +112,7 @@
 	"killstreaks": [{
 		"count": 1,
 		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1",
-			"give %killername% minecraft:cobblestone 5"
+		"commands": ["give %killername% minecraft:golden_apple 1"
 		]
 	}],
 	"kits": [
@@ -83,8 +123,9 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "cobblestone", "slot": 3, "amount": 64},
+				{"type": "item", "material": "log", "slot": 4, "amount": 32},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 12},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -96,7 +137,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "stone sword"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["moon", "sun"],
