@@ -92,7 +92,7 @@
 				"give %killername% minecraft:planks 15"
 			]
 		}
-	,
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],

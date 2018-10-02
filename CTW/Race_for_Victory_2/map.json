@@ -100,7 +100,7 @@
 
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -40", "max": "7, 9, -70"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-7, 0, 54", "max": "8, 9, 84"},
-		{"id": "red-base-center", "type": "cuboid", "min": "-4, oo, 133", "max": "4, 0, 84 },
+		{"id": "red-base-center", "type": "cuboid", "min": "-4, oo, 133", "max": "4, 0, 84"},
 		{"id": "blue-base-center", "type": "cuboid", "min": "-4, oo, -119", "max": "-4, 0, -70"},
 
 		{"id": "base-left", "type": "cuboid", "min": "-17, 0, -119", "max": "-17, oo, 133"},
