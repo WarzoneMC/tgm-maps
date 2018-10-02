@@ -3,224 +3,118 @@
 	"authors": ["leTea", "KyotoSquid"],
 	"version": "1.0.0",
 	"gametype": "CTW",
-	"teams": [{
+	"teams": [
+		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		}
 	],
-	"spawns": [{
-			"teams": ["spectators"],
-			"coords": "1.5, 163, 0.5, 180"
-		},
-		{
-			"teams": ["red"],
-			"coords": "55.5, 75, 0.5, 90"
-		},
-		{
-			"teams": ["blue"],
-			"coords": "-52.5, 75, 0.5, -90"
-		}
+	"spawns": [
+		{"teams": ["spectators"], "coords": "1.5, 163, 0.5, 180"},
+		{"teams": ["red"], "coords": "55.5, 75, 0.5, 90"},
+		{"teams": ["blue"], "coords": "-52.5, 75, 0.5, -90"}
 	],
 	"ctw": {
 		"wools": [{
 				"name": "Yellow",
 				"color": "yellow",
 				"teams": ["blue"],
-				"region": {
-					"min": "-56, 76, -1",
-					"max": "-56, 76, -1"
-				}
+				"region": {"min": "-56, 76, -1", "max": "-56, 76, -1"}
 			},
 			{
 				"name": "Orange",
 				"color": "orange",
 				"teams": ["blue"],
-				"region": {
-					"min": "-56, 76, 1",
-					"max": "-56, 76, 1"
-				}
+				"region": {"min": "-56, 76, 1", "max": "-56, 76, 1"}
 			},
 			{
 				"name": "Cyan",
 				"color": "cyan",
 				"teams": ["red"],
-				"region": {
-					"min": "58, 76, 1",
-					"max": "58, 76, 1"
-				}
+				"region": {"min": "58, 76, 1", "max": "58, 76, 1"}
 			},
 			{
 				"name": "Purple",
 				"color": "purple",
 				"teams": ["red"],
-				"region": {
-					"min": "58, 76, -1",
-					"max": "58, 76, -1"
-				}
+				"region": {"min": "58, 76, -1", "max": "58, 76, -1"}
 			}
 		]
 	},
-	"killstreaks": [{
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+
+				{"material": "golden apple", "slot": 4, "amount": 1},
+				{"material": "cooked beef", "slot": 6, "amount": 64},
+				{"material": "glass", "slot": 7, "amount": 64},
+				{"material": "wood", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 22},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron axe", "glass", "wood", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% minecraft:golden_apple 1",
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
 				"give %killername% minecraft:arrow 3"
 			]
 		},
 		{
 			"count": 5,
 			"repeat": true,
-			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
 				"give %killername% minecraft:planks 15"
 			]
 		}
 	],
-	"kits": [{
-		"name": "Default",
-		"items": [{
-				"material": "iron sword",
-				"slot": 0,
-				"unbreakable": true
-			},
-			{
-				"material": "bow",
-				"slot": 1,
-				"unbreakable": true
-			},
-			{
-				"material": "iron pickaxe",
-				"slot": 2,
-				"unbreakable": true
-			},
-			{
-				"material": "iron axe",
-				"slot": 3,
-				"unbreakable": true
-			},
-			{
-				"material": "golden apple",
-				"slot": 4,
-				"amount": 1
-			},
-
-			{
-				"material": "cooked beef",
-				"slot": 6,
-				"amount": 64
-			},
-			{
-				"material": "glass",
-				"slot": 7,
-				"amount": 64
-			},
-			{
-				"material": "wood",
-				"slot": 8,
-				"amount": 64
-			},
-			{
-				"material": "arrow",
-				"slot": 9,
-				"amount": 22
-			},
-
-			{
-				"material": "leather helmet",
-				"slot": "helmet",
-				"unbreakable": true
-			},
-			{
-				"material": "chainmail chestplate",
-				"slot": "chestplate",
-				"unbreakable": true
-			},
-			{
-				"material": "iron leggings",
-				"slot": "leggings",
-				"unbreakable": true
-			},
-			{
-				"material": "leather boots",
-				"slot": "boots",
-				"unbreakable": true
-			}
-		]
-	}],
-	"itemremove": [
-		"iron sword", "bow", "iron axe", "glass", "wood", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
-	],
-	"filters": [{
-			"type": "build",
-			"evaluate": "deny",
-			"teams": ["red"],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection", "yellow-room", "orange-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "build",
-			"evaluate": "deny",
-			"teams": ["blue"],
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
 			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "cyan-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-
-		{
-			"type": "enter",
-			"evaluate": "deny",
-			"teams": ["red"],
-			"regions": ["blue-spawn-protection", "orange-room", "yellow-room"],
-			"message": "&cYou may not enter this region."
-		},
-		{
-			"type": "enter",
-			"evaluate": "deny",
-			"teams": ["blue"],
-			"regions": ["red-spawn-protection", "purple-room", "cyan-room"],
-			"message": "&cYou may not enter this region."
-		}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "purple-room", "cyan-room"], "message": "&cYou may not enter this region."}
 	],
-	"regions": [{
-			"id": "orange-room",
-			"min": "59, 0, 28",
-			"max": "70, oo, 20"
-		},
-		{
-			"id": "yellow-room",
-			"min": "58, 0, -28",
-			"max": "66, oo, -17"
-		},
-		{
-			"id": "purple-room",
-			"min": "-56, 0, -17",
-			"max": "-64, oo, -28"
-		},
-		{
-			"id": "cyan-room",
-			"min": "-57, 0, 20",
-			"max": "-68, oo, 28"
-		},
+	"regions": [
+		{"id": "orange-room", "min": "59, 0, 28", "max": "70, oo, 20"},
+		{"id": "yellow-room", "min": "58, 0, -28", "max": "66, oo, -17"},
+		{"id": "purple-room", "min": "-56, 0, -17", "max": "-64, oo, -28"},
+		{"id": "cyan-room", "min": "-57, 0, 20", "max": "-68, oo, 28"},
 
-		{
-			"id": "blue-spawn-protection",
-			"type": "cuboid",
-			"min": "-40, 0, 4",
-			"max": "-57, oo, -4"
-		},
-		{
-			"id": "red-spawn-protection",
-			"type": "cuboid",
-			"min": "42, 0, 4",
-			"max": "59, oo, -4"
-		}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-40, 0, 4", "max": "-57, oo, -4"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "42, 0, 4", "max": "59, oo, -4"}
 	]
 }

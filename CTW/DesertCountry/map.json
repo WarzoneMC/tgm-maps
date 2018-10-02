@@ -8,15 +8,15 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -52,21 +52,6 @@
 			}
 		]
 	},
-            "killstreaks": [{
-                 "count": 1,
-        "repeat": true,
-        "commands": ["give %killername% minecraft:golden_apple 1",
-                     "give %killername% minecraft:arrow 1"
-                                                    ]
-               },
-               {
-                 "count": 5,
-         "repeat": true,
-         "commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
-                             "give %killername% minecraft:planks 15"
-                           ]
-                     }
-            ],
 	"kits": [
 		{
 			"name": "Default",
@@ -75,6 +60,7 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"material": "wood", "slot": 4, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
@@ -89,6 +75,24 @@
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "wood", "arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots"
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 1"
+			]
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:planks 15"
+			]
+		}
+	,
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
@@ -100,7 +104,6 @@
 			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
 	],
@@ -113,7 +116,6 @@
 
 		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
-                {"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo ,oo, -oo"}
+		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
 	]
 }
-	

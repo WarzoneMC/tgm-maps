@@ -8,15 +8,15 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -52,12 +52,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-		"count": 1,
-		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1"]
-	                 }
-               ],
 	"kits": [
 		{
 			"name": "Default",
@@ -66,6 +60,7 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "glass", "slot": 3, "amount": 32},
+
 				{"material": "log", "slot": 4, "amount": 32},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
@@ -80,6 +75,13 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "leather helmet", "wood", "arrow", "golden apple", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"filters": [
 		{

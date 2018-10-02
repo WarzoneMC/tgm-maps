@@ -3,33 +3,27 @@
 	"authors": ["ViceWatercolour"],
 	"version": "1.0.0",
 	"gametype": "CTW",
-
-
 	"teams": [
 		{
 			"id": "orange",
 			"name": "Orange",
 			"color": "gold",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		}
 	],
-
-
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "15.5, 22, -49.5, 0" },
-		{ "teams": ["green"], "coords": "62.5, 11, 21.5, -90" },
-		{ "teams": ["orange"], "coords": "-33.5, 11, -46.5, 90" }
+		{"teams": ["spectators"], "coords": "15.5, 22, -49.5"},
+		{"teams": ["green"], "coords": "62.5, 11, 21.5, -90"},
+		{"teams": ["orange"], "coords": "-33.5, 11, -46.5, 90"}
 	],
-
-
 	"ctw": {
 		"wools": [
 			{
@@ -46,8 +40,6 @@
 			}
 		]
 	},
-
-
 	"kits": [
 		{
 			"name": "Default",
@@ -56,6 +48,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
 				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -69,15 +62,10 @@
 			]
 		}
 	],
-
-
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
-		"glass", "wood", "cooked beef", "arrow", "shears", "leather helmet",                 "chainmail chestplate", "leather leggings", "iron boots",
-		"beacon", "string"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "wood", "cooked beef", "arrow", 
+		"shears", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
 	],
-
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["green"],
@@ -89,11 +77,9 @@
 			"regions": ["green-spawn-protection", "orange-spawn-protection",  "red-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-
-		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn-protection", "cyan-room"], "message": "&cYou may not enter this region." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn-protection", "red-room"], "message": "&cYou may not enter this region." }
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn-protection", "cyan-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn-protection", "red-room"], "message": "&cYou may not enter this region."}
 	],
-
 	"regions": [
 		{"id": "cyan-room", "min": "105, 0, -65", "max": "122, 64, -50"},
 		{"id": "red-room", "min": "-77, 0, 39", "max": "-94, 64, 24"},

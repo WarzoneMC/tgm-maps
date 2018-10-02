@@ -1,6 +1,6 @@
 {
 	"name": "Cargo",
-	"authors": ["DiamondAx, EnarRikardz, BrunoTheMiner, TiggyLi, iamramsey, and Rokosnocone"],
+	"authors": ["DiamondAx", "EnarRikardz", "BrunoTheMiner", "TiggyLi", "iamramsey", "Rokosnocone"],
 	"version": "1.0.5",
 	"gametype": "CTW",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "23.9, 122, -112.9, -90" },
-		{ "teams": ["red"], "coords": "63.9, 77.5, -191" },
-		{ "teams": ["blue"], "coords": "63.9, 77.5, -34.9, 180" }
+		{"teams": ["spectators"], "coords": "23.9, 122, -112.9, -90"},
+		{"teams": ["red"], "coords": "63.9, 77.5, -191"},
+		{"teams": ["blue"], "coords": "63.9, 77.5, -34.9, 180"}
 	],
 	"ctw": {
 		"wools": [
@@ -52,12 +52,13 @@
 			}
 		]
 	},
-	"killstreaks": [{
-		"count": 1,
-		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1"]
-	                 }
-               ],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"kits": [
 		{
 			"name": "Default",
@@ -68,7 +69,6 @@
 
 				{"material": "wood", "slot": 4, "amount": 64},
 				{"material": "ladder", "slot": 5, "amount": 64},
-
 				{"material": "cooked beef", "slot": 8, "amount": 16},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
@@ -94,9 +94,8 @@
 			"regions": ["red-spawn-protection", "blue-spawn-protection", "yellow-room", "orange-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "cyan-room"], "message": "&cYou may not enter this region." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region." }
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "cyan-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
 		{"id": "orange-room", "min": "13, 0, -34", "max": "49, oo, -11"},
