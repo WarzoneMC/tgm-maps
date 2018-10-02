@@ -1,6 +1,6 @@
 {
 	"name": "Arbaro Blitzmas",
-	"authors": ["PenguinsCubed and carterpaul"],
+	"authors": ["PenguinsCubed", "carterpaul"],
 	"gametype": "Blitz",
 	"version": "1.0.0",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		}
 	],
 	"spawns": [
@@ -44,11 +44,11 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
-			"regions": ["noblox"],
+			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
 	],
 	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
