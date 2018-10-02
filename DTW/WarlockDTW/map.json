@@ -86,12 +86,14 @@
 			"regions": ["blue-wooly", "red-wooly", "blue-spawn-protection", "red-spawn-protection"]
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 	"regions": [
 		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "93, 0, 41", "max": "113, oo, 57" },
 		{ "id": "red-wooly", "type": "cuboid", "min": "76, 6, -71", "max": "78, 9, -69" },
 		{ "id": "blue-wooly", "type": "cuboid", "min": "76, 9, 53", "max": "78, 6, 55" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "93, 0, -57", "max": "113, oo, -73" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "93, 0, -57", "max": "113, oo, -73" },
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 50, oo", "max": "-oo, oo, -oo"}
 	]
 }

@@ -80,14 +80,16 @@
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 11}
+				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 11},
+				{"material": "stained glass", "slot": 5, "amount": 64, "durability": 11}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 14}
+				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 14},
+				{"material": "stained glass", "slot": 5, "amount": 64, "durability": 14}
 			]
 		}
 	],
@@ -101,13 +103,16 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 	"regions": [
 		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "208, 22, -99", "max": "228, 26, -87" },
 
 		{ "id": "spec-spawn-protection", "type": "cuboid", "min": "323, 70, -31", "max": "341, oo, -13" },
 
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "283, 22, 43", "max": "263, 26, 31" }
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "283, 22, 43", "max": "263, 26, 31" },
+
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 60, oo", "max": "-oo, oo, -oo"}
 	]
 }

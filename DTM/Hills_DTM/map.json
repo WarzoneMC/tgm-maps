@@ -1,0 +1,106 @@
+{
+	"name": "Hills",
+	"authors": ["Clijmart", "MilkyWayRules"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0, 100, 0"},
+		{"teams": ["Blue"], "coords": "83.5, 99, 77.5, 135,0"},
+		{"teams": ["Red"], "coords": "-82.5, 99, -76.5, -45,0"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["Red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-83,100,-11",
+					"max": "-83,100,-11"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["Red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-9,104,-77",
+					"max": "-9,104,-77"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["Blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "83,100,11",
+					"max": "83,100,11"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["Blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "9,104,77",
+					"max": "9,104,77"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "stained glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
+				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather boots", "arrow", "stone sword", "golden apple"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "88, 98, 82", "max": "78, oo, 72"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-88, 98, -82", "max": "-78, oo, -72"}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"name": "Cake",
+	"authors": ["Clijmart", "cellish", "Sweedie"],
+	"version": "1.0.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "Yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "-72.5, 45, 0.5"},
+		{ "teams": ["Yellow"], "coords": "0.5, 46, 151.5"},
+		{ "teams": ["Blue"], "coords": "0.5, 46, -150.5"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Light Blue",
+				"color": "cyan",
+				"teams": ["Yellow"],
+				"region": {"min": "-3, 12, 132", "max": "-3, 12, 132"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"teams": ["Yellow"],
+				"region": {"min": "3, 12, 132", "max": "3, 12, 132"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["Blue"],
+				"region": {"min": "-3, 12, -132", "max": "-3, 12, -132"}
+			},
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["Blue"],
+				"region": {"min": "3, 12, -132", "max": "3, 12, -132"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+
+
+				{"material": "stained glass", "slot": 4, "amount": 64},
+				{"material": "log", "slot": 5, "amount": 64},
+				{"material": "sandstone", "slot": 6, "amount": 64},
+				{"material": "golden apple", "slot": 8, "amount": 3},
+				{"material": "cooked fish", "slot": 7, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
+		"wood", "cooked fish", "arrow","golden apple", "leather chestplate",
+		"leather leggings", "leather boots", "beacon", "stained glass", "sandstone"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["Yellow"],
+			"regions": ["yellow-spawn-protection", "blue-spawn-protection", "orange-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["Blue"],
+			"regions": ["yellow-spawn-protection", "blue-spawn-protection", "light-blue-room", "blue-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["Blue"], "regions": ["yellow-spawn-protection", "blue-room", "light-blue-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["Yellow"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "yellow-room", "min": "-13, 8, 143", "max": "-2, oo, 150"},
+		{"id": "orange-room", "min": "13, 8, 143", "max": "2, oo, 159"},
+
+		{"id": "blue-room", "min": "13, 8, -143", "max": "2, oo, -159"},
+		{"id": "light-blue-room", "min": "-13, 8, -143", "max": "-2, oo, -159"},
+
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-4, 7, 119", "max": "4, oo, 158"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "4, 7, -119", "max": "-4, oo, -154"}
+	]
+}

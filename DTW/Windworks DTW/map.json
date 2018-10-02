@@ -84,12 +84,14 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection", "middle"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{ "type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["height-limit"], "message": "&cYou reached the height-limit for this map."}
 	],
 	"regions": [
-		{"id": "middle", "type": "cuboid", "min": "-31, 0, 77", "max": "-77, oo, 34"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-4, 0, 74", "max": "10, oo, 88"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-74, 0, 4", "max": "-88, oo, -10"}
+		{ "id": "middle", "type": "cuboid", "min": "-31, 0, 77", "max": "-77, oo, 34"},
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-4, 0, 74", "max": "10, oo, 88"},
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-74, 0, 4", "max": "-88, oo, -10"},
+		{ "id": "height-limit", "type": "cuboid", "min": "oo, 60, oo", "max": "-oo, oo, -oo"}
 	]
 }
