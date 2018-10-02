@@ -9,21 +9,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-76.5, 16, 99.5, -90"},
-		{"teams": ["blue"], "coords": "-106.5, 8, 166.5, 0"},
-		{"teams": ["red"], "coords": "-106.5, 8, 32.5, 0"}
+		{"teams": ["blue"], "coords": "-106.5, 8, 166.5"},
+		{"teams": ["red"], "coords": "-106.5, 8, 32.5"}
 	],
     "points": {
         "target": 100
@@ -42,16 +42,15 @@
 			]
 		}
 	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
+	],
 	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,
 			"commands": ["effect %killername% night_vision 2 1 true"]
 		}
-	],
-	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings",
-		"leather boots", "chainmail leggings", "chainmail chestplate"
 	],
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
