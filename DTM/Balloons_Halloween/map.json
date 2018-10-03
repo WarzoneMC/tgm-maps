@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "0.5, 64, 0.5, 180" },
-		{ "teams": ["red"], "coords": "23.5, 9, 27.5, 90" },
-		{ "teams": ["blue"], "coords": "-23.5, 9, -27.5, -90" }
+		{"teams": ["spectators"], "coords": "0.5, 64, 0.5, 180"},
+		{"teams": ["red"], "coords": "23.5, 9, 27.5, 90"},
+		{"teams": ["blue"], "coords": "-23.5, 9, -27.5, -90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -31,8 +31,8 @@
 				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
-					"min": "0,22,48",
-					"max": "0,20,48"
+					"min": "0, 22, 48",
+					"max": "0, 20, 48"
 				},
 				"health": 2
 			},
@@ -41,8 +41,8 @@
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
-					"min": "0,22,-48",
-					"max": "0,20,-48"
+					"min": "0, 22, -48",
+					"max": "0, 20, -48"
 				},
 				"health": 2
 			}
@@ -59,9 +59,7 @@
 
 				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
 				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
-
 				{"type": "item", "material": "bread", "slot": 8, "amount": 16},
-
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -82,7 +80,7 @@
 		}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection-1", "type": "cuboid", "min": "-17,8,-21", "max": "-27,15,-33" },
-		{ "id": "red-spawn-protection-1", "type": "cuboid", "min": "17,8,21", "max": "27,15,33" }
+		{"id": "blue-spawn-protection-1", "type": "cuboid", "min": "-17, 8, -21", "max": "-27, 15, -33"},
+		{"id": "red-spawn-protection-1", "type": "cuboid", "min": "17, 8, 21", "max": "27, 15, 33"}
 	]
 }

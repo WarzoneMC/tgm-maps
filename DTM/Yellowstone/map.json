@@ -8,15 +8,15 @@
 			"id": "moon",
 			"name": "Moon Tribe",
 			"color": "dark aqua",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		},
 		{
 			"id": "sun",
 			"name": "Sun Tribe",
 			"color": "yellow",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		}
 	],
 	"spawns": [
@@ -68,13 +68,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-		"count": 1,
-		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1",
-			"give %killername% minecraft:cobblestone 5"
-		]
-	}],
 	"kits": [
 		{
 			"name": "Default",
@@ -82,6 +75,7 @@
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+
 				{"type": "item", "material": "cobblestone", "slot": 3, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -96,15 +90,25 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "stone sword"
-	],	
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:cobblestone 5"
+			]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["moon", "sun"],
 			"regions": ["moon-spawn-protection", "sun-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["moon"], "regions": ["sun-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{"type": "enter", "evaluate": "deny", "teams": ["sun"], "regions": ["moon-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["moon"], "regions": ["sun-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["sun"], "regions": ["moon-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "moon-spawn-protection", "type": "cuboid", "min": "-8, 0, -266", "max": "8, oo, -252"},

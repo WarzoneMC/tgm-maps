@@ -8,21 +8,21 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "116.5, 12, -460.5, 45" },
-		{ "teams": ["red"], "coords": "2.5, 16, -480.5, -45" },
-		{ "teams": ["green"], "coords": "136.5, 16, -346.5, 135" }
+		{"teams": ["spectators"], "coords": "116.5, 12, -460.5, 45"},
+		{"teams": ["red"], "coords": "2.5, 16, -480.5, -45"},
+		{"teams": ["green"], "coords": "136.5, 16, -346.5, 135"}
 	],
 	"dtm": {
 		"monuments": [
@@ -89,8 +89,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "cooked chicken",
-		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
 	],
 	"filters": [
 		{
@@ -98,8 +97,8 @@
 			"regions": ["red-spawn-protection", "green-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "6, 13, -485", "max": "-2, oo, -477"},

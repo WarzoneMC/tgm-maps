@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Royal Navy",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Pirates",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "330.5, 129, -21.5, 90" },
-		{ "teams": ["red"], "coords": "272.5, 23, 37.5, 90" },
-		{ "teams": ["blue"], "coords": "219.5, 24, -92.5, -90" }
+		{"teams": ["spectators"], "coords": "330.5, 129, -21.5, 90"},
+		{"teams": ["red"], "coords": "272.5, 23, 37.5, 90"},
+		{"teams": ["blue"], "coords": "219.5, 24, -92.5, -90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -55,11 +55,10 @@
 				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"], "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond axe", "slot": 2, "unbreakable": true},
+
 				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
 				{"material": "boat spruce", "slot": 6},
-
 				{"material": "arrow", "slot": 9, "amount": 64},
-
 				{"material": "cooked beef", "slot": 8, "amount": 10},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -95,14 +94,12 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "208, 22, -99", "max": "228, 26, -87" },
-
-		{ "id": "spec-spawn-protection", "type": "cuboid", "min": "323, 126, -31", "max": "341, oo, -13" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "283, 22, 43", "max": "263, 26, 31" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "208, 22, -99", "max": "228, 26, -87"},
+		{"id": "spec-spawn-protection", "type": "cuboid", "min": "323, 126, -31", "max": "341, oo, -13"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "283, 22, 43", "max": "263, 26, 31"}
 	]
 }
