@@ -33,7 +33,7 @@
                 {"material": "arrow", "slot": 2, "amount": 10},
                 {"material": "golden apple", "slot": 8},
                 {"material": "cooked beef", "slot": 8, "amount": 32},
-                
+
                 {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
@@ -93,5 +93,17 @@
 			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
 	],
-    "itemremove": ["stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"]
+    "itemremove": [
+      "stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"
+  ],
+"filters": [
+  {
+    "type": "build", "evaluate": "deny", "teams": ["players"],
+    "regions": ["noblox"],
+    "message": "&cYou are not allowed to modify terrain here."
+  }
+],
+"regions": [
+  {"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+]
 }
