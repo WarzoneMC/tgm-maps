@@ -1,42 +1,42 @@
-Castles 
-Outback 
-Anasaria 
-Senex 2 
-Arizona 
-Thrive V2 
-Deepwind Jungle 
+Castles
+Outback
+Anasaria
+Senex 2
+Arizona
+Thrive V2
+Deepwind Jungle
 Snowdrift
-Port Town 2 
-Persisto 
-WindWorks DTW 
-Sandstone 2 
-Terrace 2 
-Rendezvous Redux 
-Stonehenge 
+Port Town 2
+Persisto
+WindWorks DTW
+Sandstone 2
+Terrace 2
+Rendezvous Redux
+Stonehenge
 Rooted Frontier
-Aerial Conquest 
-Pipe Palace 
-Cargo 
-Senex 3 
-Egypt 
-Sandstone 
-Spooky 
-Gardens 
-Terrace 
-Desert Country 
-Village 2 
-A New Day 
-Electri City 
-Scarescape 
+Aerial Conquest
+Pipe Palace
+Cargo
+Senex 3
+Egypt
+Sandstone
+Spooky
+Gardens
+Terrace
+Desert Country
+Village 2
+A New Day
+Electri City
+Scarescape
 Oriental
-Stronghold 
-WarlockDTW 
+Stronghold
+WarlockDTW
 Fracture
-Twin Peaks 
-Rooted 
-Ancient Cistern 
-Balloons Halloween 
-Kyoto 
-Ring Race 
-Timeless 
+Twin Peaks
+Rooted
+Ancient Cistern
+Balloons Halloween
+Kyoto
+Ring Race
+Timeless
 Avalanche Mini
