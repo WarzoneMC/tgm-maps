@@ -1,30 +1,24 @@
-Castles 
 Outback 
 Anasaria 
 Senex 2 
-Arizona 
-Thrive V2 
+Arizona  
+Port Town 2
 Deepwind_Jungle 
 Snowdrift
-Port Town 2 
 Persisto 
 WindWorks DTW 
-Sandstone 2 
-Terrace 2 
+Sandstone 2  
 Rendezvous_Redux 
 Stonehenge 
 Rooted Frontier
 Aerial Conquest 
-Pipe Palace 
 Cargo 
 Senex 3 
-Egypt 
 Sandstone 
 Spooky 
 Gardens 
 Terrace 
 Desert Country 
-Village 2 
 A New Day 
 Electri City 
 Scarescape 
@@ -34,9 +28,9 @@ WarlockDTW
 Fracture
 Twin Peaks 
 Rooted 
-Ancient Cistern 
 Balloons Halloween 
 Kyoto 
 Ring Race 
-Timeless 
+Timeless
+Race For Victory 2 
 Avalanche Mini
