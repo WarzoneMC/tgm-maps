@@ -1,6 +1,6 @@
 {
 	"name": "Oakley",
-	"authors": ["Loks and NinjaTrev"],
+	"authors": ["Loks", "NinjaTrev"],
 	"version": "1.2.3",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "124.5, 75, 94.5, 90" },
-		{ "teams": ["red"], "coords": "95.5, 49, 151.5, -145" },
-		{ "teams": ["blue"], "coords": "105.5, 49, 35.5, 25" }
+		{"teams": ["spectators"], "coords": "124.5, 75, 94.5, 90"},
+		{"teams": ["red"], "coords": "95.5, 49, 151.5, -145"},
+		{"teams": ["blue"], "coords": "105.5, 49, 35.5, 25"}
 	],
 	"dtm": {
 		"monuments": [
@@ -75,11 +75,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "109, 48, 40", "max": "100, oo, 30" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "90, 48, 145", "max": "100, oo, 157" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "109, 48, 40", "max": "100, oo, 30"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "90, 48, 145", "max": "100, oo, 157"}
 	]
 }

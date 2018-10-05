@@ -1,6 +1,6 @@
 {
 	"name": "Scarescape",
-	"authors": ["Synconix, ViceWatercolour, _Rascal"],
+	"authors": ["Synconix", "ViceWatercolour", "_Rascal"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "orange",
 			"name": "Orange",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-90.5, 76, 1564.5, 90" },
-		{ "teams": ["orange"], "coords": "-136.5, 37, 1670.5, 180" },
-		{ "teams": ["yellow"], "coords": "-137.5, 37, 1457.5, 0" }
+		{"teams": ["spectators"], "coords": "-90.5, 76, 1564.5, 90"},
+		{"teams": ["orange"], "coords": "-136.5, 37, 1670.5, 180"},
+		{"teams": ["yellow"], "coords": "-137.5, 37, 1457.5"}
 	],
 	"dtm": {
 		"monuments": [
@@ -56,6 +56,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "log", "slot": 4, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
@@ -76,12 +77,11 @@
 			"regions": ["orange-spawn-protection", "yellow-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-127, 36, 1660", "max": "-146, oo, 1672" },
-
-		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "-146, 36, 1467", "max": "-127, oo, 1455" }
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-127, 36, 1660", "max": "-146, oo, 1672"},
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-146, 36, 1467", "max": "-127, oo, 1455"}
 	]
 }

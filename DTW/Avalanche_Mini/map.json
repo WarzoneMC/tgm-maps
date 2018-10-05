@@ -8,21 +8,21 @@
 			"id": "orange",
 			"name": "Orange",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-18.5, 35, -60.5, 0" },
-		{ "teams": ["red"], "coords": "60.5, 18, 0.5, 90" },
-		{ "teams": ["orange"], "coords": "-97.5, 18, 0.5, -90" }
+		{"teams": ["spectators"], "coords": "-18.5, 35, -60.5"},
+		{"teams": ["red"], "coords": "60.5, 18, 0.5, 90"},
+		{"teams": ["orange"], "coords": "-97.5, 18, 0.5, -90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -47,20 +47,6 @@
 				"health": 10
 			}
 		]
-	},
-            "killstreaks": [{
-                 "count": 1,
-                 "repeat": true,
-                 "commands": ["give %killername% minecraft:golden_apple 1"]
-               },
-               {
-                 "count": 5,
-		 "repeat": true,
-		 "commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
-                             "give %killername% minecraft:arrow 10"
-                           ]
-                     }
-            ],
 	"kits": [
 		{
 			"name": "Default",
@@ -69,9 +55,9 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "wood", "amount": 64, "slot": 4},
 				{"type": "item", "material": "wood", "amount": 64, "slot": 5},
-
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -85,8 +71,6 @@
 	"itemremove": [
 		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool", "diamond pickaxe", "stone spade", "arrow", "iron axe", "bow", "stone sword", "wood", "snow ball"
 	],
-
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "red"],
@@ -107,20 +91,20 @@
 			"regions": ["elixir-protection-1", "elixir-protection-2"],
 			"message": "&cYou are not allowed to modify the elixir region."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
-
-
 	"regions": [
-		{ "id": "orange-spawn-protection", "type": "cuboid", "min": "-94, 16, -4", "max": "-103, 23, 4" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "56, 16, 4", "max": "64, 23, -4" },
-		{ "id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 18, 2" },
-		{ "id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 18, -2" },
-		{ "id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14" },
-		{ "id": "elixir-protection-1", "type": "cylinder", "base": "-79, 7, -2", "radius": "3", "height": "6" },
-		{ "id": "elixir-protection-2", "type": "cylinder", "base": "41, 7, 2", "radius": "3", "height": "6" },
-		{ "id": "red-wool", "type": "cuboid", "min": "47, 41, 2", "max": "51, 32, -2" },
-		{ "id": "orange-wool", "type": "cuboid", "min": "-85, 41, -2", "max": "-89, 32, 2" }
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-94, 16, -4", "max": "-103, 23, 4"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "56, 16, 4", "max": "64, 23, -4"},
+		{"id": "orange-hull", "type": "cuboid", "min": "-101, 34, -2", "max": "-83, 18, 2"},
+		{"id": "red-hull", "type": "cuboid", "min": "63, 34, 2", "max": "45, 18, -2" },
+
+		{"id": "middle-protection", "type": "cylinder", "base": "-19, 4, 0", "radius": "11", "height": "14"},
+		{"id": "elixir-protection-1", "type": "cylinder", "base": "-79, 7, -2", "radius": "3", "height": "6"},
+		{"id": "elixir-protection-2", "type": "cylinder", "base": "41, 7, 2", "radius": "3", "height": "6"},
+
+		{"id": "red-wool", "type": "cuboid", "min": "47, 41, 2", "max": "51, 32, -2"},
+		{"id": "orange-wool", "type": "cuboid", "min": "-85, 41, -2", "max": "-89, 32, 2"}
 	]
 }
