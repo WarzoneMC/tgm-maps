@@ -50,11 +50,7 @@
 			"count": 5,
 			"repeat": true,
 			"commands": ["give %killername% minecraft:arrow 7"]
-		}
-	],
-	"kits": [
-		{
-			"name": "Default",
+
 			}
 		]
 	},
