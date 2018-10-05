@@ -15,7 +15,7 @@
 		{
 			"id": "Infected",
 			"name": "Infected",
-			"color": "green"
+			"color": "green",
 			"min": 1,
 			"max": 50
 		}
