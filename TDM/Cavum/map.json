@@ -1,6 +1,6 @@
 {
 	"name": "Cavum",
-	"authors": ["thestrangeboy1", "moo88888888"],
+	"authors": ["thestrangeboy1", "moo8x8"],
 	"gametype": "TDM",
 	"version": "1.0",
     "teams": [
@@ -8,29 +8,29 @@
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 15,
-			"min": 1
+			"min": 1,
+			"max": 15
 		},
 		{
 			"id": "purple",
 			"name": "Purple",
 			"color": "light purple",
-			"max": 15,
-			"min": 1
+			"min": 1,
+			"max": 15
 		},
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 15,
-			"min": 1
+			"min": 1,
+			"max": 15
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 15,
-			"min": 1
+			"min": 1,
+			"max": 15
 		}
 	],
 	"spawns": [
@@ -66,11 +66,11 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "purple", "yellow"],
-			"regions": ["noblox"],
+			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
 	],
 	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

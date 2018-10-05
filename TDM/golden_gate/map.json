@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "50.5, 30, 40.5, 0" },
-		{ "teams": ["blue"], "coords": "148.5, 26, 40.5, 90" },
-		{ "teams": ["red"], "coords": "-47.5, 26, 40.5, -90" }
+		{"teams": ["spectators"], "coords": "50.5, 30, 40.5"},
+		{"teams": ["blue"], "coords": "148.5, 26, 40.5, 90"},
+		{"teams": ["red"], "coords": "-47.5, 26, 40.5, -90"}
 	],
     "points": {
         "target": 50
@@ -48,7 +48,6 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings",
-		"leather boots", "iron leggings", "chainmail chestplate"
+		"leather helmet", "leather boots", "iron leggings", "chainmail chestplate"
 	]
 }

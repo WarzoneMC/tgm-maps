@@ -8,15 +8,15 @@
 			"id": "pink",
 			"name": "Pink",
 			"color": "light purple",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -76,6 +76,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -97,8 +98,8 @@
 			"regions": ["pink-spawn-protection", "yellow-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["pink"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["pink-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["pink"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["pink-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "pink-spawn-protection", "type": "cuboid", "min": "36, 0, 78", "max": "50, oo, 92"},

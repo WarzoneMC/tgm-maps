@@ -1,6 +1,6 @@
 {
 	"name": "Riverbank",
-	"authors": ["rockymine and yoyo_power"],
+	"authors": ["rockymine", "yoyo_power"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-16.5, 7, 0.5, -180" },
-		{ "teams": ["red"], "coords": "-70.5, 20, -5.5, -135" },
-		{ "teams": ["blue"], "coords": "37.5, 20, 6.5, 45" }
+		{"teams": ["spectators"], "coords": "-16.5, 7, 0.5, -180"},
+		{"teams": ["red"], "coords": "-70.5, 20, -5.5, -135"},
+		{"teams": ["blue"], "coords": "37.5, 20, 6.5, 45"}
 	],
 	"dtm": {
 		"monuments": [
@@ -87,23 +87,21 @@
 			]
 		}
 	],
-
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "noblox"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo" },
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "28, 9, 15", "max": "38, 24, 5" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-62, 9, -15", "max": "-72, 24, -5" }
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "28, 9, 15", "max": "38, 24, 5"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-62, 9, -15", "max": "-72, 24, -5"}
 	]
 }

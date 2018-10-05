@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "118.5, 51, -80.5" },
-		{ "teams": ["red"], "coords": "209.5, 16, -29.5, 145" },
-		{ "teams": ["blue"], "coords": "27.5, 16, -29.5, -145"}
+		{"teams": ["spectators"], "coords": "118.5, 51, -80.5"},
+		{"teams": ["red"], "coords": "209.5, 16, -29.5, 145"},
+		{"teams": ["blue"], "coords": "27.5, 16, -29.5, -145"}
 	],
 	"dtm": {
 		"monuments": [
@@ -76,12 +76,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "23.5, 0, -35.5", "max": "33, oo, -23.5"},
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "213.5, 0, -35.5", "max": "203, oo, -23.5"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "23.5, 0, -35.5", "max": "33, oo, -23.5"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "213.5, 0, -35.5", "max": "203, oo, -23.5"}
 	]
 }

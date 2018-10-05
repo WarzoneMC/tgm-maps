@@ -1,6 +1,6 @@
 {
 	"name": "Midnight Train",
-	"authors": ["pepsidawg00 and dinner1111"],
+	"authors": ["pepsidawg00", "dinner1111"],
 	"version": "1.2.6",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 40,
-			"min": 1
+			"min": 1,
+			"max": 40
 		},
 		{
 			"id": "purple",
 			"name": "Purple",
 			"color": "dark purple",
-			"max": 40,
-			"min": 1
+			"min": 1,
+			"max": 40
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90" },
-		{ "teams": ["green"], "coords": "-87.0, 29, -201.0" },
-		{ "teams": ["purple"], "coords": "-87.0, 29, -14.9, 180" }
+		{"teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90"},
+		{"teams": ["green"], "coords": "-87.0, 29, -201.0"},
+		{"teams": ["purple"], "coords": "-87.0, 29, -14.9, 180"}
 	],
 	"dtm": {
 		"monuments": [
@@ -76,9 +76,9 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
 				{"type": "item", "material": "log", "slot": 5, "amount": 64},
-
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
@@ -90,9 +90,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
-		"glass", "cooked beef", "arrow", "leather helmet", "chainmail chestplate",
-		"leather leggings", "leather boots", "beacon", "obsidian"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "cooked beef", "arrow", 
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "beacon", "obsidian"
 	],
 	"filters": [
 		{
@@ -100,11 +99,11 @@
 			"regions": ["green-spawn-protection", "purple-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189" },
-		{ "id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6" }
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6"}
 	]
 }

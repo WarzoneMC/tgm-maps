@@ -1,42 +1,30 @@
 {
 	"name": "Stonehenge",
 	"authors": ["Unknown"],
-    "version": "1.0",
+	"version": "1.0",
 	"gametype": "DTM",
-
 	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
-
 	"spawns": [
-		{
-			"teams": ["blue"],
-			"coords": "-0.5, 74, 32.5, 179"
-		},
-		{
-			"teams": ["red"],
-			"coords": "-0.5, 74, -123.5, 0"
-		},
-		{
-            "teams": ["spectators"],
-			"coords": "-1.5, 133, -42.5, -177"
-		}
+		{"teams": ["spectators"], "coords": "-1.5, 133, -42.5, -177"},
+		{"teams": ["blue"], "coords": "-0.5, 74, 32.5, 179"},
+		{"teams": ["red"], "coords": "-0.5, 74, -123.5"}
 	],
-
-    "dtm": {
+	"dtm": {
 		"monuments": [
 			{
 				"name": "Red Wool",
@@ -60,13 +48,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-			"count": 1,
-			"repeat": true,
-			"commands": ["give %killername% minecraft:golden_apple 1",
-				     "give %killername% minecraft:arrow 3"]
-					 }
-		],
     "kits": [
 		{
 			"name": "Default",
@@ -87,5 +68,15 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 3"
+			]
+		}
 	]
 }

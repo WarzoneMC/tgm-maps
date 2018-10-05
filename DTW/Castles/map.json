@@ -1,6 +1,6 @@
 {
 	"name": "Castles",
-	"authors": ["Loks and NinjaTrev"],
+	"authors": ["Loks", "NinjaTrev"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-74.5, 154, 84.5, -180" },
-		{ "teams": ["red"], "coords": "-160.5, 101, 0.5, -90" },
-		{ "teams": ["blue"], "coords": "13.5, 101, 0.5, 90" }
+		{"teams": ["spectators"], "coords": "-74.5, 154, 84.5, -180"},
+		{"teams": ["red"], "coords": "-160.5, 101, 0.5, -90"},
+		{"teams": ["blue"], "coords": "13.5, 101, 0.5, 90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -48,19 +48,6 @@
 			}
 		]
 	},
-"killstreaks": [{
-                 "count": 1,
-                 "repeat": true,
-                 "commands": ["give %killername% minecraft:golden_apple 1"]
-               },
-               {
-                 "count": 5,
-		 "repeat": true,
-		 "commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
-                             "give %killername% minecraft:arrow 5"
-                           ]
-                     }
-            ],
 	"kits": [
 		{
 			"name": "Default",
@@ -82,18 +69,32 @@
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:arrow 5"
+			]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "8, 99, -5", "max": "18, oo, 5" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-156, 99, 5", "max": "-166, oo, -5" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "8, 99, -5", "max": "18, oo, 5"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-156, 99, 5", "max": "-166, oo, -5"}
 	]
 }

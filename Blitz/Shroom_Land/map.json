@@ -2,30 +2,30 @@
 	"name": "Shroom Land",
 	"authors": ["AtlasGames"],
 	"gametype": "Blitz",
-  "version": "1.0",
+	"version": "1.0",
 	"stats": {"disable": true},
-  "teams": [
+	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		}
 	],
-  "spawns": [
+	"spawns": [
 		{"teams": ["spectators"], "coords": "190.5, 82, -43.5"},
 		{"teams": ["blue"], "coords": "278.5, 82, -1.5, 90"},
 		{"teams": ["red"], "coords": "101.5, 82, 0.5, -90"}
 	],
-  "kits": [
+	"kits": [
 		{
 			"name": "Default",
 			"items": [
@@ -45,20 +45,21 @@
 			]
 		}
 	],
-
 	"killstreaks": [
 		{
-	"count": 1,
-	"repeat": true,
-	"commands": ["give %killername% minecraft:arrow 1"]
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:arrow 1"]
 		}
 	],
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "x": 118.5, "y": 24, "z": 158.5, "yaw": 180 },
-		{ "teams": ["blue"], "x": 173.5, "y": 9, "z": 200.5, "yaw": 90 },
-		{ "teams": ["red"], "x": 63.5, "y": 9, "z": 212.5, "yaw": -90 }
+		{"teams": ["spectators"], "coords": "118.5, 24, 158.5, 180"},
+		{"teams": ["blue"], "coords": "173.5, 9, 200.5, 90"},
+		{"teams": ["red"], "coords": "63.5, 9, 212.5, -90"}
 	],
 	"points": {
 		"target": 250
@@ -32,8 +32,8 @@
 			{
 				"name": "Center",
 				"region": {
-					"min": { "x": 122, "y": 0, "z": 210 },
-					"max": { "x": 115, "y": 12, "z": 203 }
+					"min": {"x": 122, "y": 0, "z": 210},
+					"max": {"x": 115, "y": 12, "z": 203}
 				}
 			}
 		]
@@ -48,7 +48,6 @@
 				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
 
 				{"type": "item", "material": "wood", "slot": 5, "amount": 12},
-
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 
@@ -60,20 +59,18 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "leather helmet",
-		"stone", "cooked beef", "arrow", "leather helmet", "log",
-		"chainmail chestplate", "leather leggings", "leather boots",
-		"cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
+		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "log",
+		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
 	],
 	"filters": [
-		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["center-protection"], "message": ""}
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["center-protection"], "message": ""}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "min": "178,oo,205", "max": "171,0,198" },
-		{ "id": "red-spawn-protection", "min": "59,oo,208", "max": "66,0,215" },
-		{ "id": "center-protection", "min": "122,0,210", "max": "115,9,203"}
+		{"id": "blue-spawn-protection", "min": "178,oo,205", "max": "171, 0, 198"},
+		{"id": "red-spawn-protection", "min": "59,oo,208", "max": "66, 0, 215"},
+		{"id": "center-protection", "min": "122,0,210", "max": "115, 9, 203"}
 	]
 }
