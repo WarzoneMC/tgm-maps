@@ -28,7 +28,7 @@
 
 		"monuments": [
 			{
-				"name": "Left Monument",
+				"name": "Left Monument &r",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
 				"region": { 
@@ -38,7 +38,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument",
+				"name": "Right Monument ",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
 				"region": { 
