@@ -9,7 +9,7 @@
 			"name": "Yellow",
 			"color": "yellow",
 			"min": 1,
-			"max": 15,
+			"max": 15
 		},
 		{
 			"id": "green",
