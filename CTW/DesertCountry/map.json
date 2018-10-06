@@ -1,4 +1,4 @@
- {
+{
 	"name": "Desert Country",
 	"authors": ["OCNs_OMEN", "nigges60", "Sp33fr3ak", "Valkyyyy", "OCNs_Loki"],
 	"version": "1.0.0",
@@ -61,7 +61,8 @@
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"material": "log", "slot": 4, "amount": 64},
+				{"material": "wood", "slot": 4, "amount": 64},
+				{"material": "wood", "slot": 5, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
