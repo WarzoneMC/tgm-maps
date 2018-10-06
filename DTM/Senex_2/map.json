@@ -25,9 +25,10 @@
 		{"teams": ["blue"], "coords": "35.5, 25, -788.5, -90"}
 	],
 	"dtm": {
+
 		"monuments": [
 			{
-				"name": "Left Monument",
+				"name": "Left Monument &r",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
 				"region": { 
@@ -37,7 +38,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument",
+				"name": "Right Monument &r",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
 				"region": { 
@@ -47,7 +48,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left Monument&r",
+				"name": "Left Monument &r",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
@@ -57,7 +58,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument&r",
+				"name": "Right Monument &r",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
@@ -68,6 +69,7 @@
 			}
 		]
 	},
+
 	"kits": [
 		{
 			"name": "Default",
