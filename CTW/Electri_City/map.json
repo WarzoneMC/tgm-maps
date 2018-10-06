@@ -62,8 +62,7 @@
 
 				{"material": "golden apple", "slot": 4, "amount": 1},
 				{"material": "cooked beef", "slot": 6, "amount": 64},
-				{"material": "glass", "slot": 7, "amount": 64},
-				{"material": "wood", "slot": 8, "amount": 64},
+				{"material": "log", "slot": 7, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 22},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},

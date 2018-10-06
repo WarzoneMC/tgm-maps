@@ -61,7 +61,7 @@
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "glass", "slot": 3, "amount": 32},
 
-				{"material": "log", "slot": 4, "amount": 32},
+				{"material": "log", "slot": 4, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 				{"material": "arrow", "slot": 9, "amount": 64},
