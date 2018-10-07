@@ -8,15 +8,15 @@
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "white",
 			"name": "White",
 			"color": "white",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -82,6 +82,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "log", "slot": 4, "amount": 64},
 				{"type": "item", "material": "glass", "slot": 5, "amount": 48},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},

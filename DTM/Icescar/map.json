@@ -2,10 +2,7 @@
 	"name": "Icescar",
 	"version": "1.2.1",
 	"gametype": "DTM",
-	"authors": [
-		"Draco_Rogue",
-		"dragonsrule9"
-	],
+	"authors": ["Draco_Rogue", "dragonsrule9"],
 	"teams": [
 		{
 			"id": "green",
@@ -22,40 +19,13 @@
 			"max": "50"
 		}
 	],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "0.5, 25, -168.5"},
-        {"teams": ["green"], "coords": "131.5, 15, -77.5, 90"},
-        {"teams": ["purple"], "coords": "-130.5, 15, -77.5, -90"}
-    ],
-    "kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "stone pickaxe", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "splash_potion", "slot": 6, "amount": 3, "potion": {"type": "instant heal", "upgrade": true}},
-				{"type": "item", "material": "bread", "slot": 7, "amount": 32},
-				{"type": "item", "material": "gold ingot", "slot": 8},
-                
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
-			],
-            "effects": [
-                {"type": "damage resistance", "duration": 200, "amplifier": 4, "particles": false},
-                {"type": "heal", "duration": 100, "amplifier": 1, "particles": false}
-            ]
-		}
-	],
-    "killstreaks": [
-        {
-			"count": 1,
-			"repeat": true,
-			"commands": ["give %killername% gold_ingot 2"]
-		}
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 25, -168.5"},
+		{"teams": ["green"], "coords": "131.5, 15, -77.5, 90"},
+		{"teams": ["purple"], "coords": "-130.5, 15, -77.5, -90"}
 	],
 	"dtm": {
-        "monuments": [
-        
+		"monuments": [
 			{
 				"name": "Lower Monument",
 				"teams": ["green"],
@@ -86,8 +56,7 @@
 				},
 				"health": 5
 			},
-            
-            {
+			{
 				"name": "Lower Monument&r",
 				"teams": ["purple"],
 				"materials": ["emerald block", "diamond block"],
@@ -97,7 +66,7 @@
 				},
 				"health": 5
 			},
-            {
+			{
 				"name": "Central Monument&r",
 				"teams": ["purple"],
 				"materials": ["emerald block", "diamond block"],
@@ -118,106 +87,108 @@
 				"health": 5
 			}
 		]
-    },
-    "portals": [
-        {
-            "from": "portal-green-upper",
-            "to": "131.5, 15, -77.5, 90",
-            "teams": ["green"],
-            "sound": true
-        },
-        {
-            "from": "portal-green-central",
-            "to": "131.5, 15, -77.5, 90",
-            "teams": ["green"],
-            "sound": true
-        },
-        {
-            "from": "portal-green-lower",
-            "to": "131.5, 15, -77.5, 90",
-            "teams": ["green"],
-            "sound": true
-        },
-        {
-            "from": "portal-green-outer",
-            "to": "131.5, 15, -77.5, 90",
-            "teams": ["green"],
-            "sound": true
-        },
-        
-        {
-            "from": "portal-purple-upper",
-            "to": "-130.5, 15, -77.5, -90",
-            "teams": ["purple"],
-            "sound": true
-        },
-        {
-            "from": "portal-purple-central",
-            "to": "-130.5, 15, -77.5, -90",
-            "teams": ["purple"],
-            "sound": true
-        },
-        {
-            "from": "portal-purple-lower",
-            "to": "-130.5, 15, -77.5, -90",
-            "teams": ["purple"],
-            "sound": true
-        },
-        {
-            "from": "portal-purple-outer",
-            "to": "-130.5, 15, -77.5, -90",
-            "teams": ["purple"],
-            "sound": true
-        }
-    ],
-    
-    "regions": [
-    
-        {"id": "green-spawn", "type": "cuboid", "min": "112, 11, -67", "max": "152, 51, -107"},
-        {"id": "purple-spawn", "type": "cuboid", "min": "-112, 11, -67", "max": "-152, 51, -107"},
-        
-        {"id": "portal-green-upper", "type": "cuboid", "min": "105, 10, 40", "max": "105, 14, 40"},
-        {"id": "portal-green-central", "type": "cuboid", "min": "51, 10, -12", "max": "51, 14, -12"},
-        {"id": "portal-green-lower", "type": "cuboid", "min": "53, 10, -99", "max": "53, 14, -99"},
-        {"id": "portal-green-outer", "type": "cuboid", "min": "68, 10, 107", "max": "68, 14, 107"},
-        
-		{"id": "portal-purple-upper", "type": "cuboid", "min": "-105, 10, 40", "max": "-105, 14, 40"},
-        {"id": "portal-purple-central", "type": "cuboid", "min": "-51, 10, -12", "max": "-51, 14, -12"},
-        {"id": "portal-purple-lower", "type": "cuboid", "min": "-53, 10, -99", "max": "-53, 14, -99"},
-        {"id": "portal-purple-outer", "type": "cuboid", "min": "-68, 10, 107", "max": "-68, 14, 107"}
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "splash_potion", "slot": 6, "amount": 3, "potion": {"type": "instant heal", "upgrade": true}},
+				{"type": "item", "material": "bread", "slot": 7, "amount": 32},
+				{"type": "item", "material": "gold ingot", "slot": 8},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage resistance", "duration": 200, "amplifier": 4, "particles": false},
+				{"type": "heal", "duration": 100, "amplifier": 1, "particles": false}
+			]
+		}
 	],
-    "itemremove": [
-        "stone sword",
-        "leather chestplate",
-        "leather helmet",
-        "bread",
-        "iron axe",
-        "iron sword",
-        "gold axe",
-        "diamond sword",
-        "arrow",
-        "bow",
-        "chainmail boots",
-        "chainmail leggings",
-        "iron boots",
-        "gold chestplate",
-        "iron chestplate",
-        "diamond chestplate",
-        "diamond boots",
-        "glass bottle",
-        "stone pickaxe",
-        "iron pickaxe",
-        "diamond pickaxe",
-        "diamond block",
-        "emerald block"
-    ],
-    "filters": [
+	"itemremove": [
+		"stone sword", "leather chestplate", "leather helmet", "iron axe", "iron sword", "gold axe", "diamond sword", "arrow", "iron boots", "gold chestplate", 
+		"iron chestplate", "diamond chestplate", "diamond boots", "stone pickaxe", "iron pickaxe", "diamond pickaxe", "diamond block", "emerald block"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% gold_ingot 2"]
+		}
+	],
+	"portals": [
+		{
+			"from": "portal-green-upper",
+			"to": "131.5, 15, -77.5, 90",
+			"teams": ["green"],
+			"sound": true
+		},
+		{
+			"from": "portal-green-central",
+			"to": "131.5, 15, -77.5, 90",
+			"teams": ["green"],
+			"sound": true
+		},
+		{
+			"from": "portal-green-lower",
+			"to": "131.5, 15, -77.5, 90",
+			"teams": ["green"],
+			"sound": true
+		},
+		{
+			"from": "portal-green-outer",
+			"to": "131.5, 15, -77.5, 90",
+			"teams": ["green"],
+			"sound": true
+		},
+		{
+			"from": "portal-purple-upper",
+			"to": "-130.5, 15, -77.5, -90",
+			"teams": ["purple"],
+			"sound": true
+		},
+		{
+			"from": "portal-purple-central",
+			"to": "-130.5, 15, -77.5, -90",
+			"teams": ["purple"],
+			"sound": true
+		},
+		{
+			"from": "portal-purple-lower",
+			"to": "-130.5, 15, -77.5, -90",
+			"teams": ["purple"],
+			"sound": true
+		},
+		{
+			"from": "portal-purple-outer",
+			"to": "-130.5, 15, -77.5, -90",
+			"teams": ["purple"],
+			"sound": true
+		}
+	],
+	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["green", "purple"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-        {"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "green-spawn", "type": "cuboid", "min": "112, 11, -67", "max": "152, 51, -107"},
+		{"id": "purple-spawn", "type": "cuboid", "min": "-112, 11, -67", "max": "-152, 51, -107"},
+
+		{"id": "portal-green-upper", "type": "cuboid", "min": "105, 10, 40", "max": "105, 14, 40"},
+		{"id": "portal-green-central", "type": "cuboid", "min": "51, 10, -12", "max": "51, 14, -12"},
+		{"id": "portal-green-lower", "type": "cuboid", "min": "53, 10, -99", "max": "53, 14, -99"},
+		{"id": "portal-green-outer", "type": "cuboid", "min": "68, 10, 107", "max": "68, 14, 107"},
+
+		{"id": "portal-purple-upper", "type": "cuboid", "min": "-105, 10, 40", "max": "-105, 14, 40"},
+		{"id": "portal-purple-central", "type": "cuboid", "min": "-51, 10, -12", "max": "-51, 14, -12"},
+		{"id": "portal-purple-lower", "type": "cuboid", "min": "-53, 10, -99", "max": "-53, 14, -99"},
+		{"id": "portal-purple-outer", "type": "cuboid", "min": "-68, 10, 107", "max": "-68, 14, 107"}
 	]
 }

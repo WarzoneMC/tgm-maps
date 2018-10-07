@@ -5,13 +5,25 @@
 	"gametype": "DTM",
 	"stats": {"disable": true},
 	"teams": [
-		{"id": "blue", "name": "Blue", "color": "blue", "min": 1, "max": 50},
-		{"id": "red", "name": "Red", "color": "red", "min": 1, "max": 50}
+		{
+			"id": "blue", 
+			"name": "Blue", 
+			"color": "blue", 
+			"min": 1, 
+			"max": 50
+		},
+		{
+			"id": "red", 
+			"name": "Red", 
+			"color": "red", 
+			"min": 1, 
+			"max": 50
+		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "12.5, 35, 14" },
-		{ "teams": ["red"], "coords": "-1, 23, 32" },
-		{ "teams": ["blue"], "coords": "26, 23, 32.5" }
+		{"teams": ["spectators"], "coords": "12.5, 35, 14"},
+		{"teams": ["red"], "coords": "-1, 23, 32"},
+		{"teams": ["blue"], "coords": "26, 23, 32.5"}
 	],
 	"dtm": {
 		"monuments": [

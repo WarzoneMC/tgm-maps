@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Ghouls",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Ghasts",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "52.5, 130, 1.5, 90" },
-		{ "teams": ["red"], "coords": "-19.5, 43, 74.5, -135" },
-		{ "teams": ["blue"], "coords": "30.5, 43, -69.5, 45" }
+		{"teams": ["spectators"], "coords": "52.5, 130, 1.5, 90"},
+		{"teams": ["red"], "coords": "-19.5, 43, 74.5, -135"},
+		{"teams": ["blue"], "coords": "30.5, 43, -69.5, 45"}
 	],
 	"dtm": {
 		"monuments": [
@@ -56,10 +56,9 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
 				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
+
 				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 1},
-
 				{"material": "arrow", "slot": 9, "amount": 64},
-
 				{"material": "cooked beef", "slot": 8, "amount": 10},
 
 				{"material": "diamond chestplate", "slot": "chestplate", "unbreakable": true},
@@ -91,12 +90,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "25, 42, -65", "max": "34, oo, -74" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-15, 42, 69", "max": "-24, oo, 78" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "25, 42, -65", "max": "34, oo, -74"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-15, 42, 69", "max": "-24, oo, 78"}
 	]
 }

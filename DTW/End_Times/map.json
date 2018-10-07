@@ -1,6 +1,6 @@
 {
 	"name": "End Times",
-	"authors": ["RetroMudkip and TheRandomKing12"],
+	"authors": ["RetroMudkip", "TheRandomKing12"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,22 +8,22 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-99.5, 82, -30.5"},
-		{ "teams": ["red"], "coords": "-23.5, 76, 3.5, 90"},
-		{ "teams": ["blue"], "coords": "-176.3, 73, 3.5, -90"}
+		{"teams": ["spectators"], "coords": "-99.5, 82, -30.5"},
+		{"teams": ["red"], "coords": "-23.5, 76, 3.5, 90"},
+		{"teams": ["blue"], "coords": "-176.3, 73, 3.5, -90"}
 	],
 
 	"dtm": {
@@ -50,7 +50,6 @@
 			}
 		]
 	},
-
 	"kits": [
 		{
 			"name": "Default",
@@ -72,7 +71,6 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "arrow"
 	],
-
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],

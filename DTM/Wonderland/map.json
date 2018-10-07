@@ -1,6 +1,6 @@
 {
 	"name": "Wonderland",
-	"authors": ["IzJust4Fun and Crazy_Clownz"],
+	"authors": ["IzJust4Fun", "Crazy_Clownz"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "white",
 			"name": "White",
 			"color": "white",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -76,6 +76,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -97,8 +98,8 @@
 			"regions": ["white-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "white-spawn-protection", "type": "cuboid", "min": "-686, 0, -1340", "max": "-696, oo, -1350"},

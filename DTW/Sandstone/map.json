@@ -1,6 +1,6 @@
 {
 	"name": "Sandstone",
-	"authors": ["JamesPond & MajesticSlime"],
+	"authors": ["JamesPond", "MajesticSlime"],
 	"version": "1.3.5",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "0.5, 44, 22.5, -90" },
-		{ "teams": ["red"], "coords": "0.5, 7, -49.5, 0" },
-		{ "teams": ["blue"], "coords": "0.5, 8.5, 91.5, 180" }
+		{"teams": ["spectators"], "coords": "0.5, 44, 22.5, -90"},
+		{"teams": ["red"], "coords": "0.5, 7, -49.5"},
+		{"teams": ["blue"], "coords": "0.5, 8.5, 91.5, 180"}
 	],
 	"dtm": {
 		"monuments": [
@@ -48,12 +48,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-		"count": 1,
-		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1"]
-	                 }
-               ],
 	"kits": [
 		{
 			"name": "Default",
@@ -76,18 +70,24 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-5, 6, 96", "max": "5, 11, 87" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "5, 6, -55", "max": "-5, 11, -46" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-5, 6, 96", "max": "5, 11, 87"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "5, 6, -55", "max": "-5, 11, -46"}
 	]
 }
