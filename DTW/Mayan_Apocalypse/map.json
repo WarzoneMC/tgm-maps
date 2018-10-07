@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-6.9, 52, 120.7, 180" },
-		{ "teams": ["red"], "coords": "-123, 25, 4.9, 0" },
-		{ "teams": ["blue"], "coords": "108, 25, 76, 180" }
+		{"teams": ["spectators"], "coords": "-6.9, 52, 120.7, 180"},
+		{"teams": ["red"], "coords": "-123, 25, 4.9"},
+		{"teams": ["blue"], "coords": "108, 25, 76, 180"}
 	],
 	"dtm": {
 		"monuments": [
@@ -48,19 +48,6 @@
 			}
 		]
 	},
-"killstreaks": [{
-                 "count": 1,
-                 "repeat": true,
-                 "commands": ["give %killername% minecraft:golden_apple 1"]
-               },
-               {
-                 "count": 5,
-		 "repeat": true,
-		 "commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
-                             "give %killername% minecraft:arrow 4"
-                           ]
-                     }
-            ],
 	"kits": [
 		{
 			"name": "Default",
@@ -69,6 +56,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				
 				{"type": "item", "material": "log", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden Apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -90,12 +78,26 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:arrow 4"
+			]
+		}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "96, 17, 80", "max": "125, 34, 64"},
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-112, 17, 0", "max": "-140, 34, 16" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "96, 17, 80", "max": "125, 34, 64"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-112, 17, 0", "max": "-140, 34, 16"}
 	]
 }

@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -31,8 +31,8 @@
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "18, 13, -13",
-					"max": "20, 17, -15"
+					"min": "18, 13, -14",
+					"max": "20, 17, -12"
 				},
 				"health": 10
 			},
@@ -48,12 +48,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-			"count": 1,
-			"repeat": true,
-			"commands": ["give %killername% minecraft:golden_apple 1"]
-		}
-	],
 	"kits": [
 		{
 			"name": "Default",
@@ -76,6 +70,13 @@
 	],
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"filters": [
 		{

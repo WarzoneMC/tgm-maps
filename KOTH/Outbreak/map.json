@@ -1,6 +1,6 @@
 {
 	"name": "Outbreak",
-	"authors": ["Glayzed, Teejers, Reddemptr"],
+	"authors": ["Glayzed", "Teejers", "RedDemptr"],
 	"version": "1.1.3",
 	"gametype": "KOTH",
 	"stats": {"disable": true},
@@ -9,21 +9,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "x": -33.5, "y": 15, "z": 1457.5, "yaw": 0 },
-		{ "teams": ["blue"], "x": -33.5, "y": 28, "z": 1432.5, "yaw": 0 },
-		{ "teams": ["red"], "x": -33.5, "y": 28, "z": 1482.5, "yaw": 180 }
+		{"teams": ["spectators"], "coords": "-33.5, 15, 1457.5"},
+		{"teams": ["blue"], "coords": "-33.5, 28, 1432.5"},
+		{"teams": ["red"], "coords": "-33.5, 28, 1482.5, 180"}
 	],
 	"points": {
 		"target": 250
@@ -33,8 +33,8 @@
 			{
 				"name": "Center",
 				"region": {
-					"min": { "x": -37, "y": 22, "z": 1454 },
-					"max": { "x": -30, "y": 18, "z": 1461 }
+					"min": {"x": -37, "y": 22, "z": 1454},
+					"max": {"x": -30, "y": 18, "z": 1461}
 				}
 			}
 		]
@@ -54,18 +54,16 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "leather helmet",
-		"stone", "cooked beef", "arrow", "leather helmet", "log",
-		"leather chestplate", "leather leggings", "leather boots",
-		"cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
+		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "log",
+		"leather chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
 	],
 	"filters": [
-		{ "type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "min": "-37,27,1435", "max": "-31,32,1430" },
-		{ "id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37,32,1484" }
+		{"id": "blue-spawn-protection", "min": "-37,27,1435", "max": "-31, 32, 1430"},
+		{"id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37, 32, 1484"}
 	]
 }

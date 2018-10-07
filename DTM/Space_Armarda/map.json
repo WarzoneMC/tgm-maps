@@ -1,6 +1,6 @@
 {
 	"name": "Space Armarda",
-	"authors": ["_Rascal and Mega_Rascal"],
+	"authors": ["_Rascal", "Mega_Rascal"],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Federation",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "orange",
 			"name": "Space Pirates",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -55,7 +55,7 @@
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
-				{"material": "stained glass", "slot": 3, "amount": 64, "durability": 8},
+				{"type": "item", "material": "stained glass", "slot": 3, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 
