@@ -84,6 +84,13 @@
 	"itemremove": [
 		"skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
 	],
+		"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
