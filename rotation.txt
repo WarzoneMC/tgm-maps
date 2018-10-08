@@ -7,12 +7,12 @@ Yellowstone
 Unix
 WarlockDTW
 Sandstone 2
-Cloudy Domain
 Arizona
 Village 2
 Persisto
 Electri City
 Race for Victory 2
+Senex 3
 Japan
 Deepwind Jungle
 Rooted
@@ -33,4 +33,3 @@ Gardens
 Desert Country
 Outback
 Kyoto
-Senex 3
