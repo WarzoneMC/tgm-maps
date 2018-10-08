@@ -15,6 +15,7 @@ Race for Victory 2
 Japan
 Deepwind Jungle
 Rooted
+Senex III
 Ascension
 Balloons Halloween
 Spooky
@@ -32,4 +33,3 @@ Gardens
 Desert Country
 Outback
 Kyoto
-Senex 3
