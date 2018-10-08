@@ -1,6 +1,6 @@
 {
 	"name": "Unix",
-	"authors": ["Red_Dead and Izjust4fun"],
+	"authors": ["Red_Dead", "Izjust4fun"],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "cynx",
 			"name": "Cynx",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "cyprone",
 			"name": "Cyprone",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -76,6 +76,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -90,15 +91,22 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
-	],	
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["cynx", "cyprone"],
 			"regions": ["cynx-spawn-protection", "cyprone-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["cynx"], "regions": ["cyprone-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{"type": "enter", "evaluate": "deny", "teams": ["cyprone"], "regions": ["cynx-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["cynx"], "regions": ["cyprone-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["cyprone"], "regions": ["cynx-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "cynx-spawn-protection", "type": "cuboid", "min": "-649, 0, -1119", "max": "-685, oo, -1086"},

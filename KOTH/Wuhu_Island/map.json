@@ -8,29 +8,29 @@
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 100,
-			"min": 3
+			"min": 3,
+			"max": 100
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 100,
-			"min": 3
+			"min": 3,
+			"max": 100
 		},
 		{
 			"id": "blue", 
 			"name": "Blue",
 			"color": "blue",
-			"max": 100,
-			"min": 3
+			"min": 3,
+			"max": 100
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 100,
-			"min": 3
+			"min": 3,
+			"max": 100
 		}
 	],
 	"spawns": [

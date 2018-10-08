@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -81,6 +81,7 @@
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"},
+		
 		{"id": "blue-portal", "type": "cuboid", "min": "67, 0, 0", "max": "71, oo, 4"},
 		{"id": "red-portal", "type": "cuboid", "min": "17, 0, 24", "max": "21, oo, 28"}
 	]

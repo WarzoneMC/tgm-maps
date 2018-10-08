@@ -1,6 +1,6 @@
 {
 	"name": "Snowdrift",
-	"authors": ["_Rascal and Ceboo"],
+	"authors": ["_Rascal", "Ceboo"],
 	"version": "1.2.3",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "7.5, 70, 71.5, 180" },
-		{ "teams": ["red"], "coords": "103.5, 26, 5.5, 90" },
-		{ "teams": ["blue"], "coords": "-88.5, 26, 5.5, -90" }
+		{"teams": ["spectators"], "coords": "7.5, 70, 71.5, 180"},
+		{"teams": ["red"], "coords": "103.5, 26, 5.5, 90"},
+		{"teams": ["blue"], "coords": "-88.5, 26, 5.5, -90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -75,11 +75,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-85, 25, 2", "max": "-91, oo, 8" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "100, 25, 8", "max": "106, oo, 2" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-85, 25, 2", "max": "-91, oo, 8"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "100, 25, 8", "max": "106, oo, 2"}
 	]
 }

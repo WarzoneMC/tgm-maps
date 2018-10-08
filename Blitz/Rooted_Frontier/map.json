@@ -1,6 +1,6 @@
 {
 	"name": "Rooted Frontier",
-	"authors": ["mitchiii_ and Poseidons"],
+	"authors": ["mitchiii_", "Poseidons"],
 	"gametype": "Blitz",
     "version": "1.1.0",
     "teams": [
@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 25
 		}
 	],
     "spawns": [
@@ -38,18 +38,18 @@
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false}
+				{"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
 			]
 		}
 	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["noblox"],
+			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
 	],
 	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

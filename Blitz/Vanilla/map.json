@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 10,
-			"min": 1
+			"min": 1,
+			"max": 10
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 10,
-			"min": 1
+			"min": 1,
+			"max": 10
 		}
 	],
 	"spawns": [
@@ -31,6 +31,7 @@
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 2, "amount": 12},
+
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 8},
