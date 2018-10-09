@@ -24,7 +24,6 @@
 		{"teams": ["moon"], "coords": "0.5, 8, -258.5"},
 		{"teams": ["sun"], "coords": "0.5, 8, 5.4, 180"}
 	],
-	
 	"dtm": {
 		"monuments": [
 			{
@@ -109,8 +108,6 @@
 			}
 		]
 	},
-
-
 	"kits": [
 		{
 			"name": "Default",
