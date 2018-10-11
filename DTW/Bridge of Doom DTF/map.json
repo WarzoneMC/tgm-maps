@@ -8,7 +8,7 @@
 			"id": "bennyvil",
 			"name": "Bennyvil",
 			"color": "yellow",
-      "min": 1,
+			"min": 1,
 			"max": 50
 		},
 		{
@@ -53,8 +53,8 @@
 			"count": 1,
 			"repeat": true,
 			"commands": 
-      [
-        "give %killername% minecraft:golden_apple 1",
+			[
+				"give %killername% minecraft:golden_apple 1",
 				"give %killername% minecraft:arrow 4"
 			]
 		}
