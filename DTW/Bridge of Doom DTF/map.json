@@ -8,21 +8,21 @@
 			"id": "yellow",
 			"name": "Bennyvil",
 			"color": "yellow",
-			"max": 50,
-			"min": 1
+      "min": 1,
+			"max": 50
 		},
 		{
 			"id": "gold",
 			"name": "Evilucas",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+      "min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "0.5, 51, 0.5, 0" },
-		{ "teams": ["yellow"], "coords": "55.5, 27, -36.5, 45" },
-		{ "teams": ["gold"], "coords": "-54.5, 27, 37.5, -135" }
+		{"teams": ["spectators"], "coords": "0.5, 51, 0.5, 0"},
+		{"teams": ["yellow"], "coords": "55.5, 27, -36.5, 45"},
+		{"teams": ["gold"], "coords": "-54.5, 27, 37.5, -135"}
 	],
 	"dtm": {
 		"monuments": [
@@ -64,10 +64,9 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+        
 				{"type": "item", "material": "log", "slot": 4, "amount": 64},
-
 				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 64},
-
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -86,11 +85,11 @@
 			"regions": ["gold-spawn-protection", "yellow-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["gold"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["gold"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "gold-spawn-protection", "type": "cuboid", "min": "-58, 26, 40", "max": "-51, 32, 34" },
-		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "58, 26, -40", "max": "51, 32, -34" }
+		{"id": "gold-spawn-protection", "type": "cuboid", "min": "-58, 26, 40", "max": "-51, 32, 34"},
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "58, 26, -40", "max": "51, 32, -34"}
 	]
 }
