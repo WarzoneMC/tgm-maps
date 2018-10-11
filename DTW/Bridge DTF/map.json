@@ -5,14 +5,14 @@
 	"gametype": "DTM",
 	"teams": [
 		{
-			"id": "yellow",
+			"id": "benny",
 			"name": "Benny",
 			"color": "yellow",
 			"min": 1,
 			"max": 50
 		},
 		{
-			"id": "gold",
+			"id": "lucas",
 			"name": "Lucas",
 			"color": "gold",
 			"min": 1,
@@ -48,10 +48,13 @@
 			}
 		]
 	},
-	"killstreaks": [{
+	"killstreaks": [
+    {
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% minecraft:golden_apple 1",
+			"commands": 
+      [
+        "give %killername% minecraft:golden_apple 1",
 				"give %killername% minecraft:arrow 4"
 			]
 		}
