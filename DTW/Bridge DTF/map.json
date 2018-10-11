@@ -1,0 +1,96 @@
+{
+	"name": "Bridge DTF",
+	"authors": ["Clijmart"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Benny",
+			"color": "yellow",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "gold",
+			"name": "Lucas",
+			"color": "gold",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "0.5, 51, 0.5, 0" },
+		{ "teams": ["yellow"], "coords": "55.5, 27, -36.5, 45" },
+		{ "teams": ["gold"], "coords": "-54.5, 27, 37.5, -135" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Lucas",
+				"teams": ["gold"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-67, 62, 8",
+					"max": "-73, 56, 2"
+				},
+				"health": 20
+			},
+			{
+				"name": "Benny",
+				"teams": ["yellow"],
+				"materials": ["wool"],
+				"region": {
+					"min": "67, 62, -8",
+					"max": "73, 56, -2"
+				},
+				"health": 20
+			}
+		]
+	},
+	"killstreaks": [{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 4"
+			]
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["gold", "yellow"],
+			"regions": ["gold-spawn-protection", "yellow-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["gold"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "gold-spawn-protection", "type": "cuboid", "min": "-58, 26, 40", "max": "-51, 32, 34" },
+		{ "id": "yellow-spawn-protection", "type": "cuboid", "min": "58, 26, -40", "max": "51, 32, -34" }
+	]
+}
