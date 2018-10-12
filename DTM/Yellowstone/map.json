@@ -67,7 +67,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Left Monument&r",
+				"name": "Back Left Monument",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -77,7 +77,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Right Monument&r",
+				"name": "Back Right Monument",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -87,7 +87,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left Monument&r",
+				"name": "Left Monument",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -97,7 +97,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument&r",
+				"name": "Right Monument",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
