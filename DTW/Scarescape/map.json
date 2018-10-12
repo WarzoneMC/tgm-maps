@@ -71,7 +71,7 @@
 	"itemremove": [
 		"iron helmet", "leather chestplate", "chainmail leggings", "iron boots", "wool"
 	],
-			"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,

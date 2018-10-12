@@ -70,7 +70,7 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "sandstone", "cobblestone", "quartz_block", "stone", "step", "smooth_brick", "iron_fence"
 	],
-			"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,
