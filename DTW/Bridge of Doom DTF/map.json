@@ -52,8 +52,7 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": 
-			[
+			"commands":  [
 				"give %killername% minecraft:golden_apple 1",
 				"give %killername% minecraft:arrow 4"
 			]
