@@ -3,24 +3,25 @@
 	"authors": ["DevGapple"],
 	"version": "1.3",
 	"gametype": "DTM",
-	"teams": [{
+	"teams": [
+		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 30,
-			"min": 1
+			"min": 1,
+			"max": 30
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 30,
-			"min": 1
+			"min": 1,
+			"max": 30
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "119, 51, -1110.0, 90"},
-		{"teams": ["red"], "coords": "47.0, 25, -1170.5, 0"},
+		{"teams": ["red"], "coords": "47.0, 25, -1170.5"},
 		{"teams": ["blue"], "coords": "47.0, 25, 500.5, 18"}
 	],
 	"dtm": {
@@ -47,23 +48,24 @@
 			}
 		]
 	},
-	"kits": [{
-		"name": "Default",
-		"items": [
-			{"material": "stone sword", "slot": 0, "unbreakable": true},
-			{"material": "bow", "slot": 1, "unbreakable": true},
-			{"material": "iron axe", "slot": 2, "unbreakable": true},
-			{"material": "log", "slot": 3, "unbreakable": true},
-			{"material": "arrow", "slot": 9, "amount": 16},
-			{"material": "cooked beef", "slot": 8, "amount": 64},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "log", "slot": 3, "unbreakable": true},
+				{"material": "arrow", "slot": 9, "amount": 16},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
 			
-			{"material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
-			{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-			{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
-			{"material": "leather boots", "slot": "boots", "unbreakable": true}
-			
-		]
-	}],
+				{"material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
 	"itemremove": [
 		"chainmail helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool"
 	],
