@@ -21,14 +21,14 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0.5, 51, 0.5"},
-		{"teams": ["yellow"], "coords": "55.5, 27, -36.5, 45"},
-		{"teams": ["gold"], "coords": "-54.5, 27, 37.5, -135"}
+		{"teams": ["benny"], "coords": "55.5, 27, -36.5, 45"},
+		{"teams": ["lucas"], "coords": "-54.5, 27, 37.5, -135"}
 	],
 	"dtm": {
 		"monuments": [
 			{
 				"name": "Lucas",
-				"teams": ["gold"],
+				"teams": ["lucas"],
 				"materials": ["wool"],
 				"region": {
 					"min": "-67, 62, 8",
@@ -38,7 +38,7 @@
 			},
 			{
 				"name": "Benny",
-				"teams": ["yellow"],
+				"teams": ["benny"],
 				"materials": ["wool"],
 				"region": {
 					"min": "67, 62, -8",
@@ -52,7 +52,8 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": [
+			"commands": 
+			[
 				"give %killername% minecraft:golden_apple 1",
 				"give %killername% minecraft:arrow 4"
 			]
@@ -83,12 +84,12 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["gold", "yellow"],
+			"type": "build", "evaluate": "deny", "teams": ["lucas", "benny"],
 			"regions": ["gold-spawn-protection", "yellow-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["gold"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["lucas"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["benny"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "gold-spawn-protection", "type": "cuboid", "min": "-58, 26, 40", "max": "-51, 32, 34"},
