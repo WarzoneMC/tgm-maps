@@ -3,10 +3,12 @@ Anasaria
 WindWorks DTW
 A New Day
 Senex 2
+Bridge of Doom DTF
 Unix
 WarlockDTW
 Sandstone 2
 Cloudy Domain
+Spooky
 Arizona
 Village 2
 Persisto
@@ -17,7 +19,6 @@ Deepwind Jungle
 Rooted
 Ascension
 Balloons Halloween
-Spooky
 Avalanche Mini
 Stronghold
 Sandstone
