@@ -1,18 +1,18 @@
 Stonehenge
 Anasaria
-WindWorks DTW
 A New Day
 Senex 2
-Bridge of Doom DTF
-Unix
+Outback
+Bridge DTF
 WarlockDTW
 Sandstone 2
 Cloudy Domain
-Spooky
 Arizona
+Port Town 2
 Village 2
 Persisto
 Electri City
+WindWorks DTW
 Race for Victory 2
 Japan
 Deepwind Jungle
@@ -22,15 +22,14 @@ Balloons Halloween
 Avalanche Mini
 Stronghold
 Sandstone
-Scarescape
+Unix
+Skylands Reborn
 Rendezvous Redux
 Ring Race
 Terrace
-Port Town 2
 Cargo
 Twin Peaks
 Gardens
 Desert Country
-Outback
 Kyoto
 Senex 3
