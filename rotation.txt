@@ -1,7 +1,8 @@
 Stonehenge
+Arctic 2
 Anasaria
 A New Day
-Senex 2
+Snowy Wars
 Outback
 Bridge DTF
 WarlockDTW
@@ -12,7 +13,7 @@ Port Town 2
 Village 2
 Persisto
 Electri City
-WindWorks DTW
+TechnoWar
 Race for Victory 2
 Japan
 Deepwind Jungle
@@ -26,7 +27,6 @@ Unix
 Skylands Reborn
 Rendezvous Redux
 Ring Race
-Terrace
 Cargo
 Twin Peaks
 Gardens
