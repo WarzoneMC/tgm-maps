@@ -75,13 +75,13 @@
 	"itemremove": [
 		"iron sword", "bow", "iron axe", "leather helmet", "wood", "arrow", "golden apple", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
-		"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,
 			"commands": [
 				"give %killername% minecraft:golden_apple 1",
-				"give %killername% minecraft:arrow 5"
+				"give %killername% minecraft:arrow 1"
 			]
 		}
 	],
