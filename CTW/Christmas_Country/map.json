@@ -30,25 +30,25 @@
 				"name": "Yellow",
 				"color": "yellow",
 				"teams": ["green"],
-				"region": {"min": "533, 11, -124", "max": "533, 11, -124"}
+				"region": {"min": "535, 12, -125", "max": "535, 12, -125"}
 			},
 			{
 				"name": "Orange",
 				"color": "orange",
 				"teams": ["green"],
-				"region": {"min": "535, 11, -124", "max": "535, 11, -124"}
+				"region": {"min": "533, 12, -125", "max": "533, 12, -125"}
 			},
 			{
-				"name": "Green",
-				"color": "green",
+				"name": "Red",
+				"color": "red",
 				"teams": ["blue"],
-				"region": {"min": "535, 11, -329", "max": "535, 11, -329"}
+				"region": {"min": "535, 12, -328", "max": "535, 12, -328"}
 			},
 			{
 				"name": "Purple",
 				"color": "purple",
 				"teams": ["blue"],
-				"region": {"min": "533, 11, -329", "max": "533, 11, -329"}
+				"region": {"min": "533, 12, -328", "max": "533, 12, -328"}
 			}
 		]
 	},
