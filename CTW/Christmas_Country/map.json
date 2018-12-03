@@ -1,0 +1,122 @@
+{
+	"name": "Christmas Country",
+	"authors": ["OCNs_OMEN", "Sp33dfr3ak", "Valkyyyy", "SaltyDude44", "byRobo", "Alex_Plosivo"],
+	"version": "1.0.2",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "dark green",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "476.9, 42, -226, -90"},
+		{"teams": ["green"], "coords": "534.5, 11, -133.5, 180"},
+		{"teams": ["blue"], "coords": "534.5, 11, -318.5"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"teams": ["green"],
+				"region": {"min": "533, 11, -124", "max": "533, 11, -124"}
+			},
+			{
+				"name": "Orange",
+				"color": "orange",
+				"teams": ["green"],
+				"region": {"min": "535, 11, -124", "max": "535, 11, -124"}
+			},
+			{
+				"name": "Green",
+				"color": "green",
+				"teams": ["blue"],
+				"region": {"min": "535, 11, -329", "max": "535, 11, -329"}
+			},
+			{
+				"name": "Purple",
+				"color": "purple",
+				"teams": ["blue"],
+				"region": {"min": "533, 11, -329", "max": "533, 11, -329"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+
+				{"material": "wood", "slot": 4, "amount": 64},
+				{"material": "wood", "slot": 5, "amount": 64},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 32},
+
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "wood", "arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 1"
+			]
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:planks 15"
+			]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["green"],
+			"regions": ["green-spawn-protection", "blue-spawn-protection", "green-wool", "blue-wool-protection", "height-limit"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["green-spawn-protection", "blue-spawn-protection", "blue-wool", "green-wool-protection", "height-limit"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["green-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["blue-spawn-protection", "green-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "green-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
+		{"id": "blue-wool", "min": "523, 0, -353", "max": "545, oo, -338"},
+
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "521, 0, -136", "max": "547, oo, -121"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "521, 0, -332", "max": "547, oo, -317"},
+
+		{"id": "green-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
+		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
+		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
+	]
+}
