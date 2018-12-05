@@ -1,7 +1,7 @@
 Sandstone
 Twin Peaks
 Outback
-Snowy Wars
+Snowy Wars Christmas
 Arizona
 Rooted
 Unix
@@ -13,11 +13,12 @@ Race for Victory 2
 Electri City
 Persisto
 Skylands Reborn
+Christmas Country
 Cargo
 Gardens
 Icebound
 TechnoWar
-Balloons
+Balloons Christmas
 Ascension
 Avalanche Mini
 Village 2
