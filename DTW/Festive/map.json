@@ -66,6 +66,20 @@
 				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
+		},
+		{
+			"name": "Green",
+			"teams": ["green"],
+			"items": [
+				{"material": "stained glass", "slot": 5, "amount": 32, "durability": 13}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "stained glass", "slot": 5, "amount": 32, "durability": 14}
+			]
 		}
 	],
 	"itemremove": [
