@@ -72,7 +72,7 @@
 	],
 		"killstreaks": [
 		{
-			"count": 2,
+			"count": 1,
 			"repeat": true,
 			"commands": ["give %killername% minecraft:golden_apple 1"]
 		}
