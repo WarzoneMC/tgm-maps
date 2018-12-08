@@ -70,6 +70,13 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "obsidian"
 	],
+		"killstreaks": [
+		{
+			"count": 2,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["green", "red"],
