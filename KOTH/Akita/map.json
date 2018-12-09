@@ -1,0 +1,137 @@
+{
+	"name": "Akita",
+	"authors": ["ViceWatercolour, Xounaut"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "133.5, 76, -68.5, 90"},
+		{"teams": ["blue"], "coords": "-5.5, 32, -109.5, -45"},
+		{"teams": ["red"], "coords": "79.5, 32, -27.5, 135"},
+		{"teams": ["yellow"], "coords": "-4.5, 32, -26.5, -135"},
+		{"teams": ["green"], "coords": "78.5, 32, -110.5, 45"}
+	],
+	"points": {
+		"target": 500
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Center",
+				"region": {
+					"min": {"x": 44, "y": 26, "z": -75},
+					"max": {"x": 30, "y": 27, "z": -61}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "arrow", "amount": 64, "slot": 8},
+				{"type": "item", "material": "cooked beef", "amount": 16, "slot": 5},
+				{"type": "item", "material": "golden apple", "slot": 6},
+
+				{"type": "item", "material": "gold helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+                {
+                        "name": "redKit",
+                        "teams": ["red"],
+                        "items": [
+				{"type": "item", "material": "stained glass", "slot": "4", "amount": 32, "durability": 14},
+				{"type": "item", "material": "stained clay", "slot": "4", "amount": 32, "durability": 14}
+            ]
+                },
+                {
+                        "name": "greenKit",
+                        "teams": ["green"],
+                        "items": [
+				{"type": "item", "material": "stained glass", "slot": "4", "amount": 32, "durability": 5},
+				{"type": "item", "material": "stained clay", "slot": "4", "amount": 32, "durability": 5}
+            ]
+                },
+                {
+                        "name": "blueKit",
+                        "teams": ["blue"],
+                        "items": [
+				{"type": "item", "material": "stained glass", "slot": "4", "amount": 32, "durability": 11},
+				{"type": "item", "material": "stained clay", "slot": "4", "amount": 32, "durability": 11}
+            ]
+                },
+                {
+                        "name": "yellowKit",
+                        "teams": ["yellow"],
+                        "items": [
+				{"type": "item", "material": "stained glass", "slot": "4", "amount": 32, "durability": 4},
+				{"type": "item", "material": "stained clay", "slot": "4", "amount": 32, "durability": 4}
+            ]
+                }
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron pickaxe", "gold helmet", "stone", "cooked beef", "arrow", 
+		"cobblestone", "log", "chainmail chestplate", "leather leggings", "leather boots", "wood", "wool", "seeds", "sapling", "yellow flower", "banner", "ladder", "prismarine crystals", "glowstone dust", "trapdoor", "rail", "sugar cane", "tall grass", "stained clay", "grass", "dirt", "fence", "cobblestone"
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red", "green", "yellow"], "regions": ["blue-spawn-protection", "red-spawn-protection", "green-spawn-protection", "yellow-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red", "yellow", "green"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify the hill."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "yellow-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection", "green-spawn-protection", "blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection", "yellow-spawn-protection", "blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "use-bow", "evaluate": "deny", "teams": ["green", "red", "blue", "yellow"], "regions": ["red-spawn-protection", "yellow-spawn-protection", "blue-spawn-protection", "green-spawn-protection"], "message": "&cYou may not shoot from spawn!"}
+	],
+	"regions": [
+		{"id": "hill-protection", "type": "cylinder", "base": "37, 25, -68", "radius": "7", "height": "9"},
+		{"id": "blue-spawn-protection", "type": "cylinder", "base": "-5, 31, -109", "radius": "8", "height": "23"},
+		{"id": "red-spawn-protection", "type": "cylinder", "base": "79, 31, -27", "radius": "8", "height": "23"},
+		{"id": "yellow-spawn-protection", "type": "cylinder", "base": "-4, 31, -26", "radius": "8", "height": "23"},
+		{"id": "green-spawn-protection", "type": "cylinder", "base": "78, 31, -110", "radius": "8", "height": "23"}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 6"
+			]
+		}
+	]
+}
