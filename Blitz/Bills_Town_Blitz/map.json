@@ -44,7 +44,7 @@
 			]
 		}
 	],
-		"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 2,
 			"repeat": true,
