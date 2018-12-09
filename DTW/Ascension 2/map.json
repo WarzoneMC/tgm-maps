@@ -1,0 +1,98 @@
+{
+	"name": "Ascension 2",
+	"authors": ["ViceWatercolour"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{ "teams": ["spectators"], "coords": "4.5, 26, -331.5, 0" },
+		{ "teams": ["red"], "coords": "-91.5, 18, -243.5, 180" },
+		{ "teams": ["blue"], "coords": "99.5, 18, -348.5, 0" }
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "100, 13, -268",
+					"max": "98, 10, -266"
+				},
+				"health": 7
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-90, 13, -324",
+					"max": "-92, 10, -326"
+				},
+				"health": 7
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "wood", "slot": 4, "amount": 64, "data": 5},
+				{"material": "arrow", "slot": 7, "amount": 32},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "helmet", "material": "iron helmet", "unbreakable": true},
+				{"type": "chestplate", "material": "leather chestplate", "unbreakable": true},
+				{"type": "leggings", "material": "leather leggings", "unbreakable": true},
+				{"type": "boots", "material": "iron boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-wool", "red-wool", "blue-spawn-protection", "red-spawn-protection"]
+		},
+		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
+		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+	],
+	"regions": [
+		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "96, 7, -342", "max": "102, 23, -351" },
+		{ "id": "red-spawn-protection", "type": "cuboid", "min": "-94, 23, -242", "max": "-88, 7, -251" },
+		{ "id": "blue-wool", "type": "cuboid", "min": "-90, 13, -324", "max": "-92, 10, -326" },
+		{ "id": "red-wool", "type": "cuboid", "min": "100, 13, -268", "max": "98, 10, -266" }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	]
+}
