@@ -33,7 +33,7 @@
 				"name": "Center",
 				"region": {
 					"min": {"x": 2, "y": 2, "z": 2},
-					"max": {"x": -2, "y": 2, "z": -2}
+					"max": {"x": -2, "y": 6, "z": -2}
 				}
 			}
 		]
@@ -44,9 +44,9 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "glass", "amount": 2, "slot": 3},
+				{"type": "item", "material": "glass", "amount": 8, "slot": 2},
 
-				{"type": "item", "material": "cooked beef", "amount": 7, "slot": 4},
+				{"type": "item", "material": "cooked beef", "amount": 4, "slot": 7},
 				{"type": "item", "material": "golden apple", "slot": 8},
 				{"type": "item", "material": "arrow", "amount": 1, "slot": 9},
 
