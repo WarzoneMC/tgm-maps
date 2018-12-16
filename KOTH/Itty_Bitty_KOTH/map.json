@@ -62,9 +62,9 @@
 		"cobblestone", "log", "leather chestplate", "leather leggings", "leather boots", "wood"
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."}
 	],
 	"regions": [
-		{"id": "hill-protection", "min": "-2, 0, -2", "max": "2, oo, 2"},
+		{"id": "hill-protection", "min": "-2, 0, -2", "max": "2, oo, 2"}
 	]
 }
