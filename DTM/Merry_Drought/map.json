@@ -94,7 +94,7 @@
 	                 ]
                 }
         ],
-		"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,
