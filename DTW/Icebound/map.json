@@ -57,6 +57,8 @@
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone spade", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
