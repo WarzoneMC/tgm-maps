@@ -1,6 +1,6 @@
 {
 	"name": "Nostalgia",
-	"authors": ["JackJack33 & ViceWatercolour"],
+	"authors": ["JackJack33", "ViceWatercolour"],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "60.5, 55, 94.5, 90" },
-		{ "teams": ["red"], "coords": "0.5, 33, 215, -180" },
-		{ "teams": ["blue"], "coords": "0.5, 33, -27.5, 0" }
+		{"teams": ["spectators"], "coords": "60.5, 55, 94.5, 90"},
+		{"teams": ["red"], "coords": "0.5, 33, 215, -180"},
+		{"teams": ["blue"], "coords": "0.5, 33, -27.5"}
 	],
 	"dtm": {
 		"monuments": [
@@ -58,6 +58,7 @@
 				{"material": "wool", "slot": 4,  "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 64},
+				
 				{"type": "helmet", "material": "leather helmet"},
 				{"type": "chestplate", "material": "leather chestplate"},
 				{"type": "leggings", "material": "leather leggings"},
@@ -66,10 +67,8 @@
 		}
 	],
 	"itemremove": [
-		"wood sword", "bow", "wood axe", "leather helmet",
-		"cooked beef", "arrow", "leather helmet",
-		"leather chestplate", "leather leggings", "iron boots",
-		"cooked beef", "dirt", "wood", "wool", "log"
+		"wood sword", "bow", "wood axe", "leather helmet", "cooked beef", "arrow", "leather helmet",
+		"leather chestplate", "leather leggings", "iron boots", "cooked beef", "dirt", "wood", "wool", "log"
 	],
 	"filters": [
 		{
@@ -77,11 +76,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "-6, 43, -25", "max": "6, 28, -29" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "6, 43, 214", "max": "-6, 28, 217" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-6, 43, -25", "max": "6, 28, -29"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "6, 43, 214", "max": "-6, 28, 217"}
 	]
 }
