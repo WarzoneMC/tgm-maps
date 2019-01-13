@@ -1,0 +1,89 @@
+{
+	"name": "Real Warzone",
+	"authors": ["Everyone"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 35, 0.5"},
+		{"teams": ["red"], "coords": "12.5, 6, 76.5, 135"},
+		{"teams": ["blue"], "coords": "-11.5, 6, -75.5, -45"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-25, 18, 88",
+					"max": "25, -18, -88"
+				},
+				"health": 10
+			},
+			{
+				"name": "Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "67, 62, -8",
+					"max": "73, 56, -2"
+				},
+				"health": 10
+			}
+		]
+	},
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": 
+			[
+				"give %killername% minecraft:cooked_fish 2",
+				"give %killername% minecraft:planks 8"
+			]
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				
+				{"type": "item", "material": "planks", "slot": 4, "amount": 16},
+				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 1},
+			]
+		}
+	],
+	"itemremove": [
+		"stone pickaxe", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cStop griefing :("
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cPlease no!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cPlease no!"}
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "15, 3, 73", "max": "15, 9, 73"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-15, 3, -73", "max": "-15, 9, -73"}
+	]
+}
