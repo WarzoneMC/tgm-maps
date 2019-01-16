@@ -1,0 +1,160 @@
+{
+	"name": "Wuhu Island",
+	"authors": ["Tizona"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 3,
+			"max": 100
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 3,
+			"max": 100
+		},
+		{
+			"id": "blue", 
+			"name": "Blue",
+			"color": "blue",
+			"min": 3,
+			"max": 100
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 3,
+			"max": 100
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-1222.5, 46, 459.5"},
+		{"teams": ["yellow"], "coords": "-1152.5, 31, 373.5, 90"},
+		{"teams": ["green"], "coords": "-1165.5, 61, 354.5"},
+		{"teams": ["blue"], "coords": "-1337.5, 29, 510.5, -135"},
+		{"teams": ["red"], "coords": "-1057.5, 24, 480.5, 90"}
+	],
+	"points": {
+		"target": 4000
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Town",
+				"region": {
+					"min": {"x": -1257, "y": 16, "z": 571},
+					"max": {"x": -1251, "y": 27, "z": 565}
+				}
+			},
+			{
+				"name": "Lighthouse",
+				"region": {
+					"min": {"x": -1375, "y": 27, "z": 473},
+					"max": {"x": -1369, "y": 38, "z": 479}
+				}
+			},
+			{
+				"name": "Club",
+				"region": {
+					"min": {"x": -1298, "y": 26, "z": 318},
+					"max": {"x": -1292, "y": 37, "z": 324}
+				}
+			},
+			{
+				"name": "Cave",
+				"region": {
+					"min": {"x": -1281, "y": 20, "z": 391},
+					"max": {"x": -1275, "y": 31, "z": 385}
+				}
+			},
+			{
+				"name": "Castle",
+				"region": {
+					"min": {"x": -1208, "y": 48, "z": 397},
+					"max": {"x": -1202, "y": 59, "z": 403}
+				}
+			},
+			{
+				"name": "Ruins",
+				"region": {
+					"min": {"x": -1149, "y": 25, "z": 272},
+					"max": {"x": -1143, "y": 36, "z": 266}
+				}
+			},
+			{
+				"name": "Volcano",
+				"region": {
+					"min": {"x": -1126, "y": 63, "z": 366},
+					"max": {"x": -1132, "y": 69, "z": 372}
+				}
+			},
+			{
+				"name": "Hill",
+				"region": {
+					"min": {"x": -1123, "y": 40, "z": 425},
+					"max": {"x": -1117, "y": 51, "z": 419}
+				}
+			},
+			{
+				"name": "Resort",
+				"region": {
+					"min": {"x": -1033, "y": 16, "z": 434},
+					"max": {"x": -1039, "y": 27, "z": 440}
+				}
+			},
+			{
+				"name": "Wedge",
+				"region": {
+					"min": {"x": -1418, "y": 21, "z": 886},
+					"max": {"x": -1424, "y": 32, "z": 880}
+				}
+			}
+		]
+	},
+	"portals": [ 
+		{"from": "wuhu-island", "to": "-1358.5, 21, 901.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true},
+		{"from": "wedge-island", "to": "-1221.5, 22, 603.5, 90", "teams": ["red", "blue", "green", "yellow"], "sound": true}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreaking": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreaking": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreaking": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreaking": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "arrow", "chainmail chestplate", "leather boots", "dirt", "golden carrot", "leather leggings"
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue", "green", "yellow"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "green", "yellow"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "blue", "yellow"], "regions": ["green-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "blue", "green"], "regions": ["yellow-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "global", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+		{"id": "wuhu-island", "min": "-1219, 23, 614", "max": "-1217, 26, 616"},
+		{"id": "wedge-island", "min": "-1331, 23, 912", "max": "-1329, 26, 910"},
+		{"id": "yellow-spawn", "min": "-1150, 30, 369", "max": "-1158, 36, 377"},
+		{"id": "green-spawn", "min": "-1162, 60, 358", "max": "-1169, 67, 351"},
+		{"id": "blue-spawn", "min": "-1335, 0, 507", "max": "-1340, oo, 512"},
+		{"id": "red-spawn", "min": "-1062, 0, 484", "max": "-1055, oo, 477"}
+	]
+}

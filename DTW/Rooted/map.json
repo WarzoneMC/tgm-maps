@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "142.5, 34.5, -191.5, -90" },
-		{ "teams": ["red"], "coords": "178.5, 7, -96.5, 180" },
-		{ "teams": ["blue"], "coords": "178.5, 7, -285.5, 0" }
+		{"teams": ["spectators"], "coords": "142.5, 34.5, -191.5, -90"},
+		{"teams": ["red"], "coords": "178.5, 7, -96.5, 180"},
+		{"teams": ["blue"], "coords": "178.5, 7, -285.5"}
 	],
 	"dtm": {
 		"monuments": [
@@ -56,8 +56,10 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "iron spade", "slot": 4, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 5, "amount": 64, "durability": 5},
+				{"type": "item", "material": "wood", "slot": 6, "amount": 64, "durability": 5},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -77,12 +79,18 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "173, 0, -282", "max": "183, 13, -291" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "183, 0, -102", "max": "173, 13, -91" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "173, 0, -282", "max": "183, 13, -291"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "183, 0, -102", "max": "173, 13, -91"}
 	]
 }

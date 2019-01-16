@@ -5,116 +5,48 @@
 	"gametype": "DTM",
 	"stats": {"disable": true},
 	"teams": [
-		{"id": "blue", "name": "Blue", "color": "blue", "min": 1, "max": 50},
-		{"id": "red", "name": "Red", "color": "red", "min": 1, "max": 50}
+		{
+			"id": "blue", 
+			"name": "Blue", 
+			"color": "blue", 
+			"min": 1, 
+			"max": 50
+		},
+		{
+			"id": "red", 
+			"name": "Red", 
+			"color": "red", 
+			"min": 1, 
+			"max": 50
+		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "133.5, 74, -11.5, 180"},
-		{ "teams": ["red"], "coords": "-90.5, 27, -133.5, -90"},
-		{ "teams": ["blue"], "coords": "358.5, 27, -135.5, 90"}
+		{"teams": ["spectators"], "coords": "133.5, 74, -11.5, 180"},
+		{"teams": ["red"], "coords": "-90.5, 27, -133.5, -90"},
+		{"teams": ["blue"], "coords": "358.5, 27, -135.5, 90"}
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Wool A",
-				"teams": ["blue"],
-				"materials": ["wool"],
-				"region": {
-					"min": "342, 27, -231",
-					"max": "342, 27, -231"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool B",
+				"name": "Blue Wool",
 				"teams": ["blue"],
 				"materials": ["wool"],
 				"region": {
 					"min": "421, 79, -199",
 					"max": "421, 79, -199"
 				},
-				"health": 1
+				"health": 5
 			},
 			{
-				"name": "Wool C",
-				"teams": ["blue"],
-				"materials": ["wool"],
-				"region": {
-					"min": "358, 77, -136",
-					"max": "358, 77, -136"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool D",
-				"teams": ["blue"],
-				"materials": ["wool"],
-				"region": {
-					"min": "421, 79, -72",
-					"max": "421, 79, -72"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool E",
-				"teams": ["blue"],
-				"materials": ["wool"],
-				"region": {
-					"min": "342, 27, -40",
-					"max": "342, 27, -40"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool A&r",
+				"name": "Red Wool",
 				"teams": ["red"],
 				"materials": ["wool"],
 				"region": {
-					"min": "-75, 27, -39",
+					"min": "-154, 80, -229",
 					"max": "-75, 27, -39"
 				},
-				"health": 1
-			},
-			{
-				"name": "Wool B&r",
-				"teams": ["red"],
-				"materials": ["wool"],
-				"region": {
-					"min": "-154, 79, -71",
-					"max": "-154, 79, -71"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool C&r",
-				"teams": ["red"],
-				"materials": ["wool"],
-				"region": {
-					"min": "-91, 77, -134",
-					"max": "-91, 77, -134"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool D&r",
-				"teams": ["red"],
-				"materials": ["wool"],
-				"region": {
-					"min": "-154, 79, -198",
-					"max": "-154, 79, -198"
-				},
-				"health": 1
-			},
-			{
-				"name": "Wool E&r",
-				"teams": ["red"],
-				"materials": ["wool"],
-				"region": {
-					"min": "-75, 27, -230",
-					"max": "-75, 27, -230"
-				},
-				"health": 1
-			},
+				"health": 5
+			}
 		]
 	},
 	"kits": [

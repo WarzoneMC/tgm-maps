@@ -8,21 +8,21 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "116.5, 12, -460.5, 45" },
-		{ "teams": ["red"], "coords": "2.5, 16, -480.5, -45" },
-		{ "teams": ["green"], "coords": "136.5, 16, -346.5, 135" }
+		{"teams": ["spectators"], "coords": "116.5, 12, -460.5, 45"},
+		{"teams": ["red"], "coords": "2.5, 16, -480.5, -45"},
+		{"teams": ["green"], "coords": "136.5, 16, -346.5, 135"}
 	],
 	"dtm": {
 		"monuments": [
@@ -74,9 +74,10 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "quartz block", "slot": 3, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "quartz block", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
 
 				{"type": "item", "material": "cooked chicken", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
@@ -89,8 +90,16 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "cooked chicken",
-		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+	                 ]
+                }
+        ],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"filters": [
 		{
@@ -98,8 +107,8 @@
 			"regions": ["red-spawn-protection", "green-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "6, 13, -485", "max": "-2, oo, -477"},

@@ -1,6 +1,6 @@
 {
 	"name": "Kyoto",
-	"authors": ["KyotoSquid, D_A_N_G_E_R, and Blaszczak"],
+	"authors": ["JapaneseSquid", "D_A_N_G_E_R", "Blaszczak"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "white",
 			"name": "White",
 			"color": "white",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
@@ -30,9 +30,9 @@
 				"name": "Left Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
+				"region": {
 					"min": "-45, 67, 145",
-					"max": "-45, 67, 145" 
+					"max": "-45, 67, 145"
 				},
 				"health": 1
 			},
@@ -40,24 +40,24 @@
 				"name": "Right Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
-				"region": { 
-					"min": "41, 67, 145",
-					"max": "41, 67, 145" 
-				},
-				"health": 1
-			},
-			{
-				"name": "Left Monument&r",
-				"teams": ["white"],
-				"materials": ["obsidian"],
 				"region": {
-					"min": "41, 67, -29",
-					"max": "41, 67, -29"
+					"min": "41, 67, 145",
+					"max": "41, 67, 145"
 				},
 				"health": 1
 			},
 			{
-				"name": "Right Monument&r",
+         "name": "Left Monument ",
+         "teams": ["white"],
+         "materials": ["obsidian"],
+         "region": {
+            "min": "41, 67, -29",
+            "max": "41, 67, -29"
+         },
+         "health": 1
+      },
+			{
+				"name": "Right Monument ",
 				"teams": ["white"],
 				"materials": ["obsidian"],
 				"region": {
@@ -68,7 +68,13 @@
 			}
 		]
 	},
-	"kits": [
+	"killstreaks": [{
+		"count": 2,
+		"repeat": true,
+		"commands": ["give %killername% minecraft:golden_apple 1"]
+	                 }
+               ],
+	"kits":[
 		{
 			"name": "Default",
 			"items": [
@@ -76,6 +82,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
 				{"type": "item", "material": "log", "slot": 4, "amount": 64},
 				{"type": "item", "material": "glass", "slot": 5, "amount": 48},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
@@ -91,7 +98,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],

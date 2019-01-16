@@ -8,21 +8,21 @@
 			"id": "orange",
 			"name": "Orange",
 			"color": "gold",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "purple",
 			"name": "Purple",
 			"color": "dark_purple",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "89.4, 31, 44.5, 180"},
-		{ "teams": ["orange"], "coords": "159.4, 17, -2.5, 90"},
-		{ "teams": ["purple"], "coords": "19.5, 17, -2.5, -90"}
+		{"teams": ["spectators"], "coords": "89.4, 31, 44.5, 180"},
+		{"teams": ["orange"], "coords": "159.4, 17, -2.5, 90"},
+		{"teams": ["purple"], "coords": "19.5, 17, -2.5, -90"}
 	],
 	"ctw": {
 		"wools": [
@@ -64,7 +64,6 @@
 
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "wood", "slot": 6, "amount": 64},
-
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
@@ -76,10 +75,23 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet",
-		"glass", "wood", "cooked beef", "arrow",
-		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
-		"beacon"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "wood", "cooked beef", 
+		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "beacon"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"commands": [
+				"execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3",
+				"give %killername% minecraft:arrow 10"
+			]
+		}
 	],
 	"filters": [
 		{
@@ -99,7 +111,6 @@
 	"regions": [
 		{"id": "lime-room", "min": "-43, 0, -64", "max": "-63, oo, -44"},
 		{"id": "blue-room", "min": "-43, 0, 58", "max": "-63, oo, 38"},
-
 		{"id": "yellow-room", "min": "221, 0, 38", "max": "241, oo, 58"},
 		{"id": "red-room", "min": "221, 0, -64", "max": "241, oo, -44"},
 

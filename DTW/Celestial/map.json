@@ -1,0 +1,85 @@
+{
+	"name": "Celestial",
+	"authors": ["_Rascal", "Mega_Rascal"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "201.5, 113, 189.5"},
+		{"teams": ["red"], "coords": "329.5, 34, 252.5, 90"},
+		{"teams": ["blue"], "coords": "72.5, 34, 254.5, -90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["wool"],
+				"region": {
+					"min": "255, 38, 185",
+					"max": "251, 35, 329"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "130, 35, 177",
+					"max": "146, 38, 321"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "log", "slot": 3, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "69, 0, 265", "max": "82, oo, 265"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "319, 0, 260", "max": "332, oo, 240"}
+	]
+}

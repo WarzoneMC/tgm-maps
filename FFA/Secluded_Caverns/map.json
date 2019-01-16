@@ -1,14 +1,20 @@
 {
-    "name": "Secluded Caverns: FFA",
-    "version": "1.0.0",
-    "gametype": "FFA",
-    "authors": ["yoyo_"],
-    "stats": {"disable": true},
-    "teams": [
-        {"id": "players", "name": "Players", "color": "dark_aqua", "min": 1, "max": 40}
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "-480.5, 52, 428.5, 180"},
+	"name": "Secluded Caverns: FFA",
+	"version": "1.0.0",
+	"gametype": "FFA",
+	"authors": ["yoyo_"],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players",
+			"name": "Players",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-480.5, 52, 428.5, 180"},
 		{"teams": ["players"], "coords": "-500.5, 22, 390.5"},
 		{"teams": ["players"], "coords": "-460.5, 22,390. 5"},
 		{"teams": ["players"], "coords": "-460.5, 22, 465.5"},
@@ -17,83 +23,62 @@
 		{"teams": ["players"], "coords": "-440.5, 14, 428.5"},
 		{"teams": ["players"], "coords": "-480.5, 23, 455.5"},
 		{"teams": ["players"], "coords": "-480.5, 23, 401.5"},
-		{"teams": ["players"], "coords": "-419.5, 7, 428.5"}
-    ],
-    "ffa": {
-        "timeLimit": {
-            "enabled": true,
-            "limit": 600
-        },
-        "killLimit": 25
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"material": "stone sword", "slot": 0, "unbreakable": true},
-                {"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
-                {"material": "arrow", "slot": 2, "amount": 10},
-                {"material": "golden apple", "slot": 8},
-                {"material": "cooked beef", "slot": 8, "amount": 32},
-                
-                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+		{"teams": ["players"], "coords": "-419.5, 7, 428.5"},
+		{"teams": ["players"], "coords": "-541.5,7,428.5"},
+		{"teams": ["players"], "coords": "-525.5,6,428.5"},
+		{"teams": ["players"], "coords": "495.5,6,416.5"},
+		{"teams": ["players"], "coords": "-480.5, 6, 410.5"},
+		{"teams": ["players"], "coords": "-480.5, 6, 445.5"},
+		{"teams": ["players"], "coords": "-466.5, 6, 440.5"},
+		{"teams": ["players"], "coords": "-466.5, 6, 440.5"},
+		{"teams": ["players"], "coords": "-442.5, 6, 428.5"},
+		{"teams": ["players"], "coords": "495.5, 6, 439.5"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 10},
+				{"material": "golden apple", "slot": 8},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
-            ]
-        }
-    ],
-    "killstreaks": [
-        {
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"
+	],
+	"killstreaks": [
+		{
 			"count": 1,
 			"repeat": true,
 			"commands": ["give %killername% minecraft:golden_apple 1"]
-		},
-		{
-			"count": 5,
-			"repeat": false,
-			"commands": ["execute %killername% ~ ~ ~ playsound entity.zombie.death master @a ~ ~ ~ 3"],
-			"message": "%killercolor%%killername% &7is on a kill streak of &2&l%count%&r&7!"
-		},
-		{
-			"count": 10,
-			"repeat": false,
-			"commands": [
-				"execute %killername% ~ ~ ~ playsound entity.wither.ambient master @a ~ ~ ~ 7",
-				"execute %killername% ~ ~ ~ summon fireworks_rocket {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
-			],
-			"message": "%killercolor%%killername% &7is on a kill streak of &6&l%count%&r&7!"
-		},
-		{
-			"count": 25,
-			"repeat": false,
-			"commands": [
-				"execute %killername% ~ ~ ~ playsound entity.enderdragon.growl master @a ~ ~ ~ 1000",
-				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
-			],
-			"message": "%killercolor%%killername% &7is on a kill streak of &c&l%count%&r&7!"
-		},
-		{
-			"count": 50,
-			"repeat": false,
-			"commands": [
-				"execute %killername% ~ ~ ~ playsound entity.wither.spawn master @a ~ ~ ~ 1000 1.4",
-				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680],FadeColors:[I;9371648]}]}}}}"
-			],
-			"message": "%killercolor%%killername% &7is on a kill streak of &3&l%count%&r&7!"
-		},
-		{
-			"count": 100,
-			"repeat": false,
-			"commands": [
-				"execute @a ~ ~ ~ playsound ui.toast.challenge_complete master @p ~ ~100 ~ 1000",
-				"execute %killername% ~ ~ ~ summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16766776],FadeColors:[I;16774912]}]}}}}"
-			],
-			"message": "%killercolor%%killername% &7is on a kill streak of &5&l%count%&r&7!"
 		}
 	],
-    "itemremove": ["stone sword", "bow", "leather helmet", "iron chestplate", "leather leggings", "leather boots", "arrow"]
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
 }

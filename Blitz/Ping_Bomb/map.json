@@ -1,30 +1,31 @@
 {
 	"name": "Ping Bomb",
-	"authors": ["majjus, ShinyDialga, and Teejers"],
+	"authors": ["Flashee", "ShinyDialga", "majjus_"],
 	"gametype": "Blitz",
 	"version": "1.1",
-	"itemremove": ["glowstone"],
 	"stats": {"disable": true},
-	"max-build-height": "30",
 	"teams": [
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 10
 		},
 		{
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 25,
-			"min": 1
+			"min": 1,
+			"max": 10
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "24.5, 24, -5.5, 90"},
-		{"teams": ["blue"], "coords": "41.5, 31, 3.5, 0"},
-		{"teams": ["red"], "coords": "41.5, 31, -14.5, 0"}
+		{"teams": ["blue"], "coords": "41.5, 31, 3.5"},
+		{"teams": ["red"], "coords": "41.5, 31, -14.5"}
+	],
+	"itemremove": [
+		"glowstone"
 	]
 }

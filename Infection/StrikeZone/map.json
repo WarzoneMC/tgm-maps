@@ -1,12 +1,24 @@
 {
 	"name": "StrikeZone",
-	"authors": ["N11cK, TehRaptor, Attendants, and BennyDoesStuff"],
+	"authors": ["N11cK", "TehRaptor", "Attendants", "BennyDoesStuff"],
 	"gametype": "Infected",
 	"version": "1.0",
 	"stats": {"disable": true},
 	"teams": [
-		{"id": "humans", "name": "Humans", "color": "blue", "min": 1, "max": 50},
-		{"id": "infected", "name": "Infected", "color": "green", "min": 1, "max": 50}
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "infected",
+			"name": "Infected",
+			"color": "green",
+			"min": 1,
+			"max": 50
+		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-1069.5, 66, -994.5, 90"},

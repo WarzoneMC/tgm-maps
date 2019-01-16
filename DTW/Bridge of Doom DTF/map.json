@@ -1,0 +1,98 @@
+{
+	"name": "Bridge of Doom DTF",
+	"authors": ["Clijmart"],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "bennyvil",
+			"name": "Bennyvil",
+			"color": "yellow",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "evilucas",
+			"name": "Evilucas",
+			"color": "gold",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 51, 0.5"},
+		{"teams": ["bennyvil"], "coords": "55.5, 27, -36.5, 45"},
+		{"teams": ["evilucas"], "coords": "-54.5, 27, 37.5, -135"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Evilucas",
+				"teams": ["evilucas"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-67, 62, 8",
+					"max": "-73, 56, 2"
+				},
+				"health": 20
+			},
+			{
+				"name": "Bennyvil",
+				"teams": ["bennyvil"],
+				"materials": ["wool"],
+				"region": {
+					"min": "67, 62, -8",
+					"max": "73, 56, -2"
+				},
+				"health": 20
+			}
+		]
+	},
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": 
+			[
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 4"
+			]
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				
+				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["evilucas", "bennyvil"],
+			"regions": ["gold-spawn-protection", "yellow-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["evilucas"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["bennyvil"], "regions": ["gold-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "gold-spawn-protection", "type": "cuboid", "min": "-58, 26, 40", "max": "-51, 32, 34"},
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "58, 26, -40", "max": "51, 32, -34"}
+	]
+}

@@ -1,6 +1,6 @@
 {
 	"name": "Bill's Town Blitz",
-	"authors": ["Yoyo_ and Diamyx"],
+	"authors": ["Yoyo_", "Diamyx"],
 	"gametype": "Blitz",
 	"version": "1.0.1",
 	"teams": [
@@ -8,15 +8,15 @@
 			"id": "purple",
 			"name": "Purple",
 			"color": "dark purple",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		},
 		{
 			"id": "orange",
 			"name": "Orange",
 			"color": "gold",
-			"max": 20,
-			"min": 1
+			"min": 1,
+			"max": 20
 		}
 	],
 	"spawns": [
@@ -40,18 +40,25 @@
 				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:1"], "unbreakable": true}
 			],
 			"effects": [
-				{"type": "night vision", "duration": "oo", "amplifier": 25, "particles": false}
+				{"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
 			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 2,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
 		}
 	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple", "orange"],
-			"regions": ["noblox"],
+			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
 	],
 	"regions": [
-		{"id": "noblox", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

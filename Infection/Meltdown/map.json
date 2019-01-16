@@ -9,21 +9,21 @@
 			"id": "humans",
 			"name": "Humans",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "Infected",
 			"name": "Infected",
 			"color": "green",
-			"max": 50,
-			"min": 1
+			"min": 1, 
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "-1059,40,-1058, 0" },
-		{ "teams": ["infected"], "coords": "-1148,31,-991, -90" },
-		{ "teams": ["humans"], "coords": "-1059,32,-1046, 0" }
+		{"teams": ["spectators"], "coords": "-1059, 40, -1058"},
+		{"teams": ["infected"], "coords": "-1148, 31, -991, -90"},
+		{"teams": ["humans"], "coords": "-1059, 32, -1046"}
 	],
 	"infection": {
 		"length": 7

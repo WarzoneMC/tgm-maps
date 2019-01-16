@@ -1,0 +1,95 @@
+{
+	"name": "Egypt",
+	"authors": ["Mega_Rascal"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-59.5, 49, 18.5, -90"},
+		{"teams": ["yellow"], "coords": "-15.5, 13, -66.5"},
+		{"teams": ["blue"], "coords": "-15.5, 13, 103.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Yellow Wool",
+				"teams": ["yellow"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-15, 28, -42",
+					"max": "-17, 32, -44"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["wool"],
+				"region": {
+					"min": "-15, 32, 80",
+					"max": "-17, 28, 78"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "log", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "chainmail leggings", "iron boots", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 4"
+			]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "yellow"],
+			"regions": ["blue-spawn-protection", "yellow-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 106", "max": "-21, oo, 93"},
+		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-11, 0, -57", "max": "-21, oo, -70"}
+	]
+}

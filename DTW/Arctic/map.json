@@ -1,6 +1,6 @@
 {
 	"name": "Arctic",
-	"authors": ["Dubstep_Cat, JustADev, and StarRaidz"],
+	"authors": ["Dubstep_Cat", "JustADev", "StarRaidz"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -8,21 +8,21 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"max": 50,
-			"min": 1
+			"min": 1,
+			"max": 50
 		}
 	],
 	"spawns": [
-		{ "teams": ["spectators"], "coords": "17.5, 85, -59.5, 90" },
-		{ "teams": ["red"], "coords": "-5.5, 67, 17.5, 180" },
-		{ "teams": ["blue"], "coords": "-4.5, 66, -135.5" }
+		{"teams": ["spectators"], "coords": "17.5, 85, -59.5, 90"},
+		{"teams": ["red"], "coords": "-5.5, 67, 17.5, 180"},
+		{"teams": ["blue"], "coords": "-4.5, 66, -135.5"}
 	],
 	"dtm": {
 		"monuments": [
@@ -75,12 +75,11 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{ "type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn." },
-		{ "type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn." }
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "1, 0, -137", "max": "-12, oo, -131" },
-
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "1, 0, 12", "max": "-15, oo, 18" }
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "1, 0, -137", "max": "-12, oo, -131"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "1, 0, 12", "max": "-15, oo, 18"}
 	]
 }
