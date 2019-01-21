@@ -69,8 +69,8 @@
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["center-protection"], "message": ""}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "min": "178,oo,205", "max": "171, 0, 198"},
-		{"id": "red-spawn-protection", "min": "59,oo,208", "max": "66, 0, 215"},
-		{"id": "center-protection", "min": "122,0,210", "max": "115, 9, 203"}
+		{"id": "blue-spawn-protection", "min": "178, 0, 205", "max": "171, oo, 198"},
+		{"id": "red-spawn-protection", "min": "59, 0, 208", "max": "66, oo, 215"},
+		{"id": "center-protection", "min": "122, 0, 210", "max": "115, oo, 203"}
 	]
 }
