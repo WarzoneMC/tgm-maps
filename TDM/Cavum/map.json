@@ -3,7 +3,7 @@
 	"authors": ["thestrangeboy1", "moo8x8"],
 	"gametype": "TDM",
 	"version": "1.0",
-    "teams": [
+    	"teams": [
 		{
 			"id": "yellow",
 			"name": "Yellow",
