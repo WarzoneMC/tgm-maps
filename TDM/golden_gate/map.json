@@ -3,7 +3,7 @@
 	"authors": ["DoomRobotBoy"],
 	"gametype": "TDM",
 	"version": "1.1",
-    "teams": [
+    	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -24,9 +24,9 @@
 		{"teams": ["blue"], "coords": "148.5, 26, 40.5, 90"},
 		{"teams": ["red"], "coords": "-47.5, 26, 40.5, -90"}
 	],
-    "points": {
-        "target": 50
-    },
+    	"points": {
+        	"target": 25
+    	},
 	"kits": [
 		{
 			"name": "default",
@@ -42,8 +42,8 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"effect": "speed", "duration": 99999999, "amplifier": 2, "particles": false},
-				{"effect": "jump", "duration": 99999999, "amplifier": 0, "particles": false}
+				{"effect": "speed", "duration": 10000, "amplifier": 2, "particles": false},
+				{"effect": "jump", "duration": 10000, "amplifier": 0, "particles": false}
 			]
 		}
 	],
