@@ -1,13 +1,14 @@
 Deepwind Jungle
 Sandstone 2
+WarlockDTW
 Gobi
 Rooted
 Ascension
 Skylands Reborn
+Outbreak
 Stonehenge
 Anasaria
 Rendezvous Redux
-WarlockDTW
 Turf Wars
 Electri City
 Race for Victory 2
@@ -15,7 +16,9 @@ Gardens
 Avalanche Mini
 Ring Race
 Twin Peaks
+No Return
 Stronghold
+Warlock
 Rooted Frontier
 Fracture
 Arctic 2
@@ -25,6 +28,8 @@ Outback
 Persisto
 Sector Six
 Cargo
+Fossil Canyon
 TechnoWar
+Golden Drought
 Village 2
 Arizona
