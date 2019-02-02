@@ -1,0 +1,90 @@
+{
+	"name": "Bread Land FFA",
+	"version": "1.0.0",
+	"gametype": "FFA",
+	"authors": ["quasim"],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players",
+			"name": "Players",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "13.5, 100, 40.5, 0"},
+		{"teams": ["players"], "coords": "47.5, 72, 34.5, 90"},
+		{"teams": ["players"], "coords": "72.5, 72, 32.5, 0"},
+		{"teams": ["players"], "coords": "78.5, 72, 54.5, 90"},
+		{"teams": ["players"], "coords": "56.5, 77, 83.5, 90"},
+		{"teams": ["players"], "coords": "41.5, 72, 83.5, 90"},
+		{"teams": ["players"], "coords": "26.5, 72, 102.5, 90"},
+		{"teams": ["players"], "coords": "-1.5, 72, 102.5, 180"},
+		{"teams": ["players"], "coords": "11.5, 72, 79.5, 180"},
+		{"teams": ["players"], "coords": "-29.5, 77, 83.5, -90"},
+		{"teams": ["players"], "coords": "-9.5, 80, 63.5, -90"},
+		{"teams": ["players"], "coords": "-23.5, 72, 71.5, -90"},
+		{"teams": ["players"], "coords": "-47.5, 72, 55.5, -180"},
+		{"teams": ["players"], "coords": "-53.5, 72, 27.5, -90"},
+		{"teams": ["players"], "coords": "-20.5, 72, 41.5, -90"},
+		{"teams": ["players"], "coords": "-29.5, 77, -2.5, 0"},
+		{"teams": ["players"], "coords": "-9.5, 80, 17.5, 0"},
+		{"teams": ["players"], "coords": "-12.5, 72, -5.5, 180"},
+		{"teams": ["players"], "coords": "3.5, 72, -26.5, 0"},
+		{"teams": ["players"], "coords": "27.5, 72, -16.5, 90"},
+		{"teams": ["players"], "coords": "14.5, 72, 9.5, 0"},
+		{"teams": ["players"], "coords": "56.5, 77, -2.5, 0"},
+		{"teams": ["players"], "coords": "36.5, 80, 17.5, -90"},
+		{"teams": ["players"], "coords": "50.5, 72, 11.5, -90"},
+		{"teams": ["players"], "coords": "36.5, 80, 63.5, -90"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 32},
+				{"material": "golden apple", "slot": 7},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron helmet", "chainmail chestplate", "leather leggings", "leather boots", "arrow"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
