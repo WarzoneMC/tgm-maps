@@ -1,0 +1,96 @@
+{
+	"name": "Balloons Christmas",
+	"authors": ["Pandaboy999"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 63, 0.5, -180"},
+		{"teams": ["red"], "coords": "23.5, 9, 27.5, 90"},
+		{"teams": ["blue"], "coords": "-22.5, 9, -26.5, -90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "0, 20, -48",
+					"max": "0, 22, -48" 
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0, 20, 48",
+					"max": "0, 22, 48"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+				{"type": "item", "material": "stone spade", "slot": 30, "unbreakable": true},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-19, 0, -21", "max": "-27, oo, -33"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "19, 0, 21", "max": "27, oo, 33"}
+	]
+}

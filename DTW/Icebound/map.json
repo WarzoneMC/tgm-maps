@@ -34,7 +34,7 @@
 					"min": "-69, 23, -209",
 					"max": "-71, 27, -207"
 				},
-				"health": 10
+				"health": 16
 			},
 			{
 				"name": "Blue Wool",
@@ -44,7 +44,7 @@
 					"min": "-29, 27, 47",
 					"max": "-31, 23, 49"
 				},
-				"health": 10
+				"health": 16
 			}
 		]
 	},
@@ -57,6 +57,8 @@
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone spade", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -69,6 +71,13 @@
 	],
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"filters": [
 		{

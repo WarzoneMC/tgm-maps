@@ -1,0 +1,70 @@
+{
+	"name": "Itty Bitty KOTH",
+	"authors": ["_Rascal", "BennyDoesStuff"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 14, -17.5"},
+		{"teams": ["blue"], "coords": "-74.5, 2, 0.5, -90"},
+		{"teams": ["red"], "coords": "75.5, 2, 0.5, 90"}
+	],
+	"points": {
+		"target": 600
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Center",
+				"region": {
+					"min": {"x": 2, "y": 2, "z": 2},
+					"max": {"x": -2, "y": 6, "z": -2}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "glass", "amount": 8, "slot": 2},
+
+				{"type": "item", "material": "cooked beef", "amount": 4, "slot": 7},
+				{"type": "item", "material": "golden apple", "slot": 8},
+				{"type": "item", "material": "arrow", "amount": 1, "slot": 9},
+
+				{"type": "item", "material": "gold helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow", 
+		"cobblestone", "log", "leather chestplate", "leather leggings", "leather boots", "wood"
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "hill-protection", "min": "-2, 0, -2", "max": "2, oo, 2"}
+	]
+}

@@ -1,6 +1,6 @@
 {
 	"name": "Senex 3",
-	"authors": ["ParaPenguin", "Wulfcaspice"],
+	"authors": ["ParaPenguin", "ViceWatercolour"],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -92,6 +92,13 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
 	],	
+	"killstreaks": [
+		{
+			"count": 2,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],

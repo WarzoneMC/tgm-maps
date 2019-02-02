@@ -61,7 +61,7 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2, "unbreakable": true},
 
-				{"material": "log", "slot": 3, "amount": 64},
+				{"material": "wood", "slot": 3, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "ladder", "slot": 6, "amount": 32},
 				{"material": "cooked fish", "slot": 7, "amount": 64},
@@ -77,6 +77,16 @@
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "log", "wood", "leather helmet", "glass", "ladder", "cooked fish", 
 		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "beacon", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 1"
+			]
+		}
 	],
 	"filters": [
 		{

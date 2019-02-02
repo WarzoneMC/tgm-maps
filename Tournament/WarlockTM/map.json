@@ -8,15 +8,15 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"min": 1,
-			"max": 50
+			"min": 0,
+			"max": 0
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"min": 1,
-			"max": 50
+			"min": 0,
+			"max": 0
 		}
 	],
 	"spawns": [
@@ -69,6 +69,16 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "sandstone", "cobblestone", "quartz_block", "stone", "step", "smooth_brick", "iron_fence"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": [
+				"give %killername% minecraft:golden_apple 1",
+				"give %killername% minecraft:arrow 1"
+			]
+		}
 	],
 	"filters": [
 		{

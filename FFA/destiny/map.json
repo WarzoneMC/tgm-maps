@@ -57,5 +57,15 @@
 			"repeat": true,
 			"commands": ["give %killername% minecraft:golden_apple 1"]
 		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
