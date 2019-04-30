@@ -36,7 +36,7 @@
 			{
 				"name": "Green",
 				"color": "dark green",
-				"woolcolor": "green"
+				"woolcolor": "green",
 				"teams": ["blue"],
 				"region": {"min": "1, 10, -81", "max": "1, 10, -81"}
 			},
@@ -51,7 +51,7 @@
 			{
 				"name": "Yellow",
 				"color": "yellow",
-				"woolcolor": "yellow"
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "1, 10, 81", "max": "1, 10, 81"}
 			}
