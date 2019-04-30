@@ -28,26 +28,30 @@
 		"wools": [
 			{
 				"name": "Cyan",
-				"color": "cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
 				"teams": ["blue"],
 				"region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}
 			},
 			{
 				"name": "Green",
-				"color": "green",
+				"color": "dark green",
+				"woolcolor": "green",
 				"teams": ["blue"],
 				"region": {"min": "1, 10, -81", "max": "1, 10, -81"}
 			},
 
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
 				"teams": ["red"],
 				"region": {"min": "-2, 10, 81", "max": "-2, 10, 81"}
 			},
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "1, 10, 81", "max": "1, 10, 81"}
 			}
@@ -63,7 +67,7 @@
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"material": "glass", "slot": 5, "amount": 64},
-				{"material": "wood", "slot": 6, "amount": 64},
+				{"material": "oak planks", "slot": 6, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 28, "amount": 64},
 
@@ -75,7 +79,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "wood", "cooked beef", 
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "oak planks", "cooked beef", 
 		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "beacon"
 	],
 	"killstreaks": [
