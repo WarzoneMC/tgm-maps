@@ -29,24 +29,28 @@
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["green"],
 				"region": {"min": "535, 12, -125", "max": "535, 12, -125"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["green"],
 				"region": {"min": "533, 12, -125", "max": "533, 12, -125"}
 			},
 			{
 				"name": "Red",
 				"color": "red",
+				"woolcolor": "orange",
 				"teams": ["blue"],
 				"region": {"min": "535, 12, -328", "max": "535, 12, -328"}
 			},
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
 				"teams": ["blue"],
 				"region": {"min": "533, 12, -328", "max": "533, 12, -328"}
 			}
@@ -61,8 +65,8 @@
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"material": "wood", "slot": 4, "amount": 64},
-				{"material": "wood", "slot": 5, "amount": 64},
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
@@ -74,7 +78,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "wood", "arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "oak planks", "arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

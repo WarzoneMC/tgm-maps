@@ -29,25 +29,29 @@
 		"wools": [
 			{
 				"name": "Purple", 
-				"color": "purple", 
+				"color": "dark purple", 
+				"woolcolor": "purple",
 				"teams": ["blue"], 
 				"region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}
 			},
 			{
 				"name": "Magenta", 
-				"color": "magenta", 
+				"color": "dark purple", 
+				"woolcolor": "magenta",
 				"teams": ["blue"], 
 				"region": {"min": "1, 10, -81", "max": "1, 10, -81"}
 			},
 			{
 				"name": "Cyan", 
-				"color": "cyan", 
+				"color": "dark aqua",
+				"woolcolor": "cyan", 
 				"teams": ["red"], 
 				"region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}
 			},
 			{
 				"name": "Blue", 
-				"color": "light blue", 
+				"color": "blue", 
+				"woolcolor": "blue",
 				"teams": ["red"], 
 				"region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}
 			}
@@ -59,7 +63,7 @@
 			"items": [
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
 				{"material": "stone axe", "slot": 3, "unbreakable": true},
-				{"material": "wood", "slot": 12, "amount": 64},
+				{"material": "oak planks", "slot": 12, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -70,7 +74,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "stone axe", "leather helmet", "leather leggings", "leather helmet", "wood", "cooked beef", "leather boots", "chainmail chestplate"
+		"iron sword", "bow", "stone axe", "leather helmet", "leather leggings", "leather helmet", "oak planks", "cooked beef", "leather boots", "chainmail chestplate"
 	],
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room"], "message": "&cYou are not allowed to modify terrain here."},
