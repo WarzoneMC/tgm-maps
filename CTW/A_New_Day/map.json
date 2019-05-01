@@ -36,7 +36,7 @@
 			{
 				"name": "Magenta",
 				"color": "dark purple",
-				"woolcolor": "magenta"
+				"woolcolor": "magenta",
 				"teams": ["red"],
 				"region": {"min": "114, 9, 213", "max": "114, 9, 213"}
 			},
