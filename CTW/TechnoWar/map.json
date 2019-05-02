@@ -50,7 +50,7 @@
 			{
 				"name": "Yellow",
 				"color": "yellow",
-				"woolcolor": ""yellow",
+				"woolcolor": "yellow",
 				"teams": ["blue"],
 				"region": {"min": "1, 57, 92", "max": "1, 57, 92"}
 			}
