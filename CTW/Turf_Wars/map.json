@@ -28,25 +28,29 @@
 		"wools": [
 			{
 				"name": "Magenta",
-				"color": "magenta",
+				"color": "dark purple",
+				"woolcolor": "magenta",
 				"teams": ["blue"],
 				"region": {"min": "1, 21, -123", "max": "1, 21, -123"}
 			},
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "magenta",
 				"teams": ["blue"],
 				"region": {"min": "-1, 21, -123", "max": "-1, 21, -123"}
 			},
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "-1, 21, 123", "max": "-1, 21, 123"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["red"],
 				"region": {"min": "1, 21, 123", "max": "1, 21, 123"}
 			}
@@ -62,7 +66,7 @@
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 8},
 

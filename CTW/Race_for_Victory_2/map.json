@@ -28,26 +28,30 @@
 		"wools": [
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "magenta"
 				"teams": ["blue"],
 				"region": {"min": "-1, 5, -64", "max": "-1, 5, -64"}
 			},
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["blue"],
 				"region": {"min": "1, 5, -64", "max": "1, 5, -64"}
 			},
 
 			{
 				"name": "Lime",
-				"color": "lime",
+				"color": "green",
+				"woolcolor": "lime"
 				"teams": ["red"],
 				"region": {"min": "1, 5, 78", "max": "1, 5, 78"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["red"],
 				"region": {"min": "-1, 5, 78", "max": "-1, 5, 78"}
 			}
@@ -61,7 +65,7 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2, "unbreakable": true},
 
-				{"material": "wood", "slot": 3, "amount": 64},
+				{"material": "oak planks", "slot": 3, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "ladder", "slot": 6, "amount": 32},
 				{"material": "cooked fish", "slot": 7, "amount": 64},
@@ -75,7 +79,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "log", "wood", "leather helmet", "glass", "ladder", "cooked fish", 
+		"iron sword", "bow", "iron pickaxe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "cooked fish", 
 		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "beacon", "wool"
 	],
 	"killstreaks": [
