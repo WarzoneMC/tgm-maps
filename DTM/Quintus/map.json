@@ -138,7 +138,7 @@
 				{"type": "item", "material": "golden apple", "slot": 3, "unbreakable": true, "amount": 2},
 
 				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "log", "slot": 5, "amount": 32},
+				{"type": "item", "material": "oak log", "slot": 5, "amount": 32},
 				{"type": "item", "material": "cooked fish", "slot": 6, "amount": 32},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
 

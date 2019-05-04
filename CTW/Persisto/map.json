@@ -28,25 +28,29 @@
 		"wools": [
 			{
 				"name": "Magenta",
-				"color": "magenta",
+				"color": "dark purple",
+				"woolcolor": "magenta",
 				"teams": ["red"],
 				"region": {"min": "7, 11, 146", "max": "7, 11, 146"}
 			},
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "15, 11, 146", "max": "15, 11, 146"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["blue"],
 				"region": {"min": "15, 11, 26", "max": "15, 11, 26"}
 			},
 			{
 				"name": "Lime",
-				"color": "Lime",
+				"color": "green",
+				"woolcolor": "lime",
 				"teams": ["blue"],
 				"region": {"min": "7, 11, 26", "max": "7, 11, 26"}
 			}
@@ -61,7 +65,7 @@
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "glass", "slot": 3, "amount": 64},
 
-				{"material": "wood", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 4, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 				{"material": "arrow", "slot": 9, "amount": 64},
@@ -74,7 +78,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "leather helmet", "wood", "arrow", "golden apple", "chainmail chestplate", "leather leggings", "iron boots"
+		"stone sword", "bow", "leather helmet", "oak planks", "arrow", "golden apple", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

@@ -58,7 +58,7 @@
 				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["dig_speed:3"], "unbreakable": true},
 
 				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64},
 				{"type": "item", "material": "bread", "slot": 8, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 
