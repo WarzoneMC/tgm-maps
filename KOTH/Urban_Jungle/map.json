@@ -51,7 +51,7 @@
 				{"type": "item", "material": "cooked beef", "amount": 16, "slot": 4},
 				{"type": "item", "material": "golden apple", "slot": 5},
 
-				{"type": "item", "material": "gold helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "golden helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}

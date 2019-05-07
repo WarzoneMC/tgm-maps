@@ -50,7 +50,7 @@
 				{"type": "item", "material": "golden apple", "slot": 8},
 				{"type": "item", "material": "arrow", "amount": 1, "slot": 9},
 
-				{"type": "item", "material": "gold helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "golden helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
@@ -58,8 +58,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow", 
-		"cobblestone", "log", "leather chestplate", "leather leggings", "leather boots", "oak planks"
+		"stone sword", "bow", "stone pickaxe", "golden helmet", "stone", "cooked beef", "arrow", 
+		"cobblestone", "oak log", "leather chestplate", "leather leggings", "leather boots", "oak planks"
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."}

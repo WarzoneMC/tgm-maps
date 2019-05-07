@@ -9,14 +9,14 @@
 			"name": "Blue",
 			"color": "blue",
 			"min": 1,
-			"max": 8
+			"max": 10
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 8
+			"max": 10
 		}
 	],
 	"spawns": [
@@ -28,13 +28,15 @@
 		"wools": [
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
 				"teams": ["blue"],
 				"region": {"min": "46, 37, -35", "max": "46, 37, -35"}
 			},
 			{
 				"name": "Pink",
-				"color": "pink",
+				"color": "light purple",
+				"woolcolor": "pink",
 				"teams": ["blue"],
 				"region": {"min": "47, 37, -35", "max": "47, 37, -35"}
 			},
@@ -42,12 +44,14 @@
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "47, 37, -189", "max": "47, 37, -189"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["red"],
 				"region": {"min": "46, 37, -189", "max": "46, 37, -189"}
 			}
