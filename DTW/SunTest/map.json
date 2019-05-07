@@ -29,7 +29,7 @@
 			{
 				"name": "Gold",
 				"teams": ["red"],
-				"materials": ["gold_block"],
+				"materials": ["gold block"],
 				"region": {
 					"min": "4, 113, 6",
 					"max": "9, 109, 11"
@@ -39,7 +39,7 @@
 			{
 				"name": "Gold&r",
 				"teams": ["blue"],
-				"materials": ["gold_block"],
+				"materials": ["gold block"],
 				"region": {
 					"min": "4, 113, 6",
 					"max": "9, 109, 11"

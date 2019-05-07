@@ -29,7 +29,7 @@
 			{
 				"name": "Evilucas",
 				"teams": ["evilucas"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-67, 62, 8",
 					"max": "-73, 56, 2"
@@ -39,7 +39,7 @@
 			{
 				"name": "Bennyvil",
 				"teams": ["bennyvil"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "67, 62, -8",
 					"max": "73, 56, -2"

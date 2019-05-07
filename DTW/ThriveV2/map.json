@@ -28,7 +28,7 @@
 		"monuments": [{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-46, 18, -88",
 					"max": "46, 22, -86"
@@ -38,7 +38,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-46, 22, -12",
 					"max": "46, 18, -10"

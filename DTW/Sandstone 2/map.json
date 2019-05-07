@@ -29,7 +29,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-92, 34, -24",
 					"max": "-94, 38, -22"
@@ -39,7 +39,7 @@
 			{
 				"name": "Yellow Wool",
 				"teams": ["yellow"],
-				"materials": ["wool"],
+				"materials": ["yellow wool"],
 				"region": {
 					"min": "22, 38, -24",
 					"max": "20, 34, -22"

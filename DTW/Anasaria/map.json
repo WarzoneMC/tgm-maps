@@ -29,7 +29,7 @@
 			{
 				"name": "Right Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "205, 31, -6",
 					"max": "209, 36, -10"
@@ -39,7 +39,7 @@
 			{
 				"name": "Left Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "205, 31, 84",
 					"max": "209, 36, 80"
@@ -49,7 +49,7 @@
 			{
 				"name": "Right Wool&r",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "71, 31, 84",
 					"max": "75, 36, 80"
@@ -59,7 +59,7 @@
 			{
 				"name": "Left Wool&r",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "71, 31, -10",
 					"max": "75, 36, -6"
