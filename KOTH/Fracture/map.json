@@ -47,7 +47,7 @@
 				{"type": "item", "material": "stone pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
 
-				{"type": "item", "material": "wood", "slot": 5, "amount": 12},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 12},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 
@@ -59,8 +59,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "log",
-		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
+		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "oak log",
+		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "oak planks", "wool", "golden carrot"
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
