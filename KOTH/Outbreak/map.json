@@ -54,8 +54,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "log",
-		"leather chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "wood", "wool", "golden carrot"
+		"stone sword", "bow", "stone pickaxe", "leather helmet", "stone", "cooked beef", "arrow", "leather helmet", "oak log",
+		"leather chestplate", "leather leggings", "leather boots", "cooked beef", "dirt", "sandstone", "oak planks", "wool", "golden carrot"
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},

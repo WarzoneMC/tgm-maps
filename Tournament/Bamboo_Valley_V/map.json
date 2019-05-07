@@ -62,8 +62,8 @@
 				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"material": "wood", "slot": 4, "amount": 64},
-				{"material": "wood", "slot": 5, "amount": 64},
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
 				{"material": "glass", "slot": 6, "amount": 64},
 				{"material": "golden carrot", "slot": 7, "amount": 64},
 				{"material": "arrow", "slot": 28, "amount": 64},
@@ -76,7 +76,7 @@
 		}
 	],
 	"itemremove": [
-		"wood", "glass", "golden carrot", "iron sword", "bow", "iron pickaxe", "iron axe"
+		"oak planks", "glass", "golden carrot", "iron sword", "bow", "iron pickaxe", "iron axe"
 	],
 	"killstreaks": [
 		{

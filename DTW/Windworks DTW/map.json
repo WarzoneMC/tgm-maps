@@ -60,7 +60,7 @@
 				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 6, "amount": 32},
 				{"type": "item", "material": "glass", "slot": 7, "amount": 64},
-				{"type": "item", "material": "log", "slot": 8, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
