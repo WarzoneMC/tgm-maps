@@ -51,7 +51,7 @@
 				{"type": "item", "material": "cooked beef", "amount": 16, "slot": 4},
 				{"type": "item", "material": "golden apple", "slot": 5},
 
-				{"type": "item", "material": "gold helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "golden helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
@@ -60,7 +60,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow", 
-		"cobblestone", "log", "leather chestplate", "leather leggings", "leather boots", "wood", "wool"
+		"cobblestone", "oak log", "leather chestplate", "leather leggings", "leather boots", "oak planks", "wool"
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},

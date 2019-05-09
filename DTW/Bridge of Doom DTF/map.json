@@ -29,7 +29,7 @@
 			{
 				"name": "Evilucas",
 				"teams": ["evilucas"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-67, 62, 8",
 					"max": "-73, 56, 2"
@@ -39,7 +39,7 @@
 			{
 				"name": "Bennyvil",
 				"teams": ["bennyvil"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "67, 62, -8",
 					"max": "73, 56, -2"
@@ -68,7 +68,7 @@
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
 				
-				{"type": "item", "material": "log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 4, "amount": 64},
 				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
 

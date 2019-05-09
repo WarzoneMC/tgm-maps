@@ -29,7 +29,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-92, 34, -24",
 					"max": "-94, 38, -22"
@@ -39,7 +39,7 @@
 			{
 				"name": "Yellow Wool",
 				"teams": ["yellow"],
-				"materials": ["wool"],
+				"materials": ["yellow wool"],
 				"region": {
 					"min": "22, 38, -24",
 					"max": "20, 34, -22"
@@ -57,8 +57,8 @@
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
 

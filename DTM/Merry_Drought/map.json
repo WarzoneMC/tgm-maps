@@ -77,7 +77,7 @@
 				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "quartz block", "slot": 4, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 
 				{"type": "item", "material": "cooked chicken", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
@@ -90,7 +90,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "quartz block", "wood", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+		"stone sword", "bow", "diamond pickaxe", "quartz block", "oak planks", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
 	                 ]
                 }
         ],

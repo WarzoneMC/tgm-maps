@@ -29,7 +29,7 @@
 			{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-70, 11, 20",
 					"max": "-72, 14, 18"
@@ -39,7 +39,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-18, 14, 72",
 					"max": "-20, 11, 70"
@@ -60,7 +60,7 @@
 				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 6, "amount": 32},
 				{"type": "item", "material": "glass", "slot": 7, "amount": 64},
-				{"type": "item", "material": "log", "slot": 8, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},

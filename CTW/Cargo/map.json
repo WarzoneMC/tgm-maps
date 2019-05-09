@@ -28,25 +28,29 @@
 		"wools": [
 			{
 				"name": "Purple",
-				"color": "purple",
+				"color": "dark purple",
+				"woolcolor": "magenta",
 				"teams": ["blue"],
 				"region": {"min": "64, 83, -65", "max": "64, 83, -65"}
 			},
 			{
 				"name": "Cyan",
-				"color": "cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
 				"teams": ["blue"],
 				"region": {"min": "63, 83, -65", "max": "63, 83, -65"}
 			},
 			{
 				"name": "Orange",
-				"color": "orange",
+				"color": "gold",
+				"woolcolor": "orange",
 				"teams": ["red"],
 				"region": {"min": "63, 83, -162", "max": "63, 83, -162"}
 			},
 			{
 				"name": "Yellow",
 				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["red"],
 				"region": {"min": "64, 83, -162", "max": "64, 83, -162"}
 			}
@@ -67,8 +71,8 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
 
-				{"material": "wood", "slot": 4, "amount": 64},
-				{"material": "wood", "slot": 5, "amount": 64},
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
 				{"material": "ladder", "slot": 5, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 16},
 				{"material": "arrow", "slot": 9, "amount": 32},
@@ -81,7 +85,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron axe", "leaves", "ladder", "cooked beef", "arrow", 
+		"stone sword", "bow", "iron axe", "oak leaves", "ladder", "cooked beef", "arrow", 
 		"chainmail helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"filters": [

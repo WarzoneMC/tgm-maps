@@ -97,7 +97,7 @@
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
 				
-				{"type": "item", "material": "wood", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
@@ -110,7 +110,7 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "wood"
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "oak planks"
 	],	
 	"filters": [
 		{

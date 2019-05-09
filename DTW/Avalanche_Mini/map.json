@@ -29,7 +29,7 @@
 			{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "48, 36, -1",
 					"max": "50, 33, 1"
@@ -39,7 +39,7 @@
 			{
 				"name": "Orange Wool",
 				"teams": ["orange"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-88, 36, -1",
 					"max": "-86, 33, 1"
@@ -57,8 +57,8 @@
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "wood", "amount": 64, "slot": 4},
-				{"type": "item", "material": "wood", "amount": 64, "slot": 5},
+				{"type": "item", "material": "oak planks", "amount": 64, "slot": 4},
+				{"type": "item", "material": "oak planks", "amount": 64, "slot": 5},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
@@ -70,7 +70,7 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool", "diamond pickaxe", "stone spade", "arrow", "iron axe", "bow", "stone sword", "wood", "snow ball"
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool", "diamond pickaxe", "stone spade", "arrow", "iron axe", "bow", "stone sword", "oak planks", "snow ball"
 	],
 	"killstreaks": [
 		{

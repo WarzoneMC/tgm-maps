@@ -46,7 +46,7 @@
 		}
 	],
 	"itemremove": [
-		"string", "sponge", "arrow", "stick", "wood", "sign"
+		"string", "sponge", "arrow", "stick", "oak planks", "sign"
 	],
 	"portals": [
 		{

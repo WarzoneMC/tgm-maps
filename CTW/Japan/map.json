@@ -28,13 +28,15 @@
 		"wools": [
 			{
 				"name": "Cyan",
-				"color": "cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
 				"teams": ["orange"],
 				"region": {"min": "-32, 12, -47", "max": "-32, 12, -47"}
 			},
 			{
 				"name": "Red",
 				"color": "red",
+				"woolcolor": "orange",
 				"teams": ["green"],
 				"region": {"min": "60, 12, 21", "max": "60, 12, 21"}
 			}
@@ -58,7 +60,7 @@
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 6, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
 				{"type": "item", "material": "shears", "slot": 29},
@@ -71,7 +73,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "wood", "cooked beef", "arrow", 
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "oak planks", "cooked beef", "arrow", 
 		"shears", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
 	],
 	"filters": [

@@ -49,7 +49,7 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["effect %killername% night_vision 2 1 true"]
+			"commands": ["effect give %killername% night_vision 2 1 true"]
 		}
 	],
 	"filters": [

@@ -30,7 +30,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "421, 79, -199",
 					"max": "421, 79, -199"
@@ -40,7 +40,7 @@
 			{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-154, 80, -229",
 					"max": "-75, 27, -39"
@@ -55,8 +55,8 @@
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "wood", "slot": 2, "amount": 64},
-				{"type": "item", "material": "wood", "slot": 3, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 2, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
