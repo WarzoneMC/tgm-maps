@@ -4,7 +4,7 @@ The maps and active rotation used on the Minehut [Warzone](https://warz.one) ser
 ## Updating the Repo
 When adding or modifing any map in this repo, please note some of the requirements we have for our maps.
 
-- All maps must be fully pruned (The only chunks saved in the map should be the map itself).
+- The map must be fully pruned (The only chunks saved should be the map itself. You can use a program such as [this](https://github.com/Querz/mcaselector) one).
 - You must only need any necessary files (level.dat, map.json, and the region folder).
 - There has to be a fully working map.json (This file is used to define any coordinates needed for the map).
 - When adding new maps, make sure the map you are adding has a **commerical license** meaning, we have the full permission to add the map and use it on our server.
