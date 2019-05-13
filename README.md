@@ -4,6 +4,7 @@ The maps and active rotation used on the Minehut [Warzone](https://warz.one) ser
 ## Updating the Repo
 When adding or modifing any map in this repo, please note some of the requirements we have for our maps.
 
+- Make sure the map is on the latest MC verison the plugin currently supports (1.13.2).
 - The map must be fully pruned (The only chunks saved should be the map itself. You can use a program such as [this](https://github.com/Querz/mcaselector) one).
 - You must only need any necessary files (level.dat, map.json, and the region folder).
 - There has to be a fully working map.json (This file is used to define any coordinates needed for the map).
