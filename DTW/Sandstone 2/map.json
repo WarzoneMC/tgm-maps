@@ -27,9 +27,9 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Blue Wool",
+				"name": "Light Blue Wool",
 				"teams": ["blue"],
-				"materials": ["blue wool"],
+				"materials": ["light blue wool"],
 				"region": {
 					"min": "-92, 34, -24",
 					"max": "-94, 38, -22"
