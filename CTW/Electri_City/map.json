@@ -49,7 +49,7 @@
 			{
 				"name": "Purple",
 				"color": "dark purple",
-				"woolcolor": "magenta",
+				"woolcolor": "purple",
 				"teams": ["red"],
 				"region": {"min": "58, 76, -1", "max": "58, 76, -1"}
 			}

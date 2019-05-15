@@ -51,7 +51,7 @@
 			{
 				"name": "Red",
 				"color": "red",
-				"woolcolor": "orange",
+				"woolcolor": "red",
 				"teams": ["purple"],
 				"region": {"min": "13, 18, -1", "max": "13, 18, -1"}
 			}
