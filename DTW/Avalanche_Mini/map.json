@@ -39,7 +39,7 @@
 			{
 				"name": "Orange Wool",
 				"teams": ["orange"],
-				"materials": ["blue wool"],
+				"materials": ["orange wool"],
 				"region": {
 					"min": "-88, 36, -1",
 					"max": "-86, 33, 1"
