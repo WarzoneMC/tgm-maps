@@ -47,7 +47,7 @@
 				{"type": "item", "material": "stone pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
 
-				{"type": "item", "material": "oak planks", "slot": 5, "amount": 12},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 24},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 
