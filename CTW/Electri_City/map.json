@@ -70,7 +70,7 @@
 				{"material": "oak planks", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 22},
 
-				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
@@ -78,7 +78,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+		"iron sword", "bow", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "iron helmet", "chainmail chestplate", "iron leggings", "leather boots"
 	],
 	"killstreaks": [
 		{
