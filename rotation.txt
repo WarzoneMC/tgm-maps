@@ -2,10 +2,11 @@ Deepwind Jungle
 Sandstone 2
 WarlockDTW
 Gobi
+Egypt
 Rooted
 Ascension
 Skylands Reborn
-DesertCountry
+Desert Country
 Stonehenge
 Turf Wars
 Race for Victory 2
@@ -17,7 +18,6 @@ No Return
 Warlock
 Rooted Frontier
 Fracture
-Arctic 2
 Sandstone
 Golden Gate
 Persisto
