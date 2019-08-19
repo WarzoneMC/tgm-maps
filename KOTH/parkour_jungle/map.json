@@ -1,0 +1,59 @@
+{
+    "name": "Parkour: Jungle",
+    "authors": ["Crazy_"],
+    "gametype": "KOTH",
+    "version": "1.1.2",
+    "stats": {"disable": true},
+    "teams": [
+        {
+            "id": "team-1",
+            "name": "Parkour Bois",
+            "color": "light_purple",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-9, 25.5, -28, 0"},
+        {"teams": ["team-1"], "coords": "0, 1.5, 0, 90"}
+    ],
+    "points": {
+        "target": 1
+    },
+    "kits": [
+        {
+            "name": "default",
+            "items": [
+                {"type": "item", "material": "chainmail boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "invisibility", "duration": 10000, "amplifier": 1, "particles": false},
+                {"type": "resistance", "duration": 10000, "amplifier": 255, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "chainmail boots"
+    ],
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["team-1"], "regions": ["everywhere"], "message": "&cYou may not break blocks on the map!"}
+    ],
+    "regions": [
+        {"id": "everywhere", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+        {"id": "below-0", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, 0, oo"}
+    ],
+    "portals": [ 
+        {"from": "below-0", "to": "0, 1.5, 0, 90", "teams": ["team-1"], "sound": false}
+    ],
+    "koth": {
+        "hills": [
+            {
+                "name": "Finish Line",
+                "region": {
+                    "min": {"x": -10, "y": 32, "z": -30},
+                    "max": {"x": -8, "y": 33, "z": -28}
+                }
+            }
+        ]
+    }
+}
