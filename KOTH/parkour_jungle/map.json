@@ -36,11 +36,11 @@
         "chainmail boots"
     ],
     "filters": [
-        {"type": "build", "evaluate": "deny", "teams": ["team-1"], "regions": ["everywhere"], "message": "&cYou may not break blocks on the map!"}
+        {"type": "build", "evaluate": "deny", "teams": ["team-1"], "regions": ["deny-build"], "message": "&cYou may not break blocks on the map!"}
     ],
     "regions": [
-        {"id": "everywhere", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
-        {"id": "below-0", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, 0, oo"}
+        {"id": "deny-build", "type": "cuboid", "min": "-38, 0, 38", "max": "22, 35, -53"},
+        {"id": "below-0", "type": "cuboid", "min": "-38, -5, 38", "max": "22, 0, -53"}
     ],
     "portals": [ 
         {"from": "below-0", "to": "0, 1.5, 0, 90", "teams": ["team-1"], "sound": false}
