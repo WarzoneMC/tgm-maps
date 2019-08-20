@@ -5,7 +5,6 @@ Gobi
 Egypt
 Rooted
 Ascension
-Skylands Reborn
 Desert Country
 Stonehenge
 Turf Wars
@@ -26,3 +25,14 @@ Cargo
 Fossil Canyon
 Arizona
 Paddocks
+Kyoto
+Bamboo Valley V
+Shroom Land
+Castles
+Terrace
+Mayan Apocalypse
+Thrive V2
+Orion
+Riverbank
+Snowy Wars
+Midnight Train
