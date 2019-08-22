@@ -90,14 +90,14 @@
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "gold chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "golden chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
 	"itemremove": [
-		"leather helmet", "gold chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
+		"leather helmet", "golden chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
 	],
 	"filters": [
 		{
