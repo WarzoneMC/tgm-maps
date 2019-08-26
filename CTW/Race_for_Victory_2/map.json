@@ -63,7 +63,8 @@
 			"items": [
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 3, "unbreakable": true},
 
 				{"material": "oak planks", "slot": 3, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
@@ -79,7 +80,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "apple", 
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "apple", 
 		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "beacon", "wool"
 	],
 	"killstreaks": [
