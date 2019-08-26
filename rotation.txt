@@ -1,6 +1,7 @@
 Deepwind Jungle
 Sandstone 2
 WarlockDTW
+Vanilla
 Gobi
 Egypt
 Rooted
@@ -10,22 +11,25 @@ Stonehenge
 Turf Wars
 Race for Victory 2
 Gardens
+Raid
 Avalanche Mini
 Ring Race
 Twin Peaks
 No Return
 Warlock
+Grind
 Rooted Frontier
 Fracture
 Sandstone
 Golden Gate
 Persisto
+Pluto
 Sector Six
 Cargo
 Fossil Canyon
 Arizona
-Paddocks
 Kyoto
+Meltdown
 Bamboo Valley V
 Shroom Land
 Mayan Apocalypse
@@ -34,3 +38,4 @@ Orion
 Riverbank
 Snowy Wars
 Midnight Train
+Neighborhood
