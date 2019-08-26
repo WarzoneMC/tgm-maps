@@ -30,7 +30,6 @@ Fossil Canyon
 Arizona
 Kyoto
 Meltdown
-Bamboo Valley V
 Shroom Land
 Mayan Apocalypse
 Thrive V2
@@ -39,3 +38,4 @@ Riverbank
 Snowy Wars
 Midnight Train
 Neighborhood
+Acromion
