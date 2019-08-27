@@ -28,7 +28,7 @@
 		"wools": [
 			{
 				"name": "Magenta",
-				"color": "dark purple",
+				"color": "light purple",
 				"woolcolor": "magenta",
 				"teams": ["blue"],
 				"region": {"min": "1, 21, -123", "max": "1, 21, -123"}
