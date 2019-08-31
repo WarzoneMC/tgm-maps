@@ -70,8 +70,8 @@
         {"count": 1, "repeat": true, "commands":["give %killername% golden_apple 1"]}
     ],
     "itemremove": [
-        "stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow",
-        "cobblestone", "oak log", "leather chestplate", "leather leggings", "leather boots", "oak planks", "wool"
+        "iron sword", "bow", "stone pickaxe", "stone axe", "iron helmet", "oak planks", "cooked beef", "arrow",
+        "cobblestone", "oak log", "acacia log", "leather chestplate", "chain leggings", "leather boots", "oak planks", "acacia planks", "wool"
     ],
     "filters": [
         {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
