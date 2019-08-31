@@ -5,7 +5,6 @@
     "version": "1.0.0",
     "gametype": "KOTH",
     "teams": [
- 
         {
  
             "id": "blue",
@@ -14,7 +13,6 @@
             "min": 1,
             "max": 50
         },
- 
         {
  
             "id": "red",
@@ -24,7 +22,6 @@
             "max": 50
         }
     ],
- 
     "spawns": [
  
         {"teams": ["spectators"], "coords": "-26.6, 105, 40.3"},
@@ -32,7 +29,6 @@
         {"teams": ["red"], "coords": "13.7, 83, 3.3, 90"}
  
     ],
- 
     "points": {
         "target": 500
  
@@ -49,13 +45,10 @@
         ]
  
     },
- 
     "kits": [
         {
- 
             "name": "Default",
             "items": [
- 
                 {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
                 {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
                 {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
@@ -73,30 +66,23 @@
             ]
         }
     ],
-   
-        "killstreaks": [
+    "killstreaks": [
         {"count": 1, "repeat": true, "commands":["give %killername% golden_apple 1"]}
     ],
- 
     "itemremove": [
- 
         "stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow",
         "cobblestone", "oak log", "leather chestplate", "leather leggings", "leather boots", "oak planks", "wool"
     ],
- 
     "filters": [
- 
         {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
         {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify the hill."},
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
     ],
- 
     "regions": [
+        {"id": "blue-spawn-protection", "min": "-61, 83, 11", "max": "78, 94, -6"},
+        {"id": "red-spawn-protection", "min": "7, 83, -5", "max": "24, 94, 12"},
  
-        {"id": "blue-spawn-protection", "min": "-61,83,11", "max": "78, 94, -6"},
-        {"id": "red-spawn-protection", "min": "7,83,-5", "max": "24, 94, 12"},
- 
-        {"id": "hill-protection", "min": "22,82,8", "max": "-33, 93, -3"},
+        {"id": "hill-protection", "min": "22, 82, 8", "max": "-33, 93, -3"},
     ]
 }
