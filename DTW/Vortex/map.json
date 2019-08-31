@@ -84,10 +84,12 @@
             "message": "&cYou are not allowed to modify terrain here."
         },
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["anti-under-bridge"], "message": "&cYou may not bridge here."}
     ],
     "regions": [
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "-60, 24, 15", "max": "-68, oo, 23"},
-        {"id": "red-spawn-protection", "type": "cuboid", "min": "61, 24, -14", "max": "69, oo, -22"}
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "61, 24, -14", "max": "69, oo, -22"},
+        {"id": "anti-under-bridge", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, 15, oo"}
     ]
 }
