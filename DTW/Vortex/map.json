@@ -2,7 +2,7 @@
     "name": "Vortex",
     "authors": ["Henrs", "Goriest"],
     "version": "1.0.0",
-    "gametype": "DTW",
+    "gametype": "DTM",
     "teams": [
         {
             "id": "blue",
