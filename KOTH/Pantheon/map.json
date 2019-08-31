@@ -1,88 +1,82 @@
 {
- 
-    "name": "Pantheon",
-    "authors": ["Budgo369, Henrs"],
-    "version": "1.0.0",
-    "gametype": "KOTH",
-    "teams": [
-        {
- 
-            "id": "blue",
-            "name": "Athens",
-            "color": "blue",
-            "min": 1,
-            "max": 50
-        },
-        {
- 
-            "id": "red",
-            "name": "Sparta",
-            "color": "red",
-            "min": 1,
-            "max": 50
-        }
-    ],
-    "spawns": [
- 
-        {"teams": ["spectators"], "coords": "-26.6, 105, 40.3"},
-        {"teams": ["blue"], "coords": "-66.2, 83, 3.4, -90"},
-        {"teams": ["red"], "coords": "13.7, 83, 3.3, 90"}
- 
-    ],
-    "points": {
-        "target": 500
- 
-    },
-    "koth": {
-        "hills": [
-            {
-                "name": "Center",
-                "region": {
-                    "min": {"x": 21, "y": 91, "z": 9},
-                    "max": {"x": -33, "y": 81, "z": -3}
-                }
-            }
-        ]
- 
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
-                {"type": "item", "material": "arrow", "amount": 16, "slot": 8},
- 
-                {"type": "item", "material": "oak planks", "amount": 64, "slot": 3},
-                {"type": "item", "material": "cooked beef", "amount": 16, "slot": 4},
-                {"type": "item", "material": "golden apple", "slot": 5},
- 
-                {"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-                {"type": "item", "material": "chain leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ]
-        }
-    ],
-    "killstreaks": [
-        {"count": 1, "repeat": true, "commands":["give %killername% golden_apple 1"]}
-    ],
-    "itemremove": [
-        "stone sword", "bow", "stone pickaxe", "gold helmet", "stone", "cooked beef", "arrow",
-        "cobblestone", "oak log", "leather chestplate", "leather leggings", "leather boots", "oak planks", "wool"
-    ],
-    "filters": [
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify the hill."},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-    ],
-    "regions": [
-        {"id": "blue-spawn-protection", "min": "-61, 83, 11", "max": "78, 94, -6"},
-        {"id": "red-spawn-protection", "min": "7, 83, -5", "max": "24, 94, 12"},
- 
-        {"id": "hill-protection", "min": "22, 82, 8", "max": "-33, 93, -3"},
-    ]
+	"name": "Pantheon",
+	"authors": ["Budgo369, Henrs"],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Athens",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Sparta",
+			"color": "red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-26.5, 105, 40.5, 180"},
+		{"teams": ["blue"], "coords": "-66.5, 83, 3.5, -90"},
+		{"teams": ["red"], "coords": "13.5, 83, 3.5, 90"}
+	],
+	"points": {
+		"target": 500
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Center",
+				"region": {
+					"min": {"x": -24, "y": 82, "z": 1},
+					"max": {"x": -28, "y": 85, "z": 5}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 7, "amount": 16},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron helmet", "oak planks", "cooked beef", "arrow", "golden apple", "leather chestplate", "chainmail leggings", "leather boots", "wool"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify the hill."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "min": "-72, 0, -4", "max": "-62, oo, 9"},
+		{"id": "red-spawn-protection", "min": "8, 0, -3", "max": "18, oo, 10"},
+		{"id": "hill-protection", "min": "-22, 0, -2", "max": "-32, 88, 8"}
+	]
 }
