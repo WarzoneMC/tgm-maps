@@ -1,7 +1,7 @@
 {
     "name": "Vortex",
     "authors": ["Henrs", "Goriest"],
-    "version": "1.0.0",
+    "version": "1.0.2",
     "gametype": "DTM",
     "teams": [
         {
