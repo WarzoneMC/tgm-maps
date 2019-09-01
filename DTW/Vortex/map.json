@@ -31,8 +31,8 @@
                 "teams": ["red"],
                 "materials": ["red wool"],
                 "region": {
-                    "min": "49, 24, 16",
-                    "max": "54, 28, 9"
+                    "min": "60, 24, 16",
+                    "max": "65, 28, 9"
                 },
                 "health": 10
             },
@@ -41,8 +41,8 @@
                 "teams": ["blue"],
                 "materials": ["light blue wool"],
                 "region": {
-                    "min": "-48, 24, -15",
-                    "max": "-53, 28, -8"
+                    "min": "-59, 24, -15",
+                    "max": "-64, 28, -8"
                 },
                 "health": 10
             }
