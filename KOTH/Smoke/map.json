@@ -25,7 +25,7 @@
 		{"teams": ["red"], "coords": "49.5, 22, -265, -90"}
 	],
 	"points": {
-		"target": 350
+		"target": 1200
 	},
 	"koth": {
 		"hills": [
@@ -72,6 +72,13 @@
 	"itemremove": [
 		"stone sword", "bow", "leather helmet", "cooked beef", "arrow", "leather helmet",
 		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "golden carrot"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
