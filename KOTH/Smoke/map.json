@@ -22,7 +22,7 @@
 	"spawns": [
 		{"teams": ["spectators"], "coords": "51.5, 27, -321.5, -45"},
 		{"teams": ["yellow"], "coords": "107.5, 22, -323.5, 0"},
-		{"teams": ["red"], "coords": "49.5, 22, -323.5, -90"}
+		{"teams": ["red"], "coords": "49.5, 22, -265, -90"}
 	],
 	"points": {
 		"target": 350
