@@ -23,7 +23,7 @@
 	"spawns": [
 		{"teams": ["spectators"], "coords": "23.5, 96, -3, -90"},
 		{"teams": ["infected"], "coords": "-98, 66, -2.5, -90"},
-		{"teams": ["humans"], "coords": "0, 68, -27, 0"}
+		{"teams": ["humans"], "coords": "0, 68, -27"}
 	],
 	"infection": {
 		"length": 7
