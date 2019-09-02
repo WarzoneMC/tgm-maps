@@ -1,0 +1,89 @@
+{
+	"name": "Ricco",
+	"authors": ["Henrs"],
+	"version": "1.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "12.5, 39, 32.5, -90"},
+		{"teams": ["yellow"], "coords": "24.5, 6, 81.5, -180"},
+		{"teams": ["red"], "coords": "0.5, 7, -16.5, 0"}
+	],
+	"points": {
+		"target": 700
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Yellow Point",
+				"region": {
+					"min": {"x": 30, "y": 0, "z": 40},
+					"max": {"x": 24, "y": 2, "z": 46}
+				}
+			},
+			{
+				"name": "Red Point",
+				"region": {
+					"min": {"x": -5, "y": 0, "z": 18},
+					"max": {"x": 0, "y": 2, "z": 24}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "leaves", "slot": 2, "amount": 8},
+				{"type": "item", "material": "shears", "slot": 3, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "leather helmet", "cooked beef", "arrow", "leather helmet",
+		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "golden carrot", "shears"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellowhill-protection", "redhill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "yellow-spawn-protection", "min": "27.5, 5, 84.5", "max": "21.5, oo, 78.5"},
+		{"id": "red-spawn-protection", "min": "-2.5, 5, -19", "max": "3.5, oo, -13.5"},
+		{"id": "yellowhill-protection", "min": "23, 0, 47", "max": "31, oo, 39"},
+		{"id": "redhill-protection", "min": "1, 0, 17", "max": "-6, oo, 25"}
+	]
+}
