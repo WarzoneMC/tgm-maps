@@ -114,8 +114,8 @@
 	],
 	"killstreaks": [
 	{
-	    "count": 1
-	    "repeat": true
+	    "count": 1,
+	    "repeat": true,
 	    "actions" {
 		"items": [
 		    {"material": "golden apple", "amount": 1}
