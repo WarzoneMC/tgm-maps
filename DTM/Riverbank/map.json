@@ -90,6 +90,17 @@
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
+	"killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
