@@ -111,7 +111,18 @@
 	],
 	"itemremove": [
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "oak planks"
-	],	
+	],
+	"killstreaks": [
+	{
+		"count": 1
+		"repeat": false
+		"actions" [
+			"items": [
+			    {"material": "golden apple", "amount": 1}
+  		    ]
+   	        }
+   	    }
+   	]
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
