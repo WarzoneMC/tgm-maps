@@ -1,0 +1,94 @@
+{
+	"name": "Brisked KOTH",
+	"authors": ["mitchiii_"],
+	"version": "1.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "oramge",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "purple",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "26, 74, -105, -45"},
+		{"teams": ["orange"], "coords": "32.5, 48, 146.5, 45"},
+		{"teams": ["purple"], "coords": "-67.5, 48, -46.5, -135"}
+	],
+	"points": {
+		"target": 1200
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Top Point",
+				"region": {
+					"min": {"x": -12.5, "y": 39, "z": -91.5},
+					"max": {"x": -22.5, "y": 42, "z": -101.5}
+				}
+			},
+			{
+				"name": "A Point",
+				"region": {
+					"min": {"x": 2.5, "y": 29, "z": -76.5},
+					"max": {"x": -6, "y": 31, "z": -85.5}
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"min": {"x": -37.5, "y": 29, "z": -116.5},
+					"max": {"x": -28.5, "y": 31, "z": -107.5}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "leather helmet", "cooked beef", "arrow", "leather helmet",
+		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "golden carrot", "shears"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"commands": ["give %killername% minecraft:golden_apple 1"]
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellowhill-protection", "redhill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "orange-spawn-protection", "min": "25.5, 44, -148.5", "max": "34.5, oo, -139.5"},
+		{"id": "purple-spawn-protection", "min": "-69.5, 44, -53.5", "max": "-60.5, oo, -44.5"},
+		{"id": "top-protection", "min": "-12.5, 39, -91.5", "max": "-22.5, 45, -101.5"},
+		{"id": "a-protection", "min": "2.5, 29, -76.5", "max": "-6, 35, -85.5"},
+		{"id": "b-protection", "min": "-37.5, 29, -116.5", "max": "-28.5, 35, -107.5"}
+	]
+}
