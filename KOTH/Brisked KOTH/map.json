@@ -21,7 +21,7 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "26, 74, -105, -45"},
-		{"teams": ["orange"], "coords": "32.5, 48, 146.5, 45"},
+		{"teams": ["orange"], "coords": "32.5, 48, -146.5, 45"},
 		{"teams": ["purple"], "coords": "-67.5, 48, -46.5, -135"}
 	],
 	"points": {
@@ -58,6 +58,8 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "shears", "slot": 2, "amount": 1},
+				{"type": "item", "material": "oak leaves", "slot": 3, "amount": 24},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
