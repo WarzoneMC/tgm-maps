@@ -49,7 +49,11 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% minecraft:arrow 1"]
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
 		}
 	],
 	"filters": [
