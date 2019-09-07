@@ -42,14 +42,6 @@
 			}
 		]
 	},
-    "killstreaks": [{
-        "count": 1,
-        "repeat": true,
-        "commands": ["give %killername% minecraft:golden_apple 1",
-            "give %killername% minecraft:arrow 3"
-        ]
-    }
-], 
 	"kits": [
 		{
 			"name": "Default",
@@ -75,6 +67,18 @@
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "oak planks", "cooked beef", "arrow", 
 		"shears", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 3}
+				]
+			}
+		}
 	],
 	"filters": [
 		{
