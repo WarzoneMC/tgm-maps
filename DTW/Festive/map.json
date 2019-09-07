@@ -90,14 +90,20 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% minecraft:golden_apple 1"]
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
 		},
 		{
 			"count": 5,
 			"repeat": true,
-			"commands": [
-				"give %killername% minecraft:planks 15"
-			]
+			"actions": {
+				"items": [
+					{"material": "oak planks", "amount": 15}
+				]
+			}
 		}
 	],
 	"filters": [
