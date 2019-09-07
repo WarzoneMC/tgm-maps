@@ -83,10 +83,10 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellowhill-protection", "redhill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["orange-spawn-protection", "purple-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["orangehill-protection", "purplehill-protection"], "message": "&cYou are not allowed to modify terrain here."}
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "min": "25.5, 44, -148.5", "max": "34.5, oo, -139.5"},
