@@ -1,95 +1,99 @@
 {
-    "name": "Vortex",
-    "authors": ["Henrs", "Goriest"],
-    "version": "1.0.2",
-    "gametype": "DTM",
-    "teams": [
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 50
-        },
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "red",
-            "min": 1,
-            "max": 50
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "0.5, 64, 0.5"},
-        {"teams": ["red"], "coords": "65.5, 25, -18.5, 45"},
-        {"teams": ["blue"], "coords": "-64.5, 25, 19.5, -135"}
-    ],
-    "dtm": {
-        "monuments": [
-            {
-                "name": "Red Wool",
-                "teams": ["red"],
-                "materials": ["red wool"],
-                "region": {
-                    "min": "60, 24, 16",
-                    "max": "65, 28, 9"
-                },
-                "health": 10
-            },
-            {
-                "name": "Light Blue Wool",
-                "teams": ["blue"],
-                "materials": ["light blue wool"],
-                "region": {
-                    "min": "-59, 24, -15",
-                    "max": "-64, 28, -8"
-                },
-                "health": 10
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
-                {"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
-                {"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
-                {"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+	"name": "Vortex",
+	"authors": ["Henrs", "Goriest"],
+	"version": "1.0.2",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 64, 0.5"},
+		{"teams": ["red"], "coords": "65.5, 25, -18.5, 45"},
+		{"teams": ["blue"], "coords": "-64.5, 25, 19.5, -135"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "60, 24, 16",
+					"max": "65, 28, 9"
+				},
+				"health": 10
+			},
+			{
+				"name": "Light Blue Wool",
+				"teams": ["blue"],
+				"materials": ["light blue wool"],
+				"region": {
+					"min": "-59, 24, -15",
+					"max": "-64, 28, -8"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 32},
 
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-                {"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ]
-        }
-    ],
-    "itemremove": [
-        "leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow"
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "commands": ["give %killername% minecraft:golden_apple 1"]
-        }
-    ],
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["blue-spawn-protection", "red-spawn-protection"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["anti-under-bridge"], "message": "&cYou may not bridge here."}
-    ],
-    "regions": [
-        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-60, 24, 15", "max": "-68, oo, 23"},
-        {"id": "red-spawn-protection", "type": "cuboid", "min": "61, 24, -14", "max": "69, oo, -22"},
-        {"id": "anti-under-bridge", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, 15, oo"}
-    ]
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["anti-under-bridge"], "message": "&cYou may not bridge here."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-60, 24, 15", "max": "-68, oo, 23"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "61, 24, -14", "max": "69, oo, -22"},
+		{"id": "anti-under-bridge", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, 15, oo"}
+	]
 }

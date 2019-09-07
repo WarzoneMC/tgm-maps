@@ -113,22 +113,23 @@
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "iron sword", "golden apple", "oak planks"
 	],
 	"killstreaks": [
-	{
-	    "count": 1,
-	    "repeat": true,
-	    "actions": {
-		"items": [
-		    {"material": "golden apple", "amount": 1}
-  		]
-   	    }
-   	}
-    ],
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],

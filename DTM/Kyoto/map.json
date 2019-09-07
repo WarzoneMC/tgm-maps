@@ -47,15 +47,15 @@
 				"health": 1
 			},
 			{
-         "name": "Left Monument ",
-         "teams": ["white"],
-         "materials": ["obsidian"],
-         "region": {
-            "min": "41, 67, -29",
-            "max": "41, 67, -29"
-         },
-         "health": 1
-      },
+				"name": "Left Monument ",
+				"teams": ["white"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 67, -29",
+					"max": "41, 67, -29"
+				},
+				"health": 1
+			},
 			{
 				"name": "Right Monument ",
 				"teams": ["white"],
@@ -68,12 +68,6 @@
 			}
 		]
 	},
-	"killstreaks": [{
-		"count": 2,
-		"repeat": true,
-		"commands": ["give %killername% minecraft:golden_apple 1"]
-	                 }
-               ],
 	"kits":[
 		{
 			"name": "Default",
@@ -98,6 +92,17 @@
 	],
 	"itemremove": [
 		"leather helmet", "golden chestplate", "chainmail leggings", "leather boots", "arrow", "stone sword", "golden apple"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
 	],
 	"filters": [
 		{

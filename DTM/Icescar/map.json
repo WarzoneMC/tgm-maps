@@ -115,7 +115,11 @@
 		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% gold_ingot 2"]
+			"actions": {
+				"items": [
+					{"material": "gold ingot", "amount": 2}
+				]
+			}
 		}
 	],
 	"portals": [

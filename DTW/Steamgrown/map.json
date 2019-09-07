@@ -70,12 +70,16 @@
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
 	],	
 	"killstreaks": [
-        {
+		{
 			"count": 1,
 			"repeat": true,
-			"commands": ["give %killername% arrow 3"]
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 3}
+				]
+			}
 		}
-	],	
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
