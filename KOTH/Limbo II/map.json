@@ -1,0 +1,97 @@
+{
+	"name": "Limbo II",
+	"authors": ["TheNoChillDude"],
+	"version": "1.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "cyan",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "orange",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0, 42, 0, 90"},
+		{"teams": ["cyan"], "coords": "53.5, 19, 0, 90"},
+		{"teams": ["orange"], "coords": "-52.5, 19, -0, -90"}
+	],
+	"points": {
+		"target": 1200
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Point C",
+				"region": {
+					"min": {"x": 2.5, "y": 7, "z": -1.5},
+					"max": {"x": -1.5, "y": 9, "z": 2.5}
+				}
+			},
+			{
+				"name": "Point B",
+				"region": {
+					"min": {"x": -1.5, "y": 18, "z": -12.5},
+					"max": {"x": 2.5, "y": 20, "z": -8.5}
+				}
+			},
+			{
+				"name": "Point A",
+				"region": {
+					"min": {"x": 2.5, "y": 18, "z": 9.5},
+					"max": {"x": -1.5, "y": 20, "z": 13.5}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24, "enchantments": ["infinity"], "unbreakable": true},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "leather helmet", "cooked beef", "arrow", "leather helmet",
+		"chainmail chestplate", "leather leggings", "leather boots", "cooked beef", "golden carrot"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["cyan", "orange"], "regions": ["cyan-spawn-protection", "orange-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["cyan", "orange"], "regions": ["master-protection"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+
+	"regions": [
+		{"id": "cyan-spawn-protection", "min": "60, 10, -6", "max": "46.5, oo, 6.5"},
+		{"id": "orange-spawn-protection", "min": "-59.5, 10, 6", "max": "-45.5, oo, -5.5"},
+		{"id": "master-protection", "min": "69, 50, 31", "max": "-80, 2, -31"}
+	]
+}
