@@ -30,17 +30,24 @@
 	"koth": {
 		"hills": [
 			{
-				"name": "Yellow Point",
+				"name": "Top Point",
 				"region": {
-					"min": {"x": 30, "y": 0, "z": 40},
-					"max": {"x": 24, "y": 2, "z": 46}
+					"min": {"x": 3.5, "y": 8, "z": 3.5},
+					"max": {"x": -2.5, "y": 10, "z": -2.5}
 				}
 			},
 			{
-				"name": "Red Point",
+				"name": "A Point",
 				"region": {
-					"min": {"x": -5, "y": 0, "z": 18},
-					"max": {"x": 0, "y": 2, "z": 24}
+					"min": {"x": 19.5, "y": 2, "z": -16.5},
+					"max": {"x": 25.5, "y": 4, "z": -22.5}
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"min": {"x": -18.5, "y": 2, "z": 17.5},
+					"max": {"x": -24.5, "y": 4, "z": 23.5}
 				}
 			}
 		]
@@ -51,13 +58,13 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "leaves", "slot": 2, "amount": 8},
-				{"type": "item", "material": "shears", "slot": 3, "amount": 1},
+				{"type": "item", "material": "oak leaves", "slot": 2, "amount": 8},
+				{"type": "item", "material": "shears", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
@@ -82,12 +89,14 @@
 		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellowhill-protection", "redhill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["top-protection", "a-protection", "b-protection"], "message": "&cYou are not allowed to modify terrain here."}
 	],
+
 	"regions": [
 		{"id": "yellow-spawn-protection", "min": "27.5, 5, 84.5", "max": "21.5, oo, 78.5"},
 		{"id": "red-spawn-protection", "min": "-2.5, 5, -19", "max": "3.5, oo, -13.5"},
-		{"id": "yellowhill-protection", "min": "23, 0, 47", "max": "31, oo, 39"},
-		{"id": "redhill-protection", "min": "1, 0, 17", "max": "-6, oo, 25"}
+		{"id": "top-protection", "min": "3.5, 8, 3.5", "max": "-2.5, oo, -2.5"},
+		{"id": "a-protection", "min": "19.5, 2, -16.5", "max": "25.5, oo, -22.5"},
+		{"id": "b-protection", "min": "-18.5, 2, 17.5", "max": "-24.5, oo, 23.5"}
 	]
 }
