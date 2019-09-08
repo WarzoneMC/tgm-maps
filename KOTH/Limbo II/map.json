@@ -57,8 +57,8 @@
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 7, "amount": 24, "enchantments": ["arrow infinite:1"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true, "enchantments": ["arrow infinite:1"]},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
