@@ -62,7 +62,7 @@
         }
     ],
     "filters": [
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["deny-all"]},
+        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["deny-all"]}
     ],
 
     "regions": [
