@@ -1,7 +1,7 @@
 {
 	"name": "Race for Victory 2",
 	"authors": ["Plastix", "Apple", "Anxuiz", "IM_A_H0B0"],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -66,11 +66,11 @@
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
 				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 3, "unbreakable": true},
 
-				{"material": "oak planks", "slot": 3, "amount": 64},
+				{"material": "oak planks", "slot": 4, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "ladder", "slot": 6, "amount": 32},
-				{"material": "apple", "slot": 7, "amount": 64},
-				{"material": "arrow", "slot": 8, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 64},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
@@ -80,7 +80,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "apple", 
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "cooked beef", 
 		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "beacon", "wool"
 	],
 	"killstreaks": [
