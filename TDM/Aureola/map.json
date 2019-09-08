@@ -1,71 +1,71 @@
 {
-    "name": "Aureola",
-    "authors": ["pbat", "EnarRikardz"],
-    "gametype": "TDM",
-    "version": "1.0.0",
-    "teams": [
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 50
-        },
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "red",
-            "min": 1,
-            "max": 50
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "121.5, 32, 25.5, -90"},
-        {"teams": ["blue"], "coords": "215.5, 6, 55.5, 135"},
-        {"teams": ["red"], "coords": "155.5, 6, -4.5, -45"}
-    ],
-    "points": {
-        "target": 60
-    },
-    "kits": [
-        {
-            "name": "default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "golden apple", "slot": 2},
-                {"type": "item", "material": "arrow", "slot": 7, "amount": 32},
-                {"type": "item", "material": "golden carrot", "slot": 8, "amount": 32},
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:2"], "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        "leather helmet", "leather chestplate", "leather leggings", "leather boots", "stone sword", "bow", "golden apple", "arrow", "golden carrot"
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1},
-                    {"material": "arrow", "amount": 6}
-                ]
-            }
-        }
-    ],
-    "filters": [
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["deny-all"]}
-    ],
+	"name": "Aureola",
+	"authors": ["pbat", "EnarRikardz"],
+	"gametype": "TDM",
+	"version": "1.0.0",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "121.5, 32, 25.5, -90"},
+		{"teams": ["blue"], "coords": "215.5, 6, 55.5, 135"},
+		{"teams": ["red"], "coords": "155.5, 6, -4.5, -45"}
+	],
+	"points": {
+		"target": 60
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 32},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 32},
 
-    "regions": [
-        {"id": "deny-all", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, 100, oo"}
-    ]
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:2"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "stone sword", "bow", "golden apple", "arrow", "golden carrot"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
 }
