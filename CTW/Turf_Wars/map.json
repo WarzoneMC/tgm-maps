@@ -1,117 +1,117 @@
 {
-	"name": "Turf Wars",
-	"authors": ["Chickolympics", "moo8x8"],
-	"version": "1.0.7",
-	"gametype": "CTW",
-	"teams": [
-		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
-			"min": 1,
-			"max": 50
-		},
-		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
-			"min": 1,
-			"max": 50
-		}
-	],
-	"spawns": [
-		{"teams": ["spectators"], "coords": "0.5, 50, 0.5"},
-		{"teams": ["red"], "coords": "0.5, 128.5, 142.5, 180"},
-		{"teams": ["blue"], "coords": "0.5, 128.5, -142.5"}
-	],
-	"ctw": {
-		"wools": [
-			{
-				"name": "Magenta",
-				"color": "light purple",
-				"woolcolor": "magenta",
-				"teams": ["blue"],
-				"region": {"min": "1, 21, -123", "max": "1, 21, -123"}
-			},
-			{
-				"name": "Purple",
-				"color": "dark purple",
-				"woolcolor": "purple",
-				"teams": ["blue"],
-				"region": {"min": "-1, 21, -123", "max": "-1, 21, -123"}
-			},
-			{
-				"name": "Yellow",
-				"color": "yellow",
-				"woolcolor": "yellow",
-				"teams": ["red"],
-				"region": {"min": "-1, 21, 123", "max": "-1, 21, 123"}
-			},
-			{
-				"name": "Orange",
-				"color": "gold",
-				"woolcolor": "orange",
-				"teams": ["red"],
-				"region": {"min": "1, 21, 123", "max": "1, 21, 123"}
-			}
-		]
-	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+    "name": "Turf Wars",
+    "authors": ["Chickolympics", "moo8x8"],
+    "version": "1.0.8",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 50, 0.5"},
+        {"teams": ["red"], "coords": "0.5, 128.5, 142.5, 180"},
+        {"teams": ["blue"], "coords": "0.5, 128.5, -142.5"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Magenta",
+                "color": "light purple",
+                "woolcolor": "magenta",
+                "teams": ["blue"],
+                "region": {"min": "1, 21, -123", "max": "1, 21, -123"}
+            },
+            {
+                "name": "Purple",
+                "color": "dark purple",
+                "woolcolor": "purple",
+                "teams": ["blue"],
+                "region": {"min": "-1, 21, -123", "max": "-1, 21, -123"}
+            },
+            {
+                "name": "Yellow",
+                "color": "yellow",
+                "woolcolor": "yellow",
+                "teams": ["red"],
+                "region": {"min": "-1, 21, 123", "max": "-1, 21, 123"}
+            },
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["red"],
+                "region": {"min": "1, 21, 123", "max": "1, 21, 123"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 8},
+                {"type": "item", "material": "glass", "slot": 4, "amount": 64},
+                {"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 28, "amount": 8},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
-			]
-		}
-	],
-	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "arrow"
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "amount": 1}
-				]
-			}
-		}
-	],
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "orange-room", "yellow-room"],
-			"message": "&cYou are not allowed to modify terrain here."
-		},
-		{
-			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "magenta-room", "purple-room"],
-			"message": "&cYou are not allowed to modify terrain here."
-		},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "magenta-room", "purple-room"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
-	],
-	"regions": [
-		{"id": "orange-room", "min": "84, 0, -74", "max": "68, oo, -58"},
-		{"id": "yellow-room", "min": "-68, 0, -74", "max": "-84, oo, -58"},
-		{"id": "magenta-room", "min": "68, 0, 58", "max": "84, oo, 74"},
-		{"id": "purple-room", "min": "-68, 0, 58", "max": "-84, oo, 74"},
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "arrow"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "commands": ["give %killername% minecraft:golden_apple 1"]
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["red-spawn-protection-top", "red-spawn-protection-bottom", "blue-spawn-protection-top", "blue-spawn-protection-bottom", "orange-room", "yellow-room"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "regions": ["red-spawn-protection-top", "red-spawn-protection-bottom", "blue-spawn-protection-top", "blue-spawn-protection-bottom", "magenta-room", "purple-room"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-enter", "magenta-room", "purple-room"], "message": "&cYou may not enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-enter", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
+    ],
+    "regions": [
+        {"id": "orange-room", "min": "84, 0, -74", "max": "68, oo, -58"},
+        {"id": "yellow-room", "min": "-68, 0, -74", "max": "-84, oo, -58"},
+        {"id": "magenta-room", "min": "68, 0, 58", "max": "84, oo, 74"},
+        {"id": "purple-room", "min": "-68, 0, 58", "max": "-84, oo, 74"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-25, 0, -158", "max": "25, oo, -109"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-25, 0, 109", "max": "25, oo, 158"}
-	]
+        {"id": "blue-spawn-protection-top", "type": "cuboid", "min": "-25, 18, -158", "max": "25, oo, -109"},
+        {"id": "blue-spawn-protection-bottom", "type": "cuboid", "min": "-25, 0, -158", "max": "25, 14, -109"},
+        {"id": "red-spawn-protection-top", "type": "cuboid", "min": "-25, 18, 109", "max": "25, oo, 158"},
+        {"id": "red-spawn-protection-bottom", "type": "cuboid", "min": "-25, 0, 109", "max": "25, 14, 158"},
+        {"id": "blue-spawn-protection-enter", "type": "cuboid", "min": "-25, 0, -158", "max": "25, oo, -109"},
+        {"id": "red-spawn-protection-enter", "type": "cuboid", "min": "-25, 0, 109", "max": "25, oo, 158"}
+    ]
 }
