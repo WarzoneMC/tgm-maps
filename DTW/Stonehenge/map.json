@@ -1,86 +1,93 @@
 {
-	"name": "Stonehenge",
-	"authors": ["Luuke or Loks, not too sure"],
-	"version": "1.0",
-	"gametype": "DTM",
-	"teams": [
-		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
-			"min": 1,
-			"max": 50
-		},
-		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
-			"min": 1,
-			"max": 50
-		}
-	],
-	"spawns": [
-		{"teams": ["spectators"], "coords": "-1.5, 133, -42.5, -177"},
-		{"teams": ["blue"], "coords": "-0.5, 74, 32.5, 179"},
-		{"teams": ["red"], "coords": "-0.5, 74, -123.5"}
-	],
-	"dtm": {
-		"monuments": [
-			{
-				"name": "Red Wool",
-				"teams": ["red"],
-				"materials": ["red wool"],
-				"region": {
-					"min": "-37, 72, -117",
-					"max": "36, 82, -111"
-				},
-				"health": 10
-			},
-			{
-				"name": "Blue Wool",
-				"teams": ["blue"],
-				"materials": ["blue wool"],
-				"region": {
-					"min": "-38, 72, 19",
-					"max": "35, 82, 25"
-				},
-				"health": 10
-			}
-		]
-	},
+    "name": "Stonehenge",
+    "authors": ["Luuke or Loks, not too sure"],
+    "version": "1.0.1",
+    "gametype": "DTM",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-1.5, 133, -42.5, -177"},
+        {"teams": ["blue"], "coords": "-0.5, 74, 32.5, 180"},
+        {"teams": ["red"], "coords": "-0.5, 74, -123.5"}
+    ],
+    "dtm": {
+        "monuments": [
+            {
+                "name": "Red Wool",
+                "teams": ["red"],
+                "materials": ["red wool"],
+                "region": {
+                    "min": "-37, 72, -117",
+                    "max": "36, 82, -111"
+                },
+                "health": 10
+            },
+            {
+                "name": "Blue Wool",
+                "teams": ["blue"],
+                "materials": ["blue wool"],
+                "region": {
+                    "min": "-38, 72, 19",
+                    "max": "35, 82, 25"
+                },
+                "health": 10
+            }
+        ]
+    },
     "kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
-				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+                {"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-			]
-		}
-	],
-	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "amount": 1},
-					{"material": "arrow", "amount": 3}
-				]
-			}
-		}
-	]
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 3}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn", "blue-spawn"], "message": "&cYou are not allowed to modify terrain here."}
+    ],
+    "regions": [
+        {"id": "blue-spawn", "type": "cuboid", "min": "-11, 72, 24", "max": "10, oo, 43"},
+        {"id": "red-spawn", "type": "cuboid", "min": "10, 72, -115", "max": "-11, oo, -134"}
+    ]
 }
