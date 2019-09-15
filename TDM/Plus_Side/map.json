@@ -1,8 +1,11 @@
 {
 	"name": "Plus Side",
-	"authors": ["JETUB1", "BlockDrop74"],
+	"authors": [
+		{"uuid": "8053ed38-89d9-4096-b265-a0fcce3a1c33", "username": "Jetub"},
+		{"uuid": "1e3b1b79-307a-4093-aaeb-21b2fd419336", "username": "BlockDrop74"}
+	],
 	"gametype": "TDM",
-	"version": "1.4.5",
+	"version": "1.4.6",
 	"teams": [
 		{
 			"id": "yellow",
@@ -47,8 +50,8 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "enchantments": ["DAMAGE_ALL:100"], "unbreakable": true, "flags": ["hide enchants", "hide attributes"]},
-				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["ARROW_DAMAGE:100"], "unbreakable": true, "flags": ["hide enchants"]},
+				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "display_name": "Quartz Sword", "enchantments": ["DAMAGE_ALL:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "display_name": "Cobalt Bow", "enchantments": ["ARROW_DAMAGE:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
 				
@@ -78,9 +81,18 @@
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
-		}
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue", "green", "yellow"], "regions": ["red-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "green", "yellow"], "regions": ["blue-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "blue", "yellow"], "regions": ["green-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "blue", "green"], "regions": ["yellow-spawn"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+		{"id": "red-spawn", "type": "cuboid", "min": "757, 0, 519", "max": "774, oo, 507"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "682, 0, 427", "max": "694, oo, 444"},
+		{"id": "green-spawn", "type": "cuboid", "min": "682, 0, 582", "max": "694, oo, 599"},
+		{"id": "yellow-spawn", "type": "cuboid", "min": "602, 0, 519", "max": "619, oo, 507"}
 	]
 }
