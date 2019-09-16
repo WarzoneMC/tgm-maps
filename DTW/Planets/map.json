@@ -1,0 +1,96 @@
+{
+	"name": "Planets",
+	"authors": ["WomanofWar"],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 141, 0.5"},
+		{"teams": ["blue"], "coords": "-89.5, 114, -60.5"},
+		{"teams": ["red"], "coords": "90.5, 114, 61.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "40, 112, 83",
+					"max": "47, 119, 76"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "-39, 112, -82",
+					"max": "-46, 119, -75"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "oak log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"effect": "damage resistance", "duration": 10, "amplifier": 10, "particles": false}
+			]
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-prot", "type": "cuboid", "min": "92, 113, 63", "max": "89, 118, 60"},
+		{"id": "blue-spawn-prot", "type": "cuboid", "min": "-91, 113, -62", "max": "-88, 118, -60"}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn-prot", "blue-spawn-prot"], "message": "&cYou may not interact with the spawn area!"}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow", "wool", "oak logs", "glass"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4}
+				]
+			}
+		}
+	]
+}
