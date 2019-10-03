@@ -74,7 +74,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "stone axe", "leather helmet", "leather leggings", "leather helmet", "oak planks", "cooked beef", "leather boots", "chainmail chestplate"
+		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room"], "message": "&cYou are not allowed to modify terrain here."},
