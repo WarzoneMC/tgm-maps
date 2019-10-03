@@ -1,6 +1,10 @@
 {
 	"name": "Pluto",
-	"authors": ["Boats", "Vovl", "Luuke"],
+	"authors": [
+		{"uuid": "e06e6ce8-9945-4379-9912-0e3f17608300", "username": "Boats"},
+		{"uuid": "8deddf84-a8bd-4ca3-84a9-6a9e8b2e4cd6", "username": "Vovl"},
+		{"uuid": "2dc9b2a1-6063-499b-9685-aa97b978707a", "username": "Luuke"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0.0",
 	"teams": [

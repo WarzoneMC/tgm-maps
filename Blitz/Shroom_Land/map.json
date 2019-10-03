@@ -1,6 +1,8 @@
 {
 	"name": "Shroom Land",
-	"authors": ["AtlasGames"],
+	"authors": [
+		{"uuid": "e79fbdc9-627e-4dac-97a6-81a3046220d7", "username": "AtlasGames"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0",
 	"stats": {"disable": true},

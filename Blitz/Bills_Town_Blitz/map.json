@@ -1,6 +1,9 @@
 {
 	"name": "Bill's Town Blitz",
-	"authors": ["Yoyo_", "Diamyx"],
+	"authors": [
+		{"uuid": "07fa10c6-f564-4630-861e-fe134ae27527", "username": "Yoyo_"},
+		{"uuid": "f70b7a8f-93b2-480f-9d54-88e21485a042", "username": "Diamyx"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0.1",
 	"teams": [

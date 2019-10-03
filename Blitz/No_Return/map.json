@@ -1,6 +1,8 @@
 {
 	"name": "No Return",
-	"authors": ["AntonyMo"],
+	"authors": [
+		{"uuid": "a6a99e23-34c4-4957-8974-b78b4da9ce7c", "username": "AntonyMo"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0",
 	"stats": {"disable": true},

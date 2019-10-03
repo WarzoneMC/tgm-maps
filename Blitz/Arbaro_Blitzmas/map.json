@@ -1,6 +1,9 @@
 {
 	"name": "Arbaro Blitzmas",
-	"authors": ["PenguinsCubed", "carterpaul"],
+	"authors": [
+		{"uuid": "4a68c267-51d1-4320-8ed0-dd85f48cb8a9", "username": "PenguinsCubed"},
+		{"uuid": "7a150842-5db4-487e-b4d1-559b8240a07f", "username": "Carterpaul"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0.0",
 	"teams": [

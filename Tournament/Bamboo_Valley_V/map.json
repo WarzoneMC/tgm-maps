@@ -1,6 +1,8 @@
 {
 	"name": "Bamboo Valley V",
-	"authors": ["Strangey"],
+	"authors": [
+		{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "Strangey"}
+	],
 	"version": "1.2",
 	"gametype": "CTW",
 	"teams": [

@@ -2,7 +2,9 @@
 	"name": "Destiny",
 	"version": "1.0.0",
 	"gametype": "FFA",
-	"authors": ["Avaleer"],
+	"authors": [
+		{"uuid": e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "name": "Avaleer"}
+	],
 	"stats": {"disable": true},
 	"teams": [
 		{	
