@@ -78,7 +78,7 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "iron block"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "leather chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "iron block"
 	],
 	"killstreaks": [
 		{
