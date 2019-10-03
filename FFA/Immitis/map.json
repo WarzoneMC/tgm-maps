@@ -2,7 +2,9 @@
 	"name": "Immitis FFA",
 	"version": "1.0.0",
 	"gametype": "FFA",
-	"authors": ["JTr"],
+	"authors": [
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTr"}
+	],
 	"stats": {"disable": true},
 	"teams": [
 		{

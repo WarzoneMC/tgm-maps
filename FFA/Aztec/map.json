@@ -2,7 +2,9 @@
 	"name": "Aztec FFA",
 	"version": "1.0.0",
 	"gametype": "FFA",
-	"authors": ["yoyo_"],
+	"authors": [
+		{"uuid": "07fa10c6-f564-4630-861e-fe134ae27527", "username": "Yoyo_"}
+	],
 	"stats": {"disable": true},
 	"teams": [
 		{

@@ -1,6 +1,8 @@
 {
 	"name": "Fortress",
-	"authors": ["Loks"],
+	"authors": [
+		{"uuid": "2c1cf65f-f668-41eb-812e-091391eb2896", "username": "Loks"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0.0",
 	"teams": [

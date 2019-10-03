@@ -1,6 +1,8 @@
 {
 	"name": "Crossfire",
-	"authors": ["SheriffSoco"],
+	"authors": [
+		{"uuid": "6e347123-c684-4d7e-996c-44d4924ff172", "username": "SheriffSoco"}
+	],
 	"gametype": "Blitz",
 	"version": "1.0.0",
 	"stats": {"disable": true},
