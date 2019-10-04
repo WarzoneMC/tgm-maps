@@ -58,7 +58,8 @@
 					{"material": "arrow", "amount": 1}
 				]
 			}
-		},
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
