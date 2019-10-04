@@ -59,7 +59,6 @@
 				]
 			}
 		},
-		{
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
