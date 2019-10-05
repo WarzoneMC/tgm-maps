@@ -45,10 +45,10 @@
 			]
 		}
 	],
-		"itemremove": [
-		"iron sword", "iron boots", "leather leggings", "golden chestplate", "wool", "arrow", "cooked beef", "bow"
+	"itemremove": [
+		"iron sword", "iron boots", "leather leggings", "golden chestplate", "wool", "arrow", "golden apple", "cooked beef", "bow"
 	],
-		"killstreaks": [
+	"killstreaks": [
 		{
 			"count": 1,
 			"repeat": true,
