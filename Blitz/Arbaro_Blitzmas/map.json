@@ -44,6 +44,20 @@
 			]
 		}
 	],
+			"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+		"itemremove": [
+		"stone sword", "cooked beef", "arrow", "leather helmet", "chainmail leggins", "leather chestplate", "leather boots", "golden apple", "bow"
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
