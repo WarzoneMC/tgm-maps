@@ -85,12 +85,12 @@
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "gold boots", "slot": "boots", "unbreakable": true}
+				{"type": "item", "material": "golden boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "quartz block", "oak planks", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "gold boots"
+		"stone sword", "bow", "diamond pickaxe", "quartz block", "oak planks", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "golden boots"
 	],
 	"killstreaks": [
 		{

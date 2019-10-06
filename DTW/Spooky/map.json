@@ -70,19 +70,19 @@
 			"name": "Ghouls",
 			"teams": ["blue"],
 			"items": [
-				{"material": "skull", "slot": "helmet", "durability": 0}
+				{"material": "skeleton skull", "slot": "helmet"}
 			]
 		},
 		{
 			"name": "Ghasts",
 			"teams": ["red"],
 			"items": [
-				{"material": "skull", "slot": "helmet", "durability": 1}
+				{"material": "wither skeleton skull", "slot": "helmet", "durability": 1}
 			]
 		}
 	],
 	"itemremove": [
-		"skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
+		"skeleton skull", "wither skeleton skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
 	],
 	"killstreaks": [
 		{

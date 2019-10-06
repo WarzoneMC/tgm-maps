@@ -73,14 +73,14 @@
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 11}
+				{"material": "blue stained glass", "slot": 4, "amount": 64}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 14}
+				{"material": "red stained glass", "slot": 4, "amount": 64, "durability": 14}
 			]
 		}
 	],
