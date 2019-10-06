@@ -57,7 +57,7 @@
 				{"material": "diamond axe", "slot": 2, "unbreakable": true},
 
 				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
-				{"material": "boat spruce", "slot": 6},
+				{"material": "spruce boat", "slot": 6},
 				{"material": "arrow", "slot": 9, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 10},
 
@@ -67,21 +67,21 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"effect": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
+				{"type": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
 			]
 		},
 		{
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 32, "durability": 11}
+				{"material": "blue stained glass", "slot": 4, "amount": 32}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"material": "stained glass", "slot": 4, "amount": 32, "durability": 14}
+				{"material": "red stained glass", "slot": 4, "amount": 32}
 			]
 		}
 	],
