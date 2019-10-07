@@ -73,7 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "arrow", "chainmail chestplate", "leather boots", "golden apple", "dirt", "golden carrot", "leather leggings"
+		"stone sword", "bow", "diamond pickaxe", "oak planks", "golden apple", "cooked beef", "arrow",
+		"chainmail chestplate", "leather leggings", "leather boots"
 	],
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
