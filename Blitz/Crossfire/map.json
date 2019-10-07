@@ -48,7 +48,7 @@
 		}
 	],
 	"itemremove": [
-		"string", "sponge", "arrow", "stick", "oak planks", "sign"
+		"leather helmet", "leather chestplate", "leather leggings", "string", "sponge", "arrow", "stick", "oak planks", "sign"
 	],
 	"portals": [
 		{
