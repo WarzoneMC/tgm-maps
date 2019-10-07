@@ -85,6 +85,7 @@
 		}
 	],
 	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron pickaxe", "arrow", "cooked beef",
 		"leather helmet", "iron chestplate", "iron leggings", "leather boots"
 	],
 	"killstreaks": [
