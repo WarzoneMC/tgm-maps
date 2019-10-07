@@ -44,5 +44,8 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "iron boots"
 	]
 }
