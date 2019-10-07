@@ -90,7 +90,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "quartz block", "oak planks", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "golden boots"
+		"stone sword", "bow", "stone axe", "diamond pickaxe", "quartz block", "oak planks", "cooked chicken", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "golden boots"
 	],
 	"killstreaks": [
 		{
