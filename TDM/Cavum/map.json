@@ -1,6 +1,9 @@
 {
 	"name": "Cavum",
-	"authors": ["thestrangeboy1", "moo8x8"],
+	"authors": [
+		{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "thestrangeboy1"},
+		{"uuid": "15dc7f7a-40cd-4389-ad45-f8a33a09a394", "username": "moo88888888"}
+	],
 	"gametype": "TDM",
 	"version": "1.0",
     	"teams": [
