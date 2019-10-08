@@ -47,6 +47,10 @@
 			]
 		}
 	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "cooked beef", "arrow",
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
+	],
 	"killstreaks": [
 		{
 			"count": 1,

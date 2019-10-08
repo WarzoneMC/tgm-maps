@@ -58,5 +58,9 @@
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "shears",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	]
 }
