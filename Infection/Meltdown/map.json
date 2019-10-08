@@ -1,6 +1,11 @@
 {
 	"name": "Meltdown",
-	"authors": ["N11ck", "Teejers", "RedDemptr", "Pixelific"],
+	"authors": [
+		{"uuid": "27ac2daf-3c38-4b8e-9448-46f221bb612a", "username": "N11ck"},
+		{"uuid": "39a9e1b5-1e1d-40c0-8c16-69a9568efa72", "username": "Teejers"},
+		{"uuid": "c4ad59fd-a7c6-42f1-8a5f-5af0aa60353b", "username": "RedDemptr"},
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Pixelific"}
+	],
 	"gametype": "Infected",
 	"version": "1.1.1",
 	"stats": {"disable": true},
