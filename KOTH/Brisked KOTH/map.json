@@ -84,6 +84,9 @@
 			}
 		}
 	],
+	"damageControl": {
+		"FALL": false
+	},
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["orange-spawn-protection", "purple-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
