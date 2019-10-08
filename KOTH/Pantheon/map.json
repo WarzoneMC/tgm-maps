@@ -1,6 +1,9 @@
 {
 	"name": "Pantheon",
-	"authors": ["Budgo369, Henrs"],
+	"authors": [
+		{"uuid": "8006afd6-359c-4c75-a11c-21f26715d018", "username": "Budgo369"},
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
+	],
 	"version": "1.0.0",
 	"gametype": "KOTH",
 	"teams": [

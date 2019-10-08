@@ -1,6 +1,9 @@
 {
 	"name": "Green Hill Zone",
-	"authors": ["pepsidawg00", "Dinner1111"],
+	"authors": [
+		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "pepsidawg00"},
+		{"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "Dinner1111"}
+	],
 	"version": "1.0.5",
 	"gametype": "KOTH",
 	"teams": [

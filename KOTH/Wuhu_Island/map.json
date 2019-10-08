@@ -1,6 +1,9 @@
 {
 	"name": "Wuhu Island",
-	"authors": ["Tizona"],
+	"authors": [
+		{"uuid": "9f9d89d3-5ce6-49bd-a60d-eb958f79ed91", "username": "Tizona"},
+		{"uuid": "4d4b3b1c-c141-4dda-9329-cacc33f1ea30", "username": "_Maxmos_"}
+	],
 	"version": "1.0.0",
 	"gametype": "KOTH",
 	"teams": [
