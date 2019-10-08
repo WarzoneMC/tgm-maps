@@ -61,7 +61,7 @@
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
-				{"type": "item", "material": "stone spade", "slot": 30, "unbreakable": true},
+				{"type": "item", "material": "stone shovel", "slot": 30, "unbreakable": true},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -71,7 +71,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "cooked beef", "arrow", "stone spade",
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "cooked beef", "arrow", "stone shovel",
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
