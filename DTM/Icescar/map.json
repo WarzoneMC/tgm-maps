@@ -108,8 +108,9 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "stone pickaxe", "splash potion", "bread", "gold ingot",
-		"leather helmet", "leather chestplate"
+		"splash potion", "bread", "gold ingot",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "iron helmet", "iron chestplate", "iron leggings", "iron boots", "golden helmet", "golden chestplate", "golden leggings", "golden boots", "diamond helmet", "diamond chestplate", "diamond leggings" "diamond boots",
+		"wooden sword", "stone sword", "iron sword", "golden sword", "diamond sword", "wooden pickaxe", "stone pickaxe", "iron pickaxe", "golden pickaxe", "diamond pickaxe", "wooden axe", "stone axe", "iron axe", "golden axe", "diamond axe", "iron block", "gold block", "diamond block", "emerald block"
 	],
 	"killstreaks": [
 		{
