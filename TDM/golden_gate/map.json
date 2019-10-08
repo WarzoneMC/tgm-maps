@@ -48,7 +48,6 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "cooked beef", "arrow",
-		"leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
 	]
 }
