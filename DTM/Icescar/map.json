@@ -94,7 +94,7 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "stone pickaxe", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "splash_potion", "slot": 6, "amount": 3, "potion": {"type": "instant heal", "upgrade": true}},
+				{"type": "item", "material": "splash potion", "slot": 6, "amount": 3, "potion": {"type": "instant heal", "upgrade": true}},
 				{"type": "item", "material": "bread", "slot": 7, "amount": 32},
 				{"type": "item", "material": "gold ingot", "slot": 8},
 
@@ -108,8 +108,9 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "leather chestplate", "leather helmet", "iron axe", "iron sword", "golden axe", "diamond sword", "arrow", "iron boots", "golden chestplate", 
-		"iron chestplate", "diamond chestplate", "diamond boots", "stone pickaxe", "iron pickaxe", "diamond pickaxe", "diamond block", "emerald block"
+		"splash potion", "bread", "gold ingot",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "iron helmet", "iron chestplate", "iron leggings", "iron boots", "golden helmet", "golden chestplate", "golden leggings", "golden boots", "diamond helmet", "diamond chestplate", "diamond leggings" "diamond boots",
+		"wooden sword", "stone sword", "iron sword", "golden sword", "diamond sword", "wooden pickaxe", "stone pickaxe", "iron pickaxe", "golden pickaxe", "diamond pickaxe", "wooden axe", "stone axe", "iron axe", "golden axe", "diamond axe", "iron block", "gold block", "diamond block", "emerald block"
 	],
 	"killstreaks": [
 		{
