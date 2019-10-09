@@ -68,7 +68,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool"
+		"iron sword", "bow", "stone pickaxe", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"iron helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"filters": [
 		{
