@@ -1,6 +1,9 @@
 {
 	"name": "A New Day",
-	"authors": ["dcstarwars", "JTerwiesch"],
+	"authors": [
+		{"uuid": "b5071a63-bba3-491a-909f-02db314f4319", "username": "dcstarwars"},
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTerwiesch"}
+	],
 	"version": "1.0.6",
 	"gametype": "CTW",
 	"teams": [
