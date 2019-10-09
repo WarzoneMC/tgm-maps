@@ -79,7 +79,8 @@
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn-prot", "blue-spawn-prot"], "message": "&cYou may not interact with the spawn area!"}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow", "wool", "oak logs", "glass"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "glass", "golden carrot", "arrow", "golden apple",
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{
