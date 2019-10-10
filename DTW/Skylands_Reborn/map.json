@@ -108,7 +108,7 @@
 			"from": "red-portal",
 			"to": "19.5, 18.81250, 26.5, 180",
 			"sound": false,
-			"teams": ["red", "blue,"]
+			"teams": ["red", "blue"]
 		}
 	]
 }
