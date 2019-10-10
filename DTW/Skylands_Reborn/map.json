@@ -94,8 +94,21 @@
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"},
-		
-		{"id": "blue-portal", "type": "cuboid", "min": "67, 0, 0", "max": "71, oo, 4"},
-		{"id": "red-portal", "type": "cuboid", "min": "17, 0, 24", "max": "21, oo, 28"}
+		{"id": "blue-portal", "type": "cuboid", "min": "15, 19, 31", "max": "15, 20, 31"},
+		{"id": "red-portal", "type": "cuboid", "min": "73, 19, -3", "max": "73, 20, -3"}
+	],
+	"portals": [
+		{
+			"from": "blue-portal",
+			"to": "69.5, 18.81250, 2.5",
+			"sound": false,
+			"teams": ["blue", "red"]
+		},
+		{
+			"from": "red-portal",
+			"to": "19.5, 18.81250, 26.5, 180",
+			"sound": false,
+			"teams": ["red", "blue,"]
+		}
 	]
 }

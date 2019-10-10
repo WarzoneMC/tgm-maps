@@ -43,5 +43,9 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "oak planks", "golden apple", "cooked beef", "arrow",
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	]
 }

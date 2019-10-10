@@ -75,7 +75,7 @@
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-				{"material": "boat spruce", "slot": 7},
+				{"material": "spruce boat", "slot": 7},
 
 				{"material": "baked potato", "slot": 8, "amount": 32},
 				{"material": "arrow", "slot": 9, "amount": 32},
@@ -88,6 +88,7 @@
 		}
 	],
 	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "boat spruce", "baked potato", "arrow",
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
