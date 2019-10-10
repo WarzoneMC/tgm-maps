@@ -115,7 +115,7 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "purple-spawn-protection", "type": "cuboid", "min": "4, 0, 142", "max": "-4, oo, 142"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "4, 0, 115", "max": "-4, oo, 142"},
 		{"id": "green-spawn-protection", "type": "cuboid", "min": "4, 0, -94", "max": "-4, oo, -67"}
 	]
 }
