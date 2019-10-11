@@ -1,6 +1,10 @@
 {
 	"name": "Pipe Palace",
-	"authors": ["oib5", "TheJRRNinja", "Vytr"],
+	"authors": [
+		{"uuid": "904bf23f-67c5-484a-ae60-61f4ec150b48", "username": "oib5"},
+		{"uuid": "252154bb-2312-4bee-b306-5fb45fb20bb2", "username": "Vytr"},
+		{"uuid": "16833ef3-faea-4538-9d8d-d30af1cecc60", "username": "TheJRRNinja"}
+	],
 	"version": "1.0",
 	"gametype": "CTW",
 	"teams": [

@@ -1,6 +1,9 @@
 {
 	"name": "Stone Age",
-	"authors": ["_Rascal", "Teejers"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "39a9e1b5-1e1d-40c0-8c16-69a9568efa72", "username": "Teejers"}
+	],
 	"version": "1.2",
 	"gametype": "DTM",
 	"teams": [

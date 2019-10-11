@@ -1,6 +1,9 @@
 {
 	"name": "End Times",
-	"authors": ["RetroMudkip", "TheRandomKing12"],
+	"authors": [
+		{"uuid": "485fb56b-261c-4b6c-a0df-b4afec6382b2", "username": "RetroMudkip"},
+		{"uuid": "6f72dd75-7599-41aa-aa76-ebd7fb745168", "username": "TheRandomKing12"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

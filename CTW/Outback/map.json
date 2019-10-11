@@ -1,6 +1,8 @@
 {
 	"name": "Outback",
-	"authors": ["Rockymine"],
+	"authors": [
+		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "Rockymine"}
+	],
 	"version": "1.2.3",
 	"gametype": "CTW",
 	"teams": [

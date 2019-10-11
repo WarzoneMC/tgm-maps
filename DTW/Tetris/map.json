@@ -1,6 +1,9 @@
 {
 	"name": "Tetris",
-	"authors": ["EchoBlitz477", "_Rascal"],
+	"authors": [
+		{"uuid": "9f48f032-bb96-453b-9eee-201a8d030b61", "username": "EchoBlitz477"},
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

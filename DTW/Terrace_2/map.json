@@ -1,6 +1,8 @@
 {
 	"name": "Terrace 2",
-	"authors": ["Xochy"],
+	"authors": [
+		{"uuid": "adc72590-0a22-4f29-b04b-b4e05e1c7b60", "username": "Xochy"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

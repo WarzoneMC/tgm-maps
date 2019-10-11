@@ -1,6 +1,9 @@
 {
 	"name": "Castles",
-	"authors": ["Loks", "NinjaTrev"],
+	"authors": [
+		{"uuid": "2c1cf65f-f668-41eb-812e-091391eb2896", "username": "Loks"},
+		{"uuid": "99fa5c84-9f49-4231-b16f-5a83fe858ff0", "username": "NinjaTrev"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

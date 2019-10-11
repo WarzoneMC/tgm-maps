@@ -2,7 +2,10 @@
 	"name": "Icescar",
 	"version": "1.2.1",
 	"gametype": "DTM",
-	"authors": ["Draco_Rogue", "dragonsrule9"],
+	"authors": [
+		{"uuid": "c65e66b3-e932-4b33-b907-fe4916806076", "username": "Draco_Rogue"}, 
+		{"uuid": "8e5b106b-f0af-4be1-b199-7b9205ec8af6", "username": "dragonsrule9"}
+	],
 	"teams": [
 		{
 			"id": "green",

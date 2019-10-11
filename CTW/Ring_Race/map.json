@@ -1,6 +1,8 @@
 {
 	"name": "Ring Race",
-	"authors": ["Mikeg542"],
+	"authors": [
+		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"}
+	],
 	"version": "1.2.3",
 	"gametype": "CTW",
 	"teams": [

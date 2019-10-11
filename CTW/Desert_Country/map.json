@@ -1,20 +1,19 @@
 {
-	"name": "Christmas Country",
+	"name": "Desert Country",
 	"authors": [
 		{"uuid": "b5967591-14fc-421f-a5e2-931498e10fb8", "username": "OCNs_OMEN"},
+		{"uuid": "7cbf2168-7f49-4fb3-aea8-6df8048a7ade", "username": "nigges60"},
 		{"uuid": "6d256510-f2ec-4a5b-b678-fc01c5abd7b3", "username": "Sp33dfr3ak"},
 		{"uuid": "f066a092-d825-4316-bc9a-5f8ddd21b167", "username": "Valkyyyy"},
-		{"uuid": "6972affb-504d-4114-b52f-696e5b567095", "username": "SaltyDude44"},
-		{"uuid": "d1e3251c-def5-4328-a7e9-09335934d316", "username": "byRobo"},
-		{"uuid": "2f4ec1a6-10bd-4a5c-8054-b7c56999d79b", "username": "Alex_Plosivo"}
+		{"uuid": "e15f0cac-6ba7-4069-8c43-26aa38866f77", "username": "OCNs_Loki"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [
 		{
-			"id": "green",
-			"name": "Green",
-			"color": "dark green",
+			"id": "red",
+			"name": "Red",
+			"color": "red",
 			"min": 1,
 			"max": 50
 		},
@@ -27,9 +26,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "476.9, 42, -226, -90"},
-		{"teams": ["green"], "coords": "534.5, 11, -133.5, 180"},
-		{"teams": ["blue"], "coords": "534.5, 11, -318.5"}
+		{"teams": ["spectators"], "coords": "535.5, 41, -225.5"},
+		{"teams": ["red"], "coords": "534.5, 10, -126.5, -180"},
+		{"teams": ["blue"], "coords": "534.5, 10, -325.5"}
 	],
 	"ctw": {
 		"wools": [
@@ -37,29 +36,29 @@
 				"name": "Yellow",
 				"color": "yellow",
 				"woolcolor": "yellow",
-				"teams": ["green"],
-				"region": {"min": "535, 12, -125", "max": "535, 12, -125"}
+				"teams": ["red"],
+				"region": {"min": "533, 11, -124", "max": "533, 11, -124"}
 			},
 			{
 				"name": "Orange",
 				"color": "gold",
 				"woolcolor": "orange",
-				"teams": ["green"],
-				"region": {"min": "533, 12, -125", "max": "533, 12, -125"}
+				"teams": ["red"],
+				"region": {"min": "535, 11, -124", "max": "535, 11, -124"}
 			},
 			{
-				"name": "Red",
-				"color": "red",
-				"woolcolor": "red",
+				"name": "Green",
+				"color": "dark green",
+				"woolcolor": "green",
 				"teams": ["blue"],
-				"region": {"min": "535, 12, -328", "max": "535, 12, -328"}
+				"region": {"min": "535, 11, -329", "max": "535, 11, -329"}
 			},
 			{
 				"name": "Purple",
 				"color": "dark purple",
 				"woolcolor": "purple",
 				"teams": ["blue"],
-				"region": {"min": "533, 12, -328", "max": "533, 12, -328"}
+				"region": {"min": "533, 11, -329", "max": "533, 11, -329"}
 			}
 		]
 	},
@@ -110,26 +109,26 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["green"],
-			"regions": ["green-spawn-protection", "blue-spawn-protection", "green-wool", "blue-wool-protection", "height-limit"],
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["green-spawn-protection", "blue-spawn-protection", "blue-wool", "green-wool-protection", "height-limit"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["green-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["blue-spawn-protection", "green-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
-		{"id": "green-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
+		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
 		{"id": "blue-wool", "min": "523, 0, -353", "max": "545, oo, -338"},
 
-		{"id": "green-spawn-protection", "type": "cuboid", "min": "521, 0, -136", "max": "547, oo, -121"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "521, 0, -332", "max": "547, oo, -317"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "523, 0, -139", "max": "545, oo, -114"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "523, 0, -339", "max": "545, oo, -313"},
 
-		{"id": "green-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
+		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
 		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
 	]

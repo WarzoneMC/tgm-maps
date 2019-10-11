@@ -1,6 +1,12 @@
 {
 	"name": "Neighborhood",
-	"authors": ["Teejers", "TehRaptor", "Nightsent", "Aphinity", "Kasperio"],
+	"authors": [
+		{"uuid": "39a9e1b5-1e1d-40c0-8c16-69a9568efa72", "username": "Teejers"},
+		{"uuid": "42195cb9-b21b-42f5-b938-5ef46f303fcd", "username": "TehRaptor"},
+		{"uuid": "0fee9b73-72ce-4793-926f-c2c45340f480", "username": "Nightsent"},
+		{"uuid": "816a7c43-992f-4d7d-90f3-b457ab68af20", "username": "Aphinity"},
+		{"uuid": "5a5a27fa-084e-44ff-803e-a3b856c34b26", "username": "Kasperio"}
+	],
 	"gametype": "Infected",
 	"version": "1.1.1",
 	"stats": {"disable": true},

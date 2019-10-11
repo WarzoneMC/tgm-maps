@@ -1,6 +1,13 @@
 {
 	"name": "Cargo",
-	"authors": ["DiamondAx", "EnarRikardz", "BrunoTheMiner", "TiggyLi", "iamramsey", "Rokosnocone"],
+	"authors": [
+		{"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"},
+		{"uuid": "e39fe3bc-b80e-46d2-81fe-d18042471989", "username": "EnarRikardz"},
+		{"uuid": "f64546c7-917b-4caf-a0c9-caa120156a84", "username": "BrunoTheMiner"},
+		{"uuid": "e82504ac-8c95-4895-9dca-222f924d697c", "username": "TiggyLi"},
+		{"uuid": "5c934a59-fd50-48aa-99ff-c87e0468f639", "username": "iamramsey"},
+		{"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Rokosnocone"}
+	],
 	"version": "1.0.5",
 	"gametype": "CTW",
 	"teams": [

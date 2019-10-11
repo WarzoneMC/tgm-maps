@@ -1,6 +1,8 @@
 {
 	"name": "Bridges",
-	"authors": ["Nightsent"],
+	"authors": [
+		{"uuid": "0fee9b73-72ce-4793-926f-c2c45340f480", "username": "Nightsent"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

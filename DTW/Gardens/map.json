@@ -1,6 +1,10 @@
 {
 	"name": "Gardens",
-	"authors": ["_Rascal", "HesAlrightIGuess", "Pndq"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "663ec1c0-a87d-49cf-9079-8e0d5b98a74a", "username": "HesAlrightIGuess"},
+		{"uuid": "c78d4660-635a-417c-ad28-b432b6804f6b", "username": "Pndq"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [

@@ -1,6 +1,8 @@
 {
 	"name": "Orion",
-	"authors": ["Obelistics"],
+	"authors": [
+		{"uuid": "b03360db-b8cd-49de-8ba1-b7920c2238a9", "username": "Obelistics"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

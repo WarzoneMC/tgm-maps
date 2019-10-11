@@ -1,6 +1,11 @@
 {
 	"name": "Pier",
-	"authors": ["TehRaptor", "Kasperio", "Nightsent", "LordRobot_"],
+	"authors": [
+		{"uuid": "42195cb9-b21b-42f5-b938-5ef46f303fcd", "username": "TehRaptor"},
+		{"uuid": "5a5a27fa-084e-44ff-803e-a3b856c34b26", "username": "Kasperio"},
+		{"uuid": "0fee9b73-72ce-4793-926f-c2c45340f480", "username": "Nightsent"},
+		{"uuid": "d76fc3d9-0a04-4b9d-9445-22c6c5751b61", "username": "LordRobot_"}
+	],
 	"gametype": "Infected",
 	"version": "1.0.0",
 	"stats": {"disable": true},

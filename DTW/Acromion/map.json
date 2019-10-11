@@ -1,6 +1,8 @@
 {
 	"name": "Acromion",
-	"authors": ["Luuke"],
+	"authors": [
+		{"uuid": "2dc9b2a1-6063-499b-9685-aa97b978707a", "username": "Luuke"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

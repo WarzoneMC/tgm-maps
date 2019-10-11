@@ -1,6 +1,8 @@
 {
 	"name": "Icebound",
-	"authors": ["Chicky"],
+	"authors": [
+		{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "Chicky"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [

@@ -1,6 +1,8 @@
 {
 	"name": "Snowy Wars Christmas",
-	"authors": ["roro28gutier"],
+	"authors": [
+		{"uuid": "c14862ba-058a-44a2-a1c3-bfb0b462e198", "username": "roro28gutier"}
+	],
 	"version": "1.0.2",
 	"gametype": "DTM",
 	"teams": [

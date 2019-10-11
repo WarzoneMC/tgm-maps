@@ -1,6 +1,10 @@
 {
 	"name": "Arctic",
-	"authors": ["Dubstep_Cat", "JustADev", "StarRaidz"],
+	"authors": [
+		{"uuid": "8749cc6d-d2f4-4eca-8741-76b8f0ddc657", "username": "Dubstep_Cat"},
+		{"uuid": "92719479-b1dc-4e07-8e23-0dc06150a6fb", "username": "JustADev"},
+		{"uuid": "4ced58ef-b9fe-44ed-a660-20b19291853f", "username": "StarRaidz"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

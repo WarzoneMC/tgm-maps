@@ -1,6 +1,8 @@
 {
 	"name": "Fracture",
-	"authors": ["mitchiii_"],
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii_"}
+	],
 	"version": "0.2.3",
 	"gametype": "KOTH",
 	"teams": [

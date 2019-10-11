@@ -1,6 +1,8 @@
 {
 	"name": "Bridge of Doom DTF",
-	"authors": ["Clijmart"],
+	"authors": [
+		{"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

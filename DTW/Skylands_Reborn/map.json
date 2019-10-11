@@ -1,6 +1,10 @@
 {
 	"name": "Skylands Reborn",
-	"authors": ["BennyDoesStuff", "_Rascal", "MatrixTunnel"],
+	"authors": [
+		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"},
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "3f9e78fe-18bd-478c-a0b2-305198d23a0a", "username": "MatrixTunnel"}
+	],
 	"version": "2.0",
 	"gametype": "DTM",
 	"teams": [

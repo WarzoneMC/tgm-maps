@@ -1,6 +1,8 @@
 {
 	"name": "Limbo II",
-	"authors": ["TheNoChillDude"],
+	"authors": [
+		{"uuid": "5e1c0b5d-cfdd-4e10-95cd-c53f8ee92150", "username": "TheNoChillDude"}
+	],
 	"version": "1.0",
 	"gametype": "KOTH",
 	"teams": [

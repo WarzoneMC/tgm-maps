@@ -1,6 +1,11 @@
 {
 	"name": "Race for Victory 2",
-	"authors": ["Plastix", "Apple", "Anxuiz", "IM_A_H0B0"],
+	"authors": [
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"},
+		{"uuid": "82c796a5-c033-43be-af30-fa06496995f9", "username": "IM_A_H0B0"},
+		{"uuid": "3c7db14d-ac4b-4e35-b2c6-3b2237f382be", "username": "MonsieurApple"},
+		{"uuid": "25961a08-c90c-4abd-b136-dad90e89c2eb", "username": "Anxuiz"}
+	],
 	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [

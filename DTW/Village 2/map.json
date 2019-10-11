@@ -1,6 +1,9 @@
 {
 	"name": "Village 2",
-	"authors": ["_Rascal", "BlockHeads36"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "665f52b7-7ecf-4694-877c-d4adc176bb6f", "username": "BlockHeads36"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

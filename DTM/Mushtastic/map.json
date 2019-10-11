@@ -1,6 +1,9 @@
 {
 	"name": "Mushtastic",
-	"authors": ["Aurrra", "YoutubeJr"],
+	"authors": [
+		{"uuid": "ea89264e-1786-4ee5-8d2f-b817068f268b", "username": "Aurrra"},
+		{"uuid": "bf096abd-a8b5-4be1-a50d-3f70eb76499b", "username": "YoutubeJr"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

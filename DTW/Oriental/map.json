@@ -1,6 +1,8 @@
 {
 	"name": "Oriental",
-	"authors": ["Disastur"],
+	"authors": [
+		{"uuid": "c5772145-2c33-49e6-8729-cef7cc20f0cc", "username": "Disastur"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [

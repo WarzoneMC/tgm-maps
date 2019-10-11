@@ -1,6 +1,9 @@
 {
 	"name": "SunTest",
-	"authors": ["Teejers", "Bearinx"],
+	"authors": [
+		{"uuid": "39a9e1b5-1e1d-40c0-8c16-69a9568efa72", "username": "Teejers"},
+		{"uuid": "b13b0b00-a8f9-422b-8963-b3d18bf80aa6", "username": "Bearinx"}
+	],
 	"version": "1.1",
 	"gametype": "DTM",
 	"teams": [

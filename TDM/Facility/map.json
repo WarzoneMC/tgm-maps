@@ -1,6 +1,10 @@
 {
 	"name": "Facility",
-	"authors": ["samthecat43", "Ny_", "Mikeg542"],
+	"authors": [
+		{"uuid": "7ab24d14-0801-48ba-8fea-147ddf400067", "username": "samthecat43"},
+		{"uuid": "a43135a4-d7b9-49ab-ac8d-a16bb2513c8d", "username": "Ny_"},
+		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"}
+	],
 	"gametype": "TDM",
 	"version": "1.1",
 	"stats": {"disable": true},

@@ -1,6 +1,8 @@
 {
 	"name": "Gobi",
-	"authors": ["DoomyBoy"],
+	"authors": [
+		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"}
+	],
 	"version": "1.0.6",
 	"gametype": "CTW",
 	"teams": [

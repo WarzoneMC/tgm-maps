@@ -1,6 +1,8 @@
 {
 	"name": "Formorgar 1",
-	"authors": ["Ogrey"],
+	"authors": [
+		{"uuid": "1650c182-2670-4dc1-8bb6-276632f1fae0", "username": "timaeusTestified"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

@@ -1,8 +1,12 @@
 {
-	"name": "Yowzer Stadium",
-	"authors": ["Henrs", "draem", "Piinoy", "Pndq", "Moia"],
+	"name": "Pier 2",
+	"authors": [
+		{"uuid": "fa28ac5f-6a4c-414f-8bcd-b5f2a93470a5", "username": "JackJack33"},
+		{"uuid": "42195cb9-b21b-42f5-b938-5ef46f303fcd", "username": "TehRaptor"},
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"gametype": "Infected",
-	"version": "1.0",
+	"version": "2.0.0",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -21,26 +25,26 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "23.5, 96, -3, -90"},
-		{"teams": ["infected"], "coords": "-98, 66, -2.5, -90"},
-		{"teams": ["humans"], "coords": "0, 68, -27"}
+		{"teams": ["spectators"], "coords": "222.5, 31, 398.5, 90"},
+		{"teams": ["infected"], "coords": "69.5, 16, 398.5, -90"},
+		{"teams": ["humans"], "coords": "199.5, 7, 420.5, 90"}
 	],
 	"infection": {
-		"length": 7
+		"length": 8
 	},
 	"kits": [
 		{
 			"name": "Humans",
 			"teams": ["humans"],
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		},

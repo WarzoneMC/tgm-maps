@@ -1,6 +1,9 @@
 {
 	"name": "Snowdrift",
-	"authors": ["_Rascal", "Ceboo"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "5ec46b0c-77c4-47ec-8709-9d6fc6405021", "username": "Ceboo"}
+	],
 	"version": "1.2.3",
 	"gametype": "DTM",
 	"teams": [

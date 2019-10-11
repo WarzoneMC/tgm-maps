@@ -1,6 +1,8 @@
 {
 	"name": "Festive",
-	"authors": ["_Rascal"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

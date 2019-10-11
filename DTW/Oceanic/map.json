@@ -1,6 +1,8 @@
 {
 	"name": "Oceanic",
-	"authors": ["etmfrederick"],
+	"authors": [
+		{"uuid": "d97d56b5-15bc-4469-ac21-bc3a73f9dd89", "username": "etmfrederick"}
+	],
 	"version": "1.2.3",
 	"gametype": "DTM",
 	"teams": [

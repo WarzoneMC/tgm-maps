@@ -1,6 +1,9 @@
 {
 	"name": "Turf Wars",
-	"authors": ["Chickolympics", "moo8x8"],
+	"authors": [
+		{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "chickolympics"},
+		{"uuid": "15dc7f7a-40cd-4389-ad45-f8a33a09a394", "username": "moo88888888"}
+	],
 	"version": "1.0.8",
 	"gametype": "CTW",
 	"teams": [

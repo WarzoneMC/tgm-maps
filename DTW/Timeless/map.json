@@ -1,6 +1,11 @@
 {
 	"name": "Timeless",
-	"authors": ["MdsCool", "JackJack2822", "Mikaatjuhh", "Disastur"],
+	"authors": [
+		{"uuid": "62b3744d-8be7-470f-b341-3900e8b52b0e", "username": "MdsCool"},
+		{"uuid": "a6215bea-c992-4d68-843a-0eb6ce8eea49", "username": "JackJack2822"},
+		{"uuid": "eaa3251f-b2ea-494b-8729-4cbe36f0192b", "username": "Mikaatjuhh"},
+		{"uuid": "c5772145-2c33-49e6-8729-cef7cc20f0cc", "username": "Disastur"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
