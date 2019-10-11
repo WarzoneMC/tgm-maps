@@ -1,6 +1,10 @@
 {
 	"name": "Scarescape",
-	"authors": ["Synconix", "ViceWatercolour", "_Rascal"],
+	"authors": [
+		{"uuid": "546c7ea4-0c3d-465d-89b2-133d10668bd1", "username": "Synconix"},
+		{"uuid": "bf331953-4f92-43ee-8abc-7544b8234936", "username": "ViceWatercolour"},
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

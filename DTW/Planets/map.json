@@ -1,6 +1,8 @@
 {
 	"name": "Planets",
-	"authors": ["WomanofWar"],
+	"authors": [
+		{"uuid": "bc0117b3-2055-4461-bdbf-0ba7158b501a", "username": "WomanOfWar"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [

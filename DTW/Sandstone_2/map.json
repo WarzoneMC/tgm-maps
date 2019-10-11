@@ -1,6 +1,10 @@
 {
 	"name": "Sandstone 2",
-	"authors": ["Scoolins", "JamesPond", "MajesticSlime"],
+	"authors": [
+		{"uuid": "e19c0b9f-d47c-4a4e-b323-fdba2939a19c", "username": "Scoolins"},
+		{"uuid": "2d915995-45ba-49e7-af98-bfc34a0aa35c", "username": "JamesPond"},
+		{"uuid": "a864ce8a-ed92-4492-9ac7-f2f17e907966", "username": "MajesticSlime"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
