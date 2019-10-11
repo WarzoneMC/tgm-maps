@@ -1,6 +1,9 @@
 {
 	"name": "Senex 3",
-	"authors": ["ParaPenguin", "ViceWatercolour"],
+	"authors": [
+		{"uuid": "44df6b20-168f-4389-b7ac-434518207c2f", "username": "ParaPenguin"},
+		{"uuid": "bf331953-4f92-43ee-8abc-7544b8234936", "username": "ViceWatercolour"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

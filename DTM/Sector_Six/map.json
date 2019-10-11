@@ -1,6 +1,8 @@
 {
 	"name": "Sector Six",
-	"authors": ["Ogrey"],
+	"authors": [
+		{"uuid": "da98a2f1-673c-4cec-b547-e0a342abfde4", "username": "Ogrey"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

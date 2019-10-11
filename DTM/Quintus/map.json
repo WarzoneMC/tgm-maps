@@ -1,6 +1,8 @@
 {
 	"name": "Quintus",
-	"authors": ["G_SKIPPY"],
+	"authors": [
+		{"uuid": "3893a242-cc17-447e-9b1c-774fc8941af8", "username": "G_SKIPPY"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [

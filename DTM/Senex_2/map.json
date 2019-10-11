@@ -1,6 +1,9 @@
 {
 	"name": "Senex 2",
-	"authors": ["ParaPhoenix", "ParaPenguin"],
+	"authors": [
+		{"uuid": "44df6b20-168f-4389-b7ac-434518207c2f", "username": "ParaPenguin"},
+		{"uuid": "24ca383e-6794-41a0-a195-7f40e21d6c3e", "username": "ParaPhoenix"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

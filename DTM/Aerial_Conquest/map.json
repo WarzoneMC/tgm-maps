@@ -1,6 +1,8 @@
 {
 	"name": "Aerial Conquest",
-	"authors": ["Scoolins"],
+	"authors": [
+		{"uuid": "e19c0b9f-d47c-4a4e-b323-fdba2939a19c", "username": "Scoolins"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
