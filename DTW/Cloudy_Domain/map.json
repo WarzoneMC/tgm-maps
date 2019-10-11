@@ -1,6 +1,8 @@
 {
 	"name": "Cloudy Domain",
-	"authors": ["BitCritterSpyro"],
+	"authors": [
+		{"uuid": "1efb8402-9073-4099-b379-41edeae67fe6", "username": "BitCritterSpyro"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

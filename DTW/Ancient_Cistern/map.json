@@ -1,6 +1,8 @@
 {
 	"name": "Ancient Cistern",
-	"authors": ["Mega_Rascal"],
+	"authors": [
+		{"uuid": "8e96ab64-74fa-46ab-b436-d35187e118af", "username": "Mega_Rascal"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

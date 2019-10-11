@@ -1,6 +1,8 @@
 {
 	"name": "Avalanche Mini",
-	"authors": ["oib5"],
+	"authors": [
+		{"uuid": "904bf23f-67c5-484a-ae60-61f4ec150b48", "username": "oib5"}
+	],
 	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
