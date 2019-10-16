@@ -73,6 +73,11 @@
 	"itemremove": [
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
 	],
+	"crafting": {
+		"remove": [
+			"shears"
+		]
+	},
 	"killstreaks": [
 		{
 			"count": 1,
