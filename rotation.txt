@@ -1,7 +1,6 @@
 Destiny
-Pluto
 Port Town 2
-Warlockdtw
+WarlockDTW
 Icebound
 Japan
 Shroom Land
@@ -23,7 +22,7 @@ Outback
 Kyoto
 Scarescape
 Race For Victory
-Desertcountry
+DesertCountry
 Fracture
 Egypt
 Terrace
@@ -32,7 +31,6 @@ Windworks
 Senex 3
 Rooted
 Mayan Apocalypse
-Bill's Town Blitz
 Arctic 2
 Cargo
 Timeless 
@@ -52,4 +50,4 @@ Unix
 Turf Wars
 Ring Race
 Oceanic
-Technowar
+TechnoWar
