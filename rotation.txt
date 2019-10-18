@@ -12,10 +12,9 @@ Gardens
 Ancient Cistern
 Persisto
 Cloudy Domain
-Ascenension
-Skylands
+Ascension
+Skylands Reborn
 Avalanche Mini
-Paddocks
 Stronghold
 Electri City
 Outback
@@ -40,7 +39,6 @@ Balloons Halloween
 Arizona
 Thrive V2
 Aerial Conquest
-Rooted Frontier 
 No Return
 Aztec
 Castles
@@ -49,5 +47,4 @@ Terrace 2
 Unix
 Turf Wars
 Ring Race
-Oceanic
 TechnoWar
