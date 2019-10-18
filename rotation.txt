@@ -32,7 +32,7 @@ Rooted
 Mayan Apocalypse
 Arctic 2
 Cargo
-Timeless 
+Timeless
 Snowy Wars
 Twin Peaks
 Balloons Halloween
@@ -40,7 +40,7 @@ Arizona
 Thrive V2
 Aerial Conquest
 No Return
-Aztec
+Aztec FFA
 Castles
 Sandstone 2
 Terrace 2
