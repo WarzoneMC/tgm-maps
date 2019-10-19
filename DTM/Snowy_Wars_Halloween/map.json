@@ -1,0 +1,103 @@
+{
+	"name": "Snowy Wars Halloween",
+	"authors": [
+		{"uuid": "c14862ba-058a-44a2-a1c3-bfb0b462e198", "username": "roro28gutier"}
+	],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-541, 13, 304, -90"},
+		{"teams": ["red"], "coords": "-571.5, 11, 259.5, 45"},
+		{"teams": ["blue"], "coords": "-619.5, 11, 349.5, -135"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-596, 10, 247",
+					"max": "-596, 11, 247"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-596, 11, 361",
+					"max": "-596, 10, 361"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-615, 10, 344", "max": "-625, oo, 354"},
+		{"id": "spec-spawn-protection", "type": "cuboid", "min": "-552, 0, 292", "max": "-533, oo, 315"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-577, 10, 264", "max": "-567, oo, 254"}
+	]
+}
