@@ -84,7 +84,8 @@
 		}
 	],
 	"itemremove": [
-		"skeleton skull", "wither skeleton skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "stone pickaxe", "stained glass", "arrow", "cooked beef", "golden apple",
+		"skeleton skull", "wither skeleton skull", "diamond chestplate", "iron leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

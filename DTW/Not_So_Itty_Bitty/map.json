@@ -69,6 +69,6 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "iron sword", "stone axe"
+		"*"
 	]
 }
