@@ -1,51 +1,46 @@
-WarlockDTW
-Port Town 2
-Bloody Trident
-Icebound
-Japan
-Shroom Land
-Oriental
-Formorgar 1
-Halloween Train
-Rendezvous Redux
-Village 2
-Gardens
-Ancient Cistern
-Perspookysto
-Cloudy Domain
-Ascension
-Skylands Reborn
 Avalanche Mini
-Stronghold
-Electri City
-Outback
-Kyoto
-Scarescape
-Race For Victory 2
-Desert Country
-Fracture
-Egypt
-Terrace
-Riverbank
-Windworks DTW
-Senex 3
-Rooted
-Mayan Apocalypse
-Arctic 2
-Cargo
-Timeless
-Snowy Wars Halloween
-Twin Peaks
-Balloons Halloween
-Arizona
-Thrive V2
-Aerial Conquest
-No Return
-Castles
-Jungle Spook
 Sandstone 2
-Terrace 2
+Desert Country
+Timeless
+Outback
+No Return
+Ancient Cistern
+Twin Peaks
+Electri City
+Fracture
+Kyoto
+Persisto
 Unix
-Turf Wars
-Haunted Rings
+Riverbank
+Ring Race
+Windworks DTW
+Skylands Reborn
+Mayan Apocalypse
+Race For Victory 2
+Terrace 2
+Cloudy Domain
+Village 2
+Aerial Conquest
+Japan
 TechnoWar
+Turf Wars
+Rooted
+Terrace
+Icebound
+Egypt
+Snowy Wars
+Senex 3
+WarlockDTW
+Formorgar 1
+Castles
+Stronghold
+Shroom Land
+Rendezvous Redux
+Oriental
+Arizona
+Arctic 2
+Thrive V2
+Cargo
+Port Town 2
+Ascension
+Gardens
