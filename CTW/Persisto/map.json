@@ -114,7 +114,7 @@
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-1, 0, 135", "max": "23, oo, 152"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-1, 0, 20", "max": "23, oo, 28"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-1, 0, 20", "max": "23, oo, 37"},
 
 		{"id": "green-wool", "type": "cuboid", "min": "60, 0, 134", "max": "72, oo, 110"},
 		{"id": "orange-wool", "type": "cuboid", "min": "-38, 0, 110", "max": "-50, oo, 134"},
