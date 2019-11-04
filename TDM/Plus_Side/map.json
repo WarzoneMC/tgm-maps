@@ -50,8 +50,8 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "display_name": "Quartz Sword", "enchantments": ["DAMAGE_ALL:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "display_name": "Cobalt Bow", "enchantments": ["ARROW_DAMAGE:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Cobalt Bow", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
 				
