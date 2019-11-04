@@ -14,20 +14,20 @@
 			"name": "Blue",
 			"color": "blue",
 			"min": 1,
-			"max": 50
+			"max": 30
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 50
+			"max": 30
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-76.5, 16, 99.5, -90"},
-		{"teams": ["blue"], "coords": "-106.5, 8, 166.5"},
-		{"teams": ["red"], "coords": "-106.5, 8, 32.5"}
+		{"teams": ["blue"], "coords": "-106.5, 4, 157.5, 180"},
+		{"teams": ["red"], "coords": "-106.5, 4, 41.5"}
 	],
     "points": {
         "target": 100
@@ -36,18 +36,24 @@
 		{
 			"name": "default",
 			"items": [
+				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "Laser Gun", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 1, "amount": 1},
+
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}
+				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "speed", "duration": 1000000, "amplifier": 2, "particles": false},
+				{"type": "jump", "duration": 1000000, "amplifier": 2, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "bow", "arrow"
 	],
 	"killstreaks": [
 		{
@@ -60,13 +66,20 @@
 			}
 		}
 	],
+	"damageControl": {
+		"fall": false
+	},
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
 	],
 
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"},
+
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
