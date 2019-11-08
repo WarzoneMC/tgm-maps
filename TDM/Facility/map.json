@@ -30,7 +30,7 @@
 		{"teams": ["red"], "coords": "-106.5, 4, 41.5"}
 	],
     "points": {
-        "target": 100
+        "target": 50
     },
 	"kits": [
 		{
@@ -49,6 +49,14 @@
 				{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
 				{"type": "speed", "duration": 1000000, "amplifier": 2, "particles": false},
 				{"type": "jump", "duration": 1000000, "amplifier": 2, "particles": false}
+			]
+		},
+		{
+			"name": "specs",
+			"teams": ["spectators"],
+			"items": [],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
 			]
 		}
 	],

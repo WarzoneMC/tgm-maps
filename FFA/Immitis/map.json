@@ -10,13 +10,13 @@
 		{
 			"id": "players", 
 			"name": "Players", 
-			"color": "dark_aqua", 
+			"color": "dark aqua", 
 			"min": 1, 
 			"max": 40
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-41.5, 267, 21.5, -135"},
+		{"teams": ["spectators"], "coords": "-41.5, 27, 21.5, -135"},
 		{"teams": ["players"], "coords": "-43.5, 22, -10.5, -45"},
 		{"teams": ["players"], "coords": "-17.5, 24, 15.5, -160"},
 		{"teams": ["players"], "coords": "2.5, 24, 11.5, 140"},

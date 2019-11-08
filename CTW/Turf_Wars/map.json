@@ -63,26 +63,26 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 8},
+				{"material": "glass", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 8},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "arrow",
-		"cooked beef", "oak planks", "glass", "iron axe", "iron pickaxe", "bow", "iron sword"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "glass", "oak planks", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
 	],
 	"killstreaks": [
 		{
