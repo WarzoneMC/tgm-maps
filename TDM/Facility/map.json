@@ -8,7 +8,7 @@
 	"gametype": "TDM",
 	"version": "1.1",
 	"stats": {"disable": true},
-    "teams": [
+    	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -29,9 +29,9 @@
 		{"teams": ["blue"], "coords": "-106.5, 4, 157.5, 180"},
 		{"teams": ["red"], "coords": "-106.5, 4, 41.5"}
 	],
-    "points": {
-        "target": 50
-    },
+    	"points": {
+        	"target": 50
+    	},
 	"kits": [
 		{
 			"name": "default",
