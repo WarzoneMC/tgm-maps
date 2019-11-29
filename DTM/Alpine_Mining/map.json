@@ -1,0 +1,133 @@
+{
+	"name": "Alpine Mining",
+	"authors": [
+		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"},
+		{"uuid": "c2848337-b526-4db0-9130-fabd0a5c7cfb", "username": "jollee999"},
+		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomRobotBoy"}
+	],
+	"version": "1.2",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "66.5, 57.5, 72.5, -90"},
+		{"teams": ["red"], "coords": "-41.5, 27, -175.5, -90"},
+		{"teams": ["blue"], "coords": "42.5, 27, 320.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-22, 34, 214",
+					"max": "-22, 36, 214" 
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument A",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "20, 32, 239",
+					"max": "20, 34, 239" 
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "22, 34, -70",
+					"max": "22, 36, -70"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-20, 32, -95",
+					"max": "-20, 34, -95"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "stone shovel", "slot": 4, "unbreakable": true},
+
+				{"type": "item", "material": "glass", "slot": 5, "amount": 32},
+				{"type": "item", "material": "oak planks", "slot": 6, "amount": 32},
+				{"type": "item", "material": "bread", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "stone shovel", "glass", "oak planks", "bread",
+		"golden apple", "arrow", "iron helmet", "leather chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["blue", "red"],
+			"regions": ["map"], "message": "&cYou cannot build outside of the map."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "map", "type": "cuboid", "min": "-46, 0, -184", "max": "46, oo, 328"},
+
+		{"id": "blue-spawn", "type": "cuboid", "min": "28, 0, 315", "max": "45, oo, 325"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-45, 0, -181", "max": "-28, oo, -171"}
+	]
+}
