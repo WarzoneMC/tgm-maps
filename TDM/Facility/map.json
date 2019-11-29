@@ -83,7 +83,6 @@
 
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
 	],
-
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"},
