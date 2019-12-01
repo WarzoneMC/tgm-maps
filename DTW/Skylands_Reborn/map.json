@@ -59,6 +59,7 @@
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
+
 				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
@@ -90,30 +91,22 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-portal", "red-portal"],
+			"regions": ["blue-spawn", "red-spawn", "blue-portal", "red-portal"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"},
 		{"id": "blue-portal", "type": "cuboid", "min": "15, 19, 31", "max": "15, 20, 31"},
-		{"id": "red-portal", "type": "cuboid", "min": "73, 19, -3", "max": "73, 20, -3"}
+		{"id": "red-portal", "type": "cuboid", "min": "73, 19, -3", "max": "73, 20, -3"},
+
+		{"id": "blue-spawn", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
+		{"id": "red-spawn", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"}
 	],
 	"portals": [
-		{
-			"from": "blue-portal",
-			"to": "69.5, 18.81250, 2.5",
-			"sound": false,
-			"teams": ["blue", "red"]
-		},
-		{
-			"from": "red-portal",
-			"to": "19.5, 18.81250, 26.5, 180",
-			"sound": false,
-			"teams": ["red", "blue"]
-		}
+		{"from": "blue-portal", "to": "69.5, 19, 2.5", "sound": false, "teams": ["blue", "red"]},
+		{"from": "red-portal", "to": "19.5, 19, 26.5, 180", "sound": false, "teams": ["red", "blue"]}
 	]
 }
