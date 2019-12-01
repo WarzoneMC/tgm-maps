@@ -1,0 +1,55 @@
+{
+	"name": "Golden Gate",
+	"authors": [
+		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomRobotBoy"}
+	],
+	"gametype": "TDM",
+	"version": "1.1",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "50.5, 30, 40.5"},
+		{"teams": ["blue"], "coords": "148.5, 26, 40.5, 90"},
+		{"teams": ["red"], "coords": "-47.5, 26, 40.5, -90"}
+	],
+	"points": {
+		"target": 25
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"effect": "speed", "duration": 10000, "amplifier": 2, "particles": false},
+				{"effect": "jump", "duration": 10000, "amplifier": 0, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+	]
+}
