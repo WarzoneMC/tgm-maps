@@ -76,6 +76,9 @@
 			}
 		}
 	],
+	"damageControl": {
+		"FALL": false
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
