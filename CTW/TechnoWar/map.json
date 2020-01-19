@@ -1,6 +1,8 @@
 {
 	"name": "TechnoWar",
-	"authors": ["_Rascal"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [
@@ -78,7 +80,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron axe", "leather helmet", "oak planks", "arrow", "golden apple", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"iron sword", "bow", "iron axe", "oak planks", "golden apple", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

@@ -1,6 +1,9 @@
 {
 	"name": "Port Town 2",
-	"authors": ["timaeusTestified", "Fouled"],
+	"authors": [
+		{"uuid": "da98a2f1-673c-4cec-b547-e0a342abfde4", "username": "timaeusTestified"},
+		{"uuid": "0b8f95fa-0f40-4f28-9fd0-b8e243bb6800", "username": "Fouled"}
+	],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -115,7 +118,7 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "purple-spawn-protection", "type": "cuboid", "min": "4, 0, 142", "max": "-4, oo, 142"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "4, 0, 115", "max": "-4, oo, 142"},
 		{"id": "green-spawn-protection", "type": "cuboid", "min": "4, 0, -94", "max": "-4, oo, -67"}
 	]
 }

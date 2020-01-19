@@ -1,6 +1,8 @@
 {
 	"name": "Spooky",
-	"authors": ["Scoolins"],
+	"authors": [
+		{"uuid": "e19c0b9f-d47c-4a4e-b323-fdba2939a19c", "username": "Scoolins"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -82,7 +84,8 @@
 		}
 	],
 	"itemremove": [
-		"skeleton skull", "wither skeleton skull", "diamond chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "stone pickaxe", "stained glass", "arrow", "cooked beef", "golden apple",
+		"skeleton skull", "wither skeleton skull", "diamond chestplate", "iron leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

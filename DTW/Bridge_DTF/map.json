@@ -1,6 +1,8 @@
 {
 	"name": "Bridge DTF",
-	"authors": ["Clijmart"],
+	"authors": [
+		{"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -70,7 +72,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "wool"
+		"stone sword", "bow", "iron pickaxe", "stone axe", "oak planks", "cooked fish", "arrow", "golden apple",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

@@ -1,6 +1,9 @@
 {
 	"name": "Itty Bitty KOTH",
-	"authors": ["_Rascal", "BennyDoesStuff"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"}
+	],
 	"version": "1.0.0",
 	"gametype": "KOTH",
 	"teams": [
@@ -32,7 +35,7 @@
 			{
 				"name": "Center",
 				"region": {
-					"min": {"x": 2, "y": 2, "z": 2},
+					"min": {"x": 2, "y": 1, "z": 2},
 					"max": {"x": -2, "y": 6, "z": -2}
 				}
 			}

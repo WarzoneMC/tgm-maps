@@ -1,6 +1,12 @@
 {
 	"name": "Farmlands",
-	"authors": ["Mariofan413", "iDurpy", "1Papyrus1", "Laqqinq", "DanielTheDJ"],
+	"authors": [
+		{"uuid": "cbb00ef8-d3f2-4ce8-bab7-bb8cd4083f92", "username": "Mariofan413"},
+		{"uuid": "c3c8fd96-0106-47fa-b466-dac23e76c934", "username": "iDurpy"},
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "1Papyrus1"},
+		{"uuid": "d88a2d8e-5a4b-4e26-b414-c765c307b1c9", "username": "Laqqinq"},
+		{"uuid": "e7d6a68e-3bba-4ac3-9dd3-f88411b5b11b", "username": "DanielTheDJ"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"filters": [
 		{

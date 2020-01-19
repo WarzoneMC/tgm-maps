@@ -1,6 +1,11 @@
 {
 	"name": "Race for Victory 2",
-	"authors": ["Plastix", "Apple", "Anxuiz", "IM_A_H0B0"],
+	"authors": [
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"},
+		{"uuid": "82c796a5-c033-43be-af30-fa06496995f9", "username": "IM_A_H0B0"},
+		{"uuid": "3c7db14d-ac4b-4e35-b2c6-3b2237f382be", "username": "MonsieurApple"},
+		{"uuid": "25961a08-c90c-4abd-b136-dad90e89c2eb", "username": "Anxuiz"}
+	],
 	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [
@@ -63,8 +68,8 @@
 			"items": [
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "iron axe", "slot": 3, "unbreakable": true},
 				{"material": "iron pickaxe", "enchantments": ["dig_speed:1", "durability:3"], "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"material": "oak planks", "slot": 4, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
@@ -80,8 +85,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "leather helmet", "glass", "ladder", "cooked beef", 
-		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "beacon", "wool"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "glass", "ladder", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

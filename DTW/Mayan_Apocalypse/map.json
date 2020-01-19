@@ -1,6 +1,8 @@
 {
 	"name": "Mayan Apocalypse",
-	"authors": ["Mikeg542"],
+	"authors": [
+		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"}
+	],
 	"version": "1.0.6",
 	"gametype": "DTM",
 	"teams": [
@@ -59,7 +61,7 @@
 				
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
-				{"type": "item", "material": "golden Apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
@@ -71,7 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "golden apple", "cooked beef", "arrow",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"filters": [
 		{

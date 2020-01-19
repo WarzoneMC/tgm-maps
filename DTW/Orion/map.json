@@ -1,6 +1,8 @@
 {
 	"name": "Orion",
-	"authors": ["Obelistics"],
+	"authors": [
+		{"uuid": "b03360db-b8cd-49de-8ba1-b7920c2238a9", "username": "Obelistics"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +69,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "arrow"
+		"stone sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

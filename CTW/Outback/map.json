@@ -1,6 +1,8 @@
 {
 	"name": "Outback",
-	"authors": ["Rockymine"],
+	"authors": [
+		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "Rockymine"}
+	],
 	"version": "1.2.3",
 	"gametype": "CTW",
 	"teams": [
@@ -78,8 +80,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "oak planks", "cooked beef", 
-		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

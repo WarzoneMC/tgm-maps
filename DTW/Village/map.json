@@ -1,6 +1,8 @@
 {
 	"name": "Village",
-	"authors": ["BlockHeads36"],
+	"authors": [
+		{"uuid": "665f52b7-7ecf-4694-877c-d4adc176bb6f", "username": "BlockHeads36"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +69,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "arrow"
+		"stone sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"filters": [
 		{

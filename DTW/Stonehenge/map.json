@@ -1,6 +1,10 @@
 {
 	"name": "Stonehenge",
-	"authors": ["Luuke", "Loks"],
+	"authors": [
+		{"uuid": "2dc9b2a1-6063-499b-9685-aa97b978707a", "username": "Luuke"},
+		{"uuid": "2c1cf65f-f668-41eb-812e-091391eb2896", "username": "Loks"}
+
+	],
 	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
@@ -69,8 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "wool", 
-		"arrow", "cooked beef", "oak planks", "stone axe", "bow", "iron sword"
+		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

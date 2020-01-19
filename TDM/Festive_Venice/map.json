@@ -1,0 +1,82 @@
+{
+	"name": "Festive Venice",
+	"gametype": "TDM",
+	"version": "1.0.3",
+	"authors": [
+		{"uuid": "900b844e-747c-4d5b-b9e3-afa714ec9bd5", "username": "UnPhair"},
+		{"uuid": "468c7d75-62e0-4d11-8fc1-4888965be11c", "username": "matt772"}
+	],
+	"teams": [
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 64
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 64
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-103.5, 58, -110.5, -45"},
+		{"teams": ["green"], "coords": "0.5, 12, -68.5"},
+		{"teams": ["red"], "coords": "0.5, 12, 68.5, 180"}
+	],
+	"points": {
+		"target": 30
+	},
+	"time": {
+		"limit": 900
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["arrow infinite:1"], "unbreakable": true},
+				{"type": "item", "material": "iron shovel", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "snow block", "slot": 3, "amount": 8},
+				{"type": "item", "material": "golden apple", "slot": 7},
+				{"type": "item", "material": "pumpkin pie", "slot": 8, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["protection fall:4"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "heal", "duration": 100, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 100, "amplifier": 255, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron shovel", "snow block", "golden apple", "pumpkin pie",
+		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["green", "red"],
+			"regions": ["map"], "message": "&cYou cannot build outside of the map."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["green", "red"],
+			"regions": ["green-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "map", "type": "cuboid", "min": "-83, 0, -90", "max": "83, oo, 90"},
+
+		{"id": "green-spawn", "type": "cuboid", "min": "-5, 0, -73", "max": "5, oo, -63"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-5, 0, 63", "max": "5, oo, 73"}
+	]
+}

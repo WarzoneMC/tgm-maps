@@ -1,6 +1,9 @@
 {
 	"name": "Riverbank",
-	"authors": ["rockymine", "yoyo_power"],
+	"authors": [
+		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"},
+		{"uuid": "07fa10c6-f564-4630-861e-fe134ae27527", "username": "yoyo_power"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -88,7 +91,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "boat spruce", "baked potato", "arrow",
+		"stone sword", "bow", "diamond pickaxe", "spruce boat", "baked potato", "arrow",
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [

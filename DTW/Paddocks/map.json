@@ -1,6 +1,8 @@
 {
 	"name": "Paddocks",
-	"authors": ["Henrs"],
+	"authors": [
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
+	],
 	"version": "1.0.4",
 	"gametype": "DTM",
 	"teams": [
@@ -69,7 +71,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool", "arrow"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

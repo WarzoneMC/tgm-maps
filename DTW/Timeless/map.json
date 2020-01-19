@@ -1,6 +1,11 @@
 {
 	"name": "Timeless",
-	"authors": ["MdsCool", "JackJack2822", "Mikaatjuhh", "Disastur"],
+	"authors": [
+		{"uuid": "62b3744d-8be7-470f-b341-3900e8b52b0e", "username": "MdsCool"},
+		{"uuid": "a6215bea-c992-4d68-843a-0eb6ce8eea49", "username": "JackJack2822"},
+		{"uuid": "eaa3251f-b2ea-494b-8729-4cbe36f0192b", "username": "Mikaatjuhh"},
+		{"uuid": "c5772145-2c33-49e6-8729-cef7cc20f0cc", "username": "Disastur"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -31,8 +36,17 @@
 				"teams": ["red"],
 				"materials": ["red wool"],
 				"region": {
-					"min": "1128, 62, 253",
-					"max": "1122, 69, 259"
+					"type": "meta",
+					"regions": [
+						{
+							"min": "1123, 62, 254",
+							"max": "1127, 70, 258"
+						},
+						{
+							"min": "1045, 62, 254",
+							"max": "1049, 70, 258"
+						}
+					]
 				},
 				"health": 10
 			},
@@ -41,8 +55,17 @@
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
-					"min": "1045, 62, 382",
-					"max": "1127, 70, 378"
+					"type": "meta",
+					"regions": [
+						{
+							"min": "1123, 62, 378",
+							"max": "1127, 70, 382"
+						},
+						{
+							"min": "1045, 62, 378",
+							"max": "1049, 70, 382"
+						}
+					]
 				},
 				"health": 10
 			}
@@ -68,7 +91,8 @@
 		}
 	],	
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

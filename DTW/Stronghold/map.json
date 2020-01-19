@@ -1,6 +1,10 @@
 {
 	"name": "Stronghold",
-	"authors": ["_Rascal", "Pndq", "Echological"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "c78d4660-635a-417c-ad28-b432b6804f6b", "username": "Pndq"},
+		{"uuid": "9f48f032-bb96-453b-9eee-201a8d030b61", "username": "Echological"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -69,7 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "iron chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "iron chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

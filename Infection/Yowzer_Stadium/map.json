@@ -1,0 +1,72 @@
+{
+	"name": "Yowzer Stadium",
+	"authors": [
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"},
+		{"uuid": "4e55a4a3-9b70-4a0a-b4ed-b81415ae7b80", "username": "draem"},
+		{"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
+		{"uuid": "c78d4660-635a-417c-ad28-b432b6804f6b", "username": "Pndq"},
+		{"uuid": "d2f13c61-eacc-46c2-893f-ffaff81486f6", "username": "Moia"}
+	],
+	"gametype": "Infected",
+	"version": "1.0",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "Infected",
+			"name": "Infected",
+			"color": "green",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "23.5, 96, -3, -90"},
+		{"teams": ["infected"], "coords": "-98, 66, -2.5, -90"},
+		{"teams": ["humans"], "coords": "0, 68, -27"}
+	],
+	"infection": {
+		"length": 7
+	},
+	"kits": [
+		{
+			"name": "Humans",
+			"teams": ["humans"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Infected",
+			"teams": ["infected"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+	]
+}

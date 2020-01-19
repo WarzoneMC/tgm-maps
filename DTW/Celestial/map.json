@@ -1,6 +1,9 @@
 {
 	"name": "Celestial",
-	"authors": ["_Rascal", "Mega_Rascal"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "8e96ab64-74fa-46ab-b436-d35187e118af", "username": "Mega_Rascal"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +70,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak log", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

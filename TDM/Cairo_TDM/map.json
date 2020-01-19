@@ -58,19 +58,16 @@
 		}
 	],
 	"itemremove": [
-		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "cooked chicken", "ladder"
+		"stone sword", "bow", "ladder", "golden apple", "arrow",
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["red", "blue"], 
-			"regions": ["north-wall", "south-wall", "east-wall", "west-wall"], 
-			"message": "&cYou cannot build outside the playable region."
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["blue", "red"],
+			"regions": ["map"], "message": "&cYou cannot build outside of the map."
 		}
 	],
 	"regions": [
-		{"id": "north-wall", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, 104"},
-		{"id": "south-wall", "type": "cuboid", "min": "-oo, -oo, 196", "max": "oo, oo, oo"},
-		{"id": "east-wall", "type": "cuboid", "min": "187, -oo, -oo", "max": "oo, oo, oo"},
-		{"id": "west-wall", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "95, oo, oo"}
+		{"id": "map", "type": "cuboid", "min": "96, 0, 105", "max": "186, oo, 195"}
 	]
 }

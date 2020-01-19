@@ -1,6 +1,8 @@
 {
 	"name": "Not So Itty Bitty",
-	"authors": ["_Rascal"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"stats": {"disable": true},
@@ -67,6 +69,6 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool", "iron sword", "stone axe"
+		"*"
 	]
 }

@@ -1,6 +1,8 @@
 {
 	"name": "Ascension 2",
-	"authors": ["ViceWatercolour"],
+	"authors": [
+		{"uuid": "bf331953-4f92-43ee-8abc-7544b8234936", "username": "ViceWatercolour"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -69,7 +71,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

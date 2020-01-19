@@ -1,6 +1,8 @@
 {
 	"name": "Terrace",
-	"authors": ["ItzLany"],
+	"authors": [
+		{"uuid": "adc72590-0a22-4f29-b04b-b4e05e1c7b60", "username": "ItzLany"}
+	],
 	"version": "1.2.3",
 	"gametype": "DTM",
 	"teams": [
@@ -69,7 +71,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

@@ -1,6 +1,11 @@
 {
 	"name": "Persisto",
-	"authors": ["Timothee38", "auxdempster", "re_cel", "Dracoheart2"],
+	"authors": [
+		{"uuid": "8f9344cf-7367-4e28-9f24-5c66422f28c9", "username": "Timothee38"},
+		{"uuid": "03ba5ebd-5ded-4de6-93b0-c86d0b9002b7", "username": "auxdempster"},
+		{"uuid": "cbd0da49-26ac-46ef-b91d-47c2bb8d23bd", "username": "re_cel"},
+		{"uuid": "b0900577-7604-4dc7-9e82-f431da31e456", "username": "Dracoheart2"}
+	],
 	"version": "1.3.3",
 	"gametype": "CTW",
 	"teams": [
@@ -78,7 +83,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "leather helmet", "oak planks", "arrow", "golden apple", "chainmail chestplate", "leather leggings", "iron boots"
+		"stone sword", "bow", "iron pickaxe", "glass", "oak planks", "golden apple", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{
@@ -108,7 +114,7 @@
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-1, 0, 135", "max": "23, oo, 152"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-1, 0, 20", "max": "23, oo, 28"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-1, 0, 20", "max": "23, oo, 37"},
 
 		{"id": "green-wool", "type": "cuboid", "min": "60, 0, 134", "max": "72, oo, 110"},
 		{"id": "orange-wool", "type": "cuboid", "min": "-38, 0, 110", "max": "-50, oo, 134"},

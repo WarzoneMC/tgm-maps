@@ -1,6 +1,10 @@
 {
 	"name": "Nuke",
-	"authors": ["N11ck", "Teejers", "RedDemptr"],
+	"authors": [
+		{"uuid": "27ac2daf-3c38-4b8e-9448-46f221bb612a", "username": "N11ck"},
+		{"uuid": "39a9e1b5-1e1d-40c0-8c16-69a9568efa72", "username": "Teejers"},
+		{"uuid": "c4ad59fd-a7c6-42f1-8a5f-5af0aa60353b", "username": "RedDemptr"}
+	],
 	"gametype": "Infected",
 	"version": "1.0",
 	"stats": {"disable": true},
@@ -61,6 +65,6 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail chestplate", "chainmail leggings"
 	]
 }

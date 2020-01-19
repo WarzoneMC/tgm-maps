@@ -1,6 +1,8 @@
 {
 	"name": "Planets",
-	"authors": ["WomanofWar"],
+	"authors": [
+		{"uuid": "bc0117b3-2055-4461-bdbf-0ba7158b501a", "username": "WomanOfWar"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -79,7 +81,8 @@
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn-prot", "blue-spawn-prot"], "message": "&cYou may not interact with the spawn area!"}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow", "wool", "oak logs", "glass"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "glass", "golden carrot", "arrow", "golden apple",
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

@@ -1,6 +1,13 @@
 {
 	"name": "Christmas Country",
-	"authors": ["OCNs_OMEN", "Sp33dfr3ak", "Valkyyyy", "SaltyDude44", "byRobo", "Alex_Plosivo"],
+	"authors": [
+		{"uuid": "b5967591-14fc-421f-a5e2-931498e10fb8", "username": "OCNs_OMEN"},
+		{"uuid": "6d256510-f2ec-4a5b-b678-fc01c5abd7b3", "username": "Sp33dfr3ak"},
+		{"uuid": "f066a092-d825-4316-bc9a-5f8ddd21b167", "username": "Valkyyyy"},
+		{"uuid": "6972affb-504d-4114-b52f-696e5b567095", "username": "SaltyDude44"},
+		{"uuid": "d1e3251c-def5-4328-a7e9-09335934d316", "username": "byRobo"},
+		{"uuid": "2f4ec1a6-10bd-4a5c-8054-b7c56999d79b", "username": "Alex_Plosivo"}
+	],
 	"version": "1.0.2",
 	"gametype": "CTW",
 	"teams": [
@@ -78,7 +85,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "oak planks", "arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "arrow", "golden apple", "cooked beef",
+		"leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

@@ -1,6 +1,8 @@
 {
 	"name": "Icebound",
-	"authors": ["Chicky"],
+	"authors": [
+		{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "Chicky"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -55,7 +57,7 @@
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "stone spade", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "stone shovel", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 
@@ -70,7 +72,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "stone shovel", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

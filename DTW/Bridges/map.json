@@ -1,6 +1,8 @@
 {
 	"name": "Bridges",
-	"authors": ["Nightsent"],
+	"authors": [
+		{"uuid": "0fee9b73-72ce-4793-926f-c2c45340f480", "username": "Nightsent"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +69,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"leather helmet", "chainmail chestplate", "chainmail leggings", "leather boots"
 	],
 	"filters": [
 		{

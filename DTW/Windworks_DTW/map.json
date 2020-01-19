@@ -1,0 +1,105 @@
+{
+	"name": "Windworks DTW",
+	"authors": [
+		{"uuid": "c1d94f18-6ea3-495a-8d1b-7d9eaf393f64", "username": "JapaneseSquid"},
+		{"uuid": "f1352a57-4fe3-4f0c-b867-56b771fc1a0f", "username": "leTea"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "36.5, 99, -31.5, 90"},
+		{"teams": ["red"], "coords": "-80.5, 7, -2.5, -90"},
+		{"teams": ["blue"], "coords": "3.5, 7, 81.5, -180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "-70, 11, 20",
+					"max": "-72, 14, 18"
+				},
+				"health": 10
+			},
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "-18, 14, 72",
+					"max": "-20, 11, 70"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 6, "amount": 32},
+				{"type": "item", "material": "glass", "slot": 7, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron axe", "iron pickaxe", "golden apple", "cooked beef", "glass", "oak log", "oak planks", "arrow",
+		"iron helmet", "leather chestplate", "chainmail leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "middle"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "middle", "type": "cuboid", "min": "-31, 0, 77", "max": "-77, oo, 34"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-4, 0, 74", "max": "10, oo, 88"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-74, 0, 4", "max": "-88, oo, -10"}
+	]
+}

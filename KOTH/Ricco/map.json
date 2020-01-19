@@ -1,6 +1,8 @@
 {
 	"name": "Ricco",
-	"authors": ["Henrs"],
+	"authors": [
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
+	],
 	"version": "1.0",
 	"gametype": "KOTH",
 	"teams": [
@@ -32,22 +34,22 @@
 			{
 				"name": "Top Point",
 				"region": {
-					"min": {"x": 3.5, "y": 8, "z": 3.5},
-					"max": {"x": -2.5, "y": 10, "z": -2.5}
+					"min": {"x": -3, "y": 8, "z": 3},
+					"max": {"x": 3, "y": 10, "z": -3}
 				}
 			},
 			{
 				"name": "A Point",
 				"region": {
-					"min": {"x": 19.5, "y": 2, "z": -16.5},
-					"max": {"x": 25.5, "y": 4, "z": -22.5}
+					"min": {"x": 19, "y": 2, "z": -17},
+					"max": {"x": 25, "y": 4, "z": -23}
 				}
 			},
 			{
 				"name": "B Point",
 				"region": {
-					"min": {"x": -18.5, "y": 2, "z": 17.5},
-					"max": {"x": -24.5, "y": 4, "z": 23.5}
+					"min": {"x": -19, "y": 2, "z": 17},
+					"max": {"x": -25, "y": 4, "z": 23}
 				}
 			}
 		]

@@ -1,6 +1,8 @@
 {
 	"name": "Arctic 2",
-	"authors": ["_Rascal"],
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
 	"version": "2.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -69,8 +71,14 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
+	"crafting": {
+		"remove": [
+			"shears"
+		]
+	},
 	"killstreaks": [
 		{
 			"count": 1,

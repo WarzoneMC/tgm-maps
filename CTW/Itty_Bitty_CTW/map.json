@@ -1,0 +1,92 @@
+{
+	"name": "IttyBitty CTW",
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
+	"version": "1.2.3",
+	"gametype": "CTW",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue", 
+			"name": "Blue", 
+			"color": "blue", 
+			"min": 1, 
+			"max": 40
+		},
+		{
+			"id": "red", 
+			"name": "Red", 
+			"color": "red", 
+			"min": 1, 
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "12.5, 35, 14.5"},
+		{"teams": ["red"], "coords": "-1.5, 23, 32.5"},
+		{"teams": ["blue"], "coords": "26.5, 23, 32"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Purple", 
+				"color": "dark purple", 
+				"woolcolor": "purple",
+				"teams": ["blue"], 
+				"region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}
+			},
+			{
+				"name": "Magenta", 
+				"color": "dark purple", 
+				"woolcolor": "magenta",
+				"teams": ["blue"], 
+				"region": {"min": "1, 10, -81", "max": "1, 10, -81"}
+			},
+			{
+				"name": "Cyan", 
+				"color": "dark aqua",
+				"woolcolor": "cyan", 
+				"teams": ["red"], 
+				"region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}
+			},
+			{
+				"name": "Blue", 
+				"color": "blue", 
+				"woolcolor": "blue",
+				"teams": ["red"], 
+				"region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "stone axe", "slot": 3, "unbreakable": true},
+				{"material": "oak planks", "slot": 12, "amount": 64},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "blue-room", "min": "31, 22, 41", "max": "37, 30, 37"},
+		{"id": "cyan-room", "min": "31, 22, 23", "max": "-37, 30, 27"},
+
+		{"id": "purple-room", "min": "-7, 22, 27", "max": "-13, 30, 23"},
+		{"id": "pink-room", "min": "-13, 30, 37", "max": "-7, 22, 41"}
+	]
+}

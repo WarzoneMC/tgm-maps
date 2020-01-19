@@ -1,6 +1,8 @@
 {
 	"name": "Rooted",
-	"authors": ["rockymine"],
+	"authors": [
+		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"}
+	],
 	"version": "1.3.5",
 	"gametype": "DTM",
 	"teams": [
@@ -71,8 +73,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool", "arrow", 
-		"cooked beef", "oak planks", "iron shovel", "iron axe", "iron pickaxe", "bow", "iron sword"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "oak planks", "cooked beef", "arrow", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

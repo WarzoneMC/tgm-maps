@@ -1,6 +1,9 @@
 {
 	"name": "A New Day",
-	"authors": ["dcstarwars", "JTerwiesch"],
+	"authors": [
+		{"uuid": "b5071a63-bba3-491a-909f-02db314f4319", "username": "dcstarwars"},
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTerwiesch"}
+	],
 	"version": "1.0.6",
 	"gametype": "CTW",
 	"teams": [
@@ -77,8 +80,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "oak planks", "cooked beef", 
-		"arrow", "golden apple", "chainmail chestplate", "chainmail leggings", "leather boots", "beacon"
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "golden apple", "cooked beef", "arrow",
+		"leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

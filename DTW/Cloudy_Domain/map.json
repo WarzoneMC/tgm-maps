@@ -1,6 +1,8 @@
 {
 	"name": "Cloudy Domain",
-	"authors": ["BitCritterSpyro"],
+	"authors": [
+		{"uuid": "1efb8402-9073-4099-b379-41edeae67fe6", "username": "BitCritterSpyro"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [
@@ -57,9 +59,9 @@
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
-
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+				
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
@@ -68,7 +70,8 @@
 		}
 	],
 	"itemremove": [
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "iron axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

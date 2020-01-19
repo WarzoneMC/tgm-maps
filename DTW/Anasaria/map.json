@@ -1,6 +1,9 @@
 {
 	"name": "Anasaria",
-	"authors": ["Thallid", "Pud96"],
+	"authors": [
+		{"uuid": "5a5a27fa-084e-44ff-803e-a3b856c34b26", "username": "Thallid"},
+		{"uuid": "0d3d5f5f-2513-43bc-8f70-6f837fa270bd", "username": "Pud96"}
+	],
 	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
@@ -89,7 +92,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "wool"
+		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
 	"killstreaks": [
 		{

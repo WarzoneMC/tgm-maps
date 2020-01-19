@@ -1,6 +1,8 @@
 {
 	"name": "Twin Peaks",
-	"authors": ["Scoolins"],
+	"authors": [
+		{"uuid": "e19c0b9f-d47c-4a4e-b323-fdba2939a19c", "username": "Scoolins"}
+	],
 	"version": "2.0.1",
 	"gametype": "DTM",
 	"teams": [
@@ -70,7 +72,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "iron chestplate", "leather leggings", "leather boots", "wool", "iron sword", "bow", "stone axe", "iron pickaxe", "oak planks", "oak planks", "cooked beef", "arrow"
+		"iron sword", "bow", "stone axe", "iron pickaxe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"leather helmet", "iron chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
 		{

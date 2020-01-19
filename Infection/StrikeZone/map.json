@@ -1,6 +1,11 @@
 {
 	"name": "StrikeZone",
-	"authors": ["N11cK", "TehRaptor", "Attendants", "BennyDoesStuff"],
+	"authors": [
+		{"uuid": "27ac2daf-3c38-4b8e-9448-46f221bb612a", "username": "N11ck"},
+		{"uuid": "42195cb9-b21b-42f5-b938-5ef46f303fcd", "username": "TehRaptor"},
+		{"uuid": "6b093498-6541-447a-bee6-9615484f1350", "username": "Attendants"},
+		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"}
+	],
 	"gametype": "Infected",
 	"version": "1.0",
 	"stats": {"disable": true},
@@ -61,6 +66,6 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail leggings", "chainmail chestplate"
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail chestplate", "chainmail leggings"
 	]
 }

@@ -1,0 +1,123 @@
+{
+	"name": "Unix Holiday",
+	"authors": [
+		{"uuid": "c660918b-4000-44d4-b735-d3fa6f166110", "username": "Red_Dead"},
+		{"uuid": "21822eba-a4cb-4f1e-b803-3871d5ac0ff3", "username": "Izjust4fun"}
+	],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "cynx",
+			"name": "Cynx",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "cyprone",
+			"name": "Cyprone",
+			"color": "gold",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-665.5, 74, -1177.5, -90"},
+		{"teams": ["cynx"], "coords": "-665.5, 19, -1096, 180"},
+		{"teams": ["cyprone"], "coords": "-665.5, 19, -1258.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["cynx"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-718, 29, -1096",
+					"max": "-718, 29, -1096"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["cynx"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-614, 29, -1096",
+					"max": "-614, 29, -1096"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["cyprone"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-614, 29, -1260",
+					"max": "-614, 29, -1260"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["cyprone"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-718, 29, -1260",
+					"max": "-718, 29, -1260"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["cynx", "cyprone"],
+			"regions": ["cynx-spawn-protection", "cyprone-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["cynx"], "regions": ["cyprone-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["cyprone"], "regions": ["cynx-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "cynx-spawn-protection", "type": "cuboid", "min": "-649, 0, -1119", "max": "-685, oo, -1086"},
+		{"id": "cyprone-spawn-protection", "type": "cuboid", "min": "-647, 0, -1269", "max": "-683, oo, -1237"}
+	]
+}

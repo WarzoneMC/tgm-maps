@@ -1,6 +1,9 @@
 {
 	"name": "Electri City",
-	"authors": ["leTea", "KyotoSquid"],
+	"authors": [
+		{"uuid": "f1352a57-4fe3-4f0c-b867-56b771fc1a0f", "username": "leTea"},
+		{"uuid": "c1d94f18-6ea3-495a-8d1b-7d9eaf393f64", "username": "KyotoSquid"}	
+	],
 	"version": "1.0.0",
 	"gametype": "CTW",
 	"teams": [

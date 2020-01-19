@@ -1,6 +1,8 @@
 {
 	"name": "Steamgrown",
-	"authors": ["Henrs"],
+	"authors": [
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
+	],
 	"version": "1.2.0",
 	"gametype": "DTM",
 	"teams": [
@@ -67,7 +69,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow",
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],	
 	"killstreaks": [
 		{

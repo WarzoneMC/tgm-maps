@@ -1,6 +1,8 @@
 {
 	"name": "Urban Jungle",
-	"authors": ["Plastix"],
+	"authors": [
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
+	],
 	"version": "1.0.0",
 	"gametype": "KOTH",
 	"teams": [

@@ -1,6 +1,9 @@
 {
 	"name": "Unix",
-	"authors": ["Red_Dead", "Izjust4fun"],
+	"authors": [
+		{"uuid": "c660918b-4000-44d4-b735-d3fa6f166110", "username": "Red_Dead"},
+		{"uuid": "21822eba-a4cb-4f1e-b803-3871d5ac0ff3", "username": "Izjust4fun"}
+	],
 	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [

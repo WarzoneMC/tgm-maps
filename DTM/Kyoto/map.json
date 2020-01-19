@@ -1,6 +1,10 @@
 {
 	"name": "Kyoto",
-	"authors": ["JapaneseSquid", "D_A_N_G_E_R", "Blaszczak"],
+	"authors": [
+		{"uuid": "c1d94f18-6ea3-495a-8d1b-7d9eaf393f64", "username": "JapaneseSquid"},
+		{"uuid": "9ec82338-4c1d-4b38-97b2-fedd0a92923c", "username": "D_A_N_G_E_R"},
+		{"uuid": "a9f11454-beac-4cc3-a138-1780802c8794", "username": "Blaszczak"}
+	],
 	"version": "1.0",
 	"gametype": "DTM",
 	"teams": [

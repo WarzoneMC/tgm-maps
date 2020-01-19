@@ -1,6 +1,9 @@
 {
 	"name": "Vortex",
-	"authors": ["Henrs", "Goriest"],
+	"authors": [
+		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"},
+		{"uuid": "b3d091f3-d94f-4546-a908-6a513d260615", "username": "Goriest"}
+	],
 	"version": "1.0.2",
 	"gametype": "DTM",
 	"teams": [
@@ -68,7 +71,8 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "wool", "stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "oak planks", "golden carrot", "arrow", "golden apple",
+		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
 	],
 	"killstreaks": [
 		{
