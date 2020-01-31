@@ -1,5 +1,5 @@
 Rooted
-Christmas Country
+Desert Country
 Timeless
 Kyoto
 Outback
@@ -16,7 +16,7 @@ Riverbank
 Sandstone 2
 Ring Race
 Windworks DTW
-Unix Holiday
+Unix
 Skylands Reborn
 Race For Victory 2
 Terrace 2
@@ -27,11 +27,10 @@ Arctic 2
 Egypt
 Persisto
 Stronghold
-Festive
 Rooted
 Icebound
 Gardens
-Snowy Wars Christmas
+Snowy Wars
 Mayan Apocalypse
 Senex 3
 WarlockDTW
@@ -39,12 +38,10 @@ Formorgar 1
 Castles
 Shroom Land
 Rendezvous Redux
-Festive Venice
 Oriental
 Thrive V2
-Arbaro Blitzmas
 Cargo
 Port Town 2
 TechnoWar
 Ascension
-Balloons Christmas
+Balloons
