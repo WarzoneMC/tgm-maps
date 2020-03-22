@@ -9,7 +9,7 @@
 	"version": "1.1",
 	"stats": {"disable": true},
 	"border": {
-		"startingSize": 120,
+		"startingSize": 160,
 		"endSize": 3,
 		"center": "0, 60, 0",
 		"delay": 200
@@ -19,6 +19,7 @@
 			"id": "red",
 			"name": "Red",
 			"color": "red",
+			"gamemode": "adventure",
 			"min": 1,
 			"max": 10
 		},
@@ -26,6 +27,7 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
+			"gamemode": "adventure",
 			"min": 1,
 			"max": 10
 		}
@@ -39,7 +41,7 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "end stone", "slot": 0, "amount": 10}
+				{"type": "item", "material": "end stone bricks", "canPlaceOn": ["tnt", "quartz block", "quartz stairs", "quartz slab", "end stone bricks", "spawner", "white terracotta"] ,"slot": 0, "amount": 10}
 
 			]
 		}
