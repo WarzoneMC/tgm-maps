@@ -41,7 +41,7 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "end stone bricks", "slot": 0, "amount": 10}
+				{"type": "item", "material": "end stone bricks", "canPlaceOn": ["TNT", "Block of Quartz", "Quartz Stairs", "Smooth Stone Slab", "End Stone Bricks", "Spawner", "White Terracotta"] ,"slot": 0, "amount": 10}
 
 			]
 		}
