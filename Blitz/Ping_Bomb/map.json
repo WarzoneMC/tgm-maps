@@ -9,10 +9,10 @@
 	"version": "1.1",
 	"stats": {"disable": true},
 	"border": {
-		"startingSize": 120,
+		"startingSize": 160,
 		"endSize": 3,
 		"center": "0, 60, 0",
-		"delay": 180
+		"delay": 200
 	},
 	"teams": [
 		{
