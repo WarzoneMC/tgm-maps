@@ -53,6 +53,7 @@
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
+				{"type": "item", "material": "bucket", "slot": 4, "amount": 1},
 				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -67,7 +68,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "glass", "oak planks", "cooked beef", "arrow", 
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "bucket", "glass", "oak planks", "cooked beef", "arrow", 
 		"shears", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
 	],
 	"killstreaks": [
@@ -102,5 +103,6 @@
 
 		{"id": "green-spawn-protection", "type": "cuboid", "min": "54, 0, 9", "max": "74, 24, 29"},
 		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-25, 0, -32", "max": "-45, 24, -54"}
-	]
+	],
+	"buildHeight": 30
 }
