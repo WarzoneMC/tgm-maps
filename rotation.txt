@@ -1,47 +1,50 @@
-Rooted
-Desert Country
-Timeless
-Kyoto
-Outback
-No Return
-Japan
-Snowdrift
 Ancient Cistern
-Twin Peaks
-Electri City
-Fracture
-Stalactite
-Avalanche Mini
-Riverbank
-Sandstone 2
-Ring Race
-Windworks DTW
-Unix
-Skylands Reborn
-Race For Victory 2
-Terrace 2
-Cloudy Domain
-Village 2
-Aerial Conquest
+Outback
+Kyoto
 Arctic 2
-Egypt
-Persisto
-Stronghold
-Rooted
-Icebound
+Arizona
 Gardens
-Snowy Wars
 Mayan Apocalypse
-Senex 3
-WarlockDTW
-Formorgar 1
-Castles
-Shroom Land
-Rendezvous Redux
 Oriental
-Thrive V2
-Cargo
-Port Town 2
-TechnoWar
-Ascension
+Thrive 2
+Riverbank
+Desert Country
+Stronghold
 Balloons
+Formorgar 1
+Windworks DTW
+Village 2
+Rooted
+Skylands Reborn
+Ring Race
+Deepwind Jungle
+Unix
+Shroom Land
+Oakley
+Aureola
+Senex 3
+Terrace 2
+Brisked KOTH
+Fracture
+Aerial Conquest
+Celestial
+Electri City
+Forsaken Ruins
+Timeless
+Avalanche Mini
+Japan
+TechnoWar
+Egypt
+Rendezvous Redux
+Cargo
+No Return
+Ascension
+WarlockDTW
+Rooted
+Snowy Wars
+Race For Victory 2
+Persisto
+Sandstone 2
+Terrace
+Cloudy Domain
+Castles
