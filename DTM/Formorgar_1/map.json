@@ -94,6 +94,17 @@
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "cooked beef", "arrow",
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
 	],	
 	"filters": [
 		{

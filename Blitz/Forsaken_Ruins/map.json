@@ -59,6 +59,15 @@
 	],
 	"killstreaks": [
 		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
 			"count": 2,
 			"repeat": true,
 			"actions": {
