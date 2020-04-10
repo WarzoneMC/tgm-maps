@@ -46,6 +46,17 @@
 	"itemremove": [
 		"bow", "golden apple", "bread", "arrow", "leather helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "purple"],
