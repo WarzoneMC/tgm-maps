@@ -24,10 +24,10 @@ Aureola
 Senex 3
 Terrace 2
 Brisked KOTH
-Fracture
 Aerial Conquest
 Celestial
 Electri City
+Fracture
 Forsaken Ruins
 Timeless
 Avalanche Mini
