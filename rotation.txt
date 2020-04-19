@@ -20,12 +20,10 @@ Deepwind Jungle
 Unix
 Shroom Land
 Oakley
-Aureola
 Senex 3
 Terrace 2
 Brisked KOTH
 Aerial Conquest
-Celestial
 Electri City
 Fracture
 Forsaken Ruins
