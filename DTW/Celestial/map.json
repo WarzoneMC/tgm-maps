@@ -35,7 +35,7 @@
 				"materials": ["red wool"],
 				"region": {
 					"min": "255, 38, 185",
-					"max": "251, 35, 329"
+					"max": "271, 35, 329"
 				},
 				"health": 10
 			},
