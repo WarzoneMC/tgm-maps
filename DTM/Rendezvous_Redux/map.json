@@ -81,7 +81,8 @@
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
 
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
-				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 6, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
