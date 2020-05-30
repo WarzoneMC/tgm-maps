@@ -116,5 +116,6 @@
 
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "276, 8, -88", "max": "293, oo, -120"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "94, 8, -120", "max": "77, oo, -88"}
-	]
+	],
+	"buildHeight": 23
 }

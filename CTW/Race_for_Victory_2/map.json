@@ -129,5 +129,6 @@
 		{"id": "base-right", "type": "cuboid", "min": "19, oo, 134", "max": "17, 0, -119"},
 		{"id": "blue-base-back", "type": "cuboid", "min": "17, 0, -120", "max": "-17, oo, -120"},
 		{"id": "red-base-back", "type": "cuboid", "min": "17, 0, 134", "max": "-17, oo, 134"}
-	]
+	],
+	"buildHeight": 30
 }

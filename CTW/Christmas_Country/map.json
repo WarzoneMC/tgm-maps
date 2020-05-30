@@ -133,5 +133,6 @@
 		{"id": "green-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
 		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
-	]
+	],
+	"buildHeight": 23
 }
