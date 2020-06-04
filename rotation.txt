@@ -9,7 +9,6 @@ Windworks DTW
 Persisto
 Cargo
 Outback
-Shroom Land
 Cloudy Domain
 Ancient Cistern
 Ring Race
