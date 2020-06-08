@@ -119,5 +119,6 @@
 	"regions": [
 		{"id": "cynx-spawn-protection", "type": "cuboid", "min": "-649, 0, -1119", "max": "-685, oo, -1086"},
 		{"id": "cyprone-spawn-protection", "type": "cuboid", "min": "-647, 0, -1269", "max": "-683, oo, -1237"}
-	]
+	],
+	"buildHeight": 50
 }
