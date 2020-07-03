@@ -70,6 +70,7 @@
 
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "oak planks", "slot": 6, "amount": 64},
+				{"material": "oak planks", "slot": 7, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
