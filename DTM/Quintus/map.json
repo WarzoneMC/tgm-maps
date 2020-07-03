@@ -181,5 +181,6 @@
 
 		{"id": "path-prot-cyan", "type": "cuboid", "min": "37, 34, -894", "max": "43, 27, -882"},
 		{"id": "path-prot-purple", "type": "cuboid", "min": "37, 34, -786", "max": "43, 27, -798"}
-	]
+	],
+	"buildHeight": 60
 }

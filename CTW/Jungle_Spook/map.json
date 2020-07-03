@@ -146,5 +146,6 @@
 		{"id": "red-wool", "type": "cuboid", "min": "-183, 0, 21", "max": "-167, oo, 35"},
 
 		{"id": "build-height", "type": "cuboid", "min": "-oo, 48, -oo", "max": "oo, oo, oo"}
-	]
+	],
+	"buildHeight": 48
 }

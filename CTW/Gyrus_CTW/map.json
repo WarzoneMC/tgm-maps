@@ -184,5 +184,6 @@
 		{"id": "yellow-wool", "type": "cuboid", "min": "-1300, 0, 314", "max": "-1285, oo, 329"},
 
 		{"id": "build-height", "type": "cuboid", "min": "-oo, 160, -oo", "max": "oo, oo, oo"}
-	]
+	],
+	"buildHeight": 160
 }

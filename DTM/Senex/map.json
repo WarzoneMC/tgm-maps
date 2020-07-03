@@ -121,5 +121,6 @@
 		{"id": "lime-spawn-protection", "type": "cuboid", "min": "30, 0, -749", "max": "41, 25, -738"},
 
 		{"id": "height-limit", "type": "cuboid", "min": "-1024, 39, -1024", "max": "1024, oo, 1024"}
-	]
+	],
+	"buildHeight": 38
 }

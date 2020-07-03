@@ -150,5 +150,6 @@
 		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"},
 
 		{"id": "build-height", "type": "cuboid", "min": "-oo, 40, -oo", "max": "oo, oo, oo"}
-	]
+	],
+	"buildHeight": 40
 }
