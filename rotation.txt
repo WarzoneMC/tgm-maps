@@ -1,45 +1,47 @@
-Formorgar 1
-Arizona
-Ascension
-Japan
-Race For Victory 2
-Electri City
-Unix
-Windworks DTW
-Persisto
-Cargo
-Outback
-Cloudy Domain
-Ancient Cistern
-Ring Race
-Oakley
-Warlock DTW
-Skylands Reborn
-Aerial Conquest
-Rendezvous Redux
-Gardens
-Kyoto
-Forsaken Ruins
-Terrace
-Sandstone 2
-Deepwind Jungle
-Senex 3
-Avalanche Mini
-No Return
-Timeless
-Thrive 2
-Arctic 2
-Rooted
-Egypt
 Brisked KOTH
+Electri City
+Ascension
+Twin Peaks
+Ancient Cistern
 Mayan Apocalypse
-Riverbank
+Cargo
+Warlock DTW
+Village 2
+Forsaken Ruins
+Rooted
 Castles
 Stronghold
-Fracture
-TechnoWar
 Snowy Wars
-Desert Country
-Balloons
+Thrive 2
 Terrace 2
-Village 2
+Avalanche Mini
+Japan
+Senex 3
+Arctic 2
+Gardens
+Terrace
+Deepwind Jungle
+Rendezvous Redux
+Arizona
+Race For Victory 2
+Unix
+Egypt
+Windworks DTW
+Oakley
+No Return
+Skylands Reborn
+Formorgar 1
+Timeless
+Desert Country
+Cloudy Domain
+Riverbank
+Ring Race
+Outback
+Persisto
+Aerial Conquest
+Sandstone 2
+Balloons
+Kyoto
+TechnoWar
+Fracture
+A New Day
