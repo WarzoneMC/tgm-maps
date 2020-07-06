@@ -51,5 +51,20 @@
 			"Fracture",
 			"A New Day"
 		]
+	},
+	{
+		"name": "Infected",
+		"maps": [
+			"Pier",
+			"Hollow Caverns",
+			"Plaza",
+			"Grind",
+			"Bayview",
+			"Meltdown",
+			"Neighborhood",
+			"Raid",
+			"Nuke",
+			"Yowzer Stadium"
+		]
 	}
 ]
