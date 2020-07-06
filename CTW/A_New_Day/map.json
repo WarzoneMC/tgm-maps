@@ -37,9 +37,9 @@
 				"region": {"min": "114, 9, 209", "max": "114, 9, 209"}
 			},
 			{
-				"name": "Magenta",
+				"name": "Purple",
 				"color": "dark purple",
-				"woolcolor": "magenta",
+				"woolcolor": "purple",
 				"teams": ["red"],
 				"region": {"min": "114, 9, 213", "max": "114, 9, 213"}
 			},
@@ -111,10 +111,10 @@
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "magenta-room", "lime-room"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "lime-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "magenta-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "purple-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
@@ -122,7 +122,7 @@
 		{"id": "orange-room", "min": "79, 0, 287", "max": "109, oo, 316"},
 
 		{"id": "lime-room", "min": "-93, 0, 135", "max": "-123, oo, 106"},
-		{"id": "magenta-room", "min": "-93, 0, 316", "max": "-123, oo, 287"},
+		{"id": "purple-room", "min": "-93, 0, 316", "max": "-123, oo, 287"},
 
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "95, 0, 224", "max": "118, oo, 198"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"}
