@@ -1,0 +1,158 @@
+{
+	"name": "Fourchette",
+	"authors": [
+		{"uuid": "8f9344cf-7367-4e28-9f24-5c66422f28c9", "username": "Timothee38"},
+		{"uuid": "260004f0-996b-4539-ba21-df4ee6336b63", "username": "Captain_Elliott"},
+		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
+	],
+	"version": "2.0.1",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 32
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 32
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "59, 48, 184.5, -180"},
+		{"teams": ["red"], "coords": "149.5, 7, 184.5, 90"},
+		{"teams": ["blue"], "coords": "-30.5, 7, 184.5, -90"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Green",
+				"color": "dark green",
+				"woolcolor": "green",
+				"teams": ["red"],
+				"region": {"min": "142, 8, 180", "max": "142, 8, 180"}
+			},
+			{
+				"name": "Light Blue",
+				"color": "aqua",
+				"woolcolor": "light blue",
+				"teams": ["red"],
+				"region": {"min": "142, 8, 184", "max": "142, 8, 184"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"woolcolor": "yellow",
+				"teams": ["red"],
+				"region": {"min": "142, 8, 188", "max": "142, 8, 188"}
+			},
+			{
+				"name": "Orange",
+				"color": "gold",
+				"woolcolor": "orange",
+				"teams": ["blue"],
+				"region": {"min": "-24, 8, 188", "max": "-24, 8, 188"}
+			},
+			{
+				"name": "Lime",
+				"color": "green",
+				"woolcolor": "lime",
+				"teams": ["blue"],
+				"region": {"min": "-24, 8, 184", "max": "-24, 8, 184"}
+			},
+			{
+				"name": "Magenta",
+				"color": "dark purple",
+				"woolcolor": "magenta",
+				"teams": ["blue"],
+				"region": {"min": "-24, 8, 180", "max": "-24, 8, 180"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "iron shovel", "slot": 27, "enchantments": ["efficiency:1"], "unbreakable": true},
+
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 16},
+				{"material": "arrow", "slot": 9, "amount": 1},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "oak planks", "golden apple", 
+		"cooked beef", "arrow", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-spawn-build", "blue-spawn-build", "orange-wool", "lime-wool", "magenta-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-build", "blue-spawn-build", "green-wool", "light-blue-wool", "yellow-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection", "green-wool", "light-blue-wool", "yellow-wool"],
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection", "orange-wool", "lime-wool", "magenta-wool"],
+			"message": "&cYou may not enter this region."
+		},
+
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["build-height"], "message": "&cYou have reached the max build height."}
+	],
+	"regions": [
+		// Enter Regions
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "126, 0, 168", "max": "152, oo, 199"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-8, 0, 198", "max": "-34, oo, 167"},
+		// Build Region
+		{"id": "red-spawn-build", "type": "cuboid", "min": "126, 0, 168", "max": "152, 10, 199"},
+		{"id": "blue-spawn-build", "type": "cuboid", "min": "-8, 0, 198", "max": "-34, 10, 167"},
+
+		{"id": "green-wool", "type": "cuboid", "min": "-48, 0, 263", "max": "-82, oo, 288"},
+		{"id": "light-blue-wool", "type": "cuboid", "min": "-100, 0, 201", "max": "-127, oo, 164"},
+		{"id": "yellow-wool", "type": "cuboid", "min": "-78, 0, 106", "max": "-43, oo, 75"},
+
+		{"id": "orange-wool", "type": "cuboid", "min": "199, 0, 263", "max": "165, oo, 289"},
+		{"id": "lime-wool", "type": "cuboid", "min": "167, 0, 106", "max": "201, oo, 74"},
+		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"},
+
+		{"id": "build-height", "type": "cuboid", "min": "-oo, 40, -oo", "max": "oo, oo, oo"}
+	],
+	"buildHeight": 40
