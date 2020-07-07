@@ -156,3 +156,4 @@
 		{"id": "build-height", "type": "cuboid", "min": "-oo, 40, -oo", "max": "oo, oo, oo"}
 	],
 	"buildHeight": 40
+}
