@@ -134,8 +134,6 @@
 			"regions": ["blue-spawn-protection", "orange-wool", "lime-wool", "magenta-wool"],
 			"message": "&cYou may not enter this region."
 		},
-
-		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["build-height"], "message": "&cYou have reached the max build height."}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "126, 0, 168", "max": "152, oo, 199"},
@@ -151,8 +149,6 @@
 		{"id": "orange-wool", "type": "cuboid", "min": "199, 0, 263", "max": "165, oo, 289"},
 		{"id": "lime-wool", "type": "cuboid", "min": "167, 0, 106", "max": "201, oo, 74"},
 		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"},
-
-		{"id": "build-height", "type": "cuboid", "min": "-oo, 40, -oo", "max": "oo, oo, oo"}
 	],
 	"buildHeight": 40
 }
