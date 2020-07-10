@@ -57,7 +57,7 @@
             "default": true,
             "requirements": {
                 "min": 11,
-                "max": 20
+                "max": 25
             },
             "maps": [
                 "Brisked KOTH",
@@ -111,7 +111,7 @@
             "name": "Large",
             "default": true,
             "requirements": {
-                "min": 21,
+                "min": 26,
                 "max": 75
             },
             "maps": [
