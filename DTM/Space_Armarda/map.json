@@ -66,20 +66,6 @@
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
-		},
-		{
-			"name": "Blue",
-			"teams": ["blue"],
-			"items": [
-				{"material": "blue stained glass", "slot": 3, "amount": 64}
-			]
-		},
-		{
-			"name": "Orange",
-			"teams": ["orange"],
-			"items": [
-				{"material": "orange stained glass", "slot": 3, "amount": 64}
-			]
 		}
 	],
 	"itemremove": [
