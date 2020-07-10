@@ -139,5 +139,20 @@
 		"Neighborhood",
 		"Desert Country",
             ]
-        }        
+        }       
+        {
+            "name": "Infected",
+            "maps": [
+		"Pier",
+		"Plaza",
+		"Grind",
+		"Bayview",
+		"Meltdown",
+		"Lost",
+		"Neighborhood",
+		"Raid",
+		"Nuke",
+		"Yowzer Stadium"
+            ]
+        } 
 ]
