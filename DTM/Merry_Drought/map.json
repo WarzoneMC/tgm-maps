@@ -106,18 +106,43 @@
 			}
 		}
 	],
-	"filters": [
+"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
 			"regions": ["red-spawn-protection", "green-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-entry"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-entry"], "message": "&cYou may not enter the enemy spawn."},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
+			"regions": ["voidall"],
+			"message": "&cYou may not build over the void!"
+		}
 	],
 	"regions": [
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "6, 13, -485", "max": "-2, oo, -477"},
-		{"id": "green-spawn-protection", "type": "cuboid", "min": "140, 13, -351", "max": "132, oo, -343"}
-	],
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-15, 12, -498", "max": "20, oo, -463"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "154, 12, -329", "max": "119, oo, -364"},
+		{"id": "red-spawn-entry", "type": "cuboid", "min": "-15, 0, -498", "max": "20, oo, -463"},
+		{"id": "green-spawn-entry", "type": "cuboid", "min": "154, 0, -329", "max": "119, oo, -364"},
+
+		{"id": "void1", "type": "cuboid", "min": "-1000, 0, 1000", "max": "32, oo, -436"},
+		{"id": "void2", "type": "cuboid", "min": "1000, 0, -1000", "max": "47, oo, -451"},
+		{"id": "void3", "type": "cuboid", "min": "-1000, 0, -1000", "max": "-13, oo, -496"},
+		{"id": "void4", "type": "cuboid", "min": "-1000, 0, -1000", "max": "-42, oo, -436"},
+		{"id": "void5", "type": "cuboid", "min": "-1000, 0, -1000", "max": "46, oo, -525"},
+		{"id": "void6", "type": "cuboid", "min": "-15, 0, -494", "max": "-26, oo, -451"},
+		{"id": "void7", "type": "cuboid", "min": "-11, 0, -498", "max": "31, oo, -509"},
+
+
+		{"id": "void8", "type": "cuboid", "min": "1000, 0, -1000", "max": "107, oo, -391"},
+		{"id": "void9", "type": "cuboid", "min": "-1000, 0, 1000", "max": "92, oo, -376"},
+		{"id": "void10", "type": "cuboid", "min": "1000, 0, 1000", "max": "152, oo, -331"},
+		{"id": "void11", "type": "cuboid", "min": "1000, 0, 1000", "max": "181, oo, -390"},
+		{"id": "void12", "type": "cuboid", "min": "1000, 0, 1000", "max": "92, oo, -302"},
+		{"id": "void13", "type": "cuboid", "min": "154, 0, -331", "max": "165, oo, -375"},
+		{"id": "void14", "type": "cuboid", "min": "107, 0, -317", "max": "151, oo, -328"},
+		{"id": "voidall", "type": "meta", "regions": ["void1", "void2", "void3", "void4", "void5", "void6", "void7", "void8", "void9", "void10", "void11", "void12", "void13", "void14"]}
+		],
 	"buildHeight": 45
 }
