@@ -51,5 +51,15 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
