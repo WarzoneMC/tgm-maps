@@ -29,9 +29,9 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Red Wool",
-				"teams": ["red"],
-				"materials": ["red wool"],
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "100, 13, -268",
 					"max": "98, 10, -266"
@@ -39,9 +39,9 @@
 				"health": 7
 			},
 			{
-				"name": "Blue Wool",
-				"teams": ["blue"],
-				"materials": ["blue wool"],
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "-90, 13, -324",
 					"max": "-92, 10, -326"
@@ -102,7 +102,7 @@
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "96, 7, -342", "max": "102, 23, -351"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-94, 23, -242", "max": "-88, 7, -251"},
 		
-		{"id": "blue-wool", "type": "cuboid", "min": "-90, 13, -324", "max": "-92, 10, -326"},
-		{"id": "red-wool", "type": "cuboid", "min": "100, 13, -268", "max": "98, 10, -266"}
+		{"id": "red-wool", "type": "cuboid", "min": "-90, 13, -324", "max": "-92, 10, -326"},
+		{"id": "blue-wool", "type": "cuboid", "min": "100, 13, -268", "max": "98, 10, -266"}
 	]
 }
