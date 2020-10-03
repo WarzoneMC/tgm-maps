@@ -1,0 +1,71 @@
+{
+	"name": "Village KOTH",
+	"authors": [
+		{"uuid": "665f52b7-7ecf-4694-877c-d4adc176bb6f", "username": "BlockHeads36"}
+	],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "11.5, 54, 1.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 51, -71.5, 35"},
+		{"teams": ["red"], "coords": "-3.5, 51, 72.5, 135"}
+	],
+	"points": {
+		"target": 350
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Blue Left",
+				"region": {
+					"min": {"x": 46, "y": 49, "z": -3},
+					"max": {"x": 56, "y": 54, "z": 7}
+				}
+			},
+			{
+				"name": "Center",
+				"region": {
+					"min": {"x": -5, "y": 49, "z": -5},
+					"max": {"x": 5, "y": 54, "z": 5}
+				}
+			},
+			{
+				"name": "Red Left",
+				"region": {
+					"min": {"x": -56, "y": 49, "z": -7},
+					"max": {"x": -46, "y": 54, "z": 3}
+				}
+			}
+		]
+	},
+	"classes": true,
+	"itemremove": [
+		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
+		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn", "min": "-1, 0, -74", "max": "8, oo, -66"},
+		{"id": "red-spawn", "min": "-11, 0, 65", "max": "-2, oo, 74"}
+	]
+}
