@@ -59,7 +59,7 @@
 				{"material": "iron axe", "slot": 2, "unbreakable": true},
 				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
 
-				{"material": "stained glass", "slot": 4, "amount": 64, "durability": 1},
+				{"material": "orange stained glass", "slot": 4, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 10},
 
