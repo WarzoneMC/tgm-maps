@@ -77,6 +77,17 @@
 		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
 		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
