@@ -1,3 +1,4 @@
+  
 {
 	"name": "Green Hill Zone",
 	"authors": [
@@ -85,6 +86,11 @@
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "min": "156, 8, 189", "max": "140, 23, 156"},
-		{"id": "purple-spawn-protection", "min": "156, 8, 59", "max": "140, 23, 94"}
+		{"id": "purple-spawn-protection", "min": "156, 8, 59", "max": "140, 23, 94"},
+
+		{"id": "portal", "min": "178, 14, 122", "max": "183, 20, 126"}
+	],
+	"portals": [
+		{"from": "portal", "to": "176.5, 33, 124.5", "sound": false, "teams": ["orange", "purple"]}
 	]
 }
