@@ -56,7 +56,9 @@
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
-			]
+			],
+			"effects": [
+				{"type": "resistance", "duration": 3, "amplifier": 50, "particles": false},
 		}
 	],
 	"itemremove": [
