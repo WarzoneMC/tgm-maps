@@ -71,21 +71,37 @@
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"material": "blue stained glass", "slot": 3, "amount": 64}
+				{"material": "blue stained glass", "slot": 3, "amount": 64},
+				{"material": "blue stained glass", "slot": 4, "amount": 64}
 			]
 		},
 		{
 			"name": "Orange",
 			"teams": ["orange"],
 			"items": [
-				{"material": "orange stained glass", "slot": 3, "amount": 64}
+				{"material": "orange stained glass", "slot": 3, "amount": 64},
+				{"material": "orange stained glass", "slot": 4, "amount": 64}
 			]
 		}
 	],
 	"itemremove": [
 		"stone sword", "bow", "stone axe", "orange stained glass", "blue stained glass", "cooked beef",
 		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
-	],	
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"damageControl": {
+		"FALL": false
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "orange"],
