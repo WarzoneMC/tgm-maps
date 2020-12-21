@@ -83,8 +83,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone axe", "stained glass", "cooked beef", "arrow",
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"stone sword", "bow", "stone axe", "orange stained glass", "blue stained glass", "cooked beef",
+		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],	
 	"filters": [
 		{
@@ -92,13 +92,13 @@
 			"regions": ["blue-spawn-protection", "orange-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["blue-nexus", "orange-nexus"], "message": ""},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["blue-nexus", "orange-nexus"], "message": "&cYou cannot break your own nexus room."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-8, 21, 1", "max": "-25, 27, 3"},
-		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-203, 27, 115", "max": "-220, 21, 117"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-8, 21, 1", "max": "-25, 27, 3"},
+		{"id": "orange-spawn", "type": "cuboid", "min": "-203, 27, 115", "max": "-220, 21, 117"},
 
 		{"id": "orange-nexus", "type": "cuboid", "min": "-175, 19, 108", "max": "-205, 12, 123"},
 		{"id": "blue-nexus", "type": "cuboid", "min": "-23, 12, -5", "max": "-54, 19, 9"}
