@@ -1,5 +1,4 @@
-[
-	{
+[{
 		"name": "Small",
 		"default": true,
 		"requirements": {
@@ -81,7 +80,7 @@
 			"Warlock",
 			"Terrace",
 			"Sandstone 2",
-			"Arizona"
+			"Arizona",
 			"Terrace 2",
 			"Rendezvous Redux",
 			"Gardens",
@@ -136,5 +135,5 @@
 			"Nuke",
 			"Yowzer Stadium"
 		]
-	} 
+	}
 ]
