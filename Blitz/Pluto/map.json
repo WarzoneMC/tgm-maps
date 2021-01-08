@@ -61,7 +61,18 @@
 				{"type": "resistance", "duration": 3, "amplifier": 50, "particles": false},
 			]
 		}
-	],	
+	],
+	"regions":[
+		{"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 74, -5.5", "radius": 6, "height": 8},
+		{"id": "red-spawn-protection", "type": "cylinder", "base": "14.5, 74, 80.5", "radius": 6, "height": 8}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "shears",
 		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
