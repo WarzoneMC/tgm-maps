@@ -6,6 +6,7 @@
 	],
 	"gametype": "TDM",
 	"version": "1.4.6",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "yellow",
