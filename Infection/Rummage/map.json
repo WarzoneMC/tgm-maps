@@ -1,0 +1,70 @@
+{
+	"name": "Rummage",
+	"authors": [
+		{"uuid": "65722be1-29fd-4e7d-a47d-94ed616ed880", "username": "Kroest"},
+		{"uuid": "7e7da86e-57a8-4b90-b297-4ef05e71dbdb", "username": "Whitever"},
+		{"uuid": "6d24722c-dba4-4224-9d14-b3d08a8d9620", "username": "MrPetrus"}
+	],
+	"gametype": "Infected",
+	"version": "1.2.0",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "humans",
+			"name": "Humans",
+			"color": "blue",
+			"max": 50,
+			"min": 1
+		},
+		{
+			"id": "Infected",
+			"name": "Infected",
+			"color": "green",
+			"max": 50,
+			"min": 1
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-70.5, 60, -71.5, 180"},
+		{"teams": ["infected"], "coords": "-99.5, 7, 16.5, -70"},
+		{"teams": ["humans"], "coords": "-14.5, 16, 70.5, 180"}
+	],
+	"infection": {
+		"length": 7
+	},
+	"kits": [
+		{
+			"name": "Humans",
+			"teams": ["humans"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Infected",
+			"teams": ["infected"],
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail chestplate", "chainmail leggings"
+	]
+}
