@@ -6,7 +6,7 @@
 		{"uuid": "6d24722c-dba4-4224-9d14-b3d08a8d9620", "username": "MrPetrus"}
 	],
 	"gametype": "Infected",
-	"version": "1.2.0",
+	"version": "1.0.0",
 	"stats": {"disable": true},
 	"teams": [
 		{
