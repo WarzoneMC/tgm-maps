@@ -93,7 +93,8 @@
 		"name": "Large",
 		"default": true,
 		"requirements": {
-			"min": 30
+			"min": 30,
+			"max": 200
 		},
 		"maps": [
 			"Desert Country",
