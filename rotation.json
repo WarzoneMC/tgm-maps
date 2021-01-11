@@ -3,7 +3,7 @@
 		"default": true,
 		"requirements": {
 			"min": 0,
-			"max": 10
+			"max": 14
 		},
 		"maps": [
 			"Race For Victory 2",
@@ -13,6 +13,7 @@
 			"Warlock DTW",
 			"Oriental",
 			"Oakley",
+			"Anasaria",
 			"Sandstone 2",
 			"Windworks DTW",
 			"Timeless",
@@ -38,8 +39,8 @@
 		"name": "Medium",
 		"default": true,
 		"requirements": {
-			"min": 11,
-			"max": 25
+			"min": 15,
+			"max": 29
 		},
 		"maps": [
 			"Forsaken Ruins",
@@ -48,6 +49,7 @@
 			"Japan",
 			"Gobi",
 			"Electri City",
+			"Anasaria",
 			"Aerial Conquest",
 			"Senex 3",
 			"TechnoWar",
@@ -70,7 +72,6 @@
 			"A New Day",
 			"Desert Country",
 			"Thrive 2",
-			"Yellowstone",
 			"Outback",
 			"Kyoto",
 			"Castles",
@@ -91,8 +92,7 @@
 		"name": "Large",
 		"default": true,
 		"requirements": {
-			"min": 26,
-			"max": 75
+			"min": 30
 		},
 		"maps": [
 			"Desert Country",
