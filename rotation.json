@@ -2,6 +2,7 @@
 	{
 		"name": "Small",
 		"default": true,
+		"shuffle": true,
 		"requirements": {
 			"min": 0,
 			"max": 14
@@ -39,6 +40,7 @@
 	{
 		"name": "Medium",
 		"default": true,
+		"shuffle": true,
 		"requirements": {
 			"min": 15,
 			"max": 29
@@ -92,6 +94,7 @@
 	{
 		"name": "Large",
 		"default": true,
+		"shuffle": true,
 		"requirements": {
 			"min": 30,
 			"max": 200
