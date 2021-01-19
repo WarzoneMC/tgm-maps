@@ -65,6 +65,9 @@
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 1000000, "amplifier": 3, "particles": false}
 			]
 		}
 	],
