@@ -1,0 +1,92 @@
+{
+	"name": "Immitis Rage",
+	"version": "1.0.0",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTr"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "dark aqua", 
+			"min": 1, 
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-41.5, 27, 21.5, -135"},
+		{"teams": ["players"], "coords": "-43.5, 22, -10.5, -45"},
+		{"teams": ["players"], "coords": "-17.5, 24, 15.5, -160"},
+		{"teams": ["players"], "coords": "2.5, 24, 11.5, 140"},
+		{"teams": ["players"], "coords": "30.5, 5, 14.5, 135"},
+		{"teams": ["players"], "coords": "9.5, 10, -1.5, -90"},
+		{"teams": ["players"], "coords": "-6.5, 24, -22.5, 135"},
+		{"teams": ["players"], "coords": "-26.5, 16, -47.5, -45"},
+		{"teams": ["players"], "coords": "-33.5, 6, -19.5, -90"},
+		{"teams": ["players"], "coords": "8.5, 16, -72.5"},
+		{"teams": ["players"], "coords": "8.5, 10, -32.5, -180"},
+		{"teams": ["players"], "coords": "44.5, 16.1, -26.5"},
+		{"teams": ["players"], "coords": "64.5, 22, -74.5, 90"},
+		{"teams": ["players"], "coords": "64.5, 22, -74.5, -45"},
+		{"teams": ["players"], "coords": "38.5, 26, -26.5, 90"},
+		{"teams": ["players"], "coords": "-1.5, 8, 8.5, -135"},
+		{"teams": ["players"], "coords": "20.5, 21, -55.5, -90"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 35
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "displayName": "One-Hit-Kill", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "displayName": "One-Shot-Kill", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "cooked beef",
+		"leather helmet", "iron chestplate", "leather leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"damageControl": {
+		"fall": false,
+		"drowning": false
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
