@@ -24,8 +24,8 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "12.5, 35, 14"},
-		{"teams": ["red"], "coords": "-1, 23, 32"},
-		{"teams": ["blue"], "coords": "26, 23, 32.5"}
+		{"teams": ["red"], "coords": "-1.5, 23, 32.5, -90"},
+		{"teams": ["blue"], "coords": "26.5, 23, 32.5, 90"}
 	],
 	"dtm": {
 		"monuments": [
@@ -67,6 +67,6 @@
 		}
 	],
 	"itemremove": [
-		"*"
+		"iron sword", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	]
 }

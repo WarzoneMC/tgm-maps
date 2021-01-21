@@ -34,8 +34,8 @@
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
-					"min": "421, 79, -199",
-					"max": "421, 79, -199"
+					"min": "421, 79, -231",
+					"max": "339, 27, -39"
 				},
 				"health": 5
 			},
@@ -44,8 +44,8 @@
 				"teams": ["red"],
 				"materials": ["red wool"],
 				"region": {
-					"min": "-154, 80, -229",
-					"max": "-75, 27, -39"
+					"min": "-154, 80, -231",
+					"max": "-74, 27, -39"
 				},
 				"health": 5
 			}
@@ -72,6 +72,7 @@
 		}
 	],
 	"itemremove": [
-		"*"
+		"iron sword", "stone axe", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	
 	]
 }
