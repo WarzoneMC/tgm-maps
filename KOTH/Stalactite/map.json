@@ -96,7 +96,8 @@
 			"repeat": true,
 			"actions": {
 				"items": [
-					{"material": "arrow", "amount": 12}
+					{"material": "arrow", "amount": 12},
+					{"material": "golden apple", "amount": 1}
 				]
 			}
 		}
