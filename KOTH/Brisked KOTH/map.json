@@ -98,9 +98,9 @@
 	"regions": [
 		{"id": "orange-spawn-protection", "min": "25.5, 44, -148.5", "max": "34.5, oo, -139.5"},
 		{"id": "purple-spawn-protection", "min": "-69.5, 44, -53.5", "max": "-60.5, oo, -44.5"},
-		{"id": "top-protection", "min": "-12.5, 39, -91.5", "max": "-22.5, 45, -101.5"},
-		{"id": "a-protection", "min": "2.5, 29, -76.5", "max": "-6, 35, -85.5"},
-		{"id": "b-protection", "min": "-37.5, 29, -116.5", "max": "-28.5, 35, -107.5"}
+		{"id": "top-protection", "min": "-12.5, 39, -91.5", "max": "-22.5, 40, -101.5"},
+		{"id": "a-protection", "min": "2.5, 29, -76.5", "max": "-6, 29, -85.5"},
+		{"id": "b-protection", "min": "-37.5, 29, -116.5", "max": "-28.5, 29, -107.5"}
 	],
 	"buildHeight": 50
 }
