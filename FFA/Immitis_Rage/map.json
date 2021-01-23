@@ -56,12 +56,12 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 255, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 300, "amplifier": 255, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "cooked beef",
+		"stone sword", "bow", "arrow", "cooked beef",
 		"leather helmet", "iron chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
