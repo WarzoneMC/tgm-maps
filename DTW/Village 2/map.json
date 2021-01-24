@@ -61,7 +61,7 @@
 				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 16},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
