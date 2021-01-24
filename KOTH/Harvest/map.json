@@ -1,0 +1,141 @@
+{
+	"name": "Harvest",
+	"authors": [
+		{"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
+	],
+	"version": "1.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "Pink",
+			"name": "Pink",
+			"color": "light purple",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "aqua",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "206.5, 6, -32.5, 180"},
+		{"teams": ["pink"], "coords": "206.5, 20, -129.5, 0"},
+		{"teams": ["blue"], "coords": "303.5, 20, -32.5, 90"},
+		{"teams": ["yellow"], "coords": "109.5, 20, -32.5, -90"},
+		{"teams": ["orange"], "coords": "206.5, 20, 64.5, 180"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "bread", "slot": 7, "amount": 48},
+				{"type": "item", "material": "emerald", "slot": 6, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
+				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "emerald", "amount": 1}
+				]
+			}
+		}
+	],
+	"itemkeep": [
+        "emerald"
+    ],
+	"itemremove": [
+		"stone sword", "bow", "bread", "golden apple", "leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "blaze rod", "iron sword", "chainmail helmet", "chainmail chestplate", "chainmail boots", "golden boots", "potion", "splash potion", "ender pearl"
+	],
+	"koth": {
+		"hills": [
+			{
+				"name": "Centre Hill",
+				"time": 7,
+				"points": 2.5,
+				"region": {
+					"type": "cylinder", "base": "206, 4, -33", "radius": 6, "height": 35
+				}
+			},
+			{
+				"name": "Pink Hill",
+				"time": 5,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "171, 14, -68", "radius": 6, "height": 26
+				}
+			},
+			{
+				"name": "Yellow Hill",
+				"time": 5,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "171, 14, 2", "radius": 6, "height": 26
+				}
+			},
+			{
+				"name": "Orange Hill",
+				"time": 5,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "241, 14, 2", "radius": 6, "height": 26
+				}
+			},
+			{
+				"name": "Blue Hill",
+				"time": 5,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "241, 14, -68", "radius": 6, "height": 26
+				}
+			}
+		]
+	},
+	"points": {
+		"target": 900
+	},
+	"regions": [
+		{"id": "whole-field", "min": "104, 0, -134", "max": "308, 55, 69"},
+		{"id": "pink-field", "min": "221.5, 11, -96.5", "max": "191, 55, -134"},
+		{"id": "blue-field", "min": "308, 11, -47", "max": "270.5, 55, -17.5"},
+		{"id": "yellow-field", "min": "142.5, 11, -47.5", "max": "104, 55, -17"},
+		{"id": "orange-field", "min": "191.5, 11, 31.5", "max": "221, 55, 69"}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["pink", "blue", "yellow", "orange"], "regions": ["whole-field"], "message": "&cYou are not allowed to modify terrain!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue", "yellow", "orange"], "regions": ["pink-field"], "message": "&cYou may not enter Pink's base!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["pink", "yellow", "orange"], "regions": ["blue-field"], "message": "&cYou may not enter Blue's base!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["pink", "blue", "orange"], "regions": ["yellow-field"], "message": "&cYou may not enter Yellow's base!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["pink", "blue", "yellow"], "regions": ["orange-field"], "message": "&cYou may not enter Orange's base!"}
+	]
+}
