@@ -1,90 +1,88 @@
 {
-	"name": "Forsaken Ruins",
-	"authors": [
-		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii_"}
-	],
-	"gametype": "Blitz",
-	"version": "1.2.2",
-	"teams": [
-		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
-			"min": 1,
-			"max": 10
-		},
-		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
-			"min": 1,
-			"max": 10
-		}
-	],
-	"spawns": [
-		{"teams": ["spectators"], "coords": "0.5, 50, 0.5, 180"},
-		{"teams": ["red"], "coords": "-30, 56, 38, 180"},
-		{"teams": ["blue"], "coords": "2, 56, -117"}
-	],
-	"time": {
-		"limit": 600
-	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["ARROW_DAMAGE:1"], "unbreakable": true},
-				{"type": "item", "material": "stone shovel", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+    "name": "Forsaken Ruins",
+    "authors": [
+        {"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii_"}
+    ],
+    "gametype": "Blitz",
+    "version": "1.2.2",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 10
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 10
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 50, 0.5, 180"},
+        {"teams": ["red"], "coords": "-30, 56, 38, 180"},
+        {"teams": ["blue"], "coords": "2, 56, -117"}
+    ],
+    "time": {
+        "limit": 600
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "enchantments": ["ARROW_DAMAGE:1"], "unbreakable": true},
+                {"type": "item", "material": "arrow", "slot": 2, "amount": 24},
 
-				{"type": "item", "material": "oak planks", "slot": 4, "amount": 24},
-				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
+                {"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 
-				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"material": "golden chestplate", "slot": "chestplate","unbreakable": true},
-				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"material": "iron boots", "slot": "boots", "unbreakable": true}
-			],
-			"effects": [
-				{"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
-			]
-		}
-	],
-	"itemremove": [
-		"stone sword", "bow", "golden apple", "cooked beef", "arrow",
-		"leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "amount": 1}
-				]
-			}
-		},
-		{
-			"count": 2,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "arrow", "amount": 8}
-				]
-			}
-		}
-	],
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
-			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain here."
-		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	]
+                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"material": "golden chestplate", "slot": "chestplate","unbreakable": true},
+                {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "iron boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow",
+        "golden apple", "cooked beef", "arrow",
+        "leather helmet", "golden chestplate", "leather leggings", "iron boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        },
+        {
+            "count": 2,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "arrow", "amount": 8}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+            "regions": ["global"],
+            "message": "&cYou are not allowed to modify terrain here."
+        }
+    ],
+    "regions": [
+        {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+    ]
 }
