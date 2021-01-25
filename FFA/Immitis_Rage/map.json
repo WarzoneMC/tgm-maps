@@ -12,7 +12,7 @@
 			"name": "Players", 
 			"color": "dark aqua", 
 			"min": 1, 
-			"max": 40
+			"max": 20
 		}
 	],
 	"spawns": [
