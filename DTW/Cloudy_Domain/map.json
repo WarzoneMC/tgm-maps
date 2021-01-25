@@ -98,5 +98,6 @@
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "160, 126, -35", "max": "146, oo, -49"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "18, 126, -49", "max": "32, oo, -35"}
-	]
+	],
+	"buildHeight": 160
 }
