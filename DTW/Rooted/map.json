@@ -85,6 +85,15 @@
 					{"material": "golden apple", "amount": 1}
 				]
 			}
+		},
+		{
+			"count": 3,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 5}
+				]
+			}
 		}
 	],
 	"filters": [
