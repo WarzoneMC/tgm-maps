@@ -28,13 +28,13 @@
 		{"teams": ["red"], "coords": "-24.5, 1, -25.5"}
 	],
     	"points": {
-        	"target": 50
+        	"target": 75
     	},
 	"kits": [
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "`aAll-purpose instant killing device", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "`aAll-purpose instant killing device", "enchantments": ["power:100", "infinity:1"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 1, "amount": 2},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -62,7 +62,7 @@
 		},
 		{
 			"count": 1,
-			"repeat": true,
+			"repeat": false,
 			"actions": {
 				"effects": [
 					{"type": "speed", "level": 1, "duration": 10000000}
@@ -71,7 +71,7 @@
 		},
 		{
 			"count": 3,
-			"repeat": true,
+			"repeat": false,
 			"actions": {
 				"effects": [
 					{"type": "speed", "level": 2, "duration": 10000000}
@@ -80,7 +80,7 @@
 		},
 		{
 			"count": 10,
-			"repeat": true,
+			"repeat": false,
 			"actions": {
 				"effects": [
 					{"type": "speed", "level": 3, "duration": 100000000}
