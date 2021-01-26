@@ -86,7 +86,7 @@
 			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
 			"regions": ["global"],
 			"blocks": ["oak planks"], "message": "&cYou may only place oak planks."
-		},
+		}
     ],
     "regions": [
         {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
