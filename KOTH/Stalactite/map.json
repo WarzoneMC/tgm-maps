@@ -14,14 +14,14 @@
 			"name": "Green",
 			"color": "green",
 			"min": 1,
-			"max": 12
+			"max": 50
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 12
+			"max": 50
 		}
 	],
 	"spawns": [
