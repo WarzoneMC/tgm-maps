@@ -165,11 +165,16 @@
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue", "green", "yellow"],
 			"regions": ["red-spawn", "blue-spawn", "green-spawn", "yellow-spawn"],
-			"blocks": ["iron block"], "message": "&cYou may only break iron blocks."
+			"blocks": ["iron block", "red wool", "yellow wool", "blue wool", "green wool"], "message": "&cYou may only break iron blocks."
+		},
+		{
+			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue", "green", "yellow"],
+			"regions": ["red-spawn", "blue-spawn", "green-spawn", "yellow-spawn"],
+			"blocks": ["red wool", "yellow wool", "blue wool", "green wool"], "message": "&cYou may not place blocks in your spawn!"
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
-			"regions": ["build-height"], "message": "&cYou have reached the max build height."
+			"regions": ["red-spawn-block", "blue-spawn-block", "yellow-spawn-block", "green-spawn-block"], "message": "&cYou may not place blocks in your spawn!"
 		}
 	],
 	"regions": [
@@ -178,12 +183,15 @@
 		{"id": "green-spawn", "type": "cuboid", "min": "-1179, 0, 246", "max": "-1163, oo, 283"},
 		{"id": "yellow-spawn", "type": "cuboid", "min": "-1277, 0, 344", "max": "-1240, oo, 360"},
 
+		{"id": "red-spawn-block", "type": "cuboid", "min": "-1089.5, 71, 350.5", "max": "-1098.5, 74, 354.5"},
+		{"id": "blue-spawn-block", "type": "cuboid", "min": "-1168.5, 71, 433.5", "max": "-1173.5, 74, 426.5"},
+		{"id": "green-spawn-block", "type": "cuboid", "min": "-1172.5, 71, 271.5", "max": "-1168.5, 74, 280.5"},
+		{"id": "yellow-spawn-block", "type": "cuboid", "min": "-1251.5, 71, 354.5", "max": "-1242.5, 74, 350.5"},
+
 		{"id": "red-wool", "type": "cuboid", "min": "-1057, 0, 375", "max": "-1042, oo, 390"},
 		{"id": "blue-wool", "type": "cuboid", "min": "-1209, 0, 466", "max": "-1194, oo, 481"},
 		{"id": "green-wool", "type": "cuboid", "min": "-1148, 0, 223", "max": "-1133, oo, 238"},
-		{"id": "yellow-wool", "type": "cuboid", "min": "-1300, 0, 314", "max": "-1285, oo, 329"},
-
-		{"id": "build-height", "type": "cuboid", "min": "-oo, 160, -oo", "max": "oo, oo, oo"}
+		{"id": "yellow-wool", "type": "cuboid", "min": "-1300, 0, 314", "max": "-1285, oo, 329"}
 	],
 	"buildHeight": 160
 }
