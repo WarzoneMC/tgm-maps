@@ -39,7 +39,7 @@
 			"enabled": true,
 			"limit": 600
 		},
-		"killLimit": 35
+		"killLimit": 25
 	},
 	"kits": [
 		{
@@ -56,7 +56,7 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 200, "amplifier": 50000, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 67, "amplifier": 50000, "particles": false}
 			]
 		}
 	],
