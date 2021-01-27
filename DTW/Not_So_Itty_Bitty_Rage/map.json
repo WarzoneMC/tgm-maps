@@ -1,0 +1,78 @@
+{
+	"name": "Not So Itty Bitty Rage",
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue", 
+			"name": "Blue", 
+			"color": "blue", 
+			"min": 1, 
+			"max": 50
+		},
+		{
+			"id": "red", 
+			"name": "Red", 
+			"color": "red", 
+			"min": 1, 
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "133.5, 74, -11.5, 180"},
+		{"teams": ["red"], "coords": "-90.5, 27, -133.5, -90"},
+		{"teams": ["blue"], "coords": "358.5, 27, -135.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "421, 79, -231",
+					"max": "339, 27, -37"
+				},
+				"health": 5
+			},
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "-154, 80, -231",
+					"max": "-74, 27, -39"
+				},
+				"health": 5
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true, "enchantments": ["sharpness:100"]},
+				{"type": "item", "material": "stone axe", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 2, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 1000000, "amplifier": 3, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	
+	]
+}
