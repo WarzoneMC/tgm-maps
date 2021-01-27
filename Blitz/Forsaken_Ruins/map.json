@@ -35,7 +35,10 @@
             "items": [
                 {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
                 {"type": "item", "material": "bow", "slot": 1, "enchantments": ["ARROW_DAMAGE:1"], "unbreakable": true},
-                {"type": "item", "material": "arrow", "slot": 2, "amount": 24},
+                {"type": "item", "material": "golden axe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "arrow", "slot": 3, "amount": 24},
+                {"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+
 
                 {"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
                 {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
@@ -51,7 +54,7 @@
         }
     ],
     "itemremove": [
-        "stone sword", "bow",
+        "stone sword", "bow", "golden axe",
         "golden apple", "cooked beef", "arrow",
         "leather helmet", "golden chestplate", "leather leggings", "iron boots"
     ],
@@ -76,11 +79,17 @@
         }
     ],
     "filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain here."
-		}
+       {
+            "type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+            "regions": ["global"],
+            "blocks": ["oak planks"], "message": "&cYou may only break oak planks."
+        },
+        {
+            "type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
+            "regions": ["global"],
+            "blocks": ["oak planks"], "message": "&cYou may only place oak planks."
+        }
+    ],
     "regions": [
         {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
     ]
