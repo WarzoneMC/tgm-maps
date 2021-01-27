@@ -92,5 +92,6 @@
     ],
     "regions": [
         {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-    ]
+    ],
+    "buildHeight": 75
 }
