@@ -34,7 +34,7 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "All-purpose instant killing device", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "All-purpose instant killing device", "enchantments": ["power:100", "sharpness: 100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 1, "amount": 2},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
