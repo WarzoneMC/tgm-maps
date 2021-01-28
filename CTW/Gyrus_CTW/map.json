@@ -165,7 +165,7 @@
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue", "green", "yellow"],
 			"regions": ["red-spawn", "blue-spawn", "green-spawn", "yellow-spawn"],
-			"blocks": ["iron block", "red wool", "yellow wool", "blue wool", "green wool"], "message": "&cYou may only break iron blocks."
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks."
 		},
 		{
 			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue", "green", "yellow"],
