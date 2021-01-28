@@ -29,29 +29,6 @@
         {"teams": ["red"], "coords": "-39.5, 31.5, 69.5, -135"},
         {"teams": ["red"], "coords": "39.5, 31.5, 69.5, 135"}
     ],
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:2"], "unbreakable": true},
-                {"type": "item", "material": "iron axe", "slot": 3, "enchantments": ["efficiency:2"], "unbreakable": true},
-                {"type": "item", "material": "white terracotta", "slot": 4, "amount": 8},
-                {"type": "item", "material": "spruce log", "slot": 5, "amount": 8},
-                {"type": "item", "material": "arrow", "slot": 7, "amount": 6},
-                {"type": "item", "material": "golden apple", "slot": 8},
-
-                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["protection:1"], "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
-                {"type": "damage resistance", "duration": 10, "amplifier": 3, "particles": false}
-            ]
-        }
-    ],
     "ctf": {
         "objective": "amount",
         "options": {
@@ -82,6 +59,46 @@
             {"region": "red-net", "team": "red"}
         ]
     },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:2"], "unbreakable": true},
+                {"type": "item", "material": "iron axe", "slot": 3, "enchantments": ["efficiency:2"], "unbreakable": true},
+                {"type": "item", "material": "white terracotta", "slot": 4, "amount": 8},
+                {"type": "item", "material": "spruce log", "slot": 5, "amount": 8},
+                {"type": "item", "material": "arrow", "slot": 7, "amount": 6},
+                {"type": "item", "material": "golden apple", "slot": 8},
+
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["protection:1"], "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+                {"type": "damage resistance", "duration": 10, "amplifier": 3, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "iron pickaxe", "iron axe",
+        "white terracotta", "spruce log", "golden apple", "spruce planks",
+        "arrow", "golden apple",
+        "chainmail chestplate", "leather leggings", "leather boots"
+    ],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
     "filters": [
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-1", "green-spawn-2"], "message": "&cYou may not enter this region."},
         {"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-1", "red-spawn-2"], "message": "&cYou may not enter this region."},
@@ -97,12 +114,6 @@
 
         {"id": "green-net", "type": "cuboid", "min": "-2, 0, -57", "max": "2, oo, -60"},
         {"id": "red-net", "type": "cuboid", "min": "2, 0, 60", "max": "-2, oo, 63"}
-    ],
-    "itemremove": [
-        "stone sword", "bow", "iron pickaxe", "iron axe",
-        "white terracotta", "spruce log", "golden apple", "spruce planks",
-        "arrow", "golden apple",
-        "chainmail chestplate", "leather leggings", "leather boots"
     ],
     "buildHeight": 36
 }
