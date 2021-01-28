@@ -1,0 +1,132 @@
+{
+    "name": "Curabitur",
+    "authors": [
+        {"uuid": "9da4217e-7c31-41d1-b82d-53b0ecc981d0", "username": "MerlinMaster"},
+        {"uuid": "ba601988-d27b-4349-ae15-4b0a1424bfa8", "username": "joelous"}
+    ],
+    "version": "1.1.0",
+    "gametype": "DTM",
+    "teams": [
+        {
+            "id": "lime",
+            "name": "Lime",
+            "color": "green",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "70.5, 44, 34.5, 90"},
+        {"teams": ["lime"], "coords": "1.5, 34, -85.5"},
+        {"teams": ["blue"], "coords": "1.5, 34, 154.5, 180"}
+    ],
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+                
+                {"type": "item", "material": "golden apple", "slot": 3},
+                {"type": "item", "material": "cooked beef", "slot": 4, "amount": 64},
+                
+                {"type": "item", "material": "glass", "slot": 6, "amount": 32},
+                {"type": "item", "material": "stone", "slot": 7, "amount": 64},
+                {"type": "item", "material": "oak planks", "slot": 8, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 28, "amount": 24},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
+            ]
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "dtm": {
+        "monuments": [
+            {
+                "name": "Left",
+                "teams": ["lime"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-26, 34, -33",
+                    "max": "-26, 34, -33"
+                },
+                "health": 1
+            },
+            {
+                "name": "Right",
+                "teams": ["lime"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "28, 34, -33",
+                    "max": "28, 34, -33"
+                },
+                "health": 1
+            },
+            {
+                "name": "Left",
+                "teams": ["blue"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "28, 34, 101",
+                    "max": "28, 34, 101"
+                },
+                "health": 1
+            },
+            {
+                "name": "Right",
+                "teams": ["blue"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-26, 34, 101",
+                    "max": "-26, 34, 101"
+                },
+                "health": 1
+            }
+        ]
+    },
+    "itemremove": [
+        "stone sword", "bow", "diamond pickaxe",
+        "golden apple", "cooked beef",
+        "glass", "stone", "oak planks", "arrow",
+        "leather helmet"
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["lime", "blue"],
+            "regions": ["lime-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou may not modify terrain here."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["lime"],
+            "regions": ["blue-spawn-protection"],
+            "message": "&cYou may not enter the enemy spawn."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["lime-spawn-protection"],
+            "message": "&cYou may not enter the enemy spawn."
+        }
+    ],
+    "regions": [
+        {"id": "lime-spawn-protection", "type": "cylinder", "base": "1, 33, -86", "radius": 9, "height": 11},
+        {"id": "blue-spawn-protection", "type": "cylinder", "base": "1, 33, 154", "radius": 9, "height": 11}
+    ]
+}
