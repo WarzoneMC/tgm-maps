@@ -46,7 +46,7 @@
 			"name": "Default",
 			"items": [
 				{"material": "stone sword", "slot": 0, "displayName": "One-Hit-Kill", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "displayName": "One-Shot-Kill", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "displayName": "One-Shot-Kill", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"material": "arrow", "slot": 2, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 
