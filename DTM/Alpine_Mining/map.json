@@ -2,8 +2,8 @@
 	"name": "Alpine Mining",
 	"authors": [
 		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"},
-		{"uuid": "c2848337-b526-4db0-9130-fabd0a5c7cfb", "username": "jollee999"},
-		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomRobotBoy"}
+		{"uuid": "c2848337-b526-4db0-9130-fabd0a5c7cfb", "username": "Rasta_Jol"},
+		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"}
 	],
 	"version": "1.2",
 	"gametype": "DTM",
