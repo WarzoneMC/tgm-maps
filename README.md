@@ -2,7 +2,7 @@
 The maps and active rotation used on the Minehut [Warzone](https://warz.one) server.
 
 ## Updating the Repo
-When adding or modifing any map in this repo, please note some of the requirements we have for our maps.
+When adding or modifying any map in this repo, please note some of the requirements we have for our maps.
 
 ### Updated World
 
