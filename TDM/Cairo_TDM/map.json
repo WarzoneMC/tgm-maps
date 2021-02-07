@@ -40,7 +40,7 @@
 			"name": "default",
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["arrow infinite:1"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
 				{"type": "item", "material": "ladder", "slot": 2, "amount": "32"},
 				{"type": "item", "material": "cooked chicken", "slot": 3, "amount": "32"},
 				{"type": "item", "material": "golden apple", "slot": 4},
@@ -59,7 +59,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "ladder", "golden apple", "arrow",
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "cooked chicken"
 	],
 	"filters": [
 		{
