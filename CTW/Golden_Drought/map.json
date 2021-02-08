@@ -1,5 +1,5 @@
 {
-	"name": "Golden Drought",
+	"name": "Golden Drought III",
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
@@ -80,7 +80,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "leather chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "iron block"
+		"stone sword", "bow", "iron pickaxe", "iron axe", "leather helmet", "leather chestplate", "leather leggings", "iron boots", "beacon", "string", "wool", "iron block", "oak planks", "cooked beef", "arrow"
 	],
 	"killstreaks": [
 		{
