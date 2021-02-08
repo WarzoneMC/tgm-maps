@@ -46,6 +46,9 @@
 	"points": {
 		"target": 500
 	},
+	"time": {
+        	"limit": 600
+   	},
 	"koth": {
 		"hills": [
 			{
