@@ -148,7 +148,7 @@
 
 		{"id": "orange-wool", "type": "cuboid", "min": "199, 0, 263", "max": "165, oo, 289"},
 		{"id": "lime-wool", "type": "cuboid", "min": "167, 0, 106", "max": "201, oo, 74"},
-		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"},
+		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"}
 	],
 	"buildHeight": 40
 }
