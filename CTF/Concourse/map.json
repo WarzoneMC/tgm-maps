@@ -1,0 +1,97 @@
+{
+	"name": "Concourse",
+	"authors": [
+		{"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"}
+	],
+	"version": "1.1.0",
+	"gametype": "KOTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 20
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 20
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "3.5,53,-445.5,0"},
+		{"teams": ["blue"], "coords": "3.5,8,-442.5,0"},
+		{"teams": ["red"], "coords": "3.5,8,-448.5,180"}
+	],
+	"respawn": {
+		"rules": [
+			{"blindness": "false"}
+		]
+	},
+	"ctf": {
+		"objective": "time",
+		"options": {
+			"time": 420
+		},
+		"flags": [
+			{
+				"location": "3.5,15,-445.5",
+				"respawn-time": 10,
+				"respawn-block": "true",
+				"type": "purple",
+				"patterns": [
+					{"color": "white", "type": "rhombus middle"}
+				],
+				"rotation": "south",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false}
+				]
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true, "enchantments": ["arrow infinite:1"]},
+				{"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+				{"type": "item", "material": "golden apple", "slot": 8},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet",  "unbreakable": true},
+				{"type": "item", "material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["protection fall:2"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 10, "amplifier": 3, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow",
+		"arrow", "golden carrot", "golden apple",
+		"iron chestplate", "leather helmet", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["everywhere"], "message": "&cYou may not modify the map."}
+	],
+	"regions": [
+		{"id": "everywhere", "type": "cuboid", "min": "-oo,-oo,-oo", "max": "oo,oo,oo"}
+	]
+}
