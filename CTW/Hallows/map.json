@@ -104,12 +104,12 @@
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["magenta-room", "pink-room"],
+			"regions": ["magenta-room", "pink-room", "red-spawn", "blue-spawn"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["light-blue-room", "cyan-room"],
+			"regions": ["light-blue-room", "cyan-room", "red-spawn", "blue-spawn"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
