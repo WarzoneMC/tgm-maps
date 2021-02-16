@@ -1,0 +1,111 @@
+{
+	"name": "Antiquis",
+	"authors": [
+		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "username": "McSpider"}
+	],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-69.5, 20, 0.5, -90"},
+		{"teams": ["red"], "coords": "0.5, 11, 68.5, 180"},
+		{"teams": ["blue"], "coords": "0.5, 11, -67.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0, 8, 41",
+					"max": "0, 9, 41"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "0, 8, -41",
+					"max": "0, 9, -41"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "wooden pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage resistance", "duration": 6, "amplifier": 3, "particles": false},
+				{"type": "regeneration", "duration": 6, "amplifier": 3, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"leather helmet", "leather chestplate", "leather leggings", "leather boots",
+		"wooden pickaxe", "stone axe", "cooked beef", "arrow", "obsidian", "flint",
+		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling"
+	],
+	"itemkeep": [
+		"nether star", "stone pickaxe", "iron pickaxe", "diamond pickaxe",
+		"golden helmet", "golden chestplate", "golden leggings", "golden boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "nether star", "display_name": "&4Infused Shard", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "-31, 8, -80", "max": "31, 10, -51"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-31, 8, 51", "max": "31, 11, 79"}
+	],
+	"buildHeight": 35
+}
