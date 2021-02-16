@@ -1,5 +1,6 @@
 {
 	"name": "Crossfire",
+	"objective": "Defenders are trying to stop the runners from getting to the end. Run for your life or be the one to stop the runners!",
 	"authors": [
 		{"uuid": "6e347123-c684-4d7e-996c-44d4924ff172", "username": "SheriffSoco"}
 	],
