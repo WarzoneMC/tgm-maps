@@ -116,7 +116,7 @@
 					{"material": "golden apple", "amount": 1}
 				],
 				"effects": [
-					{"type": "speed", "duration": 5, "amplifier": 2, "particles": false},
+					{"type": "speed", "duration": 5, "amplifier": 1, "particles": false},
 					{"type": "night vision", "duration": 2, "amplifier": 1, "particles": false}
 				]
 			}
