@@ -1,0 +1,165 @@
+{
+	"name": "Aleppo",
+	"authors": [
+		{"uuid": "7ab24d14-0801-48ba-8fea-147ddf400067", "username": "samtheman43"}
+	],
+	"version": "1.1.1",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark aqua",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 14
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 14
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-72.5, 80, -0.5, 90"},
+		{"teams": ["cyan"], "coords": "-77.5, 23, 93.5, 90"},
+		{"teams": ["yellow"], "coords": "-68.5, 23, -94.5, -90"}
+	],
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 4
+		},
+		"flags": [
+			{
+				"team": "yellow",
+				"location": "-50.5, 31, -73.5",
+				"type": "yellow",
+				"patterns": [
+					{"color": "black", "type": "skull"}
+				],
+				"rotation": "south",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "slowness", "duration": 1000000, "amplifier": 3, "particles": false}
+				]
+			},
+			{
+				"team": "cyan",
+				"location": "-95.5, 31, 72.5",
+				"type": "cyan",
+				"patterns": [
+					{"color": "white", "type": "skull"}
+				],
+				"rotation": "north",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "slowness", "duration": 1000000, "amplifier": 3, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "cyan-net", "team": "cyan"},
+			{"region": "yellow-net", "team": "yellow"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked mutton", "slot": 2, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 8},
+
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "regeneration", "duration": 5, "amplifier": 5, "particles": false}
+			]
+		},
+		{
+			"name": "Cyan",
+			"teams": ["cyan"],
+			"items": [
+				{
+					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true,
+					"canDestroy": ["spruce fence"], "enchantments": ["efficiency:1", "sharpness:1"]
+				}
+			]
+		},
+		{
+			"name": "Yellow",
+			"teams": ["yellow"],
+			"items": [
+				{
+					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true, 
+					"canDestroy": ["dark oak fence"], "enchantments": ["efficiency:1", "sharpness:1"]
+				}
+			]
+		}
+	],
+	"itemremove": [
+		"iron chestplate", "golden chestplate", "leather chestplate", "leather leggings", "iron boots",
+		"iron axe", "bow", "arrow", "cooked mutton", "spruce fence", "dark oak fence"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				],
+				"effects": [
+					{"type": "speed", "duration": 5, "amplifier": 2, "particles": false},
+					{"type": "night vision", "duration": 2, "amplifier": 1, "particles": false}
+				]
+			}
+		}
+	],
+	"respawn": {
+		"rules": [
+			{"delay": 4000}
+		]
+	},
+	"damageControl": {
+		"FALL": false,
+		"BLOCK_EXPLOSION": false
+	},
+	"filters": [
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["cyan-spawn", "yellow-flag"], 
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["yellow-spawn", "cyan-flag"],
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["cyan", "yellow"], "regions": ["cyan-spawn", "yellow-spawn"],
+			"message": "&cYou may not modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "cyan-portal", "type": "cuboid", "min": "-96, 22, 69", "max": "-95, 24, 70"},
+		{"id": "yellow-portal", "type": "cuboid", "min": "-51, 22, -71", "max": "-50, 24, -70"},
+
+		{"id": "cyan-spawn", "type": "cuboid", "min": "-84, 0, 87", "max": "-72, oo, 99"},
+		{"id": "yellow-spawn", "type": "cuboid", "min": "-75, 0, -101", "max": "-63, oo, -89"},
+
+		{"id": "cyan-flag", "type": "cuboid", "min": "-101.0, 0, 70.0", "max": "-90.0, 25, 76.0"},
+		{"id": "yellow-flag", "type": "cuboid", "min": "-56.0, 0, -77.0", "max": "-45.0, 25, -71.0"},
+
+		{"id": "cyan-net", "type": "cuboid", "min": "-113.0, 20, 51.0", "max": "-110.0, 25, 54.0"},
+		{"id": "yellow-net", "type": "cuboid", "min": "-36.0, 20, -55.0", "max": "-33.0, 25, -52.0"}
+	],
+	"portals": [
+		{"from": "cyan-portal", "to": "-95.5, 31, 72.5", "sound": false, "teams": ["yellow"]},
+		{"from": "yellow-portal", "to": "-50.5, 31, -73.5", "sound": false, "teams": ["cyan"]}
+	]
+}
