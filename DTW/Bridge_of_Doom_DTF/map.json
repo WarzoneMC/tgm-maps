@@ -31,7 +31,9 @@
 			{
 				"name": "Evilucas",
 				"teams": ["evilucas"],
-				"materials": ["red wool"],
+				"materials": [
+					"black wool", "red wool", "orange wool", "yellow wool"
+				],
 				"region": {
 					"min": "-67, 62, 8",
 					"max": "-73, 56, 2"
@@ -41,7 +43,9 @@
 			{
 				"name": "Bennyvil",
 				"teams": ["bennyvil"],
-				"materials": ["blue wool"],
+				"materials": [
+					"black wool", "gray wool", "red wool", "orange wool", "yellow wool"
+				],
 				"region": {
 					"min": "67, 62, -8",
 					"max": "73, 56, -2"
@@ -60,7 +64,7 @@
 				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
 				
 				{"type": "item", "material": "oak log", "slot": 4, "amount": 64},
-				{"type": "item", "material": "cooked fish", "slot": 8, "amount": 64},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -71,7 +75,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron pickaxe", "stone axe", "oak log", "oak planks", "cooked fish", "arrow", "golden apple",
+		"stone sword", "bow", "iron pickaxe", "stone axe", "oak log", "oak planks", "cooked cod", "arrow", "golden apple",
 		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
