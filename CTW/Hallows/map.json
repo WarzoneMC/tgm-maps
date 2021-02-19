@@ -103,8 +103,13 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn", "blue-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["magenta-room", "pink-room", "red-spawn", "blue-spawn"],
+			"regions": ["magenta-room", "pink-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
