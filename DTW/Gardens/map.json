@@ -31,22 +31,42 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Red Wool",
+				"name": "Right Wool",
 				"teams": ["red"],
 				"materials": ["red wool"],
 				"region": {
-					"min": "17, 81, 46",
-					"max": "117, 87, 44"
+					"min": "17, 81, 44",
+					"max": "19, 87, 46"
 				},
 				"health": 10
 			},
 			{
-				"name": "Blue Wool",
+				"name": "Left Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "115, 81, 44",
+					"max": "117, 87, 46"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
-					"min": "19, 87, 200",
-					"max": "119, 81, 198"
+					"min": "117, 81, 198",
+					"max": "119, 87, 200"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "19, 81, 198",
+					"max": "21, 87, 200"
 				},
 				"health": 10
 			}

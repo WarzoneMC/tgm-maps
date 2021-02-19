@@ -37,7 +37,7 @@
 					"min": "205, 31, -6",
 					"max": "209, 36, -10"
 				},
-				"health": 5
+				"health": 10
 			},
 			{
 				"name": "Left Wool",
@@ -47,27 +47,27 @@
 					"min": "205, 31, 84",
 					"max": "209, 36, 80"
 				},
-				"health": 5
+				"health": 10
 			},
 			{
-				"name": "Right Wool&r",
+				"name": "Right Wool",
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
 					"min": "71, 31, 84",
 					"max": "75, 36, 80"
 				},
-				"health": 5
+				"health": 10
 			},
 			{
-				"name": "Left Wool&r",
+				"name": "Left Wool",
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
 					"min": "71, 31, -10",
 					"max": "75, 36, -6"
 				},
-				"health": 5
+				"health": 10
 			}
 		]
 	},

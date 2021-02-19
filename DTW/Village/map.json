@@ -29,49 +29,48 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Red Wool",
+				"name": "Right Wool",
 				"teams": ["red"],
 				"materials": ["red wool"],
 				"region": {
-					"min": "-22, 66, 155",
-					"max": "-92, 77, 159"
+					"min": "-26, 66, 155",
+					"max": "-22, 77, 159"
 				},
 				"health": 10
 			},
 			{
-				"name": "Blue Wool",
+				"name": "Left Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "-92, 66, 155",
+					"max": "-88, 77, 159"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
 				"teams": ["blue"],
 				"materials": ["blue wool"],
 				"region": {
-					"min": "-12, 66, 27",
-					"max": "-82, 77, 23"
+					"min": "-82, 66, 23",
+					"max": "-78, 77, 27"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "-16, 66, 23",
+					"max": "-12, 77, 27"
 				},
 				"health": 10
 			}
 		]
 	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
-			]
-		}
-	],
-	"itemremove": [
-		"stone sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef",
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
-	],
+	"classes": true,
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
