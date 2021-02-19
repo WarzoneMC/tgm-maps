@@ -106,6 +106,11 @@
 			"regions": ["red-spawn-protection-top", "red-spawn-protection-bottom", "blue-spawn-protection-top", "blue-spawn-protection-bottom", "magenta-room", "purple-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["east-void", "west-void"],
+			"message": "&cYou are not allowed to build in the void!"
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-enter", "magenta-room", "purple-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-enter", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
 	],
@@ -120,7 +125,11 @@
 		{"id": "red-spawn-protection-top", "type": "cuboid", "min": "-25, 18, 109", "max": "25, oo, 158"},
 		{"id": "red-spawn-protection-bottom", "type": "cuboid", "min": "-25, 0, 109", "max": "25, 14, 158"},
 		{"id": "blue-spawn-protection-enter", "type": "cuboid", "min": "-25, 0, -158", "max": "25, oo, -109"},
-		{"id": "red-spawn-protection-enter", "type": "cuboid", "min": "-25, 0, 109", "max": "25, oo, 158"}
+		{"id": "red-spawn-protection-enter", "type": "cuboid", "min": "-25, 0, 109", "max": "25, oo, 158"},
+
+		{"id": "east-void", "min": "40, -oo, -54", "max": "oo, oo, 54"},
+		{"id": "west-void", "min": "-40, -oo, -54", "max": "-oo, oo, 54"}
+
 	],
 	"buildHeight": 32
 }
