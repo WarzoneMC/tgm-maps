@@ -74,14 +74,14 @@
 			"name": "Green",
 			"teams": ["green"],
 			"items": [
-				{"material": "stained glass", "slot": 5, "amount": 32, "durability": 13}
+				{"material": "green stained glass", "slot": 5, "amount": 32}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"material": "stained glass", "slot": 5, "amount": 32, "durability": 14}
+				{"material": "red stained glass", "slot": 5, "amount": 32}
 			]
 		}
 	],
