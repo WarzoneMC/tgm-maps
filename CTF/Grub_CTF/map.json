@@ -84,7 +84,7 @@
 	],
 	"itemremove": [
 		"cobblestone", "oak planks", "sand", "sandstone", "dirt", "tnt",
-		"golden apple", "apple", "arrow", "iron sword",
+		"golden apple", "cooked beef", "bow", "arrow", "iron sword",
 		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
