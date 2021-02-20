@@ -36,6 +36,7 @@
 			{
 				"team": "red",
 				"location": "-56.5, 21, 266.5",
+				"respawn-time": 20,
 				"type": "red",
 				"patterns": [
 					{"color": "red", "type": "base"}
@@ -48,6 +49,7 @@
 			{
 				"team": "blue",
 				"location": "-56.5, 21, 122.5",
+				"respawn-time": 20,
 				"type": "blue",
 				"patterns": [
 					{"color": "blue", "type": "base"}
