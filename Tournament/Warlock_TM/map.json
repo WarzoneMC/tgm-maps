@@ -1,7 +1,7 @@
 {
 	"name": "Warlock TM",
 	"authors": [
-		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "name": "McSpider"}
+		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "username": "McSpider"}
 	],
 	"version": "1.2.3",
 	"gametype": "DTM",
@@ -71,8 +71,19 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots",
+		"cobblestone", "cobblestone stairs", "cobblestone slab",
+		"red terracotta", "blue terracotta",
+		"stone bricks", "smooth stone slab",
+		"sandstone", "sandstone slab",
+		"quartz slab",
+		"iron bars"
 	],
+	"crafting": {
+		"remove": [
+			"sandstone"
+		]
+	},
 	"killstreaks": [
 		{
 			"count": 1,
@@ -99,8 +110,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "93, 0, 41", "max": "113, oo, 57"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "93, 0, -57", "max": "113, oo, -73"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "94, 0, 41", "max": "113, oo, 57"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "94, 0, -57", "max": "113, oo, -73"},
 
 		{"id": "red-wool", "type": "cuboid", "min": "76, 6, -71", "max": "78, 9, -69"},
 		{"id": "blue-wool", "type": "cuboid", "min": "76, 9, 53", "max": "78, 6, 55"}
