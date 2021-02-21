@@ -1,0 +1,159 @@
+{
+	"name": "SuperCUBE",
+	"authors": [
+		{"uuid": "ba4a93aa-4935-4a71-bab2-a58f9a124e7b", "username": "ollyj"},
+		{"uuid": "8e8340b2-d315-4d26-9178-d2145b59850c", "username": "oX_W1LL_G_Xo"}
+	],
+	"version": "0.8.0",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 13
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 13
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-68.5, 25, 33.5, 90"},
+		{"teams": ["blue"], "coords": "-150.5, 4, 57.5, -135"},
+		{"teams": ["blue"], "coords": "-166.5, 2, -22.5, -45"},
+		{"teams": ["blue"], "coords": "-163.5, 2, 15.5, -90"},
+		{"teams": ["red"], "coords": "13.5, 4, 9.5, 45"},
+		{"teams": ["red"], "coords": "26, 2, 51, 90"},
+		{"teams": ["red"], "coords": "29, 2, 89, 135"}
+	],
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 3
+		},
+		"flags": [
+			{
+				"team": "red",
+				"location": "-10.5, 5, 56.5",
+				"respawn-time": 20,
+				"type": "white",
+				"patterns": [
+					{"color": "red", "type": "bricks"},
+					{"color": "red", "type": "gradient"},
+					{"color": "white", "type": "skull"},
+					{"color": "red", "type": "border"}
+				],
+				"rotation": "west",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "regeneration", "duration": 5, "amplifier": 5, "particles": false}
+				]
+			},
+			{
+				"team": "blue",
+				"location": "-126.5, 5, 10.5",
+				"respawn-time": 20,
+				"type": "white",
+				"patterns": [
+					{"color": "blue", "type": "bricks"},
+					{"color": "blue", "type": "gradient"},
+					{"color": "white", "type": "skull"},
+					{"color": "blue", "type": "border"}
+				],
+				"rotation": "east",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "regeneration", "duration": 5, "amplifier": 5, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "blue-net", "team": "blue"},
+			{"region": "red-net", "team": "red"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 1000000, "amplifier": 0, "particles": false},
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false},
+				{"type": "speed", "duration": 1000000, "amplifier": 0, "particles": false}
+			]
+		},
+		{
+			"name": "specs",
+			"teams": ["spectators"],
+			"items": [],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "speed", "duration": 1000000, "amplifier": 1, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "arrow", "potion", "glass bottle",
+		"leather chestplate", "iron leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				],
+				"effects": [
+					{"type": "regeneration", "duration": 5, "amplifier": 1, "particles": false}
+				]
+			}
+		}
+	],
+	"respawn": {
+		"rules": [
+			{"delay": 4500, "blindness": false}
+		]
+	},
+	"damageControl": {
+		"FALL": false
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"],
+			"message": "&cYou may not modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-pad", "type": "cylinder", "base":"29.5, 1, 36.5", "radius": 1, "height": 1},
+		{"id": "red-flag-pad", "type": "cylinder", "base":"-27.5, 1, 63.5", "radius": 1, "height": 1},
+		{"id": "blue-flag-pad", "type": "cylinder", "base":"-109.5, 1, 3.5", "radius": 1, "height": 1},
+		{"id": "blue-spawn-pad", "type": "cylinder", "base":"-166.5, 1, 30.5", "radius": 1, "height": 1},
+
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+
+		{"id": "blue-net", "type": "cuboid", "min": "-123.5, 5, 13.5", "max": "-129.5, 9, 7.5"},
+		{"id": "red-net", "type": "cuboid", "min": "-13.5, 5, 53.5", "max": "-7.5, 9, 59.5"}
+	],
+	"portals": [
+		{"from": "red-spawn-pad", "to": "29.5, 4, 31.5, 90", "sound": false, "teams": ["red", "blue"]},
+		{"from": "red-flag-pad", "to": "-27.5, 5, 68.5", "sound": false, "teams": ["red", "blue"]},
+		{"from": "blue-flag-pad", "to": "-109.5, 5, -1.5, 180", "sound": false, "teams": ["red", "blue"]},
+		{"from": "blue-spawn-pad", "to": "-166.5, 4, 35.5, -90", "sound": false, "teams": ["red", "blue"]}
+	]
+}
