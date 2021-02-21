@@ -1,0 +1,110 @@
+{
+    "name": "Palace CTF",
+    "authors": [
+        {"uuid": "07fa10c6-f564-4630-861e-fe134ae27527", "username": "Yoyo_"},
+        {"uuid": "f70b7a8f-93b2-480f-9d54-88e21485a042", "username": "Diamyx"},
+        {"uuid": "337ae91f-960b-4562-906d-f52f9e56d392", "username": "Aalhond"}
+    ],
+    "version": "1.1.2",
+    "gametype": "CTF",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 24
+        },
+        {
+            "id": "yellow",
+            "name": "Yellow",
+            "color": "yellow",
+            "min": 1,
+            "max": 24
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "706.5, 26, -1165.5, -90"},
+        {"teams": ["red"], "coords": "726.5, 4, -1083, -90"},
+        {"teams": ["yellow"], "coords": "726.5, 4, -1247.5, -90"}
+    ],
+    "ctf": {
+    	"objective": "amount",
+    	"options": {
+    		"captures": 3
+    	},
+    	"flags": [
+    		{
+    			"team": "yellow",
+    			"location": "762, 6, -1249",
+    			"type": "yellow",
+                "respawn-time": 10,
+    			"patterns": [
+    				{"color": "white", "type": "skull"}
+    			],
+    			"rotation": "south",
+    			"effects": [
+					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+    			]
+    		},
+    		{
+    			"team": "red",
+    			"location": "762, 6, -1083",
+    			"type": "red",
+                "respawn-time": 10,
+    			"patterns": [
+    				{"color": "white", "type": "skull"}
+    			],
+    			"rotation": "north",
+    			"effects": [
+					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+    			]
+    		}
+    	],
+    	"bases": [
+    		{"region": "red-net", "team": "red"},
+    		{"region": "yellow-net", "team": "yellow"}
+    	]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+                {"type": "item", "material": "golden apple", "slot": 2},
+                {"type": "item", "material": "arrow", "slot": 7},
+                {"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["feather falling:2"], "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "golden apple", "arrow", "golden carrot",
+        "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["red", "yellow"], "regions": ["world"], "message": "&cYou may not modify terrain on this map."}
+    ],
+    "regions": [
+        {"id": "world", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+        
+        {"id": "red-net", "type": "cuboid", "min": "759, 8, -1079", "max": "764, 5, -1084"},
+        {"id": "yellow-net", "type": "cuboid", "min": "764, 8, -1251", "max": "759, 5, -1246"}
+    ]
+}
