@@ -129,5 +129,5 @@
 
 		{ "id": "map", "type": "cuboid", "min": "30, 0, -199", "max": "97, oo, -28" }
 	],
-	"buildHeight": 100
+	"buildHeight": 92
 }
