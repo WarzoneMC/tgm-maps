@@ -69,6 +69,9 @@
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false}
 			]
 		}
 	],
@@ -88,26 +91,19 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["yellow-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["top-protection", "a-protection", "b-protection"], "message": "&cYou are not allowed to modify terrain here."},
-
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "yellow"],
 			"regions": ["global"],
-			"blocks": ["oak leaves"], "message": "&cYou may only break leaves."
+			"blocks": ["oak leaves", "lily pad"], "message": "&cYou may only break leaves."
 		},
 		{
 			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "yellow"],
 			"regions": ["global"],
-			"blocks": ["oak leaves"], "message": "&cYou may only place leaves!"
+			"blocks": ["oak leaves", "lily pad"], "message": "&cYou may only place leaves!"
 		}
 	],
-
 	"regions": [
-		{"id": "yellow-spawn-protection", "min": "27.5, 5, 84.5", "max": "21.5, oo, 78.5"},
-		{"id": "red-spawn-protection", "min": "-2.5, 5, -19", "max": "3.5, oo, -13.5"},
 		{"id": "top-protection", "min": "3.5, 7, 3.5", "max": "-2.5, oo, -2.5"},
 		{"id": "a-protection", "min": "19.5, 2, -16.5", "max": "25.5, oo, -22.5"},
 		{"id": "b-protection", "min": "-18.5, 2, 17.5", "max": "-24.5, oo, 23.5"},
