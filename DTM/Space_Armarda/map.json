@@ -114,12 +114,20 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["blue-nexus", "orange-nexus"], "message": "&cYou cannot break your own nexus room."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn-center", "orange-spawn-right", "orange-spawn-left"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn-center", "blue-spawn-right", "blue-spawn-left"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn", "type": "cuboid", "min": "-8, 21, 1", "max": "-25, 27, 3"},
-		{"id": "orange-spawn", "type": "cuboid", "min": "-203, 27, 115", "max": "-220, 21, 117"},
+		{"id": "blue-spawn-center", "type": "cuboid", "min": "-11, 21, 1", "max": "-24, 27, 4"},
+		{"id": "blue-spawn-right", "type": "cuboid", "min": "-15, 24, 4", "max": "-23, 26, 6"},
+		{"id": "blue-spawn-left", "type": "cuboid", "min": "-15, 24, 1", "max": "-23, 26, -1"},
+
+		{"id": "orange-spawn-center", "type": "cuboid", "min": "-204, 27, 115", "max": "-217, 21, 118"},
+		{"id": "orange-spawn-right", "type": "cuboid", "min": "-212, 24, 115", "max": "-204, 26, 113"},
+		{"id": "orange-spawn-left", "type": "cuboid", "min": "-212, 24, 118", "max": "-204, 26, 120"},
+
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 21, 1", "max": "-24, 27, 3"},
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-204, 27, 115", "max": "-217, 21, 117"},
 
 		{"id": "orange-nexus", "type": "cuboid", "min": "-175, 19, 108", "max": "-205, 12, 123"},
 		{"id": "blue-nexus", "type": "cuboid", "min": "-23, 12, -5", "max": "-54, 19, 9"}
