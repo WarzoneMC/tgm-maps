@@ -29,42 +29,42 @@
         {"teams": ["yellow"], "coords": "726.5, 4, -1247.5, -90"}
     ],
     "ctf": {
-    	"objective": "amount",
-    	"options": {
-    		"captures": 3
-    	},
-    	"flags": [
-    		{
-    			"team": "yellow",
-    			"location": "762, 6, -1249",
-    			"type": "yellow",
+        "objective": "amount",
+        "options": {
+            "captures": 3
+        },
+        "flags": [
+            {
+                "team": "yellow",
+                "location": "762, 6, -1249",
+                "type": "yellow",
                 "respawn-time": 10,
-    			"patterns": [
-    				{"color": "white", "type": "skull"}
-    			],
-    			"rotation": "south",
-    			"effects": [
-					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
-    			]
-    		},
-    		{
-    			"team": "red",
-    			"location": "762, 6, -1083",
-    			"type": "red",
+                "patterns": [
+                    {"color": "white", "type": "skull"}
+                ],
+                "rotation": "south",
+                "effects": [
+                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                ]
+            },
+            {
+                "team": "red",
+                "location": "762, 6, -1083",
+                "type": "red",
                 "respawn-time": 10,
-    			"patterns": [
-    				{"color": "white", "type": "skull"}
-    			],
-    			"rotation": "north",
-    			"effects": [
-					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
-    			]
-    		}
-    	],
-    	"bases": [
-    		{"region": "red-net", "team": "red"},
-    		{"region": "yellow-net", "team": "yellow"}
-    	]
+                "patterns": [
+                    {"color": "white", "type": "skull"}
+                ],
+                "rotation": "north",
+                "effects": [
+                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                ]
+            }
+        ],
+        "bases": [
+            {"region": "red-net", "team": "red"},
+            {"region": "yellow-net", "team": "yellow"}
+        ]
     },
     "kits": [
         {
