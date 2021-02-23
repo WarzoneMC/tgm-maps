@@ -119,8 +119,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "orange-spawn-protection", "type": "cuboid", "min": "30, 0, -872", "max": "43, oo, -886"},
-		{"id": "purple-spawn-protection", "type": "cuboid", "min": "121, 0, -872", "max": "134, oo, -886"}
+		{"id": "orange-spawn-protection", "type": "cylinder", "base": "36, 0, -879", "radius": 15, "height": 256 },
+		{"id": "purple-spawn-protection", "type": "cylinder", "base": "128, 0, -879", "radius": 15, "height": 256 }
 	],
 	"buildHeight": 30
 }
