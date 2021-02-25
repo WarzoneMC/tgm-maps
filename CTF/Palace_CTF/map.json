@@ -44,6 +44,7 @@
                 ],
                 "rotation": "south",
                 "effects": [
+                    {"type": "health boost", "duration": 1000000, "amplifier": -1, "particles": false},
                     {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
                 ]
             },
@@ -57,6 +58,7 @@
                 ],
                 "rotation": "north",
                 "effects": [
+                    {"type": "health boost", "duration": 1000000, "amplifier": -1, "particles": false},
                     {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
                 ]
             }
@@ -80,6 +82,10 @@
                 {"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
                 {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
                 {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["feather falling:2"], "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "heal", "duration": 40, "amplifier": 1, "particles": false},
+                {"type": "damage resistance", "duration": 80, "particles": false}
             ]
         }
     ],
