@@ -58,7 +58,7 @@
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "damage resistance", "duration": 3, "amplifier": 50, "particles": false},
+				{"type": "damage resistance", "duration": 60, "amplifier": 50, "particles": false}
 			]
 		}
 	],
