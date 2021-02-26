@@ -65,12 +65,12 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:2"], "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 3, "enchantments": ["efficiency:2"], "unbreakable": true},
-				{"type": "item", "material": "white terracotta", "slot": 4, "amount": 8},
-				{"type": "item", "material": "spruce log", "slot": 5, "amount": 8},
-				{"type": "item", "material": "arrow", "slot": 7, "amount": 6},
-				{"type": "item", "material": "golden apple", "slot": 8},
+				{"type": "item", "material": "spruce log", "slot": 2, "amount": 8},
+				{"type": "item", "material": "white terracotta", "slot": 3, "amount": 8},
+				{"type": "item", "material": "iron pickaxe", "slot": 4, "enchantments": ["efficiency:2"], "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 5, "enchantments": ["efficiency:2"], "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 6},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 6},
 
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
