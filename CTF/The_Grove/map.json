@@ -47,7 +47,6 @@
                 ],
                 "rotation": "north",
                 "effects": [
-                    {"type": "regeneration", "duration": 0, "particles": false},
                     {"type": "slow", "duration": 1000000, "amplifier": 2, "particles": false},
                     {"type": "health boost", "duration": 1000000, "amplifier": -2, "particles": false}
                 ]
