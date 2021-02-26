@@ -1,0 +1,97 @@
+{
+    "name": "The Grove",
+    "authors": [
+        {"uuid": "91295196-9cd2-4963-b7ec-afd1a110edbe", "username": "pbat"},
+        {"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"}
+    ],
+    "version": "1.2.2",
+    "gametype": "KOTF",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 12
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark red",
+            "min": 1,
+            "max": 12
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 39, -9.5"},
+        {"teams": ["blue"], "coords": "37.5, 19, 12.5, 45"},
+        {"teams": ["red"], "coords": "-36.5, 19, 86.5, -135"}
+    ],
+    "ctf": {
+        "objective": "time",
+        "options": {
+            "time": 420
+        },
+        "flags": [
+            {
+                "location": "0.5, 23, 49.5",
+                "respawn-time": 7,
+                "respawn-block": true,
+                "respawn-locations": [
+                    "0.5, 19, 49.5",
+                    "0.5, 23, 49.5"
+                ],
+                "type": "white",
+                "patterns": [
+                    {"color": "black", "type": "flower"}
+                ],
+                "rotation": "north",
+                "effects": [
+                    {"type": "regeneration", "duration": 0, "particles": false},
+                    {"type": "slow", "duration": 1000000, "amplifier": 2, "particles": false},
+                    {"type": "health boost", "duration": 1000000, "amplifier": -2, "particles": false}
+                ]
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "arrow", "slot": 28},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "arrow",
+        "leather helmet", "leather chestplate", "chainmail leggings", "leather boots",
+        "glass bottle"
+    ],
+    "damageControl": {
+        "FALL": false
+    },
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou may not modify the map."}
+    ],
+    "regions": [
+        {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+    ]
+}
