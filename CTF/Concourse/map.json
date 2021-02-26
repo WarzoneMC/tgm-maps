@@ -39,6 +39,11 @@
 		"flags": [
 			{
 				"location": "3.5,15,-445.5",
+				"respawn-locations": [
+					"3.5,15,-445.5",
+					"3.5,20,-475.5",
+					"3.5,20,-415.5"
+				],
 				"respawn-time": 10,
 				"respawn-block": "true",
 				"type": "purple",
