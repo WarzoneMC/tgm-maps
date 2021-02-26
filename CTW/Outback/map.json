@@ -117,8 +117,8 @@
 		{"id": "magenta-room", "min": "27, 10, -115", "max": "46, 38, -140"},
 		{"id": "pink-room", "min": "-25, 10, -115", "max": "-46, 28, -139"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-11, 0, 104", "max": "11, 17, 73"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "11, 0, -104", "max": "-11, 17, -73"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-13, 0, 106", "max": "13, oo, 69"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "13, 0, -106", "max": "-13, oo, -69"},
 		{"id": "map", "type": "cuboid", "min": "-43, 0, -72", "max": "43, 255, 72"}
 	],
 	"buildHeight": 26
