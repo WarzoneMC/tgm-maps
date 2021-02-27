@@ -120,7 +120,8 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
@@ -131,7 +132,9 @@
 
 		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
-		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
+		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"},
+		
+		{ "id": "map", "type": "cuboid", "min": "573, 0, -337", "max": "495, oo, -116"}
 	],
 	"buildHeight": 23
 }
