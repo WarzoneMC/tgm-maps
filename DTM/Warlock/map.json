@@ -96,11 +96,11 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-1", "blue-spawn-protection-2"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection-1", "type": "cuboid", "min": "36, 5, 39", "max": "55, 11, 26"},
-		{"id": "blue-spawn-protection-2", "type": "cuboid", "min": "54, 5, 32", "max": "61, 11, 39"},
+		{"id": "blue-spawn-protection-1", "type": "cuboid", "min": "36, 5, 39", "max": "55, 10, 26"},
+		{"id": "blue-spawn-protection-2", "type": "cuboid", "min": "54, 5, 32", "max": "61, 10, 39"},
 
-		{"id": "red-spawn-protection-1", "type": "cuboid", "min": "36, 5, -38", "max": "55, 11, -25"},
-		{"id": "red-spawn-protection-2", "type": "cuboid", "min": "54, 5, -31", "max": "61, 11, -38"}
+		{"id": "red-spawn-protection-1", "type": "cuboid", "min": "36, 5, -38", "max": "55, 10, -25"},
+		{"id": "red-spawn-protection-2", "type": "cuboid", "min": "54, 5, -31", "max": "61, 10, -38"}
 	],
 	"buildHeight": 22
 }
