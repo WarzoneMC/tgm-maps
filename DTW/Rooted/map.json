@@ -99,15 +99,20 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"regions": ["blue-spawn-protection", "blue-right-side-protection", "red-spawn-protection", "red-right-side-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "173, 0, -282", "max": "183, 13, -291"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "183, 0, -102", "max": "173, 13, -91"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "187, 0, -292", "max": "142, oo, -274"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "169, 0, -92", "max": "214, 13, -110"},
+		{"id": "red-right-side-protection", "type": "cuboid", "min": "219, 0, -93", "max": "215, oo, -250"},
+		{"id": "blue-right-side-protection", "type": "cuboid", "min": "137, 0, -291", "max": "141, oo, -134"},
+		
+		{"id": "map", "type": "cuboid", "min": "137, 0, -292", "max": "219, oo, -92"}
 	],
 	"buildHeight": 21
 }
