@@ -111,13 +111,23 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection", "height-limit"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection", "height-limit"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["red-woolroom", "blue-woolroom"],
+			"blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-woolroom", "blue-woolroom"],
+			"blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."},
@@ -126,13 +136,14 @@
 	"regions": [
 		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
 		{"id": "blue-wool", "min": "523, 0, -353", "max": "545, oo, -338"},
+		{"id": "red-woolroom", "min": "527, 0, -115", "max": "541, oo, -99"},
+		{"id": "blue-woolroom", "min": "527, 0, -353", "max": "541, oo, -338"},		
 
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "523, 0, -139", "max": "545, oo, -114"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "523, 0, -339", "max": "545, oo, -313"},
 
 		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
-		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"},
 		
 		{"id": "map", "type": "cuboid", "min": "573, 0, -337", "max": "495, oo, -116"}
 	],
