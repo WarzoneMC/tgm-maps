@@ -122,13 +122,13 @@
 		{"id": "purple-room", "min": "78, 0, -216", "max": "114, oo, -193"},
 		{"id": "cyan-room", "min": "13, 0, -216", "max": "49, oo, -193"},
 
-		{ "id": "blue-spawn-protection", "type": "cuboid", "min": "54, 0, -32", "max": "73, oo, -51" },
-		{ "id": "red-spawn-protection", "type": "cuboid", "min": "54, 0, -176", "max": "73, oo, -199" },
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "54, 0, -32", "max": "73, oo, -51"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "54, 0, -176", "max": "73, oo, -199"},
 
-		{ "id": "blue-spawn-top-protection", "type": "cuboid", "min": "17, 92, -35", "max": "110, oo, -13" },
-		{ "id": "red-spawn-top-protection", "type": "cuboid", "min": "17, 92, -214", "max": "110, oo, -193" },
+		{"id": "blue-spawn-top-protection", "type": "cuboid", "min": "17, 92, -35", "max": "110, oo, -13"},
+		{"id": "red-spawn-top-protection", "type": "cuboid", "min": "17, 92, -214", "max": "110, oo, -193"},
 
-		{ "id": "map", "type": "cuboid", "min": "30, 0, -199", "max": "97, oo, -28" }
+		{"id": "map", "type": "cuboid", "min": "30, 0, -199", "max": "97, oo, -28"}
 	],
 	"buildHeight": 92
 }
