@@ -44,7 +44,8 @@
 				"rotation": "south",
 				"effects": [
 					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
-					{"type": "slowness", "duration": 1000000, "amplifier": 3, "particles": false}
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false},
+					{"type": "slow", "duration": 1000000, "amplifier": 1, "particles": false}
 				]
 			},
 			{
@@ -57,7 +58,8 @@
 				"rotation": "north",
 				"effects": [
 					{"type": "health boost", "duration": 1000000, "amplifier": 1, "particles": false},
-					{"type": "slowness", "duration": 1000000, "amplifier": 3, "particles": false}
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false},
+					{"type": "slow", "duration": 1000000, "amplifier": 1, "particles": false}
 				]
 			}
 		],
