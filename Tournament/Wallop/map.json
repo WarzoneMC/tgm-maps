@@ -1,0 +1,173 @@
+{
+    "name": "Wallop",
+    "authors": [
+        {"uuid": "6bec5c3a-4934-4b19-9aa8-c7c569820f7d", "username": "Claf"},
+        {"uuid": "9929437a-9b7d-4d7a-b05d-e22fe93ac042", "username": "triplezko"},
+        {"uuid": "c26e7a7f-b4ce-4ebc-ac4d-f60691915d23", "username": "kroest"}
+    ],
+    "version": "1.2",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark red",
+            "min": 1,
+            "max": 5
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 5
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "71, 41, 58, 180"},
+        {"teams": ["red"], "coords": "108.5, 6, 95.5, 135"},
+        {"teams": ["blue"], "coords": "33.5, 6, 20.5, -45"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["red"],
+                "region": {"min": "104, 7, 91", "max": "104, 7, 91"}
+            },
+            {
+                "name": "Green",
+                "color": "green",
+                "woolcolor": "green",
+                "teams": ["blue"],
+                "region": {"min": "37, 7, 24", "max": "37, 7, 24"}
+            }
+        ]
+    },
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "spruce planks", "amount": 4},
+                    {"material": "dark oak leaves", "amount": 4},
+                    {"material": "arrow", "amount": 12}
+                ]
+            }
+        }
+    ],
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "iron sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "unbreakable": true},
+                {"material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+                {"material": "wooden axe", "enchantments": ["efficiency:3"], "slot": 3, "unbreakable": true},
+
+                {"material": "cooked porkchop", "slot": 4, "amount": 24},
+                {"material": "spruce planks", "slot": 5, "amount": 32},
+                {"material": "dark oak leaves", "slot": 6, "amount": 16},
+                {"material": "arrow", "slot": 8, "amount": 32},
+
+                {"material": "leather helmet", "enchantments": ["projectile protection:1"], "slot": "helmet", "unbreakable": true},
+                {"material": "leather chestplate", "enchantments": ["projectile protection:1"], "slot": "chestplate", "unbreakable": true},
+                {"material": "chainmail leggings", "enchantments": ["projectile protection:2"], "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "enchantments": ["projectile protection:1"], "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "heal", "duration": 100, "amplifier": 3, "particles": false},
+                {"type": "damage resistance", "duration": 100, "amplifier": 3, "particles": false},
+                {"type": "night vision", "duration": 1000000, "amplifier": 1, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "chiseled stone bricks", "obsidian", "string",
+        "wheat seeds", "poppy", "blue orchid", "pink tulip",
+        "iron sword", "bow", "diamond pickaxe", "wooden axe",
+        "cooked porkchop", "spruce planks", "dark oak leaves", "arrow",
+        "leather helmet", "leather chestplate", "chainmail leggings", "leather boots"
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+            "regions": ["arrow-spawner-protection", "fireball-spawners"],
+            "message": "&cYou may not build around the spawners."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "regions": ["green-wool-room-1", "green-wool-room-2", "orange-wool-spawner", "red-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou may not modify the wool room."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["orange-wool-room-1", "orange-wool-room-2", "green-wool-spawner", "red-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou may not modify the wool room."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["red"],
+            "regions": ["green-wool-room-1", "green-wool-room-2"],
+            "message": "&cYou may not enter your own wool room."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["orange-wool-room-1", "orange-wool-room-2"],
+            "message": "&cYou may not enter your own wool room."
+        },
+        {
+            "type": "block-explode", "evaluate": "deny",
+            "regions": [
+                "orange-wool-room-1", "orange-wool-room-2", "orange-wool-spawner",
+                "green-wool-room-1", "green-wool-room-2", "green-wool-spawner",
+                "arrow-spawner-protection", "fireball-spawners"
+            ]
+        },
+        {
+            "type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true,
+            "regions": ["map"],
+            "message": "&cYou may not build over the void."
+        }
+    ],
+    "regions": [
+        {"id": "orange-wool-room-1", "min": "47, 0, 34", "max": "54, oo, 40"},
+        {"id": "orange-wool-room-2", "min": "47, 0, 34", "max": "53, oo, 41"},
+        {"id": "orange-wool-spawner", "min": "51, 8, 38", "max": "51, 8, 38"},
+
+        {"id": "green-wool-room-1", "min": "88, 0, 74", "max": "94, oo, 81"},
+        {"id": "green-wool-room-2", "min": "87, 0, 75", "max": "94, oo, 81"},
+        {"id": "green-wool-spawner", "min": "90, 8, 77", "max": "90, 8, 77"},
+
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "103, 5, 90", "max": "111, 12, 98"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "30, 5, 17", "max": "38, 12, 25"},
+
+        {"id": "arrow-spawner-protection", "type": "cuboid", "min": "69, 13, 56", "max": "72, 19, 59"},
+
+        {"id": "map", "type": "meta", "regions": [
+            {"min": "65, 0, 82", "max": "86, oo, 93"},
+            {"min": "46, 0, 75", "max": "72, oo, 82"},
+            {"min": "46, 0, 56", "max": "53, oo, 74"},
+            {"min": "54, 0, 56", "max": "72, oo, 65"},
+            {"min": "35, 0, 42", "max": "46, oo, 63"},
+            {"min": "63, 0, 66", "max": "72, oo, 82"},
+            {"min": "55, 0, 22", "max": "76, oo, 33"},
+            {"min": "88, 0, 41", "max": "95, oo, 59"},
+            {"min": "69, 0, 33", "max": "95, oo, 40"},
+            {"min": "69, 0, 50", "max": "87, oo, 59"},
+            {"min": "69, 0, 33", "max": "78, oo, 49"},
+            {"min": "95, 0, 52", "max": "106, oo, 73"}
+        ]},
+
+        {"id": "fireball-spawners", "type": "meta", "regions": [
+            {"min": "56, 20, 25", "max": "56, 20, 25"},
+            {"min": "38, 20, 43", "max": "38, 20, 43"},
+            {"min": "85, 20, 90", "max": "85, 20, 90"},
+            {"min": "103, 20, 72", "max": "103, 20, 72"}
+        ]}
+    ],
+    "buildHeight": 25
+}
