@@ -90,17 +90,40 @@
 		"FALL": false
 	},
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["orange-spawn-protection", "purple-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["a-protection", "b-protection", "top-protection"], "message": "&cYou are not allowed to modify terrain here."}
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["orange"],
+			"regions": ["purple-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["purple"],
+			"regions": ["orange-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],
+			"regions": [
+				"orange-spawn-protection", "purple-spawn-protection",
+				 "top-protection", "a-protection", "b-protection",
+				"orange-pressure-plate", "purple-pressure-plate",
+				"a-pressure-plate", "b-pressure-plate"
+			],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "min": "25.5, 44, -148.5", "max": "34.5, oo, -139.5"},
 		{"id": "purple-spawn-protection", "min": "-69.5, 44, -53.5", "max": "-60.5, oo, -44.5"},
-		{"id": "top-protection", "min": "-12.5, 39, -91.5", "max": "-22.5, 40, -101.5"},
-		{"id": "a-protection", "min": "2.5, 29, -76.5", "max": "-6, 29, -85.5"},
-		{"id": "b-protection", "min": "-37.5, 29, -116.5", "max": "-28.5, 29, -107.5"}
+
+		{"id": "top-protection", "min": "-23, 40, -102", "max": "-13, 40, -92"},
+		{"id": "a-protection", "min": "-7, 29, -86", "max": "2, 29, -77"},
+		{"id": "b-protection", "min": "-38, 29, -117", "max": "-29, 29, -108"},
+
+		{"id": "orange-pressure-plate", "min": "9, 29, -124", "max": "9, 29, -124"},
+		{"id": "purple-pressure-plate", "min": "-45, 29, -70", "max": "-45, 29, -70"},
+
+		{"id": "a-pressure-plate", "min": "20, 31, -59", "max": "20, 31, -59"},
+		{"id": "b-pressure-plate", "min": "-56, 31, -135", "max": "-56, 31, -135"}
 	],
 	"buildHeight": 50
 }
