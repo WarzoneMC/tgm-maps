@@ -12,14 +12,14 @@
 			"name": "Blue",
 			"color": "blue",
 			"min": 1,
-			"max": 32
+			"max": 12
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 32
+			"max": 12
 		}
 	],
 	"spawns": [
@@ -27,6 +27,9 @@
 		{"teams": ["blue"], "coords": "-280, 52, -489"},
 		{"teams": ["red"], "coords": "-112, 52, -325, 180"}
 	],
+	"time": {
+		"limit": 1200
+	},
 	"ctf": {
 		"objective": "amount",
 		"options": {

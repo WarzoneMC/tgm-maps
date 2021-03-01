@@ -28,7 +28,7 @@
 		{"teams": ["red"], "coords": "83.5, 6, 0.5, 90"}
 	],
 	"time": {
-		"limit": 900
+		"limit": 1200
 	},
 	"ctf": {
 		"objective": "amount",
