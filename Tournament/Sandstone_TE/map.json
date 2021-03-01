@@ -34,6 +34,9 @@
 		{"teams": ["red"], "coords": "0.5, 7, -49.5"},
 		{"teams": ["blue"], "coords": "0.5, 8.5, 91.5, 180"}
 	],
+	"time": {
+		"limit": 1200
+	},
 	"dtm": {
 		"monuments": [
 			{
