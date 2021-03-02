@@ -62,7 +62,7 @@
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true, "enchantments": ["arrow infinite:1"]},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true, "enchantments": ["infinity:1"]},
 				{"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
 				{"type": "item", "material": "golden apple", "slot": 8},
