@@ -91,6 +91,11 @@
 		"arrow", "golden apple",
 		"chainmail chestplate", "leather leggings", "leather boots"
 	],
+	"crafting": {
+		"remove": [
+			"spectral arrow"
+		]
+	},
 	"killstreaks": [
 		{
 			"count": 1,
