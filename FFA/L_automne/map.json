@@ -1,0 +1,133 @@
+{
+	"name": "L'Automne Rage",
+	"version": "1.2",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "5906313b-dd1b-4847-8164-7f9800fcb782", "username": "TruBuild"},
+		{"uuid": "ff692817-83e7-4afe-b5ae-c5f62aa642b3", "username": "Teh_Myth"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "dark aqua", 
+			"min": 1, 
+			"max": 32
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "22.5, 18, -23.5"},
+		{"teams": ["players"], "coords": "53.5, 47, 44.5"},
+		{"teams": ["players"], "coords": "-33.5, 23, 20.5"},
+		{"teams": ["players"], "coords": "-37.5, 34, -22.5"},
+		{"teams": ["players"], "coords": "-68.5, 27, -22.5"},
+		{"teams": ["players"], "coords": "-39.5, 20, -55.5"},
+		{"teams": ["players"], "coords": "-39.5, 20, -102.5"},
+		{"teams": ["players"], "coords": "-64.5, 17, -79.5"},
+		{"teams": ["players"], "coords": "-5.5, 21, -85.5"},
+		{"teams": ["players"], "coords": "41.5, 19, -94.5"},
+		{"teams": ["players"], "coords": "40.5, 15, -44.5"},
+		{"teams": ["players"], "coords": "83.5, 32, -69.5"},
+		{"teams": ["players"], "coords": "77.5, 47, -15.5"},
+		{"teams": ["players"], "coords": "59.5, 16, -7.5"},
+		{"teams": ["players"], "coords": "22.5, 18, -23.5"},
+		{"teams": ["players"], "coords": "-18.5, 15, 0.5"},
+		{"teams": ["players"], "coords": "29.5, 18, 53.5"},
+		{"teams": ["players"], "coords": "51.5, 13, 46.5"},
+		{"teams": ["players"], "coords": "64.5, 13, 21.5"},
+		{"teams": ["players"], "coords": "-77.5, 20, -77.5"},
+		{"teams": ["players"], "coords": "-62.5, 20, -92.5"},
+		{"teams": ["players"], "coords": "72.5, 47, 14.5"},
+		{"teams": ["players"], "coords": "8.5, 18, -19.5"},
+		{"teams": ["players"], "coords": "35.5, 18, -19.5"},
+		{"teams": ["players"], "coords": "34.5, 16, -31.5"},
+		{"teams": ["players"], "coords": "-8.5, 18, -41.5"},
+		{"teams": ["players"], "coords": "-28.5, 32, -35.5"},
+		{"teams": ["players"], "coords": "49.5, 43, 31.4"},
+		{"teams": ["players"], "coords": "66.5, 47, -62.5"},
+		{"teams": ["players"], "coords": "95.5, 31, -104.5"},
+		{"teams": ["players"], "coords": "18.5, 25, -100.5"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 50
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "displayName": "One-Hit-Kill", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "displayName": "One-Shot-Kill", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 1},
+				{"material": "cooked beef", "slot": 7, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 25, "amplifier": 50000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "arrow", "cooked beef",
+		"leather helmet", "iron chestplate", "leather leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 1,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "speed", "level": 1, "duration": 10000000}
+				]
+			}
+		},
+		{
+			"count": 3,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "speed", "level": 2, "duration": 10000000}
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "speed", "level": 3, "duration": 100000000}
+				]
+			}
+		}
+	],
+	"damageControl": {
+		"fall": false
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
