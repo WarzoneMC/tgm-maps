@@ -1,0 +1,149 @@
+{
+	"name": "Tranquility",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"}
+	],
+	"version": "1.0.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-369.5, 44, 27.5, 180"},
+		{"teams": ["spectators"], "coords": "-366.5, 44, 24.5, 90"},
+		{"teams": ["spectators"], "coords": "-369.5, 44, 21.5"},
+		{"teams": ["spectators"], "coords": "-372.5, 44, 24.5, -90"},
+		{"teams": ["red"], "coords": "-369.5, 7, -37.5"},
+		{"teams": ["blue"], "coords": "-369.5, 7, 86.5, 180"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Orange",
+				"color": "gold",
+				"woolcolor": "orange",
+				"teams": ["blue"],
+				"region": {"min": "-373, 8, 86", "max": "-373, 8, 86"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"woolcolor": "yellow",
+				"teams": ["blue"],
+				"region": {"min": "-367, 8, 86", "max": "-367, 8, 86"}
+			},
+			{
+				"name": "Purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
+				"teams": ["red"],
+				"region": {"min": "-373, 8, -38", "max": "-373, 8, -38"}
+			},
+			{
+				"name": "Cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
+				"teams": ["red"],
+				"region": {"min": "-367, 8, -38", "max": "-367, 8, -38"}
+			}
+		]
+	},
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "oak planks", "amount": 16}
+				]
+			}
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "enchantments": ["efficiency:2"], "unbreakable": true},
+				{"material": "iron shovel", "slot": 31, "enchantments": ["efficiency:1"], "unbreakable": true},
+
+				{"material": "oak planks", "slot": 4, "amount": 32},
+				{"material": "golden carrot", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 1},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue stained glass", "slot": 5, "amount": 16}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red stained glass", "slot": 5, "amount": 16}
+			]
+		},
+		{
+			"name": "specs",
+			"teams": ["spectators"],
+			"items": [],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 1, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "arrow",
+		"golden carrot", "oak planks", "blue stained glass", "red stained glass",
+		"leather helmet", "leather chestplate", "chainmail leggings", "iron boots"
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn", "red-spawn", "yellow-room", "orange-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn", "blue-spawn", "purple-room", "cyan-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn", "yellow-room", "orange-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn", "purple-room", "cyan-room"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "orange-room", "min": "-400, 0, -36", "max": "-411, oo, -49"},
+		{"id": "yellow-room", "min": "-339, 0, -36", "max": "-328, oo, -49"},
+
+		{"id": "purple-room", "min": "-400, 0, 85", "max": "-411, oo, 98"},
+		{"id": "cyan-room", "min": "-339, 0, 85", "max": "-328, oo, 98"},
+
+		{"id": "blue-spawn", "type": "cuboid", "min": "-361, 0, 75", "max": "-378, oo, 91"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-378, 0, -42", "max": "-361, oo, -26"}
+	],
+	"buildHeight": 22
+}
