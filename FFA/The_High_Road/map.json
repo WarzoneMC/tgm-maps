@@ -50,7 +50,7 @@
 			"enabled": true,
 			"limit": 600
 		},
-		"killLimit": 30
+		"killLimit": 50
 	},
 	"kits": [
 		{
@@ -83,7 +83,7 @@
 			"actions": {
 				"items": [
 					{"material": "arrow", "amount": 1},
-					{"material": "nether star", "slot": 8, "displayName": "Kill Counter", "amount": 1}
+					{"material": "nether star", "displayName": "Kill Counter", "amount": 1}
 				]
 			}
 		},
