@@ -96,6 +96,12 @@
 			}
 		}
 	],
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"spruce boat"
+		]
+	},
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter this region."},
