@@ -85,8 +85,19 @@
 			]
 		}
 	],
+	"killstreaks": [
+		{
+			"count": 3,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
 	"itemremove": [
-		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow"
+		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "arrow", "bow
 	
 	]
 }
