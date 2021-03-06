@@ -89,7 +89,7 @@
 							"type": "jump",
 							"duration": 900,
 							"amplifier": 1
-						},
+						}
 					]
 					}, "slot": 5, "amount": 1, "displayName": "&b&lSpeed I & Jump Boost II", "lore": ["&e45 seconds"]},
 				{"type": "item", "material": "arrow", "slot": 28},
