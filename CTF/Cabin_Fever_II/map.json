@@ -46,7 +46,8 @@
 				],
 				"rotation": "north",
 				"effects": [
-					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
 				]
 			},
 			{
@@ -59,7 +60,8 @@
 				],
 				"rotation": "south",
 				"effects": [
-					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
 				]
 			}
 		],
@@ -76,6 +78,20 @@
 				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
 				{"type": "item", "material": "golden apple", "slot": 2, "amount": 2},
 				{"type": "item", "material": "cooked beef", "slot": 3, "amount": 64},
+				{"type": "item", "material": "potion", "potion": {
+					"effects": [
+						{
+							"type": "speed",
+							"duration": 900,
+							"amplifier": 0
+						},
+						{
+							"type": "jump",
+							"duration": 900,
+							"amplifier": 1
+						},
+					]
+					}, "slot": 5, "amount": 1, "displayName": "&b&lSpeed I & Jump Boost II", "lore": ["&e45 seconds"]},
 				{"type": "item", "material": "arrow", "slot": 28},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -87,7 +103,7 @@
 	],
 	"itemremove": [
 		"leather helmet", "leather chestplate", "golden leggings", "leather boots",
-		"stone sword", "fishing rod", "bow", "arrow", "cooked beef", "golden apple"
+		"stone sword", "fishing rod", "bow", "arrow", "cooked beef", "golden apple", "potion", "glass bottle"
 	],
 	"killstreaks": [
 		{
