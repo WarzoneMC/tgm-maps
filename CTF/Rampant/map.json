@@ -42,8 +42,7 @@
                 "patterns": [],
                 "rotation": "east",
                 "effects": [
-                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
-                    {"type": "slow", "duration": 1000000, "particles": false}
+                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false}
                 ]
             },
             {
@@ -53,8 +52,7 @@
                 "patterns": [],
                 "rotation": "west",
                 "effects": [
-                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
-                    {"type": "slow", "duration": 1000000, "particles": false}
+                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false}
                 ]
             }
         ],
@@ -71,7 +69,7 @@
                 {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
                 {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
                 {"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
-                
+
                 {"type": "item", "material": "spruce log", "slot": 4, "amount": 12},
                 {"type": "item", "material": "cobblestone", "slot": 5, "amount": 24},
 
@@ -128,9 +126,9 @@
     ],
     "filters": [
         {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-        
+
         {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-base-block", "red-base-block", "blue-net-extra-protection", "red-net-extra-protection"], "message": "&cYou may not modify terrain here."},
-        
+
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base-entry"], "message": "&cYou may not enter this region."},
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base-entry"], "message": "&cYou may not enter this region."},
 
@@ -139,10 +137,10 @@
     "regions": [
         {"id": "blue-base-block", "type": "cuboid", "min": "175, 0, 134", "max": "149, 36, 140"},
         {"id": "red-base-block", "type": "cuboid", "min": "156, 0, -23", "max": "182, 36, -29"},
-        
+
         {"id": "blue-base-entry", "type": "cuboid", "min": "175, 0, 135", "max": "149, 35, 140"},
         {"id": "red-base-entry", "type": "cuboid", "min": "156, 0, -24", "max": "182, 35, -29"},
-        
+
         {"id": "blue-net", "type": "cuboid", "min": "174, 30, 122", "max": "176, 35, 124"},
         {"id": "red-net", "type": "cuboid", "min": "155, 30, -13", "max": "157, 35, -11"},
 
