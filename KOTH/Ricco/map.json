@@ -91,7 +91,7 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["top-protection", "a-protection", "b-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "red"], "regions": ["top-protection", "a-protection", "b-protection", "red-spawnprotection", "yellow-spawnprotection"], "message": "&cYou are not allowed to modify terrain here."},
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "yellow"],
 			"regions": ["global"],
@@ -101,12 +101,18 @@
 			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "yellow"],
 			"regions": ["global"],
 			"blocks": ["oak leaves", "lily pad"], "message": "&cYou may only place leaves!"
-		}
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn"], "message": "&cYou may not enter Red's spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn"], "message": "&cYou may not enter Yellow's spawn!"}
 	],
 	"regions": [
 		{"id": "top-protection", "min": "3.5, 7, 3.5", "max": "-2.5, oo, -2.5"},
 		{"id": "a-protection", "min": "19.5, 2, -16.5", "max": "25.5, oo, -22.5"},
 		{"id": "b-protection", "min": "-18.5, 2, 17.5", "max": "-24.5, oo, 23.5"},
+		{"id": "yellow-spawn", "min": "14, 5, 48", "max": "11, 9, 51"},
+		{"id": "yellow-spawnprotection", "min": "13, 5, 48", "max": "11, 9, 50"},
+		{"id": "red-spawn", "min": "-13, 5, -47", "max": "-10, 9, -50"},
+		{"id": "red-spawnprotection", "min": "-13, 5, -48", "max": "-11, 9, -50"},
 		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
