@@ -106,6 +106,12 @@
 			}
 		}
 	],
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"spruce boat"
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
