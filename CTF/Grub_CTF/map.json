@@ -88,7 +88,30 @@
 	"itemremove": [
 		"cobblestone", "oak planks", "sand", "sandstone", "dirt", "tnt",
 		"golden apple", "cooked beef", "bow", "arrow", "iron sword",
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

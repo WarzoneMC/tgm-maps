@@ -88,8 +88,19 @@
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "iron axe",
 		"white terracotta", "spruce log", "golden apple", "spruce planks",
-		"arrow", "golden apple",
-		"chainmail chestplate", "leather leggings", "leather boots"
+		"arrow", "golden apple", "chainmail chestplate",
+		{
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"crafting": {
 		"remove": [

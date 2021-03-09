@@ -70,8 +70,25 @@
     ],
     "itemremove": [
         "stone sword", "bow", "arrow",
-        "leather helmet", "leather chestplate", "chainmail leggings", "leather boots",
-        "glass bottle"
+        "chainmail leggings", "glass bottle",
+        {
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
     ],
     "damageControl": {
         "FALL": false

@@ -111,8 +111,19 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "arrow", "potion", "glass bottle",
-		"leather chestplate", "iron leggings", "leather boots"
+		"iron sword", "bow", "arrow", "potion", "glass bottle", "iron leggings",
+		{
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

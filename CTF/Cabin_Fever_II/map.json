@@ -102,8 +102,25 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "golden leggings", "leather boots",
-		"stone sword", "fishing rod", "bow", "arrow", "cooked beef", "golden apple", "potion", "glass bottle"
+		"golden leggings", "stone sword", "fishing rod", "bow", "arrow", "cooked beef", "golden apple", "potion", "glass bottle",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

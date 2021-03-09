@@ -80,7 +80,19 @@
 	"itemremove": [
 		"stone sword", "bow",
 		"arrow", "golden carrot", "golden apple",
-		"iron chestplate", "leather helmet", "leather boots"
+		"iron chestplate",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

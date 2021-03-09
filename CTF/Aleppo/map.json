@@ -109,8 +109,20 @@
 		}
 	],
 	"itemremove": [
-		"iron chestplate", "golden chestplate", "leather chestplate", "leather leggings", "iron boots",
-		"iron axe", "bow", "arrow", "cooked mutton", "spruce fence", "dark oak fence"
+		"iron axe", "bow", "arrow", "cooked mutton", "spruce fence", "dark oak fence",
+		"iron chestplate", "golden chestplate", "iron boots",
+		{
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

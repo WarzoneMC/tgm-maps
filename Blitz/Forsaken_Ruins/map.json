@@ -53,11 +53,17 @@
         }
     ],
     "itemremove": [
-        "stone sword", "bow", "golden apple", "cooked beef", "arrow", "leather helmet", "golden chestplate",
+        "stone sword", "bow", "golden apple", "cooked beef", "arrow", "golden chestplate",
         "iron boots", "golden axe", "torch", "grass", "vine", "blue orchid", "oxeye daisy", "oak leaves",
         "red carpet", "red wool", "orange carpet", "orange wool", "blue carpet", "blue wool", "cyan carpet",
         "cyan wool", "oak fence", "spruce log", "spruce wood", "oak trapdoor", "cobblestone", "wheat seeds",
-        "oak sapling", "apple", "stone button", "stone pressure plate", "fire charge"
+        "oak sapling", "apple", "stone button", "stone pressure plate", "fire charge",
+        {
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
     ],
     "killstreaks": [
         {
