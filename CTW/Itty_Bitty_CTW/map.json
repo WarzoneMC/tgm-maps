@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
 	],
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"gametype": "CTW",
 	"stats": {"disable": true},
 	"teams": [
@@ -24,36 +24,36 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "12.5, 35, 14.5"},
-		{"teams": ["red"], "coords": "-1.5, 23, 32.5"},
-		{"teams": ["blue"], "coords": "26.5, 23, 32"}
+		{"teams": ["red"], "coords": "-1.5, 23, 32.5, -90"},
+		{"teams": ["blue"], "coords": "26.5, 23, 32.5, 90"}
 	],
 	"ctw": {
 		"wools": [
 			{
-				"name": "Purple", 
+				"name": "pweepurple", 
 				"color": "dark purple", 
 				"woolcolor": "purple",
 				"teams": ["blue"], 
-				"region": {"min": "-2, 10, -81", "max": "-2, 10, -81"}
+				"region": {"min": "27, 24, 33", "max": "27, 24, 33"}
 			},
 			{
-				"name": "Magenta", 
-				"color": "dark purple", 
+				"name": "ploink", 
+				"color": "light purple", 
 				"woolcolor": "magenta",
 				"teams": ["blue"], 
-				"region": {"min": "1, 10, -81", "max": "1, 10, -81"}
+				"region": {"min": "27, 24, 31", "max": "27, 24, 31"}
 			},
 			{
-				"name": "Cyan", 
+				"name": "cyeeen", 
 				"color": "dark aqua",
 				"woolcolor": "cyan", 
 				"teams": ["red"], 
 				"region": {"min": "-3, 24, 31", "max": "-3, 24, 31"}
 			},
 			{
-				"name": "Blue", 
+				"name": "bluEk", 
 				"color": "blue", 
-				"woolcolor": "blue",
+				"woolcolor": "light blue",
 				"teams": ["red"], 
 				"region": {"min": "-3, 24, 33", "max": "-3, 24, 33"}
 			}
@@ -64,9 +64,9 @@
 			"name": "Default",
 			"items": [
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
-				{"material": "stone axe", "slot": 3, "unbreakable": true},
-				{"material": "oak planks", "slot": 12, "amount": 64},
-				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "stone axe", "slot": 1, "unbreakable": true},
+				{"material": "oak planks", "slot": 3, "amount": 8},
+				{"material": "cooked beef", "slot": 8, "amount": 16},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -76,17 +76,32 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots"
+		"iron sword", "stone axe", "oak planks", "cooked beef", "leather helmet", "chainmail chestplate", "leather leggings", "leather boots", "magenta wool", "light blue wool", "purple wool", "cyan wool", "golden apple"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
 	],
 	"filters": [
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room", "blue-spawn"], "message": "&cYou are not allowed to enter the enemy's wool room!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room", "red-spawn"], "message": "&cYou are not allowed to enter the enemy's wool room!"},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "cyan-room", "purple-room", "pink-room", "blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here!"}
 	],
 	"regions": [
 		{"id": "blue-room", "min": "31, 22, 41", "max": "37, 30, 37"},
-		{"id": "cyan-room", "min": "31, 22, 23", "max": "-37, 30, 27"},
+		{"id": "cyan-room", "min": "31, 22, 23", "max": "37, 30, 27"},
 
 		{"id": "purple-room", "min": "-7, 22, 27", "max": "-13, 30, 23"},
-		{"id": "pink-room", "min": "-13, 30, 37", "max": "-7, 22, 41"}
+		{"id": "pink-room", "min": "-13, 30, 37", "max": "-7, 22, 41"},
+
+		{"id": "red-spawn", "min": "-4, 21, 35", "max": "0, 26, 30"},
+		{"id": "blue-spawn", "min": "28, 21, 29", "max": "24, 26, 34"}
 	]
 }
