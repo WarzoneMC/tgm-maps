@@ -94,7 +94,22 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "golden apple", "cooked beef", "glass", "sandstone", "oak log", "arrow",
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],	
 	"killstreaks": [
 		{

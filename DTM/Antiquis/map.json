@@ -75,9 +75,32 @@
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots",
 		"wooden pickaxe", "stone axe", "stone sword", "bow", "arrow", "cooked beef", "obsidian", "flint",
-		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling"
+		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"itemkeep": [
 		"nether star", "stone pickaxe", "iron pickaxe", "diamond pickaxe",

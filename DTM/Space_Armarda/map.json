@@ -86,7 +86,15 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "stone axe", "orange stained glass", "blue stained glass", "cooked beef",
-		"arrow", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"arrow", "chainmail chestplate", "iron boots",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        }
 	],
 	"crafting": {
 		"remove": [

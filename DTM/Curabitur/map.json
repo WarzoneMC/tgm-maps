@@ -95,7 +95,12 @@
 		"stone sword", "bow", "diamond pickaxe",
 		"golden apple", "cooked beef",
 		"glass", "stone", "oak planks", "arrow",
-		"leather helmet"
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{
