@@ -119,7 +119,19 @@
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "arrow",
 		"golden carrot", "oak planks", "blue stained glass", "red stained glass",
-		"leather helmet", "leather chestplate", "chainmail leggings", "iron boots"
+		"chainmail leggings", "iron boots",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"filters": [
 		{

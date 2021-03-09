@@ -82,7 +82,19 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", "arrow", "golden apple",
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"chainmail chestplate", "iron boots",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

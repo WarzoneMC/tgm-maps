@@ -98,7 +98,19 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "iron axe", "oak planks", "ladder", "cooked beef", "arrow", "golden apple",
-		"chainmail helmet", "leather chestplate", "chainmail leggings", "leather boots"
+		"chainmail helmet", "chainmail leggings",
+		{
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"filters": [
 		{

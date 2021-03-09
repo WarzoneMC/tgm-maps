@@ -68,8 +68,20 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "leather helmet", "bucket", "glass", "oak planks", "cooked beef", "arrow", 
-		"shears", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots", "beacon", "string"
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "bucket", "glass", "oak planks", "cooked beef", "arrow", 
+		"shears", "water bucket", "chainmail chestplate", "iron boots", "beacon", "string",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{

@@ -81,7 +81,25 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron axe", "iron pickaxe", "leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "beacon"
+		"stone sword", "bow", "iron axe", "iron pickaxe", "chainmail leggings", "beacon",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
 	],
 	"killstreaks": [
 		{
