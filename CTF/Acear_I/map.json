@@ -84,11 +84,11 @@
 		"cooked beef", "golden apple", "oak planks", "oak leaves",
 		"iron helmet", "iron chestplate", "iron leggings", "iron boots",
 		{
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+		    "type": "leather chestplate",
+		    "death": true,
+		    "drop": true,
+		    "spawn": false
+		}
 	],
 	"killstreaks": [
 		{
@@ -104,8 +104,7 @@
 	],
 	"crafting": {
 		"remove": [
-			"oak boat",
-			"spruce boat"
+			"oak boat", "spruce boat", "dark oak boat"
 		]
 	},
 	"filters": [
