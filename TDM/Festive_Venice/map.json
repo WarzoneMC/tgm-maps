@@ -57,8 +57,23 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron shovel", "snow block", "golden apple", "pumpkin pie",
-		"arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		"stone sword", "bow", "iron shovel", "snow block", "golden apple", "pumpkin pie", "arrow",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{

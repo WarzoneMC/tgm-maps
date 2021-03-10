@@ -77,7 +77,15 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "oak planks", "golden apple", "cooked beef", "arrow",
-		"chainmail chestplate", "leather leggings", "leather boots"
+		"chainmail chestplate",
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{

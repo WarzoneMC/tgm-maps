@@ -62,7 +62,19 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "glass", "cooked beef", "golden apple", "arrow",
-		"golden helmet", "leather chestplate", "leather leggings", "leather boots"
+		"golden helmet",
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."}

@@ -65,7 +65,15 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "golden apple", "cooked beef", "arrow",
-		"leather helmet", "chainmail chestplate", "iron leggings", "leather boots"
+		"chainmail chestplate", "iron leggings",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{

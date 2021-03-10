@@ -112,9 +112,17 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "golden apple", "cooked beef", "arrow", "poppy", "oxeye daisy",
-		"golden helmet", "chainmail chestplate", "leather leggings", "leather boots", "wheat seeds",
-		"red stained glass", "blue stained glass", "green stained glass", "yellow stained glass",
-		"red terracotta", "blue terracotta", "green terracotta", "yellow terracotta", "dandelion"
+		"wheat seeds", "red stained glass", "blue stained glass", "green stained glass", "yellow stained glass",
+		"red terracotta", "blue terracotta", "green terracotta", "yellow terracotta", "dandelion",
+		"golden helmet", "chainmail chestplate", 
+		{
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"killstreaks": [
 		{

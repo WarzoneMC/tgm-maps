@@ -95,7 +95,11 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "golden apple", "golden carrot", "arrow",	"iron chestplate", "leather boots"
+		"stone sword", "bow", "golden apple", "golden carrot", "arrow",	"iron chestplate",
+		{
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},

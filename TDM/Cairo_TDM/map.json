@@ -59,7 +59,22 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "ladder", "golden apple", "arrow",
-		"leather helmet", "leather chestplate", "leather leggings", "leather boots", "cooked chicken"
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        } "cooked chicken"
 	],
 	"filters": [
 		{

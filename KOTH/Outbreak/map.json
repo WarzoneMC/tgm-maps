@@ -58,7 +58,23 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "golden apple", "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+		"stone sword", "golden apple",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},

@@ -74,7 +74,15 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "golden apple", "cooked beef", "arrow",
-		"iron helmet", "leather chestplate", "leather leggings", "iron boots"
+		"iron helmet", "iron boots",
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        }
 	],
 	"filters": [
 		{

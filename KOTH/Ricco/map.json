@@ -77,7 +77,15 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "oak leaves", "shears", "arrow", "golden carrot",
-		"iron helmet", "chainmail chestplate", "leather leggings", "leather boots"
+		"iron helmet", "chainmail chestplate",
+		{
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"killstreaks": [
 		{

@@ -75,7 +75,21 @@
         "emerald"
     ],
 	"itemremove": [
-		"stone sword", "bow", "bread", "golden apple", "leather helmet", "leather chestplate", "chainmail leggings", "leather boots", "blaze rod", "iron sword", "chainmail helmet", "chainmail chestplate", "chainmail boots", "golden boots", "potion", "splash potion", "ender pearl"
+		"stone sword", "bow", "bread", "golden apple", "blaze rod", "iron sword",
+		"chainmail helmet", "chainmail chestplate", "chainmail boots", "golden boots",
+		"potion", "splash potion", "ender pearl", "chainmail leggings",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
 	],
 	"koth": {
 		"hills": [
