@@ -33,7 +33,7 @@
 	"ctf": {
 		"objective": "amount",
 		"options": {
-			"captures": 3
+			"captures": 2
 		},
 		"flags": [
 			{
@@ -43,7 +43,11 @@
 				"patterns": [
 					{"color": "red", "type": "base"}
 				],
-				"rotation": "west"
+				"rotation": "west",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
 			},
 			{
 				"team": "blue",
@@ -52,7 +56,11 @@
 				"patterns": [
 					{"color": "blue", "type": "base"}
 				],
-				"rotation": "east"
+				"rotation": "east",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
 			}
 		],
 		"bases": [
@@ -68,6 +76,20 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "potion", "potion": {
+					"effects": [
+						{
+							"type": "speed",
+							"duration": 900,
+							"amplifier": 0
+						},
+						{
+							"type": "jump",
+							"duration": 900,
+							"amplifier": 1
+						}
+					]
+					}, "slot": 4, "amount": 1, "displayName": "&b&lSpeed I & Jump Boost II", "lore": ["&e45 seconds"]},
 				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 				{"type": "item", "material": "oak leaves", "slot": 6, "amount": 48},
 				{"type": "item", "material": "cooked beef", "slot": 7, "amount": 32},
@@ -81,7 +103,7 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe",
-		"cooked beef", "golden apple", "oak planks", "oak leaves",
+		"cooked beef", "potion", "glass bottle", "golden apple", "oak planks", "oak leaves",
 		"iron helmet", "iron chestplate", "iron leggings", "iron boots",
 		{
 		    "type": "leather chestplate",
