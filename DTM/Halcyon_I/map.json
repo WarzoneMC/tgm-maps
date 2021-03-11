@@ -83,7 +83,7 @@
 				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
 				{"type": "item", "material": "oak log", "slot": 6, "amount": 32},
 				{"type": "item", "material": "glass", "slot": 7, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 32},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
