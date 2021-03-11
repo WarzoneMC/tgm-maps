@@ -136,6 +136,11 @@
             }
         }
     ],
+    "respawn": {
+        "rules": [
+            {"delay": 2500}
+        ]
+    },
     "filters": [
         {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
 

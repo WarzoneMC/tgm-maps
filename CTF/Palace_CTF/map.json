@@ -130,6 +130,11 @@
             }
         }
     ],
+    "respawn": {
+        "rules": [
+            {"delay": 4500}
+        ]
+    },
     "filters": [
         {"type": "build", "evaluate": "deny", "teams": ["red", "yellow"], "regions": ["world"], "message": "&cYou may not modify terrain on this map."}
     ],

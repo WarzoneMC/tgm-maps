@@ -104,6 +104,11 @@
             }
         }
     ],
+    "respawn": {
+        "rules": [
+            {"delay": 6000}
+        ]
+    },
     "filters": [
         {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou may not modify the map."}
     ],
