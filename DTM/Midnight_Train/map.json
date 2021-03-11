@@ -1,100 +1,100 @@
 {
-	"name": "Midnight Train",
-	"authors": [
-		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "PepsiDog"},
-		{"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "dinner1111"}
-	],
-	"version": "1.2.6",
-	"gametype": "DTM",
-	"teams": [
-		{
-			"id": "green",
-			"name": "Green",
-			"color": "green",
-			"min": 1,
-			"max": 40
-		},
-		{
-			"id": "purple",
-			"name": "Purple",
-			"color": "dark purple",
-			"min": 1,
-			"max": 40
-		}
-	],
-	"spawns": [
-		{"teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90"},
-		{"teams": ["green"], "coords": "-87.0, 29, -201.0"},
-		{"teams": ["purple"], "coords": "-87.0, 29, -14.9, 180"}
-	],
-	"dtm": {
-		"monuments": [
-			{
-				"name": "Monument B",
-				"teams": ["green"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-136, 28, -180",
-					"max": "-136, 28, -180"
-				},
-				"health": 1
-			},
-			{
-				"name": "Monument A",
-				"teams": ["green"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-39, 28, -182",
-					"max": "-39, 28, -182"
-				},
-				"health": 1
-			},
-			{
-				"name": "Monument B&r",
-				"teams": ["purple"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-136, 28, -35",
-					"max": "-136, 28, -35"
-				},
-				"health": 1
-			},
-			{
-				"name": "Monument A&r",
-				"teams": ["purple"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-39, 28, -37",
-					"max": "-39, 28, -37"
-				},
-				"health": 1
-			}
-		]
-	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+    "name": "Midnight Train",
+    "authors": [
+        {"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "PepsiDog"},
+        {"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "dinner1111"}
+    ],
+    "version": "1.2.6",
+    "gametype": "DTM",
+    "teams": [
+        {
+            "id": "green",
+            "name": "Green",
+            "color": "green",
+            "min": 1,
+            "max": 40
+        },
+        {
+            "id": "purple",
+            "name": "Purple",
+            "color": "dark purple",
+            "min": 1,
+            "max": 40
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90"},
+        {"teams": ["green"], "coords": "-87.0, 29, -201.0"},
+        {"teams": ["purple"], "coords": "-87.0, 29, -14.9, 180"}
+    ],
+    "dtm": {
+        "monuments": [
+            {
+                "name": "Monument B",
+                "teams": ["green"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-136, 28, -180",
+                    "max": "-136, 28, -180"
+                },
+                "health": 1
+            },
+            {
+                "name": "Monument A",
+                "teams": ["green"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-39, 28, -182",
+                    "max": "-39, 28, -182"
+                },
+                "health": 1
+            },
+            {
+                "name": "Monument B&r",
+                "teams": ["purple"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-136, 28, -35",
+                    "max": "-136, 28, -35"
+                },
+                "health": 1
+            },
+            {
+                "name": "Monument A&r",
+                "teams": ["purple"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-39, 28, -37",
+                    "max": "-39, 28, -37"
+                },
+                "health": 1
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "oak log", "slot": 5, "amount": 64},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+                {"type": "item", "material": "glass", "slot": 4, "amount": 64},
+                {"type": "item", "material": "oak log", "slot": 5, "amount": 64},
+                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-			]
-		}
-	],
-	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked beef", "arrow", "beacon", "chainmail chestplate"
-		{
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked beef", "arrow", "beacon", "chainmail chestplate",
+        {
             "type": "leather helmet",
             "death": true,
             "drop": true,
@@ -112,29 +112,29 @@
             "drop": true,
             "spawn": false
         }
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "amount": 1}
-				]
-			}
-		}
-	],
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["green", "purple"],
-			"regions": ["green-spawn-protection", "purple-spawn-protection"],
-			"message": "&cYou are not allowed to modify terrain here."
-		},
-		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
-	],
-	"regions": [
-		{"id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189"},
-		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6"}
-	]
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["green", "purple"],
+            "regions": ["green-spawn-protection", "purple-spawn-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+        {"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+    ],
+    "regions": [
+        {"id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189"},
+        {"id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6"}
+    ]
 }
