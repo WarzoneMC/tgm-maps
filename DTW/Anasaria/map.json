@@ -95,7 +95,7 @@
 		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
 		"chainmail chestplate", "iron boots",
 		{
-            "type": "leather leggings",
+            "type": "leather helmet",
             "drop": true
         },
         {
