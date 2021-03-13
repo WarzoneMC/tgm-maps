@@ -74,7 +74,6 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
-		"iron boots",
 		{
             "type": "leather helmet",
             "drop": true
@@ -85,6 +84,10 @@
         },
         {
             "type": "leather leggings",
+            "drop": true
+        },
+	{
+            "type": "leather boots",
             "drop": true
         }
 	],
