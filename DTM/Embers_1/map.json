@@ -24,7 +24,7 @@
 	"spawns": [
 		{"teams": ["spectators"], "coords": "22, 132, 116, 180"},
 		{"teams": ["red"], "coords": "-76, 88, 17, -90"},
-		{"teams": ["blue"], "coords": "119, 88, 17, -90"}
+		{"teams": ["blue"], "coords": "119, 88, 17, 90"}
 	],
 	"dtm": {
 		"monuments": [
