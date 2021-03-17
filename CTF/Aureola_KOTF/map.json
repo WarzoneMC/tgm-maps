@@ -84,6 +84,11 @@
             }
         }
     ],
+    "respawn": {
+        "rules": [
+            {"blindness": "false"}
+        ]
+    },
     "filters": [
         {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
     ]
