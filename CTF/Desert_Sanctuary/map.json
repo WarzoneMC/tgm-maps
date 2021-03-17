@@ -1,0 +1,111 @@
+{
+    "name": "Desert Sanctuary",
+    "authors": [
+        {"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "Strangey"},
+        {"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
+    ],
+    "version": "1.4",
+    "gametype": "KOTF",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 20
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 20
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "11.5, 51, 24.5, 90"},
+        {"teams": ["red"], "coords": "11.5, 16, 96.5, 180"},
+        {"teams": ["blue"], "coords": "11.5, 16, -47.5"}
+    ],
+    "ctf": {
+        "objective": "time",
+        "options": {
+            "time": 420
+        },
+        "flags": [
+            {
+                "location": "11.5, 9, 24.5",
+                "respawn-time": 20,
+                "respawn-block": true,
+                "respawn-locations": [
+                    "11.5, 9, 24.5",
+                    "36.5, 14, 24.5",
+                    "-13.5, 14, 24.5"
+                ],
+                "type": "magenta",
+                "patterns": [
+                    {"color": "red", "type": "half vertical"},
+                    {"color": "blue", "type": "half vertical mirror"},
+                    {"color": "purple", "type": "stripe center"},
+                    {"color": "magenta", "type": "stripe small"},
+                    {"color": "white", "type": "flower"},
+                    {"color": "lime", "type": "circle middle"}
+                ],
+                "rotation": "west",
+                "effects": [
+                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
+                    {"type": "absorption", "duration": 60, "amplifier": 2, "particles": false}
+                ]
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
+                {"type": "item", "material": "golden apple", "slot": 3},
+                {"type": "item", "material": "arrow", "slot": 8, "amount": 32},
+                
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "golden boots", "enchantments": ["feather falling:2"], "slot": "boots", "unbreakable": true}            
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "golden carrot", "golden apple", "arrow",
+        "chainmail chestplate", "golden boots",
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 8}
+                ]
+            }
+        }
+    ],
+    "respawn": {
+        "rules": [
+            {"blindness": "false"}
+        ]
+    },
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+    ]
+}
