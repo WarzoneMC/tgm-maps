@@ -66,6 +66,21 @@
 			]
 		}
 	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "blue-spawn-build-protection", "red-spawn-protection", "red-spawn-build-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "27, 21, 33", "max": "25, 25, 31"},
+		{"id": "blue-spawn-build-protection", "type": "cuboid", "min": "23, 22, 34", "max": "27, 25, 30"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-3, 21, 31", "max": "-1, 25, 33"},
+		{"id": "red-spawn-build-protection", "type": "cuboid", "min": "1, 22, 30", "max": "-3, 25, 34"}
+	],
 	"itemremove": [
 		"iron sword", "oak planks", "cooked beef", "chainmail chestplate", "iron boots",
 		{
