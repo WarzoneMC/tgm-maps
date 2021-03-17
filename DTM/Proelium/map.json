@@ -23,14 +23,14 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "72.5, 129, -140.5, 90"},
-		{"teams": ["red"], "coords": "0.5, 64, -244"},
-		{"teams": ["blue"], "coords": "0.5, 64, -38.5, 180"}
+		{"teams": ["blue"], "coords": "0.5, 64, -244"},
+		{"teams": ["red"], "coords": "0.5, 64, -38.5, 180"}
 	],
 	"dtm": {
 		"monuments": [
 			{
 				"name": "Left Monument",
-				"teams": ["blue"],
+				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "39, 65, -39",
@@ -40,7 +40,7 @@
 			},
 			{
 				"name": "Right Monument",
-				"teams": ["blue"],
+				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "-39, 65, -39",
@@ -50,7 +50,7 @@
 			},
 			{
 				"name": "Left Monument",
-				"teams": ["red"],
+				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "39, 65, -245",
@@ -60,7 +60,7 @@
 			},
 			{
 				"name": "Right Monument",
-				"teams": ["red"],
+				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "-39, 65, -245",
@@ -113,7 +113,7 @@
             "spawn": false
         },
         {
-            "type": "leggings boots",
+            "type": "leather boots",
             "death": true,
             "drop": true,
             "spawn": false
@@ -140,7 +140,7 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "red-spawn", "type": "cylinder", "base": "0, 63, -245", "radius": 10, "height": 11},
-		{"id": "blue-spawn", "type": "cylinder", "base": "0, 63, -39", "radius": 10, "height": 11}
+		{"id": "blue-spawn", "type": "cylinder", "base": "0, 63, -245", "radius": 10, "height": 11},
+		{"id": "red-spawn", "type": "cylinder", "base": "0, 63, -39", "radius": 10, "height": 11}
 	]
 }
