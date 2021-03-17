@@ -1,0 +1,193 @@
+{
+	"name": "Embers 1",
+	"authors": [
+		{"uuid": "da98a2f1-673c-4cec-b547-e0a342abfde4", "username": "timaeusTestified"}
+	],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "22, 132, 116, 180"},
+		{"teams": ["red"], "coords": "-76, 88, 17, -90"},
+		{"teams": ["blue"], "coords": "119, 88, 17, -90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Front Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-32, 90, -43",
+					"max": "-32, 90, -43"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-32, 90, 77",
+					"max": "-32, 90, 77"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-119, 90, -18",
+					"max": "-119, 90, -18"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-119, 90, 52",
+					"max": "-119, 90, 52"
+				},
+				"health": 1
+			},
+
+			{
+				"name": "Front Left Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "74, 90, 77",
+					"max": "74, 90, 77"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Right Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "74, 90, -43",
+					"max": "74, 90, -43"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Left Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "161, 90, 52",
+					"max": "161, 90, 52"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Right Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "161, 90, -18",
+					"max": "161, 90, -18"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+
+				{"type": "item", "material": "birch log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"type": "item", "material": "red stained glass", "slot": 5, "amount": 64}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"type": "item", "material": "blue stained glass", "slot": 5, "amount": 64}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "golden apple", "birch planks", "birch log",
+		"golden carrot", "arrow",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "red stained glass",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "blue stained glass",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn", "spec-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cylinder", "base": "119, 87, 17", "radius": 10, "height": 25},
+		{"id": "red-spawn", "type": "cylinder", "base": "-77, 87, 17", "radius": 10, "height": 25},
+		{"id": "spec-spawn", "type": "cylinder", "base": "22, 131, 118", "radius": 4, "height": 9}
+	]
+}

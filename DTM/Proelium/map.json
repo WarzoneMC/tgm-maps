@@ -1,0 +1,146 @@
+{
+	"name": "Proelium",
+	"authors": [
+		{"uuid": "4a99223d-3465-492c-879a-81e65a21089d", "username": "sweeeper"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 40
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "72.5, 129, -140.5, 90"},
+		{"teams": ["red"], "coords": "0.5, 64, -244"},
+		{"teams": ["blue"], "coords": "0.5, 64, -38.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "39, 65, -39",
+					"max": "39, 65, -39"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 65, -39",
+					"max": "-39, 65, -39"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "39, 65, -245",
+					"max": "39, 65, -245"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 65, -245",
+					"max": "-39, 65, -245"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:3"], "slot": 2, "unbreakable": true},
+
+				{"type": "item", "material": "golden apple", "slot": 3, "amount": 2},
+				{"type": "item", "material": "oak log", "slot": 4, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "golden apple", "glass", "oak planks", "oak log",
+		"cooked beef", "arrow",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leggings boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "red-spawn", "type": "cylinder", "base": "0, 63, -245", "radius": 10, "height": 11},
+		{"id": "blue-spawn", "type": "cylinder", "base": "0, 63, -39", "radius": 10, "height": 11}
+	]
+}

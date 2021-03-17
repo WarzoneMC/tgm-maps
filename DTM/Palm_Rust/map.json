@@ -1,0 +1,130 @@
+{
+	"name": "Palm Rust",
+	"authors": [
+		{"uuid": "c7e1e823-83c3-4070-898b-1dd5f5cd458e", "username": "GamerStu"},
+		{"uuid": "93db9798-b995-4bda-b70a-23f5d33124a0", "username": "steven5703"},
+		{"uuid": "d9b4ffbc-11d0-453a-a93f-82dc59fca4b6", "username": "Wulfcaspice"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 21
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 21
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "18, 43, 58, -90"},
+		{"teams": ["orange"], "coords": "47, 36, 137, 135"},
+		{"teams": ["green"], "coords": "-56, 36, 33, -45"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-7, 24, 43",
+					"max": "-7, 24, 43"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-47, 24, 83",
+					"max": "-47, 24, 83"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-3, 24, 127",
+					"max": "-3, 24, 127"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "37, 24, 87",
+					"max": "37, 24, 87"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron shovel", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "sandstone", "slot": 6, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
+				{"type": "item", "material": "bread", "slot": 8, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron shovel",
+		"golden apple", "oak planks", "oak log", "sandstone",
+		"bread", "arrow",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["green", "orange"],
+			"regions": ["green-spawn", "orange-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "green-spawn", "type": "sphere", "center": "-56, 36, 33", "radius": 8 },
+		{"id": "orange-spawn", "type": "sphere", "center": "47, 36, 137", "radius": 8 }
+	],
+	"buildHeight": 55
+}
