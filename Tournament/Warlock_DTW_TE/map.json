@@ -74,13 +74,70 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
-		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots",
-		"cobblestone", "cobblestone stairs", "cobblestone slab",
-		"red terracotta", "blue terracotta",
-		"stone bricks", "smooth stone slab",
-		"sandstone", "sandstone slab",
-		"quartz slab",
-		"iron bars"
+		{
+			"type": "leather helmet",
+			"drop": "true"
+		},
+		{
+			"type": "chainmail chestplate",
+			"drop": "true"
+		},
+		{
+			"type": "leather leggings",
+			"drop": "true"
+		},
+		{
+			"type": "iron boots",
+			"drop": "true"
+		},
+		{
+			"type": "cobblestone",
+			"spawn": "true"
+		},
+		{
+			"type": "cobblestone stairs",
+			"spawn": "true"
+		},
+		{
+			"type": "cobblestone slab",
+			"spawn": "true"
+		},
+		{
+			"type": "red terracotta",
+			"spawn": "true"
+		},
+		{
+			"type": "blue terracotta",
+			"spawn": "true"
+		},
+		{
+			"type": "stone bricks",
+			"spawn": "true"
+		},
+		{
+			"type": "smooth stone slab",
+			"spawn": "true"
+		},
+		{
+			"type": "sand",
+			"spawn": "true"
+		},
+		{
+			"type": "sandstone",
+			"spawn": "true"
+		},
+		{
+			"type": "sandstone slab",
+			"spawn": "true"
+		},
+		{
+			"type": "quartz slab",
+			"spawn": "true"
+		},
+		{
+			"type": "iron bars",
+			"spawn": "true"
+		}
 	],
 	"crafting": {
 		"remove": [
