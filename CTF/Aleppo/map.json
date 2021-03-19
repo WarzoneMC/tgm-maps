@@ -102,7 +102,7 @@
 			"teams": ["yellow"],
 			"items": [
 				{
-					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true, 
+					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true,
 					"canDestroy": ["dark oak fence"], "enchantments": ["efficiency:1", "sharpness:1"]
 				}
 			]
@@ -122,6 +122,12 @@
             "death": true,
             "drop": true,
             "spawn": false
+        },
+		{
+            "type": "tnt",
+            "death": true,
+            "drop": true,
+            "spawn": true
         }
 	],
 	"killstreaks": [
@@ -150,7 +156,7 @@
 	},
 	"filters": [
 		{
-			"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["cyan-spawn", "yellow-flag"], 
+			"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["cyan-spawn", "yellow-flag"],
 			"message": "&cYou may not enter this region."
 		},
 		{
