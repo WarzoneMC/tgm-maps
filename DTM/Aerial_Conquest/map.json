@@ -87,19 +87,20 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond axe", "iron pickaxe", "arrow", "cooked beef", "blue stained glass", "red stained glass", "iron chestplate", "iron leggins,
+		"iron sword", "bow", "diamond axe", "iron pickaxe", "arrow", "cooked beef", 
+		"blue stained glass", "red stained glass", "iron chestplate", "iron leggings",
 		{
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+		    "type": "leather helmet",
+		    "death": true,
+		    "drop": true,
+		    "spawn": false
+		},
+		{
+		    "type": "leather boots",
+		    "death": true,
+		    "drop": true,
+		    "spawn": false
+		}
 	],
 	"killstreaks": [
 		{
