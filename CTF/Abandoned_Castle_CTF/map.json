@@ -1,0 +1,118 @@
+{
+    "name": "Abandoned Castle CTF",
+    "authors": [
+        {"uuid": "075b5514-293a-4bd5-bcef-367e687d3556", "username": "KojaCola"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTF",
+    "teams": [
+        {
+            "id": "yellow",
+            "name": "Yellow",
+            "color": "yellow",
+            "min": 1,
+            "max": 20
+        },
+        {
+            "id": "lime",
+            "name": "Lime",
+            "color": "green",
+            "min": 1,
+            "max": 20
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "51.5, 29, 36.5, 90"},
+        {"teams": ["yellow"], "coords": "10.5, 14, -20.5"},
+        {"teams": ["lime"], "coords": "10.5, 14, 93.5, 180"}
+    ],
+    "time": {
+        "limit": 900
+    },
+    "ctf": {
+        "objective": "amount",
+        "options": {
+            "captures": 3
+        },
+        "flags": [
+            {
+                "team": "yellow",
+                "location": "10, 21, -23",
+                "respawn-time": 10,
+                "type": "yellow",
+                "rotation": "south"
+            },
+            {
+                "team": "lime",
+                "location": "10, 21, 95",
+                "respawn-time": 10,
+                "type": "green",
+                "rotation": "north"
+            }
+        ],
+        "bases": [
+            {"region": "yellow-net", "team": "yellow"},
+            {"region": "lime-net", "team": "lime"}
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "golden apple", "slot": 2},
+                {"type": "item", "material": "cooked beef", "slot": 3, "amount": 32},
+                {"type": "item", "material": "arrow", "slot": 8, "amount": 16},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": 100, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "golden apple", "cooked beef", "arrow",
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        "chainmail leggings", "iron boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 4}
+                ],
+                "effects": [
+                    {"type": "speed", "duration": 5, "amplifier": 1, "particles": false}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["lime-spawn-protection"], "message": "&cYou may not enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["lime"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter this region."},
+
+        {"type": "build", "evaluate": "deny", "teams": ["yellow", "lime"], "regions": ["global"], "message": "&cYou may not modify terrain on this map."}
+    ],
+    "regions": [
+        {"id": "yellow-spawn-protection", "type": "cuboid", "min": "3, 13, -24", "max": "18, 17, -16"},
+        {"id": "lime-spawn-protection", "type": "cuboid", "min": "3, 13, 89", "max": "18, 17, 98"},
+        
+        {"id": "yellow-net", "type": "cuboid", "min": "8, 13, -23", "max": "11, 16, -20"},
+        {"id": "lime-net", "type": "cuboid", "min": "8, 13, 91", "max": "11, 16, 94"}
+    ]
+}
