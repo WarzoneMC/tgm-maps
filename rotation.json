@@ -12,7 +12,6 @@
 			"Twin Peaks",
 			"Warlock DTW",
 			"Oriental",
-			"Oakley",
 			"Anasaria",
 			"Sandstone",
 			"Windworks DTW",
@@ -22,16 +21,17 @@
 			"Snowy Wars",
 			"No Return",
 			"Arizona",
-			"Ascension",
 			"Egypt",
 			"Stronghold",
 			"Cargo",
 			"Skylands Reborn",
 			"Japan",
-			"Riverbank",
 			"Persisto",
 			"Stonehenge",
-			"Deepwind Jungle"
+			"Deepwind Jungle",
+			"Halcyon_I",
+			"Vortex",
+			"Palm Rust"
 		]
 	},
 	{
@@ -43,15 +43,12 @@
 			"max": 29
 		},
 		"maps": [
-			"Fossil Canyon",
-			"Avalanche Mini",
 			"Gobi",
 			"Electri City",
 			"Anasaria",
 			"Aerial Conquest",
 			"Senex 3",
 			"TechnoWar",
-			"Cloudy Domain",
 			"Unix",
 			"Persisto",
 			"Ancient Cistern",
@@ -67,7 +64,6 @@
 			"A New Day",
 			"Desert Country",
 			"Thrive 2",
-			"Outback",
 			"Kyoto",
 			"Ricco",
 			"Castles",
@@ -77,7 +73,6 @@
 			"Sandstone 2",
 			"Hallows",
 			"Arizona",
-			"Terrace 2",
 			"Gardens",
 			"Deepwind Jungle",
 			"Brisked KOTH",
@@ -85,7 +80,13 @@
 			"Aleppo",
 			"Cabin Fever II",
 			"Rampant",
-			"SuperCUBE"
+			"SuperCUBE",
+			"Halcyon_I",
+			"Tranquility",
+			"Orion",
+			"Vortex",
+			"Justice 2",
+			"Palm Rust"
 		]
 	},
 	{
@@ -99,15 +100,12 @@
 		"maps": [
 			"Race For Victory 2",
 			"Desert Country",
-			"Outback",
 			"TechnoWar",
 			"Senex 3",
 			"Terrace 2",
 			"Stalactite",
 			"Gyrus CTW",
-			"Fossil Canyon",
 			"Ring Race",
-			"Quintus",
 			"A New Day",
 			"Midnight Train",
 			"Aztec FFA",
@@ -120,7 +118,13 @@
 			"Chocolate Diamonds",
 			"Concourse",
 			"Grub CTF",
-			"Palace CTF"
+			"Tranquility",
+			"Palace CTF",
+			"Proelium",
+			"Embers 1",
+			"Orion",
+			"Sector Six",
+			"Justice 2"
 		]
 	},
 	{
