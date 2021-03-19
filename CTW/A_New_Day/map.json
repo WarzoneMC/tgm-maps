@@ -140,7 +140,9 @@
         {"id": "purple-spawner", "min": "-108, 6, 301", "max": "-108, 7, 301"},
 
         {"id": "red-spawn-protection", "type": "cuboid", "min": "95, 0, 224", "max": "118, oo, 198"},
-        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"}
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"},
+
+        {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10 }
     ],
     "buildHeight": 35
 }
