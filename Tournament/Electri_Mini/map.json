@@ -37,14 +37,14 @@
 				"color": "gold",
 				"woolcolor": "orange",
 				"teams": ["blue"],
-				"region": {"min": "-56, 76, 1", "max": "-56, 76, 1"}
+				"region": {"min": "-56, 76, 0", "max": "-56, 76, 0"}
 			},
 			{
 				"name": "Cyan",
 				"color": "dark aqua",
 				"woolcolor": "cyan",
 				"teams": ["red"],
-				"region": {"min": "58, 76, 1", "max": "58, 76, 1"}
+				"region": {"min": "58, 76, 0", "max": "58, 76, 0"}
 			}
 		]
 	},
