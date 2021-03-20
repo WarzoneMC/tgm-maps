@@ -122,6 +122,16 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["orange-room", "yellow-room"],
+			"message": "&cYou are not allowed to interact with blocks here."
+		},
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["red"],
+			"regions": ["magenta-room", "purple-room"],
+			"message": "&cYou are not allowed to interact with blocks here."
+		},
+		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["east-void", "west-void"],
 			"message": "&cYou are not allowed to build in the void!"
