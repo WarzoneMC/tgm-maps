@@ -80,9 +80,15 @@
         }
     ],
     "itemremove": [
-        "iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "golden apple", "cooked beef", "arrow", "chainmail leggings",
+        "iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "golden apple", "cooked beef", "arrow",
         {
             "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "chainmail leggings",
             "death": true,
             "drop": true,
             "spawn": false
