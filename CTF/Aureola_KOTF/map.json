@@ -39,6 +39,11 @@
                 "location": "185.5, 15, 25.5",
                 "respawn-time": 15,
                 "respawn-block": true,
+                "respawn-locations": [
+                    "185.5, 15, 25.5",
+                    "185.5, 6, 25.5",
+                    "185.5, 1, 25.5"
+                ],
                 "type": "white",
                 "patterns": [
                     {"color": "black", "type": "flower"}
