@@ -106,6 +106,17 @@
             "drop": true,
             "spawn": false
         }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+				]
+			}
+		}
 	],	
 	"filters": [
 		{
