@@ -109,22 +109,6 @@
     "time": {
         "limit": 600
     },
-    "kits": [
-        {
-            "name": "Default",
-            "effects": [
-                {"type": "saturation", "duration": "10000000", "amplifier": 100000, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        {
-            "type": "tnt",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
-    ],
     "gamerules": {
         "doTileDrops": false
     }
