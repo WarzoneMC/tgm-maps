@@ -1,0 +1,131 @@
+{
+    "name": "TiNT Sploof",
+    "authors": [
+        {"uuid": "cc2292de-fcb3-412d-9319-f3177f73b605", "username": "cs_"}
+    ],
+    "gametype": "Blitz",
+    "version": "1.1.0",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark_red",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "pink",
+            "name": "Pink",
+            "color": "red",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "orange",
+            "name": "Orange",
+            "color": "gold",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "yelow",
+            "name": "Yellow",
+            "color": "yellow",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "green",
+            "name": "Green",
+            "color": "dark_green",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "lime",
+            "name": "Lime",
+            "color": "green",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "aqua",
+            "name": "Aqua",
+            "color": "aqua",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "cyan",
+            "name": "Cyan",
+            "color": "dark_aqua",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "dark-blue",
+            "name": "Dark Blue",
+            "color": "dark_blue",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "purple",
+            "name": "Purple",
+            "color": "dark_purple",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "id": "magenta",
+            "name": "Magenta",
+            "color": "light_purple",
+            "min": 0,
+            "max": 1
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "41.5, 23, 0.5, 90"},
+        {"teams": ["red"], "coords": "22.5, 15, 0.5, 90"},
+        {"teams": ["pink"], "coords": "8.5, 15, 8.5, -45"},
+        {"teams": ["orange"], "coords": "17.5, 15, 17.5, 135"},
+        {"teams": ["yellow"], "coords": "0.5, 15, 22.5, 180"},
+        {"teams": ["green"], "coords": "-8.5, 15, 8.5, 45"},
+        {"teams": ["lime"], "coords": "-17.5, 15, 17.5, -135"},
+        {"teams": ["aqua"], "coords": "-22.5, 15, 0.5, -90"},
+        {"teams": ["cyan"], "coords": "-8.5, 15, -8.5, 135"},
+        {"teams": ["dark-blue"], "coords": "-17.5, 15, -17.5, -45"},
+        {"teams": ["blue"], "coords": "0.5, 15, -22.5"},
+        {"teams": ["magenta"], "coords": "8.5, 15, -8.5, -135"},
+        {"teams": ["purple"], "coords": "17.5, 15, -17.5, 45"}
+    ],
+    "time": {
+        "limit": 600
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "effects": [
+                {"type": "saturation", "duration": "10000000", "amplifier": 100000, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        {
+            "type": "tnt",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+    ],
+    "gamerules": {
+        "doTileDrops": false
+    }
+}
