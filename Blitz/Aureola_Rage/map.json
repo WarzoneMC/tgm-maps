@@ -1,0 +1,100 @@
+{
+	"name": "Aureola Rage",
+	"authors": [
+		{"uuid": "91295196-9cd2-4963-b7ec-afd1a110edbe", "username": "pbat"},
+		{"uuid": "e39fe3bc-b80e-46d2-81fe-d18042471989", "username": "EnarRikardz"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0.2",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "121.5, 32, 25.5, -90"},
+		{"teams": ["blue"], "coords": "215.5, 6, 55.5, 135"},
+		{"teams": ["red"], "coords": "155.5, 6, -4.5, -45"}
+	],
+	"blitz" : {
+		"death-title": "&cYou died!",
+		"death-subtitle": "&aRemaining lives: &e%lives%",
+		"actionbar": "&bRemaining lives: &a%lives%",
+		"lives": [
+			{"team": "blue", "lives": 3},
+			{"team": "red", "lives": 3}
+		]
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "iron sword", "displayName": "One-Hit-Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "slot": 0, "unbreakable": true},
+				{"material": "bow", "displayName": "One-Shot-Bow", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "slot": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 3},
+				{"material": "golden carrot", "slot": 8, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:2"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "resistance", "duration": 40, "amplifier": 1000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "arrow", "golden carrot",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	],
+	"damageControl": {
+		"fall": false
+	},
+	"time": {
+        "limit": 600
+    }
+}
