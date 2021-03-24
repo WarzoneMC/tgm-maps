@@ -32,8 +32,8 @@
 		"death-subtitle": "&aRemaining lives: &e%lives%",
 		"actionbar": "&bRemaining lives: &a%lives%",
 		"lives": [
-			{"team": "blue", "lives": 3},
-			{"team": "red", "lives": 3}
+			{"team": "blue", "lives": 1},
+			{"team": "red", "lives": 1}
 		]
 	},
 	"kits": [
