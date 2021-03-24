@@ -75,8 +75,9 @@
 		{
 			"name": "Default",
 			"items": [
+				{"type": "item", "material": "iron sword", "enchantments": ["sharpness:1"], "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "cooked mutton", "slot": 2, "amount": 16},
+				{"type": "item", "material": "cooked mutton", "slot": 3, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 8, "amount": 8},
 
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
@@ -92,7 +93,7 @@
 			"teams": ["cyan"],
 			"items": [
 				{
-					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true,
+					"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true,
 					"canDestroy": ["spruce fence"], "enchantments": ["efficiency:1", "sharpness:1"]
 				}
 			]
@@ -102,7 +103,7 @@
 			"teams": ["yellow"],
 			"items": [
 				{
-					"type": "item", "material": "iron axe", "slot": 0, "unbreakable": true,
+					"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true,
 					"canDestroy": ["dark oak fence"], "enchantments": ["efficiency:1", "sharpness:1"]
 				}
 			]
