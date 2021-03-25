@@ -75,7 +75,7 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "iron sword", "enchantments": ["sharpness:1"], "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "cooked mutton", "slot": 3, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 8, "amount": 8},
@@ -110,7 +110,7 @@
 		}
 	],
 	"itemremove": [
-		"iron axe", "bow", "arrow", "cooked mutton", "spruce fence", "dark oak fence",
+		"iron sword", "bow", "iron axe", "arrow", "cooked mutton", "spruce fence", "dark oak fence",
 		"iron chestplate", "golden chestplate", "iron boots",
 		{
             "type": "leather chestplate",
