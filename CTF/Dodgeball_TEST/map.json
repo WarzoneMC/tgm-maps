@@ -87,20 +87,6 @@
 	},
 	"filters": [
 		{
-			"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["cyan-spawn", "yellow-flag"],
-			"message": "&cYou may not enter this region."
-		},
-		{
-			"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["yellow-spawn", "cyan-flag"],
-			"message": "&cYou may not enter this region."
-		},
-		{
-			"type": "build", "evaluate": "deny", "teams": ["cyan", "yellow"], "regions": ["cyan-spawn", "yellow-spawn"],
-			"message": "&cYou may not modify terrain here."
-		}
-	],
-	"filters": [
-		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["global"], "message": "&cYou are not allowed to modify terrain here."
 		},
