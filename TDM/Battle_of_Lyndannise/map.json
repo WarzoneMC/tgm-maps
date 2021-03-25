@@ -1,0 +1,108 @@
+{
+	"name": "Battle of Lyndanisse",
+	"authors": [
+		{"uuid": "c97373ef-4582-4350-8993-8a78f2775c29", "username": "Eclipsen"},
+		{"uuid": "2553e6f2-3a2c-440b-a6a3-39e3df7fe3ff", "username": "khazhyk"}
+	],
+	"gametype": "TDM",
+	"version": "1.1.3",
+    	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "17, 70, 157, 270"},
+		{"teams": ["blue"], "coords": "114.5, 7, 16.5, 90"},
+		{"teams": ["red"], "coords": "88.5, 7, 298.5, 270"}
+	],
+    	"points": {
+        	"target": 50
+    	},
+    	"time": {
+        "limit": 1200
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "slot": 3, "unbreakable": true},
+				{"material": "bread", "slot": 4, "amount": 32},
+				{"material": "oak planks", "slot": 5, "amount": 16},
+				{"material": "golden apple", "slot": 6, "amount": 2},
+				{"material": "torch", "slot": 7, "amount": 8},
+				{"material": "arrow", "slot": 28, "amount": 2},
+
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "resistance", "duration": 10, "amplifier": 1000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "stone pickaxe", "stone axe", "bread", "bow", "arrow", "golden apple",
+		{
+            "type": "leather chestplate",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-front-spawn", "red-back-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-front-spawn", "blue-back-spawn"], "message": "&cYou may not enter the enemy spawn."},
+
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-front-spawn", "red-back-spawn", "blue-front-spawn", "blue-back-spawn"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-tnt", "blue-wood", "blue-arrow", "blue-gapple", "mid-tnt", "red-tnt", "red-wood", "red-arrow", "red-gapple"], "message": "&cYou are not allowed to break this spawner.."},
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-grass", "no-mans-land", "red-grass"], "message": "&cYou may not build this high."},
+
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{"id": "red-back-spawn", "type": "cuboid", "min": "84, 6, 295", "max": "120, 13, 304"},
+		{"id": "red-front-spawn", "type": "cuboid", "min": "119, 6, 286", "max": "130, 13, 304"},
+		
+		{"id": "blue-back-spawn", "type": "cuboid", "min": "83, 6, 12", "max": "119, 13, 21"},
+		{"id": "blue-front-spawn", "type": "cuboid", "min": "73, 6, 12", "max": "84, 13, 30"},
+		
+		{"id": "blue-grass", "type": "cuboid", "min": "64, 28, -2", "max": "139, 28, 108"},
+		{"id": "red-grass", "type": "cuboid", "min": "64, 28, 208", "max": "139, 28, 318"},
+		{"id": "no-mans-land", "type": "cuboid", "min": "64, 17, 107", "max": "139, 17, 209"},
+		
+		{"id": "blue-tnt", "type": "cuboid", "min": "116, 13, 4", "max": "116, 13, 4"},
+		{"id": "blue-wood", "type": "cuboid", "min": "99, 8, 84", "max": "99, 8, 84"},
+		{"id": "blue-arrow", "type": "cuboid", "min": "118, 4, 134", "max": "118, 4, 134"},
+		{"id": "blue-gapple", "type": "cuboid", "min": "72, 6, 120", "max": "72, 6, 120"},
+		{"id": "mid-tnt", "type": "cuboid", "min": "101, 2, 157", "max": "101, 2, 157"},
+		{"id": "red-tnt", "type": "cuboid", "min": "86, 12, 310", "max": "86, 12, 310"},
+		{"id": "red-wood", "type": "cuboid", "min": "103, 8, 230", "max": "103, 8, 230"},
+		{"id": "red-arrow", "type": "cuboid", "min": "84, 4, 180", "max": "84, 4, 180"},
+		{"id": "red-gapple", "type": "cuboid", "min": "130, 6, 194", "max": "130, 6, 194"},
+
+		{"id": "map", "type": "cuboid", "min": "64, 0, 0", "max": "138, oo, 316"}
+	]
+}
