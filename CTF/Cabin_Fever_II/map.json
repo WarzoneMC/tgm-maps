@@ -33,7 +33,7 @@
 	"ctf": {
 		"objective": "amount",
 		"options": {
-			"captures": 3
+			"captures": 2
 		},
 		"flags": [
 			{
