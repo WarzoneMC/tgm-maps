@@ -1,0 +1,113 @@
+{
+	"name": "Gladiator",
+	"authors": [
+		{"uuid": "f391227e-626f-4076-a389-95e2b922d167", "username": "Sir_Haribo"}
+	],
+	"gametype": "TDM",
+	"version": "1.0.0",
+    	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark_purple",
+			"min": 1,
+			"max": 14
+		},
+		{
+			"id": "lime",
+			"name": "Lime",
+			"color": "green",
+			"min": 1,
+			"max": 14
+		},
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 14
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 14
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-41.5, 59, -862.5, -45"},
+		{"teams": ["purple"], "coords": "-29.5, 57, -797.5, -90"},
+		{"teams": ["lime"], "coords": "23.5, 57, -850.5"},
+		{"teams": ["cyan"], "coords": "76.5, 57, -797.5, 90"},
+		{"teams": ["red"], "coords": "23.5, 57, -744.5, 180"}
+	],
+    	"points": {
+        	"target": 100
+    	},
+    	"time": {
+        "limit": 9600
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 1, "unbreakable": true},
+				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "oak log", "slot": 4, "amount": 2},
+				{"material": "cobblestone", "slot": 5, "amount": 32},
+				{"material": "golden apple", "slot": 7, "amount": 2},
+				{"material": "cooked porkchop", "slot": 8, "amount": 16},
+
+				{"material": "leather helmet", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather boots", "slot": "chestplate", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "diamond pickaxe", "iron axe", "oak log", "oak planks", "cobblestone", "golden apple", "cooked porkchop",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },{
+            "type": "leather leggings",
+            "drop": true
+        },
+		{
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["purple", "lime", "cyan"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["lime", "cyan", "red"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["cyan", "red", "purple-spawn"], "regions": ["lime-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "purple", "lime"], "regions": ["cyan-spawn"], "message": "&cYou may not enter the enemy spawn."},
+
+		{"type": "build", "evaluate": "deny", "teams": ["purple", "lime", "cyan", "red"], "regions": ["purple-spawn", "lime-spawn", "cyan-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "purple-spawn", "type": "cylinder", "base": "-30, 56, -798", "radius": 7, "height": 5},
+		{"id": "lime-spawn", "type": "cylinder", "base": "23, 56, -851", "radius": 7, "height": 5},
+		{"id": "cyan-spawn", "type": "cylinder", "base": "76, 56, -798", "radius": 7, "height": 5},
+		{"id": "red-spawn", "type": "cylinder", "base": "23, 56, -745", "radius": 7, "height": 5}
+	]
+}
