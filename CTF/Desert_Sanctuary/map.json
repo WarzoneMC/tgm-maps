@@ -30,7 +30,7 @@
     "ctf": {
         "objective": "time",
         "options": {
-            "time": 420
+            "time": 720
         },
         "flags": [
             {
