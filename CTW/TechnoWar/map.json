@@ -120,7 +120,8 @@
 		},
 
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "cyan-wool", "purple-wool"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-wool", "orange-wool"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-wool", "orange-wool"], "message": "&cYou may not enter this region."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-17, 0, -81", "max": "17, oo, -95"},
@@ -129,6 +130,8 @@
 		{"id": "cyan-wool", "type": "cuboid", "min": "-80, 0, 63", "max": "-97, oo, 75"},
 		{"id": "purple-wool", "type": "cuboid", "min": "80, 0, 43", "max": "97, oo, 31"},
 		{"id": "orange-wool", "type": "cuboid", "min": "-80, 0, -43", "max": "-97, oo, -31"},
-		{"id": "yellow-wool", "type": "cuboid", "min": "80, 0, -63", "max": "97, oo, -75"}
+		{"id": "yellow-wool", "type": "cuboid", "min": "80, 0, -63", "max": "97, oo, -75"},
+		
+		{"id": "map", "type": "cuboid", "min": "-58, 0, 97", "max": "58, 255, -97"}
 	]
 }
