@@ -29,6 +29,16 @@
 	"dtm": {
 		"monuments": [
 			{
+				"name": "Right Monument",
+				"teams": ["orange"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-71, 38, -155",
+					"max": "-71, 38, -155" 
+				},
+				"health": 1
+			},
+			{
 				"name": "Back Monument",
 				"teams": ["orange"],
 				"materials": ["obsidian"],
@@ -49,12 +59,12 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument",
-				"teams": ["orange"],
+				"name": "Right Monument&r",
+				"teams": ["cyan"],
 				"materials": ["obsidian"],
-				"region": { 
-					"min": "-71, 38, -155",
-					"max": "-71, 38, -155" 
+				"region": {
+					"min": "71, 38, 0",
+					"max": "71, 38, 0"
 				},
 				"health": 1
 			},
@@ -75,16 +85,6 @@
 				"region": {
 					"min": "-71, 38, 0",
 					"max": "-71, 38, 0"
-				},
-				"health": 1
-			},
-			{
-				"name": "Right Monument&r",
-				"teams": ["cyan"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "71, 38, 0",
-					"max": "71, 38, 0"
 				},
 				"health": 1
 			}
