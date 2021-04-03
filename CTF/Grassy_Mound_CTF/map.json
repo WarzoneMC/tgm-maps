@@ -1,0 +1,206 @@
+{
+    "name": "Grassy Mound CTF",
+    "authors": [
+        {"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTF",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 12
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark red",
+            "min": 1,
+            "max": 12
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "30.5, 13, 227.5, -90"},
+        {"teams": ["blue"], "coords": "36.5, 8, 280.5, -90"},
+        {"teams": ["red"], "coords": "106.5, 8, 174.5, 90"}
+    ],
+    "time": {
+        "limit": 900
+    },
+    "ctf": {
+        "objective": "amount",
+        "options": {
+            "captures": 3
+        },
+        "flags": [
+            {
+                "team": "blue",
+                "location": "75, 15, 290",
+                "type": "blue",
+                "respawn-time": 20,
+                "rotation": "north"
+            },
+            {
+                "team": "red",
+                "location": "67, 15, 164",
+                "type": "red",
+                "respawn-time": 20,
+                "rotation": "south"
+            }
+        ],
+        "bases": [
+            {"region": "blue-net", "team": "blue"},
+            {"region": "red-net", "team": "red"}
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
+                {"type": "item", "material": "oak planks", "slot": 4, "amount": 48},
+                {"type": "item", "material": "arrow", "slot": 7, "amount": 36},
+                {"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": 60, "amplifier": 10, "particles": false}
+            ]
+        },
+        {
+            "name": "Blue",
+            "teams": ["blue"],
+            "items": [
+                {"material": "blue terracotta", "slot": 5, "amount": 36}
+            ]
+        },
+        {
+            "name": "Red",
+            "teams": ["red"],
+            "items": [
+                {"material": "red terracotta", "slot": 5, "amount": 36}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "stone pickaxe", "stone axe",
+        "blue terracotta", "red terracotta", "golden carrot",
+        "wheat seeds", "gold block", "coal block", "string",
+        {
+            "type": "wheat seeds",
+            "spawn": true
+        },
+        {
+            "type": "gold block",
+            "spawn": true
+        },
+        {
+            "type": "coal block",
+            "spawn": true
+        },
+        {
+            "type": "string",
+            "spawn": true
+        },
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "experience bottle", "amount": 2},
+                    {"material": "arrow", "amount": 8},
+                    {"material": "oak planks", "amount": 8}
+                ]
+            }
+        },
+        {
+            "count": 6,
+            "repeat": false,
+            "actions": {
+                "items": [
+                    {"material": "flint and steel", "amount": 1},
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "experience bottle", "amount": 2}
+                ]
+            }
+        },
+        {
+            "count": 8,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "tnt", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "voidbuild", "evaluate": "deny", "inverted": true, "teams": ["blue", "red"],
+            "regions": ["map"],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+            "regions": ["blue-spawn-protection", "red-spawn-protection"],
+            "message": "&cYou may not modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+            "regions": ["blue-enchantment-table", "red-enchantment-table"],
+            "message": "&cYou may not break the enchantment table."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["red-spawn-protection"],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["red"],
+            "regions": ["blue-spawn-protection"],
+            "message": "&cYou may not enter this region."
+        }
+    ],
+    "regions": [
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "32, 0, 286", "max": "41, oo, 272"},
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "101, 0, 169", "max": "110, oo, 181"},
+
+        {"id": "blue-net", "type": "cylinder", "base": "75, 13, 290", "radius": "1.5", "height": "6"},
+        {"id": "red-net", "type": "cylinder", "base": "67, 13, 164", "radius": "1.5", "height": "6"},
+
+        {"id": "blue-enchantment-table", "type": "cuboid", "min": "88, 5, 279", "max": "88, 5, 279"},
+        {"id": "red-enchantment-table", "type": "cuboid", "min": "54, 5, 175", "max": "54, 5, 175"},
+
+        {"id": "map", "type": "cuboid", "min": "45, 0, 169", "max": "97, oo, 285"}
+    ],
+    "buildHeight": 22
+}
