@@ -67,7 +67,7 @@
 			"items": [
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "iron axe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "slot": 2, "unbreakable": true},
 				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
 				{"material": "glass", "slot": 4, "amount": 64},
 
