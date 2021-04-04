@@ -67,10 +67,11 @@
 			"items": [
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
-				{"material": "glass", "slot": 3, "amount": 64},
+				{"material": "stone axe", "slot": 2, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "glass", "slot": 4, "amount": 64},
 
-				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "oak planks", "slot": 5, "amount": 64},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 				{"material": "arrow", "slot": 9, "amount": 64},
