@@ -60,8 +60,8 @@
 				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
 
 				{"type": "item", "material": "iron shovel", "slot": 4, "unbreakable": true},
-				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64, "durability": 5},
-				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64, "durability": 5},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 
