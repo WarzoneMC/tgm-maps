@@ -76,11 +76,12 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:3"], "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:3"], "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "golden apple", "slot": 3, "amount": 2},
-				{"type": "item", "material": "oak log", "slot": 4, "amount": 64},
-				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 4, "amount": 2},
+				{"type": "item", "material": "oak log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 6, "amount": 64},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28},
 
