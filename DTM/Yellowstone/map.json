@@ -29,7 +29,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Back Left Monument",
+				"name": "Back Right Monument",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
 				"region": {
@@ -39,7 +39,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Right Monument",
+				"name": "Back Left Monument",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
 				"region": {
@@ -49,7 +49,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left Monument",
+				"name": "Front Right Monument",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
 				"region": {
@@ -59,7 +59,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument",
+				"name": "Front Left Monument",
 				"teams": ["moon"],
 				"materials": ["obsidian"],
 				"region": {
@@ -69,7 +69,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Left Monument&r",
+				"name": "Back Right Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -79,7 +79,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Right Monument&r",
+				"name": "Back Left Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -89,7 +89,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left Monument&r",
+				"name": "Back Right Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -99,7 +99,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right Monument&r",
+				"name": "Back Left Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
