@@ -1,0 +1,192 @@
+{
+	"name": "Desolate Gully CTW",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii_"}
+	],
+	"version": "1.0.1",
+	"gametype": "CTW",
+	"gamerules": {
+        "doFireTick": true
+    },
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-107.5, 14, -61.5, 45"},
+		{"teams": ["red"], "coords": "-63, 6.5, -59.5"},
+		{"teams": ["blue"], "coords": "-111, 6.5, -59.5"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "slot": 2, "unbreakable": true},
+
+				{"material": "acacia planks", "slot": 4, "amount": 48},
+				{"material": "golden carrot", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 36},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 60, "amplifier": 10000, "particles": false}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue terracotta", "slot": 5, "amount": 36}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red terracotta", "slot": 5, "amount": 36}
+			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "acacia planks", "amount": 12},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		},
+		{
+			"count": 6,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "flint and steel", "durability": 61},
+					{"material": "golden apple", "amount": 2}
+				]
+			}
+		},
+		{
+			"count": 8,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
+				]
+			}
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "arrow", "golden carrot",
+		"red wool", "blue wool", "string",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "iron boots",
+            "drop": true
+        }
+	],
+	"itemkeep": [
+        "acacia planks", "blue terracotta", "red terracotta", "golden apple" 
+    ],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Red",
+				"color": "dark_red",
+				"woolcolor": "red",
+				"teams": ["blue"],
+				"region": {"min": "-115, 7, -60", "max": "-115, 7, -60"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"woolcolor": "blue",
+				"teams": ["red"],
+				"region": {"min": "-60, 7, -60", "max": "-60, 7, -60"}
+			}
+		]
+	},
+	"time": {
+        "limit": 24000
+    },
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn", "red-spawn", "red-wool-build"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["blue-spawn", "red-spawn", "blue-wool-build"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn", "red-wool-entry"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn", "blue-wool-entry"], "message": "&cYou may not enter this region."},
+
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["map"],
+			"message": "&cYou are not allowed to build in the void!"
+		}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "-106, 0, -56", "max": "-117, oo, -64"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-58, 0, -56", "max": "-69, oo, -64"},
+
+		{"id": "blue-wool-entry", "min": "-141, 0, -41", "max": "-129, oo, -29"},
+		{"id": "blue-wool-build", "min": "-141, 0, -41", "max": "-130, oo, -30"},
+		{"id": "red-wool-entry", "min": "-45, 0, -41", "max": "-33, oo, -29"},
+		{"id": "red-wool-build", "min": "-45, 0, -41", "max": "-34, oo, -30"},
+
+		{"id": "void1", "min": "-45, 0, -29", "max": "oo, oo, oo"},
+		{"id": "void2", "min": "-45, 0, -15", "max": "-129, oo, oo"},
+		{"id": "void3", "min": "-130, 0, -29", "max": "-oo, oo, oo"},
+		{"id": "void4", "min": "-142, 0, -29", "max": "-oo, oo, -41"},
+		{"id": "void5", "min": "-130, 0, -42", "max": "-oo, oo, -oo"},
+		{"id": "void6", "min": "-118, 0, -54", "max": "-oo, oo, -oo"},
+		{"id": "void7", "min": "-118, 0, -65", "max": "-57, oo, -oo"},
+		{"id": "void8", "min": "-57, 0, -54", "max": "oo, oo, -oo"},
+		{"id": "void9", "min": "-45, 0, -42", "max": "oo, oo, -oo"},
+		{"id": "void10", "min": "-33, 0, -42", "max": "oo, oo, -29"},
+
+		{"id": "void11", "min": "-105, 0, -56", "max": "-70, oo, -oo"},
+		{"id": "void12", "min": "-58, 0, -41", "max": "-67, oo, -35"},
+		{"id": "void13", "min": "-117, 0, -41", "max": "-108, oo, -35"},
+
+		{"id": "map", "type": "meta", "regions": ["void1", "void2", "void3", "void4", "void5", "void6", "void7", "void8", "void9", "void10", "void11", "void12", "void13"]}
+	],
+	"buildHeight": 16
+}
