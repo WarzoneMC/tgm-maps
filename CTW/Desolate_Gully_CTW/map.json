@@ -100,7 +100,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "stone pickaxe", "stone axe", "arrow", "golden carrot",
-		"red wool", "blue wool", "string",
+		"red wool", "blue wool", "string", "acacia planks", "blue terracotta", "red terracotta",
 		{
             "type": "leather helmet",
             "drop": true
@@ -119,7 +119,7 @@
         }
 	],
 	"itemkeep": [
-        "acacia planks", "blue terracotta", "red terracotta", "golden apple" 
+        "golden apple" 
     ],
 	"ctw": {
 		"wools": [
