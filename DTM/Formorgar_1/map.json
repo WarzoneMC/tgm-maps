@@ -29,6 +29,16 @@
 	"dtm": {
 		"monuments": [
 			{
+				"name": "Left Monument",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-20, 67, -131",
+					"max": "-20, 67, -131" 
+				},
+				"health": 1
+			},
+			{
 				"name": "Right Monument",
 				"teams": ["yellow"],
 				"materials": ["obsidian"],
@@ -39,32 +49,22 @@
 				"health": 1
 			},
 			{
-				"name": "Yellow Monument",
-				"teams": ["yellow"],
-				"materials": ["obsidian"],
-				"region": { 
-					"min": "-20, 67, -131",
-					"max": "-20, 67, -131" 
-				},
-				"health": 1
-			},
-			{
-				"name": "Right Monument&r",
-				"teams": ["purple"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-20, 67, 5",
-					"max": "-20, 67, 5"
-				},
-				"health": 1
-			},
-			{
-				"name": "Yellow Monument&r",
+				"name": "Left Monument",
 				"teams": ["purple"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "18, 67, 5",
 					"max": "18, 67, 5"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-20, 67, 5",
+					"max": "-20, 67, 5"
 				},
 				"health": 1
 			}
