@@ -56,9 +56,9 @@
 			"items": [
 				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:1"], "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "diamond axe", "slot": 2, "unbreakable": true},
-
-				{"material": "stone pickaxe", "slot": 3, "unbreakable": true},
+				{"material": "stone axe", "slot": 2, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 3, "unbreakable": true},
+				
 				{"material": "spruce boat", "slot": 6},
 				{"material": "arrow", "slot": 9, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 10},
@@ -76,19 +76,19 @@
 			"name": "Blue",
 			"teams": ["blue"],
 			"items": [
-				{"material": "blue stained glass", "slot": 4, "amount": 32}
+				{"material": "blue stained glass", "slot": 4, "amount": 64}
 			]
 		},
 		{
 			"name": "Red",
 			"teams": ["red"],
 			"items": [
-				{"material": "red stained glass", "slot": 4, "amount": 32}
+				{"material": "red stained glass", "slot": 4, "amount": 64}
 			]
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond axe", "stone pickaxe", "spruce boat", "arrow", "cooked beef", "gold block",
+		"iron sword", "bow", "stone axe", "iron pickaxe", "spruce boat", "arrow", "cooked beef", "gold block",
 		"iron chestplate", "iron leggings",
 		{
             "type": "leather helmet",
@@ -98,6 +98,17 @@
             "type": "leather boots",
             "drop": true
         }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
 	],
 	"filters": [
 		{
