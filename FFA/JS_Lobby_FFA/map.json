@@ -1,0 +1,109 @@
+{
+    "name": "JS Lobby: FFA",
+    "version": "1.0.0",
+    "gametype": "FFA",
+    "authors": [
+        {"uuid": "fb57ed98-9f41-40c7-8e61-dee46d34d427", "username": "AtditC"},
+        {"uuid": "7105f76b-b4b9-4fe4-bbdb-980962d4b7a9", "username": "Patrikano"},
+        {"uuid": "c1d94f18-6ea3-495a-8d1b-7d9eaf393f64", "username": "Sqyid"},
+        {"uuid": "64ffba69-e2aa-4479-b313-d951fff6ac37", "username": "EbGG"},
+        {"uuid": "c8a8babe-cb5b-45fc-a511-2f9ba5a021d2", "username": "psv"},
+        {"uuid": "f1352a57-4fe3-4f0c-b867-56b771fc1a0f", "username": "teagod"}
+    ],
+    "stats": {"disable": "true"},
+    "teams": [
+        {
+            "id": "players",
+            "name": "Players",
+            "color": "dark_aqua",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 36, 0.5"},
+        {"teams": ["players"], "coords": "0.5, 36, 0.5"},
+        {"teams": ["players"], "coords": "10, 38, -9, 45"},
+        {"teams": ["players"], "coords": "27, 36, -7, -90"},
+        {"teams": ["players"], "coords": "25.5, 43, -16.5, 90"},
+        {"teams": ["players"], "coords": "28.5, 50, -25.5"},
+        {"teams": ["players"], "coords": "17.5, 47, -28.5, 90"},
+        {"teams": ["players"], "coords": "-9.5, 36, -21, 180"},
+        {"teams": ["players"], "coords": "0.5, 36, -16.5"},
+        {"teams": ["players"], "coords": "-14.5, 36, -14.5, 135"},
+        {"teams": ["players"], "coords": "-31.5, 36, -5.5, -90"},
+        {"teams": ["players"], "coords": "-32.5, 36, 13.5, -90"},
+        {"teams": ["players"], "coords": "-15.5, 36, 16.5, 45"},
+        {"teams": ["players"], "coords": "-16.5, 36, 35.5, 180"},
+        {"teams": ["players"], "coords": "-35.5, 36, 36.5, -135"},
+        {"teams": ["players"], "coords": "-30.5, 45.5, 25.5, -90"},
+        {"teams": ["players"], "coords": "0.5, 36, 25.5"},
+        {"teams": ["players"], "coords": "0.5, 37, 34, 90"},
+        {"teams": ["players"], "coords": "-3, 42.5, 34, 180"},
+        {"teams": ["players"], "coords": "4, 51, 35, -90, 90"},
+        {"teams": ["players"], "coords": "16.5, 36, 16.5, -45"},
+        {"teams": ["players"], "coords": "10, 38, 10, 135"},
+        {"teams": ["players"], "coords": "33.5, 36, 26.5, 180"},
+        {"teams": ["players"], "coords": "27.5, 42.5, 3.3, 180"},
+        {"teams": ["players"], "coords": "16.5, 42, 3.5, 90"},
+        {"teams": ["players"], "coords": "13.5, 35, -2.5, 90"},
+        {"teams": ["players"], "coords": "10.5, 52, 2.5, 90"},
+        {"teams": ["players"], "coords": "-1.5, 52, 10.5, 180"},
+        {"teams": ["players"], "coords": "-9.5, 52, -1.5, -90"},
+        {"teams": ["players"], "coords": "0.5, 64.5, -9.5, 0, 71.25"},
+        {"teams": ["players"], "coords": "0.5, 41.5, -6.5"}
+    ],
+    "ffa": {
+        "timeLimit": {
+            "enabled": true,
+            "limit": 600
+        },
+        "killLimit": 35
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "stone sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "unbreakable": true},
+                {"material": "golden apple", "slot": 2},
+                {"material": "arrow", "slot": 7, "amount": 32},
+                {"material": "cooked beef", "slot": 8, "amount": 64},
+
+                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": 50, "amplifier": 255, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "golden apple", "arrow", "cooked beef",
+        "leather helmet", "leather chestplate", "leather leggings", "leather boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "respawn": {
+        "rules": [
+            {"delay": 1000}
+        ]
+    },
+    "damageControl": {
+        "FALL": false
+    },
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["players"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+    ]
+}
