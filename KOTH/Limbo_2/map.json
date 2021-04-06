@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "5e1c0b5d-cfdd-4e10-95cd-c53f8ee92150", "username": "TheNoChillDude"}
 	],
-	"version": "1.0",
+	"version": "1.1",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -27,12 +27,14 @@
 		{"teams": ["orange"], "coords": "-52.5, 19, -0, -90"}
 	],
 	"points": {
-		"target": 1200
+		"target": 2000
 	},
 	"koth": {
 		"hills": [
 			{
 				"name": "Point C",
+				"time": 8,
+				"points": 3.5,
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -49,6 +51,8 @@
 			},
 			{
 				"name": "Point B",
+				"time": 8,
+				"points": 2.75,
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -65,6 +69,8 @@
 			},
 			{
 				"name": "Point A",
+				"time": 8,
+				"points": 2.75,
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -91,13 +97,24 @@
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true, "enchantments": ["protection projectile:2"]},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 60, "amplifier": 10000, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "arrow", "golden carrot", "iron helmet", "chainmail chestplate",
+		"stone sword", "bow", "arrow", "golden carrot",
+		{
+            "type": "iron helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
 		{
             "type": "leather leggings",
             "drop": true
@@ -119,7 +136,6 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["cyan", "orange"], "regions": ["cyan-spawn-protection", "orange-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "build", "evaluate": "deny", "teams": ["cyan", "orange"], "regions": ["master-protection"], "message": "&cYou are not allowed to modify terrain here."}
@@ -128,6 +144,13 @@
 	"regions": [
 		{"id": "cyan-spawn-protection", "min": "60, 10, -6", "max": "46.5, oo, 6.5"},
 		{"id": "orange-spawn-protection", "min": "-59.5, 10, 6", "max": "-45.5, oo, -5.5"},
-		{"id": "master-protection", "min": "69, 50, 31", "max": "-80, 2, -31"}
-	]
+		{"id": "master-protection", "min": "69, 50, 31", "max": "-80, 2, -31"},
+
+		{"id": "portal-a", "min": "0, 5, 25", "max": "0, 7, 25"},
+		{"id": "portal-b", "min": "0, 5, -25", "max": "0, 7, -25"}
+	],
+	"portals": [ 
+        {"from": "portal-a", "to": "0.5, 18, 20.5, 180", "teams": ["cyan", "orange"], "sound": true},
+        {"from": "portal-b", "to": "0.5, 18, -20.5", "teams": ["cyan", "orange"], "sound": true}
+    ]
 }
