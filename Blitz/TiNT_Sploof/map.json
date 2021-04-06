@@ -4,7 +4,7 @@
         {"uuid": "cc2292de-fcb3-412d-9319-f3177f73b605", "username": "cs_"}
     ],
     "gametype": "Blitz",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "stats": {"disable": true},
     "teams": [
         {
@@ -106,6 +106,13 @@
         {"teams": ["blue"], "coords": "0.5, 15, -22.5"},
         {"teams": ["magenta"], "coords": "8.5, 15, -8.5, -135"},
         {"teams": ["purple"], "coords": "17.5, 15, -17.5, 45"}
+    ],
+    "kits": [
+        {
+            "effects": [
+                {"type": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
+            ]
+        }
     ],
     "time": {
         "limit": 600
