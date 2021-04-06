@@ -4,8 +4,9 @@
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
 		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "KOTH",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "blue",
