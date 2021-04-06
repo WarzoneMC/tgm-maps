@@ -134,6 +134,21 @@
 			"regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "yellow-room", "red-base-center", "blue-base-center", "base-left", "base-right", "blue-base-back", "red-base-back"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["blue"],
+			"regions": ["purple-room", "yellow-room"],
+			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red"],
+			"regions": ["lime-room", "orange-room"],
+			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["lime-room", "orange-room", "purple-room", "yellow-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "yellow-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "orange-room"], "message": "&cYou may not enter this region."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}

@@ -43,7 +43,7 @@
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 60, "amplifier": 10000, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 10000, "particles": false}
 			]
 		}
 	],
