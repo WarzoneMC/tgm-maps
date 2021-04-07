@@ -22,34 +22,14 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "22, 132, 116, 180"},
-		{"teams": ["red"], "coords": "-76, 88, 17, -90"},
-		{"teams": ["blue"], "coords": "119, 88, 17, 90"}
+		{"teams": ["spectators"], "coords": "22.5, 132, 116.5, 180"},
+		{"teams": ["red"], "coords": "-76.5, 88, 17.5, -90"},
+		{"teams": ["blue"], "coords": "119.5, 88, 17.5, 90"}
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Front Right Monument",
-				"teams": ["red"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-32, 90, -43",
-					"max": "-32, 90, -43"
-				},
-				"health": 1
-			},
-			{
-				"name": "Front Left Monument",
-				"teams": ["red"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "-32, 90, 77",
-					"max": "-32, 90, 77"
-				},
-				"health": 1
-			},
-			{
-				"name": "Back Right Monument",
+				"name": "Back Right",
 				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
@@ -59,7 +39,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Left Monument",
+				"name": "Back Left",
 				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
@@ -68,29 +48,28 @@
 				},
 				"health": 1
 			},
-
 			{
-				"name": "Front Right Monument",
-				"teams": ["blue"],
+				"name": "Front Right",
+				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
-					"min": "74, 90, 77",
-					"max": "74, 90, 77"
+					"min": "-32, 90, -43",
+					"max": "-32, 90, -43"
 				},
 				"health": 1
 			},
 			{
-				"name": "Front Left Monument",
-				"teams": ["blue"],
+				"name": "Front Left",
+				"teams": ["red"],
 				"materials": ["obsidian"],
 				"region": {
-					"min": "74, 90, -43",
-					"max": "74, 90, -43"
+					"min": "-32, 90, 77",
+					"max": "-32, 90, 77"
 				},
 				"health": 1
 			},
 			{
-				"name": "Back Right Monument",
+				"name": "Back Right",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
@@ -100,12 +79,32 @@
 				"health": 1
 			},
 			{
-				"name": "Back Left Monument",
+				"name": "Back Left",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "161, 90, -18",
 					"max": "161, 90, -18"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Right",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "74, 90, 77",
+					"max": "74, 90, 77"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Left",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "74, 90, -43",
+					"max": "74, 90, -43"
 				},
 				"health": 1
 			}
@@ -119,10 +118,9 @@
 				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 
-				{"type": "item", "material": "birch log", "slot": 4, "amount": 64},
-				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
-				{"type": "item", "material": "golden apple", "slot": 7, "amount": 2},
-				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 3, "amount": 2},
+				{"type": "item", "material": "golden carrot", "slot": 4, "amount": 64},
+				{"type": "item", "material": "birch log", "slot": 6, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
