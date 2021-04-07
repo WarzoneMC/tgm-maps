@@ -1,0 +1,120 @@
+{
+    "name": "SpleefTest",
+    "version": "1.0.0",
+    "authors": [
+        {"uuid": "fb57ed98-9f41-40c7-8e61-dee46d34d427", "username": "AtditC"}
+    ],
+    "gametype": "Blitz",
+    "stats": {"disable": true},
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark red",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "282.5, 60, 250.5, -90"},
+
+        {"teams": ["red"], "coords": "254.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "256.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "258.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "260.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "262.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "264.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "266.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "268.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "270.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "272.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "274.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "276.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "278.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "280.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "282.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "284.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "286.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "288.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "290.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "292.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "294.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "296.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "298.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "300.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "302.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "304.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "306.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "308.5, 50, 222.5"},
+        {"teams": ["red"], "coords": "310.5, 50, 222.5"},
+
+        {"teams": ["blue"], "coords": "254.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "256.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "258.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "260.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "262.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "264.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "266.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "268.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "270.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "272.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "274.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "276.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "278.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "280.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "282.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "284.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "286.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "288.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "290.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "292.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "294.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "296.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "298.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "300.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "302.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "304.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "306.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "308.5, 50, 278.5, 180"},
+        {"teams": ["blue"], "coords": "310.5, 50, 278.5, 180"}
+    ],
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "diamond shovel", "enchantments": ["efficiency:5"], "slot": 0, "unbreakable": true},
+                
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "slow digging", "duration": 200, "amplifier": 255, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        {
+            "type": "snowball",
+            "spawn": true
+        }
+    ],
+    "border": {
+        "startingSize": 65,
+        "endSize": 10,
+        "center": "282, 60, 250",
+        "delay": 190
+    },
+    "damageControl": {
+        "FALL": false,
+        "ENTITY_ATTACK": false
+    }
+}
