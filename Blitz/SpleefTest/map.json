@@ -97,7 +97,7 @@
                 {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
             ],
             "effects": [
-                {"type": "slow digging", "duration": 200, "amplifier": 255, "particles": false}
+                {"type": "slow digging", "duration": 120, "amplifier": 255, "particles": false}
             ]
         }
     ],
