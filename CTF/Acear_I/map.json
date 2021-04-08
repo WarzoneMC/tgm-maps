@@ -23,7 +23,7 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "0.5, 23, 0.5, 90"},
+		{"teams": ["spectators"], "coords": "0.5, 23, -29, -0"},
 		{"teams": ["blue"], "coords": "-82.5, 6, 0.5, -90"},
 		{"teams": ["red"], "coords": "83.5, 6, 0.5, 90"}
 	],
@@ -132,8 +132,9 @@
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
 		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "red-spawn", "blue-flag", "red-flag"],
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "red-spawn", "blue-flag", "blue-flag-top", "red-flag", "red-flag-top"],
 			"message": "&cYou may not modify terrain here."
 		}
 	],
@@ -141,11 +142,16 @@
 		{"id": "blue-spawn", "type": "cuboid", "min": "-86, 0, -3", "max": "-61, oo, 3"},
 		{"id": "red-spawn", "type": "cuboid", "min": "61, 0, -3", "max": "86, oo, 3"},
 
-		{"id": "blue-flag", "type": "cuboid", "min": "-40, 0, -3", "max": "-34, oo, 3"},
-		{"id": "red-flag", "type": "cuboid", "min": "34, 0, -3", "max": "40, oo, 3"},
+		{"id": "blue-flag", "type": "cuboid", "min": "-41, 1, -6", "max": "-32, oo, 6"},
+		{"id": "red-flag", "type": "cuboid", "min": "41, 1, 6", "max": "32, oo, -6"},
+
+		{"id": "blue-flag-top", "type": "cuboid", "min": "-42, 3, -9", "max": "-29, 4, 9"},
+		{"id": "red-flag-top", "type": "cuboid", "min": "42, 3, 9", "max": "29, 4, -9"},
 
 		{"id": "blue-net", "type": "cuboid", "min": "-34, 0, -2", "max": "-39, 3 ,3"},
-		{"id": "red-net", "type": "cuboid", "min": "35, 0, 3", "max": "40, 3, -2"}
+		{"id": "red-net", "type": "cuboid", "min": "35, 0, 3", "max": "40, 3, -2"},
+		
+		{"id": "map", "type": "cuboid", "min": "57, 0, 21", "max": "-57, oo, -21"}
 	],
 	"buildHeight": 19
 }
