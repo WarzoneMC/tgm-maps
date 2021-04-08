@@ -158,6 +158,10 @@
             "type": "block-break", "evaluate": "allow", "blocks": ["snow block"], "teams": ["red", "blue"],
             "regions": ["global"],
             "message": "&cYou may only break snow blocks."
+        },
+        {
+        	"type": "block-place", "evaluate": "deny", "teams": ["red", "blue"],
+        	"regions": ["global"]
         }
     ]
 }
