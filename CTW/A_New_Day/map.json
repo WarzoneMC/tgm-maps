@@ -71,7 +71,7 @@
                 {"material": "oak log", "slot": 5, "amount": 64},
                 {"material": "golden apple", "slot": 7, "amount": 3},
                 {"material": "cooked beef", "slot": 8, "amount": 64},
-                {"material": "arrow", "slot": 9, "amount": 32},
+                {"material": "arrow", "slot": 28, "amount": 32},
 
                 {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
                 {"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
