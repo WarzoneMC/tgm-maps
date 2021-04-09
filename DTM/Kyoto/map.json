@@ -89,9 +89,9 @@
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "golden chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
@@ -105,7 +105,7 @@
             "spawn": false
         },
         {
-            "type": "leather boots",
+            "type": "iron boots",
             "death": true,
             "drop": true,
             "spawn": false
