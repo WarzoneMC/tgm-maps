@@ -140,11 +140,11 @@
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn", "magenta-room", "pink-room"], "message": "&cYou may not enter this region."}
     ],
     "regions": [
-        {"id": "magenta-room", "min": "-1342, 0, -900", "max": "-1332, oo, -891"},
-        {"id": "pink-room", "min": "-1228, 0, -900", "max": "-1218, oo, -891"},
+        {"id": "magenta-room", "min": "-1342, 0, -900", "max": "-1331, oo, -891"},
+        {"id": "pink-room", "min": "-1228, 0, -900", "max": "-1217, oo, -891"},
 
-        {"id": "light-blue-room", "min": "-1342, 0, -1115", "max": "-1332, oo, -1106"},
-        {"id": "cyan-room", "min": "-1228, 0, -1115", "max": "-1218, oo, -1106"},
+        {"id": "light-blue-room", "min": "-1342, 0, -1115", "max": "-1331, oo, -1106"},
+        {"id": "cyan-room", "min": "-1228, 0, -1115", "max": "-1217, oo, -1106"},
 
         {"id": "blue-spawn", "type": "cuboid", "min": "-1305, 0, -883", "max": "-1255, oo, -848"},
         {"id": "red-spawn", "type": "cuboid", "min": "-1305, 0, -1158", "max": "-1255, oo, -1123"},
