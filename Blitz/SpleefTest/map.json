@@ -166,12 +166,12 @@
         }
     ],
     "time": {
-    	"limit": 70
+    	"limit": 80
     },
     "border": {
-        "startingSize": 65,
+        "startingSize": 64,
         "endSize": 6,
-        "center": "282, 60, 250",
+        "center": "282.5, 60, 250.5",
         "delay": 60
     },
     "damageControl": {
