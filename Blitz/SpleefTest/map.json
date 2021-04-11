@@ -131,23 +131,48 @@
     ],
     "itemremove": [
         {
-            "type": "red wool",
+            "type": "diamond shovel",
             "drop": true
         },
         {
-            "type": "blue wool",
+            "type": "leather helmet",
             "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        },
+        {
+            "type": "red wool",
+            "drop": true,
+            "spawn": true
+        },
+        {
+            "type": "blue wool",
+            "drop": true,
+            "spawn": true
         },
         {
             "type": "snowball",
             "spawn": true
         }
     ],
+    "time": {
+    	"limit": 70
+    },
     "border": {
         "startingSize": 65,
-        "endSize": 10,
+        "endSize": 6,
         "center": "282, 60, 250",
-        "delay": 190
+        "delay": 60
     },
     "damageControl": {
         "FALL": false,
