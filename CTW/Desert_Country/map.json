@@ -153,5 +153,5 @@
 		
 		{"id": "map", "type": "cuboid", "min": "573, 0, -337", "max": "495, oo, -116"}
 	],
-	"buildHeight": 23
+	"buildHeight": 25
 }
