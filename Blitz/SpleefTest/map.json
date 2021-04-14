@@ -166,13 +166,37 @@
         }
     ],
     "time": {
-    	"limit": 80
+        "limit": 70,
+        "broadcasts": [
+            {
+                "message": "&6[Spleef] &eBeware of the world border! You have 60 seconds.",
+                "interval": 1,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&6[Spleef] &eTeamspleefing will result in a punishment.",
+                "interval": 2,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&6[Spleef] &eGood luck!",
+                "interval": 5,
+                "repeat": false,
+                "commands": []
+            }
+        ]
     },
     "border": {
         "startingSize": 64,
-        "endSize": 6,
+        "endSize": 2,
         "center": "282.5, 60, 250.5",
-        "delay": 60
+        "delay": 60,
+        "damage": {
+            "amount": 100,
+            "buffer": 0
+        }
     },
     "damageControl": {
         "FALL": false,
@@ -185,8 +209,8 @@
             "message": "&cYou may only break snow blocks."
         },
         {
-        	"type": "block-place", "evaluate": "deny", "teams": ["red", "blue"],
-        	"regions": ["global"]
+            "type": "block-place", "evaluate": "deny", "teams": ["red", "blue"],
+            "regions": ["global"]
         }
     ]
 }
