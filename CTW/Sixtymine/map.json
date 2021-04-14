@@ -1,0 +1,185 @@
+{
+    "name": "Sixtymine",
+    "authors": [
+        {"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTW",
+    "respawn": {
+        "rules": [
+            {"delay": 2000}
+        ]
+    },
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 20
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 20
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 20, 0.5, -90"},
+        {"teams": ["red"], "coords": "-22.5, 6, -77.5, -45"},
+        {"teams": ["blue"], "coords": "23.5, 6, 78.5, 135"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Light Blue",
+                "color": "aqua",
+                "woolcolor": "light blue",
+                "teams": ["red"],
+                "region": {"min": "-25, 7, -80", "max": "-25, 7, -80"}
+            },
+            {
+                "name": "Pink",
+                "color": "light_purple",
+                "woolcolor": "pink",
+                "teams": ["blue"],
+                "region": {"min": "25, 7, 80", "max": "25, 7, 80"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "iron pickaxe", "enchantments": ["efficiency:2"], "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "stone axe", "enchantments": ["efficiency:2"], "slot": 3, "unbreakable": true},
+                {"type": "item", "material": "shears", "enchantments": ["efficiency:2"], "slot": 4, "unbreakable": true},
+
+                {"type": "item", "material": "oak planks", "amount": 64, "slot": 5},
+                {"type": "item", "material": "oak planks", "amount": 64, "slot": 6},
+                {"type": "item", "material": "cooked cod", "amount": 16, "slot": 7},
+                {"type": "item", "material": "golden apple", "slot": 8},
+
+                {"type": "item", "material": "arrow", "amount": 32, "slot": 9},
+
+                {"type": "item", "material": "oak planks", "amount": 64, "slot": 32},
+                {"type": "item", "material": "oak planks", "amount": 64, "slot": 33},
+
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "iron pickaxe", "stone axe", "shears",
+        "oak planks", "cooked cod", "golden apple", "arrow",
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 8}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+            "inverted": true,
+            "regions": ["buildable-void"],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "regions": ["red-spawn-protection", "blue-spawn-protection", "pink-wool-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["red-spawn-protection", "blue-spawn-protection", "light-blue-wool-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["red"],
+            "regions": ["blue-spawn-protection", "pink-wool-protection"],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["red-spawn-protection", "light-blue-wool-protection"],
+            "message": "&cYou may not enter this region."
+        }
+    ],
+    "regions": [
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "-25, 4, -80", "max": "-21, 10, -76"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "25, 4, 80", "max": "21, 10, 76"},
+
+        {
+            "id": "light-blue-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "-44, 0, 43", "max": "-51, oo, 25"},
+                {"min": "-52, 0, 44", "max": "-55, oo, 25"},
+                {"min": "-56, 0, 45", "max": "-58, oo, 25"},
+                {"min": "-59, 0, 46", "max": "-62, oo, 25"},
+                {"min": "-63, 0, 47", "max": "-70, oo, 25"}
+            ]
+        },
+        {
+            "id": "pink-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "44, 0, -43", "max": "51, oo, -25"},
+                {"min": "52, 0, -44", "max": "55, oo, -25"},
+                {"min": "56, 0, -45", "max": "58, oo, -25"},
+                {"min": "59, 0, -46", "max": "62, oo, -25"},
+                {"min": "63, 0, -47", "max": "70, oo, -25"}
+            ]
+        },
+
+        {
+            "id": "buildable-void", "type": "meta",
+            "regions": [
+                {"min": "-66, 0, 28", "max": "-48, oo, 85"},
+                {"min": "-66, 0, 67", "max": "28, oo, 85"},
+                {"min": "-28, 0, 29", "max": "28, oo, 47"},
+                {"min": "-28, 0, 48", "max": "-10, oo, 66"},
+                {"min": "10, 0, 48", "max": "28, oo, 66"},
+
+                {"min": "48, 0, -85", "max": "66, oo, -28"},
+                {"min": "-28, 0, -85", "max": "66, oo, -67"},
+                {"min": "-28, 0, -47", "max": "28, oo, -29"},
+                {"min": "10, 0, -66", "max": "28, oo, -48"},
+                {"min": "-28, 0, -66", "max": "-10, oo, -48"},
+                
+                {"min": "-28, 0, -29", "max": "28, oo, 29"}
+            ]
+        }
+    ],
+    "buildHeight": 49
+}
