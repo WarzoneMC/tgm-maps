@@ -1,0 +1,66 @@
+{
+	"name": "Dogfight",
+	"authors": [
+		{"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
+		{"uuid": "f36bdc4f-7dab-462b-87b6-dee2e3af8490", "username": "_Koyi"},
+		{"uuid": "b390b87a-47e8-40d8-968a-9e7e2582a88b", "username": "MewTwoKing"},
+		{"uuid": "cacd2073-a6af-4fdd-839f-eb622ca28bab", "username": "seraphlamington"},
+		{"uuid": "1fc24e45-8ce8-4749-922f-fc9e8c59cf74", "username": "xternxl"},
+		{"uuid": "0631dda2-ef9b-4f78-b16b-f4123d97d6b7", "username": "Qualqty"}
+		
+	],
+	"gametype": "Blitz",
+	"version": "1.0",
+	"stats": {"disable": true},
+	"border": {
+		"startingSize": 160,
+		"endSize": 3,
+		"center": "0, 15, 0",
+		"delay": 200
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Robins",
+			"color": "red",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "blue",
+			"name": "Blue Jays",
+			"color": "blue",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-0.5, 36, 22.5, 180"},
+		{"teams": ["red"], "coords": "56.5, 27.5, 0.5, 90"},
+		{"teams": ["blue"], "coords": "-57.5, 27.5, 0.5, -90"}
+	],
+   	 "kits": [
+		{
+			"name": "red_kit",
+			"teams": ["red"],
+			"items": [
+				{"type": "item", "material": "red stained glass", "canPlaceOn": ["red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass", "dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"], "slot": 0, "amount": 8},
+				
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+
+			]
+		},
+		{
+			"name": "blue_kit",
+			"teams": ["blue"],
+			"items": [
+				{"type": "item", "material": "blue stained glass", "canPlaceOn": ["red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass", "dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"], "slot": 0, "amount": 8},
+				
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+
+			]
+		}
+	]
+}
