@@ -119,6 +119,11 @@
             }
         }
     ],
+    "respawn": {
+        "rules": [
+            {"delay": 2000}
+        ]
+    },
     "filters": [
         {
             "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
