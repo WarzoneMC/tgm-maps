@@ -30,13 +30,13 @@
     "ctf": {
         "objective": "time",
         "options": {
-            "time": 900
+            "time": 720
         },
         "flags": [
             {
                 "location": "11.5, 9, 24.5",
                 "respawn-time": 20,
-                "respawn-block": false,
+                "respawn-block": true,
                 "respawn-locations": [
                     "11.5, 9, 24.5",
                     "36.5, 14, 24.5",
