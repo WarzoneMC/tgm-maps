@@ -213,5 +213,5 @@
 
 		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	],
-	"buildHeight": 160
+	"buildHeight": 95
 }
