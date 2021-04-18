@@ -1,0 +1,139 @@
+{
+    "name": "Templum",
+    "authors": [
+        {"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
+        {"uuid": "1fc24e45-8ce8-4749-922f-fc9e8c59cf74", "username": "xternxl"},
+        {"uuid": "f36bdc4f-7dab-462b-87b6-dee2e3af8490", "username": "_Stay"},
+        {"uuid": "b390b87a-47e8-40d8-968a-9e7e2582a88b", "username": "MewTwoKing"},
+        {"uuid": "cacd2073-a6af-4fdd-839f-eb622ca28bab", "username": "seraphlamington"},
+        {"uuid": "8e793246-440d-41b5-ae33-bbc19bb2ecbc", "username": "MWQ101"}
+    ],
+    "version": "1.0",
+    "gametype": "DTM",
+    "teams": [
+        {
+            "id": "blue",
+            "name": "Testudo",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "yellow",
+            "name": "Phalanx",
+            "color": "yellow",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "50.5, 80, 0.5, 90"},
+        {"teams": ["blue"], "coords": "0.5, 35, -94.5"},
+        {"teams": ["yellow"], "coords": "0.5, 35, 95.5, 180"}
+    ],
+    "dtm": {
+        "monuments": [
+            {
+                "name": "Right Wool",
+                "teams": ["blue"],
+                "materials": ["blue wool"],
+                "region": {
+                    "min": "36, 34, -91",
+                    "max": "38, 38, -93"
+                },
+                "health": 10
+            },
+            {
+                "name": "Left Wool",
+                "teams": ["blue"],
+                "materials": ["blue wool"],
+                "region": {
+                    "min": "-36, 34, -91",      
+                    "max": "-38, 38, -93"
+                },
+                "health": 10
+            },
+            {
+                "name": "Right Wool",
+                "teams": ["yellow"],
+                "materials": ["yellow wool"],
+                "region": {
+                    "min": "-36, 34, 91",
+                    "max": "-38, 38, 93"
+                },
+                "health": 10
+            },
+            {
+                "name": "Left Wool",
+                "teams": ["yellow"],
+                "materials": ["yellow wool"],
+                "region": {
+                    "min": "36, 34, 91",
+                    "max": "38, 38, 93"
+                },
+                "health": 10
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
+                {"type": "item", "material": "birch planks", "slot": 4, "amount": 64},
+                {"type": "item", "material": "birch planks", "slot": 5, "amount": 64},
+                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 17, "amount": 32},
+
+                {"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "stone pickaxe", "stone axe",
+        "birch planks", "cooked beef", "arrow", "golden apple",
+        "iron helmet", "leather chestplate", "iron leggings", "leather boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 2}
+                ]
+            }
+        },
+        {
+            "count": 5,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "birch planks", "amount": 16}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["yellow", "blue"],
+            "regions": ["yellow-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+    ],
+    "regions": [
+        {"id": "yellow-spawn-protection", "type": "cuboid", "min": "7, 0, 78", "max": "-7, oo, 105"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -78", "max": "7, oo, -105"}
+    ],
+    "buildHeight": 50
+}
