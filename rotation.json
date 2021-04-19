@@ -8,6 +8,8 @@
 			"max": 14
 		},
 		"maps": [
+			"Senex",
+			"Ternio",
 			"Rooted",
 			"Twin Peaks",
 			"Warlock DTW",
@@ -29,7 +31,7 @@
 			"Persisto",
 			"Stonehenge",
 			"Deepwind Jungle",
-			"Halcyon_I",
+			"Halcyon I",
 			"Vortex"
 		]
 	},
@@ -42,6 +44,11 @@
 			"max": 29
 		},
 		"maps": [
+			"Wahiz CTW",
+			"Palm Rust",
+			"Curabitur",
+			"Templum",
+			"Sixtymine",
 			"Gobi",
 			"Electri City",
 			"Anasaria",
@@ -66,7 +73,6 @@
 			"Kyoto",
 			"Ricco",
 			"Castles",
-			"No Return",
 			"Golden Gate",
 			"Warlock",
 			"Sandstone 2",
@@ -76,10 +82,9 @@
 			"Deepwind Jungle",
 			"Brisked KOTH",
 			"Aleppo",
-			"Cabin Fever II",
-			"Rampant",
+			"Concourse",
 			"SuperCUBE",
-			"Halcyon_I",
+			"Halcyon I",
 			"Orion",
 			"Acromion",
 			"BlockRAGE"
@@ -94,6 +99,7 @@
 			"max": 200
 		},
 		"maps": [
+			"Templum",
 			"Race For Victory 2",
 			"Desert Country",
 			"TechnoWar",
@@ -105,13 +111,13 @@
 			"A New Day",
 			"Midnight Train",
 			"Turf Wars",
+			"Quintus",
 			"Space Armarda",
 			"Urban Jungle",
 			"Mayan Apocalypse",
 			"Wonderland",
 			"Gobi",
 			"Chocolate Diamonds",
-			"Concourse",
 			"Grub CTF",
 			"Palace CTF",
 			"Proelium",
@@ -119,8 +125,7 @@
 			"Orion",
 			"Sector Six",
 			"Justice 2",
-			"Celestial",
-			"BlockRAGE"
+			"Celestial"
 		]
 	},
 	{
