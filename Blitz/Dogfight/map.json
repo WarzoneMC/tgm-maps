@@ -10,7 +10,7 @@
 	"border": {
 		"startingSize": 160,
 		"endSize": 3,
-		"center": "0, 15, 0",
+		"center": "0.5, 15, 0.5",
 		"delay": 200
 	},
 	"teams": [
