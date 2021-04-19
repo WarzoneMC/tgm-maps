@@ -1,0 +1,159 @@
+{
+    "name": "Ternio",
+    "authors": [
+        {"uuid": "44df6b20-168f-4389-b7ac-434518207c2f", "username": "ParaPenguin"}
+    ],
+    "version": "1.0.0",
+    "gametype": "DTM",
+    "teams": [
+        {
+            "id": "cyan",
+            "name": "Cyan",
+            "color": "dark aqua",
+            "min": 1,
+            "max": 15
+        },
+        {
+            "id": "purple",
+            "name": "Purple",
+            "color": "dark purple",
+            "min": 1,
+            "max": 15
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-55.5, 46, -766.5, -90"},
+        {"teams": ["cyan"], "coords": "4.5, 25, -713.5, 180"},
+        {"teams": ["purple"], "coords": "4.5, 25, -820.5"}
+    ],
+    "dtm": {
+        "monuments": [
+            {
+                "name": "Right",
+                "teams": ["cyan"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-33, 29, -714",
+                    "max": "-33, 29, -714"
+                },
+                "health": 1
+            },
+            {
+                "name": "Center",
+                "teams": ["cyan"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "4, 29, -677",
+                    "max": "4, 29, -677"
+                },
+                "health": 1
+            },
+            {
+                "name": "Left",
+                "teams": ["cyan"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "41, 29, -714",
+                    "max": "41, 29, -714"
+                },
+                "health": 1
+            },
+            {
+                "name": "Right",
+                "teams": ["purple"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "41, 29, -821",
+                    "max": "41, 29, -821"
+                },
+                "health": 1
+            },
+            {
+                "name": "Center",
+                "teams": ["purple"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "4, 29, -858",
+                    "max": "4, 29, -858"
+                },
+                "health": 1
+            },
+            {
+                "name": "Left",
+                "teams": ["purple"],
+                "materials": ["obsidian"],
+                "region": {
+                    "min": "-33, 29, -821",
+                    "max": "-33, 29, -821"
+                },
+                "health": 1
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+
+                {"type": "item", "material": "golden apple", "slot": 3, "amount": 3},
+                {"type": "item", "material": "glass", "slot": 4, "amount": 64},
+                {"type": "item", "material": "oak log", "slot": 5, "amount": 32},
+                {"type": "item", "material": "cooked beef", "slot": 6, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 28},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": "60", "amplifier": 5, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "diamond pickaxe",
+        "glass", "oak log", "cooked beef", "arrow",
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["cyan", "purple"],
+            "regions": ["cyan-spawn-protection", "purple-spawn-protection"],
+            "message": "&cYou may not modify terrain here."
+        }
+    ],
+    "regions": [
+        {"id": "cyan-spawn-protection", "type": "cylinder", "base": "4, 23, -714", "height": 7, "radius": 14},
+        {"id": "purple-spawn-protection", "type": "cylinder", "base": "4, 23, -821", "height": 7, "radius": 14}
+    ]
+}
