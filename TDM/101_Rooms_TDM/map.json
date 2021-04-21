@@ -50,7 +50,7 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Knife", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "stone sword", "slot": 0, "amount": 1, "displayName": "Knife", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
 
@@ -63,7 +63,7 @@
 		}
 	],
 	"itemremove": [
-		"bow", "arrow",
+		"bow", "arrow", "stone sword",
 		{
             "type": "leather helmet",
             "drop": true
