@@ -21,7 +21,7 @@
 			"color": "red",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 10
+			"max": 50
 		},
 		{
 			"id": "blue",
@@ -29,7 +29,7 @@
 			"color": "blue",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 10
+			"max": 50
 		}
 	],
 	"spawns": [
