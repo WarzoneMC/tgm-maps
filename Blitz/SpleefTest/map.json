@@ -169,13 +169,13 @@
         "limit": 70,
         "broadcasts": [
             {
-                "message": "&6[Spleef] &eBeware of the world border! You have 60 seconds.",
+                "message": "&6[Spleef] &cTeamspleefing will result in a punishment!",
                 "interval": 1,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&6[Spleef] &eTeamspleefing will result in a punishment.",
+                "message": "&6[Spleef] &eHitting the world border kills you. You have 60 seconds.",
                 "interval": 2,
                 "repeat": false,
                 "commands": []
