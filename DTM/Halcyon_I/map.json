@@ -132,5 +132,6 @@
 	"regions": [
 		{"id": "purple-spawn", "type": "cylinder", "base": "14, 70, -872", "radius": 8, "height": 12},
 		{"id": "red-spawn", "type": "cylinder", "base": "14, 70, -762", "radius": 8, "height": 12}
-	]
+	],
+	"buildHeight": 93
 }
