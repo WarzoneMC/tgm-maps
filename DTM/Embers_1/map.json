@@ -143,8 +143,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "golden apple", "birch planks", "birch log",
-		"golden carrot", "arrow",
+		"stone sword", "bow", "diamond pickaxe", "iron axe",
+		"golden apple", "golden carrot", "birch planks", "birch log", "arrow",
 		{
 			"type": "leather helmet",
 			"death": true,
