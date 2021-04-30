@@ -134,10 +134,10 @@
     "regions": [
         {"id": "yellow-spawn-protection", "type": "cuboid", "min": "7, 0, 78", "max": "-7, oo, 105"},
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -78", "max": "7, oo, -105"},
-	{"id": "yellow-right-side-protection", "type": "cuboid", "min": "61, 0, 111", "max": "57, oo, -111"},
-	{"id": "blue-right-side-protection", "type": "cuboid", "min": "-57, 0, -111", "max": "-61, oo, 111"},
-	{"id": "yellow-back-protection", "type": "cuboid", "min": "-61, 0, 112", "max": "61, oo, 116"},
-	{"id": "blue-back-protection", "type": "cuboid", "min": "61, 0, -112", "max": "-61, oo, -116"}
+        {"id": "yellow-right-side-protection", "type": "cuboid", "min": "61, 0, 111", "max": "57, oo, -111"},
+        {"id": "blue-right-side-protection", "type": "cuboid", "min": "-57, 0, -111", "max": "-61, oo, 111"},
+        {"id": "yellow-back-protection", "type": "cuboid", "min": "-61, 0, 112", "max": "61, oo, 116"},
+        {"id": "blue-back-protection", "type": "cuboid", "min": "61, 0, -112", "max": "-61, oo, -116"}
     ],
     "buildHeight": 50
 }
