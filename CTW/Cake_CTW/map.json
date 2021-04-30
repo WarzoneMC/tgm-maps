@@ -1,0 +1,219 @@
+{
+    "name": "Cake CTW",
+    "authors": [
+        {"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"},
+        {"uuid": "3ec3ad7c-563c-45fb-aedf-dd32066a2e19", "username": "Sweedie"},
+        {"uuid": "50a34639-abb3-4cf1-b182-204756c49f49", "username": "cellish"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTW",
+    "respawn": {
+        "rules": [
+            {"delay": 1000}
+        ]
+    },
+    "teams": [
+        {
+            "id": "yellow",
+            "name": "Yellow",
+            "color": "yellow",
+            "min": 1,
+            "max": 20
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 20
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 15, 0.5, 90"},
+        {"teams": ["yellow"], "coords": "0.5, 15, 151.5, 180"},
+        {"teams": ["blue"], "coords": "0.5, 15, -150.5"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["blue"],
+                "region": {"min": "3, 12, -132", "max": "3, 12, -132"}
+            },
+            {
+                "name": "Yellow",
+                "color": "yellow",
+                "woolcolor": "yellow",
+                "teams": ["blue"],
+                "region": {"min": "-3, 12, -132", "max": "-3, 12, -132"}
+            },
+            {
+                "name": "Blue",
+                "color": "aqua",
+                "woolcolor": "light blue",
+                "teams": ["yellow"],
+                "region": {"min": "-3, 12, 132", "max": "-3, 12, 132"}
+            },
+            {
+                "name": "Dark Blue",
+                "color": "blue",
+                "woolcolor": "blue",
+                "teams": ["yellow"],
+                "region": {"min": "3, 12, 132", "max": "3, 12, 132"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "stone pickaxe", "enchantments": ["efficiency:2"], "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "stone axe", "enchantments": ["efficiency:2"], "slot": 3, "unbreakable": true},
+                {"type": "item", "material": "shears", "enchantments": ["efficiency:2"], "slot": 4, "unbreakable": true},
+
+                {"type": "item", "material": "birch planks", "amount": 64, "slot": 5},
+                {"type": "item", "material": "birch planks", "amount": 64, "slot": 6},
+                {"type": "item", "material": "cooked cod", "amount": 32, "slot": 7},
+                {"type": "item", "material": "golden apple", "slot": 8},
+
+                {"type": "item", "material": "arrow", "amount": 32, "slot": 9},
+
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": 60, "amplifier": 255, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "stone pickaxe", "stone axe", "shears",
+        "birch planks", "cooked cod", "golden apple", "arrow",
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 8}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "blue"],
+            "inverted": true,
+            "regions": ["buildable-void"],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["yellow"],
+            "regions": [
+                "yellow-main-spawn-protection", "yellow-outer-spawn-protection",
+                "blue-main-spawn-protection", "blue-outer-spawn-protection",
+                "orange-wool-protection", "yellow-wool-protection"
+            ],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": [
+                "yellow-main-spawn-protection", "yellow-outer-spawn-protection",
+                "blue-main-spawn-protection", "blue-outer-spawn-protection",
+                "blue-wool-protection", "dark-blue-wool-protection"
+            ],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["yellow"],
+            "regions": [
+                "blue-outer-spawn-protection",
+                "orange-wool-protection", "yellow-wool-protection"
+            ],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": [
+                "yellow-outer-spawn-protection",
+                "blue-wool-protection", "dark-blue-wool-protection"
+            ],
+            "message": "&cYou may not enter this region."
+        }
+    ],
+    "regions": [
+        {"id": "yellow-main-spawn-protection", "type": "cuboid", "min": "-3, 0, 129", "max": "3, oo, 158"},
+        {"id": "yellow-outer-spawn-protection", "type": "cuboid", "min": "-10, 0, 119", "max": "10, oo, 128"},
+
+        {"id": "blue-main-spawn-protection", "type": "cuboid", "min": "-3, 0, -158", "max": "3, oo, -129"},
+        {"id": "blue-outer-spawn-protection", "type": "cuboid", "min": "-10, 0, -128", "max": "10, oo, -119"},
+
+        {
+            "id": "orange-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "13, 0, 143", "max": "3, 23, 158"},
+                {"min": "13, 0, 143", "max": "11, oo, 154"},
+                {"min": "13, 0, 153", "max": "10, oo, 154"}
+            ]
+        },
+        {
+            "id": "yellow-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "-13, 0, 143", "max": "-3, 23, 158"},
+                {"min": "-13, 0, 143", "max": "-11, oo, 154"},
+                {"min": "-13, 0, 153", "max": "-10, oo, 154"}
+            ]
+        },
+        {
+            "id": "blue-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "-13, 0, -143", "max": "-3, 23, -158"},
+                {"min": "-13, 0, -143", "max": "-11, oo, -154"},
+                {"min": "-13, 0, -153", "max": "-10, oo, -154"}
+            ]
+        },
+        {
+            "id": "dark-blue-wool-protection", "type": "meta",
+            "regions": [
+                {"min": "13, 0, -143", "max": "3, 23, -158"},
+                {"min": "13, 0, -143", "max": "11, oo, -154"},
+                {"min": "13, 0, -153", "max": "10, oo, -154"}
+            ]
+        },
+
+        {
+            "id": "buildable-void", "type": "meta",
+            "regions": [
+                {"min": "-62, 0, -43", "max": "-38, oo, 43"},
+                {"min": "-26, 0, -27", "max": "26, oo, 27"},
+                {"min": "38, 0, -43", "max": "62, oo, 43"}
+            ]
+        }
+    ],
+    "buildHeight": 29
+}
