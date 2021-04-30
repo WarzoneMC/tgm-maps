@@ -30,7 +30,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Right",
+				"name": "Left",
 				"teams": ["lime"],
 				"materials": ["obsidian"],
 				"region": {
@@ -40,7 +40,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left",
+				"name": "Right",
 				"teams": ["lime"],
 				"materials": ["obsidian"],
 				"region": {
@@ -50,7 +50,7 @@
 				"health": 1
 			},
 			{
-				"name": "Right",
+				"name": "Left",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
@@ -60,7 +60,7 @@
 				"health": 1
 			},
 			{
-				"name": "Left",
+				"name": "Right",
 				"teams": ["blue"],
 				"materials": ["obsidian"],
 				"region": {
