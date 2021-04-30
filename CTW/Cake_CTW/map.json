@@ -126,12 +126,6 @@
     ],
     "filters": [
         {
-            "type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "blue"],
-            "inverted": true,
-            "regions": ["buildable-void"],
-            "message": "&cYou may not build over the void."
-        },
-        {
             "type": "build", "evaluate": "deny", "teams": ["yellow"],
             "regions": [
                 "yellow-main-spawn-protection", "yellow-outer-spawn-protection",
@@ -203,15 +197,6 @@
                 {"min": "13, 0, -143", "max": "3, 23, -158"},
                 {"min": "13, 0, -143", "max": "11, oo, -154"},
                 {"min": "13, 0, -153", "max": "10, oo, -154"}
-            ]
-        },
-
-        {
-            "id": "buildable-void", "type": "meta",
-            "regions": [
-                {"min": "-62, 0, -43", "max": "-38, oo, 43"},
-                {"min": "-26, 0, -27", "max": "26, oo, 27"},
-                {"min": "38, 0, -43", "max": "62, oo, 43"}
             ]
         }
     ],
