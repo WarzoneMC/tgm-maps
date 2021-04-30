@@ -137,11 +137,12 @@
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
 				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "golden apple", "slot": 3, "amount": 2},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 4, "amount": 2},
 
-				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
-				{"type": "item", "material": "oak log", "slot": 5, "amount": 32},
-				{"type": "item", "material": "cooked cod", "slot": 6, "amount": 32},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 6, "amount": 32},
+				{"type": "item", "material": "cooked cod", "slot": 7, "amount": 32},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -152,7 +153,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "golden apple", "glass", "oak log", "cooked cod", "arrow",
+		"iron sword", "bow", "diamond pickaxe", "stone axe", "golden apple", "glass", "oak log", "cooked cod", "arrow",
 		{
             "type": "leather helmet",
             "drop": true
