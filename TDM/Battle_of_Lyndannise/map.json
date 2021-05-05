@@ -50,7 +50,7 @@
 				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true}
 			],
 			"effects": [
-				{"type": "resistance", "duration": 10, "amplifier": 1000, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 10, "amplifier": 1000, "particles": false}
 			]
 		}
 	],
