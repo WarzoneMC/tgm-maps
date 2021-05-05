@@ -23,15 +23,15 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "4.5, 26, -331.5"},
-		{"teams": ["red"], "coords": "-91.5, 18, -243.5, 180"},
-		{"teams": ["blue"], "coords": "99.5, 18, -348.5"}
+		{"teams": ["blue"], "coords": "-90.5, 18, -243.5, 180"},
+		{"teams": ["red"], "coords": "99.5, 18, -347.5"}
 	],
 	"dtm": {
 		"monuments": [
 			{
 				"name": "Red Wool",
 				"teams": ["red"],
-				"materials": ["blue wool"],
+				"materials": ["red wool"],
 				"region": {
 					"min": "100, 13, -268",
 					"max": "98, 10, -266"
@@ -41,7 +41,7 @@
 			{
 				"name": "Blue Wool",
 				"teams": ["blue"],
-				"materials": ["red wool"],
+				"materials": ["blue wool"],
 				"region": {
 					"min": "-90, 13, -324",
 					"max": "-92, 10, -326"
@@ -107,8 +107,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "96, 7, -342", "max": "102, 23, -351"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-94, 23, -242", "max": "-88, 7, -251"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "96, 7, -342", "max": "102, 23, -351"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-94, 23, -242", "max": "-88, 7, -251"},
 		
 		{"id": "red-wool", "type": "cuboid", "min": "-90, 13, -324", "max": "-92, 10, -326"},
 		{"id": "blue-wool", "type": "cuboid", "min": "100, 13, -268", "max": "98, 10, -266"}
