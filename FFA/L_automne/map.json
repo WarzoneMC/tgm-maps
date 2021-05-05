@@ -71,8 +71,7 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 25, "amplifier": 50000, "particles": false},
-				{"type": "speed", "duration": 10000000, "amplifier": 1, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 25, "amplifier": 50000, "particles": false}
 			]
 		}
 	],
@@ -95,16 +94,7 @@
 			"repeat": false,
 			"actions": {
 				"effects": [
-					{"type": "speed", "level": 2, "duration": 10000000}
-				]
-			}
-		},
-		{
-			"count": 3,
-			"repeat": false,
-			"actions": {
-				"effects": [
-					{"type": "speed", "level": 3, "duration": 10000000}
+					{"type": "speed", "level": 1, "duration": 10000000}
 				]
 			}
 		},
@@ -113,7 +103,16 @@
 			"repeat": false,
 			"actions": {
 				"effects": [
-					{"type": "speed", "level": 4, "duration": 100000000}
+					{"type": "speed", "level": 2, "duration": 10000000}
+				]
+			}
+		},
+		{
+			"count": 10,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "speed", "level": 3, "duration": 100000000}
 				]
 			}
 		}
