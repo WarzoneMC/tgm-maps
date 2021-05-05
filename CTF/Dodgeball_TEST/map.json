@@ -96,7 +96,7 @@
 			"message": "&cYou may not enter this region."
 		},
 		{
-			"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-size"],
+			"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-side"],
 			"message": "&cYou may not enter this region."
 		}
 	],
