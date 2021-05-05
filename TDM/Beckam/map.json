@@ -29,7 +29,7 @@
 		{"teams": ["orange"], "coords": "-2.5, 7.5, 20.5, 180"}
 	],
     	"points": {
-        	"target": 30
+        	"target": 44
     	},
     	"time": {
         "limit": 1200
