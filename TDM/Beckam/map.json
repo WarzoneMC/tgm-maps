@@ -1,0 +1,91 @@
+{
+	"name": "Beckam",
+	"authors": [
+		{"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
+	],
+	"gametype": "TDM",
+	"version": "1.0.7",
+    	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 9
+		},
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 9
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "17, 5, 0, -90"},
+		{"teams": ["yellow"], "coords": "9.5, 9.5, -17.5, -45"},
+		{"teams": ["yellow"], "coords": "-2.5, 7.5, -21.5"},
+		{"teams": ["orange"], "coords": "9.5, 9.5, 16.5, -135"},
+		{"teams": ["orange"], "coords": "-2.5, 7.5, 20.5, 180"}
+	],
+    	"points": {
+        	"target": 30
+    	},
+    	"time": {
+        "limit": 1200
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "bread", "slot": 2, "amount": 32},
+				{"material": "iron ingot", "slot": 5, "amount": 1},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "arrow", "slot": 8, "amount": 8},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "resistance", "duration": 60, "amplifier": 4, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "arrow", "iron ingot", "bread", "bow", "exp bottle", "golden apple",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "iron ingot", "amount": 2},
+					{"material": "arrow", "amount": 4}
+				]
+			}
+		}
+	],
+	"regions": [
+		{"id": "map", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, oo, oo"}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["yellow", "orange"], "regions": ["map"], "message": "&cYou are not allowed to modify terrain here."}
+	]
+}
