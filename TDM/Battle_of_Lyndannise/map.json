@@ -45,7 +45,7 @@
 				{"material": "oak planks", "slot": 5, "amount": 16},
 				{"material": "golden apple", "slot": 6, "amount": 2},
 				{"material": "torch", "slot": 7, "amount": 8},
-				{"material": "arrow", "slot": 28, "amount": 2},
+				{"material": "arrow", "slot": 28, "amount": 1},
 
 				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["PROTECTION_PROJECTILE:1"], "unbreakable": true}
 			],
