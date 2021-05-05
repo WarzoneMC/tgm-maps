@@ -78,6 +78,7 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 

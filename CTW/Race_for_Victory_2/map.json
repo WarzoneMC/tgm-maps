@@ -25,9 +25,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "44, 8, 7, -90"},
-		{"teams": ["red"], "coords": "0, 4, 69, -180"},
-		{"teams": ["blue"], "coords": "0, 4, -55"}
+		{"teams": ["spectators"], "coords": "44.5, 8, 7.5, -90"},
+		{"teams": ["red"], "coords": "0.5, 4, 69.5, 180"},
+		{"teams": ["blue"], "coords": "0.5, 4, -54.5, 0"}
 	],
 	"ctw": {
 		"wools": [
@@ -159,7 +159,7 @@
 		{"id": "purple-room", "min": "5, 0, 133", "max": "16, oo, 119"},
 		{"id": "yellow-room", "min": "-16, 0, 119", "max": "-5, oo, 133"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-14, 0, -65", "max": "15, 8, -41"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-14, 0, -65", "max": "15, 8, -42"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-14, 0, 56", "max": "15, 8, 80"},
 		{"id": "red-base-center", "type": "cuboid", "min": "-4, oo, 133", "max": "4, 0, 84"},
 		{"id": "blue-base-center", "type": "cuboid", "min": "-4, oo, -119", "max": "-4, 0, -70"},
