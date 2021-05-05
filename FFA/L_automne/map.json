@@ -1,6 +1,6 @@
 {
 	"name": "L'Automne Rage",
-	"version": "1.2",
+	"version": "1.2.1",
 	"gametype": "FFA",
 	"authors": [
 		{"uuid": "5906313b-dd1b-4847-8164-7f9800fcb782", "username": "TruBuild"},
@@ -54,7 +54,7 @@
 			"enabled": true,
 			"limit": 600
 		},
-		"killLimit": 50
+		"killLimit": 35
 	},
 	"kits": [
 		{
@@ -71,7 +71,8 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 25, "amplifier": 50000, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 25, "amplifier": 50000, "particles": false},
+				{"type": "speed", "duration": 10000000, "amplifier": 1, "particles": false}
 			]
 		}
 	],
@@ -94,7 +95,7 @@
 			"repeat": false,
 			"actions": {
 				"effects": [
-					{"type": "speed", "level": 1, "duration": 10000000}
+					{"type": "speed", "level": 2, "duration": 10000000}
 				]
 			}
 		},
@@ -103,7 +104,7 @@
 			"repeat": false,
 			"actions": {
 				"effects": [
-					{"type": "speed", "level": 2, "duration": 10000000}
+					{"type": "speed", "level": 3, "duration": 10000000}
 				]
 			}
 		},
@@ -112,7 +113,7 @@
 			"repeat": false,
 			"actions": {
 				"effects": [
-					{"type": "speed", "level": 3, "duration": 100000000}
+					{"type": "speed", "level": 4, "duration": 100000000}
 				]
 			}
 		}
