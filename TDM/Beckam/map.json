@@ -4,12 +4,12 @@
 		{"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.7",
+	"version": "1.0.8",
     	"teams": [
 		{
-			"id": "yellow",
-			"name": "Yellow",
-			"color": "yellow",
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
 			"min": 1,
 			"max": 9
 		},
@@ -23,13 +23,13 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "17, 5, 0, -90"},
-		{"teams": ["yellow"], "coords": "9.5, 9.5, -17.5, -45"},
-		{"teams": ["yellow"], "coords": "-2.5, 7.5, -21.5"},
+		{"teams": ["blue"], "coords": "9.5, 9.5, -17.5, -45"},
+		{"teams": ["blue"], "coords": "-2.5, 7.5, -21.5"},
 		{"teams": ["orange"], "coords": "9.5, 9.5, 16.5, -135"},
 		{"teams": ["orange"], "coords": "-2.5, 7.5, 20.5, 180"}
 	],
     	"points": {
-        	"target": 44
+        	"target": 50
     	},
     	"time": {
         "limit": 1200
@@ -86,6 +86,6 @@
 		{"id": "map", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, oo, oo"}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["yellow", "orange"], "regions": ["map"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["map"], "message": "&cYou are not allowed to modify terrain here."}
 	]
 }
