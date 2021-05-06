@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "2dc9b2a1-6063-499b-9685-aa97b978707a", "username": "Luuke"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -87,7 +87,7 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1},
-					{"material": "arrow", "amount": 1}
+					{"material": "arrow", "amount": 2}
 				]
 			}
 		}
