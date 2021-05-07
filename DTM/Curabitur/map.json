@@ -4,7 +4,7 @@
 		{"uuid": "9da4217e-7c31-41d1-b82d-53b0ecc981d0", "username": "MerlinMaster"},
 		{"uuid": "ba601988-d27b-4349-ae15-4b0a1424bfa8", "username": "joelous"}
 	],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -117,7 +117,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["lime", "blue"],
-			"regions": ["lime-spawn-protection", "blue-spawn-protection"],
+			"regions": ["lime-spawn-protection", "lime-front-entrance", "lime-left-entrance", "lime-right-entrance", "blue-spawn-protection", "blue-front-entrance", "blue-left-entrance", "blue-right-entrance"],
 			"message": "&cYou may not modify terrain here."
 		},
 		{
@@ -133,6 +133,13 @@
 	],
 	"regions": [
 		{"id": "lime-spawn-protection", "type": "cylinder", "base": "1, 33, -86", "radius": 9, "height": 11},
-		{"id": "blue-spawn-protection", "type": "cylinder", "base": "1, 33, 154", "radius": 9, "height": 11}
+		{"id": "lime-front-entrance", "type": "cuboid", "min": "2, 33, -78", "max": "4, 44, -74"},
+		{"id": "lime-left-entrance", "type": "cuboid", "min": "10, 33, -83", "max": "9, 44, -88"},
+		{"id": "lime-right-entrance", "type": "cuboid", "min": "-8, 33, -83", "max": "-7, 44, -88"},
+
+		{"id": "blue-spawn-protection", "type": "cylinder", "base": "1, 33, 154", "radius": 9, "height": 11},
+		{"id": "blue-front-entrance", "type": "cuboid", "min": "5, 33, 142", "max": "-3, 44, 146"},
+		{"id": "blue-left-entrance", "type": "cuboid", "min": "-8, 33, 151", "max": "-7, 44, 156"},
+		{"id": "blue-right-entrance", "type": "cuboid", "min": "10, 33, 151", "max": "9, 44, 156"}
 	]
 }
