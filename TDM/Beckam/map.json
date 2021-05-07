@@ -55,7 +55,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "arrow", "iron ingot", "bread", "bow", "exp bottle", "golden apple",
+		"iron sword", "arrow", "iron ingot", "bread", "bow", "golden apple",
 		{
             "type": "leather helmet",
             "drop": true
