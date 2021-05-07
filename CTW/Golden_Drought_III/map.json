@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
-	"version": "3.0",
+	"version": "3.0.1",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -80,24 +80,22 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron pickaxe", "iron axe", "iron boots", "beacon", "string", "wool", "iron block", "oak planks", "cooked beef", "arrow",
+		"stone sword", "bow", "iron pickaxe", "iron axe", "beacon", "string", "wool", "iron block", "oak planks", "cooked beef", "arrow",
 		{
             "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
+        },
+		{
+            "type": "iron boots",
+            "drop": true
         }
 	],
 	"killstreaks": [
@@ -114,12 +112,22 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "green-room", "lime-green-room"],
+			"regions": ["green-room", "lime-green-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "magenta-room", "pink-room"],
+			"regions": ["magenta-room", "pink-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"blocks": ["gold block"], "message": "&cYou may only break gold blocks."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "magenta-room", "pink-room"], "message": "&cYou may not enter this region."},
