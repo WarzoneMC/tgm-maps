@@ -4,7 +4,7 @@
 		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "PepsiDog"},
 		{"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "Dinner1111"}
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -82,6 +82,17 @@
             "type": "leather leggings",
             "drop": true
         },
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
         {
             "type": "leather boots",
             "drop": true
@@ -90,7 +101,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],
-			"regions": ["purple-spawn", "orange-spawn", "portal"],
+			"regions": ["purple-spawn", "orange-spawn", "portal", "point-a", "center", "point-b"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
@@ -101,7 +112,11 @@
 		{"id": "orange-spawn", "min": "165, 8, 189", "max": "140, 23, 156"},
 		{"id": "purple-spawn", "min": "165, 8, 59", "max": "140, 23, 94"},
 
-		{"id": "portal", "min": "178, 14, 122", "max": "183, 20, 126"}
+		{"id": "portal", "min": "178, 14, 122", "max": "183, 20, 126"},
+		
+		{"id": "point-a", "min": "177, 22, 26", "max": "185, 32, 34"},
+		{"id": "center", "min": "145, 34, 118", "max": "157, 44, 130"},
+		{"id": "point-b", "min": "177, 22, 214", "max": "185, 32, 222"}
 	],
 	"portals": [
 		{"from": "portal", "to": "176.5, 33, 124.5, 90", "sound": false, "teams": ["orange", "purple"]}
