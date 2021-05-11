@@ -5,7 +5,7 @@
 		{"uuid": "08724344-a5af-4283-99fa-5a7bfb39b137", "username": "OllieGamerZ"},
 		{"uuid": "b0900577-7604-4dc7-9e82-f431da31e456", "username": "chinkytwinky"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -92,6 +92,17 @@
 				{"type": "item", "material": "iron chestplate", "slot": "chestplate", "unbreaking": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreaking": true}
 			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
 		}
 	],
 	"itemremove": [
