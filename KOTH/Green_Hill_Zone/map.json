@@ -82,6 +82,11 @@
             "type": "leather leggings",
             "drop": true
         },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
 	"killstreaks": [
 		{
 			"count": 1,
@@ -92,11 +97,6 @@
 				]
 			}
 		}
-	],
-        {
-            "type": "leather boots",
-            "drop": true
-        }
 	],
 	"filters": [
 		{
