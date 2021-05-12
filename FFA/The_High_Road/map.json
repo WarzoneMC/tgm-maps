@@ -1,6 +1,6 @@
 {
 	"name": "The High Road",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "FFA",
 	"authors": [
 		{"uuid": "e79fbdc9-627e-4dac-97a6-81a3046220d7", "username": "AtlasGames"}
@@ -15,7 +15,7 @@
 			"name": "Players", 
 			"color": "yellow", 
 			"min": 1, 
-			"max": 24
+			"max": 28
 		}
 	],
 	"spawns": [
