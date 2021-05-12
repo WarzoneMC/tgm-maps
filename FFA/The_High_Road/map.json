@@ -27,7 +27,7 @@
 		{"teams": ["players"], "coords": "11.5, 65, -18.5"},
 		{"teams": ["players"], "coords": "9.5, 70, 9.5"},
 		{"teams": ["players"], "coords": "-10.5, 73, 11.5"},
-		{"teams": ["players"], "coords": "-28.5, 78, 9.5"},
+		{"teams": ["players"], "coords": "-28.5, 78, 9.5, 90"},
 		{"teams": ["players"], "coords": "-57.5, 75, -21.5"},
 		{"teams": ["players"], "coords": "-52.5, 82, -7.5"},
 		{"teams": ["players"], "coords": "-48.5, 64, -61.5"},
