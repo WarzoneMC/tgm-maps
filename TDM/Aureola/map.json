@@ -46,7 +46,7 @@
 				{"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:2"], "unbreakable": true}
 			],
 			"effects": [
-				{"type": "resistance", "duration": 40, "amplifier": 255, "particles": false}
+				{"type": "DAMAGE_RESISTANCE", "duration": 40, "amplifier": 255, "particles": false}
 			]
 		}
 	],
