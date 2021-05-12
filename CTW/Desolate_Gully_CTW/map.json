@@ -158,7 +158,7 @@
 
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["map"],
+			"regions": ["void"],
 			"message": "&cYou are not allowed to build in the void!"
 		}
 	],
@@ -170,23 +170,24 @@
 		{"id": "blue-wool-build", "min": "-141, 0, -41", "max": "-130, oo, -30"},
 		{"id": "red-wool-entry", "min": "-45, 0, -41", "max": "-33, oo, -29"},
 		{"id": "red-wool-build", "min": "-45, 0, -41", "max": "-34, oo, -30"},
-
-		{"id": "void1", "min": "-45, 0, -29", "max": "oo, oo, oo"},
-		{"id": "void2", "min": "-45, 0, -15", "max": "-129, oo, oo"},
-		{"id": "void3", "min": "-130, 0, -29", "max": "-oo, oo, oo"},
-		{"id": "void4", "min": "-142, 0, -29", "max": "-oo, oo, -41"},
-		{"id": "void5", "min": "-130, 0, -42", "max": "-oo, oo, -oo"},
-		{"id": "void6", "min": "-118, 0, -54", "max": "-oo, oo, -oo"},
-		{"id": "void7", "min": "-118, 0, -65", "max": "-57, oo, -oo"},
-		{"id": "void8", "min": "-57, 0, -54", "max": "oo, oo, -oo"},
-		{"id": "void9", "min": "-45, 0, -42", "max": "oo, oo, -oo"},
-		{"id": "void10", "min": "-33, 0, -42", "max": "oo, oo, -29"},
-
-		{"id": "void11", "min": "-105, 0, -56", "max": "-70, oo, -oo"},
-		{"id": "void12", "min": "-58, 0, -41", "max": "-67, oo, -35"},
-		{"id": "void13", "min": "-117, 0, -41", "max": "-108, oo, -35"},
-
-		{"id": "map", "type": "meta", "regions": ["void1", "void2", "void3", "void4", "void5", "void6", "void7", "void8", "void9", "void10", "void11", "void12", "void13"]}
+        {
+            "id": "void", "type": "meta",
+            "regions": [
+                {"min": "-45, 0, -29", "max": "oo, oo, oo"},
+				{"min": "-45, 0, -15", "max": "-129, oo, oo"},
+				{"min": "-130, 0, -29", "max": "-oo, oo, oo"},
+				{"min": "-142, 0, -29", "max": "-oo, oo, -41"},
+				{"min": "-130, 0, -42", "max": "-oo, oo, -oo"},
+				{"min": "-118, 0, -54", "max": "-oo, oo, -oo"},
+				{"min": "-118, 0, -65", "max": "-57, oo, -oo"},
+				{"min": "-57, 0, -54", "max": "oo, oo, -oo"},
+				{"min": "-45, 0, -42", "max": "oo, oo, -oo"},
+				{"min": "-33, 0, -42", "max": "oo, oo, -29"},
+				{"min": "-105, 0, -56", "max": "-70, oo, -oo"},
+				{"min": "-58, 0, -41", "max": "-67, oo, -35"},
+				{"min": "-117, 0, -41", "max": "-108, oo, -35"}
+            ]
+        }
 	],
 	"buildHeight": 16
 }
