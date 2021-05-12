@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "pepsidawg00"}
 	],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -79,27 +79,19 @@
 		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling",
 		{
             "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         }
 	],
 	"itemkeep": [
@@ -118,6 +110,11 @@
 			}
 		}
 	],
+	"crafting": {
+		"remove": [
+			"oak boat", "spruce boat", "dark oak boat"
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
