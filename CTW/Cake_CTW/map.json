@@ -143,6 +143,16 @@
             ],
             "message": "&cYou are not allowed to modify terrain here."
         },
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["yellow"],
+			"regions": ["orange-wool-protection", "yellow-wool-protection"],
+			"message": "&cYou are not allowed to interact with blocks here."
+		},
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["blue-wool-protection", "dark-blue-wool-protection"],
+			"message": "&cYou are not allowed to interact with blocks here."
+		},
         {
             "type": "enter", "evaluate": "deny", "teams": ["yellow"],
             "regions": [
