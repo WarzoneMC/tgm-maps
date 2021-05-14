@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"}
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -91,7 +91,8 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"killstreaks": [
 		{
@@ -115,7 +116,8 @@
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "96, 17, 80", "max": "125, 34, 64"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-112, 17, 0", "max": "-140, 34, 16"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-112, 17, 0", "max": "-140, 34, 16"},
+		{"id": "map", "type": "cuboid", "min": "-141, 0, 0", "max": "125, oo, 79"}
 	],
 	"buildHeight": 75
 }
