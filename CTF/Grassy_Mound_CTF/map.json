@@ -136,7 +136,6 @@
             "actions": {
                 "items": [
                     {"material": "golden apple", "amount": 1},
-                    {"material": "experience bottle", "amount": 2},
                     {"material": "arrow", "amount": 8},
                     {"material": "oak planks", "amount": 8}
                 ]
@@ -148,8 +147,7 @@
             "actions": {
                 "items": [
                     {"material": "flint and steel", "amount": 1},
-                    {"material": "golden apple", "amount": 1},
-                    {"material": "experience bottle", "amount": 2}
+                    {"material": "golden apple", "amount": 1}
                 ]
             }
         },
