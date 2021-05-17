@@ -40,7 +40,8 @@
                 "respawn-time": 10,
                 "rotation": "north east",
                 "effects": [
-                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
+                    {"type": "absorption", "duration": 60, "amplifier": 2, "particles": false}
                 ]
             },
             {
@@ -50,7 +51,8 @@
                 "respawn-time": 10,
                 "rotation": "south west",
                 "effects": [
-                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
+                    {"type": "absorption", "duration": 60, "amplifier": 2, "particles": false}
                 ]
             }
         ],
