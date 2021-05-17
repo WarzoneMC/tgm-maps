@@ -1,0 +1,119 @@
+{
+    "name": "Trenches",
+    "authors": [
+        {"uuid": "8baf96fd-0ea9-4ed8-b804-48752bece664", "username": "Lorddevington"},
+        {"uuid": "652ed2c0-eb3d-471f-8fa8-e997bf351361", "username": "Beears"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTF",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 30
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 30
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-28.0, 75, -20.0, 45"},
+        {"teams": ["red"], "coords": "28.5, 6, -76.5, 45"},
+        {"teams": ["blue"], "coords": "-83.5, 6, 36.5, -135"}
+    ],
+    "ctf": {
+    	"objective": "amount",
+    	"options": {
+    		"captures": 3
+    	},
+    	"flags": [
+    		{
+    			"team": "blue",
+    			"location": "-64, 11, 45",
+    			"type": "blue",
+                "respawn-time": 10,
+    			"rotation": "north east",
+    			"effects": [
+					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+    			]
+    		},
+    		{
+    			"team": "red",
+    			"location": "8, 11, -86",
+    			"type": "red",
+                "respawn-time": 10,
+    			"rotation": "south west",
+    			"effects": [
+					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+    			]
+    		}
+    	],
+    	"bases": [
+    		{"region": "red-net", "team": "red"},
+    		{"region": "blue-net", "team": "blue"}
+    	]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "iron axe", "slot": 2},
+                {"type": "item", "material": "iron shovel", "slot": 3},
+                {"type": "item", "material": "spruce planks", "slot": 4, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+
+                {"type": "item", "material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "chainmail boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "iron axe", "iron shovel", "spruce planks", "arrow",
+        "chainmail helmet", "leather chestplate", "chainmail leggings", "chainmail boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["world"], "message": "&cYou may not build over the void."},
+        
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-main"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-main"], "message": "&cYou may not enter this region."},
+
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection-main", "red-spawn-protection-extended", "blue-spawn-protection-main", "blue-spawn-protection-extended"],
+			"message": "&cYou may not modify terrain here."
+		}
+    ],
+    "regions": [
+        {"id": "world", "type": "cuboid", "min": "-103, 0, -96", "max": "47, oo, 55"},
+        
+        {"id": "red-spawn-protection-main", "type": "cuboid", "min": "17, 0, -83", "max": "34, 10, -71"},
+        {"id": "red-spawn-protection-extended", "type": "cuboid", "min": "9, 0, -74", "max": "24, 10, -59"},
+
+        {"id": "blue-spawn-protection-main", "type": "cuboid", "min": "-90, 0, 30", "max": "-73, 10, 42"},
+        {"id": "blue-spawn-protection-extended", "type": "cuboid", "min": "-65, 0, 18", "max": "-80, 10, 33"},
+
+        {"id": "red-net", "type": "cuboid", "min": "5, 0, -89", "max": "11, oo, -83"},
+        {"id": "blue-net", "type": "cuboid", "min": "-67, 0, 42", "max": "-61, oo, 48"}
+    ]
+}
