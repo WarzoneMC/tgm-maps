@@ -28,36 +28,36 @@
         {"teams": ["blue"], "coords": "-83.5, 6, 36.5, -135"}
     ],
     "ctf": {
-    	"objective": "amount",
-    	"options": {
-    		"captures": 3
-    	},
-    	"flags": [
-    		{
-    			"team": "blue",
-    			"location": "-64, 11, 45",
-    			"type": "blue",
+        "objective": "amount",
+        "options": {
+            "captures": 3
+        },
+        "flags": [
+            {
+                "team": "blue",
+                "location": "-64, 11, 45",
+                "type": "blue",
                 "respawn-time": 10,
-    			"rotation": "north east",
-    			"effects": [
-					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
-    			]
-    		},
-    		{
-    			"team": "red",
-    			"location": "8, 11, -86",
-    			"type": "red",
+                "rotation": "north east",
+                "effects": [
+                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                ]
+            },
+            {
+                "team": "red",
+                "location": "8, 11, -86",
+                "type": "red",
                 "respawn-time": 10,
-    			"rotation": "south west",
-    			"effects": [
-					{"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
-    			]
-    		}
-    	],
-    	"bases": [
-    		{"region": "red-net", "team": "red"},
-    		{"region": "blue-net", "team": "blue"}
-    	]
+                "rotation": "south west",
+                "effects": [
+                    {"type": "regeneration", "duration": 40, "amplifier": 3, "particles": false}
+                ]
+            }
+        ],
+        "bases": [
+            {"region": "red-net", "team": "red"},
+            {"region": "blue-net", "team": "blue"}
+        ]
     },
     "kits": [
         {
@@ -97,13 +97,13 @@
         {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["world"], "message": "&cYou may not build over the void."},
         
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-main"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-main"], "message": "&cYou may not enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-main"], "message": "&cYou may not enter this region."},
 
-		{
-			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
-			"regions": ["red-spawn-protection-main", "red-spawn-protection-extended", "blue-spawn-protection-main", "blue-spawn-protection-extended"],
-			"message": "&cYou may not modify terrain here."
-		}
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+            "regions": ["red-spawn-protection-main", "red-spawn-protection-extended", "blue-spawn-protection-main", "blue-spawn-protection-extended"],
+            "message": "&cYou may not modify terrain here."
+        }
     ],
     "regions": [
         {"id": "world", "type": "cuboid", "min": "-103, 0, -96", "max": "47, oo, 55"},
