@@ -135,7 +135,8 @@
 		},
 
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "yellow-room", "red-room"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "lime-room", "blue-room"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "lime-room", "blue-room"], "message": "&cYou may not enter this region."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["orange", "purple"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "lime-room", "min": "-43, 0, -64", "max": "-63, oo, -44"},
@@ -144,7 +145,9 @@
 		{"id": "red-room", "min": "221, 0, -64", "max": "241, oo, -44"},
 
 		{"id": "orange-spawn-protection", "type": "cuboid", "min": "152, 14, 9", "max": "166, oo, -15"},
-		{"id": "purple-spawn-protection", "type": "cuboid", "min": "12, 14, 9", "max": "26, oo, -15"}
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "12, 14, 9", "max": "26, oo, -15"},
+		
+		{"id": "map", "type": "cuboid", "min": "-37, 0, -63", "max": "215, 255, 57"}
 	],
 	"buildHeight": 40
 }
