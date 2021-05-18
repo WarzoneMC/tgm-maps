@@ -125,7 +125,7 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "white-spawn-protection", "type": "cuboid", "min": "-686, 0, -1340", "max": "-696, oo, -1350"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-686, 0, -1098", "max": "-696, oo, -1108"}
+		{"id": "white-spawn-protection", "type": "cuboid", "min": "-682, 0, -1355", "max": "-700, 60, -1320"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-700, 0, -1093", "max": "-682, 60, -1128"}
 	]
 }
