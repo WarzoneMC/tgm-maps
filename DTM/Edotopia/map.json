@@ -1,0 +1,152 @@
+{
+	"name": "Edotopia",
+	"authors": [
+		{"uuid": "12ca20d4-b363-45d9-b013-e591b65fb8ae", "username": "Aquabeek"},
+		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 115, 0.5"},
+		{"teams": ["red"], "coords": "0.5, 78, 113.5, 180"},
+		{"teams": ["blue"], "coords": "0.5, 78, -112.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "43, 87, 105",
+					"max": "39, 81, 101"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "-43, 87, 105",
+					"max": "-39, 81, 101"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "-43, 87, -105",
+					"max": "-39, 81, -101"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "43, 87, -105",
+					"max": "39, 81, -101"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 3, "unbreakable": true},
+				
+				{"type": "item", "material": "spruce planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "spruce planks", "slot": 31, "amount": 64},
+				{"type": "item", "material": "spruce planks", "slot": 32, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
+				{"type": "item", "material": "ladder", "slot": 7, "amount": 16},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "spruce planks", "golden apple", "cooked beef", "arrow",
+		{
+            "type": "iron helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "iron boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "spruce planks", "amount": 32}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "8, 74, -103", "max": "-8, oo, -121"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-8, 74, 103", "max": "8, oo, 121"}
+	],
+	"buildHeight": 98
+}
