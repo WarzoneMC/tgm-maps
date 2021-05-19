@@ -97,7 +97,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "stone pickaxe", "stone axe", "spruce planks", "golden apple", "cooked beef", "arrow",
+		"stone sword", "bow", "stone pickaxe", "stone axe", "spruce planks", "golden apple", "cooked beef", "arrow", "ladder",
 		{
             "type": "iron helmet",
             "drop": true
