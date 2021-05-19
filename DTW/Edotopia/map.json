@@ -4,7 +4,7 @@
 		{"uuid": "12ca20d4-b363-45d9-b013-e591b65fb8ae", "username": "Aquabeek"},
 		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -12,14 +12,14 @@
 			"name": "Blue",
 			"color": "blue",
 			"min": 1,
-			"max": 50
+			"max": 25
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 50
+			"max": 25
 		}
 	],
 	"spawns": [
