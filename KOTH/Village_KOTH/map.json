@@ -27,7 +27,7 @@
 		{"teams": ["red"], "coords": "-3.5, 51, 72.5, 135"}
 	],
 	"points": {
-		"target": 500
+		"target": 750
 	},
 	"koth": {
 		"hills": [
