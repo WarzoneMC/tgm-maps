@@ -69,7 +69,7 @@
 				{"type": "item", "material": "golden apple", "slot": 4, "amount": 1},
 
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
-        			{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
