@@ -69,7 +69,7 @@
 				{"type": "item", "material": "golden apple", "slot": 4, "amount": 1},
 
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
-        {"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
+        			{"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
@@ -105,14 +105,14 @@
 			}
 		},
 		{
-    	"count": 5,
-    	"repeat": true,
-    	"actions": {
-    		"items": [
-    			{"material": "arrow", "amount": 5}
-    		]
-    	}
-    }
+			"count": 5,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 5}
+				]
+			}
+		}
 	],
 	"damageControl": {
 		"FALL": false
@@ -131,8 +131,8 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "green"],
 			"regions": [
-				"orange-spawn-protection", "green-spawn-protection","green-Tp","orange-Tp",
-				 "mid-protection", "a-protection", "b-protection","Tp-2","Tp-1"
+				"orange-spawn-protection", "green-spawn-protection", "green-Tp", "orange-Tp",
+				"mid-protection", "a-protection", "b-protection", "Tp-2", "Tp-1"
 			],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
