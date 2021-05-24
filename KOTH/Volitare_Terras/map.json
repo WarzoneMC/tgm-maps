@@ -33,6 +33,14 @@
 	"koth": {
 		"hills": [
 			{
+				"name": "B Point",
+				"time": 9,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "38, 73, 38", "radius": 6, "height": 4
+				}
+			},
+			{
 				"name": "Mid Point",
 				"time": 10,
 				"points": 2,
@@ -46,14 +54,6 @@
 				"points": 1,
 				"region": {
 					"type": "cylinder", "base": "-38, 73, -38", "radius": 6, "height": 4
-				}
-			},
-			{
-				"name": "B Point",
-				"time": 9,
-				"points": 1,
-				"region": {
-					"type": "cylinder", "base": "38, 73, 38", "radius": 6, "height": 4
 				}
 			}
 		]
@@ -74,25 +74,28 @@
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:5"], "unbreakable": true}
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["feather falling:5"], "unbreakable": true}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "shears", "oak leaves", "arrow", "cooked beef",
-		"leather chestplate", "iron boots", "leather helmet", "leather leggings", "golden apple",
+		"stone sword", "bow", "shears", "oak leaves", "golden apple", "arrow", "cooked beef",
 		{
-						"type": "leather helmet",
-						"drop": true
-				},
-				{
-						"type": "leather leggings",
-						"drop": true
-				},
-				{
-						"type": "iron boots",
-						"drop": true
-				}
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "iron boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -131,8 +134,8 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "green"],
 			"regions": [
-				"orange-spawn-protection", "green-spawn-protection", "green-Tp", "orange-Tp",
-				"mid-protection", "a-protection", "b-protection", "Tp-2", "Tp-1"
+				"orange-spawn-protection", "green-spawn-protection", "green-tp", "orange-tp",
+				"mid-protection", "a-protection", "b-protection", "tp-2", "tp-1"
 			],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
@@ -145,11 +148,11 @@
 		{"id": "a-protection", "min": "-32, 73, -32", "max": "-44, 74, -44"},
 		{"id": "b-protection", "min": "32, 73, 32", "max": "44, 74, 44"},
 
-		{"id": "orange-Tp", "min": "32, 92, -32", "max": "32, 93, -32"},
-		{"id": "green-Tp", "min": "-32, 92, 32", "max": "-32, 93, 32"},
+		{"id": "orange-tp", "min": "32, 92, -32", "max": "32, 93, -32"},
+		{"id": "green-tp", "min": "-32, 92, 32", "max": "-32, 93, 32"},
 
-		{"id": "Tp-1", "min": "24, 71, -24", "max": "24, 72, -24"},
-		{"id": "Tp-2", "min": "-24, 71, 24", "max": "-24, 72, 24"}
+		{"id": "tp-1", "min": "24, 71, -24", "max": "24, 72, -24"},
+		{"id": "tp-2", "min": "-24, 71, 24", "max": "-24, 72, 24"}
 	],
 	"buildHeight": 105
 }
