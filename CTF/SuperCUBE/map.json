@@ -113,17 +113,17 @@
 	"itemremove": [
 		"iron sword", "bow", "arrow", "potion", "glass bottle", "iron leggings",
 		{
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
@@ -154,12 +154,10 @@
 		}
 	],
 	"regions": [
-		{"id": "red-spawn-pad", "type": "cylinder", "base":"29.5, 1, 36.5", "radius": 1, "height": 1},
-		{"id": "red-flag-pad", "type": "cylinder", "base":"-27.5, 1, 63.5", "radius": 1, "height": 1},
-		{"id": "blue-flag-pad", "type": "cylinder", "base":"-109.5, 1, 3.5", "radius": 1, "height": 1},
-		{"id": "blue-spawn-pad", "type": "cylinder", "base":"-166.5, 1, 30.5", "radius": 1, "height": 1},
-
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+		{"id": "red-spawn-pad", "type": "cylinder", "base": "29.5, 1, 36.5", "radius": 1, "height": 1},
+		{"id": "red-flag-pad", "type": "cylinder", "base": "-27.5, 1, 63.5", "radius": 1, "height": 1},
+		{"id": "blue-flag-pad", "type": "cylinder", "base": "-109.5, 1, 3.5", "radius": 1, "height": 1},
+		{"id": "blue-spawn-pad", "type": "cylinder", "base": "-166.5, 1, 30.5", "radius": 1, "height": 1},
 
 		{"id": "blue-net", "type": "cuboid", "min": "-123.5, 5, 13.5", "max": "-129.5, 9, 7.5"},
 		{"id": "red-net", "type": "cuboid", "min": "-13.5, 5, 53.5", "max": "-7.5, 9, 59.5"}
