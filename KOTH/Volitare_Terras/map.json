@@ -1,0 +1,155 @@
+{
+	"name": "Volitare Terras",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
+		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"}
+	],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 146, 74.5, 180, 0"},
+		{"teams": ["orange"], "coords": "54.5, 94, -53.5, 45, 0"},
+		{"teams": ["green"], "coords": "-53.5, 94, 54.5, -135, 0"}
+	],
+	"points": {
+		"target": 2000
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Mid Point",
+				"time": 10,
+				"points": 2,
+				"region": {
+					"type": "cylinder", "base": "0, 80, 0", "radius": 7, "height": 5
+				}
+			},
+			{
+				"name": "A Point",
+				"time": 9,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "-38, 73, -38", "radius": 6, "height": 4
+				}
+			},
+			{
+				"name": "B Point",
+				"time": 9,
+				"points": 1,
+				"region": {
+					"type": "cylinder", "base": "38, 73, 38", "radius": 6, "height": 4
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "shears", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "oak leaves", "slot": 3, "amount": 24},
+				{"type": "item", "material": "golden apple", "slot": 4, "amount": 1},
+
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
+        {"type": "item", "material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["PROTECTION_FALL:5"], "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "shears", "oak leaves", "arrow", "cooked beef",
+		"leather chestplate", "iron boots", "leather helmet", "leather leggings", "golden apple",
+		{
+						"type": "leather helmet",
+						"drop": true
+				},
+				{
+						"type": "leather leggings",
+						"drop": true
+				},
+				{
+						"type": "iron boots",
+						"drop": true
+				}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+    	"count": 5,
+    	"repeat": true,
+    	"actions": {
+    		"items": [
+    			{"material": "arrow", "amount": 5}
+    		]
+    	}
+    }
+	],
+	"damageControl": {
+		"FALL": false
+	},
+	"filters": [
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["orange"],
+			"regions": ["green-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["green"],
+			"regions": ["orange-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange", "green"],
+			"regions": [
+				"orange-spawn-protection", "green-spawn-protection","green-Tp","orange-Tp",
+				 "mid-protection", "a-protection", "b-protection","Tp-2","Tp-1"
+			],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "orange-spawn-protection", "min": "46, 91, -46", "max": "61, oo, -61"},
+		{"id": "green-spawn-protection", "min": "-46, 91, 46", "max": "-61, oo, 61"},
+
+		{"id": "mid-protection", "min": "7, 80, -7", "max": "-7, 81, 7"},
+		{"id": "a-protection", "min": "-32, 73, -32", "max": "-44, 74, -44"},
+		{"id": "b-protection", "min": "32, 73, 32", "max": "44, 74, 44"},
+
+		{"id": "orange-Tp", "min": "32, 92, -32", "max": "32, 93, -32"},
+		{"id": "green-Tp", "min": "-32, 92, 32", "max": "-32, 93, 32"},
+
+		{"id": "Tp-1", "min": "24, 71, -24", "max": "24, 72, -24"},
+		{"id": "Tp-2", "min": "-24, 71, 24", "max": "-24, 72, 24"}
+	],
+	"buildHeight": 105
+}
