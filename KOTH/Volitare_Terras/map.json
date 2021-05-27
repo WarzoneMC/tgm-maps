@@ -28,7 +28,7 @@
 		{"teams": ["green"], "coords": "-53.5, 94, 54.5, -135, 0"}
 	],
 	"points": {
-		"target": 2000
+		"target": 2400
 	},
 	"koth": {
 		"hills": [
@@ -117,6 +117,22 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &eFall damage is disabled!\n&6[TIP] &eMiddle is worth double the points!",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eMiddle is worth double the points!",
+				"interval": 60,
+				"repeat": true,
+				"commands": []
+			}
+		]
+	},
 	"damageControl": {
 		"FALL": false
 	},
