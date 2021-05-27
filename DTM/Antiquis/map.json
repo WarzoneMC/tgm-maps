@@ -78,21 +78,21 @@
 		"wooden pickaxe", "stone axe", "stone sword", "bow", "arrow", "cooked beef", "obsidian", "flint",
 		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"itemkeep": [
 		"nether star", "stone pickaxe", "iron pickaxe", "diamond pickaxe",
@@ -110,6 +110,22 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &eKill enemies to receive infused shards!\n&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
+				"interval": 120,
+				"repeat": true,
+				"commands": []
+			}
+		]
+	},
 	"crafting": {
 		"remove": [
 			"oak boat", "spruce boat", "dark oak boat"
