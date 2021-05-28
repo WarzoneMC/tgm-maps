@@ -1,0 +1,181 @@
+{
+    "name": "Frontier",
+    "authors": [
+        {"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
+        {"uuid": "1fc24e45-8ce8-4749-922f-fc9e8c59cf74", "username": "llynn"}
+    ],
+    "version": "1.0",
+    "gametype": "CP",
+    "time": {
+        "limit": 720
+    },
+    "teams": [
+        {
+            "id": "red",
+            "name": "Cowboys",
+            "color": "red",
+            "gamemode": "adventure",
+            "min": 1,
+            "max": 18
+        },
+        {
+            "id": "blue",
+            "name": "Sheriffs",
+            "color": "blue",
+            "gamemode": "adventure",
+            "min": 1,
+            "max": 18
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "0.5, 100, -19.5, 0"},
+        {"teams": ["red"], "coords": "87.5, 59.5, -31.5, 90"},
+        {"teams": ["blue"], "coords": "-86.5, 59.5, 32.5, -90"}
+    ],
+    "portals": [
+        {
+            "id": "red-has-red-2nd",
+            "active": true,
+            "from": {"min": "85, 35, -34", "max": "89, 33, -30"},
+            "to": "71.5, 23, -11.5, 135",
+            "sound": false
+        },
+        {
+            "id": "red-has-mid",
+            "active": false,
+            "from": {"min": "85, 35, -34", "max": "89, 33, -30"},
+            "to": "41.5, 17, -2.5, 90",
+            "sound": false
+        },
+        {
+            "id": "red-has-blue-2nd",
+            "active": false,
+            "from": {"min": "85, 35, -34", "max": "89, 33, -30"},
+            "to": "-6.5, 12, -12.5, 0",
+            "sound": false
+        },
+        {
+            "id": "blue-has-blue-2nd",
+            "active": true,
+            "from": {"min": "-84, 35, 34", "max": "-89, 33, 30"},
+            "to": "-70.5, 23, 12.5, -45",
+            "sound": false
+        },
+        {
+            "id": "blue-has-mid",
+            "active": false,
+            "from": {"min": "-84, 35, 34", "max": "-89, 33, 30"},
+            "to": "-40.5, 17, 3.5, -90",
+            "sound": false
+        },
+        {
+            "id": "blue-has-red-2nd",
+            "active": false,
+            "from": {"min": "-84, 35, 34", "max": "-89, 33, 30"},
+            "to": "7.5, 12, 13.5, 180",
+            "sound": false
+        }
+    ],
+    "koth": {
+        "hills": [
+            {
+                "name": "Red Last",
+                "time": 5,
+                "region": {
+                    "min": "79, 23, -14",
+                    "max": "88, 29, -23"
+                },
+                "owner": "red"
+            },
+            {
+                "name": "Red 2nd",
+                "time": 5,
+                "region": {
+                    "min": "31, 20, -15",
+                    "max": "40, 26, -24"
+                },
+                "owner": "red",
+                "portals": {
+                    "red": "red-has-red-2nd",
+                    "blue": "blue-has-red-2nd"
+                }
+            },
+            {
+                "name": "Mid",
+                "time": 5,
+                "region": {
+                    "min": "5, 13, -4",
+                    "max": "-4, 19, 5"
+                },
+                "portals": {
+                    "red": "red-has-mid",
+                    "blue": "blue-has-mid"
+                }
+            },
+            {
+                "name": "Blue 2nd",
+                "time": 5,
+                "region": {
+                    "min": "-39, 20, 25",
+                    "max": "-30, 26, 16"
+                },
+                "owner": "blue",
+                "portals": {
+                    "red": "red-has-blue-2nd",
+                    "blue": "blue-has-blue-2nd"
+                }
+            },
+            {
+                "name": "Blue Last",
+                "time": 5,
+                "region": {
+                    "min": "-87, 23, 24",
+                    "max": "-78, 29, 15"
+                },
+                "owner": "blue"
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+                {"type": "item", "material": "golden apple", "slot": 2},
+                {"type": "item", "material": "arrow", "amount": 32, "slot": 7},
+				{"type": "item", "material": "cooked beef", "amount": 64, "slot": 8},
+
+                {"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "golden apple", "arrow", "cooked beef",
+        "iron helmet", "iron chestplate", "leather leggings", "leather boots"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 16}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify the map."},
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou are not allowed to enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter this region."}
+    ],
+    "regions": [
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "69, 0, -26", "max": "75, oo, -33"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-68, 0, 26", "max": "-74, oo, 33"}
+    ]
+}
