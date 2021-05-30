@@ -45,6 +45,11 @@
 			"max": 29
 		},
 		"maps": [
+			"Museum",
+			"CherrylandMC",
+			"Volitare Terras",
+			"Warlock DTW",
+			"Sandstone",
 			"Wahiz CTW",
 			"Curabitur",
 			"Templum",
@@ -83,8 +88,7 @@
 			"Outback",
 			"Aureola",
 			"Antiquis",
-			"Timeless",
-			"Grassy Mound CTF"
+			"Timeless"
 		]
 	},
 	{
@@ -96,6 +100,9 @@
 			"max": 200
 		},
 		"maps": [
+			"Edotopia",
+			"Museum",
+			"Volitare Terras",
 			"Trenches",
 			"Templum",
 			"Race For Victory 2",
@@ -115,19 +122,16 @@
 			"Gobi",
 			"Grub CTF",
 			"Palace CTF",
-			"Embers 1",
 			"Orion",
 			"Sector Six",
 			"Justice 2",
 			"Celestial",
-			"Golden Drought III",
 			"Abudor II",
 			"Cake CTW",
 			"Outback",
 			"Aztec FFA",
 			"Formorgar 2",
 			"Desert Sanctuary"
-
 		]
 	},
 	{
