@@ -89,7 +89,7 @@
         }
     ],
     "itemremove": [
-        "stone sword", "bow", "iron pickaxe", "stone axe", "bucket", "cooked beef",
+        "stone sword", "bow", "iron pickaxe", "stone axe", "bucket", "cooked beef", "oak log", "oak planks", "glass", "arrow",
         {
         	"type": "leather helmet",
         	"drop": true
