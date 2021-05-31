@@ -6,7 +6,7 @@
 		{"uuid": "f36bdc4f-7dab-462b-87b6-dee2e3af8490", "username": "NeverTakeIt"},
 		{"uuid": "b390b87a-47e8-40d8-968a-9e7e2582a88b", "username": "MewTwoKing"}
 	],
-	"version": "1.0",
+	"version": "1.1",
 	"gametype": "CTF",
 	"respawn": {
 		"rules": [
@@ -148,11 +148,11 @@
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-16.5, 0, -86.5", "max": "17.5, oo, -108"},
-		{"id": "orange-right-spawn-protection", "type": "cuboid", "min": "-10, 0, -80", "max": "-16.5, oo, -86.5"},
-		{"id": "orange-left-spawn-protection", "type": "cuboid", "min": "11, 0, -80", "max": "17.5, oo, -86.5"},
+		{"id": "orange-right-spawn-protection", "type": "cuboid", "min": "-10, 0, -80", "max": "-16.5, 64, -86.5"},
+		{"id": "orange-left-spawn-protection", "type": "cuboid", "min": "11, 0, -80", "max": "17.5, 64, -86.5"},
 		{"id": "cyan-spawn-protection", "type": "cuboid", "min": "17.5, 0, 87.5", "max": "-16.5, oo, 108"},
-		{"id": "cyan-right-spawn-protection", "type": "cuboid", "min": "11, 0, 81", "max": "17.5, oo, 87.5"},
-		{"id": "cyan-left-spawn-protection", "type": "cuboid", "min": "-10, 0, 81", "max": "-16.5, oo, 87.5"},
+		{"id": "cyan-right-spawn-protection", "type": "cuboid", "min": "11, 0, 81", "max": "17.5, 64, 87.5"},
+		{"id": "cyan-left-spawn-protection", "type": "cuboid", "min": "-10, 0, 81", "max": "-16.5, 64, 87.5"},
 
 		{"id": "orange-left", "type": "cylinder", "base": "20.5, 50, -20.5", "radius": 1, "height": 2},
 		{"id": "orange-right", "type": "cylinder", "base": "-19.5, 50, -20.5", "radius": 1, "height": 2},
