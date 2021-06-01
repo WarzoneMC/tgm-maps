@@ -85,8 +85,5 @@
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
