@@ -4,7 +4,7 @@
         {"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
         {"uuid": "1fc24e45-8ce8-4749-922f-fc9e8c59cf74", "username": "llynn"}
     ],
-    "version": "1.0",
+    "version": "1.1",
     "gametype": "CP",
     "time": {
         "limit": 720
