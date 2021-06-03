@@ -30,7 +30,7 @@
 		{"teams": ["red"], "coords": "-33.5, 28, 1482.5, 180"}
 	],
 	"points": {
-		"target": 250
+		"target": 500
 	},
 	"koth": {
 		"hills": [
@@ -76,13 +76,17 @@
             "drop": true
         }
 	],
+	"gamerules": {
+		"mobGriefing": false
+	},
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "min": "-37,27,1435", "max": "-31, 32, 1430"},
-		{"id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37, 32, 1484"}
+		{"id": "red-spawn-protection", "min": "-31,27,1479", "max": "-37, 32, 1484"},
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
