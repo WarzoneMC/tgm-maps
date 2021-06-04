@@ -142,5 +142,5 @@
 		{"id": "blue-left-entrance", "type": "cuboid", "min": "-8, 33, 151", "max": "-7, 44, 156"},
 		{"id": "blue-right-entrance", "type": "cuboid", "min": "10, 33, 151", "max": "9, 44, 156"}
 	],
-	"buildHeight": 45
+	"buildHeight": 50
 }
