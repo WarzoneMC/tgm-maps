@@ -125,7 +125,6 @@
 	"crafting": {
 		"remove": [
 			"flint and steel",
-		]
     },
     "filters": [
         {
