@@ -122,6 +122,11 @@
             }
         }
     ],
+	"crafting": {
+		"remove": [
+			"flint and steel"
+		]
+    },
     "filters": [
         {
             "type": "build", "evaluate": "deny", "teams": ["yellow", "blue"],
