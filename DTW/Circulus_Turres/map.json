@@ -109,6 +109,7 @@
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "golden apple", "arrow", "cooked beef", 
 		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
+		"iron block", "iron ingot",
 		{
             "type": "yellow terracotta",
             "drop": false,
@@ -146,7 +147,9 @@
 	],
 	"crafting": {
 		"remove": [
-			"oak boat", "spruce boat", "dark oak boat"
+			"oak boat", "spruce boat", "dark oak boat", "iron ingot",
+			"iron helmet", "iron chestplate", "iron leggings", "iron boots",
+			"iron sword", "iron pickaxe", "iron axe", "iron shovel"
 		]
 	},
 	"filters": [
