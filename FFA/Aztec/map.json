@@ -5,6 +5,7 @@
 	"authors": [
 		{"uuid": "07fa10c6-f564-4630-861e-fe134ae27527", "username": "Yoyo_"}
 	],
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "players", 
