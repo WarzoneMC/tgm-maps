@@ -5,6 +5,7 @@
 	],
 	"gametype": "Blitz",
 	"version": "1.0",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "purple",
