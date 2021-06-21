@@ -89,18 +89,30 @@
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 24},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true}
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "stone axe",
-		"golden apple", "cooked beef",
-		"glass", "stone", "oak planks", "arrow",
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "golden apple", "cooked beef", "glass", "stone", "oak planks", "arrow",
 		{
             "type": "leather helmet",
-            "death": true,
+	    "death": true,
             "drop": true,
-            "spawn": false
+ 	    "spawn:" false
+        },
+        {
+            "type": "chainmail chestplate",
+	    "death": true,
+            "drop": true,
+	    "spawn": false
+        },
+        {
+            "type": "iron boots",
+	    "death": true,
+            "drop": true,
+	    "spawn": false
         }
 	],
 	"killstreaks": [
