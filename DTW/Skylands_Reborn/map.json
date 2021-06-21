@@ -100,7 +100,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn", "red-spawn", "blue-portal", "red-portal"],
+			"regions": ["blue-spawn", "red-spawn", "blue-portal", "red-portal", "blue-portal-protection", "red-portal-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
@@ -110,6 +110,9 @@
 	"regions": [
 		{"id": "blue-portal", "type": "cuboid", "min": "15, 19, 31", "max": "15, 20, 31"},
 		{"id": "red-portal", "type": "cuboid", "min": "73, 19, -3", "max": "73, 20, -3"},
+		
+		{"id": "blue-portal-protection", "type": "cuboid", "min": "21, 5, 24", "max": "10, 25, 35"},
+		{"id": "red-portal-protection", "type": "cuboid", "min": "67, 5, 4", "max": "78, 25, -7"},
 
 		{"id": "blue-spawn", "type": "cuboid", "min": "-11, 0, 3", "max": "-20, oo, -4"},
 		{"id": "red-spawn", "type": "cuboid", "min": "98, 0, 26", "max": "107, oo, 34"}
