@@ -88,8 +88,8 @@
 				{"type": "item", "material": "oak planks", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 24},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
