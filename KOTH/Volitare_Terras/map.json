@@ -120,15 +120,9 @@
 	"time": {
 		"broadcasts": [
 			{
-				"message": "&6[TIP] &eFall damage is disabled!\n&6[TIP] &eMiddle is worth double the points!",
+				"message": "&6[TIP] &eFall damage is disabled on this map!",
 				"interval": 1,
 				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&6[TIP] &eMiddle is worth double the points!",
-				"interval": 60,
-				"repeat": true,
 				"commands": []
 			}
 		]
