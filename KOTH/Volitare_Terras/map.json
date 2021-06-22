@@ -43,7 +43,7 @@
 			{
 				"name": "Mid Point",
 				"time": 10,
-				"points": 2,
+				"points": 1,
 				"region": {
 					"type": "cylinder", "base": "0, 80, 0", "radius": 7, "height": 5
 				}
