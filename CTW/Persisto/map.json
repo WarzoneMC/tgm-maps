@@ -110,6 +110,11 @@
 			}
 		}
 	],
+	"crafting": {
+		"remove": [
+			"anvil"
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
