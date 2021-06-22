@@ -137,7 +137,8 @@
             "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
             "regions": ["spectators"],
             "message": "&cYou are not allowed to modify terrain here."
-        }
+        },
+	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
     ],
     "regions": [
         {"id": "yellow-room", "min": "79, 0, 106", "max": "109, oo, 135"},
@@ -153,7 +154,8 @@
         {"id": "red-spawn-protection", "type": "cuboid", "min": "95, 0, 224", "max": "118, oo, 198"},
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"},
 
-        {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10 }
+        {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10},
+	{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
     ],
     "buildHeight": 35
 }
