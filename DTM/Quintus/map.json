@@ -189,14 +189,17 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["cyan-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["cyan", "purple"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "cyan-spawn-protection", "type": "cylinder", "base": "40, 30, -903", "radius": "9", "height": "5" },
 		{"id": "purple-spawn-protection", "type": "cylinder", "base": "40, 30, -777", "radius": "9", "height": "5" },
 
 		{"id": "path-prot-cyan", "type": "cuboid", "min": "37, 34, -894", "max": "43, 27, -882"},
-		{"id": "path-prot-purple", "type": "cuboid", "min": "37, 34, -786", "max": "43, 27, -798"}
+		{"id": "path-prot-purple", "type": "cuboid", "min": "37, 34, -786", "max": "43, 27, -798"},
+		
+		{"id": "map", "type": "cuboid", "min": "-7, 0, -738", "max": "87, oo, -942"}
 	],
 	"buildHeight": 60
 }
