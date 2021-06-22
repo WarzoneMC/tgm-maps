@@ -189,4 +189,5 @@
 		{"id": "red-spawn", "type": "cylinder", "base": "-77, 87, 17", "radius": 10, "height": 25},
 		{"id": "spec-spawn", "type": "cylinder", "base": "22, 131, 118", "radius": 4, "height": 9}
 	]
+	"buildHeight": 102
 }
