@@ -128,7 +128,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-1195, 0, -187", "max": "-1205, oo, -197"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-1195, 0, -453", "max": "-1205, oo, -463"}
-	]
+		{"id": "yellow-spawn-protection", "type": "cylinder", "base": "-1200, 17, -192", "radius": 21, "height": 255},
+		{"id": "red-spawn-protection", "type": "cylinder", "base": "-1200, 17, -458", "radius": 21, "height": 255}
+	],
+	"buildHeight": 45
 }
