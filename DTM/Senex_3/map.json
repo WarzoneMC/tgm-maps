@@ -129,8 +129,8 @@
 	"regions": [
 		{"id": "orange-spawn-protection", "type": "cylinder", "base": "36, 13, -879", "radius": 9, "height": 255},
 		{"id": "purple-spawn-protection", "type": "cylinder", "base": "128, 13, -879", "radius": 9, "height": 255},
-		{"id": "purple-spawn-bridge-protection", "type": "cuboid", "min": "143, 13, -882", "max": "136, oo, -876"},
-		{"id": "orange-spawn-bridge-protection", "type": "cuboid", "min": "28, 13, -882", "max": "21, oo, -876"}
+		{"id": "orange-spawn-bridge-protection", "type": "cuboid", "min": "14, 8, -872", "max": "28, oo, -886"},
+		{"id": "purple-spawn-bridge-protection", "type": "cuboid", "min": "136, 8, -872", "max": "150, oo, -886"}
 	],
 	"buildHeight": 30
 }
