@@ -100,7 +100,7 @@
             "type": "leather helmet",
 	    "death": true,
             "drop": true,
- 	    "spawn:" false
+ 	    "spawn": false
         },
         {
             "type": "chainmail chestplate",
