@@ -1,150 +1,161 @@
 {
-	"name": "Antiquis",
-	"authors": [
-		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "pepsidawg00"}
-	],
-	"version": "1.1.1",
-	"gametype": "DTM",
-	"teams": [
-		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
-			"min": 1,
-			"max": 16
-		},
-		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
-			"min": 1,
-			"max": 16
-		}
-	],
-	"spawns": [
-		{"teams": ["spectators"], "coords": "-69.5, 20, 0.5, -90"},
-		{"teams": ["red"], "coords": "0.5, 11, 68.5, 180"},
-		{"teams": ["blue"], "coords": "0.5, 11, -67.5"}
-	],
-	"dtm": {
-		"monuments": [
-			{
-				"name": "Monument",
-				"teams": ["red"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "0, 8, 41",
-					"max": "0, 9, 41"
-				},
-				"health": 2
-			},
-			{
-				"name": "Monument&r",
-				"teams": ["blue"],
-				"materials": ["obsidian"],
-				"region": {
-					"min": "0, 8, -41",
-					"max": "0, 9, -41"
-				},
-				"health": 2
-			}
-		]
-	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "wooden pickaxe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+    "name": "A New Day",
+    "authors": [
+        {"uuid": "b5071a63-bba3-491a-909f-02db314f4319", "username": "dcstarwars"},
+        {"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTerwiesch"}
+    ],
+    "version": "1.0.6",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 50
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 50
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-6.5, 22, 300.5, -180"},
+        {"teams": ["red"], "coords": "109.5, 8, 211.5, 90"},
+        {"teams": ["blue"], "coords": "-122.5, 8, 211.5, -90"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Lime",
+                "color": "green",
+                "woolcolor": "lime",
+                "teams": ["red"],
+                "region": {"min": "114, 9, 209", "max": "114, 9, 209"}
+            },
+            {
+                "name": "Purple",
+                "color": "dark purple",
+                "woolcolor": "purple",
+                "teams": ["red"],
+                "region": {"min": "114, 9, 213", "max": "114, 9, 213"}
+            },
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["blue"],
+                "region": {"min": "-128, 9, 213", "max": "-128, 9, 213"}
+            },
+            {
+                "name": "Yellow",
+                "color": "yellow",
+                "woolcolor": "yellow",
+                "teams": ["blue"],
+                "region": {"min": "-128, 9, 209", "max": "-128, 9, 209"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "iron sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "unbreakable": true},
+                {"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+                {"material": "iron axe", "slot": 3, "unbreakable": true},
 
-				{"type": "item", "material": "oak planks", "slot": 4, "amount": 32},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+                {"material": "oak log", "slot": 5, "amount": 64},
+                {"material": "golden apple", "slot": 7, "amount": 3},
+                {"material": "cooked beef", "slot": 8, "amount": 64},
+                {"material": "arrow", "slot": 28, "amount": 32},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-			],
-			"effects": [
-				{"type": "damage resistance", "duration": 6, "amplifier": 3, "particles": false},
-				{"type": "regeneration", "duration": 6, "amplifier": 3, "particles": false}
-			]
-		}
-	],
-	"itemremove": [
-		"wooden pickaxe", "stone axe", "stone sword", "bow", "arrow", "cooked beef", "obsidian", "flint",
-		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling",
-		{
-			"type": "leather helmet",
-			"drop": true
-		},
-		{
-			"type": "leather chestplate",
-			"drop": true
-		},
-		{
-			"type": "leather leggings",
-			"drop": true
-		},
-		{
-			"type": "leather boots",
-			"drop": true
-		}
-	],
-	"itemkeep": [
-		"nether star", "stone pickaxe", "iron pickaxe", "diamond pickaxe",
-		"golden helmet", "golden chestplate", "golden leggings", "golden boots"
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "amount": 1},
-					{"material": "nether star", "displayName": "&4Infused Shard", "amount": 1}
-				]
-			}
-		}
-	],
-	"time": {
-		"broadcasts": [
-			{
-				"message": "&6[TIP] &eKill enemies to receive infused shards!\n&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
-				"interval": 1,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
-				"interval": 120,
-				"repeat": true,
-				"commands": []
-			}
-		]
-	},
-	"crafting": {
-		"remove": [
-			"oak boat", "spruce boat", "dark oak boat"
-		]
-	},
-	"filters": [
-		{
-			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here."
-		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
-	],
-	"regions": [
-		{"id": "blue-spawn", "type": "cuboid", "min": "-31, 8, -80", "max": "31, 10, -51"},
-		{"id": "red-spawn", "type": "cuboid", "min": "-31, 8, 51", "max": "31, 11, 79"},
-		
-		{"id": "map", "type": "cuboid", "min": "-52, 0, 81", "max": "52, oo, -81"}
-	],
-	"buildHeight": 35
+                {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "golden apple", "cooked beef", "arrow",
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "chainmail leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        },
+        {
+            "count": 5,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "arrow", "amount": 7}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "regions": ["red-spawn-protection", "blue-spawn-protection", "orange-room", "yellow-room", "lime-spawner", "purple-spawner"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["red-spawn-protection", "blue-spawn-protection", "purple-room", "lime-room", "yellow-spawner", "orange-spawner"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "purple-room"], "message": "&cYou may not enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+            "regions": ["spectators"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+    ],
+    "regions": [
+        {"id": "yellow-room", "min": "79, 0, 106", "max": "109, oo, 135"},
+        {"id": "yellow-spawner", "min": "94, 6, 121", "max": "94, 7, 121"},
+        {"id": "orange-room", "min": "79, 0, 287", "max": "109, oo, 316"},
+        {"id": "orange-spawner", "min": "94, 6, 301", "max": "94, 7, 301"},
+
+        {"id": "lime-room", "min": "-93, 0, 135", "max": "-123, oo, 106"},
+        {"id": "lime-spawner", "min": "-108, 6, 121", "max": "-108, 7, 121"},
+        {"id": "purple-room", "min": "-93, 0, 316", "max": "-123, oo, 287"},
+        {"id": "purple-spawner", "min": "-108, 6, 301", "max": "-108, 7, 301"},
+
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "95, 0, 224", "max": "118, oo, 198"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"},
+
+        {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10},
+	{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
+    ],
+    "buildHeight": 35
 }
