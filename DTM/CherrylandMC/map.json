@@ -146,6 +146,10 @@
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["chests"],
 			"message": "&cYou may not physically edit the TNT chests."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 		}
 	],
 	"regions": [
