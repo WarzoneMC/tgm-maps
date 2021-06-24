@@ -1,0 +1,208 @@
+{
+	"name": "Timber",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"},
+		{"uuid": "a63de09d-6fa9-436f-9070-26f5e9a4d27b", "username": "sslumper"},
+		{"uuid": "d3814d5a-3d37-42f2-9db8-916846bb70ad", "username": "AlmightyBread"},
+		{"uuid": "74e59389-2b3e-490d-954a-a7af1fb1eded", "username": "Dowly_"}
+	],
+	"version": "1.0",
+	"gametype": "CTW",
+	"time": {
+		"limit": 1200
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-275.5, 62, 127"},
+		{"teams": ["red"], "coords": "-275.5, 9, 213.5, 180"},
+		{"teams": ["blue"], "coords": "-275.5, 9, 40.5"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
+				"teams": ["red"],
+				"region": {"min": "-274, 10, 215", "max": "-274, 10, 215"}
+			},
+			{
+				"name": "Orange",
+				"color": "gold",
+				"woolcolor": "orange",
+				"teams": ["blue"],
+				"region": {"min": "-278, 10, 38", "max": "-278, 10, 38"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
+	
+				{"type": "item", "material": "spruce planks", "amount": 64, "slot": 4},
+				{"type": "item", "material": "glass", "amount": 32, "slot": 5},
+				{"type": "item", "material": "golden carrot", "amount": 64, "slot": 7},
+				{"type": "item", "material": "golden apple", "slot": 8},
+
+				{"type": "item", "material": "arrow", "amount": 32, "slot": 28},
+				{"type": "item", "material": "iron shovel", "slot": 29, "unbreakable": true},
+	
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},			
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "chainmail boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+                		{"type": "heal", "duration": 60, "amplifier": 2, "particles": false}
+			]
+		}
+	],
+    	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "diamond axe", "iron pickaxe", "iron axe",
+		"iron shovel", "golden apple", "golden carrot", "spruce planks", "glass", "cooked beef",
+		 "arrow", "apple", "spruce sapling", 
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "chainmail boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "spruce planks", "amount": 16},
+					{"material": "arrow", "amount": 16}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
+			"blocks": ["spawner", "redstone wire", "light weighted pressure plate", "heavy weighted pressure plate"],
+			"regions": ["global"],
+			"message": "&cYou may not break that."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["red-spawn", "blue-spawn"],
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn", "blue-spawn"],
+			"message": "&cYou may not modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["orange-wool-room"],
+			"message": "&cYou may not modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["purple-wool-room"],
+			"message": "&cYou may not modify terrain here."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["red"],
+			"regions": ["orange-wool-room", "blue-spawn"],
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["purple-wool-room", "red-spawn"],
+			"message": "&cYou may not enter this region."
+		}
+	],
+	"regions": [
+		{"id": "red-spawn", "type": "cuboid", "min": "-269, 0, 189", "max": "-282, oo, 220"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-269, 0, 34", "max": "-282, oo, 65"},
+
+		{"id": "west-bridge", "type": "cuboid", "min": "-308, 0, 85", "max": "-300, oo, 135"},
+		{"id": "center-bridge", "type": "cuboid", "min": "-282, 0, 97", "max": "-270, oo, 156"},
+		{"id": "east-bridge", "type": "cuboid", "min": "-252, 0, 118", "max": "-244, oo, 168"},
+
+		{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				"west-bridge", "center-bridge", "east-bridge"
+			]
+		},
+		{
+			"id": "orange-wool-room", "type": "meta",
+			"regions": [
+				{"min": "-235, 0, 196", "max": "-245, 255, 185"},
+				{"min": "-237, 0, 186", "max": "-242, 255, 183"},
+				{"min": "-246, 0, 194", "max": "-248, 255, 189"},
+				{"min": "-245, 0, 189", "max": "-247, 255, 187"},
+				{"min": "-245, 0, 187", "max": "-246, 255, 186"},
+				{"min": "-242, 0, 185", "max": "-244, 255, 184"},
+				{"min": "-249, 0, 188", "max": "-249, 255, 193"},
+				{"min": "-238, 0, 182", "max": "-243, 255, 182"},
+				{"min": "-243, 0, 183", "max": "-245, 255, 183"},
+				{"min": "-245, 0, 184", "max": "-246, 255, 184"},
+				{"min": "-246, 0, 185", "max": "-247, 255, 185"},
+				{"min": "-248, 0, 186", "max": "-248, 255, 188"},
+				{"min": "-247, 0, 186", "max": "-247, 255, 186"}
+			]
+		},
+		{
+			"id": "purple-wool-room", "type": "meta",
+			"regions": [
+				{"min": "-307, 0, 69", "max": "-317, 255, 57"},
+				{"min": "-308, 0, 59", "max": "-304, 255, 67"},
+				{"min": "-309, 0, 71", "max": "-315, 255, 68"},
+				{"min": "-303, 0, 65", "max": "-304, 255, 60"},
+				{"min": "-306, 0, 69", "max": "-310, 255, 66"},
+				{"min": "-307, 0, 70", "max": "-309, 255, 69"},
+				{"min": "-303, 0, 65", "max": "-303, 255, 65"},
+				{"min": "-303, 0, 64", "max": "-303, 255, 64"},
+				{"min": "-303, 0, 63", "max": "-303, 255, 63"},
+				{"min": "-303, 0, 62", "max": "-303, 255, 62"},
+				{"min": "-305, 0, 68", "max": "-305, 255, 68"},
+				{"min": "-305, 0, 67", "max": "-306, 255, 68"}
+			]
+		}
+	],
+	"buildHeight": 31
+}
