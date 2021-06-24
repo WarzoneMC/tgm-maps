@@ -78,7 +78,7 @@
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["projectile protection:2"], "unbreakable": true}
 			],
             		"effects": [
                 		{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
