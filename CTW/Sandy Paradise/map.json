@@ -76,7 +76,7 @@
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
-        		{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+        			{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "iron boots", "slot": "boots", "unbreakable": true}
@@ -91,18 +91,18 @@
             "drop": true,
             "spawn": false
         },
-				{
-		            "type": "chainmail chestplate",
-		            "death": true,
-		            "drop": true,
-		            "spawn": false
-		    },
-				{
-		            "type": "leather leggings",
-		            "death": true,
-		            "drop": true,
-		            "spawn": false
-		    },
+	{
+	    "type": "chainmail chestplate",
+	    "death": true,
+	    "drop": true,
+	    "spawn": false
+	},
+	{
+	    "type": "leather leggings",
+	    "death": true,
+	    "drop": true,
+	    "spawn": false
+	},
         {
             "type": "iron boots",
             "death": true,
