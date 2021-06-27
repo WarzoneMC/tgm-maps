@@ -164,7 +164,7 @@
         {"id": "red-bridge-right", "type": "cuboid", "min": "-67, 0, -58", "max": "-13, oo, -48"},
 		
         {"id": "red-wool-lane-left", "type": "cuboid", "min": "-79, 0, -92", "max": "-108, oo, -102"},
-		{"id": "red-wool-lane-right", "type": "cuboid", "min": "-79, 0, -48", "max": "-108, oo, -58"},
+	{"id": "red-wool-lane-right", "type": "cuboid", "min": "-79, 0, -48", "max": "-108, oo, -58"},
 
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "103, 0, -80", "max": "129, oo, -70"},
 
@@ -177,7 +177,7 @@
         {"id": "blue-bridge-right", "type": "cuboid", "min": "29, 0, -102", "max": "83, oo, -92"},
 
         {"id": "blue-wool-lane-left", "type": "cuboid", "min": "95, 0, -58", "max": "-124, oo, -48"},
-		{"id": "blue-wool-lane-right", "type": "cuboid", "min": "95, 0, -102", "max": "124, oo, -92"},
+	{"id": "blue-wool-lane-right", "type": "cuboid", "min": "95, 0, -102", "max": "124, oo, -92"},
         
         {
             "id": "buildable-void", "type": "meta",
