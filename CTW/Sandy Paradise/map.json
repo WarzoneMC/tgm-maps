@@ -171,6 +171,8 @@
 		{"id": "green-spawn-protection", "type": "cuboid", "min": "114, 0, 13", "max": "135, oo, -13"},
 		{"id": "void", "type": "meta",
 			"regions": [
+        {"min": "-130, 0, 37", "max": "-122, oo, -37"},
+        {"min": "130, 0, 37", "max": "122, oo, -37"},
 				{"min": "131, 0, -75", "max": "173, oo, 75"},
 				{"min": "-131, 0, -75", "max": "-173, oo, 75"}
 			]
