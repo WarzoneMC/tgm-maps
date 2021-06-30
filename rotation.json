@@ -8,7 +8,6 @@
 			"max": 14
 		},
 		"maps": [
-			"Senex",
 			"Ternio",
 			"Rooted",
 			"Twin Peaks",
@@ -31,8 +30,6 @@
 			"Halcyon I",
 			"Vortex",
 			"Beckam",
-			"Timeless",
-			"Oakley",
 			"Warlock DTW"
 		]
 	},
@@ -76,20 +73,21 @@
 			"Kyoto",
 			"Ricco",
 			"Castles",
-			"Warlock",
 			"Sandstone 2",
 			"Arizona",
 			"Gardens",
 			"Deepwind Jungle",
 			"Brisked KOTH",
-			"Concourse",
 			"SuperCUBE",
 			"Orion",
+			"Concourse",
 			"Abudor II",
 			"Outback",
 			"Aureola",
 			"Antiquis",
-			"Timeless"
+			"Ring Race",
+			"Rendezvous Redux",
+			"Golden Drought III"
 		]
 	},
 	{
@@ -112,7 +110,6 @@
 			"TechnoWar",
 			"Senex 3",
 			"Terrace 2",
-			"Stalactite",
 			"Gyrus CTW",
 			"Ring Race",
 			"A New Day",
@@ -132,6 +129,7 @@
 			"Outback",
 			"Aztec FFA",
 			"Formorgar 2",
+			"Golden Drought III",
 			"Desert Sanctuary"
 		]
 	},
