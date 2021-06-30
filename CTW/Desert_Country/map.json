@@ -145,8 +145,8 @@
 		{"id": "red-woolroom", "min": "527, 0, -115", "max": "541, oo, -99"},
 		{"id": "blue-woolroom", "min": "527, 0, -353", "max": "541, oo, -338"},		
 
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "523, 0, -139", "max": "545, oo, -114"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "523, 0, -339", "max": "545, oo, -313"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "553, 0, -140", "max": "515, oo, -120"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "515, 0, -313", "max": "553, oo, -333"},
 
 		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
