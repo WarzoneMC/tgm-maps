@@ -98,6 +98,9 @@
 		"stone sword", "bow", "arrow", "golden apple",
     		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
 	],
+	"itemkeep": [
+		"golden apple", "arrow"
+	],	
 	"killstreaks": [
 		{
 			"count": 1,
