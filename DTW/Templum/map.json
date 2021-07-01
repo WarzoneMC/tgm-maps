@@ -8,7 +8,7 @@
         {"uuid": "cacd2073-a6af-4fdd-839f-eb622ca28bab", "username": "seraphlamington"},
         {"uuid": "8e793246-440d-41b5-ae33-bbc19bb2ecbc", "username": "MWQ101"}
     ],
-    "version": "1.2",
+    "version": "1.3",
     "gametype": "DTM",
     "teams": [
         {
@@ -130,15 +130,22 @@
     "filters": [
         {
             "type": "build", "evaluate": "deny", "teams": ["yellow", "blue"],
-            "regions": ["yellow-spawn-protection", "yellow-right-side-protection", "yellow-back-protection", "blue-spawn-protection", "blue-right-side-protection", "blue-back-protection"],
+            "regions": ["yellow-spawn-protection", "yellow-right-side-protection", "yellow-back-protection", "yellow-spawn-roof", "blue-spawn-protection", "blue-right-side-protection", "blue-back-protection", "blue-spawn-roof"],
             "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["yellow", "blue"],
+            "regions": ["yellow-spawn-roof", "blue-spawn-roof"],
+            "message": "&cYou may not go over the spawn's roof."
         },
         {"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
     ],
     "regions": [
         {"id": "yellow-spawn-protection", "type": "cuboid", "min": "7, 0, 78", "max": "-7, oo, 105"},
+        {"id": "yellow-spawn-roof", "type": "cuboid", "min": "13, 42, 79", "max": "-13, oo, 105"},
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -78", "max": "7, oo, -105"},
+        {"id": "blue-spawn-roof", "type": "cuboid", "min": "-13, 42, -79", "max": "13, oo, -105"},
         {"id": "yellow-right-side-protection", "type": "cuboid", "min": "61, 0, 111", "max": "57, oo, -111"},
         {"id": "blue-right-side-protection", "type": "cuboid", "min": "-57, 0, -111", "max": "-61, oo, 111"},
         {"id": "yellow-back-protection", "type": "cuboid", "min": "-61, 0, 112", "max": "61, oo, 116"},
