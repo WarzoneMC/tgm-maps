@@ -119,39 +119,60 @@
 			}
 		}
 	],
+	"crafting": {
+		"remove": [
+			"oak boat", "dark oak boat", "spruce boat"
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool", "blue-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool-rooms"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool", "red-wool-protection"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool-rooms"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
-			"regions": ["red-woolroom", "blue-woolroom"],
+			"regions": ["red-wool-rooms", "blue-wool-rooms"],
 			"blocks": ["chest"], "message": "&cYou are not allowed to break the wool chest!"
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool", "red-wool-protection"], "message": "&cYou may not enter this region."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+        	{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool-rooms"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool-rooms"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
-		{"id": "red-wool", "min": "523, 0, -115", "max": "545, oo, -99"},
-		{"id": "blue-wool", "min": "523, 0, -353", "max": "545, oo, -338"},
-		{"id": "red-woolroom", "min": "527, 0, -115", "max": "541, oo, -99"},
-		{"id": "blue-woolroom", "min": "527, 0, -353", "max": "541, oo, -338"},		
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "521, 0, -144", "max": "547, oo, -119"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "521, 0, -309", "max": "547, oo, -334"},
+        	{"id": "red-spawn-void-filter", "type": "cuboid", "min": "520, 8, -132", "max": "548, 14, -135"},
+        	{"id": "blue-spawn-void-filter", "type": "cuboid", "min": "520, 8, -318", "max": "548, 14, -320"},
 
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "553, 0, -140", "max": "515, oo, -120"},
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "515, 0, -313", "max": "553, oo, -333"},
+        	{"id": "red-wool-rooms", "min": "523, 0, -115", "max": "545, oo, -99"},
+		{"id": "blue-wool-rooms", "min": "523, 0, -353", "max": "545, oo, -338"},
+        
+		{"id": "orange-wool-lane", "type": "cuboid", "min": "501, 0, -326", "max": "509, oo, -340"},
+        	{"id": "yellow-wool-lane", "type": "cuboid", "min": "559, 0, -326", "max": "567, oo, -340"},
+		{"id": "purple-wool-lane", "type": "cuboid", "min": "501, 0, -113", "max": "509, oo, -128"},
+        	{"id": "green-wool-lane", "type": "cuboid", "min": "559, 0, -113", "max": "567, oo, -127"},
+        	{"id": "map", "type": "cuboid", "min": "495, 0, -296", "max": "573, oo, -157"},
 
-		{"id": "red-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
-		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
-		
-		{"id": "map", "type": "cuboid", "min": "573, 0, -337", "max": "495, oo, -116"}
+        	{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+                		"blue-spawn-void-filter", "red-spawn-void-filter",
+				"green-wool-lane", "purple-wool-lane",
+                		"orange-wool-lane", "yellow-wool-lane",
+                		"map"
+			]
+		}
 	],
 	"buildHeight": 25
 }
