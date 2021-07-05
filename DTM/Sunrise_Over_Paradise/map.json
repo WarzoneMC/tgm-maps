@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
     ],
-    "version": "1.3",
+    "version": "1.3.1",
     "gametype": "DTM",
     "teams": [
         {
@@ -22,7 +22,7 @@
         }
     ],
     "spawns": [
-        {"teams": ["spectators"], "coords": "-44.5, 35, 0.5, 90"},
+        {"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
         {"teams": ["red"], "coords": "0.5, 3, 80.5, 180"},
         {"teams": ["blue"], "coords": "0.5, 3, -79.5"}
     ],
@@ -79,7 +79,7 @@
                 {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
                 {"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
 
-                {"type": "item", "material": "oak log", "slot": 4, "amount": 64},
+                {"type": "item", "material": "oak log", "slot": 4, "amount": 32},
                 {"type": "item", "material": "glass", "slot": 5, "amount": 32},
                 {"type": "item", "material": "cooked cod", "slot": 8, "amount": 32},
                 {"type": "item", "material": "arrow", "slot": 28, "amount": 1},
@@ -95,7 +95,7 @@
         }
     ],
     "itemremove": [
-        "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow", "oak wood", "obsidian", "string", "wheat seeds",
+        "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow", "oak planks", "obsidian", "string", "wheat seeds",
         {
             "type": "leather helmet",
             "drop": true
