@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "Rockymine"}
 	],
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -85,15 +85,11 @@
 		"chainmail chestplate", "iron boots",
 		{
             "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         }
 	],
 	"killstreaks": [
@@ -110,12 +106,22 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "light-blue-room", "blue-room"],
+			"regions": ["light-blue-room", "blue-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection", "magenta-room", "pink-room"],
+			"regions": ["magenta-room", "pink-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "magenta-room", "pink-room"], "message": "&cYou may not enter this region."},
