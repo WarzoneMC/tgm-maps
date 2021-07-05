@@ -4,7 +4,7 @@
 		{"uuid": "f391227e-626f-4076-a389-95e2b922d167", "username": "Sir_Haribo"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.0",
+	"version": "1.0.1",
     	"teams": [
 		{
 			"id": "purple",
@@ -43,7 +43,7 @@
 		{"teams": ["red"], "coords": "23.5, 57, -744.5, 180"}
 	],
     	"points": {
-        	"target": 100
+        	"target": 50
     	},
     	"time": {
         "limit": 9600
@@ -60,10 +60,10 @@
 				{"material": "golden apple", "slot": 7, "amount": 2},
 				{"material": "cooked porkchop", "slot": 8, "amount": 16},
 
-				{"material": "leather helmet", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-				{"material": "leather leggings", "slot": "chestplate", "unbreakable": true},
-				{"material": "leather boots", "slot": "chestplate", "unbreakable": true}
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
