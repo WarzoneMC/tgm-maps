@@ -127,18 +127,28 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "red-wool-rooms"],
+			"regions": ["red-wool-rooms"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "blue-spawn-protection", "blue-wool-rooms"],
+			"regions": ["blue-wool-rooms"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["red-wool-rooms", "blue-wool-rooms"],
 			"blocks": ["chest"], "message": "&cYou are not allowed to break the wool chest!"
+		},
+        	{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks at spawn!"
+		},
+        	{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
 		},
         	{
 			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
