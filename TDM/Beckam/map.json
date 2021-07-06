@@ -4,7 +4,7 @@
 		{"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.8",
+	"version": "1.0.9",
     	"teams": [
 		{
 			"id": "blue",
@@ -50,7 +50,7 @@
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 50, "particles": false}
+				{"type": "damage resistance", "duration": 80, "amplifier": 50, "particles": false}
 			]
 		}
 	],
@@ -83,9 +83,12 @@
 		}
 	],
 	"regions": [
-		{"id": "map", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, oo, oo"}
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "13, 7, -15", "max": "7, 12, -21"},
+        	{"id": "orange-spawn-protection", "type": "cuboid", "min": "13, 7, 13", "max": "7, 12, 19"}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["map"], "message": "&cYou are not allowed to modify terrain here."}
+        	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+        	{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "orange"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
 	]
 }
