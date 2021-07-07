@@ -113,12 +113,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange"],
-			"regions": ["orange-spawn-protection", "purple-spawn-protection", "orange-wool", "green-wool"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection", "red-wool", "green-wool", "blue-wool", "lime-wool"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple"],
-			"regions": ["orange-spawn-protection", "purple-spawn-protection", "yellow-wool", "magenta-wool"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection", "red-wool", "green-wool", "blue-wool", "lime-wool"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
