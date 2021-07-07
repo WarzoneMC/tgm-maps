@@ -4,7 +4,7 @@
 		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"},
 		{"uuid": "fcbc5806-e7fd-45f1-845a-22f1df93c9bf", "username": "Minii_"}
 	],
-	"version": "1.5.6",
+	"version": "1.5.7",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -112,14 +112,18 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["orange"],
-			"regions": ["orange-spawn-protection", "purple-spawn-protection", "red-wool", "green-wool", "blue-wool", "lime-wool"],
+			"type": "build", "evaluate": "deny", "teams": ["purple", "orange"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "build", "evaluate": "deny", "teams": ["purple"],
-			"regions": ["orange-spawn-protection", "purple-spawn-protection", "red-wool", "green-wool", "blue-wool", "lime-wool"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "purple"],
+			"regions": ["red-wool", "green-wool", "blue-wool", "lime-wool"],
+			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["orange", "purple"],
+			"regions": ["red-wool", "green-wool", "blue-wool", "lime-wool"]
 		},
 
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "blue-wool", "green-wool"], "message": "&cYou may not enter this region."},
