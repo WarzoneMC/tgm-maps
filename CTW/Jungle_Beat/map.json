@@ -4,7 +4,7 @@
 		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"},
 		{"uuid": "fcbc5806-e7fd-45f1-845a-22f1df93c9bf", "username": "Minii_"}
 	],
-	"version": "1.8.0",
+	"version": "1.8.1",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -73,7 +73,6 @@
 				{"material": "vine", "slot": 6, "amount": 12},
 				{"material": "iron ingot", "slot": 7, "amount": 24},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
-				{"material": "golden apple", "slot": 9, "amount": 2},
 				{"material": "arrow", "slot": 28},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -86,9 +85,13 @@
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "glass", "vine", "arrow",
 		"cooked beef", "golden apple", "arrow", "dandelion", "poppy", "wheat seeds", "string",
-		"chainmail chestplate", "iron boots",
-		{
+		"iron boots",
+	{
             "type": "leather helmet",
+            "drop": true
+        },
+	{
+            "type": "chainmail chestplate",
             "drop": true
         },
         {
