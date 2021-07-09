@@ -44,9 +44,9 @@
 				"region": {"min": "-107, 10, 52", "max": "-107, 10, 52"}
 			},
 			{
-				"name": "Lime",
-				"color": "green",
-				"woolcolor": "lime",
+				"name": "Yellow",
+				"color": "yellow",
+				"woolcolor": "yellow",
 				"teams": ["orange"],
 				"region": {"min": "107, 10, 52", "max": "107, 10, 52"}
 			},
@@ -71,7 +71,7 @@
 				{"material": "oak planks", "slot": 4, "amount": 32},
 				{"material": "glass", "slot": 5, "amount": 32},
 				{"material": "vine", "slot": 6, "amount": 12},
-				{"material": "iron ingot", "slot": 7, "amount": 24, "lore": "Use this to craft armor."},
+				{"material": "iron ingot", "slot": 7, "amount": 24},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "golden apple", "slot": 9, "amount": 2},
 				{"material": "arrow", "slot": 28},
@@ -117,7 +117,7 @@
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "purple"],
 			"regions": ["red-wool", "yellow-wool", "blue-wool", "cyan-wool"],
-			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+			"blocks": ["cobweb", "glass", "vine"], "message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "blockPlace", "evaluate": "deny", "teams": ["orange", "purple"],
