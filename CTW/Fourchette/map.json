@@ -84,7 +84,7 @@
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
 				{"material": "iron shovel", "slot": 27, "enchantments": ["efficiency:1"], "unbreakable": true},
 
-				{"material": "oak logs", "slot": 4, "amount": 64},
+				{"material": "oak log", "slot": 4, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "bucket", "slot": 6},
 				{"material": "golden apple", "slot": 7},
