@@ -157,5 +157,5 @@
         {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10},
 	{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
     ],
-    "buildHeight": 35
+    "buildHeight": 28
 }
