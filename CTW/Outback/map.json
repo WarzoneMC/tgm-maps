@@ -139,5 +139,5 @@
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "13, 0, -106", "max": "-13, oo, -69"},
 		{"id": "map", "type": "cuboid", "min": "-43, 0, -72", "max": "43, 255, 72"}
 	],
-	"buildHeight": 26
+	"buildHeight": 31
 }
