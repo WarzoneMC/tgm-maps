@@ -141,8 +141,8 @@
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
-		{"id": "blue-spawn", "type": "cuboid", "min": "-31, 8, -80", "max": "31, 10, -51"},
-		{"id": "red-spawn", "type": "cuboid", "min": "-31, 8, 51", "max": "31, 11, 79"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-31, 8, -80", "max": "31, oo, -51"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-31, 8, 51", "max": "31, oo, 79"},
 		
 		{"id": "map", "type": "cuboid", "min": "-52, 0, 81", "max": "52, oo, -81"}
 	],
