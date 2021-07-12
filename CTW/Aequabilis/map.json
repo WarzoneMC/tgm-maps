@@ -143,10 +143,29 @@
 			"regions": ["orange-spawn", "green-spawn", "yellow-room", "orange-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["orange", "green"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn", "lime-room", "green-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn", "yellow-room", "orange-room"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
+		{"id": "left-bridge", "type": "cuboid", "min": "-253, 0, 322", "max": "-307, oo, 338"},
+		{"id": "center-bridge", "type": "cuboid", "min": "-253, 0, 270", "max": "-307, oo, 286"},
+        	{"id": "center-bridge-horizontal", "type": "cuboid", "min": "-272, 0, 255", "max": "-288, oo, 301"},
+		{"id": "right-bridge", "type": "cuboid", "min": "-253, 0, 218", "max": "-307, oo, 234"},
+        
+        	{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				"left-bridge", "center-bridge", "center-bridge-horizontal",
+                		"right-bridge"
+			]
+		},
+		
 		{"id": "lime-room", "min": "-464, 0, 218", "max": "-448, oo, 234"},
 		{"id": "green-room", "min": "-464, 0, 322", "max": "-448, oo, 338"},
 
