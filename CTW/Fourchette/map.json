@@ -100,7 +100,7 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "oak planks", "golden apple", 
-		"cooked beef", "arrow", "chainmail chestplate", "iron boots",
+		"bucket", "cooked cod", "glass", "oak log", "arrow", "chainmail chestplate", "iron boots",
 		{
             "type": "leather helmet",
             "death": true,
@@ -155,22 +155,48 @@
 			"type": "enter", "evaluate": "deny", "teams": ["red"],
 			"regions": ["blue-spawn-protection", "orange-wool", "lime-wool", "magenta-wool"],
 			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
 		}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "126, 0, 168", "max": "152, oo, 199"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-8, 0, 198", "max": "-34, oo, 167"},
 
+		{"id": "red-horizontal-water-lane", "type": "cuboid", "min": "161, 0, 134", "max": "173, oo, 234"},
+		{"id": "red-orange-wool-lane", "type": "cuboid", "min": "151, 0, 207", "max": "173, oo, 219"},
+		{"id": "red-lime-wool-lane", "type": "cuboid", "min": "151, 0, 149", "max": "173, oo, 161"},
+        
+		{"id": "blue-horizontal-water-lane", "type": "cuboid", "min": "-43, 0, 134", "max": "-55, oo, 234"},
+		{"id": "blue-yellow-wool-lane", "type": "cuboid", "min": "-33, 0, 149", "max": "-55, oo, 161"},
+		{"id": "blue-green-wool-lane", "type": "cuboid", "min": "-33, 0, 207", "max": "-55, oo, 219"},
+        
+		{"id": "middle-region", "type": "cuboid", "min": "11, 0, 171", "max": "107, oo, 197"},
+
+		{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				"red-horizontal-water-lane", "blue-horizontal-water-lane",
+				"red-orange-wool-lane", "red-lime-wool-lane",
+				"blue-yellow-wool-lane", "blue-green-wool-lane",
+				"middle-region"
+			]
+		},
+        
 		{"id": "green-wool", "type": "cuboid", "min": "-48, 0, 263", "max": "-82, oo, 288"},
-		{"id": "light-blue-wool", "type": "cuboid", "min": "-100, 0, 201", "max": "-127, oo, 164"},
-		{"id": "yellow-wool", "type": "cuboid", "min": "-78, 0, 106", "max": "-43, oo, 75"},
+		{"id": "light-blue-wool", "type": "cuboid", "min": "-101, 0, 201", "max": "-127, oo, 164"},
+		{"id": "yellow-wool", "type": "cuboid", "min": "-78, 0, 105", "max": "-43, oo, 75"},
 
 		{"id": "orange-wool", "type": "cuboid", "min": "199, 0, 263", "max": "165, oo, 289"},
-		{"id": "lime-wool", "type": "cuboid", "min": "167, 0, 106", "max": "201, oo, 74"},
+		{"id": "lime-wool", "type": "cuboid", "min": "167, 0, 105", "max": "201, oo, 74"},
 		{"id": "magenta-wool", "type": "cuboid", "min": "219, 0, 167", "max": "253, oo, 202"}
 	],
 	"gamerules": {
-        "doDaylightCycle": true
-    },
+		"doDaylightCycle": true
+	},
 	"buildHeight": 35
 }
