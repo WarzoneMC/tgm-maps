@@ -150,12 +150,33 @@
 		{
 			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection"]
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
 		}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "11, 1, -86", "max": "27, 16, -70"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "11, 1, 76", "max": "27, 16, 92"},
 
+		{"id": "right-red-monument", "type": "cuboid", "min": "36, 0, -59", "max": "46, oo, -107"},
+		{"id": "left-red-monument", "type": "cuboid", "min": "-8, 0, -59", "max": "2, oo, -107"},
+        	{"id": "right-blue-monument", "type": "cuboid", "min": "2, 0, 65", "max": "-8, oo, 113"},
+        	{"id": "left-blue-monument", "type": "cuboid", "min": "36, 0, 65", "max": "46, oo, 113"},
+		{"id": "map", "type": "cuboid", "min": "-8, 0, -58", "max": "46, oo, 64"},
+        
+        	{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				"right-red-monument", "left-red-monument",
+                		"right-blue-monument", "left-blue-monument",
+                		"map"
+			]
+		},
+		
 		{"id": "chests", "type": "meta", "regions": [
 			{"min": "1, 23, -13", "max": "2, 23, -13"},
 			{"min": "36, 23, -13", "max": "37, 23, -13"},
