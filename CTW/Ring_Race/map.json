@@ -133,9 +133,21 @@
 			"regions": ["purple-spawn-protection", "orange-spawn-protection", "lime-room", "blue-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-
-		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "yellow-room", "red-room"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "lime-room", "blue-room"], "message": "&cYou may not enter this region."},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["orange"], 
+			"regions": ["purple-spawn-protection", "yellow-room", "red-room"], 
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["purple"], 
+			"regions": ["orange-spawn-protection", "lime-room", "blue-room"], 
+			"message": "&cYou may not enter this region."
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["orange", "purple"],
+			"regions": ["lime-room", "blue-room", "yellow-room", "red-room"],
+			"blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"
+		},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["orange", "purple"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
