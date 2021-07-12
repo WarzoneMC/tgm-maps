@@ -5,7 +5,7 @@
 		{"uuid": "08724344-a5af-4283-99fa-5a7bfb39b137", "username": "OllieGamerZ"},
 		{"uuid": "b0900577-7604-4dc7-9e82-f431da31e456", "username": "chinkytwinky"}
 	],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -53,28 +53,28 @@
 				"name": "Alpha",
 				"region": {
 					"min": {"x": -4, "y": 5, "z": -85},
-					"max": {"x": 4, "y": 10, "z": -93}
+					"max": {"x": 4, "y": 30, "z": -93}
 				}
 			},
 			{
 				"name": "Beta",
 				"region": {
 					"min": {"x": -46, "y": 5, "z": -85},
-					"max": {"x": -54, "y": 10, "z": -93}
+					"max": {"x": -54, "y": 30, "z": -93}
 				}
 			},
 			{
 				"name": "Gamma",
 				"region": {
 					"min": {"x": -4, "y": 5, "z": -43},
-					"max": {"x": 4, "y": 10, "z": -35}
+					"max": {"x": 4, "y": 30, "z": -35}
 				}
 			},
 			{
 				"name": "Delta",
 				"region": {
 					"min": {"x": -46, "y": 5, "z": -43},
-					"max": {"x": -54, "y": 10, "z": -35}
+					"max": {"x": -54, "y": 30, "z": -35}
 				}
 			}
 		]
