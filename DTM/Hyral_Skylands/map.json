@@ -1,0 +1,148 @@
+{
+	"name": "Hyral Skylands",
+	"authors": [
+		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "Stealth5061"}
+	],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 24
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 24
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 81, 0.5"},
+		{"teams": ["red"], "coords": "0.5, 32, -87.5"},
+		{"teams": ["blue"], "coords": "0.5, 32, 88.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Right Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-36, 33, 44",
+					"max": "-37, 30, 43" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "38, 33, 44",
+					"max": "37, 30, 43" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "38, 33, -42",
+					"max": "37, 30, -43"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-36, 33, -42",
+					"max": "-37, 30, -43"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "enchantments": ["efficiency:2"], "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 32},
+				{"type": "item", "material": "gold nugget", "slot": 7, "amount": 7},
+				{"type": "item", "material": "apple", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+                {"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
+            ]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "glass", "arrow", "apple",
+		"obsidian", "wheat seeds",
+		{
+            "type": "iron helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{
+            "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red", "blue"],
+            "regions": ["map"], "message": "&cYou cannot build outside of the map."
+        }
+	],
+	"regions": [
+		{"id": "red-spawn", "type": "cylinder", "base": "0, 0, -88", "radius": 5, "height": 70 },
+		{"id": "blue-spawn", "type": "cylinder", "base": "0, 0, 88", "radius": 5, "height": 70 },
+		{"id": "map", "type": "cylinder", "base": "0, 0, 0", "radius": 100, "height": 70 }
+	],
+	"buildHeight": 69
+}
