@@ -124,13 +124,16 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "purple-spawn-bridge-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "orange-spawn-bridge-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "orange-spawn-bridge-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["orange", "purple"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "type": "cylinder", "base": "36, 13, -879", "radius": 9, "height": 255},
 		{"id": "purple-spawn-protection", "type": "cylinder", "base": "128, 13, -879", "radius": 9, "height": 255},
 		{"id": "orange-spawn-bridge-protection", "type": "cuboid", "min": "14, 8, -872", "max": "28, oo, -886"},
-		{"id": "purple-spawn-bridge-protection", "type": "cuboid", "min": "136, 8, -872", "max": "150, oo, -886"}
+		{"id": "purple-spawn-bridge-protection", "type": "cuboid", "min": "136, 8, -872", "max": "150, oo, -886"},
+		
+		{"id": "map", "type": "cuboid", "min": "36, 0, -940", "max": "128, oo, -818"}
 	],
 	"buildHeight": 30
 }
