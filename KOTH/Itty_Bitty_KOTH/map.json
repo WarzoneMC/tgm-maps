@@ -4,7 +4,7 @@
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
 		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "KOTH",
 	"stats": {"disable": true},
 	"teams": [
@@ -77,10 +77,44 @@
             "drop": true
         }
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."}
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["global"],
+			"blocks": [
+				"stone bricks", "stone brick stairs", "stone brick slab", "ladder",
+				"tnt", "gravel", "stone pressure plate", "blue terracotta",
+				"red terracotta"
+			],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["hill-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
-		{"id": "hill-protection", "min": "-2, 0, -2", "max": "2, oo, 2"}
-	]
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-69, 2, -10", "max": "-80, oo, 10"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "69, 2, -10", "max": "80, oo, 10"},
+		{"id": "hill-protection", "type": "cuboid", "min": "-4, 0, 4", "max": "4, oo, -4"},
+		{"id": "map", "type": "cuboid", "min": "-81, 0, -15", "max": "81, oo, 15"}
+	],
+	"buildHeight": 8
 }
