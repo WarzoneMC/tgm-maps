@@ -96,14 +96,9 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"],
+			"type": "blockBreak", "evaluate": "allow", "teams": ["blue", "red"],
 			"regions": ["global"],
-			"blocks": [
-				"stone bricks", "stone brick stairs", "stone brick slab", "ladder",
-				"tnt", "gravel", "stone pressure plate", "blue terracotta",
-				"red terracotta"
-			],
-			"message": "&cYou are not allowed to modify terrain here."
+			"blocks": ["glass"], "message": "&cYou may only break glass!"
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
