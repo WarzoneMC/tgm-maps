@@ -4,7 +4,7 @@
         {"uuid": "cc2292de-fcb3-412d-9319-f3177f73b605", "username": "cs_"}
     ],
     "gametype": "Blitz",
-    "version": "1.1.3",
+    "version": "1.1.1",
     "stats": {"disable": true},
     "teams": [
         {
@@ -94,11 +94,18 @@
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "41.5, 23, 0.5, 90"},
-        {
-            "teams": ["red", "pink", "orange", "yellow", "green", "lime", "aqua", "cyan", "indigo", "blue", "purple", "magenta"],
-            "region": "tnt",
-            "face-coordinates": "0.5, 15, 0.5"
-        }
+        {"teams": ["red"], "coords": "22.5, 15, 0.5, 90"},
+        {"teams": ["pink"], "coords": "8.5, 15, 8.5, -45"},
+        {"teams": ["orange"], "coords": "17.5, 15, 17.5, 135"},
+        {"teams": ["yellow"], "coords": "0.5, 15, 22.5, 180"},
+        {"teams": ["green"], "coords": "-8.5, 15, 8.5, 45"},
+        {"teams": ["lime"], "coords": "-17.5, 15, 17.5, -135"},
+        {"teams": ["aqua"], "coords": "-22.5, 15, 0.5, -90"},
+        {"teams": ["cyan"], "coords": "-8.5, 15, -8.5, 135"},
+        {"teams": ["dark-blue"], "coords": "-17.5, 15, -17.5, -45"},
+        {"teams": ["blue"], "coords": "0.5, 15, -22.5"},
+        {"teams": ["magenta"], "coords": "8.5, 15, -8.5, -135"},
+        {"teams": ["purple"], "coords": "17.5, 15, -17.5, 45"}
     ],
     "kits": [
         {
@@ -108,12 +115,9 @@
         }
     ],
     "time": {
-        "limit": 300
+        "limit": 600
     },
     "gamerules": {
         "doTileDrops": false
-    },
-    "regions": [
-        {"id": "tnt", "type": "cylinder", "base": "0.5, 15, 0.5", "radius": 30, "height": 1}
-    ]
+    }
 }
