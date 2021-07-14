@@ -4,7 +4,7 @@
 		{"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.9",
+	"version": "1.1.0",
     	"teams": [
 		{
 			"id": "blue",
@@ -83,8 +83,20 @@
 		}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "13, 7, -15", "max": "7, 12, -21"},
-        	{"id": "orange-spawn-protection", "type": "cuboid", "min": "13, 7, 13", "max": "7, 12, 19"}
+		{
+			"id": "blue-spawn-protection", "type": "meta", 
+			"regions": [
+				{"min": "13, 7, -14", "max": "7, 12, -21"},
+				{"min": "0, 7, -24", "max": "-7, 12, -18"}
+			]
+		},
+		{
+			"id": "orange-spawn-protection", "type": "meta", 
+			"regions": [
+				{"min": "13, 7, 13", "max": "7, 12, 19"},
+				{"min": "-6, 7, 22", "max": "1, 12, 17"}
+			]
+		}
 	],
 	"filters": [
         	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
