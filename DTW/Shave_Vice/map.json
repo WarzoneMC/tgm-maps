@@ -75,7 +75,7 @@
 		{
 			"name": "Default",
 			"items": [
-				{"type": "item", "material": "shears", "slot": 0, "displayName": "Razor", "enchantments": ["sharpness:5", "efficiency:1"], "unbreakable": true},
+				{"type": "item", "material": "shears", "slot": 0, "displayName": "&bRazor", "enchantments": ["sharpness:5", "efficiency:1"], "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "stone pickaxe", "slot": 2, "enchantments": ["efficiency:3"], "unbreakable": true},
 				{"type": "item", "material": "arrow", "slot": 3, "amount": 32},
