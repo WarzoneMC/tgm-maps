@@ -133,7 +133,7 @@
 		{"id": "orange-spawn-bridge-protection", "type": "cuboid", "min": "14, 8, -872", "max": "28, oo, -886"},
 		{"id": "purple-spawn-bridge-protection", "type": "cuboid", "min": "136, 8, -872", "max": "150, oo, -886"},
 		
-		{"id": "map", "type": "cuboid", "min": "36, 0, -940", "max": "128, oo, -818"}
+		{"id": "map", "type": "cuboid", "min": "15, 0, -940", "max": "148, oo, -818"}
 	],
 	"buildHeight": 30
 }
