@@ -123,7 +123,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple", "orange"],
-			"regions": ["purple-spawn-protection", "orange-spawn-protection"],
+			"regions": ["purple-spawn-protection", "orange-spawn-protection", "purple-spawn-top-protection", "orange-spawn-top-protection"],
 			"message": "&cDon't touch Vice!"
 		},
 		{
@@ -142,20 +142,12 @@
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["purple", "orange"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
-		{
-			"id": "purple-spawn-protection", "type": "meta", 
-			"regions": [
-				{"min": "-2, 26, -32", "max": "3, 29, -27"},
-				{"min": "-1, 30, -28", "max": "2, 31, -31"}
-			]
-		},
-		{
-			"id": "orange-spawn-protection", "type": "meta", 
-			"regions": [
-				{"min": "-2, 26, 32", "max": "3, 29, 27"},
-				{"min": "-1, 30, 28", "max": "2, 31, 31"}
-			]
-		},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-2, 26, -32", "max": "3, 29, -27"},
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "-2, 26, 32", "max": "3, 29, 27"},
+        
+        	{"id": "purple-spawn-top-protection", "type": "cuboid", "min": "-1, 30, -28", "max": "2, 31, -31"},
+        	{"id": "orange-spawn-top-protection", "type": "cuboid", "min": "-1, 30, 28", "max": "2, 31, 31"},
+		
 		{"id": "purple-team-vice", "type": "cuboid", "min": "8, 0, -24", "max": "-9, oo, -41"},
 		{"id": "orange-team-vice", "type": "cuboid", "min": "-8, 0, 24", "max": "9, oo, 41"},
         
