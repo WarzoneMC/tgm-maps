@@ -3,8 +3,34 @@
 	"authors": [
 		{"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
 	],
-	"version": "1.0",
+	"version": "1.1.2",
 	"gametype": "KOTH",
+	"points": {
+		"target": 1000
+	},
+	"time": {
+        "broadcasts": [
+            {
+                "message": "&0[&fTIP&0] &4Trade emeralds with villagers at spawn for better gear!",
+                "interval": 180,
+                "repeat": true,
+                "commands": []
+            },
+            {
+                "message": "&0[&fTIP&0] &4There are portals near hills that you can use to easily return to your spawn!",
+                "interval": 120,
+                "repeat": true,
+                "commands": []
+            },
+            {
+                "message": "&0[&fTIP&0] &4Centre Hill is worth the most points!",
+                "interval": 5,
+                "repeat": false,
+                "commands": []
+            }
+
+        ]
+    },
 	"teams": [
 		{
 			"id": "Pink",
@@ -16,7 +42,7 @@
 		{
 			"id": "blue",
 			"name": "Blue",
-			"color": "aqua",
+			"color": "blue",
 			"min": 1,
 			"max": 15
 		},
@@ -48,13 +74,14 @@
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "bread", "slot": 7, "amount": 48},
 				{"type": "item", "material": "emerald", "slot": 6, "amount": 1},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
+				{"type": "item", "material": "cooked beef", "slot": 7, "amount": 48},
 				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
+				
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "enchantments": ["projectile_protection:2"], "unbreakable": true},
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
@@ -66,24 +93,31 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8},
 					{"material": "emerald", "amount": 1}
 				]
 			}
 		}
 	],
 	"itemkeep": [
-        "emerald"
+        "chainmail helmet", "chainmail chestplate",
+        "chainmail boots", "golden boots",
+        "potion", "splash potion", "ender pearl",
+        "arrow", "blaze rod", "iron sword",
+        "golden apple"
     ],
 	"itemremove": [
-		"stone sword", "bow", "bread", "golden apple", "blaze rod", "iron sword",
-		"chainmail helmet", "chainmail chestplate", "chainmail boots", "golden boots",
-		"potion", "splash potion", "ender pearl", "chainmail leggings",
+		"stone sword", "bow", "cooked beef",
 		{
             "type": "leather helmet",
             "drop": true
         },
         {
             "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "chainmail leggings",
             "drop": true
         },
         {
@@ -96,7 +130,7 @@
 			{
 				"name": "Centre Hill",
 				"time": 7,
-				"points": 2.5,
+				"points": 2,
 				"region": {
 					"type": "cylinder", "base": "206, 4, -33", "radius": 6, "height": 35
 				}
@@ -135,21 +169,46 @@
 			}
 		]
 	},
-	"points": {
-		"target": 900
-	},
 	"regions": [
-		{"id": "whole-field", "min": "104, 0, -134", "max": "308, 55, 69"},
 		{"id": "pink-field", "min": "221.5, 11, -96.5", "max": "191, 55, -134"},
 		{"id": "blue-field", "min": "308, 11, -47", "max": "270.5, 55, -17.5"},
 		{"id": "yellow-field", "min": "142.5, 11, -47.5", "max": "104, 55, -17"},
-		{"id": "orange-field", "min": "191.5, 11, 31.5", "max": "221, 55, 69"}
+		{"id": "orange-field", "min": "191.5, 11, 31.5", "max": "221, 55, 69"},
+
+		{"id": "yhill-portal", "min": "162.5, 18, 18.5", "max": "164.5, 15, 19.5"},
+		{"id": "phill-portal", "min": "155.5, 18, -77", "max": "154, 15, -74.5"}, 
+		{"id": "bhill-portal", "min": "250.5, 18, -83.5", "max": "248.5, 15, -84.5"},
+		{"id": "ohill-portal", "min": "257.5, 18, 11.5", "max": "258.5, 15, 9.5"}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["pink", "blue", "yellow", "orange"], "regions": ["whole-field"], "message": "&cYou are not allowed to modify terrain!"},
+		{"type": "build", "evaluate": "deny", "teams": ["pink", "blue", "yellow", "orange"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue", "yellow", "orange"], "regions": ["pink-field"], "message": "&cYou may not enter Pink's base!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["pink", "yellow", "orange"], "regions": ["blue-field"], "message": "&cYou may not enter Blue's base!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["pink", "blue", "orange"], "regions": ["yellow-field"], "message": "&cYou may not enter Yellow's base!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["pink", "blue", "yellow"], "regions": ["orange-field"], "message": "&cYou may not enter Orange's base!"}
-	]
+	],
+	"gamerules": {
+        "doDaylightCycle": true
+    },
+    "portals": [ 
+        {"from": "yhill-portal", "to": "303.5, 20, -32.5, 90", "teams": ["blue"], "sound": true},
+        {"from": "yhill-portal", "to": "206.5, 20, -129.5, 0", "teams": ["pink"], "sound": true},
+        {"from": "yhill-portal", "to": "109.5, 20, -32.5, -90", "teams": ["yellow"], "sound": true},
+        {"from": "yhill-portal", "to": "206.5, 20, 64.5, 180", "teams": ["orange"], "sound": true},
+
+        {"from": "phill-portal", "to": "303.5, 20, -32.5, 90", "teams": ["blue"], "sound": true},
+        {"from": "phill-portal", "to": "206.5, 20, -129.5, 0", "teams": ["pink"], "sound": true},
+        {"from": "phill-portal", "to": "109.5, 20, -32.5, -90", "teams": ["yellow"], "sound": true},
+        {"from": "phill-portal", "to": "206.5, 20, 64.5, 180", "teams": ["orange"], "sound": true},
+
+        {"from": "bhill-portal", "to": "303.5, 20, -32.5, 90", "teams": ["blue"], "sound": true},
+        {"from": "bhill-portal", "to": "206.5, 20, -129.5, 0", "teams": ["pink"], "sound": true},
+        {"from": "bhill-portal", "to": "109.5, 20, -32.5, -90", "teams": ["yellow"], "sound": true},
+        {"from": "bhill-portal", "to": "206.5, 20, 64.5, 180", "teams": ["orange"], "sound": true},
+
+        {"from": "ohill-portal", "to": "303.5, 20, -32.5, 90", "teams": ["blue"], "sound": true},
+        {"from": "ohill-portal", "to": "206.5, 20, -129.5, 0", "teams": ["pink"], "sound": true},
+        {"from": "ohill-portal", "to": "109.5, 20, -32.5, -90", "teams": ["yellow"], "sound": true},
+        {"from": "ohill-portal", "to": "206.5, 20, 64.5, 180", "teams": ["orange"], "sound": true}
+    ]
 }
