@@ -73,7 +73,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "shears", "oak leaves", "arrow", "golden carrot",
-		"chainmail chestplate",
+		"chainmail chestplate", "spruce leaves",
 		{
             "type": "leather helmet",
             "drop": true
@@ -115,12 +115,12 @@
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "purple"],
 			"regions": ["global"],
-			"blocks": ["oak leaves"], "message": "&cYou may only break leaves!"
+			"blocks": ["oak leaves", "spruce leaves"], "message": "&cYou may only break leaves!"
 		},
 		{
 			"type": "blockPlace", "evaluate": "allow", "teams": ["orange", "purple"],
 			"regions": ["global"],
-			"blocks": ["oak leaves"], "message": "&cYou may only place leaves!"
+			"blocks": ["oak leaves", "spruce leaves"], "message": "&cYou may only place leaves!"
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],
