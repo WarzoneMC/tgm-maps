@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
     ],
-    "version": "1.3.1",
+    "version": "1.3.2",
     "gametype": "DTM",
     "teams": [
         {
@@ -31,7 +31,7 @@
             {
                 "name": "Monument B",
                 "teams": ["blue"],
-                "materials": ["obsidian"],
+                "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
                     "min": "45, 8, -51",
                     "max": "46, 6, -50"
@@ -41,7 +41,7 @@
             {
                 "name": "Monument A",
                 "teams": ["blue"],
-                "materials": ["obsidian"],
+                "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
                     "min": "-45, 8, -51",
                     "max": "-44, 6, -50"
@@ -51,7 +51,7 @@
             {
                 "name": "Monument B",
                 "teams": ["red"],
-                "materials": ["obsidian"],
+                "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
                     "min": "-45, 8, 51",
                     "max": "-44, 6, 52"
@@ -61,12 +61,141 @@
             {
                 "name": "Monument A",
                 "teams": ["red"],
-                "materials": ["obsidian"],
+                "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
                     "min": "45, 8, 51",
                     "max": "46, 6, 52"
                 },
                 "health": 2
+            }
+        ]
+    },
+    "time": {
+        "broadcasts": [
+            {
+                "message": "&41 minute till mounments change to Beacons!",
+                "interval": 840,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&420 seconds till mounments change!",
+                "interval": 880,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&43 seconds till mounments change!",
+                "interval": 897,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&42 seconds till mounments change!",
+                "interval": 898,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&41 seconds till mounments change!",
+                "interval": 899,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&4Monuments changing to Beacons",
+                "interval": 900,
+                "repeat": false,
+                "commands": [
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:beacon",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:beacon",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:beacon",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:beacon"
+                ]
+            },
+
+            {
+                "message": "&41 minute till mounments change to Coal Blocks!",
+                "interval": 1140,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&420 seconds till mounments change!",
+                "interval": 1180,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&43 seconds till mounments change!",
+                "interval": 1197,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&42 seconds till mounments change!",
+                "interval": 1198,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&41 seconds till mounments change!",
+                "interval": 1199,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&4Monuments changing to Coal Blocks",
+                "interval": 1200,
+                "repeat": false,
+                "commands": [
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:coal_block",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:coal_block",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:coal_block",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:coal_block"
+                ]
+            },
+
+            {
+                "message": "&41 minute till mounments change to Black Terracotta!",
+                "interval": 1140,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&420 seconds till mounments change!",
+                "interval": 1180,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&43 seconds till mounments change!",
+                "interval": 1197,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&42 seconds till mounments change!",
+                "interval": 1198,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&41 seconds till mounments change!",
+                "interval": 1199,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&4Monuments changing to Black Terracotta",
+                "interval": 1200,
+                "repeat": false,
+                "commands": [
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:black_terracotta",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:black_terracotta",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:black_terracotta"
+                ]
             }
         ]
     },
@@ -95,7 +224,8 @@
         }
     ],
     "itemremove": [
-        "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow", "oak planks", "obsidian", "string", "wheat seeds",
+        "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow",
+        "oak planks", "obsidian", "beacon", "black_terracotta", "string", "wheat seeds",
         {
             "type": "leather helmet",
             "drop": true
@@ -125,7 +255,7 @@
         }
     ],
     "regions": [
-        {"id": "red-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 10.5, "height": 25 },
+        {"id": "red-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 10.5, "height": 25},
         {"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 10.5, "height": 25 },
         {"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
     ],
