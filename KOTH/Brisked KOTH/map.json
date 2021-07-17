@@ -113,6 +113,16 @@
 			"message": "&cYou may not enter the enemy spawn."
 		},
 		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "purple"],
+			"regions": ["global"],
+			"blocks": ["oak leaves"], "message": "&cYou may only break leaves!"
+		},
+		{
+			"type": "blockPlace", "evaluate": "allow", "teams": ["orange", "purple"],
+			"regions": ["global"],
+			"blocks": ["oak leaves"], "message": "&cYou may only place leaves!"
+		},
+		{
 			"type": "build", "evaluate": "deny", "teams": ["orange", "purple"],
 			"regions": [
 				"orange-spawn-protection", "purple-spawn-protection",
