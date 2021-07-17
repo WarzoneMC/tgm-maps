@@ -27,6 +27,9 @@
 		{"teams": ["cyan"], "coords": "-128.5, 73, 0.5, -90, 0"},
 		{"teams": ["green"], "coords": "129.5, 73, 0.5, 90, 0"}
 	],
+	"time": {
+		"limit": 1800
+	},
 	"ctw": {
 		"wools": [
 			{
