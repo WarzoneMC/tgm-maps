@@ -28,6 +28,9 @@
 		{"teams": ["blue"], "coords": "-74.5, 2, 0.5, -90"},
 		{"teams": ["red"], "coords": "75.5, 2, 0.5, 90"}
 	],
+	"time": {
+		"limit": 600
+	},
 	"points": {
 		"target": 600
 	},

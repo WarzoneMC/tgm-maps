@@ -27,6 +27,9 @@
 		{"teams": ["orange"], "coords": "36.5, 18, -878.5, 90"},
 		{"teams": ["purple"], "coords": "128.5, 18, -878.5, -90"}
 	],
+	"time": {
+		"limit": 1800
+	},
 	"dtm": {
 		"monuments": [
 			{
