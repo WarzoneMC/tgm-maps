@@ -28,6 +28,9 @@
 		{"teams": ["red"], "coords": "149.5, 7, 184.5, 90"},
 		{"teams": ["blue"], "coords": "-30.5, 7, 184.5, -90"}
 	],
+	"time": {
+		"limit": 1800
+	},
 	"ctw": {
 		"wools": [
 			{
