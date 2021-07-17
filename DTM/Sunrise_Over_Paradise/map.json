@@ -73,37 +73,37 @@
     "time": {
         "broadcasts": [
             {
-                "message": "&41 minute till mounments change to Beacons!",
+                "message": "&61 minute till mounments change to Beacons!",
                 "interval": 840,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&420 seconds till mounments change!",
+                "message": "&620 seconds till mounments change!",
                 "interval": 880,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&43 seconds till mounments change!",
+                "message": "&63 seconds till mounments change!",
                 "interval": 897,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&42 seconds till mounments change!",
+                "message": "&62 seconds till mounments change!",
                 "interval": 898,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&41 seconds till mounments change!",
+                "message": "&61 seconds till mounments change!",
                 "interval": 899,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&4Monuments changing to Beacons",
+                "message": "&6Monuments changing to Beacons",
                 "interval": 900,
                 "repeat": false,
                 "commands": [
@@ -115,37 +115,37 @@
             },
 
             {
-                "message": "&41 minute till mounments change to Coal Blocks!",
+                "message": "&61 minute till mounments change to Coal Blocks!",
                 "interval": 1140,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&420 seconds till mounments change!",
+                "message": "&620 seconds till mounments change!",
                 "interval": 1180,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&43 seconds till mounments change!",
+                "message": "&63 seconds till mounments change!",
                 "interval": 1197,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&42 seconds till mounments change!",
+                "message": "&62 seconds till mounments change!",
                 "interval": 1198,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&41 seconds till mounments change!",
+                "message": "&61 seconds till mounments change!",
                 "interval": 1199,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&4Monuments changing to Coal Blocks",
+                "message": "&6Monuments changing to Coal Blocks",
                 "interval": 1200,
                 "repeat": false,
                 "commands": [
@@ -157,37 +157,37 @@
             },
 
             {
-                "message": "&41 minute till mounments change to Black Terracotta!",
+                "message": "&61 minute till mounments change to Black Terracotta!",
                 "interval": 1140,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&420 seconds till mounments change!",
+                "message": "&620 seconds till mounments change!",
                 "interval": 1180,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&43 seconds till mounments change!",
+                "message": "&63 seconds till mounments change!",
                 "interval": 1197,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&42 seconds till mounments change!",
+                "message": "&62 seconds till mounments change!",
                 "interval": 1198,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&41 seconds till mounments change!",
+                "message": "&61 seconds till mounments change!",
                 "interval": 1199,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&4Monuments changing to Black Terracotta",
+                "message": "&6Monuments changing to Black Terracotta",
                 "interval": 1200,
                 "repeat": false,
                 "commands": [
