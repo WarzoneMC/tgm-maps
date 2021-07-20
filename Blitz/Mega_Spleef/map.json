@@ -1,0 +1,256 @@
+{
+    "name": "Mega Spleef",
+    "authors": [
+        {"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
+    ],
+    "gametype": "Blitz",
+    "version": "1.0.0",
+    "stats": {"disable": true},
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark_red",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "orange",
+            "name": "Orange",
+            "color": "gold",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "yellow",
+            "name": "Yellow",
+            "color": "yellow",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "lime",
+            "name": "Lime",
+            "color": "green",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "green",
+            "name": "Green",
+            "color": "dark_green",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "cyan",
+            "name": "Cyan",
+            "color": "dark_aqua",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 0,
+            "max": 4
+        },
+        {
+            "id": "purple",
+            "name": "Purple",
+            "color": "dark_purple",
+            "min": 0,
+            "max": 4
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "260.5, 24, 12.5, 180"},
+
+        {"teams": ["red"], "coords": "208.5, 2, -40.5, 135"},
+        {"teams": ["red"], "coords": "312.5, 2, -40.5, -135"},
+        {"teams": ["red"], "coords": "312.5, 2, 63.5, -45"},
+        {"teams": ["red"], "coords": "208.5, 2, 63.5, 45"},
+
+        {"teams": ["orange"], "coords": "260.5, 2, 105.5, 180"},
+        {"teams": ["orange"], "coords": "166.5, 2, 11.5, -90"},
+        {"teams": ["orange"], "coords": "260.5, 2, -82.5"},
+        {"teams": ["orange"], "coords": "354.5, 2, 11.5, 90"},
+
+        {"teams": ["yellow"], "coords": "333.5, 2, 21.5, -135"},
+        {"teams": ["yellow"], "coords": "250.5, 2, 84.5, -45"},
+        {"teams": ["yellow"], "coords": "187.5, 2, 1.5, 45"},
+        {"teams": ["yellow"], "coords": "270.5, 2, -61.5, 135"},
+
+        {"teams": ["lime"], "coords": "286.5, 2, -79.5"},
+        {"teams": ["lime"], "coords": "351.5, 2, 37.5, 90"},
+        {"teams": ["lime"], "coords": "234.5, 2, 102.5, 180"},
+        {"teams": ["lime"], "coords": "169.5, 2, -14.5, -90"},
+
+        {"teams": ["green"], "coords": "179.5, 2, -39.5, -45"},
+        {"teams": ["green"], "coords": "311.5, 2, -69.5, 45"},
+        {"teams": ["green"], "coords": "341.5, 2, 62.5, 135"},
+        {"teams": ["green"], "coords": "209.5, 2, 92.5, -135"},
+
+        {"teams": ["cyan"], "coords": "179.5, 2, 62.5, -135"},
+        {"teams": ["cyan"], "coords": "209.5, 2, -69.5, -45"},
+        {"teams": ["cyan"], "coords": "341.5, 2, -39.5, 45"},
+        {"teams": ["cyan"], "coords": "311.5, 2, 92.5, 135"},
+
+        {"teams": ["blue"], "coords": "286.5, 2, 102.5, 180"},
+        {"teams": ["blue"], "coords": "169.5, 2, 37.5, -90"},
+        {"teams": ["blue"], "coords": "234.5, 2, -79.5"},
+        {"teams": ["blue"], "coords": "351.5, 2, -14.5, 90"},
+
+        {"teams": ["purple"], "coords": "333.5, 2, 1.5, -45"},
+        {"teams": ["purple"], "coords": "270.5, 2, 84.5, 45"},
+        {"teams": ["purple"], "coords": "187.5, 2, 21.5, 135"},
+        {"teams": ["purple"], "coords": "250.5, 2, -61.5, -135"}    
+    ],
+    "kits": [
+        {
+            "name": "Parent",
+            "items": [
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
+            ]
+        },
+        {
+            "name": "Red",
+            "teams": ["red"],
+            "items": [
+                {"type": "item", "material": "red_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Orange",
+            "teams": ["orange"],
+            "items": [
+                {"type": "item", "material": "orange_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Yellow",
+            "teams": ["yellow"],
+            "items": [
+                {"type": "item", "material": "yellow_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Lime",
+            "teams": ["lime"],
+            "items": [
+                {"type": "item", "material": "lime_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Green",
+            "teams": ["green"],
+            "items": [
+                {"type": "item", "material": "green_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Cyan",
+            "teams": ["cyan"],
+            "items": [
+                {"type": "item", "material": "cyan_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Blue",
+            "teams": ["blue"],
+            "items": [
+                {"type": "item", "material": "light_blue_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        },
+        {
+            "name": "Purple",
+            "teams": ["purple"],
+            "items": [
+                {"type": "item", "material": "purple_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+            ]
+        }
+    ],
+    "itemremove": [
+        {
+            "type": "red_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "orange_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "yellow_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "lime_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "green_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "cyan_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "light_blue_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "purple_stained_glass",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "time": {
+        "limit": 240,
+        "broadcasts": [
+            
+            {
+                "message": "&cWorld Border closes in 2 minutes. Good luck!",
+                "interval": 1,
+                "repeat": false,
+                "commands": []
+            }
+        ]
+    },
+    "border": {
+        "startingSize": 120,
+        "endSize": 9,
+        "center": "260.5, 60, 11.5",
+        "delay": 60,
+        "damage": {
+            "amount": 100,
+            "buffer": 0
+        }
+    },
+    "gamerules": {
+        "doTileDrops": false
+    },
+    "damageControl": {
+        "ENTITY_ATTACK": false
+    },
+    "regions": [
+        {"id": "tnt", "type": "cylinder", "base": "260.5, 2, 11.5", "radius": 104, "height": 1}
+    ]
+}
