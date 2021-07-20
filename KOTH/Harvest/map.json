@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
 	],
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"gametype": "KOTH",
 	"points": {
 		"target": 1200
@@ -87,7 +87,6 @@
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "emerald", "slot": 6, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 7, "amount": 48},
-				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
 				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
 				
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -104,7 +103,7 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1},
-					{"material": "arrow", "amount": 8},
+					{"material": "arrow", "amount": 4},
 					{"material": "emerald", "amount": 1}
 				]
 			}
@@ -114,11 +113,10 @@
         "chainmail helmet", "chainmail chestplate",
         "chainmail boots", "golden boots",
         "potion", "splash potion", "ender pearl",
-        "arrow", "blaze rod", "iron sword",
-        "golden apple"
+        "arrow", "blaze rod", "iron sword"
     ],
 	"itemremove": [
-		"stone sword", "bow", "cooked beef",
+		"stone sword", "bow", "cooked beef", "golden apple",
 		{
             "type": "leather helmet",
             "drop": true
