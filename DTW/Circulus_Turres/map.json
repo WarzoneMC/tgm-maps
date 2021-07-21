@@ -94,6 +94,8 @@
 			"teams": ["aliquam"],
 			"items": [
 				{"material": "yellow terracotta", "slot": 3, "amount": 64},
+				{"material": "yellow terracotta", "slot": 30, "amount": 64},
+				{"material": "yellow terracotta", "slot": 31, "amount": 64},
 				{"material": "yellow stained glass", "slot": 4, "amount": 64}
 			]
 		},
@@ -102,6 +104,8 @@
 			"teams": ["purpura"],
 			"items": [
 				{"material": "magenta terracotta", "slot": 3, "amount": 64},
+				{"material": "magenta terracotta", "slot": 30, "amount": 64},
+				{"material": "magenta terracotta", "slot": 31, "amount": 64},
 				{"material": "magenta stained glass", "slot": 4, "amount": 64}
 			]
 		}
