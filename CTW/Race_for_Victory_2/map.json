@@ -137,16 +137,19 @@
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["blue"],
 			"regions": ["purple-room", "yellow-room"],
-			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+			"blocks": ["cobweb", "glass", "oak planks", "ladder", "purple wool", "yellow wool"],
+			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red"],
 			"regions": ["lime-room", "orange-room"],
-			"blocks": ["cobweb", "glass"], "message": "&cYou are not allowed to modify terrain here."
+			"blocks": ["cobweb", "glass", "oak planks", "ladder", "lime wool", "orange wool"],
+			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
 			"regions": ["lime-room", "orange-room", "purple-room", "yellow-room"],
+			"blocks": ["glass", "oak planks", "ladder", "purple wool", "yellow wool", "lime wool", "orange wool"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "yellow-room"], "message": "&cYou may not enter this region."},
