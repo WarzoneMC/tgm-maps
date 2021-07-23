@@ -5,7 +5,7 @@
 		{"uuid": "93db9798-b995-4bda-b70a-23f5d33124a0", "username": "steven5703"},
 		{"uuid": "d9b4ffbc-11d0-453a-a93f-82dc59fca4b6", "username": "Wulfcaspice"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -88,7 +88,9 @@
 				{"type": "item", "material": "bread", "slot": 8, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 28},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
@@ -98,9 +100,15 @@
 		"bread", "arrow",
 		{
             "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
         }
 	],
 	"killstreaks": [
