@@ -143,16 +143,6 @@
             ],
             "message": "&cYou are not allowed to modify terrain here."
         },
-		{
-			"type": "block-interact", "evaluate": "deny", "teams": ["yellow"],
-			"regions": ["orange-wool-protection", "yellow-wool-protection"],
-			"message": "&cYou are not allowed to interact with blocks here."
-		},
-		{
-			"type": "block-interact", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["blue-wool-protection", "dark-blue-wool-protection"],
-			"message": "&cYou are not allowed to interact with blocks here."
-		},
         {
             "type": "enter", "evaluate": "deny", "teams": ["yellow"],
             "regions": [
@@ -168,7 +158,27 @@
                 "blue-wool-protection", "dark-blue-wool-protection"
             ],
             "message": "&cYou may not enter this region."
-        }
+        },
+	{
+	     "type": "blockBreak", "evaluate": "allow", "teams": ["yellow"],
+	     "regions": ["blue-wool-protection", "dark-blue-wool-protection"],
+	     "blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."
+	},
+	{
+	     "type": "blockBreak", "evaluate": "allow", "teams": ["blue"],
+	     "regions": ["orange-wool-protection", "yellow-wool-protection"],
+	     "blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."
+	},
+        {
+	     "type": "blockPlace", "evaluate": "deny", "teams": ["yellow", "blue"],
+	     "regions": ["blue-wool-protection", "dark-blue-wool-protection", "orange-wool-protection", "yellow-wool-protection"],
+	     "message": "&cYou are not allowed to modify terrain here."
+	},
+        {
+	     "type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "blue"],
+	     "inverted": true, "regions": ["map-lanes"],
+	     "message": "&cYou may not build over the void."
+	}
     ],
     "regions": [
         {"id": "yellow-main-spawn-protection", "type": "cuboid", "min": "-3, 0, 129", "max": "3, oo, 158"},
@@ -177,6 +187,15 @@
         {"id": "blue-main-spawn-protection", "type": "cuboid", "min": "-3, 0, -158", "max": "3, oo, -129"},
         {"id": "blue-outer-spawn-protection", "type": "cuboid", "min": "-10, 0, -128", "max": "10, oo, -119"},
 
+	{
+            "id": "map-lanes", "type": "meta",
+            "regions": [
+                {"min": "-62, 0, -56", "max": "-38, oo, 56"},
+                {"min": "-27, 0, -40", "max": "27, oo, 40"},
+                {"min": "38, 0, -56", "max": "62, oo, 56"}
+            ]
+        },
+	    
         {
             "id": "orange-wool-protection", "type": "meta",
             "regions": [
