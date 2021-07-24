@@ -1,0 +1,146 @@
+{
+	"name": "Second Chance",
+	"authors": [
+		{"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 32
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 32
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 40, 0.5, 0"},
+		{"teams": ["red"], "coords": "-59.5, 11, 0.5, -90"},
+		{"teams": ["blue"], "coords": "60.5, 11, 0.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Front Monument",
+				"teams": ["red"],
+				"materials": ["emerald"],
+				"region": { 
+					"min": "30, 10, -1",
+					"max": "32, 12, 1"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "95, 12, 0",
+					"max": "95, 13, 0"
+				},
+				"health": 1
+			},
+			{
+				"name": "Front Monument",
+				"teams": ["blue"],
+				"materials": ["emerald"],
+				"region": { 
+					"min": "-32, 10, -1",
+					"max": "-30, 12, 1"
+				},
+				"health": 1
+			},
+			{
+				"name": "Back Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-95, 12, 0",
+					"max": "-95, 13, 0"
+				},
+				"health": 1
+			}
+		]
+	},
+  "respawn": {
+      "rules": [
+          {
+              "freeze": true,
+              "blindness": true,
+              "confirm": false,
+              "delay": 2000
+          }
+      ]
+  },
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
+
+				{"type": "item", "material": "spruce planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "spruce planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "spruce planks", "slot": 6, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "spruce planks", "golden apple", "cooked cod", "arrow",
+		"chainmail chestplate",
+		{
+        "type": "leather helmet",
+        "drop": true
+    },
+    {
+        "type": "leather leggings",
+        "drop": true
+    },
+    {
+        "type": "leather boots",
+        "drop": true
+    }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 8, -6", "max": "-54, 15, 6"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "54, 8, -6", "max": "66, 15, 6"},
+		
+		{"id": "map", "type": "cuboid", "min": "-150, 0, -50", "max": "150, 255, 50"}
+	],
+	"buildHeight": 30
+}
