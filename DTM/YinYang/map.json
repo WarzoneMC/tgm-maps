@@ -1,0 +1,159 @@
+{
+	"name": "YinYang",
+	"authors": [
+		{"uuid": "ae5c1e91-745b-4a6f-a337-11484ede6957", "username": "Clijmart"},
+		{"uuid": "e47ce459-c5f0-4b77-81a0-f2f4310ca819", "username": "Acytlon"}
+	],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "yin",
+			"name": "Yin",
+			"color": "dark_gray",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "yang",
+			"name": "Yang",
+			"color": "white",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 30, 0.5, 90"},
+		{"teams": ["yin"], "coords": "0.5, 12, -113.5, 0"},
+		{"teams": ["yang"], "coords": "0.5, 12, 114.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["yin"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "45, 8, 102",
+					"max": "45, 8, 102" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["yin"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-45, 8, 102",
+					"max": "-45, 8, 102" 
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["yang"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-45, 8, -102",
+					"max": "-45, 8, -102"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["yang"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "45, 8, -102",
+					"max": "45, 8, -102"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
+
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 6, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "oak planks", "golden apple", "cooked cod", "arrow",
+		"chainmail chestplate",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],	
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["yin", "yang"],
+			"regions": ["yin-spawn-protection", "yang-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["yin"],
+			"regions": ["yang-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["yang"],
+			"regions": ["yin-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["yin", "yang"],
+			"blocks": ["enchanting table"], "regions": ["global"],
+			"message": "&cYou are not allowed to destroy the enchantment table."
+		},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["yin", "yang"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{"id": "yin-spawn-protection", "type": "cuboid", "min": "-6, 11, -120", "max": "6, 18, -108"},
+		{"id": "yang-spawn-protection", "type": "cuboid", "min": "-6, 11, 108", "max": "6, 18, 120"},
+		
+		{"id": "map", "type": "cuboid", "min": "-53, 0, -126", "max": "53, oo, 126"}
+	],
+	"buildHeight": 50
+}
