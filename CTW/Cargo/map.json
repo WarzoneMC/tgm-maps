@@ -8,7 +8,7 @@
 		{"uuid": "5c934a59-fd50-48aa-99ff-c87e0468f639", "username": "iamramsey"},
 		{"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Rokosnocone"}
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -115,12 +115,12 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
-			"regions": ["blue-spawn-protection", "blue-spawn-top-protection", "red-spawn-protection", "red-spawn-top-protection", "purple-room", "cyan-room"],
+			"regions": ["blue-spawn-protection", "blue-spawn-top-protection", "red-spawn-protection", "red-spawn-top-protection", "yellow-room", "orange-room", "purple-room", "cyan-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
-			"regions": ["red-spawn-protection", "red-spawn-top-protection", "blue-spawn-protection", "blue-spawn-top-protection", "yellow-room", "orange-room"],
+			"regions": ["red-spawn-protection", "red-spawn-top-protection", "blue-spawn-protection", "blue-spawn-top-protection", "yellow-room", "orange-room", "purple-room", "cyan-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "cyan-room"], "message": "&cYou may not enter this region."},
