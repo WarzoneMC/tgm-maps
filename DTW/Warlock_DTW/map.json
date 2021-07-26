@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "username": "McSpider"}
 	],
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -56,9 +56,10 @@
 			"items": [
 				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
-				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
@@ -72,7 +73,7 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
-		"chainmail chestplate", "iron boots",
+		"chainmail chestplate", "iron boots", "stone pickaxe",
 		{
             "type": "leather helmet",
             "drop": true
