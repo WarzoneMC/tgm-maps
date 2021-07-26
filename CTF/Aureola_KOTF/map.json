@@ -6,7 +6,7 @@
         {"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"},
         {"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Roko"}
     ],
-    "version": "1.0",
+    "version": "1.0.1",
     "gametype": "KOTF",
     "teams": [
         {
@@ -89,12 +89,13 @@
             }
         }
     ],
-    "respawn": {
-        "rules": [
-            {"blindness": "false"}
-        ]
-    },
     "filters": [
-        {"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
-    ]
+        {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},
+        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou are not allowed to enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter this region."}
+    ],
+    "regions": [
+            {"id": "red-spawn-protection", "type": "cuboid", "min": "149, 0, -10", "max": "160, oo, 0"},
+            {"id": "blue-spawn-protection", "type": "cuboid", "min": "211, 0, 51", "max": "220, oo, 60"}
+    ],
 }
