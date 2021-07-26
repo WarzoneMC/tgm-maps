@@ -31,7 +31,7 @@
 		"monuments": [
 			{
 				"name": "Left Monument",
-				"teams": ["yin"],
+				"teams": ["yang"],
 				"materials": ["obsidian"],
 				"region": { 
 					"min": "45, 8, 102",
@@ -41,7 +41,7 @@
 			},
 			{
 				"name": "Right Monument",
-				"teams": ["yin"],
+				"teams": ["yang"],
 				"materials": ["obsidian"],
 				"region": { 
 					"min": "-45, 8, 102",
@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Left Monument",
-				"teams": ["yang"],
+				"teams": ["yin"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "-45, 8, -102",
@@ -61,7 +61,7 @@
 			},
 			{
 				"name": "Right Monument",
-				"teams": ["yang"],
+				"teams": ["yin"],
 				"materials": ["obsidian"],
 				"region": {
 					"min": "45, 8, -102",
