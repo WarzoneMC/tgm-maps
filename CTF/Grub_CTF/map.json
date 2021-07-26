@@ -117,7 +117,7 @@
 	],
 	"killstreaks": [
 		{
-			"count": 2,
+			"count": 1,
 			"repeat": true,
 			"actions": {
 				"items": [
@@ -142,8 +142,6 @@
 	"regions": [
 		{"id": "blue-spawn", "type": "cuboid", "min": "-58.5, 27.5, 95.5", "max": "-62.5, 30.5, 91.5"},
 		{"id": "red-spawn", "type": "cuboid", "min": "-62.5, 27.5, 293.5", "max": "-58.5, 30.5, 293.5"},
-
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
 
 		{"id": "blue-net", "type": "cylinder", "base": "-56.5, 20, 122.5", "radius": 2, "height": 3},
 		{"id": "red-net", "type": "cylinder", "base": "-56.5, 20, 266.5", "radius": 2, "height": 3}
