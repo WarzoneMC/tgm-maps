@@ -135,12 +135,12 @@
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["yin"],
 			"regions": ["yang-spawn-protection"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"message": "&cYou are not allowed to enter this region."
 		},
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["yang"],
 			"regions": ["yin-spawn-protection"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"message": "&cYou are not allowed to enter this region."
 		},
 		{
 			"type": "blockBreak", "evaluate": "deny", "teams": ["yin", "yang"],
