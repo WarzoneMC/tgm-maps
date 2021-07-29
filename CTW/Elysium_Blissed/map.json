@@ -3,13 +3,13 @@
 	"authors": [
 		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "slees"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [
 		{
-			"id": "light-blue",
-			"name": "Light Blue Team",
-			"color": "aqua",
+			"id": "blue",
+			"name": "Blue Team",
+			"color": "blue",
 			"min": 1,
 			"max": 10
 		},
@@ -37,7 +37,7 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0.5, 24, -1.5, 0"},
-		{"teams": ["light-blue"], "coords": "-57, 11, -57.5, 0"},
+		{"teams": ["blue"], "coords": "-57, 11, -57.5, 0"},
 		{"teams": ["lime"], "coords": "-57.5, 11, 58, -90"},
 		{"teams": ["magenta"], "coords": "58.5, 11, -57, 90"},
 		{"teams": ["yellow"], "coords": "58, 11, 58.5, -180"}
@@ -62,7 +62,7 @@
 				"name": "Lime Wool",
 				"color": "green",
 				"woolcolor": "lime",
-				"teams": ["light-blue", "magenta", "yellow"],
+				"teams": ["blue", "magenta", "yellow"],
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -76,7 +76,7 @@
 				"name": "Magenta Wool",
 				"color": "light purple",
 				"woolcolor": "magenta",
-				"teams": ["light-blue", "lime", "yellow"],
+				"teams": ["blue", "lime", "yellow"],
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -90,7 +90,7 @@
 				"name": "Yellow Wool",
 				"color": "yellow",
 				"woolcolor": "yellow",
-				"teams": ["light-blue", "lime", "magenta"],
+				"teams": ["blue", "lime", "magenta"],
 				"region": {
 					"type": "meta",
 					"regions": [
@@ -111,8 +111,7 @@
 				{"material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
 				{"material": "wooden shovel", "slot": 3, "unbreakable": true},
 
-				{"material": "snow block", "slot": 4, "amount": 64},
-				{"material": "snow block", "slot": 5, "amount": 64},
+				{"material": "snow block", "slot": 4, "amount": 32},
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked cod", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 28, "amount": 64},
@@ -121,6 +120,9 @@
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "particles": false}
 			]
 		}
 	],
@@ -165,62 +167,62 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["light-blue", "lime", "magenta", "yellow"],
+			"type": "build", "evaluate": "deny", "teams": ["blue", "lime", "magenta", "yellow"],
 			"regions": [
-				"light-blue-spawn", "lime-spawn", "magenta-spawn", "yellow-spawn",
+				"blue-spawn", "lime-spawn", "magenta-spawn", "yellow-spawn",
 				"light-blue-wool", "lime-wool", "magenta-wool", "yellow-wool"
 			],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
-			"type": "enter", "evaluate": "deny", "teams": ["light-blue"],
+			"type": "enter", "evaluate": "deny", "teams": ["blue"],
 			"regions": ["lime-spawn", "magenta-spawn", "yellow-spawn", "light-blue-wool"],
 			"message": "&cYou may not enter this region."
 		},
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["lime"],
-			"regions": ["light-blue-spawn", "magenta-spawn", "yellow-spawn", "lime-wool"],
+			"regions": ["blue-spawn", "magenta-spawn", "yellow-spawn", "lime-wool"],
 			"message": "&cYou may not enter this region."
 		},
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["magenta"],
-			"regions": ["light-blue-spawn", "lime-spawn", "yellow-spawn", "magenta-wool"],
+			"regions": ["blue-spawn", "lime-spawn", "yellow-spawn", "magenta-wool"],
 			"message": "&cYou may not enter this region."
 		},
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["yellow"],
-			"regions": ["light-blue-spawn", "lime-spawn", "magenta-spawn", "yellow-wool"],
+			"regions": ["blue-spawn", "lime-spawn", "magenta-spawn", "yellow-wool"],
 			"message": "&cYou may not enter this region."
 		},
 		{
-			"type": "blockBreak", "evaluate": "deny", "teams": ["light-blue", "lime", "magenta", "yellow"],
+			"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "lime", "magenta", "yellow"],
 			"regions": ["global"],
-			"blocks": ["light blue wool", "lime wool", "light purple wool", "yellow wool"],
+			"blocks": ["light blue wool", "lime wool", "magenta wool", "yellow wool"],
 			"message": "&cYou may not break wool blocks!"
 		},
 		{
-			"type": "blockPlace", "evaluate": "deny", "teams": ["light-blue", "lime", "magenta", "yellow"],
+			"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "lime", "magenta", "yellow"],
 			"regions": ["global"],
-			"blocks": ["light blue wool", "lime wool", "light purple wool", "yellow wool"],
+			"blocks": ["light blue wool", "lime wool", "magenta wool", "yellow wool"],
 			"message": "&cYou may not place wool blocks!"
 		},
 		{
-			"type": "voidbuild", "evaluate": "deny", "teams": ["light-blue", "lime", "magenta", "yellow"],
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "lime", "magenta", "yellow"],
 			"inverted": true,
 			"regions": ["buildable-void"],
 			"message": "&cYou may not build over the void."
 		}
 	],
 	"regions": [
-		{"id": "light-blue-spawn", "type": "cuboid", "min": "-48, 0, -44", "max": "-67, oo, -67"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-48, 0, -44", "max": "-67, oo, -67"},
 		{"id": "lime-spawn", "type": "cuboid", "min": "-44, 0, 48", "max": "-67, oo, 67"},
 		{"id": "magenta-spawn", "type": "cuboid", "min": "44, 0, -48", "max": "67, oo, -67"},
 		{"id": "yellow-spawn", "type": "cuboid", "min": "48, 0, 43", "max": "67, oo, 66"},
 
-		{"id": "light-blue-wool", "type": "cuboid", "min": "-24, 0, -83", "max": "7, 27, -61"},
-		{"id": "lime-wool", "type": "cuboid", "min": "-83, 0, 24", "max": "-61, 27, -7"},
-		{"id": "magenta-wool", "type": "cuboid", "min": "61, 0, -24", "max": "83, 27, 7"},
-		{"id": "yellow-wool", "type": "cuboid", "min": "24, 0, 61", "max": "-7, 27, 83"},
+		{"id": "light-blue-wool", "type": "cuboid", "min": "-18, 0, -83", "max": "7, 27, -61"},
+		{"id": "lime-wool", "type": "cuboid", "min": "-83, 0, 18", "max": "-61, 27, -7"},
+		{"id": "magenta-wool", "type": "cuboid", "min": "61, 0, -18", "max": "83, 27, 7"},
+		{"id": "yellow-wool", "type": "cuboid", "min": "18, 0, 61", "max": "-7, 27, 83"},
         
 		{
 			"id": "buildable-void", "type": "meta",
