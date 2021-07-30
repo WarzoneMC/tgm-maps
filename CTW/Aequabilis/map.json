@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "b03360db-b8cd-49de-8ba1-b7920c2238a9", "username": "Obelistics"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -100,24 +100,22 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "orange terracotta", "lime terracotta",
-		"cooked beef", "golden apple", "arrow", "chainmail chestplate",
+		"cooked beef", "golden apple", "arrow",
 		{
             "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         }
 	],
 	"killstreaks": [
@@ -134,13 +132,18 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["orange"],
-			"regions": ["orange-spawn", "green-spawn", "lime-room", "green-room"],
+			"type": "build", "evaluate": "deny", "teams": ["orange", "green"],
+			"regions": ["orange-spawn", "green-spawn"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
-		{
-			"type": "build", "evaluate": "deny", "teams": ["green"],
-			"regions": ["orange-spawn", "green-spawn", "yellow-room", "orange-room"],
+        {
+			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "green"],
+			"regions": ["yellow-room", "orange-room", "lime-room", "green-room"],
+			"blocks": ["cobweb", "iron bars", "grass"], "message": "&cYou are only allowed to break cobwebs and iron bars."
+		},
+        {
+			"type": "blockPlace", "evaluate": "deny", "teams": ["orange", "green"],
+			"regions": ["yellow-room", "orange-room", "lime-room", "green-room"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
@@ -166,11 +169,11 @@
 			]
 		},
 		
-		{"id": "lime-room", "min": "-464, 0, 218", "max": "-448, oo, 234"},
-		{"id": "green-room", "min": "-464, 0, 322", "max": "-448, oo, 338"},
+		{"id": "lime-room", "min": "-464, 0, 218", "max": "-448, oo, 235"},
+		{"id": "green-room", "min": "-464, 0, 322", "max": "-448, oo, 339"},
 
-		{"id": "yellow-room", "min": "-112, 0, 210", "max": "-96, oo, 234"},
-		{"id": "orange-room", "min": "-112, 0, 322", "max": "-96, oo, 338"},
+		{"id": "yellow-room", "min": "-112, 0, 210", "max": "-95, oo, 235"},
+		{"id": "orange-room", "min": "-112, 0, 322", "max": "-95, oo, 339"},
 
 		{"id": "orange-spawn", "type": "cuboid", "min": "-431, 0, 270", "max": "-407, oo, 286"},
 		{"id": "green-spawn", "type": "cuboid", "min": "-153, 0, 270", "max": "-129, oo, 286"}

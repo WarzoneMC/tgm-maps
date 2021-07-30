@@ -5,7 +5,7 @@
 		{"uuid": "260004f0-996b-4539-ba21-df4ee6336b63", "username": "Captain_Elliott"},
 		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
 	],
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -99,18 +99,18 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "oak planks", "golden apple", 
-		"cooked beef", "arrow", "chainmail chestplate", "iron boots",
+		"cooked beef", "arrow", "iron boots",
 		{
             "type": "leather helmet",
-            "death": true,
             "drop": true,
-            "spawn": false
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true,
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         }
 	],
 	"killstreaks": [
@@ -134,6 +134,11 @@
 			"type": "build", "evaluate": "deny", "teams": ["blue"],
 			"regions": ["green-wool", "light-blue-wool", "yellow-wool"],
 			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["green-wool", "light-blue-wool", "yellow-wool", "orange-wool", "lime-wool", "magenta-wool"],
+			"blocks": ["chest"]
 		},
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
