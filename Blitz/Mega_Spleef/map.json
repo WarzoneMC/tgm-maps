@@ -12,56 +12,56 @@
             "name": "Red",
             "color": "dark_red",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "orange",
             "name": "Orange",
             "color": "gold",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "yellow",
             "name": "Yellow",
             "color": "yellow",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "lime",
             "name": "Lime",
             "color": "green",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "green",
             "name": "Green",
             "color": "dark_green",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "cyan",
             "name": "Cyan",
             "color": "dark_aqua",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "blue",
             "name": "Blue",
             "color": "blue",
             "min": 0,
-            "max": 4
+            "max": 8
         },
         {
             "id": "purple",
             "name": "Purple",
             "color": "dark_purple",
             "min": 0,
-            "max": 4
+            "max": 8
         }
     ],
     "spawns": [
@@ -223,7 +223,7 @@
         }
     ],
     "time": {
-        "limit": 120,
+        "limit": 180,
         "broadcasts": [
             
             {
@@ -244,7 +244,7 @@
         "startingSize": 212,
         "endSize": 9,
         "center": "260.5, 60, 11.5",
-        "delay": 75,
+        "delay": 120,
         "damage": {
             "amount": 100,
             "buffer": 0
