@@ -30,7 +30,7 @@
 		{"teams": ["red"], "coords": "-106.5, 4, 41.5"}
 	],
     	"points": {
-        	"target": 50
+        	"target": 200
     	},
 	"kits": [
 		{
