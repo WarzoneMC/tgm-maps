@@ -97,5 +97,5 @@
     "regions": [
             {"id": "red-spawn-protection", "type": "cuboid", "min": "149, 0, -10", "max": "160, oo, 0"},
             {"id": "blue-spawn-protection", "type": "cuboid", "min": "211, 0, 51", "max": "220, oo, 60"}
-    ],
+    ]
 }
