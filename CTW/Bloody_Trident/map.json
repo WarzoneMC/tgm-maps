@@ -100,13 +100,13 @@
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "iron shovel", "oak planks", "golden apple", 
 		"cooked beef", "arrow", "iron boots",
-		{
+	{
             "type": "leather helmet",
-            "drop": true,
+            "drop": true
         },
         {
             "type": "chainmail chestplate",
-            "drop": true,
+            "drop": true
         },
         {
             "type": "leather leggings",
