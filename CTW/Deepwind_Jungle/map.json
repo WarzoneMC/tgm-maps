@@ -83,7 +83,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", 
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "stone shovel", "glass", "oak planks", "cooked beef", 
 		"arrow", "chainmail chestplate", "beacon",
 		{
             "type": "leather helmet",
