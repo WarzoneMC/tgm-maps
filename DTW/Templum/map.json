@@ -124,7 +124,8 @@
     ],
 	"crafting": {
 		"remove": [
-			"flint and steel"
+			"flint and steel",
+			"piston"
 		]
     },
     "filters": [
