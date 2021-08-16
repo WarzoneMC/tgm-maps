@@ -125,6 +125,7 @@
 	"crafting": {
 		"remove": [
 			"flint and steel"
+			"piston"
 		]
     },
     "filters": [
