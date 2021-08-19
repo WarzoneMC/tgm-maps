@@ -123,7 +123,8 @@
 		},
 
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "yellow-wool", "magenta-wool"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-wool", "orange-wool"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-wool", "orange-wool"], "message": "&cYou may not enter this region."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["green-wool", "orange-wool", "magenta-wool", "yellow-wool"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-1, 0, 135", "max": "23, oo, 152"},
