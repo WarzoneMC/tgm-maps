@@ -192,6 +192,12 @@
 			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
 			"regions": ["global"],
 			"blocks": ["red wool", "yellow wool", "blue wool", "green wool"], "message": "&cYou may not place wool blocks!"
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue", "green", "yellow"],
+			"regions": ["red-wool", "blue-wool", "green-wool", "yellow-wool"],
+			"blocks": ["chest"],
+			"message": "&cYou are not allowed to break wool chests!"
 		}
 	],
 	"regions": [
