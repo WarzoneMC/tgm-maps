@@ -156,7 +156,8 @@
 			"message": "&cYou may not build over the void."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["cyan-spawn-protection", "orange-wool", "red-wool"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["green-spawn-protection", "pink-wool", "purple-wool"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["cyan"], "regions": ["green-spawn-protection", "pink-wool", "purple-wool"], "message": "&cYou may not enter this region."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["green", "cyan"], "regions": ["pink-wool", "purple-wool", "red-wool", "orange-wool"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "pink-wool", "min": "-145, 0, -14", "max": "-170,  oo, 0"},
