@@ -139,7 +139,8 @@
 		{
 			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["green-wool", "light-blue-wool", "yellow-wool", "orange-wool", "lime-wool", "magenta-wool"],
-			"blocks": ["chest"]
+			"blocks": ["chest"],
+			"message": "&cYou are not allowed to break wool chests!"
 		},
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
@@ -149,7 +150,7 @@
 		{
 			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["red-spawn-protection", "blue-spawn-protection"],
-			"message": "&cYou are not allowed to spawn!"
+			"message": "&cYou are not allowed to place blocks in spawn!"
 		},
 		{
 			"type": "enter", "evaluate": "deny", "teams": ["blue"],
