@@ -110,7 +110,8 @@
 	"filters": [
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-room", "pink-room", "blue-spawn"], "message": "&cYou are not allowed to enter the enemy's wool room!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-room", "cyan-room", "red-spawn"], "message": "&cYou are not allowed to enter the enemy's wool room!"},
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "cyan-room", "purple-room", "pink-room", "blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here!"}
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "cyan-room", "purple-room", "pink-room", "blue-spawn", "red-spawn"], "message": "&cYou are not allowed to modify terrain here!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-room", "cyan-room", "purple-room", "pink-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "blue-room", "min": "31, 22, 41", "max": "37, 30, 37"},
