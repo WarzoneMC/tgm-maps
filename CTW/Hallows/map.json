@@ -135,9 +135,9 @@
             "regions": ["light-blue-room", "cyan-room"],
             "message": "&cYou are not allowed to modify terrain here."
         },
-
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn", "light-blue-room", "cyan-room"], "message": "&cYou may not enter this region."},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn", "magenta-room", "pink-room"], "message": "&cYou may not enter this region."}
+        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn", "magenta-room", "pink-room"], "message": "&cYou may not enter this region."},
+        {"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["magenta-room", "pink-room", "light-blue-room", "cyan-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
     ],
     "regions": [
         {"id": "magenta-room", "min": "-1342, 0, -900", "max": "-1331, oo, -891"},
