@@ -126,12 +126,7 @@
 			"type": "blockPlace", "evaluate": "deny", "teams": ["orange", "purple"],
 			"regions": ["red-wool", "yellow-wool", "blue-wool", "cyan-wool"]
 		},
-		{
-			"type": "blockBreak", "evaluate": "deny", "teams": ["orange", "purple"],
-			"regions": ["red-wool", "yellow-wool", "blue-wool", "cyan-wool"],
-			"blocks": ["chest"],
-			"message": ["&cYou are not allowed to break the chests!"]
-		},
+
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "blue-wool", "cyan-wool"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "yellow-wool", "red-wool"], "message": "&cYou may not enter this region."},
 		{"type": "build", "evaluate": "deny", "teams": ["orange", "purple"], "regions": ["build-height"], "message": "&cYou have reached the max build height."}
