@@ -150,7 +150,13 @@
             "type": "enter", "evaluate": "deny", "teams": ["red"],
             "regions": ["orange-wool-room", "yellow-wool-room", "blue-spawn-protection"],
             "message": "&cYou may not enter this region."
-        }
+        },
+	{
+	    "type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
+	    "regions": ["pink-wool-room", "purple-wool-room", "yellow-wool-room", "orange-wool-room"],
+	    "blocks": ["chest"],
+	    "message": ["&cYou are not allowed to break the chests!"]
+	}
     ],
     "regions": [
         {"id": "red-spawn-protection", "type": "cuboid", "min": "-113, 0, -80", "max": "-87, oo, -70"},

@@ -108,7 +108,8 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn-protection", "cyan-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn-protection", "red-room"], "message": "&cYou may not enter this region."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["green", "orange"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["green", "orange"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["green", "orange"], "regions": ["cyan-room", "red-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "cyan-room", "min": "105, 0, -65", "max": "122, 64, -50"},

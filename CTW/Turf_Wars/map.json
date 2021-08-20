@@ -145,7 +145,8 @@
 			"message": "&cYou are not allowed to build in the void!"
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-enter", "magenta-room", "purple-room"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-enter", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-enter", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["orange-room", "yellow-room", "magenta-room", "purple-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "orange-room", "min": "84, 0, -74", "max": "68, oo, -58"},
