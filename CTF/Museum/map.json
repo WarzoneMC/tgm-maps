@@ -6,7 +6,7 @@
 		{"uuid": "f36bdc4f-7dab-462b-87b6-dee2e3af8490", "username": "NeverTakeIt"},
 		{"uuid": "b390b87a-47e8-40d8-968a-9e7e2582a88b", "username": "MewTwoKing"}
 	],
-	"version": "1.1",
+	"version": "1.2",
 	"gametype": "CTF",
 	"respawn": {
 		"rules": [
