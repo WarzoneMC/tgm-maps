@@ -111,7 +111,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "arrow", "potion", "glass bottle", "iron leggings",
+		"iron sword", "bow", "arrow", "potion", "glass bottle", "iron leggings", "golden apple",
 		{
 			"type": "leather chestplate",
 			"death": true,
