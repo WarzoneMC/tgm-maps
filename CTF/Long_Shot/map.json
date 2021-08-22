@@ -1,0 +1,163 @@
+{
+	"name": "Long Shot",
+	"objective": "Take the enemy flag at the end of your lane back to your beacon!",
+	"authors": [
+		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "StealthMedia"},
+		{"uuid": "4a0780d3-d9c4-41c4-a816-e077a36f27c9", "username": "KasiCrafter"}
+	],
+	"version": "1.4.0",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "174.5, 61, 0.5, -90"},
+		{"teams": ["blue"], "coords": "150.5, 59, -21.5, 90"},
+		{"teams": ["red"], "coords": "150.5, 60, 22.5, 90"}
+	],
+	"time": {
+		"limit": 1200,
+		"broadcasts": [
+			
+			{
+				"message": "&cAfter 2 kills you will receive 5 firecharges.",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cAfter 5 kills you will receive 5 TNT.",
+				"interval": 3,
+				"repeat": false,
+				"commands": []
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 4, "amount": 64},
+				{"type": "item", "material": "water bucket", "slot": 5},
+				{"type": "item", "material": "birch planks", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"water bucket", "bucket", "stone sword", "stone pickaxe", "bow", "stone axe", "arrow", "cooked beef",
+		{
+			"type": "leather helmet",
+			"death": true
+		},
+		{
+			"type": "leather chestplate",
+			"death": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 2,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "fire charge", "amount": 5}
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 5}
+				]
+			}
+		}
+	],
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 2
+		},
+		"flags": [
+			{
+				"team": "red",
+				"location": "-141.5, 30, -21.5",
+				"respawn-time": 60,
+				"type": "red",
+				"patterns": [
+					{"color": "red", "type": "base"}
+				],
+				"rotation": "east",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
+			},
+			{
+				"team": "blue",
+				"location": "-141.5, 30, 22.5",
+				"respawn-time": 60,
+				"type": "blue",
+				"patterns": [
+					{"color": "blue", "type": "base"}
+				],
+				"rotation": "east",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "blue-net", "team": "blue"},
+			{"region": "red-net", "team": "red"}
+		]
+	},
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-base", "blue-base"], "message": "&cYou may not modify the bases!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base"], "message": "&cYou may not enter the enemy base!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base"], "message": "&cYou may not enter the enemy base!"},
+
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["playable"], "message": "&cYou can only cross the void on the wooden platforms!"}
+	],
+	"regions": [
+		{"id": "red-base", "type": "cuboid", "min": "110, 50, 12", "max": "158, 69, 33"},
+		{"id": "blue-base", "type": "cuboid", "min": "110, 50, -32", "max": "158, 69, -11"},
+		
+		{"id": "red-net", "type": "cylinder", "base": "150.5, 59, -22.5", "radius": 2, "height": 2},
+		{"id": "blue-net", "type": "cylinder", "base": "150.5, 59, 22.5", "radius": 2, "height": 2},
+
+		{
+            "id": "playable", "type": "meta",
+            "regions": [
+				{"id": "front-wood-platform", "type": "cuboid", "min": "27, -oo, -11", "max": "50, oo, 12"},
+				{"id": "middle-wood-platform", "type": "cuboid", "min": "-53, -oo, -11", "max": "-30, oo, 12"},
+				{"id": "red-lane", "type": "cuboid", "min": "152, -oo, 32", "max": "109, oo, 12"},
+				{"id": "blue-lane", "type": "cuboid", "min": "-152, -oo, -12", "max": "109, oo, -32"}
+            ]
+        }
+	],
+	"buildHeight": 78
+}
