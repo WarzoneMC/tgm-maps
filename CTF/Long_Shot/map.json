@@ -154,7 +154,7 @@
             "regions": [
 				{"id": "front-wood-platform", "type": "cuboid", "min": "27, -oo, -11", "max": "50, oo, 12"},
 				{"id": "middle-wood-platform", "type": "cuboid", "min": "-53, -oo, -11", "max": "-30, oo, 12"},
-				{"id": "red-lane", "type": "cuboid", "min": "152, -oo, 32", "max": "109, oo, 12"},
+				{"id": "red-lane", "type": "cuboid", "min": "-152, -oo, 32", "max": "109, oo, 12"},
 				{"id": "blue-lane", "type": "cuboid", "min": "-152, -oo, -12", "max": "109, oo, -32"}
             ]
         }
