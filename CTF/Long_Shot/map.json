@@ -146,8 +146,8 @@
 		{"id": "red-base", "type": "cuboid", "min": "110, 50, 12", "max": "158, 69, 33"},
 		{"id": "blue-base", "type": "cuboid", "min": "110, 50, -32", "max": "158, 69, -11"},
 		
-		{"id": "red-net", "type": "cylinder", "base": "150.5, 59, -22.5", "radius": 2, "height": 2},
-		{"id": "blue-net", "type": "cylinder", "base": "150.5, 59, 22.5", "radius": 2, "height": 2},
+		{"id": "red-net", "type": "cylinder", "base": "150.5, 59, 22.5", "radius": 2, "height": 2},
+		{"id": "blue-net", "type": "cylinder", "base": "150.5, 59, -22.5", "radius": 2, "height": 2},
 
 		{
             "id": "playable", "type": "meta",
