@@ -50,36 +50,7 @@
 			}
 		]
 	},
-	"kits": [
-		{
-			"name": "Default",
-			"items": [
-				{"material": "iron sword", "slot": 0, "unbreakable": true},
-				{"material": "bow", "slot": 1, "unbreakable": true},
-				{"material": "iron axe", "slot": 2, "unbreakable": true},
-				{"material": "oak planks", "slot": 3, "amount": 64},
-				{"material": "arrow", "slot": 9, "amount": 64},
-				{"material": "cooked beef", "slot": 8, "amount": 64},
-
-				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
-				{"material": "leather boots", "slot": "boots", "unbreakable": true}
-			]
-		}
-	],
-	"itemremove": [
-		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
-		"chainmail chestplate", "chainmail leggings",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-	],
+	"classes": true,
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
