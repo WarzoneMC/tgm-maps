@@ -70,17 +70,6 @@
 			}
 		]
 	},
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "golden apple", "unbreakable": true, "amount": 1}
-				]
-			}
-		}
-	],
 	"classes": true,
 	"itemremove": [
 		"iron sword", "bow", "iron axe", "oak planks", "arrow", "cooked beef", "golden apple",
