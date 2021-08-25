@@ -73,7 +73,7 @@
 			"repeat": true,
 			"actions": {
 				"items": [
-					{"material": "golden apple", "unbreakable": true, "amount": 1}
+					{"material": "golden apple"}
 				]
 			}
 		}
