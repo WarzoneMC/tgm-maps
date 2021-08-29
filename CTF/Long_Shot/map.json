@@ -5,8 +5,11 @@
 		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "StealthMedia"},
 		{"uuid": "4a0780d3-d9c4-41c4-a816-e077a36f27c9", "username": "KasiCrafter"}
 	],
-	"version": "1.4.1",
+	"version": "1.4.3",
 	"gametype": "CTF",
+	"gamerules": {
+		"doFireTick": true
+	},
 	"teams": [
 		{
 			"id": "blue",
