@@ -1,11 +1,11 @@
 {
 	"name": "Long Shot",
-	"objective": "Take the enemy flag at the end of your lane back to your beacon!",
+	"objective": "Take the enemy flag at the end of your lane back to your spawn!",
 	"authors": [
 		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "StealthMedia"},
 		{"uuid": "4a0780d3-d9c4-41c4-a816-e077a36f27c9", "username": "KasiCrafter"}
 	],
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"gametype": "CTF",
 	"teams": [
 		{
@@ -29,7 +29,6 @@
 		{"teams": ["red"], "coords": "150.5, 60, 22.5, 90"}
 	],
 	"time": {
-		"limit": 1200,
 		"broadcasts": [
 			
 			{
@@ -76,6 +75,15 @@
 		}
 	],
 	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
 		{
 			"count": 2,
 			"repeat": true,
