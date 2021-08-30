@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "44df6b20-168f-4389-b7ac-434518207c2f", "username": "ParaPenguin"}
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "gametype": "DTM",
     "teams": [
         {
@@ -117,7 +117,7 @@
     ],
     "itemremove": [
         "stone sword", "bow", "stone axe", "diamond pickaxe",
-        "glass", "oak log", "cooked beef", "arrow",
+        "glass", "oak log", "cooked beef", "arrow", "golden apple",
         {
             "type": "leather helmet",
             "drop": true
