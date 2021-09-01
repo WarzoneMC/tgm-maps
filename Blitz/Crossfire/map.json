@@ -86,6 +86,12 @@
 			"sound": true
 		}
 	],
+	"border": {
+		"startingSize": 1425,
+		"endSize": 100,
+		"center": "756, 60, 1084",
+		"delay": 240
+	},
 	"regions": [
 		{"id": "portal-left", "min": "761, 86, 405", "max": "761, 87, 408"},
 		{"id": "portal-lback", "min": "761, 87, 408", "max": "759, 86, 408"},
