@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -77,7 +77,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "oak leaves", "shears", "arrow", "golden carrot",
-		"iron helmet", "chainmail chestplate",
+		"iron helmet", "chainmail chestplate", "golden apple",
 		{
             "type": "leather leggings",
             "drop": true
