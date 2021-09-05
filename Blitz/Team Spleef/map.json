@@ -1,0 +1,195 @@
+{
+    "name": "Team Spleef",
+    "version": "1.0.0",
+    "authors": [
+        {"uuid": "e5eea785-51c1-40fe-a2d0-f83d4c035cd9", "username": "pikpikmerchant"},
+        {"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
+    ],
+    "gametype": "Blitz",
+    "stats": {"disable": true},
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "dark red",
+            "min": 1,
+            "max": 15
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 15
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-0.5, 60, 0.5, 90"},
+
+
+        {"teams": ["red"], "coords": "26.5, 3, 16.5, -180"},
+        {"teams": ["red"], "coords": "24.5, 3, 20.5, -180"},
+        {"teams": ["red"], "coords": "21.5, 3, 24.5, -180"},
+        {"teams": ["red"], "coords": "17.5, 3, 27.5, -180"},
+        {"teams": ["red"], "coords": "13.5, 3, 29.5, -180"},
+        {"teams": ["red"], "coords": "9.5, 3, 30.5, -180"},
+        {"teams": ["red"], "coords": "5.5, 3, 31.5, -180"},
+        {"teams": ["red"], "coords": "0.5, 3, 32.5, -180"},
+        {"teams": ["red"], "coords": "-4.5, 3, 31.5, -180"},
+        {"teams": ["red"], "coords": "-8.5, 3, 30.5, -180"},
+        {"teams": ["red"], "coords": "-12.5, 3, 29.5, -180"},
+        {"teams": ["red"], "coords": "-16.5, 3, 27.5, -180"},
+        {"teams": ["red"], "coords": "-19.5, 3, 24.5, -180"},
+        {"teams": ["red"], "coords": "-22.5, 3, 20.5, -180"},
+        {"teams": ["red"], "coords": "-24.5, 3, 16.5, -180"},
+
+        {"teams": ["blue"], "coords": "26.5, 3, -15.5"},
+        {"teams": ["blue"], "coords": "24.5, 3, -19.5"},
+        {"teams": ["blue"], "coords": "21.5, 3, -23.5"},
+        {"teams": ["blue"], "coords": "17.5, 3, -26.5"},
+        {"teams": ["blue"], "coords": "13.5, 3, -28.5"},
+        {"teams": ["blue"], "coords": "9.5, 3, -29.5"},
+        {"teams": ["blue"], "coords": "5.5, 3, -30.5"},
+        {"teams": ["blue"], "coords": "0.5, 3, -31.5"},
+        {"teams": ["blue"], "coords": "-4.5, 3, -30.5"},
+        {"teams": ["blue"], "coords": "-8.5, 3, -29.5"},
+        {"teams": ["blue"], "coords": "-12.5, 3, -28.5"},
+        {"teams": ["blue"], "coords": "-16.5, 3, -26.5"},
+        {"teams": ["blue"], "coords": "-19.5, 3, -23.5"},
+        {"teams": ["blue"], "coords": "-22.5, 3, -19.5"},
+        {"teams": ["blue"], "coords": "-24.5, 3, -15.5"}
+    ],
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"type": "item", "material": "diamond shovel", "enchantments": ["efficiency:5"], "slot": 0, "unbreakable": true},
+                
+                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "slow digging", "duration": 120, "amplifier": 255, "particles": false},
+                {"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
+            ]
+        },
+        {
+            "name": "Red",
+            "teams": ["red"],
+            "items": [
+                {"type": "item", "material": "red wool", "slot": 1},
+                {"type": "item", "material": "red wool", "slot": 2},
+                {"type": "item", "material": "red wool", "slot": 3},
+                {"type": "item", "material": "red wool", "slot": 4},
+                {"type": "item", "material": "red wool", "slot": 5},
+                {"type": "item", "material": "red wool", "slot": 6},
+                {"type": "item", "material": "red wool", "slot": 7},
+                {"type": "item", "material": "red wool", "slot": 8}
+            ]
+        },
+        {
+            "name": "Blue",
+            "teams": ["blue"],
+            "items": [
+                {"type": "item", "material": "blue wool", "slot": 1},
+                {"type": "item", "material": "blue wool", "slot": 2},
+                {"type": "item", "material": "blue wool", "slot": 3},
+                {"type": "item", "material": "blue wool", "slot": 4},
+                {"type": "item", "material": "blue wool", "slot": 5},
+                {"type": "item", "material": "blue wool", "slot": 6},
+                {"type": "item", "material": "blue wool", "slot": 7},
+                {"type": "item", "material": "blue wool", "slot": 8}
+            ]
+        }
+    ],
+    "itemremove": [
+        {
+            "type": "diamond shovel",
+            "drop": true
+        },
+        {
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        },
+        {
+            "type": "red wool",
+            "drop": true,
+            "spawn": true
+        },
+        {
+            "type": "blue wool",
+            "drop": true,
+            "spawn": true
+        },
+        {
+            "type": "snowball",
+            "spawn": true
+        },
+        {
+            "type": "clay ball",
+            "spawn": true
+        }
+    ],
+    "time": {
+        "limit": 70,
+        "broadcasts": [
+            {
+                "message": "&6[Spleef] &cTeamspleefing & camping will result in a punishment!",
+                "interval": 1,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&6[Spleef] &eHitting the world border kills you. You have 3 minutes.",
+                "interval": 2,
+                "repeat": false,
+                "commands": []
+            },
+            {
+                "message": "&6[Spleef] &eGood luck!",
+                "interval": 5,
+                "repeat": false,
+                "commands": []
+            }
+        ]
+    },
+    "border": {
+        "startingSize": 80,
+        "endSize": 2,
+        "center": "0.5, 3, 0.5",
+        "delay": 180,
+        "damage": {
+            "amount": 100,
+            "buffer": 0
+        }
+    },
+    "damageControl": {
+        "FALL": false,
+        "ENTITY_ATTACK": false
+    },
+    "filters": [
+        {
+            "type": "block-break", "evaluate": "allow", "blocks": ["snow block", "clay"], "teams": ["red", "blue"],
+            "regions": ["global"],
+            "message": "&cYou may only break snow blocks."
+        },
+        {
+            "type": "block-place", "evaluate": "deny", "teams": ["red", "blue"],
+            "regions": ["global"]
+        }
+    ]
+}
