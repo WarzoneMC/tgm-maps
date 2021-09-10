@@ -130,7 +130,7 @@
                 "commands": []
             },
             {
-                "message": "&6[Spleef] &eHitting the world border kills you. You have 3 minutes.",
+                "message": "&6[Spleef] &eHitting the world border kills you. You have 2 minutes.",
                 "interval": 2,
                 "repeat": false,
                 "commands": []
@@ -147,7 +147,7 @@
         "startingSize": 75,
         "endSize": 2,
         "center": "-164.5, 26, 113.5",
-        "delay": 180,
+        "delay": 120,
         "damage": {
             "amount": 100,
             "buffer": 0
