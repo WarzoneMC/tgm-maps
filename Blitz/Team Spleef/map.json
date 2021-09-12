@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "authors": [
         {"uuid": "e5eea785-51c1-40fe-a2d0-f83d4c035cd9", "username": "pikpikmerchant"},
-        {"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
+        {"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"},
+        {"uuid": "fb57ed98-9f41-40c7-8e61-dee46d34d427", "username": "AtditC"}
     ],
     "gametype": "Blitz",
     "stats": {"disable": true},
