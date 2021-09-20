@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -73,7 +73,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "shears", "oak leaves", "arrow", "golden carrot",
-		"chainmail chestplate", "spruce leaves",
+		"chainmail chestplate", "spruce leaves", "golden apple",
 		{
             "type": "leather helmet",
             "drop": true
