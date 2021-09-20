@@ -5,7 +5,7 @@
 		{"uuid": "1e3b1b79-307a-4093-aaeb-21b2fd419336", "username": "BlockDrop74"}
 	],
 	"gametype": "TDM",
-	"version": "1.4.6",
+	"version": "1.4.7",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -60,6 +60,10 @@
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 100000, "amplifier": 1, "particles": false},
+				{"type": "jump", "duration": 100000, "amplifier": 1, "particles": false}
 			]
 		}
 	],
