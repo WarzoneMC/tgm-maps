@@ -70,11 +70,11 @@
 		"water bucket", "bucket", "stone sword", "stone pickaxe", "bow", "stone axe", "arrow", "cooked beef",
 		{
 			"type": "leather helmet",
-			"death": true
+			"drop": true
 		},
 		{
 			"type": "leather chestplate",
-			"death": true
+			"drop": true
 		}
 	],
 	"killstreaks": [
