@@ -1,0 +1,122 @@
+{
+	"name": "Soviet Chills",
+	"authors": [
+		{"uuid": "c97373ef-4582-4350-8993-8a78f2775c29", "username": "Eclipsen"},
+		{"uuid": "e39fe3bc-b80e-46d2-81fe-d18042471989", "username": "EnarRikardz"},
+		{"uuid": "82c796a5-c033-43be-af30-fa06496995f9", "username": "IM_A_H0B0"},
+		{"uuid": "19388047-f04b-43ac-9546-22aa69aea75c", "username": "bleangamer"}
+	],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "101, 74, -16, 270"},
+		{"teams": ["red"], "coords": "-46.5, 54, -177.5, 270"},
+		{"teams": ["blue"], "coords": "-46.5, 54, 145.5, 270"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["blue_wool"],
+				"region": { 
+					"type": "sphere", "center": "12.5, 53.5, 119.5", "radius": 6
+				},
+				"health": 10
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["red"],
+				"materials": ["red_wool"],
+				"region": { 
+					"type": "sphere", "center": "12.5, 53.5, -151.5", "radius": 6
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+
+				{"type": "item", "material": "bread", "slot": 3, "amount": 32},
+				{"type": "item", "material": "spruce leaves", "slot": 4, "amount": 64},
+				{"type": "item", "material": "spruce log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron pickaxe", "spruce log", "spruce planks", "bread", "arrow", "spruce leaves", "red wool", "blue wool",
+		{
+            "type": "leather chestplate",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-37, 0, 149 ", "max": "-50, oo, 132"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-37, 0, -182", "max": "-50, oo, -165"},
+		{"id": "playable", "type": "cuboid", "min": "-50, -oo, -182", "max": "49, oo, 149"},
+		{"id": "battlefield-height", "type": "cuboid", "min": "-50, 30, -48", "max": "49, oo, 15"},
+		{"id": "blue-wool-sphere", "type": "sphere", "center": "12.5, 53.5, 119.5", "radius": 6},
+		{"id": "red-wool-sphere", "type": "sphere", "center": "12.5, 53.5, -151.5", "radius": 6}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou may not modify the spawn buildings"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the Red's spawn"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the Blue's spawn"},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["battlefield-height"],
+			"message": "&cYou may not build over the battlefield"
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+			"inverted": true,
+			"regions": ["playable"],
+			"message": "&cYou may not build over the void"
+		},
+		{
+            "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+            "regions": ["blue-wool-sphere", "red-wool-sphere"], "message": "&cWool monuments cannot be destroyed with TnT!"
+        }
+	],
+	"buildHeight": 69
+}

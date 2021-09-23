@@ -1,0 +1,111 @@
+{
+	"name": "Haunted Corridors",
+	"authors": [
+		{"uuid": "15dc7f7a-40cd-4389-ad45-f8a33a09a394", "username": "moo88888888"},
+		{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "thestrangeboy1"}
+	],
+	"gametype": "TDM",
+	"version": "1.1.0",
+    	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 32
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 32
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "79, 20, 38, -90"},
+		{"teams": ["blue"], "coords": "-112, 8, 38, -90"},
+		{"teams": ["red"], "coords": "106, 8, 38, 90"}
+	],
+    	"points": {
+        	"target": 50
+    	},
+    	"time": {
+        "limit": 600
+    },
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"material": "golden carrot", "slot": 2, "amount": 64},
+				{"material": "golden apple", "slot": 3, "amount": 1},
+				{"material": "arrow", "slot": 28, "amount": 1},
+
+				{"material": "golden helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "enchantments": ["projectile protection:1"], "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage resistance", "duration": 80, "amplifier": 50, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "arrow", "bow", "golden carrot", "torch", "golden apple",
+		{
+            "type": "goldwn helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "chainmail leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "torch", "amount": 2}
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "speed", "level": 2, "duration": 10000000}
+				]
+			}
+		}
+	],
+	"regions": [
+		{"id": "map", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	],
+	"filters": [
+        {
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["map"],
+			"blocks": ["torch"]
+		},
+		{
+			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["map"],
+			"blocks": ["torch"]
+		}
+	]
+}

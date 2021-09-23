@@ -1,0 +1,151 @@
+{
+    "name": "Haunted Hallows",
+    "authors": [
+        {"uuid": "be49b1a8-600e-4751-9725-a8aead777363", "username": "izjust4fun"},
+        {"uuid": "297428a6-b482-4558-99f5-b413067ed48d", "username": "CrazyClownz"}
+    ],
+    "version": "1.0.0",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "green",
+            "name": "Werewolves",
+            "color": "green",
+            "min": 1,
+            "max": 16
+        },
+        {
+            "id": "orange",
+            "name": "Vampires",
+            "color": "gold",
+            "min": 1,
+            "max": 16
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "-1209.5, 41, -1002.5, 90"},
+        {"teams": ["orange"], "coords": "-1279.5, 11, -1131.5"},
+        {"teams": ["green"], "coords": "-1279.5, 11, -873.5, 180"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["orange"],
+                "region": {"min": "-1286, 11, -876", "max": "-1286, 11, -876"}
+            },
+            {
+                "name": "Red",
+                "color": "red",
+                "woolcolor": "red",
+                "teams": ["orange"],
+                "region": {"min": "-1274, 11, -876", "max": "-1274, 11, -876"}
+            },
+            {
+                "name": "Blue",
+                "color": "blue",
+                "woolcolor": "blue",
+                "teams": ["green"],
+                "region": {"min": "-1286, 11, -1130", "max": "-1286, 11, -1130"}
+            },
+            {
+                "name": "Purple",
+                "color": "dark purple",
+                "woolcolor": "purple",
+                "teams": ["green"],
+                "region": {"min": "-1274, 11, -1130", "max": "-1274, 11, -1130"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "iron sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "unbreakable": true},
+                {"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+                {"material": "iron axe", "slot": 3, "unbreakable": true},
+
+                {"material": "oak planks", "slot": 4, "amount": 48},
+                {"material": "glass", "slot": 5, "amount": 16},
+                {"material": "bucket", "slot": 6},
+                {"material": "golden apple", "slot": 6},
+                {"material": "cooked beef", "slot": 8, "amount": 64},
+                {"material": "arrow", "slot": 9, "amount": 64},
+
+                {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "slot": "boots", "unbreakable": true}
+            ]
+        }
+    ],
+    "itemremove": [
+        "iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "glass", "bucket", "golden apple",
+        "cooked beef", "arrow", "chainmail leggings",
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1}
+                ]
+            }
+        }
+    ],
+    "filters": [
+        {
+            "type": "voidbuild", "evaluate": "deny", "teams": ["orange", "green"],
+            "inverted": true,
+            "regions": ["map"],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "block-break", "evaluate": "allow", "blocks": ["iron block", "cobweb"], "teams": ["orange", "green"],
+            "regions": ["orange-spawn", "green-spawn"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "block-place", "evaluate": "deny", "teams": ["orange", "green"],
+            "regions": ["orange-spawn", "green-spawn"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["green"],
+            "regions": ["orange-room", "red-room"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["orange"],
+            "regions": ["blue-room", "purple-room"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["green-spawn", "blue-room", "purple-room"], "message": "&cYou may not enter this region."},
+        {"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["orange-spawn", "orange-room", "red-room"], "message": "&cYou may not enter this region."},
+        {"type": "blockBreak", "evaluate": "deny", "teams": ["orange", "green"], "regions": ["orange-room", "red-room", "blue-room", "purple-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
+    ],
+    "regions": [
+        {"id": "orange-room", "min": "-1342, 0, -900", "max": "-1331, oo, -891"},
+        {"id": "red-room", "min": "-1228, 0, -900", "max": "-1217, oo, -891"},
+
+        {"id": "blue-room", "min": "-1342, 0, -1115", "max": "-1331, oo, -1106"},
+        {"id": "purple-room", "min": "-1228, 0, -1115", "max": "-1217, oo, -1106"},
+
+        {"id": "green-spawn", "type": "cuboid", "min": "-1305, 0, -883", "max": "-1255, oo, -848"},
+        {"id": "orange-spawn", "type": "cuboid", "min": "-1305, 0, -1158", "max": "-1255, oo, -1123"},
+
+        {"id": "map", "type": "cuboid", "min": "-1302, 0, -1078", "max": "-1258, oo, -928"}
+    ],
+    "buildHeight": 26
+}
