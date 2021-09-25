@@ -58,9 +58,9 @@
                 {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
                 {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
                 {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
-                {"type": "item", "material": "oak log", "slot": 5, "amount": 64},
+                {"type": "item", "material": "birch log", "slot": 5, "amount": 64},
                 {"type": "item", "material": "golden apple", "slot": 7, "amount": 3},
-                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 12},
+                {"type": "item", "material": "cooked cod", "slot": 8, "amount": 12},
                 {"type": "item", "material": "arrow", "slot": 27, "amount": 64},
                 {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
                 {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
@@ -68,7 +68,7 @@
         }
     ],
     "itemremove": [
-        "iron sword", "bow", "diamond pickaxe", "oak log", "cooked beef", "arrow", "golden apple", "leather chestplate", "leather helmet"
+        "iron sword", "bow", "diamond pickaxe", "birch log", "cooked cod", "arrow", "golden apple", "leather chestplate", "leather helmet"
     ],
     "killstreaks": [
         {
