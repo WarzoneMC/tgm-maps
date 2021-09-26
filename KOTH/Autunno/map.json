@@ -4,7 +4,7 @@
 		{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "thestrangeboy1"},
 		{"uuid": "ff4918fc-977d-4209-b3be-05ccc4f83d23", "username": "luigishadow2"}
 	],
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"gametype": "KOTH",
 	"points": {
 		"target": 750
@@ -30,10 +30,10 @@
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "apple", "slot": 2, "amount": 16},
 				{"type": "item", "material": "golden apple", "slot": 3, "amount": 2},
-				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
 				
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
@@ -48,7 +48,8 @@
 			"repeat": true,
 			"actions": {
 				"items": [
-					{"material": "golden apple", "amount": 1}
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4}
 				]
 			}
 		}
