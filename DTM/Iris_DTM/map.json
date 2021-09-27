@@ -22,9 +22,9 @@
         }
     ],
     "spawns": [
-        {"teams": ["spectators"], "coords": "-17, 36, 13"},
-        {"teams": ["red"], "coords": "29, 160, -100"},
-        {"teams": ["blue"], "coords": "-63, 160, -100"}
+        {"teams": ["spectators"], "coords": "-16.5, 36, 13.5"},
+        {"teams": ["red"], "coords": "29.5, 160, -99.5"},
+        {"teams": ["blue"], "coords": "-62.5, 160, -99.5"}
     ],
     "dtm": {
         "monuments": [
@@ -87,7 +87,7 @@
             "regions": ["blue-spawn-pool", "red-spawn-pool"]
         },
         {
-            "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
             "inverted": true,
             "regions": ["map"],
             "message": "&cYou may not build/modify here!"
@@ -96,7 +96,7 @@
     "regions": [
         {"id": "red-spawn-pool", "type": "cuboid", "min": "33, 26, -93", "max": "26, oo, -86"},
         {"id": "blue-spawn-pool", "type": "cuboid", "min": "-66, 26, -86", "max": "-59, oo, -93"},
-        {"id": "map", "type": "cuboid", "min": "-57, 0, -206", "max": "-91, 80, -55"}
+        {"id": "map", "type": "cuboid", "min": "57, 0, -206", "max": "-91, 80, -55"}
         
     ]
 }
