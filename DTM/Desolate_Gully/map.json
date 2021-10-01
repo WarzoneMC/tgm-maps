@@ -120,7 +120,7 @@
 	  "repeat": false,
 	  "actions": {
 		"items": [
-		  {"material": "flint and steel", "damage": 61, "amount": 1},
+		  {"material": "flint and steel", "durability": 61, "amount": 1},
 		  {"material": "golden apple", "amount": 1}
 		]
 	  }
