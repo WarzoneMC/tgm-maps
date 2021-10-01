@@ -1,0 +1,147 @@
+{
+  "name": "Coral Reef II",
+  "authors": [
+	{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"},
+	{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "Strangey"}
+  ],
+  "version": "1.8.1",
+  "gametype": "CTW",
+  "teams": [
+	{
+	  "id": "blue",
+	  "name": "Blue",
+	  "color": "blue",
+	  "min": 1,
+	  "max": 50
+	},
+	{
+	  "id": "red",
+	  "name": "Red",
+	  "color": "red",
+	  "min": 1,
+	  "max": 50
+	}
+  ],
+  "spawns": [
+	{"teams": ["spectators"], "coords": "-366.5, 44, 111.5"},
+	{"teams": ["red"], "coords": "-261.5, 11, 170.999, 90"},
+	{"teams": ["blue"], "coords": "-473.5, 11, 170.999, -90"}
+  ],
+  "ctw": {
+	"wools": [
+	  {
+		"name": "Purple",
+		"color": "dark purple",
+		"woolcolor": "purple",
+		"teams": ["blue"],
+		"region": {"min": "-467, 12, 168", "max": "-467, 12, 168"}
+	  },
+	  {
+		"name": "Magenta",
+		"color": "light purple",
+		"woolcolor": "magenta",
+		"teams": ["blue"],
+		"region": {"min": "-467, 12, 173", "max": "-467, 12, 173"}
+	  },
+
+	  {
+		"name": "Green",
+		"color": "dark green",
+		"woolcolor": "green",
+		"teams": ["red"],
+		"region": {"min": "-269, 12, 173", "max": "-269, 12, 173"}
+	  },
+	  {
+		"name": "Lime",
+		"color": "green",
+		"woolcolor": "lime",
+		"teams": ["red"],
+		"region": {"min": "-269, 12, 168", "max": "-269, 12, 168"}
+	  }
+	]
+  },
+  "kits": [
+	{
+	  "name": "Default",
+	  "items": [
+		{"material": "stone sword", "slot": 0, "unbreakable": true},
+		{"material": "bow", "enchantments":  ["infinity:1"], "slot": 1, "unbreakable": true},
+		{"material": "iron pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+		{"material": "iron axe", "slot": 3, "unbreakable": true},
+		{"material": "oak log", "slot": 5, "amount": 64},
+		{"material": "golden apple", "slot": 7, "amount": 1},
+		{"material": "cooked cod", "slot": 8, "amount": 32},
+		{"material": "arrow", "slot": 28, "amount": 1},
+
+		{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+		{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+		{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+		{"material": "leather boots", "slot": "boots", "unbreakable": true}
+	  ]
+	}
+  ],
+  "itemremove": [
+	"stone sword", "bow", "iron pickaxe", "iron axe", "oak log", "oak planks", "golden apple", "cooked cod",
+	"arrow", "iron leggings",
+	{
+	  "type": "leather helmet",
+	  "drop": true
+	},
+	{
+	  "type": "leather chestplate",
+	  "drop": true
+	},
+	{
+	  "type": "leather boots",
+	  "drop": true
+	}
+  ],
+  "killstreaks": [
+	{
+	  "count": 1,
+	  "repeat": true,
+	  "actions": {
+		"items": [
+		  {"material": "golden apple", "amount": 1}
+		]
+	  }
+	}
+  ],
+  "filters": [
+	{
+	  "type": "build", "evaluate": "deny", "teams": ["red"],
+	  "regions": ["purple-room", "magenta-room"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
+	{
+	  "type": "build", "evaluate": "deny", "teams": ["blue"],
+	  "regions": ["green-room", "lime-room"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
+	{
+	  "type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+	  "inverted": true,
+	  "regions": ["map"],
+	  "message": "&cYou may not build over the void."
+	},
+	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "magenta-room"], "message": "&cYou may not enter this region."},
+	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "green-room", "lime-room"], "message": "&cYou may not enter this region."},
+	{
+	  "type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+	  "regions": ["red-spawn-protection", "blue-spawn-protection"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
+	{"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "blocks": ["gold block"], "message": "&cYou may only break gold blocks in spawn."},
+	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["purple-room", "yellow-room", "cyan-room", "green-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
+  ],
+  "regions": [
+	{"id": "purple-room", "min": "-297, -oo, 130", "max": "-284, oo, 143"},
+	{"id": "magenta-room", "min": "-297, -oo, 198", "max": "-284, oo, 211"},
+	{"id": "green-room", "min": "-452, -oo, 198", "max": "-439, oo, 211"},
+	{"id": "lime-room", "min": "-452, -oo, 130", "max": "-439, oo, 143"},
+	{"id": "blue-spawn-protection", "type": "cuboid", "min": "-485, -oo, 158", "max": "-453, oo, 183"},
+	{"id": "red-spawn-protection", "type": "cuboid", "min": "-283, -oo, 158", "max": "-251, oo, 183"},
+	{"id": "map", "type": "cuboid", "min": "-452, -oo, 130", "max": "-284, oo, 211"}
+  ],
+  "buildHeight": 30
+}
