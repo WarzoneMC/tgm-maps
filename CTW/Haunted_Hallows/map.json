@@ -4,7 +4,7 @@
         {"uuid": "be49b1a8-600e-4751-9725-a8aead777363", "username": "izjust4fun"},
         {"uuid": "297428a6-b482-4558-99f5-b413067ed48d", "username": "CrazyClownz"}
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "gametype": "CTW",
     "teams": [
         {
@@ -33,28 +33,28 @@
                 "name": "Orange",
                 "color": "gold",
                 "woolcolor": "orange",
-                "teams": ["orange"],
+                "teams": ["green"],
                 "region": {"min": "-1286, 11, -876", "max": "-1286, 11, -876"}
             },
             {
                 "name": "Red",
                 "color": "red",
                 "woolcolor": "red",
-                "teams": ["orange"],
+                "teams": ["green"],
                 "region": {"min": "-1274, 11, -876", "max": "-1274, 11, -876"}
             },
             {
                 "name": "Blue",
                 "color": "blue",
                 "woolcolor": "blue",
-                "teams": ["green"],
+                "teams": ["orange"],
                 "region": {"min": "-1286, 11, -1130", "max": "-1286, 11, -1130"}
             },
             {
                 "name": "Purple",
                 "color": "dark purple",
                 "woolcolor": "purple",
-                "teams": ["green"],
+                "teams": ["orange"],
                 "region": {"min": "-1274, 11, -1130", "max": "-1274, 11, -1130"}
             }
         ]
