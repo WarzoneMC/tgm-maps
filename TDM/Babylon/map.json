@@ -11,9 +11,6 @@
   ],
   "version": "1.2.2",
   "gametype": "TDM",
-  "stats": {
-	"disable": true
-  },
   "teams": [
 	{
 	  "id": "blue",
@@ -106,7 +103,7 @@
   "filters": [
 	{
 	  "type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
-	  "regions": ["red-spawn-protection", "blue-spawn-protection", "yellow-spawn-protection", "green-spawn-protection", "map"],
+	  "regions": ["global"],
 	  "message": "&cYou are not allowed to modify terrain here."
 	},
 	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter this region."},
@@ -118,7 +115,6 @@
 	{"id": "red-spawn-protection", "type": "cuboid", "min": "80, -oo, -11", "max": "111, oo, 11"},
 	{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, -oo, -11", "max": "-81, oo, 11"},
 	{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-11, -oo, -110", "max": "11, oo, -81"},
-	{"id": "green-spawn-protection", "type": "cuboid", "min": "-11, -oo, 80", "max": "11, oo, 111"},
-	{"id": "map", "type": "cuboid", "min": "-51, -oo, -51", "max": "52, oo, 52"}
+	{"id": "green-spawn-protection", "type": "cuboid", "min": "-11, -oo, 80", "max": "11, oo, 111"}
   ]
 }
