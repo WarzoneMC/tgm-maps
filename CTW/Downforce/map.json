@@ -72,21 +72,15 @@
 	"chainmail leggings", "clay ball", "glowstone dust",
 	{
 	  "type": "leather helmet",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	},
 	{
 	  "type": "leather chestplate",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	},
 	{
 	  "type": "leather boots",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	}
   ],
   "killstreaks": [
