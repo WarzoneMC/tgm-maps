@@ -6,7 +6,7 @@
 	{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"},
 	{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "Chicky"}
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "gametype": "CTW",
   "teams": [
 	{
@@ -26,8 +26,8 @@
   ],
   "spawns": [
 	{"teams": ["spectators"], "coords": "19, 84, 0, 90"},
-	{"teams": ["blue"], "coords": "24, 69, 36, 180"},
-	{"teams": ["red"], "coords": "24, 69, -36"}
+	{"teams": ["blue"], "coords": "24, 69, -35.5"},
+	{"teams": ["red"], "coords": "24, 69, 36.5, 180"},
   ],
   "ctw": {
 	"wools": [
