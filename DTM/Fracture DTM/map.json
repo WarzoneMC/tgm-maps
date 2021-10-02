@@ -76,7 +76,7 @@
 	}
   ],
   "itemremove": [
-	"stone sword", "bow", "diamond pickaxe", "iron axe", "spruce planks", "stone bricks", "golden carrot", "golden apple",
+	"stone sword", "bow", "diamond pickaxe", "iron axe", "spruce planks", "stone bricks", "arrow", "golden carrot", "golden apple",
 	"chainmail chestplate", "iron boots",
 	{
 	  "type": "leather helmet",
