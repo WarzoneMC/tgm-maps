@@ -4,7 +4,7 @@
 	{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"},
 	{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "Strangey"}
   ],
-  "version": "1.8.2",
+  "version": "1.8.1",
   "gametype": "CTW",
   "teams": [
 	{
@@ -85,21 +85,15 @@
 	"arrow", "iron leggings",
 	{
 	  "type": "leather helmet",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	},
 	{
 	  "type": "leather chestplate",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	},
 	{
 	  "type": "leather boots",
-	  "death": true,
-	  "drop": true,
-	  "spawn": false
+	  "drop": true
 	}
   ],
   "killstreaks": [
@@ -125,11 +119,6 @@
 	  "message": "&cYou are not allowed to modify terrain here."
 	},
 	{
-	  "type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
-	  "regions": ["blue-spawn-protection", "red-spawn-protection"],
-	  "message": "&cYou are not allowed to modify terrain here."
-	},
-	{
 	  "type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
 	  "inverted": true,
 	  "regions": ["map"],
@@ -137,6 +126,11 @@
 	},
 	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "purple-room", "magenta-room"], "message": "&cYou may not enter this region."},
 	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "green-room", "lime-room"], "message": "&cYou may not enter this region."},
+	{
+	  "type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+	  "regions": ["red-spawn-protection", "blue-spawn-protection"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
 	{"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "blocks": ["gold block"], "message": "&cYou may only break gold blocks in spawn."},
 	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["purple-room", "yellow-room", "cyan-room", "green-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
   ],
