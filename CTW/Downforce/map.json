@@ -6,7 +6,7 @@
 	{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"},
 	{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "Chicky"}
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "gametype": "CTW",
   "teams": [
 	{
@@ -97,13 +97,8 @@
   ],
   "filters": [
 	{
-	  "type": "build", "evaluate": "deny", "teams": ["blue"],
-	  "regions": ["blue-spawn-protection", "red-spawn-protection", "blue-room", "red-room"],
-	  "message": "&cYou are not allowed to modify terrain here."
-	},
-	{
-	  "type": "build", "evaluate": "deny", "teams": ["red"],
-	  "regions": ["red-spawn-protection", "blue-spawn-protection", "red-room", "blue-room"],
+	  "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+	  "regions": ["blue-spawn-protection", "red-spawn-protection"],
 	  "message": "&cYou are not allowed to modify terrain here."
 	},
 	{
@@ -113,6 +108,8 @@
 	},
 	  {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-room"], "message": "&cYou may not enter this region."},
 	  {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-room"], "message": "&cYou may not enter this region."},
+	  {"type": "build", "evaluate": "deny", "teams": ["blue"], "regions": ["red-room"], "message": "&cYou are not allowed to modify terrain here."},
+	  {"type": "build", "evaluate": "deny", "teams": ["red"], "regions": ["blue-room"], "message": "&cYou are not allowed to modify terrain here."},
 	  {"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
 	  {"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "red-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
   ],
