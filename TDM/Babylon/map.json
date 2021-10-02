@@ -11,6 +11,7 @@
   ],
   "version": "1.2.2",
   "gametype": "TDM",
+  "stats": {"disable": true},
   "teams": [
 	{
 	  "id": "blue",
