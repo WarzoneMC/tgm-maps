@@ -1,0 +1,177 @@
+{
+	"name": "Haunted Turres",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"}
+	],
+	"version": "1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "aliquam",
+			"name": "Aliquam",
+			"color": "gold",
+			"min": 1,
+			"max": 30
+		},
+		{
+			"id": "purpura",
+			"name": "Purpura",
+			"color": "dark purple",
+			"min": 1,
+			"max": 30
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 177, 0.5, 180, 0"},
+		{"teams": ["aliquam"], "coords": "-126.5, 78, 0.5, -90, 0"},
+		{"teams": ["purpura"], "coords": "127.5, 78, 0.5, 90, 0"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Wool",
+				"teams": ["aliquam"],
+				"materials": ["orange wool"],
+				"region": {
+					"min": "-91, 78, 43",
+					"max": "-93, 81, 45"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["aliquam"],
+				"materials": ["orange wool"],
+				"region": {
+					"min": "-91, 78, -43",
+					"max": "-93, 80, -45"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool",
+				"teams": ["purpura"],
+				"materials": ["purple wool"],
+				"region": {
+					"min": "91, 78, -43",
+					"max": "93, 81, -45"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["purpura"],
+				"materials": ["purple wool"],
+				"region": {
+					"min": "91, 78, 43",
+					"max": "93, 81, 45"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 4, "amount": 1},
+
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 32},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+		    "name": "Aliquam",
+			"teams": ["aliquam"],
+			"items": [
+				{"material": "yellow terracotta", "slot": 3, "amount": 64},
+				{"material": "yellow terracotta", "slot": 30, "amount": 64},
+				{"material": "yellow terracotta", "slot": 31, "amount": 64},
+				{"material": "yellow stained glass", "slot": 4, "amount": 64}
+			]
+		},
+		{
+			"name": "Purpura",
+			"teams": ["purpura"],
+			"items": [
+				{"material": "magenta terracotta", "slot": 3, "amount": 64},
+				{"material": "magenta terracotta", "slot": 30, "amount": 64},
+				{"material": "magenta terracotta", "slot": 31, "amount": 64},
+				{"material": "magenta stained glass", "slot": 4, "amount": 64}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron pickaxe", "golden apple", "arrow", "cooked beef", 
+		"leather helmet", "chainmail chestplate", "leather leggings", "leather boots",
+		"iron block", "iron ingot",
+		{
+            "type": "yellow terracotta",
+            "drop": false,
+            "spawn": false,
+            "death": true
+        },
+        {
+            "type": "magenta terracotta",
+            "drop": false,
+            "spawn": false,
+            "death": true
+        },
+        {
+            "type": "yellow stained glass",
+            "drop": false,
+            "death": true
+        },
+        {
+            "type": "magenta stained glass",
+            "drop": false,
+            "death": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 5}
+				]
+			}
+		}
+	],
+	"crafting": {
+		"remove": [
+			"oak boat", "spruce boat", "dark oak boat", "iron ingot",
+			"iron helmet", "iron chestplate", "iron leggings", "iron boots",
+			"iron sword", "iron pickaxe", "iron axe", "iron shovel"
+		]
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["aliquam", "purpura"],
+			"regions": ["aliquam-spawn-protection", "purpura-spawn-protection", "purpura-diamond-protection", "aliquam-diamond-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["aliquam"], "regions": ["purpura-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["purpura"], "regions": ["aliquam-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["aliquam", "purpura"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{"id": "aliquam-spawn-protection", "type": "cuboid", "min": "-112, 0, -7", "max": "-133, oo, 7"},
+		{"id": "purpura-spawn-protection", "type": "cuboid", "min": "112, 0, 7", "max": "133, oo, -7"},
+		{"id": "aliquam-diamond-protection", "type": "cuboid", "min": "-80, 82, -1", "max": "-78, oo, 1"},
+		{"id": "purpura-diamond-protection", "type": "cuboid", "min": "80, 82, 1", "max": "78, oo, -1"},
+
+		{"id": "map", "type": "cuboid", "min": "-134, 0, 55", "max": "134, oo, -55"}
+	],
+	"buildHeight": 102
+}
