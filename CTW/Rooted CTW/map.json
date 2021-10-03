@@ -88,6 +88,7 @@
     ],
     "itemremove": [
         "stone sword", "iron sword", "bow", "shears", "arrow", "stone axe", "iron axe", "iron pickaxe", "iron shovel", "iron helmet", "iron leggings", "iron boots", "stone", "dirt", "poppy", "wheat seeds", "oak sapling", "tall grass", "golden carrot", "apple", "flint",
+	"light blue wool", "light gray wool", "lime wool", "green wool",    
         {
             "type": "iron chestplate",
             "drop": true
