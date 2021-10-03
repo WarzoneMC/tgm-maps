@@ -23,14 +23,14 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-87.5, 58, -41.5, -90"},
+		{"teams": ["spectators"], "coords": "-89.5, 70, -77.5"},
 		{"teams": ["red"], "coords": "-154.5, 58, -43.5, -90"},
 		{"teams": ["blue"], "coords": "-22.5, 58, -38.5, 90"}
 	],
 	"dtm": {
 		"monuments": [
 			{
-				"name": "Left Monument",
+				"name": "Left Pumpkin",
 				"teams": ["blue"],
 				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
 				"region": { 
@@ -40,7 +40,7 @@
 				"health": 10
 			},
 			{
-				"name": "Right Monument&r",
+				"name": "Right Pumpkin",
 				"teams": ["blue"],
 				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
 				"region": {
@@ -50,7 +50,7 @@
 				"health": 10
 			},
 			{
-				"name": "Left Monument",
+				"name": "Left Pumpkin",
 				"teams": ["red"],
 				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
 				"region": { 
@@ -60,7 +60,7 @@
 				"health": 10
 			},
 			{
-				"name": "Right Monument&r",
+				"name": "Right Pumpkin",
 				"teams": ["red"],
 				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
 				"region": {
