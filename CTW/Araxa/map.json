@@ -85,6 +85,7 @@
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "golden apple", "golden carrot", "arrow", "glass",
 		"oak planks",
+		"red wool", "yellow wool", "cyan wool", "blue wool",
 		{
             "type": "leather helmet",
             "death": true,
