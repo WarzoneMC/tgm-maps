@@ -90,27 +90,19 @@
         "stone sword", "iron sword", "bow", "shears", "arrow", "stone axe", "iron axe", "iron pickaxe", "iron shovel", "iron helmet", "iron leggings", "iron boots", "stone", "dirt", "poppy", "wheat seeds", "oak sapling", "tall grass", "golden carrot", "apple", "flint",
         {
             "type": "iron chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "golden helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         },
         {
             "type": "golden boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
+            "drop": true
         }
     ],
     "killstreaks": [
@@ -147,11 +139,6 @@
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-wool-room", "green-wool-room"], "message": "&cYou may not enter this region."},
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "light-grey-wool-room", "light-blue-wool-room"], "message": "&cYou may not enter this region."},
 	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["light-grey-wool-room", "light-blue-wool-room", "lime-wool-room", "green-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
-        {
-            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["spectators"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
 	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["voidbuild"], "message": "&cYou may not build over the void."}
     ],
     "regions": [
