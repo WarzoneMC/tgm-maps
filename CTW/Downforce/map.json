@@ -27,7 +27,7 @@
   "spawns": [
 	{"teams": ["spectators"], "coords": "19, 84, 0, 90"},
 	{"teams": ["blue"], "coords": "24, 69, -35.5"},
-	{"teams": ["red"], "coords": "24, 69, 36.5, 180"},
+	{"teams": ["red"], "coords": "24, 69, 36.5, 180"}
   ],
   "ctw": {
 	"wools": [
