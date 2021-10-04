@@ -3,8 +3,18 @@
     "authors": [
         {"uuid": "3a549b18-08ed-4756-a78c-b34d29a4fd87", "username": "Torn_Ares"}
     ],
-    "version": "1.3.2",
+    "version": "1.3.3",
     "gametype": "DTM",
+    "respawn": {
+        "rules": [
+            {
+                "freeze": true,
+                "blindness": true,
+                "confirm": false,
+                "delay": 0
+            }
+        ]
+    },
     "teams": [
         {
             "id": "red",
@@ -68,7 +78,8 @@
         }
     ],
     "itemremove": [
-        "iron sword", "bow", "diamond pickaxe", "birch log", "cooked cod", "arrow", "golden apple", "leather chestplate", "leather helmet"
+        "iron sword", "bow", "diamond pickaxe", "iron axe", "birch log", "birch planks", "golden apple", "cooked cod", "arrow",
+        "leather chestplate", "leather helmet"
     ],
     "killstreaks": [
         {
@@ -84,7 +95,8 @@
     "filters": [
         {
             "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["blue-spawn-pool", "red-spawn-pool"]
+            "regions": ["blue-spawn-pool", "red-spawn-pool", "red-beacon-prot-horiz", "red-beacon-prot-verti", "blue-beacon-prot-horiz", "blue-beacon-prot-verti"],
+            "message": "&cNo touchie touchie!"
         },
         {
             "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
@@ -95,8 +107,11 @@
     ],
     "regions": [
         {"id": "red-spawn-pool", "type": "cuboid", "min": "33, 26, -93", "max": "26, oo, -86"},
+        {"id": "red-beacon-prot-horiz", "type": "cuboid", "min": "28, 37, -130", "max": "30, 37, -128"},
+        {"id": "red-beacon-prot-verti", "type": "cuboid", "min": "29, 38, -129", "max": "29, 39, -129"},
         {"id": "blue-spawn-pool", "type": "cuboid", "min": "-66, 26, -86", "max": "-59, oo, -93"},
+        {"id": "blue-beacon-prot-horiz", "type": "cuboid", "min": "-64, 37, -130", "max": "-62, 37, -128"},
+        {"id": "blue-beacon-prot-verti", "type": "cuboid", "min": "-63, 38, -129", "max": "-63, 39, -129"},
         {"id": "map", "type": "cuboid", "min": "57, 0, -206", "max": "-91, 80, -55"}
-        
     ]
 }
