@@ -8,7 +8,7 @@
     "respawn": {
         "rules": [
             {
-                "freeze": true,
+                "freeze": false,
                 "blindness": true,
                 "confirm": false,
                 "delay": 0
