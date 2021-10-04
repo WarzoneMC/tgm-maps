@@ -5,7 +5,7 @@
 		{"uuid": "3b95de2f-2bb6-4a16-b0ba-c723794af4d6", "username": "bublixxe"},
 		{"uuid": "037d948e-4bbb-441f-8a59-068ab65af822", "username": "Tigo"}
 	],
-	"version": "2.0.12",
+	"version": "2.0.2",
 	"gametype": "CTW",
 	"gamerules": {
 		"doFireTick": false
