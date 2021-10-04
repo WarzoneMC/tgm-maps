@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
     ],
-    "version": "1.3.2",
+    "version": "1.3.3",
     "gametype": "DTM",
     "teams": [
         {
@@ -29,7 +29,7 @@
     "dtm": {
         "monuments": [
             {
-                "name": "Monument B",
+                "name": "Right Monument",
                 "teams": ["blue"],
                 "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
@@ -39,7 +39,7 @@
                 "health": 2
             },
             {
-                "name": "Monument A",
+                "name": "Left Monument",
                 "teams": ["blue"],
                 "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
@@ -49,7 +49,7 @@
                 "health": 2
             },
             {
-                "name": "Monument B",
+                "name": "Right Monument",
                 "teams": ["red"],
                 "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
@@ -59,7 +59,7 @@
                 "health": 2
             },
             {
-                "name": "Monument A",
+                "name": "Left Monument",
                 "teams": ["red"],
                 "materials": ["obsidian", "beacon", "black_terracotta"],
                 "region": {
@@ -107,10 +107,10 @@
                 "interval": 900,
                 "repeat": false,
                 "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:beacon",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:beacon",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:beacon",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:beacon"
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:beacon replace minecraft:obsidian",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:beacon replace minecraft:obsidian",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:beacon replace minecraft:obsidian",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:beacon replace minecraft:obsidian"
                 ]
             },
 
@@ -149,10 +149,10 @@
                 "interval": 1200,
                 "repeat": false,
                 "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:coal_block",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:coal_block",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:coal_block",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:coal_block"
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:coal_block replace minecraft:beacon",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:coal_block replace minecraft:beacon",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:coal_block replace minecraft:beacon",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:coal_block replace minecraft:beacon"
                 ]
             },
 
@@ -191,10 +191,10 @@
                 "interval": 1200,
                 "repeat": false,
                 "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:black_terracotta",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:black_terracotta",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:black_terracotta"
+                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
+                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
+                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:black_terracotta replace minecraft:coal_block",
+                    "execute at @r run fill 45 6 51 45 7 51 minecraft:black_terracotta replace minecraft:coal_block"
                 ]
             }
         ]
@@ -282,5 +282,5 @@
         "doFireTick": true,
         "doDaylightCycle": true
     },
-	"buildHeight": 19
+    "buildHeight": 19
 }
