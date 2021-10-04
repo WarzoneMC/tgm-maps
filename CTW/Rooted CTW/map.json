@@ -76,10 +76,10 @@
                 {"material": "cobweb", "slot": 17, "amount": 4},
                 {"material": "arrow", "slot": 28, "amount": 32},
                 
-                {"material": "gold helmet", "slot": "helmet", "unbreakable": true},
+                {"material": "golden helmet", "slot": "helmet", "unbreakable": true},
                 {"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
                 {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"material": "gold boots", "slot": "boots", "unbreakable": true}
+                {"material": "golden boots", "slot": "boots", "unbreakable": true}
             ],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 5, "amplifier": 25, "particles": false}
