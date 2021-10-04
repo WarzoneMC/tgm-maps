@@ -153,6 +153,12 @@
 				"interval": 20,
 				"repeat": false,
 				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eIron Blocks regenerate on this map!",
+				"interval": 3000,
+				"repeat": true,
+				"commands": []
 			}
 		]
 	},
