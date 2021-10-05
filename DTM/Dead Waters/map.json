@@ -86,7 +86,19 @@
   ],
   "itemremove": [
 	"stone sword", "bow", "stone pickaxe", "stone axe", "jungle planks", "golden carrot", "golden apple", "arrow",
-	"blue terracotta", "red terracotta", "leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	"blue terracotta", "red terracotta", "chainmail chestplate", "iron boots",
+	{
+		"type": "leather helmet",
+		"death": true,
+		"drop": true,
+		"spawn": false
+	},
+	{
+		"type": "leather leggings",
+		"death": true,
+		"drop": true,
+		"spawn": false
+	}
   ],
   "killstreaks": [
 	{
