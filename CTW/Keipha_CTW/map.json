@@ -1,0 +1,479 @@
+{
+    "name": "Keipha CTW",
+    "authors": [
+        {
+            "uuid": "e41edd14-9b0e-4501-a0c5-7fda64d2b2f3",
+            "username": "ItsMeKiing"
+        },
+        {
+            "uuid": "fe3608b7-d105-4029-8800-34b3147065b6",
+            "username": "rockymine"
+        },
+        {
+            "uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06",
+            "username": "Strangey"
+        }
+    ],
+    "version": "1.1.1",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "Blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 35
+        },
+        {
+            "id": "Red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 35
+        }
+    ],
+    "spawns": [
+        {
+            "teams": [
+                "spectators"
+            ],
+            "coords": "-9, 47, -32, 0"
+        },
+        {
+            "teams": [
+                "Blue"
+            ],
+            "coords": "-82, 83, -140, -90"
+        },
+        {
+            "teams": [
+                "Red"
+            ],
+            "coords": "65, 83, 76, 90"
+        }
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Purple",
+                "color": "dark purple",
+                "woolcolor": "purple",
+                "teams": [
+                    "Blue"
+                ],
+                "region": {
+                    "min": "-83, 15, -133",
+                    "max": "-83, 15, -133"
+                }
+            },
+            {
+                "name": "Magenta",
+                "color": "light purple",
+                "woolcolor": "magenta",
+                "teams": [
+                    "Blue"
+                ],
+                "region": {
+                    "min": "-83, 15, -147",
+                    "max": "-83, 15, -147"
+                }
+            },
+            {
+                "name": "Light Blue",
+                "color": "aqua",
+                "woolcolor": "light blue",
+                "teams": [
+                    "Red"
+                ],
+                "region": {
+                    "min": "65, 15, 83",
+                    "max": "65, 15, 83"
+                }
+            },
+            {
+                "name": "Cyan",
+                "color": "dark aqua",
+                "woolcolor": "cyan",
+                "teams": [
+                    "Red"
+                ],
+                "region": {
+                    "min": "65, 15, 69",
+                    "max": "65, 15, 69"
+                }
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {
+                    "material": "iron sword",
+                    "slot": 0,
+                    "unbreakable": true
+                },
+                {
+                    "material": "bow",
+                    "slot": 1,
+                    "enchantments": [
+                        "infinity:1"
+                    ],
+                    "unbreakable": true
+                },
+                {
+                    "material": "iron pickaxe",
+                    "slot": 2,
+                    "enchantments": [
+                        "efficiency:1"
+                    ],
+                    "unbreakable": true
+                },
+                {
+                    "material": "iron axe",
+                    "slot": 3,
+                    "enchantments": [
+                        "efficiency:1"
+                    ],
+                    "unbreakable": true
+                },
+                {
+                    "material": "oak planks",
+                    "slot": 4,
+                    "amount": 64
+                },
+                {
+                    "material": "glass",
+                    "slot": 6,
+                    "amount": 64
+                },
+                {
+                    "material": "golden apple",
+                    "slot": 7,
+                    "amount": 1
+                },
+                {
+                    "material": "golden carrot",
+                    "slot": 8,
+                    "amount": 64
+                },
+                {
+                    "material": "arrow",
+                    "slot": 28,
+                    "amount": 1
+                },
+                {
+                    "material": "oak planks",
+                    "slot": 31,
+                    "amount": 64
+                },
+                {
+                    "material": "oak planks",
+                    "slot": 22,
+                    "amount": 64
+                },
+                {
+                    "material": "golden helmet",
+                    "slot": "helmet",
+                    "unbreakable": true
+                },
+                {
+                    "material": "chainmail chestplate",
+                    "slot": "chestplate",
+                    "unbreakable": true
+                },
+                {
+                    "material": "leather leggings",
+                    "slot": "leggings",
+                    "unbreakable": true
+                },
+                {
+                    "material": "leather boots",
+                    "slot": "boots",
+                    "unbreakable": true
+                }
+            ],
+            "effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 25, "particles": false}
+            ]
+        },
+        {
+            "name": "Blue",
+            "teams": ["blue"],
+            "items": [
+              {"material": "blue_terracotta", "slot": 5, "amount": 64}
+            ]
+          },
+          {
+            "name": "Red",
+            "teams": ["red"],
+            "items": [
+              {"material": "red_terracotta", "slot": 5, "amount": 64}
+            ]
+          }
+    ],
+    "itemremove": [
+        "iron sword",
+        "bow",
+        "iron pickaxe",
+        "iron axe",
+        "golden apple",
+        "golden carrot",
+        "arrow",
+        "glass",
+        "oak planks",
+        "red terracotta",
+        "blue terracotta",
+        "golden helmet",
+        "chainmail chestplate",
+        "leather leggings",
+        "leather boots",
+        "string",
+        "wheat seeds",
+        "oak sapling",
+	"purple wool",
+	"magenta wool",
+	"light blue wool",
+	"cyan wool"
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {
+                        "material": "golden apple",
+                        "amount": 1
+                    },
+                    {
+                        "material": "oak planks",
+                        "amount": 32
+                    },
+                    {
+                        "material": "glass",
+                        "amount": 16
+                    }
+                ]
+            }
+        }
+    ],
+    "time": {
+        "broadcasts": [
+            {
+                "message": "&6[TIP] &eIron Blocks regenerate on this map!!",
+                "interval": 60,
+                "repeat": true,
+                "commands": []
+            }
+        ]
+    },
+    "filters": [
+        {
+            "type": "blockBreak",
+            "evaluate": "allow",
+            "teams": [
+                "blue",
+                "red"
+            ],
+            "regions": [
+                "blue-spawn-protection",
+                "red-spawn-protection"
+            ],
+            "blocks": [
+                "iron block"
+            ],
+            "message": "&cYou may only break iron blocks in spawn!"
+        },
+        {
+            "type": "blockPlace",
+            "evaluate": "deny",
+            "teams": [
+                "blue",
+                "red"
+            ],
+            "regions": [
+                "blue-spawn-protection",
+                "red-spawn-protection"
+            ],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build",
+            "evaluate": "deny",
+            "teams": [
+                "blue"
+            ],
+            "regions": [
+                "light-blue-wool",
+                "cyan-wool"
+            ],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build",
+            "evaluate": "deny",
+            "teams": [
+                "red"
+            ],
+            "regions": [
+                "purple-wool",
+                "magenta-wool"
+            ],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "blockBreak",
+            "evaluate": "deny",
+            "teams": [
+                "red",
+                "blue"
+            ],
+            "regions": [
+                "light-blue-wool",
+                "cyan-wool",
+                "purple-wool",
+                "magenta-wool"
+            ],
+            "blocks": [
+                "chest"
+            ]
+        },
+        {
+            "type": "renewableBlocks",
+            "regions": [
+                "blue-spawn-protection",
+                "red-spawn-protection"
+            ],
+            "delay": 50,
+            "block": "iron block"
+        },
+        {
+            "type": "enter",
+            "evaluate": "deny",
+            "teams": [
+                "red"
+            ],
+            "regions": [
+                "blue-spawn-protection",
+                "purple-wool",
+                "magenta-wool"
+            ],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "enter",
+            "evaluate": "deny",
+            "teams": [
+                "blue"
+            ],
+            "regions": [
+                "red-spawn-protection",
+                "light-blue-wool",
+                "cyan-wool"
+            ],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "voidbuild",
+            "evaluate": "deny",
+            "teams": [
+                "blue",
+                "red"
+            ],
+            "inverted": true,
+            "regions": [
+                "middle"
+            ],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "voidbuild",
+            "evaluate": "deny",
+            "teams": [
+                "blue",
+                "red"
+            ],
+            "regions": [
+                "red-left-island-gap",
+                "red-right-island-gap",
+                "blue-left-island-gap",
+                "blue-right-island-gap"
+            ],
+            "message": "&cYou may not build over the void."}
+
+    ],
+    "regions": [
+        {
+            "id": "blue-spawn-protection",
+            "type": "cuboid",
+            "min": "-90, 0, -150",
+            "max": "-65, oo, 90"
+        },
+        {
+            "id": "red-spawn-protection",
+            "type": "cuboid",
+            "min": "73, 0, 87",
+            "max": "48, oo, 27"
+        },
+        {
+            "id": "purple-wool",
+            "type": "cylinder",
+            "base": "-41, 0, 127",
+            "radius": 12,
+            "height": 35
+        },
+        {
+            "id": "magenta-wool",
+            "type": "cylinder",
+            "base": "16, 0, 139",
+            "radius": 12,
+            "height": 35
+        },
+        {
+            "id": "light-blue-wool",
+            "type": "cylinder",
+            "base": "-33, 0, -202",
+            "radius": 12,
+            "height": 35
+        },
+        {
+            "id": "cyan-wool",
+            "type": "cylinder",
+            "base": "24, 0, -190",
+            "radius": 12,
+            "height": 35
+        },
+        {
+            "id": "middle",
+            "type": "cuboid",
+            "min": "-53, 0, 45",
+            "max": "-35, oo, -109"
+        },
+        {
+            "id": "red-left-island-gap",
+            "type": "cuboid",
+            "min": "-38, 0, 63",
+            "max": "-19, oo, 26"
+        },
+        {
+            "id": "red-right-island-gap",
+            "type": "cuboid",
+            "min": "-4, 0, 26",
+            "max": "16, oo, 46"
+        },
+        {
+            "id": "blue-left-island-gap",
+            "type": "cuboid",
+            "min": "20, 0, -127",
+            "max": "2, oo, -90"
+        },
+        {
+            "id": "blue-right-island-gap",
+            "type": "cuboid",
+            "min": "-34, 0, -110",
+            "max": "-14, oo, -90"
+        }
+    ],
+    "buildHeight": 32
+}
