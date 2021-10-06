@@ -231,6 +231,10 @@
         "string",
         "wheat seeds",
         "oak sapling"
+	"purple wool",
+	"magenta wool",
+	"light blue wool",
+	"cyan wool"
     ],
     "killstreaks": [
         {
