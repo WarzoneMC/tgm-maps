@@ -55,7 +55,7 @@
   	{"region": {"type": "cuboid", "min": "-86, 30, -1", "max": "-84, 31, 1"}, "delay": 2, "motion": "5, 4, 0",  "directional": false, "teams": ["blue"]},
 	{"region": {"type": "cuboid", "min": "84, 30, -1", "max": "86, 31, 1"}, "delay": 2, "motion": "-5, 4, 0",  "directional": false, "teams": ["red"]},
 	{"region": {"type": "cuboid", "min": "-1, 30, -86", "max": "1, 31, -84"}, "delay": 2, "motion": "0, 4, 5",  "directional": false, "teams": ["yellow"]},
-	{"region": {"type": "cuboid", "min": "-1, 29, 84", "max": "1, 29, 86"}, "delay": 2, "motion": "0, 4, -5",  "directional": false, "teams": ["green"]}
+	{"region": {"type": "cuboid", "min": "-1, 30, 84", "max": "1, 31, 86"}, "delay": 2, "motion": "0, 4, -5",  "directional": false, "teams": ["green"]}
   ],
   "points": {
 	"target": 30
