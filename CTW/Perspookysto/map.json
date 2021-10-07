@@ -84,7 +84,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "iron pickaxe", "glass", "oak planks", "golden apple", "cooked beef", "arrow",
+		"stone sword", "bow", "iron pickaxe", "stone axe", "glass", "oak planks", "golden apple", "cooked beef", "arrow",
 		"chainmail chestplate", "iron boots",
 		{
             "type": "leather helmet",
