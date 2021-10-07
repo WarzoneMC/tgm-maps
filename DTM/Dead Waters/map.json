@@ -149,13 +149,16 @@
 	  "regions": ["map"],
 	  "message": "&cYou may not build/modify here!"
 	},
-    {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	  {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+	  {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+	  {"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "blue-monument", "red-spawn", "red-monument"], "message": "&cYou are not allowed to detonate terrain here."}
   ],
   "regions": [
-	{"id": "blue-spawn", "type": "cuboid", "min": "-367, 6, 66", "max": "-375, 14, 93"},
-	{"id": "red-spawn", "type": "cuboid", "min": "-290, 6, 66", "max": "-282, 14, 93"},
-	{"id": "map", "type": "cuboid", "min": "-377, -oo, 54", "max": "-280, oo, 105"}
+	  {"id": "blue-spawn", "type": "cuboid", "min": "-367, 6, 66", "max": "-375, 14, 93"},
+	  {"id": "blue-monument", "type": "cuboid", "min": "-356, 7, 79", "max": "-355, 10, 80"},
+	  {"id": "red-spawn", "type": "cuboid", "min": "-290, 6, 66", "max": "-282, 14, 93"},
+	  {"id": "red-monument", "type": "cuboid", "min": "-302, 7, 79", "max": "-301, 10, 80"},
+	  {"id": "map", "type": "cuboid", "min": "-377, -oo, 54", "max": "-280, oo, 105"}
   ],
   "buildHeight": 17
 }
