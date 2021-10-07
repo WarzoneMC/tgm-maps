@@ -80,6 +80,17 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-50, 0, 23", "max": "-41, oo, 17"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-51, 0, 159", "max": "-60, oo, 165"}
