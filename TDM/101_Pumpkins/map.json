@@ -7,7 +7,7 @@
 		{"uuid": "ff64ebb9-24aa-4960-86c4-205244b7a407", "username": "Super_Armor"}
 	],
 	"gametype": "TDM",
-	"version": "1.3",
+	"version": "1.3.1",
 	"stats": {"disable": true},
     	"teams": [
 		{
@@ -94,7 +94,7 @@
         }
 	],
 	"itemremove": [
-		"bow", "arrow", "iron hoe", "red wool", "light gray wool", "gray wool", "green wool", "leather chestplate", "pumpkin pie"
+		"*"
 	],
 	"killstreaks": [
 		{
@@ -109,5 +109,8 @@
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["zombie", "skeleton", "spider", "wither"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

@@ -4,7 +4,7 @@
 		{"uuid": "06078e7e-6a7b-4d31-8f74-853072b182bb", "username": "xXFracXx"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"stats": {"disable": true},
     	"teams": [
 		{
@@ -63,15 +63,7 @@
 		}
 	],
 	"itemremove": [
-		"bow", "arrow", "stone sword",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-		{
-            "type": "leather chestplate",
-            "drop": true
-        }
+		"*"
 	],
 	"killstreaks": [
 		{
