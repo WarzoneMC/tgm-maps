@@ -3,7 +3,7 @@
   "authors": [
 	{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
   ],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "gametype": "DTM",
   "gamerules": {
 	"doFireTick": true
@@ -39,7 +39,7 @@
 		  "min": "-84, 14, 336",
 		  "max": "-82, 16, 334"
 		},
-		"health": 4
+		"health": 5
 	  },
 	  {
 		"name": "Monument&r",
@@ -49,7 +49,7 @@
 		  "min": "-95, 14, 421",
 		  "max": "-97, 16, 423"
 		},
-		"health": 4
+		"health": 5
 	  }
 	]
   },
@@ -59,7 +59,7 @@
 	  "items": [
 		{"material": "stone sword", "slot": 0, "unbreakable": true},
 		{"material": "bow", "slot": 1, "unbreakable": true},
-		{"material": "stone pickaxe", "slot": 2, "enchantments": ["efficiency:2"], "unbreakable": true},
+		{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
 		{"material": "stone axe", "slot": 3, "unbreakable": true},
 		{"material": "spruce planks", "slot": 4, "amount": 16},
 		{"material": "arrow", "slot": 7, "amount": 24},
@@ -87,7 +87,7 @@
 	}
   ],
   "itemremove": [
-	"stone sword", "bow", "stone pickaxe", "stone axe", "spruce planks", "blue terracotta", "red terracotta", "arrow", "golden carrot",
+	"stone sword", "bow", "iron pickaxe", "stone axe", "spruce planks", "blue terracotta", "red terracotta", "arrow", "golden carrot",
 	"chainmail chestplate", "emerald block", "golden apple",
 	{
 	  "type": "leather helmet",
