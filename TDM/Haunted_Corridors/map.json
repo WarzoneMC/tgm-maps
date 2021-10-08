@@ -56,7 +56,7 @@
 	"itemremove": [
 		"stone sword", "arrow", "bow", "golden carrot", "torch", "golden apple",
 		{
-            "type": "goldwn helmet",
+            "type": "golden helmet",
             "drop": true
         },
 		{
