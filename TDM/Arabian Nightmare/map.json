@@ -1,0 +1,93 @@
+{
+	"name": "Arabian Nightmare",
+	"authors": [
+		{"uuid": "b03360db-b8cd-49de-8ba1-b7920c2238a9", "username": "Obelistics"},
+		{"uuid": "c26e7a7f-b4ce-4ebc-ac4d-f60691915d23", "username": "Kroest"}
+	],
+	"gametype": "TDM",
+	"version": "2.0",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 31, 0.5, 180"},
+		{"teams": ["red"], "coords": "0.5, 5, -48.5"},
+		{"teams": ["blue"], "coords": "0.5, 5, 48.5, 180"}
+	],
+	"points": {
+		"target": 50
+	},
+	"time": {
+		"limit": 420
+	},
+	"damageControl": {
+		"FALL": false
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
+				
+				{"material": "leather helmet", "slot": "helmet", "enchantments": ["projectile protection:1"], "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["projectile protection:1"], "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "enchantments": ["projectile protection:1"], "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "enchantments": ["projectile protection:1"], "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "arrow", "cooked beef", "golden apple",
+		"chainmail chestplate",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple"},
+					{"material": "arrow"}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
