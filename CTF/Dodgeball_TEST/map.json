@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "811968c3-0a9f-4cb5-80af-19ce37141341", "username": "BennyDoesStuff"}
 	],
-	"version": "0.1",
+	"version": "0.2",
 	"stats": {"disable": true},
 	"gametype": "KOTF",
 	"teams": [
@@ -60,7 +60,7 @@
 			"items": [
 				{
 					"type": "item", "material": "bow","slot": 0, "unbreakable": true,
-					"enchantments": ["infinity:1", "power:5", "sharpness:100"]
+					"enchantments": ["infinity:1", "power:100", "sharpness:100"]
 				},
 				{"type": "item", "material": "arrow", "slot": 27},
 
