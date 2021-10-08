@@ -6,7 +6,7 @@
 		{"uuid": "82c796a5-c033-43be-af30-fa06496995f9", "username": "IM_A_H0B0"},
 		{"uuid": "19388047-f04b-43ac-9546-22aa69aea75c", "username": "bleangamer"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -87,31 +87,33 @@
 		}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-37, 0, 149 ", "max": "-50, oo, 132"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-37, 0, 149", "max": "-50, oo, 132"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-37, 0, -182", "max": "-50, oo, -165"},
 		{"id": "playable", "type": "cuboid", "min": "-50, -oo, -182", "max": "49, oo, 149"},
 		{"id": "battlefield-height", "type": "cuboid", "min": "-50, 30, -48", "max": "49, oo, 15"},
 		{"id": "blue-wool-sphere", "type": "sphere", "center": "12.5, 53.5, 119.5", "radius": 6},
-		{"id": "red-wool-sphere", "type": "sphere", "center": "12.5, 53.5, -151.5", "radius": 6}
+		{"id": "red-wool-sphere", "type": "sphere", "center": "12.5, 53.5, -151.5", "radius": 6},
+		{"id": "blue-wool-beacon", "type": "cuboid", "min": "11, 61, 118", "max": "13, 62, 120"},
+		{"id": "red-wool-beacon", "type": "cuboid", "min": "11, 61, -153", "max": "13, 62, -151"}
 	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection", "red-spawn-protection"],
-			"message": "&cYou may not modify the spawn buildings"
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "blue-wool-beacon", "red-wool-beacon"],
+			"message": "&cYou may not modify the spawn buildings."
 		},
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the Red's spawn"},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the Blue's spawn"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter red team's spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter blue team's spawn."},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["battlefield-height"],
-			"message": "&cYou may not build over the battlefield"
+			"message": "&cYou may not build over the battlefield."
 		},
 		{
 			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
 			"inverted": true,
 			"regions": ["playable"],
-			"message": "&cYou may not build over the void"
+			"message": "&cYou may not build over the void."
 		},
 		{
             "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
