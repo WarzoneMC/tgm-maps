@@ -60,7 +60,7 @@
 			"items": [
 				{
 					"type": "item", "material": "bow","slot": 0, "unbreakable": true,
-					"enchantments": ["infinity:1", "power:5", "sharpness:100"]
+					"enchantments": ["infinity:1", "power:100", "sharpness:100"]
 				},
 				{"type": "item", "material": "arrow", "slot": 27},
 
