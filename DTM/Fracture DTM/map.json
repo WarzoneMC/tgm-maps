@@ -1,154 +1,157 @@
 {
-  "name": "Fracture DTM",
-  "authors": [
-	{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
-  ],
-  "version": "1.0.1",
-  "gametype": "DTM",
-  "gamerules": {
-	"doFireTick": true
-  },
-  "teams": [
-	{
-	  "id": "blue",
-	  "name": "Blue",
-	  "color": "blue",
-	  "min": 1,
-	  "max": 10
+	"name": "Fracture DTM",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.0.2",
+	"gametype": "DTM",
+	"gamerules": {
+		"doFireTick": true
 	},
-	{
-	  "id": "red",
-	  "name": "Red",
-	  "color": "red",
-	  "min": 1,
-	  "max": 10
-	}
-  ],
-  "spawns": [
-	{"teams": ["spectators"], "coords": "41.5, 38, 86.5, 90"},
-	{"teams": ["blue"], "coords": "-26.5, 15, 165.5, -100, -15"},
-	{"teams": ["blue"], "coords": "-30.5, 15, 165.5, 100, -15"},
-	{"teams": ["red"], "coords": "-26.5, 15, 7.5, -80, -15"},
-	{"teams": ["red"], "coords": "-30.5, 15, 7.5, 80, -15"}
-  ],
-  "dtm": {
-	"monuments": [
-	  {
-		"name": "Monument",
-		"teams": ["blue"],
-		"materials": ["obsidian"],
-		"region": {
-		  "min": "-29, 11, 137",
-		  "max": "-29, 12, 137"
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 10
 		},
-		"health": 2
-	  },
-	  {
-		"name": "Monument&r",
-		"teams": ["red"],
-		"materials": ["obsidian"],
-		"region": {
-		  "min": "-29, 11, 35",
-		  "max": "-29, 12, 35"
-		},
-		"health": 2
-	  }
-	]
-  },
-  "kits": [
-	{
-	  "name": "Default",
-	  "items": [
-		{"material": "stone sword", "slot": 0, "unbreakable": true},
-		{"material": "bow", "slot": 1, "unbreakable": true},
-		{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-		{"material": "iron axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
-		{"material": "spruce planks", "slot": 4, "amount": 24},
-		{"material": "stone bricks", "slot": 5, "amount": 16},
-		{"material": "arrow", "slot": 7, "amount": 24},
-		{"material": "golden carrot", "slot": 8, "amount": 64},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "41.5, 38, 86.5, 90"},
+		{"teams": ["blue"], "coords": "-26.5, 15, 165.5, -100, -15"},
+		{"teams": ["blue"], "coords": "-30.5, 15, 165.5, 100, -15"},
+		{"teams": ["red"], "coords": "-26.5, 15, 7.5, -80, -15"},
+		{"teams": ["red"], "coords": "-30.5, 15, 7.5, 80, -15"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-29, 11, 137",
+					"max": "-29, 12, 137"
+				},
+				"health": 2
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-29, 11, 35",
+					"max": "-29, 12, 35"
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
+				{"material": "spruce planks", "slot": 4, "amount": 24},
+				{"material": "stone bricks", "slot": 5, "amount": 16},
+				{"material": "arrow", "slot": 7, "amount": 24},
+				{"material": "golden carrot", "slot": 8, "amount": 64},
 
-		{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
-		{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-		{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-		{"material": "iron boots", "slot": "boots", "unbreakable": true}
-	  ]
-	}
-  ],
-  "itemremove": [
-	"stone sword", "bow", "diamond pickaxe", "iron axe", "spruce planks", "stone bricks", "arrow", "golden carrot", "golden apple",
-	"chainmail chestplate", "iron boots",
-	{
-	  "type": "leather helmet",
-	  "drop": true
-	},
-	{
-	  "type": "leather leggings",
-	  "drop": true
-	}
-  ],
-  "killstreaks": [
-	{
-	  "count": 1,
-	  "repeat": true,
-	  "actions": {
-		"items": [
-		  {"material": "golden apple", "amount": 1},
-		  {"material": "arrow", "amount": 8},
-		  {"material": "spruce planks", "amount": 8},
-		  {"material": "gold ingot", "amount": 1}
-		]
-	  }
-	},
-	{
-	  "count": 6,
-	  "repeat": false,
-	  "actions": {
-		"items": [
-		  {"material": "flint and steel", "durability": 61, "amount": 1},
-		  {"material": "golden apple", "amount": 1}
-		]
-	  }
-	},
-	{
-	  "count": 8,
-	  "repeat": true,
-	  "actions": {
-		"items": [
-		  {"material": "tnt", "amount": 1}
-		]
-	  }
-	}
-  ],
-  "filters": [
-	{
-	  "type": "blockBreak", "evaluate": "allow", "teams": ["blue", "red"],
-	  "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
-	  "blocks": ["gold block"],
-	  "message": "&cYou may only break gold blocks in spawn."
-	},
-	{
-	  "type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
-	  "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
-	  "message": "&cYou are not allowed to modify terrain here."
-	},
-	{
-	  "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
-	  "inverted": true,
-	  "regions": ["map", "blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
-	  "message": "&cYou may not build over the void."
-	},
-	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
-	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."}
-  ],
-  "regions": [
-	{"id": "blue-spawn-protection", "type": "cuboid", "min": "-40, 13, 160", "max": "-16, oo, 168"},
-	{"id": "blue-spawn-protection-west", "type": "cuboid", "min": "-16, 16, 146", "max": "0, oo, 169"},
-	{"id": "blue-spawn-protection-east", "type": "cuboid", "min": "-58, 16, 146", "max": "-42, oo, 169"},
-	{"id": "red-spawn-protection", "type": "cuboid", "min": "-41, 13, 4", "max": "-17, oo, 12"},
-	{"id": "red-spawn-protection-west", "type": "cuboid", "min": "-58, 13, 3", "max": "-42, oo, 26"},
-	{"id": "red-spawn-protection-east", "type": "cuboid", "min": "-16, 13, 3", "max": "0, oo, 26"},
-	{"id": "map", "type": "cuboid", "min": "-73, -oo, 18", "max": "15, oo, 154"}
-  ],
-  "buildHeight": 20
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "spruce planks", "stone bricks", "arrow", "golden carrot", "golden apple",
+		"chainmail chestplate", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8},
+					{"material": "spruce planks", "amount": 8},
+					{"material": "gold ingot", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 6,
+			"repeat": false,
+			"actions": {
+				"items": [
+					{"material": "flint and steel", "durability": 61, "amount": 1},
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 8,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
+			"blocks": ["gold block"],
+			"message": "&cYou may only break gold blocks in spawn."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map", "blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
+			"message": "&cYou may not build over the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-water-voidbuild-exception", "red-water-voidbuild-exception"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-40, 13, 160", "max": "-16, oo, 168"},
+		{"id": "blue-spawn-protection-west", "type": "cuboid", "min": "-16, 16, 146", "max": "0, oo, 169"},
+		{"id": "blue-spawn-protection-east", "type": "cuboid", "min": "-58, 16, 146", "max": "-42, oo, 169"},
+		{"id": "blue-water-voidbuild-exception", "type": "cuboid", "min": "-35, 1, 160", "max": "-24, 12, 162"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-41, 13, 4", "max": "-17, oo, 12"},
+		{"id": "red-spawn-protection-west", "type": "cuboid", "min": "-58, 13, 3", "max": "-42, oo, 26"},
+		{"id": "red-spawn-protection-east", "type": "cuboid", "min": "-16, 13, 3", "max": "0, oo, 26"},
+		{"id": "red-water-voidbuild-exception", "type": "cuboid", "min": "-35, 1, 10", "max": "-24, 12, 12"},
+		{"id": "map", "type": "cuboid", "min": "-73, -oo, 18", "max": "15, oo, 154"}
+	],
+	"buildHeight": 20
 }
