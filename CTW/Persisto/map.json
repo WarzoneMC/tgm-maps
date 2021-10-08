@@ -127,8 +127,8 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 
-		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "yellow-wool", "magenta-wool"], "message": "&cYou may not enter this region."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-wool", "orange-wool"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "yellow-wool", "magenta-wool", "yellow-weird-enter-filter"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-wool", "orange-wool", "orange-weird-enter-filter"], "message": "&cYou may not enter this region."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
 		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["green-wool", "orange-wool", "magenta-wool", "yellow-wool"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
@@ -140,6 +140,9 @@
 		{"id": "orange-wool", "type": "cuboid", "min": "-38, 0, 110", "max": "-50, oo, 134"},
 		{"id": "magenta-wool", "type": "cuboid", "min": "60, 0, 62", "max": "72, oo, 38"},
 		{"id": "yellow-wool", "type": "cuboid", "min": "-38, 0, 38", "max": "-50, oo, 62"},
+
+		{"id": "orange-weird-enter-filter", "type": "cuboid", "min": "-37, 0, 135", "max": "-37, 0, 110"},
+		{"id": "yellow-weird-enter-filter", "type": "cuboid", "min": "-37, 0, 63", "max": "-37, 0, 38"},
 		
 		{"id": "map", "type": "cuboid", "min": "-8, 0, 46", "max": "30, oo, 126"}
 	],

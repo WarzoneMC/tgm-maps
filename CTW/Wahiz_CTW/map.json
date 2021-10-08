@@ -197,11 +197,11 @@
             ]
         },
 
-        {"id": "pink-wool-room", "type": "cuboid", "min": "125, 0, -102", "max": "140, oo, -92"},
-        {"id": "purple-wool-room", "type": "cuboid", "min": "125, 0, -58", "max": "140, oo, -48"},
+        {"id": "pink-wool-room", "type": "cuboid", "min": "125, 0, -102", "max": "140, oo, -91"},
+        {"id": "purple-wool-room", "type": "cuboid", "min": "125, 0, -58", "max": "140, oo, -47"},
         
-        {"id": "yellow-wool-room", "type": "cuboid", "min": "-124, 0, -58", "max": "-109, oo, -48"},
-        {"id": "orange-wool-room", "type": "cuboid", "min": "-124, 0, -102", "max": "-109, oo, -92"}
+        {"id": "yellow-wool-room", "type": "cuboid", "min": "-124, 0, -58", "max": "-109, oo, -47"},
+        {"id": "orange-wool-room", "type": "cuboid", "min": "-124, 0, -102", "max": "-109, oo, -91"}
     ],
     "buildHeight": 30
 }
