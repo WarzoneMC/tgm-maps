@@ -51,7 +51,7 @@
 	"itemremove": [
 		"iron sword", "bow", "cooked beef", "arrow", "chainmail chestplate", "iron leggings",
 		{
-			"type": "leather helmet",
+		  "type": "leather helmet",
 			"drop": true
 		},
 		{

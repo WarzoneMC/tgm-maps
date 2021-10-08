@@ -1,0 +1,87 @@
+{
+	"name": "No Return",
+	"authors": [
+		{"uuid": "a6a99e23-34c4-4957-8974-b78b4da9ce7c", "username": "AntonyMo"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0",
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark_purple",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "51.5, 36, 0.5, -90"},
+		{"teams": ["blue"], "coords": "0.5, 19, -54.5"},
+		{"teams": ["purple"], "coords": "0.5, 19, 54.5, 180"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "bow", "enchantments": ["arrow damage:1", "arrow infinite:1", "damage all:2", "knockback:2"], "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 1},
+				{"type": "item", "material": "bread", "slot": 8, "amount": 8},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"bow", "golden apple", "bread", "arrow", "iron boots",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "purple"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}

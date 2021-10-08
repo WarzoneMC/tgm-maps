@@ -52,7 +52,22 @@
 			]
 		}
 	],
-	"itemremove": "*",
+	"itemremove": [
+		"iron sword", "bow", "arrow", "cooked beef", "golden apple",
+		"chainmail chestplate",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
 	"killstreaks": [
 		{
 			"count": 1,
@@ -69,7 +84,7 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"message": "&cYou are not allowed to modify terrain on this map."
 		}
 	]
 }

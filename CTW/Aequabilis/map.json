@@ -158,10 +158,10 @@
 	"regions": [
 		{"id": "left-bridge", "type": "cuboid", "min": "-253, 0, 322", "max": "-307, oo, 338"},
 		{"id": "center-bridge", "type": "cuboid", "min": "-253, 0, 270", "max": "-307, oo, 286"},
-        	{"id": "center-bridge-horizontal", "type": "cuboid", "min": "-272, 0, 255", "max": "-288, oo, 301"},
+        {"id": "center-bridge-horizontal", "type": "cuboid", "min": "-272, 0, 255", "max": "-288, oo, 301"},
 		{"id": "right-bridge", "type": "cuboid", "min": "-253, 0, 218", "max": "-307, oo, 234"},
         
-        	{
+        {
 			"id": "buildable-void", "type": "meta",
 			"regions": [
 				"left-bridge", "center-bridge", "center-bridge-horizontal",
@@ -169,11 +169,11 @@
 			]
 		},
 		
-		{"id": "lime-room", "min": "-464, 0, 218", "max": "-448, oo, 235"},
-		{"id": "green-room", "min": "-464, 0, 322", "max": "-448, oo, 339"},
+		{"id": "lime-room", "min": "-464, 0, 217", "max": "-448, oo, 235"},
+		{"id": "green-room", "min": "-464, 0, 321", "max": "-448, oo, 339"},
 
-		{"id": "yellow-room", "min": "-112, 0, 210", "max": "-95, oo, 235"},
-		{"id": "orange-room", "min": "-112, 0, 322", "max": "-95, oo, 339"},
+		{"id": "yellow-room", "min": "-112, 0, 217", "max": "-95, oo, 235"},
+		{"id": "orange-room", "min": "-112, 0, 321", "max": "-95, oo, 339"},
 
 		{"id": "orange-spawn", "type": "cuboid", "min": "-431, 0, 270", "max": "-407, oo, 286"},
 		{"id": "green-spawn", "type": "cuboid", "min": "-153, 0, 270", "max": "-129, oo, 286"}

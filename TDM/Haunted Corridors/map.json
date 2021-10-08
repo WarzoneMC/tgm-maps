@@ -100,7 +100,7 @@
 			"blocks": ["torch"]
 		},
 		{
-			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
+		  "type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
 			"regions": ["global"],
 			"blocks": ["torch"]
 		}
