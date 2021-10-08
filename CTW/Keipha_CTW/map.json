@@ -3,7 +3,7 @@
     "authors": [
         {
             "uuid": "e41edd14-9b0e-4501-a0c5-7fda64d2b2f3",
-            "username": "ItsMeKiing"
+            "username": "zZKiIng"
         },
         {
             "uuid": "fe3608b7-d105-4029-8800-34b3147065b6",
@@ -194,23 +194,40 @@
                 }
             ],
             "effects": [
-				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 25, "particles": false}
+                {
+                    "type": "DAMAGE_RESISTANCE",
+                    "duration": 80,
+                    "amplifier": 25,
+                    "particles": false
+                }
             ]
         },
         {
             "name": "Blue",
-            "teams": ["blue"],
+            "teams": [
+                "blue"
+            ],
             "items": [
-              {"material": "blue_terracotta", "slot": 5, "amount": 64}
+                {
+                    "material": "blue_terracotta",
+                    "slot": 5,
+                    "amount": 64
+                }
             ]
-          },
-          {
+        },
+        {
             "name": "Red",
-            "teams": ["red"],
+            "teams": [
+                "red"
+            ],
             "items": [
-              {"material": "red_terracotta", "slot": 5, "amount": 64}
+                {
+                    "material": "red_terracotta",
+                    "slot": 5,
+                    "amount": 64
+                }
             ]
-          }
+        }
     ],
     "itemremove": [
         "iron sword",
@@ -230,11 +247,7 @@
         "leather boots",
         "string",
         "wheat seeds",
-        "oak sapling",
-	"purple wool",
-	"magenta wool",
-	"light blue wool",
-	"cyan wool"
+        "oak sapling"
     ],
     "killstreaks": [
         {
@@ -400,8 +413,8 @@
                 "blue-left-island-gap",
                 "blue-right-island-gap"
             ],
-            "message": "&cYou may not build over the void."}
-
+            "message": "&cYou may not build over the void."
+        }
     ],
     "regions": [
         {
@@ -447,8 +460,8 @@
         {
             "id": "middle",
             "type": "cuboid",
-            "min": "-53, 0, 45",
-            "max": "-35, oo, -109"
+            "min": "33, 0, -127",
+            "max": "-51, oo, 63"
         },
         {
             "id": "red-left-island-gap",
