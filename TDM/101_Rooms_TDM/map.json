@@ -6,7 +6,7 @@
 	"gametype": "TDM",
 	"version": "1.0.4",
 	"stats": {"disable": true},
-    	"teams": [
+		"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -43,9 +43,9 @@
 		{"teams": ["yellow"], "coords": "-390.5, 1, -335.5, -45"},
 		{"teams": ["red"], "coords": "-390.5, 1, -261.5, -135"}
 	],
-    	"points": {
-        	"target": 50
-    	},
+		"points": {
+			"target": 50
+		},
 	"kits": [
 		{
 			"name": "default",
@@ -62,17 +62,7 @@
 			]
 		}
 	],
-	"itemremove": [
-		"bow", "arrow", "stone sword",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-		{
-            "type": "leather chestplate",
-            "drop": true
-        }
-	],
+	"itemremove": "*",
 	"killstreaks": [
 		{
 			"count": 1,
@@ -86,8 +76,5 @@
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

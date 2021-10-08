@@ -9,7 +9,7 @@
 	"gametype": "TDM",
 	"version": "1.3.2",
 	"stats": {"disable": true},
-    	"teams": [
+		"teams": [
 		{
 			"id": "zombie",
 			"name": "Zombie",
@@ -46,9 +46,9 @@
 		{"teams": ["spider"], "coords": "-317.5, 1, -333.5, 45"},
 		{"teams": ["wither"], "coords": "-388.5, 1, -333.5, -45"}
 	],
-    	"points": {
-        	"target": 50
-    	},
+		"points": {
+			"target": 50
+		},
 	"kits": [
 		{
 			"name": "default",
