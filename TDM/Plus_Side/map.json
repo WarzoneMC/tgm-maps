@@ -67,7 +67,21 @@
 			]
 		}
 	],
-	"itemremove": "*",
+	"itemremove": [
+		"iron sword", "bow", "arrow", "cooked beef", "chainmail chestplate",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
 	"killstreaks": [
 		{
 			"count": 1,

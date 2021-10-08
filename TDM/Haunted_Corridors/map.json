@@ -53,7 +53,25 @@
 			]
 		}
 	],
-	"itemremove": "*",
+	"itemremove": [
+		"stone sword", "arrow", "bow", "golden carrot", "torch", "golden apple",
+		{
+			"type": "golden helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "chainmail leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
 	"killstreaks": [
 		{
 			"count": 1,

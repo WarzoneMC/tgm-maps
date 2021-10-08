@@ -48,7 +48,17 @@
 			]
 		}
 	],
-	"itemremove": "*",
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "chainmail chestplate", "iron leggings",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
