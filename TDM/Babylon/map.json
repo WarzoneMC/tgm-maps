@@ -9,7 +9,7 @@
 	{"uuid": "4cdc642e-36a9-4208-8ca2-81a9461b497d", "username": "raid3r"},
 	{"uuid": "6261860b-b738-426d-9425-975bd3045383", "username": "Aaron215"}
   ],
-  "version": "1.2.3",
+  "version": "1.2.4",
   "gametype": "TDM",
   "gamerules": {
 	  "fallDamage": false
@@ -77,25 +77,7 @@
 	  ]
 	}
   ],
-  "itemremove": [
-	"stone sword", "bow", "golden apple", "cooked beef", "arrow",
-	{
-	  "type": "leather helmet",
-	  "drop": true
-	},
-	{
-	  "type": "leather chestplate",
-	  "drop": true
-	},
-	{
-	  "type": "leather leggings",
-	  "drop": true
-	},
-	{
-	  "type": "leather boots",
-	  "drop": true
-	}
-  ],
+  "itemremove": "*",
   "killstreaks": [
 	{
 	  "count": 1,
@@ -110,7 +92,7 @@
   ],
   "filters": [
 	{
-	  "type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
+	  "type": "build", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
 	  "regions": ["global"],
 	  "message": "&cYou are not allowed to modify terrain here."
 	},

@@ -5,7 +5,7 @@
 		{"uuid": "621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06", "username": "thestrangeboy1"}
 	],
 	"gametype": "TDM",
-	"version": "1.1.0",
+	"version": "1.1.1",
     	"teams": [
 		{
 			"id": "blue",
@@ -53,25 +53,7 @@
 			]
 		}
 	],
-	"itemremove": [
-		"stone sword", "arrow", "bow", "golden carrot", "torch", "golden apple",
-		{
-            "type": "golden helmet",
-            "drop": true
-        },
-		{
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "chainmail leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-	],
+	"itemremove": "*",
 	"killstreaks": [
 		{
 			"count": 1,
@@ -93,18 +75,15 @@
 			}
 		}
 	],
-	"regions": [
-		{"id": "map", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
-	],
 	"filters": [
         {
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
-			"regions": ["map"],
+			"regions": ["global"],
 			"blocks": ["torch"]
 		},
 		{
 			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
-			"regions": ["map"],
+			"regions": ["global"],
 			"blocks": ["torch"]
 		}
 	]

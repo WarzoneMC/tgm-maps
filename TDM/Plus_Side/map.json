@@ -5,7 +5,7 @@
 		{"uuid": "1e3b1b79-307a-4093-aaeb-21b2fd419336", "username": "BlockDrop74"}
 	],
 	"gametype": "TDM",
-	"version": "1.4.7",
+	"version": "1.4.8",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -51,10 +51,10 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Cobalt Bow", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
+				{"material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "displayName": "Cobalt Bow", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 8},
 				
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -67,21 +67,7 @@
 			]
 		}
 	],
-	"itemremove": [
-		"iron sword", "bow", "arrow", "cooked beef", "chainmail chestplate",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-	],
+	"itemremove": "*",
 	"killstreaks": [
 		{
 			"count": 1,
@@ -109,7 +95,6 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red", "blue", "green"], "regions": ["yellow-spawn"], "message": "&cYou may not enter this region."}
 	],
 	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
 		{"id": "red-spawn", "type": "cuboid", "min": "757, 0, 519", "max": "774, oo, 507"},
 		{"id": "blue-spawn", "type": "cuboid", "min": "682, 0, 427", "max": "694, oo, 444"},
 		{"id": "green-spawn", "type": "cuboid", "min": "682, 0, 582", "max": "694, oo, 599"},

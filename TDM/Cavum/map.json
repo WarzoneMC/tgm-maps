@@ -5,7 +5,7 @@
 		{"uuid": "15dc7f7a-40cd-4389-ad45-f8a33a09a394", "username": "Moo8x8"}
 	],
 	"gametype": "TDM",
-	"version": "1.0",
+	"version": "1.0.1",
 	"teams": [
 		{
 			"id": "yellow",
@@ -50,11 +50,11 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-				{"type": "item", "material": "golden apple", "slot": 7},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "golden apple", "slot": 7},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 9, "amount": 64},
 				
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -63,26 +63,12 @@
 			]
 		}
 	],
-	"itemremove": [
-		"iron sword", "bow", "golden apple", "cooked beef", "arrow",
-		"chainmail chestplate", "iron leggings",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-	],
+	"itemremove": "*",
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "purple", "yellow"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

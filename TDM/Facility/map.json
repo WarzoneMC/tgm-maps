@@ -6,7 +6,7 @@
 		{"uuid": "e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924", "username": "Mikeg542"}
 	],
 	"gametype": "TDM",
-	"version": "1.1",
+	"version": "1.1.1",
 	"stats": {"disable": true},
     	"teams": [
 		{
@@ -36,13 +36,13 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "bow", "slot": 0, "amount": 1, "displayName": "Laser Gun", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 1, "amount": 1},
+				{"material": "bow", "slot": 0, "amount": 1, "displayName": "Laser Gun", "enchantments": ["power:100", "infinity:1", "sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 1, "amount": 1},
 
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
 				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
@@ -61,25 +61,7 @@
 			]
 		}
 	],
-	"itemremove": [
-		"bow", "arrow",
-		{
-            "type": "leather helmet",
-            "drop": true
-        },
-		{
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-	],
+	"itemremove": "*",
 	"killstreaks": [
 		{
 			"count": 1,
@@ -98,12 +80,10 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 
-		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, 3, 147", "max": "-103, 14, 161"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"},
-
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-111, 3, 37", "max": "-103, 14, 51"}
 	]
 }

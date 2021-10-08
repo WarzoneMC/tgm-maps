@@ -1,7 +1,7 @@
 {
     "name": "Cairo TDM",
     "gametype": "TDM",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {"uuid": "5ca79703-1be6-4dca-9073-59d024eb8bb0", "username": "koipen"},
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"},
@@ -39,17 +39,17 @@
         {
             "name": "default",
             "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
-                {"type": "item", "material": "ladder", "slot": 2, "amount": "32"},
-                {"type": "item", "material": "cooked chicken", "slot": 3, "amount": "32"},
-                {"type": "item", "material": "golden apple", "slot": 4},
-                {"type": "item", "material": "arrow", "slot": 28},
+                {"material": "stone sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+                {"material": "ladder", "slot": 2, "amount": "32"},
+                {"material": "cooked chicken", "slot": 3, "amount": "32"},
+                {"material": "golden apple", "slot": 4},
+                {"material": "arrow", "slot": 28},
 
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "enchantments": ["protection fall:4"], "unbreakable": true}
+                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+                {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "slot": "boots", "enchantments": ["protection fall:4"], "unbreakable": true}
             ],
             "effects": [
                 {"type": "heal", "duration": 5, "amplifier": 1, "particles": false},

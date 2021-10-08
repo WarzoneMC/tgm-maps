@@ -5,7 +5,7 @@
 		{"uuid": "1e3b1b79-307a-4093-aaeb-21b2fd419336", "username": "BlockDrop74"}
 	],
 	"gametype": "TDM",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -51,10 +51,10 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Fire-String Bow", "enchantments": ["power:100", "fire:10"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
-				{"type": "item", "material": "baked potato", "slot": 8, "amount": 1},
+				{"material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "displayName": "Fire-String Bow", "enchantments": ["power:100", "fire:10"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 1},
+				{"material": "baked potato", "slot": 8, "amount": 1},
 				
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -104,13 +104,13 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "gray", "green", "silver"],
 			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"message": "&cYou are not allowed to modify terrain on this map."
 		},
 
-		{"type": "enter", "evaluate": "deny", "teams": ["silver", "gray", "green"], "regions": ["red-spawn"], "message": "&cYou may not eneter enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["silver", "green", "red"], "regions": ["gray-spawn"], "message": "&cYou may not eneter enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["silver", "red", "gray"], "regions": ["green-spawn"], "message": "&cYou may not eneter enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red", "gray", "green"], "regions": ["silver-spawn"], "message": "&cYou may not eneter enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "gray", "green"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "green", "red"], "regions": ["gray-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "red", "gray"], "regions": ["green-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "gray", "green"], "regions": ["silver-spawn"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
 		{"id": "green-spawn", "type": "cuboid", "min": "757, 0, 519", "max": "774, oo, 507"},
