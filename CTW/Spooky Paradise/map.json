@@ -1,10 +1,10 @@
 {
 	"name": "Spooky Paradise",
 	"authors": [
-		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "Wedial"},
+		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "Wesdial"},
 		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [
 		{
