@@ -136,11 +136,14 @@
 		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-room", "pink-room", "lime-room", "yellow-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
-		{"id": "green-room", "min": "118, 13, -30", "max": "129, oo, -19"},
-		{"id": "lime-green-room", "min": "118, 13, 18", "max": "129, oo, 29"},
+		{"id": "green-room", "min": "118, 13, -30", "max": "129, oo, -17"},
+		{"id": "lime-green-room", "min": "118, 13, 18", "max": "129, oo, 31"},
 
-		{"id": "magenta-room", "min": "-119, 13, 29", "max": "-130, oo, 18"},
-		{"id": "pink-room", "min": "-119, 13, -19", "max": "-130, oo, -30"},
+		{"id": "magenta-room", "min": "-119, 13, 30", "max": "-130, oo, 17"},
+		{"id": "pink-room", "min": "-119, 13, -18", "max": "-130, oo, -31"},
+
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 17, -11", "max": "123, 6, 13"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 17, 10", "max": "-124, 1, -12"},
 
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 17, -11", "max": "123, 6, 13"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 17, 10", "max": "-124, 1, -12"},
