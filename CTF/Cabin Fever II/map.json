@@ -1,0 +1,153 @@
+{
+	"name": "Cabin Fever II",
+	"authors": [
+		{"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"},
+		{"uuid": "91295196-9cd2-4963-b7ec-afd1a110edbe", "username": "Pbat"}
+	],
+	"version": "1.0.2",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 12
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 12
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-225, 71, -375, 235"},
+		{"teams": ["blue"], "coords": "-280, 52, -489"},
+		{"teams": ["red"], "coords": "-112, 52, -325, 180"}
+	],
+	"time": {
+		"limit": 1200
+	},
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 2
+		},
+		"flags": [
+			{
+				"team": "red",
+				"location": "-146.5, 72, -301.5",
+				"respawn-time": 15,
+				"type": "white",
+				"patterns": [
+					{"color": "red", "type": "gradient"}
+				],
+				"rotation": "north",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
+			},
+			{
+				"team": "blue",
+				"location": "-246.5, 72, -513.5",
+				"respawn-time": 15,
+				"type": "white",
+				"patterns": [
+					{"color": "blue", "type": "gradient"}
+				],
+				"rotation": "south",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": 2, "particles": false},
+					{"type": "regeneration", "duration": 40, "amplifier": 10, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "blue-net", "team": "blue"},
+			{"region": "red-net", "team": "red"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2, "amount": 2},
+				{"type": "item", "material": "cooked beef", "slot": 3, "amount": 64},
+				{"type": "item", "material": "potion", "potion": {
+					"effects": [
+						{
+							"type": "speed",
+							"duration": 900,
+							"amplifier": 0
+						},
+						{
+							"type": "jump",
+							"duration": 900,
+							"amplifier": 1
+						}
+					]
+					}, "slot": 5, "amount": 1, "displayName": "&b&lSpeed I & Jump Boost II", "lore": ["&e45 seconds"]},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "golden leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"golden leggings", "stone sword", "fishing rod", "bow", "arrow", "cooked beef", "golden apple", "potion", "glass bottle",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter this region."},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"],
+			"message": "&cYou may not modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "-285, 52, -492", "max": "-279, 57, -480"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-115, 52, -334", "max": "-108, 57, -324"},
+
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
+
+		{"id": "blue-net", "type": "cuboid", "min": "-247, 72, -514", "max": "-245, 74, -512"},
+		{"id": "red-net", "type": "cuboid", "min": "-147, 72, -302", "max": "-145, 74, -300"}
+	]
+}

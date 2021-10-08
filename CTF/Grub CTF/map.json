@@ -1,0 +1,149 @@
+{
+	"name": "Grub CTF",
+	"authors": [
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTr"},
+		{"uuid": "bb628049-e368-4b1c-b8aa-d4557ae9416b", "username": "Anthonny"}
+	],
+	"version": "1.3.6",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-54.5, 81, 192.5, 180"},
+		{"teams": ["blue"], "coords": "-59.5, 28, 93.5"},
+		{"teams": ["red"], "coords": "-59.5, 28, 295.5, 180"}
+	],
+	"time": {
+		"limit": 1200
+	},
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 3
+		},
+		"flags": [
+			{
+				"team": "red",
+				"location": "-56.5, 21, 266.5",
+				"respawn-time": 20,
+				"type": "red",
+				"patterns": [
+					{"color": "red", "type": "base"}
+				],
+				"rotation": "north",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+				]
+			},
+			{
+				"team": "blue",
+				"location": "-56.5, 21, 122.5",
+				"respawn-time": 20,
+				"type": "blue",
+				"patterns": [
+					{"color": "blue", "type": "base"}
+				],
+				"rotation": "south",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "blue-net", "team": "blue"},
+			{"region": "red-net", "team": "red"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2},
+				{"type": "item", "material": "cooked beef", "slot": 3, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile protection:2"], "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"cobblestone", "oak planks", "sand", "sandstone", "dirt", "tnt",
+		"golden apple", "cooked beef", "bow", "arrow", "iron sword",
+		{
+            "type": "leather helmet",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"damageControl": {
+		"FALL": false,
+		"BLOCK_EXPLOSION": false
+	},
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter this region."},
+		
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"],
+			"message": "&cYou may not modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "-58.5, 27.5, 95.5", "max": "-62.5, 30.5, 91.5"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-62.5, 27.5, 293.5", "max": "-58.5, 30.5, 293.5"},
+
+		{"id": "blue-net", "type": "cylinder", "base": "-56.5, 20, 122.5", "radius": 2, "height": 3},
+		{"id": "red-net", "type": "cylinder", "base": "-56.5, 20, 266.5", "radius": 2, "height": 3}
+	]
+}
