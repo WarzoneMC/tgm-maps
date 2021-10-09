@@ -1,0 +1,159 @@
+{
+	"name": "Not So Itty Bitty [EVENT]",
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
+	],
+	"version": "1.0.1",
+	"gametype": "DTM",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue", 
+			"name": "Blue", 
+			"color": "blue", 
+			"min": 1, 
+			"max": 50
+		},
+		{
+			"id": "red", 
+			"name": "Red", 
+			"color": "red", 
+			"min": 1, 
+			"max": 50
+		},
+		{
+			"id": "Staff",
+			"name": "Staff",
+			"color": "yellow",
+			"min": 0,
+			"max": 0
+		}
+
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "133.5, 74, -11.5, 180"},
+		{"teams": ["red"], "coords": "-90.5, 27, -133.5, -90"},
+		{"teams": ["blue"], "coords": "358.5, 27, -135.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Blue Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "342, 27, -231", "max": "342, 27, -231"},
+						{"min": "421, 79, -199", "max": "421, 79, -199"},
+						{"min": "358, 77, -136", "max": "358, 77, -136"},
+						{"min": "421, 79, -72", "max": "421, 79, -72"},
+						{"min": "342, 27, -40", "max": "342, 27, -40"}
+					]
+				},
+				"health": 5
+			},
+			{
+				"name": "Red Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-75, 27, -39", "max": "-75, 27, -39"},
+						{"min": "-154, 79, -71", "max": "-154, 79, -71"},
+						{"min": "-91, 77, -134", "max": "-91, 77, -134"},
+						{"min": "-154, 79, -198", "max": "-154, 79, -198"},
+						{"min": "-75, 27, -230", "max": "-75, 27, -230"}
+					]
+				},
+				"health": 5
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 2, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 1000000, "amplifier": 3, "particles": false},
+				{"type": "DAMAGE_RESISTANCE", "duration": 50, "amplifier": 10000, "particles": false}
+			]
+		},
+		{
+            "name": "Staff",
+            "teams": [
+                "Staff"
+            ],
+            "items": [
+                {
+                    "material": "golden helmet",
+                    "slot": "helmet",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden chestplate",
+                    "slot": "chestplate",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden leggings",
+                    "slot": "leggings",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden boots",
+                    "slot": "boots",
+                    "unbreakable": true
+                }
+            ]
+        }
+	],
+	"itemremove": [
+		"iron sword", "stone axe", "cooked beef", "chainmail chestplate", "iron boots",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        }
+	
+	],
+	"time": {
+        "broadcasts": [
+			{
+				"message": "&c[EVENT] Staff wear golden armor, and may be going a little crazy! Good thing stats are disabled!",
+				"interval": 40,
+				"repeat": true,
+				"commands": []
+			}
+        ]
+    },
+	"regions": [
+		{"id": "red-spawn", "type": "cuboid", "min": "-67, 27, -127", "max": "-98, 54, -142"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "334, 27, -143", "max": "365, 54, -128"}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn", "blue-spawn"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}, 
+			{
+				"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+				"regions": ["blue-spawn", "red-spawn"]
+			}
+	]
+}
