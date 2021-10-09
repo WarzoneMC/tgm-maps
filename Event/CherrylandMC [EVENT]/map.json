@@ -20,13 +20,6 @@
 			"color": "blue",
 			"min": 1,
 			"max": 18
-		},
-		{
-			"id": "Staff",
-			"name": "Staff",
-			"color": "yellow",
-			"min": 0,
-			"max": 0
 		}
 	],
 	"spawns": [
@@ -100,35 +93,7 @@
 			"effects": [
 				{"type": "damage resistance", "duration": 100, "amplifier": 4, "particles": false}
 			]
-		},
-		{
-            "name": "Staff",
-            "teams": [
-                "Staff"
-            ],
-            "items": [
-                {
-                    "material": "golden helmet",
-                    "slot": "helmet",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden chestplate",
-                    "slot": "chestplate",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden leggings",
-                    "slot": "leggings",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden boots",
-                    "slot": "boots",
-                    "unbreakable": true
-                }
-            ]
-        }
+		}
 	],
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe",
