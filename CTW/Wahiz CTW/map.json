@@ -1,0 +1,207 @@
+{
+    "name": "Wahiz CTW",
+    "authors": [
+        {"uuid": "9116d3fa-1400-4ada-aecd-2eae1d73e383", "username": "Xuph"},
+        {"uuid": "1c74c430-29a0-471f-b30b-cc2d9031ebcb", "username": "Tazz"},
+        {"uuid": "e3c3f34f-49d7-4227-9b9d-b29d9a3b97f8", "username": "Jiveh"},
+        {"uuid": "c29bef37-d8e2-42a9-b746-04f2df78f374", "username": "Legoche"},
+        {"uuid": "0b8f95fa-0f40-4f28-9fd0-b8e243bb6800", "username": "Fouled"}
+    ],
+    "version": "1.0.1",
+    "gametype": "CTW",
+    "teams": [
+        {
+            "id": "red",
+            "name": "Red",
+            "color": "red",
+            "min": 1,
+            "max": 16
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "color": "blue",
+            "min": 1,
+            "max": 16
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "8.5, 74, -23.5, 180"},
+        {"teams": ["red"], "coords": "-107.5, 2, -74.5, -90"},
+        {"teams": ["blue"], "coords": "124.5, 2, -74.5, 90"}
+    ],
+    "ctw": {
+        "wools": [
+            {
+                "name": "Pink",
+                "color": "light purple",
+                "woolcolor": "pink",
+                "teams": ["red"],
+                "region": {"min": "-112, 3, -76", "max": "-112, 3, -76"}
+            },
+            {
+                "name": "Purple",
+                "color": "dark purple",
+                "woolcolor": "purple",
+                "teams": ["red"],
+                "region": {"min": "-112, 3, -74", "max": "-112, 3, -74"}
+            },
+            {
+                "name": "Yellow",
+                "color": "yellow",
+                "woolcolor": "yellow",
+                "teams": ["blue"],
+                "region": {"min": "128, 3, -74", "max": "128, 3, -74"}
+            },
+            {
+                "name": "Orange",
+                "color": "gold",
+                "woolcolor": "orange",
+                "teams": ["blue"],
+                "region": {"min": "128, 3, -76", "max": "128, 3, -76"}
+            }
+        ]
+    },
+    "kits": [
+        {
+            "name": "Default",
+            "items": [
+                {"material": "stone sword", "slot": 0, "unbreakable": true},
+                {"material": "bow", "slot": 1, "unbreakable": true},
+                {"material": "iron pickaxe", "enchantments": ["efficiency:2"], "slot": 2, "unbreakable": true},
+                {"material": "stone axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
+
+                {"material": "golden apple", "slot": 4, "amount": 2},
+                {"material": "oak log", "slot": 5, "amount": 64},
+                {"material": "glass", "slot": 6, "amount": 64},
+                {"material": "bucket", "slot": 7},
+                {"material": "cooked beef", "slot": 8, "amount": 32},
+                {"material": "arrow", "slot": 27, "amount": 32},
+
+                {"material": "leather helmet", "enchantments": ["protection:1"], "slot": "helmet", "unbreakable": true},
+                {"material": "leather chestplate", "enchantments": ["protection:1"], "slot": "chestplate", "unbreakable": true},
+                {"material": "leather leggings", "enchantments": ["protection:1"], "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "enchantments": ["protection:1"], "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "damage resistance", "duration": 100, "amplifier": 5, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": [
+        "stone sword", "bow", "iron pickaxe", "stone axe", "golden apple", "oak log", "oak planks", "glass", "bucket", "cooked beef", "arrow",
+        {
+        	"type": "leather helmet",
+        	"drop": true
+        },
+        {
+        	"type": "leather chestplate",
+        	"drop": true
+        },
+        {
+        	"type": "leather leggings",
+        	"drop": true
+        },
+        {
+        	"type": "leather boots",
+        	"drop": true
+        }
+    ],
+    "killstreaks": [
+        {
+            "count": 1,
+            "repeat": true,
+            "actions": {
+                "items": [
+                    {"material": "golden apple", "amount": 1},
+                    {"material": "arrow", "amount": 16}
+                ]
+            }
+        }
+    ],
+    "respawn": {
+        "rules": [
+            {"delay": 2000}
+        ]
+    },
+    "filters": [
+        {
+            "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+            "inverted": true,
+            "regions": ["buildable-void"],
+            "message": "&cYou may not build over the void."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["pink-wool-room", "purple-wool-room", "red-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "regions": ["orange-wool-room", "yellow-wool-room", "red-spawn-protection", "blue-spawn-protection"],
+            "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["blue"],
+            "regions": ["pink-wool-room", "purple-wool-room", "red-spawn-protection"],
+            "message": "&cYou may not enter this region."
+        },
+        {
+            "type": "enter", "evaluate": "deny", "teams": ["red"],
+            "regions": ["orange-wool-room", "yellow-wool-room", "blue-spawn-protection"],
+            "message": "&cYou may not enter this region."
+        },
+	{
+	    "type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
+	    "regions": ["pink-wool-room", "purple-wool-room", "yellow-wool-room", "orange-wool-room"],
+	    "blocks": ["chest"],
+	    "message": ["&cYou are not allowed to break the chests!"]
+	}
+    ],
+    "regions": [
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "-113, 0, -80", "max": "-87, oo, -70"},
+
+        {"id": "red-spawn-bridge", "type": "cuboid", "min": "-86, 0, -78", "max": "-78, oo, -71"},
+        {"id": "red-spawn-bridge-left", "type": "cuboid", "min": "-78, 0, -89", "max": "-68, oo, -83"},
+        {"id": "red-spawn-bridge-right", "type": "cuboid", "min": "-78, 0, -67", "max": "-68, oo, -61"},
+        
+        {"id": "red-bridge-middle", "type": "cuboid", "min": "-67, 0, -80", "max": "-13, oo, -70"},
+        {"id": "red-bridge-left", "type": "cuboid", "min": "-67, 0, -102", "max": "-13, oo, -92"},
+        {"id": "red-bridge-right", "type": "cuboid", "min": "-67, 0, -58", "max": "-13, oo, -48"},
+		
+        {"id": "red-wool-lane-left", "type": "cuboid", "min": "-79, 0, -92", "max": "-108, oo, -102"},
+	{"id": "red-wool-lane-right", "type": "cuboid", "min": "-79, 0, -48", "max": "-108, oo, -58"},
+
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "103, 0, -80", "max": "129, oo, -70"},
+
+        {"id": "blue-spawn-bridge", "type": "cuboid", "min": "95, 0, -78", "max": "102, oo, -72"},
+        {"id": "blue-spawn-bridge-left", "type": "cuboid", "min": "84, 0, -67", "max": "94, oo, -61"},
+        {"id": "blue-spawn-bridge-right", "type": "cuboid", "min": "84, 0, -89", "max": "94, oo, -83"},
+
+        {"id": "blue-bridge-middle", "type": "cuboid", "min": "29, 0, -80", "max": "83, oo, -70"},
+        {"id": "blue-bridge-left", "type": "cuboid", "min": "29, 0, -58", "max": "83, oo, -48"},
+        {"id": "blue-bridge-right", "type": "cuboid", "min": "29, 0, -102", "max": "83, oo, -92"},
+
+        {"id": "blue-wool-lane-left", "type": "cuboid", "min": "95, 0, -58", "max": "-124, oo, -48"},
+	{"id": "blue-wool-lane-right", "type": "cuboid", "min": "95, 0, -102", "max": "124, oo, -92"},
+        
+        {
+            "id": "buildable-void", "type": "meta",
+            "regions": [
+                "red-spawn-bridge", "red-spawn-bridge-left", "red-spawn-bridge-right",
+                "red-bridge-middle", "red-bridge-left", "red-bridge-right",
+                "red-wool-lane-left", "red-wool-lane-right",
+                "blue-spawn-bridge", "blue-spawn-bridge-left", "blue-spawn-bridge-right",
+                "blue-bridge-middle", "blue-bridge-left", "blue-bridge-right",
+                "blue-wool-lane-left", "blue-wool-lane-right"
+            ]
+        },
+
+        {"id": "pink-wool-room", "type": "cuboid", "min": "125, 0, -102", "max": "140, oo, -91"},
+        {"id": "purple-wool-room", "type": "cuboid", "min": "125, 0, -58", "max": "140, oo, -47"},
+        
+        {"id": "yellow-wool-room", "type": "cuboid", "min": "-124, 0, -58", "max": "-109, oo, -47"},
+        {"id": "orange-wool-room", "type": "cuboid", "min": "-124, 0, -102", "max": "-109, oo, -91"}
+    ],
+    "buildHeight": 30
+}

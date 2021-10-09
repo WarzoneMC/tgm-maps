@@ -1,0 +1,128 @@
+{
+  "name": "Babylon",
+  "authors": [
+	{"uuid": "75d87bcf-3921-4871-9330-e83736580a95", "username": "Rixiot"},
+	{"uuid": "5cbdeae7-824e-494e-8667-91165718c30b", "username": "xSugoix"},
+	{"uuid": "f64546c7-917b-4caf-a0c9-caa120156a84", "username": "BrunoTheMiner"},
+	{"uuid": "d556bcdf-57ad-4220-92f6-150a9b12380b", "username": "three_two"},
+	{"uuid": "3fbec7dd-0a5f-40bf-9d11-885a54507112", "username": "last_username"},
+	{"uuid": "4cdc642e-36a9-4208-8ca2-81a9461b497d", "username": "raid3r"},
+	{"uuid": "6261860b-b738-426d-9425-975bd3045383", "username": "Aaron215"}
+  ],
+  "version": "1.2.3",
+  "gametype": "TDM",
+  "gamerules": {
+	  "fallDamage": false
+  },
+  "teams": [
+	{
+	  "id": "blue",
+	  "name": "Blue",
+	  "color": "blue",
+	  "min": 1,
+	  "max": 20
+	},
+	{
+	  "id": "green",
+	  "name": "Green",
+	  "color": "green",
+	  "min": 1,
+	  "max": 20
+	},
+	{
+	  "id": "yellow",
+	  "name": "Yellow",
+	  "color": "yellow",
+	  "min": 1,
+	  "max": 20
+	},
+	{
+	  "id": "red",
+	  "name": "Red",
+	  "color": "dark red",
+	  "min": 1,
+	  "max": 20
+	}
+  ],
+  "spawns": [
+	{"teams": ["spectators"], "coords": "0.5, 50, 0.5"},
+	{"teams": ["red"], "coords": "96.5, 30, 0.5, 90"},
+	{"teams": ["blue"], "coords": "-95.5, 30, 0.5, -90"},
+	{"teams": ["yellow"], "coords": "0.5, 30, -95.5"},
+	{"teams": ["green"], "coords": "0.5, 30, 96.5, 180"}
+  ],
+  "launchpads": [
+  	{"region": {"type": "cuboid", "min": "-86, 30, -1", "max": "-84, 31, 1"}, "delay": 2, "motion": "5, 4, 0",  "directional": false, "teams": ["blue"]},
+	{"region": {"type": "cuboid", "min": "84, 30, -1", "max": "86, 31, 1"}, "delay": 2, "motion": "-5, 4, 0",  "directional": false, "teams": ["red"]},
+	{"region": {"type": "cuboid", "min": "-1, 30, -86", "max": "1, 31, -84"}, "delay": 2, "motion": "0, 4, 5",  "directional": false, "teams": ["yellow"]},
+	{"region": {"type": "cuboid", "min": "-1, 30, 84", "max": "1, 31, 86"}, "delay": 2, "motion": "0, 4, -5",  "directional": false, "teams": ["green"]}
+  ],
+  "points": {
+	"target": 30
+  },
+  "kits": [
+	{
+	  "name": "default",
+	  "items": [
+		{"material": "stone sword", "slot": 0, "unbreakable": true},
+		{"material": "bow", "slot": 1, "enchantments": ["power:1"], "unbreakable": true},
+		{"material": "golden apple", "slot": 2, "amount": 1},
+		{"material": "cooked beef", "slot": 3, "amount": 32},
+		{"material": "arrow", "slot": 8, "amount": 16},
+
+		{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+		{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
+		{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+		{"material": "leather boots", "slot": "boots", "unbreakable": true}
+	  ]
+	}
+  ],
+  "itemremove": [
+	"stone sword", "bow", "golden apple", "cooked beef", "arrow",
+	{
+	  "type": "leather helmet",
+	  "drop": true
+	},
+	{
+	  "type": "leather chestplate",
+	  "drop": true
+	},
+	{
+	  "type": "leather leggings",
+	  "drop": true
+	},
+	{
+	  "type": "leather boots",
+	  "drop": true
+	}
+  ],
+  "killstreaks": [
+	{
+	  "count": 1,
+	  "repeat": true,
+	  "actions": {
+		"items": [
+		  {"material": "golden apple", "amount": 1},
+		  {"material": "arrow", "amount": 16}
+		]
+	  }
+	}
+  ],
+  "filters": [
+	{
+	  "type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
+	  "regions": ["global"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
+	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter this region."},
+	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "yellow-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter this region."},
+	{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn-protection", "blue-spawn-protection", "green-spawn-protection"], "message": "&cYou may not enter this region."},
+	{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection", "blue-spawn-protection", "yellow-spawn-protection"], "message": "&cYou may not enter this region."}
+  ],
+  "regions": [
+	{"id": "red-spawn-protection", "type": "cuboid", "min": "80, -oo, -11", "max": "111, oo, 11"},
+	{"id": "blue-spawn-protection", "type": "cuboid", "min": "-111, -oo, -11", "max": "-81, oo, 11"},
+	{"id": "yellow-spawn-protection", "type": "cuboid", "min": "-11, -oo, -110", "max": "11, oo, -81"},
+	{"id": "green-spawn-protection", "type": "cuboid", "min": "-11, -oo, 80", "max": "11, oo, 111"}
+  ]
+}

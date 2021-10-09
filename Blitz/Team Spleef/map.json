@@ -106,10 +106,7 @@
         }
     ],
     "itemremove": [
-        {
-            "type": "diamond shovel",
-            "drop": true
-        },
+        "diamond shovel",
         {
             "type": "leather helmet",
             "drop": true

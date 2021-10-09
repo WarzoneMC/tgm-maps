@@ -129,10 +129,10 @@
 		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-room", "pink-room", "lime-room", "yellow-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
-		{"id": "blue-room", "min": "90, 0, -151", "max": "102, oo, -138"},
-		{"id": "pink-room", "min": "90, 0, -57", "max": "102, oo, -70"},
-		{"id": "lime-room", "min": "268, 0, -138", "max": "280, oo, -151"},
-		{"id": "yellow-room", "min": "268, 0, -70", "max": "280, oo, -57"},
+		{"id": "blue-room", "min": "90, 0, -151", "max": "102, oo, -137"},
+		{"id": "pink-room", "min": "90, 0, -56", "max": "102, oo, -70"},
+		{"id": "lime-room", "min": "268, 0, -137", "max": "280, oo, -151"},
+		{"id": "yellow-room", "min": "268, 0, -70", "max": "280, oo, -56"},
 
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "258, 8, -82", "max": "293, oo, -126"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "112, 8, -126", "max": "77, oo, -82"},

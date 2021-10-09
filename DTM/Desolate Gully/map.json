@@ -1,0 +1,165 @@
+{
+  "name": "Desolate Gully",
+  "authors": [
+	{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+  ],
+  "version": "1.1.2",
+  "gametype": "DTM",
+  "gamerules": {
+	"doFireTick": true
+  },
+  "teams": [
+	{
+	  "id": "blue",
+	  "name": "Blue",
+	  "color": "blue",
+	  "min": 1,
+	  "max": 10
+	},
+	{
+	  "id": "red",
+	  "name": "Red",
+	  "color": "red",
+	  "min": 1,
+	  "max": 10
+	}
+  ],
+  "spawns": [
+	{"teams": ["spectators"], "coords": "-89, 48, 379"},
+	{"teams": ["red"], "coords": "-65.5, 10.5, 434.5, 90"},
+	{"teams": ["blue"], "coords": "-112.5, 10.5, 323.5, -90"}
+  ],
+  "dtm": {
+	"monuments": [
+	  {
+		"name": "Monument",
+		"teams": ["blue"],
+		"materials": ["emerald_block"],
+		"region": {
+		  "min": "-84, 14, 336",
+		  "max": "-82, 16, 334"
+		},
+		"health": 5
+	  },
+	  {
+		"name": "Monument&r",
+		"teams": ["red"],
+		"materials": ["emerald_block"],
+		"region": {
+		  "min": "-95, 14, 421",
+		  "max": "-97, 16, 423"
+		},
+		"health": 5
+	  }
+	]
+  },
+  "kits": [
+	{
+	  "name": "Default",
+	  "items": [
+		{"material": "stone sword", "slot": 0, "unbreakable": true},
+		{"material": "bow", "slot": 1, "unbreakable": true},
+		{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+		{"material": "stone axe", "slot": 3, "unbreakable": true},
+		{"material": "spruce planks", "slot": 4, "amount": 16},
+		{"material": "arrow", "slot": 7, "amount": 24},
+		{"material": "golden carrot", "slot": 8, "amount": 64},
+
+		{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+		{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+		{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+		{"material": "leather boots", "slot": "boots", "unbreakable": true}
+	  ]
+	},
+	{
+	  "name": "Blue",
+	  "teams": ["blue"],
+	  "items": [
+		{"material": "blue_terracotta", "slot": 5, "amount": 24}
+	  ]
+	},
+	{
+	  "name": "Red",
+	  "teams": ["red"],
+	  "items": [
+		{"material": "red_terracotta", "slot": 5, "amount": 24}
+	  ]
+	}
+  ],
+  "itemremove": [
+	"stone sword", "bow", "iron pickaxe", "stone axe", "spruce planks", "blue terracotta", "red terracotta", "arrow", "golden carrot",
+	"chainmail chestplate", "emerald block", "golden apple",
+	{
+	  "type": "leather helmet",
+	  "drop": true
+	},
+	{
+	  "type": "leather leggings",
+	  "drop": true
+	},
+	{
+	  "type": "leather boots",
+	  "drop": true
+	}
+  ],
+  "killstreaks": [
+	{
+	  "count": 1,
+	  "repeat": true,
+	  "actions": {
+		"items": [
+		  {"material": "golden apple", "amount": 1},
+		  {"material": "arrow", "amount": 8},
+		  {"material": "spruce planks", "amount": 8},
+		  {"material": "gold ingot", "amount": 1}
+		]
+	  }
+	},
+	{
+	  "count": 6,
+	  "repeat": false,
+	  "actions": {
+		"items": [
+		  {"material": "flint and steel", "durability": 61, "amount": 1},
+		  {"material": "golden apple", "amount": 1}
+		]
+	  }
+	},
+	{
+	  "count": 8,
+	  "repeat": true,
+	  "actions": {
+		"items": [
+		  {"material": "tnt", "amount": 1}
+		]
+	  }
+	}
+  ],
+  "filters": [
+	{
+	  "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+	  "regions": ["blue-spawn-protection", "red-spawn-protection"],
+	  "message": "&cYou are not allowed to modify terrain here."
+	},
+	{
+	  "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+	  "regions": ["blue-mon-tnt-prot", "red-mon-tnt-prot"], "message": "&cMonuments cannot be destroyed with TNT!"
+	},
+	{
+	  "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+	  "inverted": true,
+	  "regions": ["map"],
+	  "message": "&cYou may not build over the void."
+	},
+	{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+	{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+  ],
+  "regions": [
+	{"id": "blue-spawn-protection", "type": "cuboid", "min": "-105, -oo, 326", "max": "-118, 17, 320"},
+	{"id": "red-spawn-protection", "type": "cuboid", "min": "-73, -oo, 432", "max": "-60, 17, 437"},
+	{"id": "blue-mon-tnt-prot", "type": "cuboid", "min": "-82, 13, 334", "max": "-84, 17, 336"},
+	{"id": "red-mon-tnt-prot", "type": "cuboid", "min": "-95, 13, 421", "max": "-97, 17, 423"},
+	{"id": "map", "type": "cuboid", "min": "-61, -oo, 437", "max": "-118, oo, 320"}
+  ],
+  "buildHeight": 23
+}

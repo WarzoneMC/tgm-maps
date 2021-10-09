@@ -1,0 +1,80 @@
+{
+	"name": "101 Rooms TDM",
+	"authors": [
+		{"uuid": "06078e7e-6a7b-4d31-8f74-853072b182bb", "username": "xXFracXx"}
+	],
+	"gametype": "TDM",
+	"version": "1.0.3",
+	"stats": {"disable": true},
+		"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 6
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 6
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 6
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 6
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-293,25,-298, 90"},
+		{"teams": ["blue"], "coords": "-316.5, 1, -335.5, 45"},
+		{"teams": ["green"], "coords": "-316.5, 1, -261.5, 135"},
+		{"teams": ["yellow"], "coords": "-390.5, 1, -335.5, -45"},
+		{"teams": ["red"], "coords": "-390.5, 1, -261.5, -135"}
+	],
+		"points": {
+			"target": 50
+		},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "amount": 1, "displayName": "Knife", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 10000, "particles": false}
+			]
+		}
+	],
+	"itemremove": "*",
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+	]
+}

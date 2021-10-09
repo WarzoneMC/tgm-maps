@@ -1,0 +1,154 @@
+{
+	"name": "Haunted Harrow",
+	"authors": [
+		{"uuid": "2c1cf65f-f668-41eb-812e-091391eb2896", "username": "Loks"},
+		{"uuid": "99fa5c84-9f49-4231-b16f-5a83fe858ff0", "username": "Ninjatrev"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-89.5, 70, -77.5"},
+		{"teams": ["red"], "coords": "-154.5, 58, -43.5, -90"},
+		{"teams": ["blue"], "coords": "-22.5, 58, -38.5, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Pumpkin",
+				"teams": ["blue"],
+				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
+				"region": { 
+					"min": "-39, 55, -65",
+					"max": "-43, 60, -61" 
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Pumpkin",
+				"teams": ["blue"],
+				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
+				"region": {
+					"min": "-43, 60, -17",
+					"max": "-39, 55, -13"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Pumpkin",
+				"teams": ["red"],
+				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
+				"region": { 
+					"min": "-139, 55, -18",
+					"max": "-134, 60, -22" 
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Pumpkin",
+				"teams": ["red"],
+				"materials": ["spruce_wood", "orange_terracotta", "red_sandstone_slab", "cut_red_sandstone"],
+				"region": {
+					"min": "-134, 55, -70",
+					"max": "-139, 60, -66"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "oak planks", "cooked beef", "arrow",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "chainmail leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+        {
+			"count": 2,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		}
+	],
+    "regions": [
+		{"id": "red-spawn", "type": "cuboid", "min": "-151, 0, -48", "max": "-159, oo, -40"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-19, 0, -43", "max": "-27, oo, -35"},
+        {"id": "map", "type": "cuboid", "min": "-169, 0, -84", "max": "-10, oo, -1"}
+	],
+    "filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou may not modify the spawn buildings"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the Red's spawn"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the Blue's spawn"},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build outside the map!"
+		}
+	],
+    "buildHeight": 66
+}

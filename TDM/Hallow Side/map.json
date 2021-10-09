@@ -1,0 +1,121 @@
+{
+	"name": "Hallow Side",
+	"authors": [
+		{"uuid": "8053ed38-89d9-4096-b265-a0fcce3a1c33", "username": "Jetub"},
+		{"uuid": "1e3b1b79-307a-4093-aaeb-21b2fd419336", "username": "BlockDrop74"}
+	],
+	"gametype": "TDM",
+	"version": "1.0.1",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "silver",
+			"name": "Silver",
+			"color": "gray",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "dark_green",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "gray",
+			"name": "Gray",
+			"color": "dark_gray",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "742, 61, 567, 135"},
+		{"teams": ["red"], "coords": "608, 51, 513, -90"},
+		{"teams": ["gray"], "coords": "688, 51, 593, 180"},
+		{"teams": ["silver"], "coords": "688, 51, 433"},
+		{"teams": ["green"], "coords": "768, 51, 513, 90"}
+	],
+	"points": {
+		"target": 30
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "displayName": "Quartz Sword", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Fire-String Bow", "enchantments": ["power:100", "fire:10"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
+				{"type": "item", "material": "baked potato", "slot": 8, "amount": 1},
+				
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 100000, "amplifier": 1, "particles": false},
+				{"type": "jump", "duration": 100000, "amplifier": 1, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "arrow", "cooked beef",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"damageControl": {
+		"FALL": false
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "gray", "green", "silver"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "gray", "green"], "regions": ["red-spawn"], "message": "&cYou may not eneter enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "green", "red"], "regions": ["gray-spawn"], "message": "&cYou may not eneter enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["silver", "red", "gray"], "regions": ["green-spawn"], "message": "&cYou may not eneter enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "gray", "green"], "regions": ["silver-spawn"], "message": "&cYou may not eneter enemy spawn."}
+	],
+	"regions": [
+		{"id": "green-spawn", "type": "cuboid", "min": "757, 0, 519", "max": "774, oo, 507"},
+		{"id": "silver-spawn", "type": "cuboid", "min": "682, 0, 427", "max": "694, oo, 444"},
+		{"id": "gray-spawn", "type": "cuboid", "min": "682, 0, 582", "max": "694, oo, 599"},
+		{"id": "red-spawn", "type": "cuboid", "min": "602, 0, 519", "max": "619, oo, 507"}
+	]
+}

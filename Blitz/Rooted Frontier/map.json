@@ -1,0 +1,79 @@
+{
+	"name": "Rooted Frontier",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii_"},
+		{"uuid": "04415962-13e2-4010-b5f1-6d5ed7e537d4", "username": "Poseidons"}
+	],
+	"gametype": "Blitz",
+	"version": "1.1.0",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 25
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 25
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "24.5, 21, -14.5, 45"},
+		{"teams": ["blue"], "coords": "-8.5, 18, -73"},
+		{"teams": ["red"], "coords": "-8.5, 18, 74, 180"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 16},
+
+				{"material": "golden chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": "100000", "amplifier": 25, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "iron boots", "golden chestplate", "wool", "arrow", "golden apple", "cooked beef", "bow",
+		{
+            "type": "leather leggings",
+            "death": true,
+            "drop": true,
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"regions": [
+		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	]
+}
