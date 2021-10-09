@@ -19,14 +19,7 @@
             "color": "blue",
             "min": 1,
             "max": 16
-        },
-		{
-			"id": "Staff",
-			"name": "Staff",
-			"color": "yellow",
-			"min": 0,
-			"max": 0
-		}
+        }
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
@@ -234,35 +227,7 @@
             "effects": [
                 {"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
             ]
-        },
-		{
-            "name": "Staff",
-            "teams": [
-                "Staff"
-            ],
-            "items": [
-                {
-                    "material": "golden helmet",
-                    "slot": "helmet",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden chestplate",
-                    "slot": "chestplate",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden leggings",
-                    "slot": "leggings",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden boots",
-                    "slot": "boots",
-                    "unbreakable": true
-                }
-            ]
-        }
+	}
     ],
     "itemremove": [
         "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow",
