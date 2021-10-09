@@ -1,0 +1,258 @@
+{
+	"name": "Araxa [EVENT]",
+	"authors": [
+		{"uuid": "e41edd14-9b0e-4501-a0c5-7fda64d2b2f3", "username": "JonnyBallgame"},
+		{"uuid": "3b95de2f-2bb6-4a16-b0ba-c723794af4d6", "username": "bublixxe"},
+		{"uuid": "037d948e-4bbb-441f-8a59-068ab65af822", "username": "Tigo"}
+	],
+	"version": "2.0.2",
+	"gametype": "CTW",
+	"gamerules": {
+		"doFireTick": false
+	},
+	"teams": [
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 20
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 20
+		},
+		{
+			"id": "Staff",
+			"name": "Staff",
+			"color": "yellow",
+			"min": 0,
+			"max": 0
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "580.5, 60, 463.5, 0"},
+		{"teams": ["orange"], "coords": "713.5, 7.5, 463.5, 90"},
+		{"teams": ["purple"], "coords": "447.5, 7.5, 463.5, -90"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Red",
+				"color": "dark red",
+				"woolcolor": "red",
+				"teams": ["orange"],
+				"region": {"min": "717, 8, 462", "max": "717, 8, 462"}
+			},
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"woolcolor": "yellow",
+				"teams": ["orange"],
+				"region": {"min": "717, 8, 464", "max": "717, 8, 464"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"woolcolor": "blue",
+				"teams": ["purple"],
+				"region": {"min": "443, 8, 462", "max": "443, 8, 462"}
+			},
+			{
+				"name": "Cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
+				"teams": ["purple"],
+				"region": {"min": "443, 8, 464", "max": "443, 8, 464"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:2"], "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "glass", "slot": 5, "amount": 32},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "golden carrot", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 1},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile protection:1"], "unbreakable": true}
+			]
+		},
+		{
+            "name": "Staff",
+            "teams": [
+                "Staff"
+            ],
+            "items": [
+                {
+                    "material": "golden helmet",
+                    "slot": "helmet",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden chestplate",
+                    "slot": "chestplate",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden leggings",
+                    "slot": "leggings",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden boots",
+                    "slot": "boots",
+                    "unbreakable": true
+                }
+            ]
+        }
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron pickaxe", "iron axe", "golden apple", "golden carrot", "arrow", "glass",
+		"oak planks",
+		"red wool", "yellow wool", "cyan wool", "blue wool",
+		{
+            "type": "leather helmet",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "leather chestplate",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "oak sapling",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "string",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "rail",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "wheat seeds",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "dandelion",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        },
+        {
+            "type": "poppy",
+            "death": true,
+	    "drop": true,
+	    "spawn": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &eDefensive supplies are in front of the first defense wall!",
+				"interval": 20,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eIron Blocks regenerate on this map!",
+				"interval": 20,
+				"repeat": true,
+				"commands": []
+			},
+			{
+				"message": "&c[EVENT] Staff wear golden armor, and may be going a little crazy! Good thing stats are disabled!",
+				"interval": 40,
+				"repeat": true,
+				"commands": []
+			}
+		]
+	},
+	"filters": [
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["orange", "purple"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection"],
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks in spawn!"
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["orange", "purple"],
+			"regions": ["orange-spawn-protection", "purple-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["orange"],
+			"regions": ["blue-wool", "cyan-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple"],
+			"regions": ["red-wool", "yellow-wool"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+	     		"type": "blockBreak", "evaluate": "deny", "teams": ["purple", "orange"],
+	     		"regions": ["blue-wool", "cyan-wool", "red-wool", "yellow-wool"],
+	     		"blocks": ["chest"]
+		},
+		{
+			"type": "renewableBlocks",
+			"regions": ["orange-spawn-protection", "purple-spawn-protection"],
+			"delay": 50,
+			"block": "iron block"
+		},
+		{
+            "type": "block-explode", "evaluate": "deny", "teams": ["purple", "orange"],
+            "regions": ["orange-spawn-protection", "red-wool", "yellow-wool","purple-spawn-protection", "blue-wool", "cyan-wool"]
+        },
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["orange-spawn-protection", "red-wool", "yellow-wool"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["orange"], "regions": ["purple-spawn-protection", "blue-wool", "cyan-wool"], "message": "&cYou may not enter this region."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["orange", "purple"], "inverted": true, "regions": ["center-void-gap"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{"id": "orange-spawn-protection", "type": "cuboid", "min": "681, 0, 446", "max": "726, 40, 481"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "441, 0, 446", "max": "474, 40, 481"},
+
+		{"id": "red-wool", "type": "cuboid", "min": "472, 0, 384", "max": "453, oo, 365"},
+		{"id": "yellow-wool", "type": "cuboid", "min": "453, 0, 542", "max": "472, oo, 561"},
+		{"id": "blue-wool", "type": "cuboid", "min": "707, 0, 384", "max": "688, oo, 365"},
+		{"id": "cyan-wool", "type": "cuboid", "min": "688, 0, 542", "max": "707, oo, 561"},
+		
+		{"id": "center-void-gap", "type": "cuboid", "min": "528, 0, 430", "max": "632, oo, 496"}
+	],
+	"buildHeight": 32
+}
