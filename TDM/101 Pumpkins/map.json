@@ -68,28 +68,28 @@
 			"name": "Zombie",
 			"teams": ["zombie"],
 			"items": [
-				{"type": "item", "material": "green_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+				{"type": "item", "material": "green_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Skeleton",
 			"teams": ["skeleton"],
 			"items": [
-				{"type": "item", "material": "light_gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+				{"type": "item", "material": "light_gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Spider",
 			"teams": ["spider"],
 			"items": [
-				{"type": "item", "material": "red_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+				{"type": "item", "material": "red_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Wither",
 			"teams": ["wither"],
 			"items": [
-				{"type": "item", "material": "gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+				{"type": "item", "material": "gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		}
 	],
