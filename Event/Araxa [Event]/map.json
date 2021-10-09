@@ -25,13 +25,6 @@
 			"min": 1,
 			"max": 20
 		},
-		{
-			"id": "Staff",
-			"name": "Staff",
-			"color": "yellow",
-			"min": 0,
-			"max": 0
-		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "580.5, 60, 463.5, 0"},
@@ -87,35 +80,7 @@
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile protection:1"], "unbreakable": true}
 			]
-		},
-		{
-            "name": "Staff",
-            "teams": [
-                "Staff"
-            ],
-            "items": [
-                {
-                    "material": "golden helmet",
-                    "slot": "helmet",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden chestplate",
-                    "slot": "chestplate",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden leggings",
-                    "slot": "leggings",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden boots",
-                    "slot": "boots",
-                    "unbreakable": true
-                }
-            ]
-        }
+		}
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron pickaxe", "iron axe", "golden apple", "golden carrot", "arrow", "glass",
