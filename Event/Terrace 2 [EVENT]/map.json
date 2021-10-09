@@ -19,13 +19,6 @@
 			"color": "red",
 			"min": 1,
 			"max": 50
-		},
-		{
-			"id": "Staff",
-			"name": "Staff",
-			"color": "yellow",
-			"min": 0,
-			"max": 0
 		}
 	],
 	"spawns": [
@@ -96,35 +89,7 @@
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
-		},
-		{
-            "name": "Staff",
-            "teams": [
-                "Staff"
-            ],
-            "items": [
-                {
-                    "material": "golden helmet",
-                    "slot": "helmet",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden chestplate",
-                    "slot": "chestplate",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden leggings",
-                    "slot": "leggings",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden boots",
-                    "slot": "boots",
-                    "unbreakable": true
-                }
-            ]
-        }
+		}
 	],
 	"itemremove": [
 		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
