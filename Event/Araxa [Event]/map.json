@@ -24,7 +24,7 @@
 			"color": "dark purple",
 			"min": 1,
 			"max": 20
-		},
+		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "580.5, 60, 463.5, 0"},
