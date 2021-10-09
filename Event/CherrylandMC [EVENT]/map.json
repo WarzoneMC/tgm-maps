@@ -1,0 +1,245 @@
+{
+	"name": "CherrylandMC [EVENT]",
+	"authors": [
+		{"uuid": "bf331953-4f92-43ee-8abc-7544b8234936", "username": "Vicei"},
+		{"uuid": "916c8d6f-12d3-4a23-8553-d3ddcfcd248c", "username": "jeresl99"}
+	],
+	"version": "2.1.2",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Cherries",
+			"color": "red",
+			"min": 1,
+			"max": 18
+		},
+		{
+			"id": "blue",
+			"name": "Blueberries",
+			"color": "blue",
+			"min": 1,
+			"max": 18
+		},
+		{
+			"id": "Staff",
+			"name": "Staff",
+			"color": "yellow",
+			"min": 0,
+			"max": 0
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-39.0, 52.0, 0.0, -90"},
+		{"teams": ["red"], "coords": "19.5, 12.0, -80.5"},
+		{"teams": ["blue"], "coords": "19.5, 12.0, 87.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Right",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 27, -101",
+					"max": "41, 27, -101"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-3, 27, -101",
+					"max": "-3, 27, -101"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-3, 27, 107",
+					"max": "-3, 27, 107"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 27, 107",
+					"max": "41, 27, 107"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				
+				{"type": "item", "material": "golden apple", "slot": 4, "amount": 3},
+				{"type": "item", "material": "oak log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 7, "amount": 12},
+				{"type": "item", "material": "arrow", "slot": 27, "amount": 24},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage resistance", "duration": 100, "amplifier": 4, "particles": false}
+			]
+		},
+		{
+            "name": "Staff",
+            "teams": [
+                "Staff"
+            ],
+            "items": [
+                {
+                    "material": "golden helmet",
+                    "slot": "helmet",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden chestplate",
+                    "slot": "chestplate",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden leggings",
+                    "slot": "leggings",
+                    "unbreakable": true
+                },
+				{
+                    "material": "golden boots",
+                    "slot": "boots",
+                    "unbreakable": true
+                }
+            ]
+        }
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe",
+		"oak log", "cooked beef", "arrow", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "iron leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	
+	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&c[EVENT] Staff wear golden armor, and may be going a little crazy! Good thing stats are disabled!",
+				"interval": 40,
+				"repeat": true,
+				"commands": []
+			}
+		]
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou may not modify terrain here."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["red"],
+			"regions": ["blue-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "enter", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["red-spawn-protection"],
+			"message": "&cYou may not enter the enemy spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["chests"],
+			"message": "&cYou may not physically edit the TNT chests."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"]
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "11, 1, -86", "max": "27, 16, -70"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "11, 1, 76", "max": "27, 16, 92"},
+
+		{"id": "right-red-monument", "type": "cuboid", "min": "36, 0, -59", "max": "46, oo, -107"},
+		{"id": "left-red-monument", "type": "cuboid", "min": "-8, 0, -59", "max": "2, oo, -107"},
+        	{"id": "right-blue-monument", "type": "cuboid", "min": "2, 0, 65", "max": "-8, oo, 113"},
+        	{"id": "left-blue-monument", "type": "cuboid", "min": "36, 0, 65", "max": "46, oo, 113"},
+		{"id": "map", "type": "cuboid", "min": "-8, 0, -58", "max": "46, oo, 64"},
+        
+        	{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				"right-red-monument", "left-red-monument",
+                		"right-blue-monument", "left-blue-monument",
+                		"map"
+			]
+		},
+		
+		{"id": "chests", "type": "meta", "regions": [
+			{"min": "1, 23, -13", "max": "2, 23, -13"},
+			{"min": "36, 23, -13", "max": "37, 23, -13"},
+			{"min": "24, 9, -13", "max": "24, 9, -13"},
+			{"min": "14, 9, -13", "max": "14, 9, -13"},
+			{"min": "11, 9, -6", "max": "11, 9, -6"},
+			{"min": "9, 9, -6", "max": "9, 9, -6"},
+			{"min": "27, 9, -6", "max": "27, 9, -6"},
+			{"min": "29, 9, -6", "max": "29, 9, -6"},
+			{"min": "29, 9, 12", "max": "29, 9, 12"},
+			{"min": "27, 9, 12", "max": "27, 9, 12"},
+			{"min": "9, 9, 12", "max": "9, 9, 12"},
+			{"min": "11, 9, 12", "max": "11, 9, 12"},
+			{"min": "14, 9, 19", "max": "14, 9, 19"},
+			{"min": "24, 9, 19", "max": "24, 9, 19"},
+			{"min": "36, 23, 19", "max": "37, 23, 19"},
+			{"min": "1, 23, 19", "max": "2, 23, 19"}
+		]}
+	]
+}
