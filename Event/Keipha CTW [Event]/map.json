@@ -30,14 +30,7 @@
             "color": "red",
             "min": 1,
             "max": 35
-        },
-		{
-			"id": "Staff",
-			"name": "Staff",
-			"color": "yellow",
-			"min": 0,
-			"max": 0
-		}
+        }
     ],
     "spawns": [
         {
@@ -232,34 +225,6 @@
                     "material": "red_terracotta",
                     "slot": 5,
                     "amount": 64
-                }
-            ]
-        },
-		{
-            "name": "Staff",
-            "teams": [
-                "Staff"
-            ],
-            "items": [
-                {
-                    "material": "golden helmet",
-                    "slot": "helmet",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden chestplate",
-                    "slot": "chestplate",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden leggings",
-                    "slot": "leggings",
-                    "unbreakable": true
-                },
-				{
-                    "material": "golden boots",
-                    "slot": "boots",
-                    "unbreakable": true
                 }
             ]
         }
