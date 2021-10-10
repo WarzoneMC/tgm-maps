@@ -9,7 +9,7 @@
 		{"uuid": "4cdc642e-36a9-4208-8ca2-81a9461b497d", "username": "raid3r"},
 		{"uuid": "6261860b-b738-426d-9425-975bd3045383", "username": "Aaron215"}
 	  ],
-  	"version": "1.2.3",
+  	"version": "1.2.4",
   	"gametype": "TDM",
   	"gamerules": {
 		  "fallDamage": false
