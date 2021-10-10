@@ -7,7 +7,7 @@
 		{"uuid": "ff64ebb9-24aa-4960-86c4-205244b7a407", "username": "Super_Armor"}
 	],
 	"gametype": "TDM",
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"stats": {"disable": true},
 		"teams": [
 		{
@@ -53,12 +53,12 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron hoe", "slot": 0, "amount": 1, "displayName": "Scythe", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "displayName": "Pistol", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 2, "amount": 1},
-				{"type": "item", "material": "pumpkin pie", "slot": 8, "amount": 16},
+				{"material": "iron hoe", "slot": 0, "amount": 1, "displayName": "Scythe", "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "displayName": "Pistol", "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 2, "amount": 1},
+				{"material": "pumpkin pie", "slot": 8, "amount": 16},
 
-				{"type": "item", "material": "leather chestplate", "displayName": "Kevlar", "slot": "chestplate", "enchantments": ["binding_curse:1"], "unbreakable": true}
+				{"material": "leather chestplate", "displayName": "Kevlar", "slot": "chestplate", "enchantments": ["binding_curse:1"], "unbreakable": true}
 			],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 60, "amplifier": 10000, "particles": false}
@@ -68,28 +68,28 @@
 			"name": "Zombie",
 			"teams": ["zombie"],
 			"items": [
-				{"type": "item", "material": "green_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
+				{"material": "green_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Skeleton",
 			"teams": ["skeleton"],
 			"items": [
-				{"type": "item", "material": "light_gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
+				{"material": "light_gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Spider",
 			"teams": ["spider"],
 			"items": [
-				{"type": "item", "material": "red_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
+				{"material": "red_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		},
 		{
 			"name": "Wither",
 			"teams": ["wither"],
 			"items": [
-				{"type": "item", "material": "gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
+				{"material": "gray_wool", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]}
 			]
 		}
 	],
@@ -106,6 +106,6 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["zombie", "skeleton", "spider", "wither"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+		{"type": "build", "evaluate": "deny", "teams": ["zombie", "skeleton", "spider", "wither"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."}
 	]
 }

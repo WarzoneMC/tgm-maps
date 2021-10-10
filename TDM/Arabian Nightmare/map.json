@@ -5,7 +5,7 @@
 		{"uuid": "c26e7a7f-b4ce-4ebc-ac4d-f60691915d23", "username": "Kroest"}
 	],
 	"gametype": "TDM",
-	"version": "2.0",
+	"version": "2.0.1",
 	"teams": [
 		{
 			"id": "red",
@@ -40,10 +40,10 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "iron sword", "slot": 0, "amount": 1, "unbreakable": true},
-				{"type": "item", "material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
-				{"type": "item", "material": "arrow", "slot": 7, "amount": 1},
-				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 8},
+				{"material": "iron sword", "slot": 0, "amount": 1, "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 8},
 				
 				{"material": "leather helmet", "slot": "helmet", "enchantments": ["projectile protection:1"], "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["projectile protection:1"], "unbreakable": true},
@@ -84,10 +84,7 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain here."
+			"message": "&cYou are not allowed to modify terrain on this map."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
