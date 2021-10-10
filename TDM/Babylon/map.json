@@ -105,7 +105,7 @@
 	],
 	"filters": [
 		{
-			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue", "yellow", "green"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain on this map."
 		},
