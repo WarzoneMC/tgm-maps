@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "DTM",
 	"gamerules": {
 		"doFireTick": true
@@ -138,6 +138,17 @@
 			"regions": ["map", "blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
 			"message": "&cYou may not build over the void."
 		},
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map", "blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east", "red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"],
+			"message": "&cYou may not build over the void."
+		},
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-water-voidbuild-exception", "red-water-voidbuild-exception"],
+			"message": "&cYou may not build over the void."
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-water-voidbuild-exception", "red-water-voidbuild-exception"], "message": "&cYou may not build over the void."}
@@ -146,11 +157,11 @@
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-40, 13, 160", "max": "-16, oo, 168"},
 		{"id": "blue-spawn-protection-west", "type": "cuboid", "min": "-16, 16, 146", "max": "0, oo, 169"},
 		{"id": "blue-spawn-protection-east", "type": "cuboid", "min": "-58, 16, 146", "max": "-42, oo, 169"},
-		{"id": "blue-water-voidbuild-exception", "type": "cuboid", "min": "-35, 1, 160", "max": "-24, 12, 162"},
+		{"id": "blue-water-voidbuild-exception", "type": "cuboid", "min": "-36, 1, 160", "max": "-22, 12, 162"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-41, 13, 4", "max": "-17, oo, 12"},
 		{"id": "red-spawn-protection-west", "type": "cuboid", "min": "-58, 13, 3", "max": "-42, oo, 26"},
 		{"id": "red-spawn-protection-east", "type": "cuboid", "min": "-16, 13, 3", "max": "0, oo, 26"},
-		{"id": "red-water-voidbuild-exception", "type": "cuboid", "min": "-35, 1, 10", "max": "-24, 12, 12"},
+		{"id": "red-water-voidbuild-exception", "type": "cuboid", "min": "-36, 1, 10", "max": "-22, 12, 12"},
 		{"id": "map", "type": "cuboid", "min": "-73, -oo, 18", "max": "15, oo, 154"}
 	],
 	"buildHeight": 20
