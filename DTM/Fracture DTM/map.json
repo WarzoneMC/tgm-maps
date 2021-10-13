@@ -63,10 +63,11 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
-				{"material": "spruce planks", "slot": 4, "amount": 24},
-				{"material": "stone bricks", "slot": 5, "amount": 16},
-				{"material": "arrow", "slot": 7, "amount": 24},
-				{"material": "golden carrot", "slot": 8, "amount": 64},
+				{"material": "stone shovel", "slot": 4, "unbreakable": true},
+				{"material": "spruce planks", "slot": 5, "amount": 24},
+				{"material": "stone bricks", "slot": 6, "amount": 16},
+				{"material": "golden carrot", "slot": 7, "amount": 64},
+				{"material": "arrow", "slot": 8, "amount": 24}
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
