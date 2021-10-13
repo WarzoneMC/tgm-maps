@@ -8,7 +8,7 @@
         {"uuid": "cacd2073-a6af-4fdd-839f-eb622ca28bab", "username": "seraphlamington"},
         {"uuid": "617d46cd-7513-4bd5-9e65-f1e9b272e798", "username": "imadeyoupoo"}
     ],
-    "version": "1.4",
+    "version": "1.4.1",
     "gametype": "DTM",
     "teams": [
         {
@@ -48,7 +48,7 @@
                 "teams": ["blue"],
                 "materials": ["blue wool"],
                 "region": {
-                    "min": "-36, 34, -91",      
+                    "min": "-36, 34, -91",
                     "max": "-38, 38, -93"
                 },
                 "health": 10
@@ -135,6 +135,11 @@
             "message": "&cYou are not allowed to modify terrain here."
         },
         {
+            "type": "block-interact", "evaluate": "deny", "teams": ["yellow", "blue"],
+            "regions": ["yellow-spawn-protection", "yellow-right-side-protection", "yellow-back-protection", "yellow-spawn-roof", "blue-spawn-protection", "blue-right-side-protection", "blue-back-protection", "blue-spawn-roof"],
+            "message": "&cYou are not allowed to interact with blocks here."
+        },
+        {
             "type": "enter", "evaluate": "deny", "teams": ["yellow", "blue"],
             "regions": ["yellow-spawn-roof", "blue-spawn-roof"],
             "message": "&cYou may not go over the spawn's roof."
@@ -143,14 +148,14 @@
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
     ],
     "regions": [
-        {"id": "yellow-spawn-protection", "type": "cuboid", "min": "7, 0, 78", "max": "-7, oo, 105"},
+        {"id": "yellow-spawn-protection", "type": "cuboid", "min": "7, -oo, 78", "max": "-7, oo, 105"},
         {"id": "yellow-spawn-roof", "type": "cuboid", "min": "13, 42, 79", "max": "-13, oo, 105"},
-        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, 0, -78", "max": "7, oo, -105"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, -oo, -78", "max": "7, oo, -105"},
         {"id": "blue-spawn-roof", "type": "cuboid", "min": "-13, 42, -79", "max": "13, oo, -105"},
-        {"id": "yellow-right-side-protection", "type": "cuboid", "min": "61, 0, 111", "max": "57, oo, -111"},
-        {"id": "blue-right-side-protection", "type": "cuboid", "min": "-57, 0, -111", "max": "-61, oo, 111"},
-        {"id": "yellow-back-protection", "type": "cuboid", "min": "-61, 0, 112", "max": "61, oo, 116"},
-        {"id": "blue-back-protection", "type": "cuboid", "min": "61, 0, -112", "max": "-61, oo, -116"}
+        {"id": "yellow-right-side-protection", "type": "cuboid", "min": "61, -oo, 111", "max": "57, oo, -111"},
+        {"id": "blue-right-side-protection", "type": "cuboid", "min": "-57, -oo, -111", "max": "-61, oo, 111"},
+        {"id": "yellow-back-protection", "type": "cuboid", "min": "-61, -oo, 112", "max": "61, oo, 116"},
+        {"id": "blue-back-protection", "type": "cuboid", "min": "61, -oo, -112", "max": "-61, oo, -116"}
     ],
     "buildHeight": 50
 }
