@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -142,11 +142,8 @@
 		{"id": "magenta-room", "min": "-119, 13, 30", "max": "-130, oo, 17"},
 		{"id": "pink-room", "min": "-119, 13, -18", "max": "-130, oo, -31"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 17, -11", "max": "123, 6, 13"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 17, 10", "max": "-124, 1, -12"},
-
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 17, -11", "max": "123, 6, 13"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 17, 10", "max": "-124, 1, -12"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "65, 18, -11", "max": "123, 6, 13"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-66, 18, 10", "max": "-124, 1, -12"},
 		
 		{"id": "map", "type": "cuboid", "min": "-58, 0, 30", "max": "57, oo, -31"}
 	],
