@@ -125,8 +125,7 @@
 	"crafting": {
 		"remove": [
 			"flint and steel",
-			"piston",
-            "bucket"
+			"piston"
 		]
     },
     "filters": [
@@ -134,6 +133,11 @@
             "type": "build", "evaluate": "deny", "teams": ["yellow", "blue"],
             "regions": ["yellow-spawn-protection", "yellow-right-side-protection", "yellow-back-protection", "yellow-spawn-roof", "blue-spawn-protection", "blue-right-side-protection", "blue-back-protection", "blue-spawn-roof"],
             "message": "&cYou are not allowed to modify terrain here."
+        },
+        {
+            "type": "block-interact", "evaluate": "deny", "teams": ["yellow", "blue"],
+            "regions": ["yellow-spawn-protection", "yellow-right-side-protection", "yellow-back-protection", "yellow-spawn-roof", "blue-spawn-protection", "blue-right-side-protection", "blue-back-protection", "blue-spawn-roof"],
+            "message": "&cYou are not allowed to interact with blocks here."
         },
         {
             "type": "enter", "evaluate": "deny", "teams": ["yellow", "blue"],
