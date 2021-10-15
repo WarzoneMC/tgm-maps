@@ -140,8 +140,7 @@
 		},
 		{
 			"type": "block-interact", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["water"],
-			"message": "&cwater"
+			"regions": ["water"]
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
