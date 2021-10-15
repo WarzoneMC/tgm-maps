@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "block-interact", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["water"]
+			"regions": ["water-voidbuild-exception"]
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "red-spawn-protection-west", "red-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "blue-spawn-protection-west", "blue-spawn-protection-east"], "message": "&cYou may not enter the enemy spawn."},
@@ -155,7 +155,7 @@
 		{"id": "red-spawn-protection-east", "type": "cuboid", "min": "-16, 13, 3", "max": "0, oo, 26"},
 		{"id": "map", "type": "cuboid", "min": "-73, -oo, 18", "max": "15, oo, 154"},
         	{
-            		"id": "water", "type": "meta",
+            		"id": "water-voidbuild-exception", "type": "meta",
             		"regions": [
                 		{"min": "-36, 1, 160", "max": "-22, 12, 162"},
 				{"min": "-36, 1, 10", "max": "-22, 12, 12"}
