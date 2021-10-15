@@ -85,7 +85,13 @@
 		{
 			"type": "leather leggings",
 			"drop": true
-		}
+		},
+		{
+           		"type": "obsidian",
+            		"death": false,
+            		"drop": true,
+            		"spawn": true
+       		}
 	],
 	"killstreaks": [
 		{
