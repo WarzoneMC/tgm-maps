@@ -241,13 +241,25 @@
         "oak planks",
         "red terracotta",
         "blue terracotta",
-        "golden helmet",
-        "chainmail chestplate",
-        "leather leggings",
-        "leather boots",
         "string",
         "wheat seeds",
-        "oak sapling"
+        "oak sapling",
+        {
+            "type": "golden helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
     ],
     "killstreaks": [
         {
