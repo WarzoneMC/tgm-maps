@@ -14,7 +14,7 @@
 		{"uuid": "52bcb4dd-a1a0-4d9b-94e0-49e145e318e4", "username": "Haxaraptor"},
 		{"username": "doge"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"stats": {"disable": true},
 	"gametype": "KOTH",
 	"points": {
@@ -93,7 +93,8 @@
 		{
 			"effects": [
 				{"type": "resistance", "duration": 80, "amplifier": 10000, "particles": false},
-				{"type": "health boost", "duration": 999999999, "amplifier": -2, "particles": false}
+				{"type": "health boost", "duration": 99999999, "amplifier": -2, "particles": false},
+				{"type": "saturation", "duration": 99999999, "amplifier": 255, "particles": false}
 			]
 		}
 	],
