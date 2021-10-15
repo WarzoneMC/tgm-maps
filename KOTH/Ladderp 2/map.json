@@ -1,0 +1,116 @@
+{
+	"name": "Ladderp II",
+	"authors": [
+		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"},
+		{"uuid": "177803b2-797c-4089-aae1-5702ca259e2c", "username": "Onsole"},
+		{"uuid": "069a79f4-44e9-4726-a5be-fca90e38aaf5", "username": "Notch"},
+		{"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"},
+		{"uuid": "a348a860-8c8b-475f-b793-d556d45252a7", "username": "i2"},
+		{"username": "jeb_"},
+		{"uuid": "1e17bf00-029c-4886-92e5-44710d283e9d", "username": "cenation1369"},
+		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "Stealth5061"},
+		{"username": "Barack Obama"},
+		{"uuid": "61699b2e-d327-4a01-9f1e-0ea8c3f06bc6", "username": "Dinnerbone"},
+		{"uuid": "52bcb4dd-a1a0-4d9b-94e0-49e145e318e4", "username": "Haxaraptor"},
+		{"username": "doge"}
+	],
+	"version": "1.0.1",
+	"gametype": "KOTH",
+	"points": {
+		"target": 269
+	},
+	"teams": [
+		{
+			"id": "dolan-team",
+			"name": "tem dolan",
+			"color": "blue",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "grifindoor-team",
+			"name": "grifindoor",
+			"color": "dark_red",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "creper-team",
+			"name": "tem creper",
+			"color": "green",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "doge-team",
+			"name": "doge team",
+			"color": "yellow",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "offline-team",
+			"name": "tem offline",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "swehg-team",
+			"name": "swehg tem",
+			"color": "light_purple",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "fier-team",
+			"name": "fier creper",
+			"color": "gold",
+			"min": 1,
+			"max": 69
+		},
+		{
+			"id": "purlp-team",
+			"name": "purlp team",
+			"color": "dark_purple",
+			"min": 1,
+			"max": 69
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 73.5, 0.5"},
+		{"teams": ["dolan-team"], "coords": "-24.5, 3, -7.5, -90"},
+		{"teams": ["grifindoor-team"], "coords": "25.5, 3, 8.5, 90"},
+		{"teams": ["creper-team"], "coords": "8.5, 3, -24.5"},
+		{"teams": ["doge-team"], "coords": "-7.5, 3, 25.5, 180"},
+		{"teams": ["offline-team"], "coords": "25.5, 3, -7.5, 90"},
+		{"teams": ["swehg-team"], "coords": "-24.5, 3, 8.5, -90"},
+		{"teams": ["fier-team"], "coords": "-7.5, 3, -24.5"},
+		{"teams": ["purlp-team"], "coords": "8.5, 3, 25.5, 180"}
+	],
+	"kits": [
+		{
+			"effects": [
+				{"type": "resistance", "duration": 80, "amplifier": 10000, "particles": false},
+				{"type": "health boost", "duration": 999999999, "amplifier": -2, "particles": false}
+			]
+		}
+	],
+	"koth": {
+		"hills": [
+			{
+				"name": "Ladder",
+				"time": 1,
+				"points": 1,
+				"region": {
+					"type": "cuboid", "min": "-1, 68, -1", "max": "2, 72, 2"
+				}
+			}
+		]
+	},
+	"filters": [
+		{"type": "block-explode", "evaluate": "deny", "teams": ["dolan-team", "grifindoor-team", "creper-team", "doge-team", "offline-team", "swehg-team", "fier-team", "purlp-team"], "regions": ["global"]},
+		{"type": "blockBreak", "evaluate": "allow", "blocks": ["glass", "tnt"], "teams": ["dolan-team", "grifindoor-team", "creper-team", "doge-team", "offline-team", "swehg-team", "fier-team", "purlp-team"], "regions": ["global"]},
+		{"type": "blockPlace", "evaluate": "allow", "blocks": ["glass", "tnt"], "teams": ["dolan-team", "grifindoor-team", "creper-team", "doge-team", "offline-team", "swehg-team", "fier-team", "purlp-team"], "regions": ["global"]}
+	]
+}
