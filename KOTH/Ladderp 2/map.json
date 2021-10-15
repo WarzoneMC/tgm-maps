@@ -15,6 +15,7 @@
 		{"username": "doge"}
 	],
 	"version": "1.0.1",
+	"stats": {"disable": true},
 	"gametype": "KOTH",
 	"points": {
 		"target": 269
