@@ -108,7 +108,7 @@
 			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
 			"inverted": true,
 			"regions": ["map"],
-			"mes sage": "&cYou may not build outside of the map."
+			"message": "&cYou may not build outside of the map."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
