@@ -76,7 +76,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
 		"chainmail leggings",
 		{
             "type": "leather chestplate",
