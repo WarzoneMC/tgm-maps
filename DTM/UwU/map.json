@@ -1,0 +1,122 @@
+{
+	"name": "UwU",
+	"authors": [
+		{"uuid": "d9efc01d-cd33-46c2-afe5-a6fc3f419f77", "username": "_NotMaria"},
+		{"uuid": "4f0ac4d7-4776-4400-9283-6bf4a5bcd48f", "username": "Virus53"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "229.5, 95, 60.5, 180"},
+		{"teams": ["blue"], "coords": "409.5, 67, -30.5"},
+		{"teams": ["red"], "coords": "49.5, 67, -29.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "381, 71, 6",
+					"max": "381, 71, 6"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "77, 71, 6",
+					"max": "77, 71, 6"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "pumpkin pie", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 31, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 32, "amount": 64},
+
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
+		"chainmail leggings",
+		{
+            "type": "leather chestplate",
+            "spawn": false
+        },
+        {
+            "type": "leather boots",
+            "spawn": false
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build outside of the map."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "400, -oo, -39", "max": "419, oo, -24"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "39, -oo, -39", "max": "58, oo, -24"},
+		{"id": "map", "type": "cuboid", "min": "39, 36, -39", "max": "419, oo, 45"}
+	],
+	"buildHeight": 90
+}
