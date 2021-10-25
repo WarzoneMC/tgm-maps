@@ -5,7 +5,7 @@
 		{"uuid": "edbd4cdb-63a5-4cec-944c-2b6bda56f51f", "username": "Owehttamy"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"stats": {"disable": true},
 	"gamerules": {
 		"logAdminCommands": false,
