@@ -1,0 +1,134 @@
+{
+	"name": "Cozy Cove",
+	"objective": "Four teams are divided onto the map and only one will remain. Gather blocks to help you build up a tower or barricade yourself. Be careful for the world border!",
+	"authors": [
+		{"uuid": "edbd4cdb-63a5-4cec-944c-2b6bda56f51f", "username": "Owehttamy"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+	"stats": {"disable": true},
+	"gamerules": {
+		"logAdminCommands": false,
+		"sendCommandFeedback": false
+	},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "28.5, 38, 28.5, -45, 10"},
+		{"teams": ["spectators"], "coords": "28.5, 38, 28.5, 135, 10"},
+		{"teams": ["blue"], "coords": "23.5, 6, 14.5, -90"},
+		{"teams": ["blue"], "coords": "23.5, 6, 23.5, -45"},
+		{"teams": ["blue"], "coords": "14.5, 6, 23.5"},
+		{"teams": ["green"], "coords": "42.5, 6, 23.5"},
+		{"teams": ["green"], "coords": "33.5, 6, 23.5, 45"},
+		{"teams": ["green"], "coords": "33.5, 6, 14.5, 90"},
+		{"teams": ["red"], "coords": "33.5, 6, 42.5, 90"},
+		{"teams": ["red"], "coords": "33.5, 6, 33.5, 135"},
+		{"teams": ["red"], "coords": "42.5, 6, 33.5, 180"},
+		{"teams": ["yellow"], "coords": "14.5, 6, 33.5, 180"},
+		{"teams": ["yellow"], "coords": "23.5, 6, 33.5, -135"},
+		{"teams": ["yellow"], "coords": "23.5, 6, 42.5, -90"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "stone shovel", "slot": 4, "unbreakable": true},
+				{"type": "item", "material": "apple", "slot": 8, "amount": 8},
+
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 8},
+
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "stone shovel", "apple", "arrow",
+		"chainmail leggings",
+		{
+			"type": "leather chestplate",
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"spawn": false
+		}
+	],
+	"time": {
+		"limit": 100,
+		"broadcasts": [
+			{
+				"message": "&cThe walls have dropped. Take cover or attack!",
+				"interval": 10,
+				"repeat": false,
+				"commands":
+				[
+					"execute at @r run fill 28 7 1 28 11 55 air replace glass",
+					"execute at @r run fill 1 7 28 55 11 28 air replace glass",
+					"execute at @r run worldborder damage buffer 0"
+				]
+			},
+			{
+				"message": "&cThe floor crumbles.",
+				"interval": 95,
+				"repeat": false,
+				"commands":
+				["execute at @r run fill 28 0 28 28 25 28 air"]
+			}
+		]
+	},
+	"border": {
+		"startingSize": 60,
+		"endSize": 0,
+		"center": "28.5, 12, 28.5",
+		"delay": 90
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["blue", "green", "red", "yellow"],
+			"regions": ["map"], "message": "&cYou cannot build outside of the map."
+		},
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "green", "red", "yellow"],
+			"regions": ["map"], "blocks": ["glass"], "message": "&cYou cannot break the walls."
+		}
+	],
+	"regions": [
+		{"id": "map", "type": "cylinder", "base": "28, 0, 28", "radius": 27, "height": 25}
+	],
+	"buildHeight": 25
+}
