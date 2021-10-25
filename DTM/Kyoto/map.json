@@ -5,7 +5,7 @@
 		{"uuid": "9ec82338-4c1d-4b38-97b2-fedd0a92923c", "username": "D_A_N_G_E_R"},
 		{"uuid": "a9f11454-beac-4cc3-a138-1780802c8794", "username": "Blaszczak"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -139,5 +139,6 @@
 		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "9, 0, 142", "max": "-13, 78, 163"},
 		{"id": "white-spawn-protection", "type": "cuboid", "min": "9, 0, -47", "max": "-13, 78, -26"},
 		{"id": "map", "type": "cuboid", "min": "-40, 0, -35", "max": "36, 255, 151"}
-	]
+	],
+    	"buildHeight": 100
 }
