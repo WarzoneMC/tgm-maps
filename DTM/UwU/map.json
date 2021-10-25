@@ -4,7 +4,7 @@
 		{"uuid": "d9efc01d-cd33-46c2-afe5-a6fc3f419f77", "username": "_NotMaria"},
 		{"uuid": "4f0ac4d7-4776-4400-9283-6bf4a5bcd48f", "username": "Virus53"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -76,8 +76,8 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
-		"chainmail leggings",
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
+		"chainmail leggings", "obsidian",
 		{
             "type": "leather chestplate",
             "spawn": false
