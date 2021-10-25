@@ -3,7 +3,7 @@
   "authors": [
 	{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
   ],
-  "version": "1.1.2",
+  "version": "1.1.3",
   "gametype": "DTM",
   "gamerules": {
 	"doFireTick": true
@@ -39,7 +39,7 @@
 		  "min": "-84, 14, 336",
 		  "max": "-82, 16, 334"
 		},
-		"health": 5
+		"health": 8
 	  },
 	  {
 		"name": "Monument&r",
@@ -49,7 +49,7 @@
 		  "min": "-95, 14, 421",
 		  "max": "-97, 16, 423"
 		},
-		"health": 5
+		"health": 8
 	  }
 	]
   },
