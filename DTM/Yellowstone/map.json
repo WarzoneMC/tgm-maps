@@ -89,7 +89,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Right Monument&r",
+				"name": "Front Right Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
@@ -99,7 +99,7 @@
 				"health": 1
 			},
 			{
-				"name": "Back Left Monument&r",
+				"name": "Front Left Monument&r",
 				"teams": ["sun"],
 				"materials": ["obsidian"],
 				"region": {
