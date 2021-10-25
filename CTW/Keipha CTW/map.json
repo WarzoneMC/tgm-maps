@@ -14,7 +14,7 @@
             "username": "Strangey"
         }
     ],
-    "version": "1.1.1",
+    "version": "1.1.2",
     "gametype": "CTW",
     "teams": [
         {
@@ -196,7 +196,7 @@
             "effects": [
                 {
                     "type": "DAMAGE_RESISTANCE",
-                    "duration": 80,
+                    "duration": 120,
                     "amplifier": 25,
                     "particles": false
                 }
