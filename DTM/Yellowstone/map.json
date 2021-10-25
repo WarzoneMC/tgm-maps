@@ -119,6 +119,7 @@
 				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 
 				{"type": "item", "material": "cobblestone", "slot": 3, "amount": 64},
+				{"type": "item", "material": "cobblestone", "slot": 4, "amount": 64},
 				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
 				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
 				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
