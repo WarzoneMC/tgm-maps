@@ -1,11 +1,11 @@
 {
-	"name": "Crossfire",
+	"name": "CrossfireTest",
 	"objective": "Defenders are trying to stop the runners from getting to the end. Run for your life or be the one to stop the runners!",
 	"authors": [
 		{"uuid": "6e347123-c684-4d7e-996c-44d4924ff172", "username": "SheriffSoco"}
 	],
 	"gametype": "Blitz",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -25,14 +25,18 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "756.5, 95, 375.5"},
-		{"teams": ["runners"], "coords": "754.5, 34, 434.5"},
-		{"teams": ["defenders"], "coords": "758.5, 34, 434.5"}
+        	{"teams": ["runners"], "coords": "748.5, 47, 438.5"},
+        	{"teams": ["runners"], "coords": "756.5, 47, 438.5"},
+        	{"teams": ["runners"], "coords": "764.5, 47, 438.5"},
+		{"teams": ["defenders"], "coords": "756.5, 86, 405.5"}
 	],
 	"kits": [
 		{
 			"name": "runners",
 			"teams": ["runners"],
 			"items": [
+				{"material": "wooden sword", "durability": 57, "slot": 0},
+				{"material": "oak boat", "slot": 1},
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true}
@@ -42,16 +46,39 @@
 			"name": "defenders",
 			"teams": ["defenders"],
 			"items": [
+				{"material": "wooden sword", "enchantmenst": ["power:2", "punch:1", "infinity:1"], "slot": 0},
+				{"material": "arrow", "slot": 28},
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "speed", "duration": 999999999, "amplifier": 1, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"leather helmet", "leather chestplate", "leather leggings", "string", "sponge", "arrow", "stick", "oak planks",
-		"oak sign", "acacia sign", "spruce sign", "dark oak sign", "birch sign", "jungle sign"
+		"string", "sponge", "arrow", "stick", "oak planks",  "wooden sword",
+		"oak sign", "acacia sign", "spruce sign", "dark oak sign", "birch sign", "jungle sign",
+		{
+            		"type": "leather helmet",
+            		"drop": true
+        	},
+		{
+            		"type": "leather chestplate",
+            		"drop": true
+        	},
+		{
+            		"type": "leather leggings",
+            		"drop": true
+        	}
 	],
+    "damageControl": {
+   		"FALL": false
+	},
+    "gamerules": {
+        "doTileDrops": false
+    },
 	"portals": [
 		{
 			"from": "portal-left",
@@ -97,5 +124,10 @@
 		{"id": "portal-lback", "min": "761, 87, 408", "max": "759, 86, 408"},
 		{"id": "portal-right", "min": "751, 86, 405", "max": "751, 86, 408"},
 		{"id": "portal-rback", "min": "753, 87, 408", "max": "751, 86, 408"}
+	],
+	"filters": [
+		{"type": "blockBreak", "evaluate": "allow", "teams": ["runners"], "regions": ["global"], "blocks": ["sponge", "cobweb"]},
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["runners"], "regions": ["global"]},
+		{"type": "build", "evaluate": "deny", "teams": ["defenders"], "regions": ["global"]}
 	]
 }
