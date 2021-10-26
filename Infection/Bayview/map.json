@@ -5,7 +5,7 @@
 		{"uuid": "78d0a064-ffec-4820-b9e5-7a59a23458df", "username": "Sturmspitz"},
 		{"uuid": "53b3603c-4414-47b2-9667-18920279a9dc", "username": "patrickdemooij9"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "Infected",
 	"stats": {"disable": true},
 	"teams": [
