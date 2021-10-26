@@ -5,7 +5,7 @@
 		{"uuid": "edbd4cdb-63a5-4cec-944c-2b6bda56f51f", "username": "Owehttamy"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"stats": {"disable": true},
 	"gamerules": {
 		"logAdminCommands": false,
@@ -89,7 +89,7 @@
 		}
 	],
 	"time": {
-		"limit": 130,
+		"limit": 170,
 		"broadcasts": [
 			{
 				"message": "&cThe walls have dropped. Take cover or attack!",
@@ -97,14 +97,14 @@
 				"repeat": false,
 				"commands":
 				[
-					"execute at @r run fill 28 7 1 28 11 55 air replace glass",
-					"execute at @r run fill 1 7 28 55 11 28 air replace glass",
+					"execute at @r run fill 28 6 1 28 12 55 air replace glass",
+					"execute at @r run fill 1 6 28 55 12 28 air replace glass",
 					"execute at @r run worldborder damage buffer 0"
 				]
 			},
 			{
 				"message": "&cThe floor crumbles.",
-				"interval": 125,
+				"interval": 165,
 				"repeat": false,
 				"commands":
 				["execute at @r run fill 28 0 28 28 25 28 air"]
@@ -112,10 +112,10 @@
 		]
 	},
 	"border": {
-		"startingSize": 60,
+		"startingSize": 80,
 		"endSize": 0,
 		"center": "28.5, 12, 28.5",
-		"delay": 120
+		"delay": 160
 	},
 	"filters": [
 		{
