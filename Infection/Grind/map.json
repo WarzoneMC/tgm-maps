@@ -7,7 +7,7 @@
 		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Pixelific"}
 	],
 	"gametype": "Infected",
-	"version": "1.0",
+	"version": "1.0.1",
 	"stats": {"disable": true},
 	"teams": [
 		{
