@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
     ],
-    "version": "2.0.2",
+    "version": "2.0.3",
     "gametype": "DTM",
     "teams": [
         {
@@ -185,8 +185,8 @@
         }
     ],
     "regions": [
-        {"id": "fire-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 10.5, "height": 25},
-        {"id": "water-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 10.5, "height": 25 },
+        {"id": "fire-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
+        {"id": "water-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25 },
         {"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
     ],
     "filters": [
