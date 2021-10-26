@@ -1,0 +1,128 @@
+{
+	"name": "Molendinis",
+	"authors": [
+		{"uuid": "36dc036a-dfbc-4627-b66a-501223f08075", "username": "bend"},
+		{"uuid": "105f6a09-f533-412b-93cb-501601763c11", "username": "JTr"}
+	],
+	"version": "1.2.1",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 14
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 14
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "stone shovel", "slot": 4, "unbreakable": true},
+
+				{"type": "item", "material": "birch planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "bread", "slot": 6, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 80, "amplifier": 100, "particles": false}
+			]
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-122,55,41"},
+		{"teams": ["red"], "coords": "-32.5, 9, 76.5, 135"},
+		{"teams": ["yellow"], "coords": "-209.5, 9, 5.5, -45"}
+	],
+	"filters": [
+		{
+			"type": "build", "inverted": true, "evaluate": "deny", "teams": ["yellow", "red"],
+			"regions": ["playable"],
+			"message": "&cYou may not build outside the playable region!"
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["yellow", "red"],
+			"regions": ["yellow-spawn", "red-spawn"],
+			"message": "&cYou may not modify spawn!"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["yellow-spawn"], "message": "&cYou may not enter the enemy spawn!"}
+	],
+	"regions": [
+		{"id": "playable", "type": "cuboid", "min": "-221, 0, -6", "max": "-22, 50, 87"},
+		{"id": "red-spawn", "type": "cylinder", "base": "-32.5, 0, 76.5", "radius": 8, "height": 50},
+		{"id": "yellow-spawn", "type": "cylinder", "base": "-209.5, 0, 5.5", "radius": 8, "height": 50}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["yellow"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-196, 6, 34",
+					"max": "-193, 10, 37" 
+				},
+				"health": 3
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-46, 6, 48",
+					"max": "-49, 10, 45"
+				},
+				"health": 3
+			}
+		]
+	},
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "stone shovel", "arrow", "wheat seeds", "string", "bread", "obsidian", "beacon", "emerald block", "birch planks",
+		{
+            "type": "iron helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "iron leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"buildHeight": 43
+}
