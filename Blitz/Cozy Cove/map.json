@@ -47,15 +47,23 @@
 		{"teams": ["blue"], "coords": "23.5, 6, 14.5, -90"},
 		{"teams": ["blue"], "coords": "23.5, 6, 23.5, -45"},
 		{"teams": ["blue"], "coords": "14.5, 6, 23.5"},
+		{"teams": ["blue"], "coords": "13.5, 6, 16.5, -90"},
+		{"teams": ["blue"], "coords": "15.5, 6, 11.5"},
 		{"teams": ["green"], "coords": "42.5, 6, 23.5"},
 		{"teams": ["green"], "coords": "33.5, 6, 23.5, 45"},
 		{"teams": ["green"], "coords": "33.5, 6, 14.5, 90"},
+		{"teams": ["green"], "coords": "40.5, 6, 13.5"},
+		{"teams": ["green"], "coords": "45.5, 6, 15.5, 90"},
 		{"teams": ["red"], "coords": "33.5, 6, 42.5, 90"},
 		{"teams": ["red"], "coords": "33.5, 6, 33.5, 135"},
 		{"teams": ["red"], "coords": "42.5, 6, 33.5, 180"},
+		{"teams": ["red"], "coords": "43.5, 6, 40.5, 90"},
+		{"teams": ["red"], "coords": "41.5, 6, 45.5, 0"},
 		{"teams": ["yellow"], "coords": "14.5, 6, 33.5, 180"},
 		{"teams": ["yellow"], "coords": "23.5, 6, 33.5, -135"},
-		{"teams": ["yellow"], "coords": "23.5, 6, 42.5, -90"}
+		{"teams": ["yellow"], "coords": "23.5, 6, 42.5, -90"},
+		{"teams": ["yellow"], "coords": "16.5, 6, 43.5, 180"},
+		{"teams": ["yellow"], "coords": "11.5, 6, 41.5, -90"}
 	],
 	"kits": [
 		{
