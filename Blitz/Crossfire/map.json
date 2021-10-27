@@ -5,7 +5,7 @@
 		{"uuid": "6e347123-c684-4d7e-996c-44d4924ff172", "username": "SheriffSoco"}
 	],
 	"gametype": "Blitz",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -46,7 +46,7 @@
 			"name": "defenders",
 			"teams": ["defenders"],
 			"items": [
-				{"material": "wooden sword", "enchantmenst": ["power:2", "punch:1", "infinity:1"], "slot": 0},
+				{"material": "wooden sword", "enchantments": ["power:2", "punch:1", "infinity:1"], "slot": 0},
 				{"material": "arrow", "slot": 28},
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
