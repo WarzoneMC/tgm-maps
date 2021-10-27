@@ -4,7 +4,8 @@
         {"uuid": "cc2292de-fcb3-412d-9319-f3177f73b605", "username": "cs_"}
     ],
     "gametype": "Blitz",
-    "version": "1.1.1",
+    "version": "1.1.2",
+    "objective": "Everyone for themselves! Can you sploof the others before you get sploofed?",
     "stats": {"disable": true},
     "teams": [
         {
