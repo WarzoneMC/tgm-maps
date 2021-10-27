@@ -37,7 +37,7 @@
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
 				{"material": "arrow", "slot": 2, "amount": 10},
-				{"material": "golden apple", "slot": 8},
+				{"material": "golden apple", "slot": 7},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
