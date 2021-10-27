@@ -1,0 +1,90 @@
+{
+	"name": "Block Fortress",
+	"version": "1.3.0",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "2a289d2a-d970-49c5-9a6c-01fc0264e317", "username": "Stealth5061"},
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "yellow", 
+			"min": 1, 
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0, 23, -50, 180"},
+		{"teams": ["players"], "coords": "-10.5, 11, -11.5"},
+        {"teams": ["players"], "coords": "-19.5, 11, -19.5"},
+        {"teams": ["players"], "coords": "-30.5, 3, -30.5"},
+		{"teams": ["players"], "coords": "-20.5, 2.5, -20.5"},
+        {"teams": ["players"], "coords": "-9.5, 7, -23.5"},
+        {"teams": ["players"], "coords": "11.5, 11, -10.5"},
+        {"teams": ["players"], "coords": "19.5, 11, -19.5"},
+        {"teams": ["players"], "coords": "30.5, 3, -30.5"},
+        {"teams": ["players"], "coords": "9.5, 7, -23.5"},
+        {"teams": ["players"], "coords": "20.5, 2.5, -20.5"},
+        {"teams": ["players"], "coords": "-10.5, 11, 11.5, 180"},
+        {"teams": ["players"], "coords": "-19.5, 11, 19.5, 180"},
+        {"teams": ["players"], "coords": "-30.5, 3, 30.5, 180"},
+		{"teams": ["players"], "coords": "-20.5, 2.5, 20.5, 180"},
+        {"teams": ["players"], "coords": "-9.5, 7, 23.5, 180"},
+        {"teams": ["players"], "coords": "11.5, 11, 10.5, 180"},
+        {"teams": ["players"], "coords": "19.5, 11, 19.5, 180"},
+        {"teams": ["players"], "coords": "30.5, 3, 30.5, 180"},
+        {"teams": ["players"], "coords": "9.5, 7, 23.5, 180"},
+        {"teams": ["players"], "coords": "20.5, 2.5, 20.5, 180"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "arrow", "slot": 28, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "enchantments": ["protection projectile:2"], "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "enchantments": ["feather falling:1"], "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 20, "amplifier": 100, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "cooked beef", "arrow",
+		"iron helmet", "leather chestplate", "leather leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["rouge"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	]
+}
