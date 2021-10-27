@@ -54,8 +54,8 @@
 				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 
-				{"material": "leather chestplate", "slot": "helmet", "unbreakable": true},
-				{"material": "chainmail leggings", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
 				{"material": "leather boots", "slot": "boots", "unbreakable": true},
 			],
 			"effects": [
