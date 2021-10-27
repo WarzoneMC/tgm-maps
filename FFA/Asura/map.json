@@ -1,6 +1,6 @@
 {
 	"name": "Asura",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "FFA",
 	"authors": [
 		{"uuid": "2e05eb91-e64b-46f8-8a49-368d205d26fd", "username": "coastguard"}
@@ -96,9 +96,17 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"type": "blockBreak", "evaluate": "allow", "teams": ["players"],
+			"regions": ["global"], "blocks": ["grass", "oxeye daisy", "dandelion", "azure bluet", "poppy", "sugar cane"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+        	{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["players"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	]
+	],
+    	"gamerules": {
+        	"doTileDrops": false
+    	}
 }
