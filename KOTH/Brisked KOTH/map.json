@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -127,11 +127,17 @@
 			"regions": [
 				"orange-spawn-protection", "purple-spawn-protection",
 				 "top-protection", "a-protection", "b-protection",
-				"orange-pressure-plate", "purple-pressure-plate",
-				"a-pressure-plate", "b-pressure-plate"
+				"orange-portal", "purple-portal",
+				"northwest-portal", "southeast-portal"
 			],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
+	],
+	"portals": [
+		{"from": "orange-portal", "to": "4.5, 47, -118.5, 45", "teams": ["orange", "purple"], "sound": false},
+		{"from": "purple-portal", "to": "-39.5, 47, -74.5, -135", "teams": ["orange", "purple"], "sound": false},
+		{"from": "northwest-portal", "to": "7.5, 44, -71.5, 135", "teams": ["orange", "purple"], "sound": false},
+		{"from": "southeast-portal", "to": "-42.5, 44, -121.5, 45", "teams": ["orange", "purple"], "sound": false}
 	],
 	"regions": [
 		{"id": "orange-spawn-protection", "min": "25.5, 44, -148.5", "max": "34.5, oo, -139.5"},
@@ -141,11 +147,10 @@
 		{"id": "a-protection", "min": "-7, 29, -86", "max": "2, 29, -77"},
 		{"id": "b-protection", "min": "-38, 29, -117", "max": "-29, 29, -108"},
 
-		{"id": "orange-pressure-plate", "min": "9, 29, -124", "max": "9, 29, -124"},
-		{"id": "purple-pressure-plate", "min": "-45, 29, -70", "max": "-45, 29, -70"},
-
-		{"id": "a-pressure-plate", "min": "20, 31, -59", "max": "20, 31, -59"},
-		{"id": "b-pressure-plate", "min": "-56, 31, -135", "max": "-56, 31, -135"}
+		{"id": "orange-portal", "min": "9, 29, -124", "max": "9, 30, -124"},
+		{"id": "purple-portal", "min": "-45, 29, -70", "max": "-45, 30, -70"},
+		{"id": "northwest-portal", "min": "20, 31, -59", "max": "20, 32, -59"},
+		{"id": "southeast-portal", "min": "-56, 31, -135", "max": "-56, 32, -135"}
 	],
 	"buildHeight": 50
 }
