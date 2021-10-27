@@ -1,0 +1,96 @@
+{
+	"name": "Tropico: FFA",
+	"version": "1.4.0",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "7ab24d14-0801-48ba-8fea-147ddf400067", "username": "samthecat43"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "gold", 
+			"min": 1, 
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "12, 51, -66, 90"},
+		{"teams": ["players"], "coords": "100.5, 12, -89.5"},
+		{"teams": ["players"], "coords": "89.5, 12, -66.5"},
+		{"teams": ["players"], "coords": "71.5, 19, -44.5"},
+		{"teams": ["players"], "coords": "64.5, 12, -60.5"},
+		{"teams": ["players"], "coords": "56.5, 18, -79.5"},
+		{"teams": ["players"], "coords": "42.5, 12, -54.5"},
+		{"teams": ["players"], "coords": "31.5, 12, -80.5"},
+		{"teams": ["players"], "coords": "19.5, 12, -58.5"},
+		{"teams": ["players"], "coords": "16.5, 12, -83.5"},
+		{"teams": ["players"], "coords": "0.5, 12, -45.5"},
+		{"teams": ["players"], "coords": "-13.5, 12, -52.5"},
+		{"teams": ["players"], "coords": "-27.5, 12, -64.5"},
+		{"teams": ["players"], "coords": "-31.5, 19, -59.5"},
+		{"teams": ["players"], "coords": "-43.5, 19, -90.5"},
+		{"teams": ["players"], "coords": "-46.5, 18, -56.5"},
+		{"teams": ["players"], "coords": "-48.5, 16, -79.5"},
+		{"teams": ["players"], "coords": "-55.5, 12, -72.5"},
+		{"teams": ["players"], "coords": "-62.5, 12, -66.5"},
+		{"teams": ["players"], "coords": "-71.5, 12, -46.5"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "displayName": "&cDagger", "slot": 0, "unbreakable": true},
+				{"material": "bow", "displayName": "&ePistol", "slot": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 28, "amount": 32},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather chestplate", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true},
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 40, "amplifier": 100, "particles": false},
+				{"type": "speed", "duration": 20, "amplifier": 1, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "golden apple",
+		"leather chestplate", "chainmail leggings", "leather boots", "anvil"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "regeneration", "level": 3, "duration": 40}
+				],
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 12}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"damageControl": {
+		"fall": false
+	}
+}
