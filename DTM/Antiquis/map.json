@@ -76,7 +76,7 @@
 	],
 	"itemremove": [
 		"wooden pickaxe", "stone axe", "stone sword", "bow", "arrow", "cooked beef", "obsidian", "flint",
-		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling",
+		"oak planks", "oak log", "cobblestone", "gravel", "dirt", "wheat seeds", "oak sapling", "golden apple",
 		{
 			"type": "leather helmet",
 			"drop": true
