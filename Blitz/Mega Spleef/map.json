@@ -4,7 +4,7 @@
         {"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "stats": {"disable": true},
     "teams": [
         {
@@ -66,46 +66,12 @@
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "260.5, 24, 12.5, 180"},
-
-        {"teams": ["red"], "coords": "208.5, 2, -40.5, 135"},
-        {"teams": ["red"], "coords": "312.5, 2, -40.5, -135"},
-        {"teams": ["red"], "coords": "312.5, 2, 63.5, -45"},
-        {"teams": ["red"], "coords": "208.5, 2, 63.5, 45"},
-
-        {"teams": ["orange"], "coords": "260.5, 2, 105.5, 180"},
-        {"teams": ["orange"], "coords": "166.5, 2, 11.5, -90"},
-        {"teams": ["orange"], "coords": "260.5, 2, -82.5"},
-        {"teams": ["orange"], "coords": "354.5, 2, 11.5, 90"},
-
-        {"teams": ["yellow"], "coords": "333.5, 2, 21.5, -135"},
-        {"teams": ["yellow"], "coords": "250.5, 2, 84.5, -45"},
-        {"teams": ["yellow"], "coords": "187.5, 2, 1.5, 45"},
-        {"teams": ["yellow"], "coords": "270.5, 2, -61.5, 135"},
-
-        {"teams": ["lime"], "coords": "286.5, 2, -79.5"},
-        {"teams": ["lime"], "coords": "351.5, 2, 37.5, 90"},
-        {"teams": ["lime"], "coords": "234.5, 2, 102.5, 180"},
-        {"teams": ["lime"], "coords": "169.5, 2, -14.5, -90"},
-
-        {"teams": ["green"], "coords": "179.5, 2, -39.5, -45"},
-        {"teams": ["green"], "coords": "311.5, 2, -69.5, 45"},
-        {"teams": ["green"], "coords": "341.5, 2, 62.5, 135"},
-        {"teams": ["green"], "coords": "209.5, 2, 92.5, -135"},
-
-        {"teams": ["cyan"], "coords": "179.5, 2, 62.5, -135"},
-        {"teams": ["cyan"], "coords": "209.5, 2, -69.5, -45"},
-        {"teams": ["cyan"], "coords": "341.5, 2, -39.5, 45"},
-        {"teams": ["cyan"], "coords": "311.5, 2, 92.5, 135"},
-
-        {"teams": ["blue"], "coords": "286.5, 2, 102.5, 180"},
-        {"teams": ["blue"], "coords": "169.5, 2, 37.5, -90"},
-        {"teams": ["blue"], "coords": "234.5, 2, -79.5"},
-        {"teams": ["blue"], "coords": "351.5, 2, -14.5, 90"},
-
-        {"teams": ["purple"], "coords": "333.5, 2, 1.5, -45"},
-        {"teams": ["purple"], "coords": "270.5, 2, 84.5, 45"},
-        {"teams": ["purple"], "coords": "187.5, 2, 21.5, 135"},
-        {"teams": ["purple"], "coords": "250.5, 2, -61.5, -135"}    
+        
+        {   
+            "teams": ["red", "orange", "yellow", "lime", "green", "cyan", "blue", "purple"],
+            "region": "tnt",
+            "face-coordinates": "260.5, 2, 11.5"
+        }
     ],
     "kits": [
         {
@@ -124,6 +90,15 @@
             "teams": ["red"],
             "items": [
                 {"type": "item", "material": "red_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "red_dye", "slot": "0"},
+                {"type": "item", "material": "red_dye", "slot": "1"},
+                {"type": "item", "material": "red_dye", "slot": "2"},
+                {"type": "item", "material": "red_dye", "slot": "3"},
+                {"type": "item", "material": "red_dye", "slot": "4"},
+                {"type": "item", "material": "red_dye", "slot": "5"},
+                {"type": "item", "material": "red_dye", "slot": "6"},
+                {"type": "item", "material": "red_dye", "slot": "7"},
+                {"type": "item", "material": "red_dye", "slot": "8"}
             ]
         },
         {
@@ -131,6 +106,15 @@
             "teams": ["orange"],
             "items": [
                 {"type": "item", "material": "orange_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "orange_dye", "slot": "0"},
+                {"type": "item", "material": "orange_dye", "slot": "1"},
+                {"type": "item", "material": "orange_dye", "slot": "2"},
+                {"type": "item", "material": "orange_dye", "slot": "3"},
+                {"type": "item", "material": "orange_dye", "slot": "4"},
+                {"type": "item", "material": "orange_dye", "slot": "5"},
+                {"type": "item", "material": "orange_dye", "slot": "6"},
+                {"type": "item", "material": "orange_dye", "slot": "7"},
+                {"type": "item", "material": "orange_dye", "slot": "8"}
             ]
         },
         {
@@ -138,6 +122,15 @@
             "teams": ["yellow"],
             "items": [
                 {"type": "item", "material": "yellow_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "yellow_dye", "slot": "0"},
+                {"type": "item", "material": "yellow_dye", "slot": "1"},
+                {"type": "item", "material": "yellow_dye", "slot": "2"},
+                {"type": "item", "material": "yellow_dye", "slot": "3"},
+                {"type": "item", "material": "yellow_dye", "slot": "4"},
+                {"type": "item", "material": "yellow_dye", "slot": "5"},
+                {"type": "item", "material": "yellow_dye", "slot": "6"},
+                {"type": "item", "material": "yellow_dye", "slot": "7"},
+                {"type": "item", "material": "yellow_dye", "slot": "8"}
             ]
         },
         {
@@ -145,6 +138,15 @@
             "teams": ["lime"],
             "items": [
                 {"type": "item", "material": "lime_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "lime_dye", "slot": "0"},
+                {"type": "item", "material": "lime_dye", "slot": "1"},
+                {"type": "item", "material": "lime_dye", "slot": "2"},
+                {"type": "item", "material": "lime_dye", "slot": "3"},
+                {"type": "item", "material": "lime_dye", "slot": "4"},
+                {"type": "item", "material": "lime_dye", "slot": "5"},
+                {"type": "item", "material": "lime_dye", "slot": "6"},
+                {"type": "item", "material": "lime_dye", "slot": "7"},
+                {"type": "item", "material": "lime_dye", "slot": "8"}
             ]
         },
         {
@@ -152,6 +154,15 @@
             "teams": ["green"],
             "items": [
                 {"type": "item", "material": "green_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "green_dye", "slot": "0"},
+                {"type": "item", "material": "green_dye", "slot": "1"},
+                {"type": "item", "material": "green_dye", "slot": "2"},
+                {"type": "item", "material": "green_dye", "slot": "3"},
+                {"type": "item", "material": "green_dye", "slot": "4"},
+                {"type": "item", "material": "green_dye", "slot": "5"},
+                {"type": "item", "material": "green_dye", "slot": "6"},
+                {"type": "item", "material": "green_dye", "slot": "7"},
+                {"type": "item", "material": "greeen_dye", "slot": "8"}
             ]
         },
         {
@@ -159,6 +170,15 @@
             "teams": ["cyan"],
             "items": [
                 {"type": "item", "material": "cyan_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "cyan_dye", "slot": "0"},
+                {"type": "item", "material": "cyan_dye", "slot": "1"},
+                {"type": "item", "material": "cyan_dye", "slot": "2"},
+                {"type": "item", "material": "cyan_dye", "slot": "3"},
+                {"type": "item", "material": "cyan_dye", "slot": "4"},
+                {"type": "item", "material": "cyan_dye", "slot": "5"},
+                {"type": "item", "material": "cyan_dye", "slot": "6"},
+                {"type": "item", "material": "cyan_dye", "slot": "7"},
+                {"type": "item", "material": "cyan_dye", "slot": "8"}
             ]
         },
         {
@@ -166,6 +186,15 @@
             "teams": ["blue"],
             "items": [
                 {"type": "item", "material": "light_blue_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "light_blue_dye", "slot": "0"},
+                {"type": "item", "material": "light_blue_dye", "slot": "1"},
+                {"type": "item", "material": "light_blue_dye", "slot": "2"},
+                {"type": "item", "material": "light_blue_dye", "slot": "3"},
+                {"type": "item", "material": "light_blue_dye", "slot": "4"},
+                {"type": "item", "material": "light_blue_dye", "slot": "5"},
+                {"type": "item", "material": "light_blue_dye", "slot": "6"},
+                {"type": "item", "material": "light_blue_dye", "slot": "7"},
+                {"type": "item", "material": "light_blue_dye", "slot": "8"}
             ]
         },
         {
@@ -173,10 +202,51 @@
             "teams": ["purple"],
             "items": [
                 {"type": "item", "material": "purple_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "purple_dye", "slot": "0"},
+                {"type": "item", "material": "puprple_dye", "slot": "1"},
+                {"type": "item", "material": "purple_dye", "slot": "2"},
+                {"type": "item", "material": "purple_dye", "slot": "3"},
+                {"type": "item", "material": "purple_dye", "slot": "4"},
+                {"type": "item", "material": "purple_dye", "slot": "5"},
+                {"type": "item", "material": "purple_dye", "slot": "6"},
+                {"type": "item", "material": "purple_dye", "slot": "7"},
+                {{"type": "item", "material": "purple_dye", "slot": "8"},
             ]
         }
     ],
     "itemremove": [
+        {
+            "type": "red_dye",
+            "drop": true
+        },
+        {
+            "type": "orange_dye",
+            "drop": true
+        },
+        {
+            "type": "yellow_dye",
+            "drop": true
+        },
+        {
+            "type": "lime_dye",
+            "drop": true
+        },
+        {
+            "type": "green_dye",
+            "drop": true
+        },
+        {
+            "type": "cyan_dye",
+            "drop": true
+        },
+        {
+            "type": "light_blue_dye",
+            "drop": true
+        },
+        {
+            "type": "purple_dye",
+            "drop": true
+        },
         {
             "type": "red_stained_glass",
             "drop": true
