@@ -1,0 +1,80 @@
+{
+	"name": "Pompeii",
+	"version": "1.1.2",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "c26e7a7f-b4ce-4ebc-ac4d-f60691915d23", "username": "kroest"},
+		{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "yellow", 
+			"min": 1, 
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "128.5, 70, -2010.5"},
+		{   
+    		"teams": ["players"],
+    		"region": "players-spawn",
+    		"face-coordinates": "193, 68, -2027"
+		}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 28, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "enchantments": ["feather falling:2", "protection:1"], "slot": "boots", "unbreakable": true},
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 40, "amplifier": 100, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow",
+		"leather chestplate", "leather leggings", "leather boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "regeneration", "level": 3, "duration": 80}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+    "regions": [
+        {"id": "players-spawn", "type": "cuboid", "min": "294, 70, -2100", "max": "121, 70, -1966"}
+    ],
+	"damageControl": {
+		"fall": false
+	}
+}
