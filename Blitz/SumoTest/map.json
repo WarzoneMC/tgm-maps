@@ -1,0 +1,85 @@
+{
+	"name": "SumoTest",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
+		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "_iMan"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 24, 0.5, -2"},
+		{"teams": ["blue"], "coords": "-4.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "-3.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "-2.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "-1.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "-0.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "0.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "1.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "2.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "3.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "4.5, 12, -7.5, -1.6"},
+		{"teams": ["blue"], "coords": "5.5, 12, -7.5, -1.6"},
+		
+		{"teams": ["red"], "coords": "-4.5, 12, 8.5, -180"},
+		{"teams": ["red"], "coords": "-3.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "-2.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "-1.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "-0.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "0.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "1.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "2.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "3.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "4.5, 12, 8.5, -180"},	
+		{"teams": ["red"], "coords": "5.5, 12, 8.5, -180"}
+	],
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "black dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 9999, "amplifier": 4, "particles": true},
+				{"type": "regeneration", "duration": 9999, "amplifier": 0, "particles": true}
+			]
+		}
+	],
+	"itemremove": [
+		"black dye",
+		{
+			"type": "leather helmet",
+            		"drop": true
+        	},
+		{
+			"type": "black dye",
+			"drop": true
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cDon't Touch!"}
+	],
+	"damageControl": {
+		"fall": false
+	},
+	"time": {
+		"limit": 300
+	}
+}
