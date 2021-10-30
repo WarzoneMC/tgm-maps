@@ -82,7 +82,7 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["rouge"],
+			"type": "build", "evaluate": "deny", "teams": ["players"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
