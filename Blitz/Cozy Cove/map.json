@@ -17,28 +17,28 @@
 			"name": "Blue",
 			"color": "dark_aqua",
 			"min": 1,
-			"max": 10
+			"max": 8
 		},
 		{
 			"id": "green",
 			"name": "Green",
 			"color": "green",
 			"min": 1,
-			"max": 10
+			"max": 8
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
 			"min": 1,
-			"max": 10
+			"max": 8
 		},
 		{
 			"id": "yellow",
 			"name": "Yellow",
 			"color": "yellow",
 			"min": 1,
-			"max": 10
+			"max": 8
 		}
 	],
 	"spawns": [
