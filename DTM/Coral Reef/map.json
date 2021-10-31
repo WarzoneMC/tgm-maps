@@ -1,0 +1,119 @@
+{
+	"name": "Coral Reef",
+	"authors": [
+		{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"}
+	],
+	"version": "1.4.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 30
+		},
+		{
+			"id": "Purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 30
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-89, 48, 379"},
+		{"teams": ["green"], "coords": "367, 11, -536, -45"},
+		{"teams": ["purple"], "coords": "449, 11, -683, 135"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "381, 17, -665",
+					"max": "381, 19, -665"
+				},
+				"health": 3
+			},
+			{
+				"name": "Monument&r",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "434, 17, -555",
+					"max": "434, 19, -555"
+				},
+				"health": 3
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "sandstone", "slot": 6, "amount": 48},
+				{"material": "cooked salmon", "slot": 8, "amount": 32},
+
+				{"material": "arrow", "slot": 28, "amount": 32},
+
+				{"material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "sandstone", "cooked salmon", "arrow", "golden apple",
+		"chainmail helmet", "iron chestplate", "obsidian",
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8},
+					{"material": "sandstone", "amount": 8}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "green"],
+			"regions": ["purple-spawn-protection", "green-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["purple", "green"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build over the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "446, -oo, -687", "max": "450, oo, -682"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "365, -oo, -533", "max": "369, oo, -538"},
+		{"id": "map", "type": "cuboid", "min": "345, -oo, -707", "max": "470, oo, -513"}
+	],
+	"buildHeight": 45
+}
