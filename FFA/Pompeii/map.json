@@ -44,7 +44,7 @@
 
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"material": "leather boots", "enchantments": ["protection:1"], "slot": "boots", "unbreakable": true},
+				{"material": "leather boots", "enchantments": ["protection:1"], "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 60, "amplifier": 100, "particles": false}
