@@ -73,7 +73,7 @@
     "time": {
         "broadcasts": [
             {
-                "message": "&61 minute until the monuments change to beacons!",
+                "message": "&61 minute until the monuments change to &l&4beacons&r&6!",
                 "interval": 840,
                 "repeat": false,
                 "commands": []
@@ -103,7 +103,7 @@
                 "commands": []
             },
             {
-                "message": "&6The monuments have changed to beacons.",
+                "message": "&6The monuments have changed to &l&4beacons&r&6.",
                 "interval": 900,
                 "repeat": false,
                 "commands": [
@@ -115,7 +115,7 @@
             },
 
             {
-                "message": "&61 minute until the monuments change to Coal Blocks!",
+                "message": "&61 minute until the monuments change to &l&4coal blocks&r&6!",
                 "interval": 1140,
                 "repeat": false,
                 "commands": []
@@ -145,7 +145,7 @@
                 "commands": []
             },
             {
-                "message": "&6The monuments have changed to coal blocks.",
+                "message": "&6The monuments have changed to &l&4coal blocks&r&6.",
                 "interval": 1200,
                 "repeat": false,
                 "commands": [

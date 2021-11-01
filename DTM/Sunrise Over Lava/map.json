@@ -73,7 +73,7 @@
     "time": {
         "broadcasts": [
             {
-                "message": "&61 minute until the monuments change to end stone!",
+                "message": "&61 minute until the monuments change to &l&4end stone&r&6!",
                 "interval": 1740,
                 "repeat": false,
                 "commands": []
@@ -103,7 +103,7 @@
                 "commands": []
             },
             {
-                "message": "&6The monuments have changed to end stone.",
+                "message": "&6The monuments have changed to &l&4end stone&r&6.",
                 "interval": 1800,
                 "repeat": false,
                 "commands": [
