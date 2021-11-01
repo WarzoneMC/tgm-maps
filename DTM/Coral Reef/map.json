@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"}
 	],
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -22,7 +22,8 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-89, 48, 379"},
+		{"teams": ["spectators"], "coords": "350.5, 55, -534.5, -150, 20"},
+		{"teams": ["spectators"], "coords": "465.5, 55, -684.5, 30, 20"},
 		{"teams": ["green"], "coords": "367, 11, -536, -45"},
 		{"teams": ["purple"], "coords": "449, 11, -683, 135"}
 	],
@@ -50,6 +51,16 @@
 			}
 		]
 	},
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"spruce boat",
+			"birch boat",
+			"jungle boat",
+			"acacia boat",
+			"dark oak boat"
+		]
+	},
 	"kits": [
 		{
 			"name": "Default",
@@ -58,7 +69,8 @@
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
 				{"material": "iron axe", "slot": 3, "unbreakable": true},
-				{"material": "sandstone", "slot": 6, "amount": 48},
+				{"material": "sandstone", "slot": 5, "amount": 48},
+				{"material": "oak planks", "slot": 6, "amount": 32},
 				{"material": "cooked salmon", "slot": 8, "amount": 32},
 
 				{"material": "arrow", "slot": 28, "amount": 32},
@@ -71,7 +83,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "sandstone", "cooked salmon", "arrow", "golden apple",
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "sandstone", "oak planks", "cooked salmon", "arrow", "golden apple",
 		"chainmail helmet", "iron chestplate", "obsidian",
 		{
 			"type": "leather leggings",
