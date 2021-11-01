@@ -1,0 +1,106 @@
+{
+	"name": "Strike FFA",
+	"version": "1.0.3",
+	"gametype": "FFA",
+	"authors": [
+		{"uuid": "ba4a93aa-4935-4a71-bab2-a58f9a124e7b", "username": "ItsMiiOlly"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "players", 
+			"name": "Players", 
+			"color": "gray", 
+			"min": 1, 
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "87, 27, -102, 90"},
+		{"teams": ["players"], "coords": "19.5, 1, -32.5, 180"},
+        {"teams": ["players"], "coords": "57.5, 1, -39.5, 135"},
+        {"teams": ["players"], "coords": "77.5, 1.5, -41.5, 180"},
+        {"teams": ["players"], "coords": "119.5, 1.5, -39.5, 135"},
+        {"teams": ["players"], "coords": "153.5, 1, -51.5, 90"},
+        {"teams": ["players"], "coords": "153.5, 1.5, -102.5, 90"},
+        {"teams": ["players"], "coords": "120.5, 1, -122.5"},
+        {"teams": ["players"], "coords": "140.5, 1.5, -136.5, 90"},
+        {"teams": ["players"], "coords": "115.5, 1, -150.5, -45"},
+        {"teams": ["players"], "coords": "122.5, 1, -161.5, 90"},
+        {"teams": ["players"], "coords": "103.5, 1, -137.5, -90"},
+        {"teams": ["players"], "coords": "90.5, 1, -136.5, 90"},
+        {"teams": ["players"], "coords": "79.5, 1, -159.5, -45"},
+        {"teams": ["players"], "coords": "67.5, 1, -157.5"},
+        {"teams": ["players"], "coords": "53.5, 1, -160.5"},
+        {"teams": ["players"], "coords": "16.5, 1, -146.5, -45"},
+        {"teams": ["players"], "coords": "6.5, 1, -114.5, -90"},
+        {"teams": ["players"], "coords": "11.5, 1.5, -81.5, -112"},
+        {"teams": ["players"], "coords": "43.5, 8, -54.5, 180"},
+        {"teams": ["players"], "coords": "78.5, 1.5, -71.5, -90"},
+        {"teams": ["players"], "coords": "103.5, 1.5, -77.5, 90"},
+        {"teams": ["players"], "coords": "120.5, 1, -77.5, 90"},
+        {"teams": ["players"], "coords": "113.5, 1, -109.5, 70"},
+        {"teams": ["players"], "coords": "108.5, 6, -103.5, -90"},
+        {"teams": ["players"], "coords": "74, 1.5, -73.5, 180"},
+        {"teams": ["players"], "coords": "72.5, 1.5, -107.5, 25"},
+        {"teams": ["players"], "coords": "45.5, 1, -129.5, 180"},
+        {"teams": ["players"], "coords": "117.5, 1, -69.5, -45"},
+        {"teams": ["players"], "coords": "51.5, 1, -97.5"},
+        {"teams": ["players"], "coords": "109.5, 6.5, -71.5, 180"}
+	],
+	"ffa": {
+		"timeLimit": {
+			"enabled": true,
+			"limit": 600
+		},
+		"killLimit": 25
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"material": "arrow", "slot": 28, "amount": 1},
+				{"material": "golden apple", "displayName": "&cGrapefruit", "lore": ["&5;)"], "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron boots", "enchantments": ["protection:1"], "slot": "boots", "unbreakable": true},
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 20, "amplifier": 100, "particles": false},
+				{"type": "speed", "duration": 1, "amplifier": 9999999, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow", "golden apples"
+		"leather helmet", "iron chestplate", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": false,
+			"actions": {
+				"effects": [
+					{"type": "regeneration", "level": 2, "duration": 60}
+				],
+				"items": [
+					{"material": "golden apple", "displayName": "&cGrapefruit", "lore": ["&5;)"], "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"damageControl": {
+		"fall": false
+	}
+}
