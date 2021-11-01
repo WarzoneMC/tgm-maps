@@ -38,8 +38,8 @@
 				{"material": "iron sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
 				{"material": "arrow", "slot": 28, "amount": 1},
-				{"material": "ender pearl", "slot": 4, "amount": 1}
-				{"material": "golden apple", "slot": 7, "amount": 1}
+				{"material": "ender pearl", "slot": 4, "amount": 1},
+				{"material": "golden apple", "slot": 7, "amount": 1},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
