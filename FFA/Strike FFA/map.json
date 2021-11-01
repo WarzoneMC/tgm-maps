@@ -71,7 +71,7 @@
 			],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 20, "amplifier": 100, "particles": false},
-				{"type": "speed", "duration": 1, "amplifier": 9999999, "particles": false}
+				{"type": "speed", "duration": 999999, "amplifier": 1, "particles": false}
 			]
 		}
 	],
