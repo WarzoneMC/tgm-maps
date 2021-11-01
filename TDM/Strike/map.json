@@ -1,0 +1,96 @@
+{
+	"name": "Strike",
+	"version": "1.0.2",
+	"gametype": "TDM",
+	"authors": [
+		{"uuid": "ba4a93aa-4935-4a71-bab2-a58f9a124e7b", "username": "ItsMiiOlly"}
+	],
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 20
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 20
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "87, 27, -102, 90"},
+		{"teams": ["red"], "coords": "153.5, 1, -51.5, 90"},
+        {"teams": ["red"], "coords": "122.5, 1, -161.5"},
+        {"teams": ["blue"], "coords": "19.5, 1, -32.5, 180"},
+        {"teams": ["blue"], "coords": "6.5, 1, -114.5, -90"}
+	],
+	"points": {
+        	"target": 100
+    },
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "iron sword", "slot": 0, "enchantments": ["sharpness:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "enchantments": ["power:100"], "flags": ["hide enchants", "hide attributes"], "unbreakable": true},
+				{"material": "arrow", "slot": 3, "amount": 2},
+				{"material": "cooked beef", "slot": 8, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 100, "amplifier": 99999999, "particles": false},
+				{"type": "speed", "duration": 99999999, "amplifier": 2, "particles": false},
+				{"type": "health boost", "duration": 99999999, "amplifier": -4, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "cooked beef", "arrow",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": false,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		}
+	],
+	"damageControl": {
+		"fall": false
+	}
+}
