@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
     ],
-    "version": "2.0.3",
+    "version": "2.0.4",
     "gametype": "DTM",
     "teams": [
         {
@@ -73,37 +73,37 @@
     "time": {
         "broadcasts": [
             {
-                "message": "&61 minute till mounments change to End Stone!",
+                "message": "&61 minute until the monuments change to &l&4end stone&r&6!",
                 "interval": 1740,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&620 seconds till mounments change!",
+                "message": "&620 seconds until the monuments change!",
                 "interval": 1780,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&63 seconds till mounments change!",
+                "message": "&63 seconds until the monuments change!",
                 "interval": 1797,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&62 seconds till mounments change!",
+                "message": "&62 seconds until the monuments change!",
                 "interval": 1798,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&61 seconds till mounments change!",
+                "message": "&61 second until the monuments change!",
                 "interval": 1799,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&6Monuments changing to End Stone",
+                "message": "&6The monuments have changed to &l&4end stone&r&6.",
                 "interval": 1800,
                 "repeat": false,
                 "commands": [
