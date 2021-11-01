@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"}
 	],
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -16,7 +16,7 @@
 		{
 			"id": "Purple",
 			"name": "Purple",
-			"color": "dark purple",
+			"color": "dark_purple",
 			"min": 1,
 			"max": 30
 		}
