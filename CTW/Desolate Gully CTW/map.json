@@ -36,7 +36,7 @@
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "unbreakable": true},
 				{"material": "stone pickaxe", "slot": 2, "unbreakable": true},
-				{"material": "stone axe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "slot": 3, "unbreakable": true},
 
 				{"material": "acacia planks", "slot": 4, "amount": 48},
 				{"material": "golden carrot", "slot": 8, "amount": 64},
