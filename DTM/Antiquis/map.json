@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "pepsidawg00"}
 	],
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -174,11 +174,19 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{
+			"type": "renewableBlocks",
+			"regions": ["gold"],
+			"delay": 50,
+			"block": "gold ore"
+		},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "blue-spawn", "type": "cuboid", "min": "-31, 8, -80", "max": "31, oo, -51"},
 		{"id": "red-spawn", "type": "cuboid", "min": "-31, 8, 51", "max": "31, oo, 79"},
+		
+		{"id": "gold", "type": "cylinder", "base": "0.5, 3, 0.5", "radius": 3, "height": 2 },
 		
 		{"id": "map", "type": "cuboid", "min": "-52, 0, 81", "max": "52, oo, -81"}
 	],
