@@ -1,0 +1,115 @@
+{
+	"name": "Area 51",
+	"authors": [
+		{"uuid": "bbfac3db-dd46-4996-b936-0e2432f33285", "username": "Valky"}
+	],
+	"version": "1.0.2",
+	"gametype": "KOTH",
+	"damageControl": {"FALL": false},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-342.5, 29, -55.5, -90, 30"},
+		{"teams": ["spectators"], "coords": "-310.5, 29, -55.5, 90, 30"},
+		{"teams": ["blue"], "coords": "-347.5, 18, -55.5, -90"},
+		{"teams": ["red"], "coords": "-305.5, 18, -55.5, 90"}
+	],
+	"points": {
+		"target": 300
+	},
+	"time": {
+		"limit": 300
+	},
+	"launchpads": [
+		{
+			"region": {"type": "cuboid", "min": "-327, 15, -56", "max": "-327, 16.5, -56"},
+			"delay": 2, "motion": "0.0, 1.4, 0.0", "directional": false, "teams": ["blue", "red"]
+		}
+	],
+	"koth": {
+		"hills": [
+			{
+				"name": "North Point",
+				"region": {
+					"min": {"x": -329, "y": 20, "z": -68},
+					"max": {"x": -325, "y": 22, "z": -64}
+				}
+			},
+			{
+				"name": "South Point",
+				"region": {
+					"min": {"x": -329, "y": 20, "z": -48},
+					"max": {"x": -325, "y": 22, "z": -44}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 2, "amount": 8},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "arrow", "golden apple", "cooked beef", "golden carrot",
+		"chainmail leggings", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter this region."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "min": "-349, -oo, -53", "max": "-343, oo, -59"},
+		{"id": "red-spawn-protection", "min": "-311, -oo, -59", "max": "-305, oo, -53"}
+	]
+}
