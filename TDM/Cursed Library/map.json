@@ -1,0 +1,88 @@
+{
+	"name": "Cursed Library",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"gametype": "TDM",
+	"version": "1.1.0",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-52.5, 31, -130.5, 180"},
+		{"teams": ["blue"], "coords": "-23, 25, -115.5, 90"},
+		{"teams": ["red"], "coords": "-82, 25, -115.5, -90"}
+	],
+	"points": {
+		"target": 25
+	},
+	"time": {
+		"limit": 180
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "amount": 1, "unbreakable": true},
+				{"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
+				{"material": "golden apple", "slot": 2, "amount": 1},
+				{"material": "arrow", "slot": 8, "amount": 24},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "arrow", "chainmail leggings",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 8},
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter this region."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-34, -oo, -120", "max": "-20, oo, -112"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-86, 8, -120", "max": "-72, oo, -112"}
+	]
+}
