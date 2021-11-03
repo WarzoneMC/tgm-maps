@@ -1,0 +1,164 @@
+{
+	"name": "Watchtower DTM",
+	"authors": [
+		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"},
+		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
+	],
+	"version": "1.1",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 6
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 6
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 4, "amount": 48},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 48},
+				{"type": "item", "material": "glass", "slot": 6, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "258, 0, 5", "max": "227, oo, -9"},
+		{"id": "red-spawn", "type": "cuboid", "min": "227, 0, 111", "max": "258, oo, 126"},
+		{
+            "id": "lanes", "type": "meta",
+            "regions": [
+                {"min": "196, 0, 83", "max": "204, oo, 35"},
+				{"min": "252, 0, 91", "max": "260, oo, 66"},
+				{"min": "232, 0, 50", "max": "260, oo, 67"},
+				{"min": "233, 0, 51", "max": "224, oo, 25"},
+				{"min": "289, 0, 33", "max": "280, oo, 82"}
+            ]
+        },
+        {
+            "id": "water-lanes", "type": "meta",
+            "regions": [
+                {"min": "196, 0, 83", "max": "204, oo, 35"},
+				{"min": "252, 0, 91", "max": "260, oo, 66"},
+				{"min": "232, 0, 50", "max": "260, oo, 66"},
+				{"min": "232, 0, 51", "max": "224, oo, 25"},
+				{"min": "288, 0, 33", "max": "280, oo, 82"},
+                
+                {"min": "229, 0, 4", "max": "235.5, oo, 12"},
+				{"min": "249, 0, 4", "max": "255.5, oo, 12"},
+				{"min": "229, 0, 104", "max": "235.5, oo, 112"},
+				{"min": "249, 0, 104", "max": "255.5, oo, 112"}
+            ]
+        },
+        {
+            "id": "spawn-water-lanes", "type": "meta",
+            "regions": [
+                {"min": "229.5, -oo, 4.5", "max": "235.5, oo, 12.5"},
+				{"min": "249.5, -oo, 4.5", "max": "255.5, oo, 12.5"},
+				{"min": "229.5, -oo, 104.5", "max": "235.5, oo, 112.5"},
+				{"min": "249.5, -oo, 104.5", "max": "255.5, oo, 112.5"}
+            ]
+        }
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["water-lanes"],
+			"message": "&cYou may not build over the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "207, 14, 21",
+					"max": "208, 17, 20" 
+				},
+				"health": 3
+			},
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "278, 14, 96",
+					"max": "277, 17, 97"
+				},
+				"health": 3
+			}
+		]
+	},
+	"spawns": [
+		{"teams": ["spectators"], "coords": "324.5, 29, 58.5, 90"},
+		{"teams": ["red"], "coords": "242.5, 6, 120.5, 180"},
+		{"teams": ["blue"], "coords": "242.5,6,-4.5"}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "iron pickaxe", "oak planks", "cooked beef", "arrow", "glass",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
+            "drop": true
+        },
+        {
+            "type": "chainmail leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+    "crafting": {
+        "remove": [
+            "flint and steel"
+        ]
+    },
+	"buildHeight": 24
+}
