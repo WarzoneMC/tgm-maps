@@ -1,0 +1,157 @@
+{
+	"name": "Covert Fortress",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.0.1",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-155.5, 13.5, 47.5, 180"},
+		{"teams": ["blue"], "coords": "-241.5, 9, -6.5"},
+		{"teams": ["red"], "coords": "-155.5, 9, 47.5, 180"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Blue",
+				"color": "blue",
+				"woolcolor": "blue",
+				"teams": ["red"],
+				"region": {"min": "-156, 7, 39", "max": "-156, 7, 39"}
+			},
+			{
+				"name": "Red",
+				"color": "red",
+				"woolcolor": "red",
+				"teams": ["blue"],
+				"region": {"min": "-242, 7, 1", "max": "-242, 7, 1"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "slot": 3, "unbreakable": true},
+				{"material": "spruce planks", "slot": 4, "amount": 48},
+				{"material": "golden carrot", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 36},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue terracotta", "slot": 5, "amount": 64}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red terracotta", "slot": 5, "amount": 36}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "iron pickaxe", "stone axe", "spruce planks", "blue terracotta", "red terracotta", "golden carrot", "arrow",
+		"golden apple", "chainmail chestplate", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4},
+					{"material": "spruce planks", "amount": 8}
+				]
+			}
+		},
+		{
+			"count": 6,
+			"repeat": false,
+			"actions": {
+				"items": [
+					{"material": "flint and steel", "durability": 61, "amount": 1},
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 8,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "blue-wool-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "red-wool-room"], "message": "&cYou may not enter this region."},
+		{"type": "build", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["red"], "regions": ["red-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-wool-room", "red-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
+		{"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection", "blue-wool-room", "red-wool-room"], "message": "&cYou are not allowed to detonate terrain here."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-247, -oo, -10", "max": "-237, oo, 2"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-161, -oo, 38", "max": "-151, oo, 50"},
+		{"id": "blue-wool-room", "min": "-234, -oo, -34", "max": "-223, oo, -23"},
+		{"id": "red-wool-room", "min": "-175, -oo, 63", "max": "-164, oo, 74"},
+		{
+			"id": "map", "type": "meta",
+			"regions": [
+				{"min": "-220, -oo, -1", "max": "-178, oo, 41"},
+				{"min": "-253, -oo, 3", "max": "-205, oo, 14"},
+				{"min": "-222, -oo, -34", "max": "-205, oo, -23"},
+				{"min": "-216, -oo, -22", "max": "-205, oo, 14"},
+				{"min": "-193, -oo, 26", "max": "-144, oo, 38"},
+				{"min": "-180, -oo, 74", "max": "-193, oo, 63"},
+				{"min": "-182, -oo, 62", "max": "-193, oo, 26"}
+			]
+		}
+	],
+	"buildHeight": 18
+}
