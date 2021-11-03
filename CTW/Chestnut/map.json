@@ -39,7 +39,7 @@
 			},
 			{
 				"name": "Pink",
-				"color": "light purple",
+				"color": "light_purple",
 				"woolcolor": "pink",
 				"teams": ["blue"],
 				"region": {"min": "-39, 14, -37", "max": "-39, 14, -37"}
