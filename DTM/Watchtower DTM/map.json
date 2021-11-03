@@ -4,7 +4,7 @@
 		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"},
 		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
 	],
-	"version": "1.1",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -31,10 +31,9 @@
 				{"type": "item", "material": "diamond pickaxe", "enchantments": ["efficiency:1"], "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
 				{"type": "item", "material": "cooked beef", "slot": 4, "amount": 48},
-				{"type": "item", "material": "oak planks", "slot": 5, "amount": 48},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
 				{"type": "item", "material": "glass", "slot": 6, "amount": 16},
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 64},
-				{"type": "item", "material": "arrow", "slot": 8, "amount": 64},
 
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
@@ -126,8 +125,8 @@
 		{"teams": ["blue"], "coords": "242.5,6,-4.5"}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "iron axe", "iron pickaxe", "oak planks", "cooked beef", "arrow", "glass",
-		{
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "iron pickaxe", "oak planks", "cooked beef", "arrow", "glass", "golden apple",
+	{
             "type": "leather helmet",
             "drop": true
         },
@@ -151,6 +150,15 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 3,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 8}
 				]
 			}
 		}
