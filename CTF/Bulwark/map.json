@@ -1,0 +1,152 @@
+{
+	"name": "Bulwark",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.0.2",
+	"gametype": "CTF",
+	"time": {
+		"limit": 420
+	},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-98.5, 36, -134.5, 180"},
+		{"teams": ["blue"], "coords": "-116.5, 6.1, -239.5"},
+		{"teams": ["red"], "coords": "-99.5, 6.1, -141.5, 180"}
+	],
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 3
+		},
+		"flags": [
+			{
+				"team": "blue",
+				"location": "-101, 7, -231",
+				"respawn-time": 20,
+				"type": "blue",
+				"patterns": [
+					{"color": "blue", "type": "base"}
+				],
+				"rotation": "west",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+				]
+			},
+			{
+				"team": "red",
+				"location": "-116, 7, -151",
+				"respawn-time": 20,
+				"type": "red",
+				"patterns": [
+					{"color": "red", "type": "base"}
+				],
+				"rotation": "east",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "blue-net", "team": "blue"},
+			{"region": "red-net", "team": "red"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2},
+				{"type": "item", "material": "stone axe", "slot": 3},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 32},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
+				{"type": "item", "material": "stone shovel", "slot": 29},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "oak planks", "glass", "arrow", "golden apple", "stone shovel",
+		"chainmail leggings",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6},
+					{"material": "oak planks", "amount": 8}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build over the void."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "blue-podium", "red-spawn-protection", "red-podium"],
+			"message": "&cMonuments cannot be destroyed with TNT!"
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "blue-podium", "red-spawn-protection", "red-podium"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "map", "type": "cuboid", "min": "-120, -oo, -248", "max": "-97, oo, 134"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-113, 5, -234", "max": "-120, 11, -241"},
+		{"id": "blue-podium", "type": "cuboid", "min": "-102, 1, -232", "max": "-100, 8, -228"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-103, 5, -147", "max": "-96, 11, -139"},
+		{"id": "red-podium", "type": "cuboid", "min": "-117, 1, -154", "max": "-115, 8, -150"},
+
+		{"id": "blue-net", "type": "cylinder", "base": "-101, 7, -229", "radius": 1, "height": 3},
+		{"id": "red-net", "type": "cylinder", "base": "-116, 7, -153", "radius": 1, "height": 3}
+	],
+	"buildHeight": 24
+}
