@@ -58,7 +58,7 @@
 	"killstreaks": [
 		{
 			"count": 1,
-			"repeat": false,
+			"repeat": true,
 			"actions": {
 				"items": [
 					{"material": "ender pearl", "amount": 1},
