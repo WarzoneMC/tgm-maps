@@ -71,7 +71,7 @@
 	"killstreaks": [
 		{
 			"count": 1,
-			"repeat": false,
+			"repeat": true,
 			"actions": {
 				"effects": [
 					{"type": "regeneration", "level": 3, "duration": 40}
