@@ -75,7 +75,7 @@
 	"killstreaks": [
 		{
 			"count": 1,
-			"repeat": false,
+			"repeat": true,
 			"actions": {
 				"items": [
 					{"material": "arrow", "amount": 1}
@@ -85,7 +85,7 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["players"],
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
