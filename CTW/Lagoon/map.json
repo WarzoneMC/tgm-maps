@@ -1,0 +1,211 @@
+{
+	"name": "Lagoon",
+	"authors": [
+		{"uuid": "bbfac3db-dd46-4996-b936-0e2432f33285", "username": "Valky"}
+	],
+	"version": "1.0.1",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-161.5, 17, 144.5"},
+		{"teams": ["red"], "coords": "-125.5, 6, 144.5, 90"},
+		{"teams": ["blue"], "coords": "-193.5, 6, 144.5, -90"}
+	],
+	"respawn": {
+		"rules": [
+			{
+				"freeze": false,
+				"blindness": true,
+				"confirm": false,
+				"delay": 2500
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
+
+				{"material": "jungle planks", "slot": 4, "amount": 8},
+				{"material": "golden apple", "slot": 6, "amount": 1},
+				{"material": "cooked beef", "slot": 7, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 6},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 40, "amplifier": 10000, "particles": false}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue terracotta", "slot": 5, "amount": 8}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red terracotta", "slot": 5, "amount": 8}
+			]
+		}
+	],
+	"regions": [
+		{"id": "blue-wool-room", "type": "cuboid", "min": "-197, 10, 141", "max": "-190, 20, 148"},
+		{"id": "red-wool-room", "type": "cuboid", "min": "-129, 10, 141", "max": "-122, 20, 148"},
+
+		{"id": "blue-spawn", "min": "-190, 0, 142", "max": "-197, 10, 147"},
+		{"id": "red-spawn", "min": "-122, 0, 142", "max": "-129, 10, 147"},
+        {
+            "id": "spawn-bridges", "type": "meta",
+            "regions": [
+                {"min": "-128, 0, 147", "max": "-133, 10, 142"},
+				{"min": "-191, 0, 147", "max": "-186, 10, 142"}
+            ]
+        },
+        {
+            "id": "ladders", "type": "meta",
+            "regions": [
+                {"min": "-195, 0, 148", "max": "-192, 11, 149"},
+				{"min": "-195, 0, 141", "max": "-192, 11, 140"},
+				{"min": "-124, 0, 148", "max": "-127, 11, 149"},
+				{"min": "-124, 0, 141", "max": "-127, 11, 140"}
+            ]
+        },
+        {"id": "void", "min": "-124, 0, 154", "max": "-196, oo, 134"}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou may not edit spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["spawn-bridges"],
+			"message": "&cYou may not break the spawn bridges!"
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["ladders"],
+			"message": "&cYou may not break the ladders!"
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-wool-room", "blue-wool-room"],
+			"message": "&cYou may not edit this wool room."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["red-wool-room"], "message": "&cYou may not enter this wool room."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-wool-room"], "message": "&cYou may not enter this wool room."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["void"],
+			"message": "&cYou may not build over the void."
+		}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Cyan",
+				"color": "dark_aqua",
+				"woolcolor": "cyan",
+				"teams": ["red"],
+				"region": {"min": "-124, 7, 144", "max": "-124, 7, 144"}
+			},
+			{
+				"name": "Orange",
+				"color": "gold",
+				"woolcolor": "orange",
+				"teams": ["blue"],
+				"region": {"min": "-196, 7, 144", "max": "-196, 7, 144"}
+			}
+		]
+	},
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "jungle planks", "amount": 4},
+					{"material": "arrow", "amount": 3}
+				]
+			}
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "arrow", "cooked beef",
+		"sandstone", "dirt", "jungle fence", "jungle stairs", "redstone block", "jungle slab", "golden apple",
+		"red wool", "blue wool", "orange wool", "cyan wool", "jungle planks", "blue terracotta", "red terracotta",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        },
+        {
+            "type": "diamond chestplate",
+            "drop": true
+        },
+        {
+            "type": "sugar cane",
+            "drop": true
+        },
+        {
+            "type": "wheat seeds",
+            "drop": true
+        },
+        {
+            "type": "poppy",
+            "drop": true
+        },
+        {
+            "type": "blue orchid",
+            "drop": true
+        }
+	],
+    "crafting": {
+        "remove": [
+            "jungle boat"
+        ]
+    },
+	"buildHeight": 13
+}
