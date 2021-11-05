@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "bbfac3db-dd46-4996-b936-0e2432f33285", "username": "Valky"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -207,5 +207,57 @@
             "jungle boat"
         ]
     },
+    "generators": [
+    	{
+      		"id": "gapple-generator",
+      		"item": {
+        		"material": "golden apple"
+      		},
+      	"location": "-160, 6, 144",
+      	"limit": 1,
+      	"range": 3,
+      	"interval": 240
+    	},
+        {
+      		"id": "blue-arrow-generator",
+      		"item": {
+        		"material": "arrow"
+      		},
+      	"location": "-171, 8, 136",
+      	"limit": 8,
+      	"range": 3,
+      	"interval": 100
+    	},
+        {
+      		"id": "red-arrow-generator",
+      		"item": {
+        		"material": "arrow"
+      		},
+      	"location": "-149, 8, 152",
+      	"limit": 8,
+      	"range": 3,
+      	"interval": 100
+    	},
+        {
+      		"id": "cyan-wool-generator",
+      		"item": {
+        		"material": "cyan wool"
+      		},
+      	"location": "-194, 11, 144",
+      	"limit": 1,
+      	"range": 5,
+      	"interval": 40
+    	},
+        {
+      		"id": "orange-wool-generator",
+      		"item": {
+        		"material": "orange wool"
+      		},
+      	"location": "-126, 11, 144",
+      	"limit": 1,
+      	"range": 5,
+      	"interval": 40
+    	}
+  	],
 	"buildHeight": 13
 }
