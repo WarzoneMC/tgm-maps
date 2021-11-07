@@ -158,37 +158,37 @@
 
             {
                 "message": "&61 minute until the monuments change to black terracotta!",
-                "interval": 1140,
+                "interval": 1440,
                 "repeat": false,
                 "commands": []
             },
             {
                 "message": "&620 seconds until the monuments change!",
-                "interval": 1180,
+                "interval": 1480,
                 "repeat": false,
                 "commands": []
             },
             {
                 "message": "&63 seconds until the monuments change!",
-                "interval": 1197,
+                "interval": 1497,
                 "repeat": false,
                 "commands": []
             },
             {
                 "message": "&62 seconds until the monuments change!",
-                "interval": 1198,
+                "interval": 1498,
                 "repeat": false,
                 "commands": []
             },
             {
                 "message": "&61 second until the monuments change!",
-                "interval": 1199,
+                "interval": 1499,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&6The monuments have changed to black terracotta.",
-                "interval": 1200,
+                "message": "&6The monuments have changed to &l&4black terracotta&r&6.",
+                "interval": 1500,
                 "repeat": false,
                 "commands": [
                     "execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
