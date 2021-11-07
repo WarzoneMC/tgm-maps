@@ -12,23 +12,23 @@
 			"name": "Players",
 			"color": "dark_aqua",
 			"min": 1,
-			"max": 40
+			"max": 50
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-480.5, 52, 428.5, 180"},
 		{"teams": ["players"], "coords": "-500.5, 22, 390.5"},
-		{"teams": ["players"], "coords": "-460.5, 22,390. 5"},
+		{"teams": ["players"], "coords": "-460.5, 22, 390. 5"},
 		{"teams": ["players"], "coords": "-460.5, 22, 465.5"},
 		{"teams": ["players"], "coords": "-500.5, 22, 465.5"},
 		{"teams": ["players"], "coords": "-521.5, 16, 428.5"},
-		{"teams": ["players"], "coords": "-440.5, 14, 428.5"},
+		{"teams": ["players"], "coords": "-440.5, 16, 428.5"},
 		{"teams": ["players"], "coords": "-480.5, 23, 455.5"},
 		{"teams": ["players"], "coords": "-480.5, 23, 401.5"},
 		{"teams": ["players"], "coords": "-419.5, 7, 428.5"},
-		{"teams": ["players"], "coords": "-541.5,7,428.5"},
-		{"teams": ["players"], "coords": "-525.5,6,428.5"},
-		{"teams": ["players"], "coords": "-495.5,6,416.5"},
+		{"teams": ["players"], "coords": "-541.5, 7, 428.5"},
+		{"teams": ["players"], "coords": "-525.5, 6, 428.5"},
+		{"teams": ["players"], "coords": "-495.5, 6, 416.5"},
 		{"teams": ["players"], "coords": "-480.5, 6, 410.5"},
 		{"teams": ["players"], "coords": "-480.5, 6, 445.5"},
 		{"teams": ["players"], "coords": "-466.5, 6, 440.5"},
@@ -39,7 +39,7 @@
 	"ffa": {
 		"timeLimit": {
 			"enabled": true,
-			"limit": 600
+			"limit": 1200
 		},
 		"killLimit": 25
 	},
@@ -50,6 +50,7 @@
 				{"material": "stone sword", "slot": 0, "unbreakable": true},
 				{"material": "bow", "slot": 1, "amount": 1, "unbreakable": true},
 				{"material": "arrow", "slot": 2, "amount": 10},
+				{"material": "golden apple", "slot": 8},
 				{"material": "cooked beef", "slot": 8, "amount": 32},
 
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
@@ -63,7 +64,7 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "golden apple", "cooked beef",
+		"stone sword", "bow", "golden apple", "cooked beef", "arrow",
 		"leather helmet", "iron chestplate", "leather leggings", "leather boots"
 	],
 	"killstreaks": [
