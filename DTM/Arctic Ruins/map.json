@@ -5,7 +5,7 @@
 		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"},
 		{"uuid": "3a64dcf4-5d71-4664-80bf-4e5c54e41b86", "username": "Zaquez"}
 	],
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -129,7 +129,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "stone axe", "spruce planks", "glass", "golden apple", "golden carrot", "arrow", "iron shovel",
-		"chainmail chestplate", "iron boots", "gold block", "coal block",
+		"chainmail chestplate", "iron boots", "gold block", "coal block", "blue stained glass", "red stained glass"
 		{
 		    "type": "leather helmet",
 		    "drop": true
