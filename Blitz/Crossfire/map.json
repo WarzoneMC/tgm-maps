@@ -46,7 +46,7 @@
 			"name": "defenders",
 			"teams": ["defenders"],
 			"items": [
-				{"material": "wooden sword", "enchantments": ["power:2", "punch:1", "infinity:1"], "slot": 0},
+				{"material": "bow", "enchantments": ["power:2", "punch:1", "infinity:1"], "slot": 0},
 				{"material": "arrow", "slot": 28},
 				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
