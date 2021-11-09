@@ -10,7 +10,7 @@
 		{
 			"id": "green",
 			"name": "Green",
-			"color": "dark green",
+			"color": "dark_green",
 			"min": 1,
 			"max": 50
 		},
