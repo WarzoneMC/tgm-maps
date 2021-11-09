@@ -4,7 +4,7 @@
 		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"},
 		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
 	],
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -90,7 +90,7 @@
 			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
 			"inverted": true,
 			"regions": ["water-lanes"],
-			"message": "&cYou may not build over the void."
+			"message": "&cYou may only build over water in the void!"
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."}
@@ -165,7 +165,8 @@
 	],
     "crafting": {
         "remove": [
-            "flint and steel"
+            	"flint and steel",
+		"oak boat"
         ]
     },
 	"buildHeight": 24
