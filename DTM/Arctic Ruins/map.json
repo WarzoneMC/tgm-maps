@@ -129,7 +129,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "iron pickaxe", "stone axe", "spruce planks", "glass", "golden apple", "golden carrot", "arrow", "iron shovel",
-		"chainmail chestplate", "iron boots", "gold block", "coal block", "blue stained glass", "red stained glass"
+		"chainmail chestplate", "iron boots", "gold block", "coal block", "blue stained glass", "red stained glass",
 		{
 		    "type": "leather helmet",
 		    "drop": true
