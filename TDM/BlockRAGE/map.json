@@ -1,6 +1,6 @@
 {
 	"name": "BlockRAGE",
-	"objective": "Be the team with the most kills in 7 minutes!",
+	"objective": "Be the team with the most kills after 7 minutes!",
 	"authors": [
 		{"uuid": "5986da63-a546-49c5-812d-d5c41a42510a", "username": "Lyzak"}
 	],
