@@ -157,15 +157,7 @@
 		{"id": "cyan-wool-room", "min": "220, 12, 272", "max": "229, 17, 281"},
 		{"id": "orange-wool-room", "min": "263, 12, 315", "max": "272, 17, 324"},
 
-		{"id": "map", "min": "221, -oo, 264", "max": "280, oo, 323"},
-		{"id": "bottom-layer", "min": "221, 1, 264", "max": "280, 1, 323"},
-		{
-			"id": "map", "type": "meta",
-			"regions": [
-				{"min": "221, -oo, 264", "max": "248, oo, 295"},
-				{"min": "249, -oo, 264", "max": "280, oo, 323"}
-			]
-		}
+		{"id": "bottom-layer", "min": "221, 1, 264", "max": "280, 1, 323"}
 	],
 	"buildHeight": 15
 }
