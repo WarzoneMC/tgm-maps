@@ -1,0 +1,157 @@
+{
+	"name": "Gelid 2",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.1.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-334.5, 19, -29.5, -90"},
+		{"teams": ["blue"], "coords": "-351, 8, -53, -90"},
+		{"teams": ["red"], "coords": "-318, 8, -6, 90"}
+	],
+	"points": {
+		"target": 300
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "A Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-345, 7, -71", "max": "-339, 9, -65"},
+						{"min": "-343, 33, -69", "max": "-341, 39, -67"}
+					]
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-338, 8, -33", "max": "-332, 10, -27"},
+						{"min": "-335, 18, -30", "max": "-335, 18, -30"},
+						{"min": "-336, 33, -31", "max": "-334, 39, -29"}
+					]
+				}
+			},
+			{
+				"name": "C Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-331, 7, 5", "max": "-325, 9, 11"},
+						{"min": "-329, 33, 7", "max": "-327, 39, 9"}
+					]
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 36},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden carrot", "arrow", "chainmail chestplate", "iron boots", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		},
+		{
+			"count": 2,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
+				]
+			}
+		}
+	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &cScore two kills to get TNT. Place it down and it will ignite!",
+				"interval": 1,
+				"repeat": false,
+				"commands": ["execute at @r run setblock -346 2 -40 redstone_block"]
+			}
+		]
+	},
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to break blocks on this map."},
+		{"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"]},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
+
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou may not build over the void."}
+	],
+	"regions": [
+		{
+			"id": "blue-spawn-protection", "type": "meta",
+			"regions": [
+				{"min": "-354, -oo, -55", "max": "-347, oo, -52"},
+				{"min": "-353, -oo, -56", "max": "-350, oo, -56"},
+				{"min": "-351, -oo, -58", "max": "-343, 12, -51"}
+			]
+		},
+		{
+			"id": "red-spawn-protection", "type": "meta",
+			"regions": [
+				{"min": "-323, -oo, -8", "max": "-316, oo, -5"},
+				{"min": "-320, -oo, -4", "max": "-317, oo, -4"},
+				{"min": "-327, -oo, -9", "max": "-319, 12, -2"}
+			]
+		}
+	],
+	"buildHeight": 20
+}
