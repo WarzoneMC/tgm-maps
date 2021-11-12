@@ -5,7 +5,7 @@
 		{"uuid": "edbd4cdb-63a5-4cec-944c-2b6bda56f51f", "username": "Owehttamy"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.2",
+	"version": "1.1.2",
 	"stats": {"disable": true},
 	"gamerules": {
 		"logAdminCommands": false,
@@ -100,6 +100,13 @@
 		"limit": 170,
 		"broadcasts": [
 			{
+				"message": "&cFour teams are divided onto the map and only one will remain. Gather blocks to help you build up a tower or barricade yourself. Be careful for the world border!",
+				"interval": 1,
+				"repeat": false,
+				"commands":
+				["execute at @r run playsound minecraft:block.note_block.hat master @a 28 25 28 100 1"]
+			},
+			{
 				"message": "&cThe walls have dropped. Take cover or attack!",
 				"interval": 10,
 				"repeat": false,
@@ -107,15 +114,33 @@
 				[
 					"execute at @r run fill 28 6 1 28 12 55 air replace glass",
 					"execute at @r run fill 1 6 28 55 12 28 air replace glass",
-					"execute at @r run worldborder damage buffer 0"
+					"execute at @r run worldborder damage buffer 0",
+					"execute at @r run playsound minecraft:block.note_block.hat master @a 28 25 28 100 1"
 				]
+			},
+			{
+				"message": "&cThe ground is beginning to shake! Hurry and tower up to ensure you're the last one standing!",
+				"interval": 145,
+				"repeat": false,
+				"commands":
+				["execute at @r run playsound minecraft:weather.rain master @a 28 25 28 100 1"]
+			},
+			{
+				"message": "&cThe ground is about to give in! Get up high before it's too late! You have 10 seconds!",
+				"interval": 155,
+				"repeat": false,
+				"commands":
+				["execute at @r run playsound minecraft:weather.rain master @a 28 25 28 100 1"]
 			},
 			{
 				"message": "&cThe floor crumbles.",
 				"interval": 165,
 				"repeat": false,
 				"commands":
-				["execute at @r run fill 28 0 28 28 25 28 air"]
+				[
+					"execute at @r run fill 27 0 27 29 25 29 air",
+					"execute at @r run playsound minecraft:ambient.cave master @a 28 25 28 100 1"
+				]
 			}
 		]
 	},
