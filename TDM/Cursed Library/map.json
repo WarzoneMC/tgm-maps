@@ -27,13 +27,15 @@
 		{"teams": ["blue"], "coords": "-23, 25, -115.5, 90"},
 		{"teams": ["red"], "coords": "-82, 25, -115.5, -90"}
 	],
-	"points": {
-		"target": 25
-	},
 	"time": {
 		"limit": 180,
 		"broadcasts": [
-			{"message": "&6[TIP] &cScore 25 kills before 3 minutes pass! Whoever ends with the most points wins.", "interval": 1, "repeat": false, "commands": []},
+			{
+				"message": "&6[TIP] &cScore as many kills as you can before 3 minutes pass! Whoever ends with the most points wins.", "interval": 1, "repeat": false,
+				"commands": [
+					"execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"
+				]
+			},
 			{"message": "&6[TIP] &cTime runs out in 20 seconds!", "interval": 160, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
 			{"message": "&6[TIP] &cTime runs out in 3 seconds!", "interval": 177, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
 			{"message": "&6[TIP] &cTime runs out in 2 seconds!", "interval": 178, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
