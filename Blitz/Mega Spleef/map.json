@@ -4,7 +4,7 @@
         {"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "stats": {"disable": true},
     "teams": [
         {
@@ -300,7 +300,7 @@
                 "message": "&cWorld Border closes in 4 minutes. Good luck!",
                 "interval": 1,
                 "repeat": false,
-                "commands": []
+                "commands": ["execute at @r run worldborder damage buffer 0"]
             },
             {
                 "message": "&cDon't spleef your teammates! Pay attention to what team you join.",
@@ -321,7 +321,9 @@
         }
     },
     "gamerules": {
-        "doTileDrops": false
+        "doTileDrops": false,
+        "logAdminCommands": false,
+        "sendCommandFeedback": false
     },
     "damageControl": {
         "ENTITY_ATTACK": false

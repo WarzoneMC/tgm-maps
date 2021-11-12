@@ -4,14 +4,14 @@
         {"uuid": "cc2292de-fcb3-412d-9319-f3177f73b605", "username": "cs_"}
     ],
     "gametype": "Blitz",
-    "version": "1.1.2",
+    "version": "1.1.5",
     "objective": "Everyone for themselves! Can you sploof the others before you get sploofed?",
     "stats": {"disable": true},
     "teams": [
         {
             "id": "red",
             "name": "Red",
-            "color": "dark_red",
+            "color": "dark red",
             "min": 0,
             "max": 1
         },
@@ -39,7 +39,7 @@
         {
             "id": "green",
             "name": "Green",
-            "color": "dark_green",
+            "color": "dark green",
             "min": 0,
             "max": 1
         },
@@ -60,14 +60,14 @@
         {
             "id": "cyan",
             "name": "Cyan",
-            "color": "dark_aqua",
+            "color": "dark aqua",
             "min": 0,
             "max": 1
         },
         {
             "id": "dark-blue",
             "name": "Dark Blue",
-            "color": "dark_blue",
+            "color": "dark blue",
             "min": 0,
             "max": 1
         },
@@ -81,14 +81,14 @@
         {
             "id": "purple",
             "name": "Purple",
-            "color": "dark_purple",
+            "color": "dark purple",
             "min": 0,
             "max": 1
         },
         {
             "id": "magenta",
             "name": "Magenta",
-            "color": "light_purple",
+            "color": "light purple",
             "min": 0,
             "max": 1
         }
@@ -116,9 +116,29 @@
         }
     ],
     "time": {
-        "limit": 600
+        "limit": 180,
+        "broadcasts": [
+            {
+                "message": "&cWorld Border closes in 4 minutes. Good luck!",
+                "interval": 1,
+                "repeat": false,
+                "commands": ["execute at @r run worldborder damage buffer 0"]
+            }
+        ]
+    },
+    "border": {
+        "startingSize": 212,
+        "endSize": 9,
+        "center": "0.5, 14, 0.5",
+        "delay": 120,
+        "damage": {
+            "amount": 100,
+            "buffer": 0
+        }
     },
     "gamerules": {
-        "doTileDrops": false
+        "doTileDrops": false,
+        "logAdminCommands": false,
+        "sendCommandFeedback": false
     }
 }
