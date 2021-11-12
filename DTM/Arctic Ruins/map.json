@@ -13,14 +13,14 @@
 			"name": "Blue",
 			"color": "blue",
 			"min": 1,
-			"max": 5
+			"max": 7
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "dark_red",
 			"min": 1,
-			"max": 5
+			"max": 7
 		}
 	],
 	"spawns": [
