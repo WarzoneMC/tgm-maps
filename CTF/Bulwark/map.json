@@ -3,10 +3,10 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"gametype": "CTF",
 	"time": {
-		"limit": 420
+		"limit": 600
 	},
 	"teams": [
 		{
@@ -41,7 +41,7 @@
 				"respawn-time": 20,
 				"type": "blue",
 				"patterns": [
-					{"color": "blue", "type": "base"}
+					{"color": "white", "type": "skull"}
 				],
 				"rotation": "west",
 				"effects": [
@@ -54,7 +54,7 @@
 				"respawn-time": 20,
 				"type": "red",
 				"patterns": [
-					{"color": "red", "type": "base"}
+					{"color": "white", "type": "skull"}
 				],
 				"rotation": "east",
 				"effects": [
