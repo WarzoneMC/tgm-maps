@@ -139,6 +139,7 @@
 			"regions": ["blue-spawn-protection", "red-spawn-protection", "bottom-layer"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{"type": "build", "evaluate": "allow", "teams": ["blue", "red"], "regions": ["buildable-void"]},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "orange-wool-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "cyan-wool-room"], "message": "&cYou may not enter this region."},
 		{"type": "build", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
@@ -156,8 +157,31 @@
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "221, -oo, 272", "max": "228, 11, 281"},
 		{"id": "cyan-wool-room", "min": "220, 12, 272", "max": "229, 17, 281"},
 		{"id": "orange-wool-room", "min": "263, 12, 315", "max": "272, 17, 324"},
-
-		{"id": "bottom-layer", "min": "221, 1, 264", "max": "280, 1, 323"}
+		{
+			"id": "bottom-layer", "type": "meta",
+			"regions": [
+				{"min": "221, 1, 264", "max": "240, 1, 295"},
+				{"min": "241, 1, 264", "max": "248, 1, 271"},
+				{"min": "257, 1, 264", "max": "280, 1, 271"},
+				{"min": "273, 1, 272", "max": "280, 1, 287"},
+				{"min": "258, 1, 277", "max": "259, 1, 278"},
+				{"min": "266, 1, 285", "max": "267, 1, 286"},
+				{"min": "249, 1, 284", "max": "260, 1, 295"},
+				{"min": "273, 1, 296", "max": "280, 1, 303"},
+				{"min": "249, 1, 304", "max": "280, 1, 323"}
+			]
+		},
+		{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				{"min": "249, -oo, 264", "max": "256, oo, 271"},
+				{"min": "257, -oo, 272", "max": "260, oo, 283"},
+				{"min": "261, -oo, 284", "max": "272, oo, 287"},
+				{"min": "241, -oo, 288", "max": "248, oo, 295"},
+				{"min": "273, -oo, 288", "max": "280, oo, 295"},
+				{"min": "249, -oo, 296", "max": "256, oo, 303"}
+			]
+		}
 	],
 	"buildHeight": 15
 }
