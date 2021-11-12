@@ -15,7 +15,7 @@
 		{
 			"id": "blue",
 			"name": "Blue",
-			"color": "dark_aqua",
+			"color": "dark aqua",
 			"min": 1,
 			"max": 8
 		},
