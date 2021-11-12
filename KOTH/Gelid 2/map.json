@@ -126,7 +126,7 @@
 		]
 	},
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to break blocks on this map."},
 		{"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"]},
 
