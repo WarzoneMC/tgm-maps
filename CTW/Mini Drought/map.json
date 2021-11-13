@@ -16,7 +16,7 @@
 		{
 			"id": "red",
 			"name": "Red",
-			"color": "dark red",
+			"color": "dark_red",
 			"min": 1,
 			"max": 5
 		}
