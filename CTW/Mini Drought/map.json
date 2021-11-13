@@ -1,0 +1,175 @@
+{
+	"name": "Mini Drought",
+	"authors": [
+		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
+	],
+	"version": "1.0.1",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"material": "iron pickaxe", "slot": 2, "enchantments": ["efficiency:1"], "unbreakable": true},
+				{"material": "golden axe", "slot": 29, "unbreakable": true},
+
+				{"material": "sandstone", "slot": 3, "amount": 64},
+				{"material": "birch planks", "slot": 4, "amount": 64},
+				{"material": "cobweb", "slot": 5, "amount": 3},
+				{"material": "ladder", "slot": 6, "amount": 64},
+				{"material": "golden apple", "slot": 7, "amount": 3},
+				{"material": "cooked chicken", "slot": 8, "amount": 64},
+
+				{"material": "sandstone", "slot": 21, "amount": 64},
+				{"material": "sandstone", "slot": 30, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 1},
+				{"material": "bucket", "slot": 31, "amount": 1}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 200, "amplifier": 10000, "particles": false}
+			]
+		}
+	],
+
+	"itemremove": [
+		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string", "stone sword", "iron pickaxe", "bow", "golden axe"
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-9.5, 12, -330.5, 45"},
+		{"teams": ["red"], "coords": "-71.5, 9, -338.5, -45"},
+		{"teams": ["blue"], "coords": "-1.5, 9, -268.5, 135"}
+	],
+	"regions": [
+		
+
+		{"id": "blue-base", "min": "8, 0, -279", "max": "-12, oo, -259"},
+        {
+            "id": "blue-base-bridges", "type": "meta",
+            "regions": [
+                {"min": "-7, 0, -284", "max": "3, oo, -280"},
+				{"min": "-17, 0, -274", "max": "-13, oo, -264"}
+            ]
+        },
+		{"id": "red-base", "min": "-81, 0, -328", "max": "-61, oo, -348"},
+        {
+            "id": "red-base-bridges", "type": "meta",
+            "regions": [
+                {"min": "-67, 0, -324", "max": "-77, oo, -328"},
+				{"min": "-57, 0, -334", "max": "-61, oo, -344"}
+            ]
+        },
+		{"id": "center", "type": "cuboid", "min": "-54, 0, -321", "max": "-20, oo, -287"},
+        {
+            "id": "red-wool-rooms", "type": "meta",
+            "regions": [
+                {"min": "-78, 0, -360", "max": "-71, oo, -353"},
+				{"min": "-93, 0, -338", "max": "-86, oo, -345"}
+            ]
+        },
+        {
+            "id": "blue-wool-rooms", "type": "meta",
+            "regions": [
+                {"min": "-2, 0, -254", "max": "5, oo, -247"},
+				{"min": "13, 0, -269", "max": "20, oo, -262"}
+            ]
+        }
+	],
+	"filters": [
+		{
+			"type": "block-interact", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["blue-wool-rooms"],
+			"message": "&cYou may not break your own wool room!"
+		},
+        {
+			"type": "block-interact", "evaluate": "deny", "teams": ["red"],
+			"regions": ["red-wool-rooms"],
+			"message": "&cYou may not break your own wool room!"
+		},
+        {
+			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-wool-rooms", "red-wool-rooms"],
+			"blocks": ["chest", "pink wool", "purple wool", "green wool", "lime wool"],
+            "message": "&cYou may not break wool chests"
+		},
+        {
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-wool-rooms", "red-wool-rooms"],
+            "message": "&cYou may not place blocks here"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["red-wool-rooms"], "message": "&cYou may not enter your own wool room!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base", "blue-base-bridges"], "message": "&cYou may not enter the enemy team's base!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-wool-rooms"], "message": "&cYou may not enter your own wool room!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base", "red-base-bridges"], "message": "&cYou may not enter the enemy team's base!"},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+	  		"inverted": true,
+	  		"regions": ["center"],
+	  		"message": "&cYou cannot build outside the map area!"
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["blue-base", "red-base", "blue-base-bridges", "red-base-bridges"],
+			"blocks": ["gold block"], "message": "&cYou may only break gold blocks in the base"
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-base", "red-base", "blue-base-bridges", "red-base-bridges"],
+            "message": "&cYou may not place blocks here"
+		}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Lime",
+				"color": "green",
+				"woolcolor": "lime",
+				"teams": ["red"],
+				"region": {"min": "-63, 9, -331", "max": "-63, 9, -331"}
+			},
+			{
+				"name": "Green",
+				"color": "dark green",
+				"woolcolor": "green",
+				"teams": ["red"],
+				"region": {"min": "-64, 9, -330", "max": "-64, 9, -330"}
+			},
+			{
+				"name": "Pink",
+				"color": "light purple",
+				"woolcolor": "pink",
+				"teams": ["blue"],
+				"region": {"min": "-10, 9, -278", "max": "-10, 9, -278"}
+			},
+			{
+				"name": "Purple",
+				"color": "dark purple",
+				"woolcolor": "purple",
+				"teams": ["blue"],
+				"region": {"min": "-11, 9, -277", "max": "-11, 9, -277"}
+			}
+		]
+	},
+    "crafting": {
+    	"remove": [
+            "birch boat"
+        ]
+    },
+	"buildHeight": 23
+}
