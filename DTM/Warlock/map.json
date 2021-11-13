@@ -34,7 +34,7 @@
 				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "77, 1, -36",
-					"max": "78, 3, -37"
+					"max": "78, 2, -37"
 				},
 				"health": 2
 			},
@@ -44,7 +44,7 @@
 				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "77, 1, 37",
-					"max": "78, 3, 38"
+					"max": "78, 2, 38"
 				},
 				"health": 2
 			}
