@@ -1,0 +1,176 @@
+{
+	"name": "Ignum",
+	"authors": [
+		{"uuid": "bbfac3db-dd46-4996-b936-0e2432f33285", "username": "Valky"}
+	],
+	"version": "1.0",
+	"gametype": "CTW",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark_red",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-250, 17, 26"},
+		{"teams": ["red"], "coords": "-245.5, 14, -10.5, 25"},
+		{"teams": ["blue"], "coords": "-254.5, 14, 64.5, -155"}
+	],
+	"respawn": {
+		"rules": [
+			{
+				"freeze": false,
+				"blindness": true,
+				"confirm": false,
+				"delay": 3500
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "stone axe", "enchantments": ["efficiency:2"], "slot": 3, "unbreakable": true},
+
+				{"material": "spruce planks", "slot": 4, "amount": 8},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "cooked beef", "slot": 8, "amount": 64},
+				{"material": "arrow", "slot": 28, "amount": 6},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 40, "amplifier": 10000, "particles": false}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue terracotta", "slot": 5, "amount": 8}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red terracotta", "slot": 5, "amount": 8}
+			]
+		}
+	],
+	"regions": [
+		{"id": "blue-wool-build", "type": "cuboid", "min": "-243, 0, 56", "max": "-239, oo, 60"},
+        {"id": "blue-wool-enter", "type": "cuboid", "min": "-243, 0, 56", "max": "-238, oo, 61"},
+		{"id": "red-wool-build", "type": "cuboid", "min": "-258, 0, -3", "max": "-262, oo, -7"},
+		{"id": "red-wool-enter", "type": "cuboid", "min": "-257, 0, -2", "max": "-262, oo, -7"},
+
+		{"id": "blue-spawn-build", "min": "-253, 0, 62", "max": "-256, oo, 66"},
+        {"id": "blue-spawn-enter", "min": "-252, 0, 62", "max": "-256, oo, 67"},
+		{"id": "red-spawn-build", "min": "-248, 0, -9", "max": "-244, oo, -13"},
+        {"id": "red-spawn-enter", "min": "-248, 0, -8", "max": "-243, oo, -13"},
+        {
+            "id": "spawners", "type": "meta",
+            "regions": [
+                {"min": "-253, 0, -2", "max": "-255, oo, -4"},
+				{"min": "-246, 0, 57", "max": "-248, oo, 55"}
+            ]
+        },
+        {"id": "lava", "min": "-238, 0, -15", "max": "-263, oo, 68"}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-spawn-build", "red-spawn-build"],
+			"message": "&cYou may not edit spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["spawners"],
+			"message": "&cYou may not edit spawners."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-wool-build", "blue-wool-build"],
+			"message": "&cYou may not edit this wool room."
+		},
+		{
+			"type": "build", "inverted": true, "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["lava"],
+			"message": "&cYou may not build in the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["red-wool-enter"], "message": "&cYou may not enter this wool room."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["blue-wool-enter"], "message": "&cYou may not enter this wool room."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-enter"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-enter"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["obsidian"]}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Red",
+				"color": "dark_red",
+				"woolcolor": "red",
+				"teams": ["blue"],
+				"region": {"min": "-257, 15, 66", "max": "-257, 15, 66"}
+			},
+			{
+				"name": "Blue",
+				"color": "blue",
+				"woolcolor": "blue",
+				"teams": ["red"],
+				"region": {"min": "-244, 15, -13", "max": "-244, 15, -13"}
+			}
+		]
+	},
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "spruce planks", "amount": 4},
+					{"material": "arrow", "amount": 3}
+				]
+			}
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "arrow", "cooked beef", "diamond chestplate",
+		"nether brick", "netherrack", "flint", "quartz", "soul sand", "nether brick fence",
+		"red wool", "blue wool", "spruce planks", "blue terracotta", "red terracotta",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"buildHeight": 17
+}
