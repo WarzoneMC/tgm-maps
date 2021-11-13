@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "c14862ba-058a-44a2-a1c3-bfb0b462e198", "username": "Ro_G"}
 	],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -22,7 +22,7 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-541, 13, 304, -90"},
+		{"teams": ["spectators"], "coords": "-542, 13, 304, -90"},
 		{"teams": ["red"], "coords": "-571.5, 11, 259.5, 45"},
 		{"teams": ["red"], "coords": "-619.5, 11, 259.5, -45"},
 		{"teams": ["green"], "coords": "-619.5, 11, 349.5, -135"},

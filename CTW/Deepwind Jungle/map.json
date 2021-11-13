@@ -4,7 +4,7 @@
 		{"uuid": "91295196-9cd2-4963-b7ec-afd1a110edbe", "username": "PandaBattalion"},
 		{"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Rokosnocone"}
 	],
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -23,9 +23,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-50, 59, 0, -90"},
-		{"teams": ["red"], "coords": "-1, 9, 73, 180"},
-		{"teams": ["blue"], "coords": "-1, 9, -76"}
+		{"teams": ["spectators"], "coords": "-50.5, 59, 0.5, -90"},
+		{"teams": ["red"], "coords": "0, 9, 75, 180"},
+		{"teams": ["blue"], "coords": "0, 9, -75"}
 	],
 	"ctw": {
 		"wools": [

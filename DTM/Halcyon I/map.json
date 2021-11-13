@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "8242e55e-cc6a-458a-b272-a2b34918045f", "username": "kaimyr"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -22,9 +22,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-34, 85, -816, -90"},
-		{"teams": ["red"], "coords": "14, 75, -761, -180"},
-		{"teams": ["purple"], "coords": "14, 75, -871, 0"}
+		{"teams": ["spectators"], "coords": "-34.5, 85, -816.5, -90"},
+		{"teams": ["red"], "coords": "14.5, 75, -761.5, -180"},
+		{"teams": ["purple"], "coords": "14.5, 75, -871.5, 0"}
 	],
 	"dtm": {
 		"monuments": [
