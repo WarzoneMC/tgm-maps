@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -40,7 +40,9 @@
 				{"material": "sandstone", "slot": 21, "amount": 64},
 				{"material": "sandstone", "slot": 30, "amount": 64},
 				{"material": "arrow", "slot": 28, "amount": 1},
-				{"material": "bucket", "slot": 31, "amount": 1}
+				{"material": "bucket", "slot": 31, "amount": 1},
+				
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
 			],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 200, "amplifier": 10000, "particles": false}
@@ -49,7 +51,11 @@
 	],
 
 	"itemremove": [
-		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string", "stone sword", "iron pickaxe", "bow", "golden axe"
+		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string", "stone sword", "iron pickaxe", "bow", "golden axe",
+		{
+            		"type": "leather chestplate",
+            		"death": true
+        	}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-9.5, 12, -330.5, 45"},
