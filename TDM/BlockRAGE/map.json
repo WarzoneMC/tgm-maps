@@ -31,7 +31,7 @@
 	"time": {
 		"limit": 420,
 		"broadcasts": [
-			{"message": "&6[TIP] &cTime runs out in 1 minute!", "interval": 340, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
+			{"message": "&6[TIP] &cTime runs out in 1 minute!", "interval": 360, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
 			{"message": "&6[TIP] &cTime runs out in 20 seconds!", "interval": 400, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
 			{"message": "&6[TIP] &cTime runs out in 3 seconds!", "interval": 417, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
 			{"message": "&6[TIP] &cTime runs out in 2 seconds!", "interval": 418, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
