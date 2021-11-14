@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -22,9 +22,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "0, 40, 0, 90"},
-		{"teams": ["yellow"], "coords": "12.5, 6, 49, 180"},
-		{"teams": ["red"], "coords": "-11.5, 6, -48"}
+		{"teams": ["spectators"], "coords": "0.5, 40, 0.5, 90"},
+		{"teams": ["yellow"], "coords": "12.5, 6, 49.5, 180"},
+		{"teams": ["red"], "coords": "-11.5, 6, -48.5"}
 	],
 	"points": {
 		"target": 1600

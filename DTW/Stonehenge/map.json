@@ -5,7 +5,7 @@
 		{"uuid": "2c1cf65f-f668-41eb-812e-091391eb2896", "username": "Loks"}
 
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -24,7 +24,7 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-1.5, 133, -42.5, -177"},
+		{"teams": ["spectators"], "coords": "-1.5, 133, -45, -180"},
 		{"teams": ["blue"], "coords": "-0.5, 74, 32.5, 180"},
 		{"teams": ["red"], "coords": "-0.5, 74, -123.5"}
 	],

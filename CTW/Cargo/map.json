@@ -8,7 +8,7 @@
 		{"uuid": "5c934a59-fd50-48aa-99ff-c87e0468f639", "username": "iamramsey"},
 		{"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Rokosnocone"}
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -27,9 +27,9 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "23.9, 122, -112.9, -90"},
-		{"teams": ["red"], "coords": "63.9, 77.5, -191"},
-		{"teams": ["blue"], "coords": "63.9, 77.5, -34.9, 180"}
+		{"teams": ["spectators"], "coords": "24, 122, -113, -90"},
+		{"teams": ["red"], "coords": "64, 77.5, -191"},
+		{"teams": ["blue"], "coords": "64, 77.5, -35, 180"}
 	],
 	"ctw": {
 		"wools": [
