@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"gametype": "DTM",
 	"gamerules": {
 		"doFireTick": true
@@ -77,7 +77,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "spruce planks", "stone bricks", "arrow", "golden carrot", "golden apple",
-		"chainmail chestplate", "iron boots",
+		"chainmail chestplate", "iron boots", "obsidian",
 		{
 			"type": "leather helmet",
 			"drop": true
