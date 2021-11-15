@@ -150,6 +150,10 @@
             "inverted": true,
             "regions": ["map"],
             "message": "&cYou may not build/modify here!"
+        },
+        {
+            "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+            "regions": ["beacon-prot"]
         }
     ],
     "regions": [
