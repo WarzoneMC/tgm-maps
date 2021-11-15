@@ -4,7 +4,7 @@
 		{"uuid": "dff980ed-9f69-491e-b79c-30c21350baf2", "username": "DoomyBoy"},
 		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"}
 	],
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -105,7 +105,7 @@
 					"min": "207, 14, 21",
 					"max": "208, 17, 20" 
 				},
-				"health": 3
+				"health": 2
 			},
 			{
 				"name": "Monument",
@@ -115,7 +115,7 @@
 					"min": "278, 14, 96",
 					"max": "277, 17, 97"
 				},
-				"health": 3
+				"health": 2
 			}
 		]
 	},
