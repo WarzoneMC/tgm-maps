@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
 	],
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"gametype": "KOTH",
 	"points": {
 		"target": 1200
@@ -11,31 +11,31 @@
 	"time": {
         "broadcasts": [
             {
-                "message": "&0[&fTIP&0] &4Trade emeralds with villagers at spawn for better gear!",
+                "message": "&0[&fTIP&0] &cTrade emeralds with villagers at spawn for better gear!",
                 "interval": 5,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&0[&fTIP&0] &4There are portals near hills that you can use to easily return to your spawn!",
+                "message": "&0[&fTIP&0] &cThere are portals near hills that you can use to easily return to your spawn!",
                 "interval": 15,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&0[&fTIP&0] &4Centre Hill is worth the most points!",
+                "message": "&0[&fTIP&0] &cCentre Hill is worth the most points!",
                 "interval": 10,
                 "repeat": false,
                 "commands": []
             },
             {
-                "message": "&0[&fTIP&0] &4Trade emeralds with villagers at spawn for better gear!",
+                "message": "&0[&fTIP&0] &cTrade emeralds with villagers at spawn for better gear!",
                 "interval": 180,
                 "repeat": true,
                 "commands": []
             },
             {
-                "message": "&0[&fTIP&0] &4There are portals near hills that you can use to easily return to your spawn!",
+                "message": "&0[&fTIP&0] &cThere are portals near hills that you can use to easily return to your spawn!",
                 "interval": 120,
                 "repeat": true,
                 "commands": []
