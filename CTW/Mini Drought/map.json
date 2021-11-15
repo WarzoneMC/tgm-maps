@@ -66,36 +66,43 @@
 		
 
 		{"id": "blue-base", "min": "8, 0, -279", "max": "-12, oo, -259"},
-        {
-            "id": "blue-base-bridges", "type": "meta",
-            "regions": [
-                {"min": "-7, 0, -284", "max": "3, oo, -280"},
+        	{
+            		"id": "blue-base-bridges", "type": "meta",
+            		"regions": [
+                		{"min": "-7, 0, -284", "max": "3, oo, -280"},
 				{"min": "-17, 0, -274", "max": "-13, oo, -264"}
-            ]
-        },
+            		]
+        	},
 		{"id": "red-base", "min": "-81, 0, -328", "max": "-61, oo, -348"},
-        {
-            "id": "red-base-bridges", "type": "meta",
-            "regions": [
-                {"min": "-67, 0, -324", "max": "-77, oo, -328"},
+        	{
+            		"id": "red-base-bridges", "type": "meta",
+            		"regions": [
+               			{"min": "-67, 0, -324", "max": "-77, oo, -328"},
 				{"min": "-57, 0, -334", "max": "-61, oo, -344"}
-            ]
-        },
+            		]
+        	},
 		{"id": "center", "type": "cuboid", "min": "-54, 0, -321", "max": "-20, oo, -287"},
-        {
-            "id": "red-wool-rooms", "type": "meta",
-            "regions": [
-                {"min": "-78, 0, -360", "max": "-71, oo, -353"},
+        	{
+            		"id": "red-wool-rooms", "type": "meta",
+            		"regions": [
+                		{"min": "-78, 0, -360", "max": "-71, oo, -353"},
 				{"min": "-93, 0, -338", "max": "-86, oo, -345"}
-            ]
-        },
-        {
-            "id": "blue-wool-rooms", "type": "meta",
-            "regions": [
-                {"min": "-2, 0, -254", "max": "5, oo, -247"},
+            		]
+        	},
+		{
+            		"id": "red-wool-build-cause-tgm-sucks": "meta",
+            		"regions": [
+                		{"min": "-78, 0, -360", "max": "-72, oo, -353"},
+				{"min": "-93, 0, -339", "max": "-86, oo, -345"}
+            		]
+        	},
+        	{
+            		"id": "blue-wool-rooms", "type": "meta",
+            		"regions": [
+                		{"min": "-2, 0, -254", "max": "5, oo, -247"},
 				{"min": "13, 0, -269", "max": "20, oo, -262"}
-            ]
-        }
+            		]
+        	}
 	],
 	"filters": [
 		{
@@ -105,7 +112,7 @@
 		},
         {
 			"type": "block-interact", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-wool-rooms"],
+			"regions": ["red-wool-build-cause-tgm-sucks"],
 			"message": "&cYou may not break your own wool room!"
 		},
         {
