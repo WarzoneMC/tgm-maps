@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
 	],
-	"version": "1.1.6",
+	"version": "1.1.5",
 	"gametype": "KOTH",
 	"points": {
 		"target": 1200
