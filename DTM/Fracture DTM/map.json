@@ -87,11 +87,11 @@
 			"drop": true
 		},
 		{
-           		"type": "obsidian",
-            		"death": false,
-            		"drop": true,
-            		"spawn": true
-       		}
+			"type": "obsidian",
+			"death": false,
+			"drop": true,
+			"spawn": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -160,13 +160,13 @@
 		{"id": "red-spawn-protection-west", "type": "cuboid", "min": "-58, 13, 3", "max": "-42, oo, 26"},
 		{"id": "red-spawn-protection-east", "type": "cuboid", "min": "-16, 13, 3", "max": "0, oo, 26"},
 		{"id": "map", "type": "cuboid", "min": "-73, -oo, 18", "max": "15, oo, 154"},
-        	{
-            		"id": "water-voidbuild-exception", "type": "meta",
-            		"regions": [
-                		{"min": "-36, 1, 160", "max": "-22, 12, 162"},
+		{
+			"id": "water-voidbuild-exception", "type": "meta",
+			"regions": [
+				{"min": "-36, 1, 160", "max": "-22, 12, 162"},
 				{"min": "-36, 1, 10", "max": "-22, 12, 12"}
-           			]
-        	}
+			]
+		}
 	],
 	"buildHeight": 20
 }
