@@ -154,7 +154,7 @@
         {
             "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
             "regions": ["beacon-prot"]
-        },
+        }
     ],
     "regions": [
         {"id": "red-spawn-pool", "type": "cuboid", "min": "33, 26, -93", "max": "26, oo, -86"},
