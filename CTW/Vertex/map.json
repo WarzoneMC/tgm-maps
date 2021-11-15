@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -91,7 +91,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "stone pickaxe", "stone axe", "spruce planks", "blue terracotta", "red terracotta", "golden carrot", "arrow",
-		"golden apple", "chainmail chestplate", "iron boots",
+		"golden apple", "chainmail chestplate", "iron boots", "orange wool", "cyan wool",
 		{
 			"type": "leather helmet",
 			"drop": true
