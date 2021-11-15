@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "username": "McSpider"}
 	],
-	"version": "1.4.5",
+	"version": "1.4.6",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -107,7 +107,7 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", 
-		"arrow", "chainmail chestplate",
+		"arrow", "chainmail chestplate", "golden apple",
 		{
             "type": "leather helmet",
             "drop": true
