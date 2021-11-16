@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "3a549b18-08ed-4756-a78c-b34d29a4fd87", "username": "Torn_Ares"}
     ],
-    "version": "1.4.3",
+    "version": "1.4.4",
     "gametype": "DTM",
     "respawn": {
         "rules": [
@@ -153,7 +153,7 @@
         },
         {
             "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["beacon-prot"]
+            "regions": ["beacon-prot", "monument-prot", "blue-spawn-pool", "red-spawn-pool"]
         }
     ],
     "regions": [
@@ -165,6 +165,12 @@
                 {"min": "29, 38, -129", "max": "29, oo, -129"},
                 {"min": "-64, 37, -130", "max": "-62, 37, -128"},
                 {"min": "-63, 38, -129", "max": "-63, oo, -129"}
+            ]
+        },
+        {
+            "id": "monument-prot", "type": "meta", "regions": [
+                {"min": "27, 37, -126", "max": "32, 31, -131"},
+                {"min": "-65, 37, -126", "max": "-60, 31, -131"}
             ]
         },
         {"id": "map", "type": "cuboid", "min": "57, 0, -206", "max": "-91, 80, -55"}
