@@ -90,7 +90,7 @@
             		]
         	},
 		{
-            		"id": "red-wool-build-cause-tgm-sucks": "meta",
+            		"id": "red-wool-build": "meta",
             		"regions": [
                 		{"min": "-78, 0, -360", "max": "-72, oo, -353"},
 				{"min": "-93, 0, -339", "max": "-86, oo, -345"}
@@ -112,7 +112,7 @@
 		},
         {
 			"type": "block-interact", "evaluate": "deny", "teams": ["red"],
-			"regions": ["red-wool-build-cause-tgm-sucks"],
+			"regions": ["red-wool-build"],
 			"message": "&cYou may not break your own wool room!"
 		},
         {
