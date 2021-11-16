@@ -5,7 +5,7 @@
 		{"uuid": "7a150842-5db4-487e-b4d1-559b8240a07f", "username": "Carterpaul"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"teams": [
 		{
 			"id": "red",
@@ -82,8 +82,5 @@
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }
