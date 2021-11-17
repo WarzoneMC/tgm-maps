@@ -90,7 +90,7 @@
             		]
         	},
 		{
-            		"id": "red-wool-build", "meta",
+            		"id": "red-wool-build", "type": "meta",
             		"regions": [
                 		{"min": "-78, 0, -360", "max": "-72, oo, -353"},
 				{"min": "-93, 0, -339", "max": "-86, oo, -345"}
