@@ -1,0 +1,114 @@
+{
+	"name": "SumoSpleef",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "__iMan"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0",
+	"stats": {"disable": true},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 24
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 24
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-2.5, 139, 0.5, 0.8"},
+		{"teams": ["blue"], "coords": "6.5, 84, 5.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, 4.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, 3.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, 2.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, 1.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, 0.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -0.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -1.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -2.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -3.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -4.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -5.5, 90"},
+		{"teams": ["blue"], "coords": "6.5, 84, -6.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, 4.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, 3.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, 2.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, 1.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, 0.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -0.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -1.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -2.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -3.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -4.5, 90"},
+		{"teams": ["blue"], "coords": "7.5, 84, -5.5, 90"},
+		
+		
+		{"teams": ["red"], "coords": "-7.5, 84, -5.5, -90"},
+		{"teams": ["red"], "coords": "-7.5, 84, -4.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, -3.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, -2.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, -1.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, -0.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, 0.5, -90"},
+		{"teams": ["red"], "coords": "-7.5, 84, 1.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, 2.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, 3.5, -90"},	
+		{"teams": ["red"], "coords": "-7.5, 84, 4.5, -90"},
+		{"teams": ["red"], "coords": "-7.5, 84, 5.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -5.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -4.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -3.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -2.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -1.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, -0.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, 0.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, 1.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, 2.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, 3.5, -90"},
+		{"teams": ["red"], "coords": "-8.5, 84, 4.5, -90"},
+	],
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "black dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 99999, "amplifier": 4, "particles": true},
+				{"type": "regeneration", "duration": 99999, "amplifier": 0, "particles": true}
+			]
+		}
+	],
+	"itemremove": [
+		  "black dye",
+		{
+			"type": "leather helmet",
+            "drop": true
+        },
+		{
+            "type": "black dye",
+            "drop": true
+        }
+	],
+	"filters": [
+	{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["world"], "message": "&cDon't Touch!"}
+	
+    ],
+    "regions": [
+        {"id": "world", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
+	],
+	"damageControl": {
+		"fall": false
+	},
+	"time": {
+        "limit": 600
+    }
+}
