@@ -4,7 +4,7 @@
 		{"uuid": "c660918b-4000-44d4-b735-d3fa6f166110", "username": "Red_Dead"},
 		{"uuid": "21822eba-a4cb-4f1e-b803-3871d5ac0ff3", "username": "Izjust4fun"}
 	],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -96,9 +96,13 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "golden apple", "cooked beef", "arrow",
-		"chainmail chestplate", "iron boots",
+		"iron boots",
 		{
             "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "chainmail chestplate",
             "drop": true
         },
         {
@@ -119,7 +123,12 @@
 	],
 	"filters": [
 		{
-			"type": "build", "evaluate": "deny", "teams": ["cynx", "cyprone"],
+			"type": "blockBreak", "evaluate": "allow", "teams": ["cynx", "cyprone"],
+			"regions": ["cynx-spawn-protection", "cyprone-spawn-protection"],
+			"blocks": ["iron block"], "message": "&cYou may only break iron blocks in spawn."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["cynx", "cyprone"],
 			"regions": ["cynx-spawn-protection", "cyprone-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
