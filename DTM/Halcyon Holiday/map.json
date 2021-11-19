@@ -1,0 +1,137 @@
+{
+	"name": "Halcyon Holiday",
+	"authors": [
+		{"uuid": "8242e55e-cc6a-458a-b272-a2b34918045f", "username": "kaimyr"}
+	],
+	"version": "1.1.1",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 18
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 18
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-34.5, 85, -816.5, -90"},
+		{"teams": ["red"], "coords": "14.5, 75, -761.5, -180"},
+		{"teams": ["purple"], "coords": "14.5, 75, -871.5, 0"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 74, -773",
+					"max": "41, 74, -773"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-13, 74, -773",
+					"max": "-13, 74, -773"
+				},
+				"health": 1
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-13, 74, -861",
+					"max": "-13, 74, -861"
+				},
+				"health": 1
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "41, 74, -861",
+					"max": "41, 74, -861"
+				},
+				"health": 1
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "apple", "slot": 4, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 5, "amount": 1},
+				{"type": "item", "material": "oak log", "slot": 6, "amount": 32},
+				{"type": "item", "material": "glass", "slot": 7, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "stone axe", "apple", "arrow", "oak log",
+		"oak planks", "iron leggings", "golden apple", "glass",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "red"],
+			"regions": ["red-spawn", "purple-spawn"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "purple-spawn", "type": "cylinder", "base": "14, 70, -872", "radius": 8, "height": 12},
+		{"id": "red-spawn", "type": "cylinder", "base": "14, 70, -762", "radius": 8, "height": 12}
+	],
+	"buildHeight": 93
+}
