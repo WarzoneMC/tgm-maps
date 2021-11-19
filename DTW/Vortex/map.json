@@ -4,7 +4,7 @@
 		{"uuid": "db3e4ab9-7c34-4342-8aca-63db60ec8d1b", "username": "Henrs"},
 		{"uuid": "b3d091f3-d94f-4546-a908-6a513d260615", "username": "Goriest"}
 	],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -111,5 +111,6 @@
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-60, 24, 15", "max": "-68, oo, 23"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "61, 24, -14", "max": "69, oo, -22"},
 		{"id": "anti-under-bridge", "type": "cuboid", "min": "-oo, 0, -oo", "max": "oo, 15, oo"}
-	]
+	],
+    "buildHeight": 30
 }
