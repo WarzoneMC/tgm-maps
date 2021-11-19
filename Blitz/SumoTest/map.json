@@ -92,12 +92,12 @@
 		  "black dye",
 		{
 			"type": "leather helmet",
-            "drop": true
-        },
+			"drop": true
+		},
 		{
-            "type": "black dye",
-            "drop": true
-        }
+			"type": "black dye",
+			"drop": true
+		}
 	],
 	"filters": [
 	{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["world"], "message": "&cDon't Touch!"}

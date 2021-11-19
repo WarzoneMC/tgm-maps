@@ -1,179 +1,175 @@
 {
-    "name": "Not So Spleef",
-    "version": "1.0.1",
-    "authors": [
-        {"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "_iMan"},
-        {"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wessssssssdial"}
-    ],
-    "gametype": "Blitz",
-    "stats": {"disable": true},
-    "gamerules": {
-        "logAdminCommands": false
-    },
-    "teams": [
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "dark red",
-            "min": 1,
-            "max": 20
-        },
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 20
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "6.5, 47, 7"},
+	"name": "Not So Spleef",
+	"version": "1.0.2",
+	"authors": [
+		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "_iMan"},
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wessssssssdial"}
+	],
+	"gametype": "Blitz",
+	"stats": {"disable": true},
+	"gamerules": {
+		"logAdminCommands": false
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 20
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 20
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "6.5, 47, 7"},
 
-        {"teams": ["red"], "coords": "2.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "3.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "4.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "5.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "6.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "7.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "8.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "9.5, 39, 11.5, 180"},
-        {"teams": ["red"], "coords": "10.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "2.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "3.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "4.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "5.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "6.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "7.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "8.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "9.5, 39, 11.5, 180"},
+		{"teams": ["red"], "coords": "10.5, 39, 11.5, 180"},
 
-        {"teams": ["blue"], "coords": "2.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "3.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "4.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "5.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "6.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "7.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "8.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "9.5, 39, 2.5"},
-        {"teams": ["blue"], "coords": "10.5, 39, 2.5"}
-    ],
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "diamond shovel", "enchantments": ["efficiency:5"], "slot": 0, "unbreakable": true},
+		{"teams": ["blue"], "coords": "2.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "3.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "4.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "5.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "6.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "7.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "8.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "9.5, 39, 2.5"},
+		{"teams": ["blue"], "coords": "10.5, 39, 2.5"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "diamond shovel", "enchantments": ["efficiency:5"], "slot": 0, "unbreakable": true},
 
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "slow digging", "duration": 120, "amplifier": 255, "particles": false}
-            ]
-        },
-        {
-            "name": "Red",
-            "teams": ["red"],
-            "items": [
-                {"type": "item", "material": "red dye", "slot": 1},
-                {"type": "item", "material": "red dye", "slot": 2},
-                {"type": "item", "material": "red dye", "slot": 3},
-                {"type": "item", "material": "red dye", "slot": 4},
-                {"type": "item", "material": "red dye", "slot": 5},
-                {"type": "item", "material": "red dye", "slot": 6},
-                {"type": "item", "material": "red dye", "slot": 7},
-                {"type": "item", "material": "red dye", "slot": 8}
-            ]
-        },
-        {
-            "name": "Blue",
-            "teams": ["blue"],
-            "items": [
-                {"type": "item", "material": "blue dye", "slot": 1},
-                {"type": "item", "material": "blue dye", "slot": 2},
-                {"type": "item", "material": "blue dye", "slot": 3},
-                {"type": "item", "material": "blue dye", "slot": 4},
-                {"type": "item", "material": "blue dye", "slot": 5},
-                {"type": "item", "material": "blue dye", "slot": 6},
-                {"type": "item", "material": "blue dye", "slot": 7},
-                {"type": "item", "material": "blue dye", "slot": 8}
-            ]
-        }
-    ],
-    "itemremove": [
-        {
-            "type": "diamond shovel",
-            "drop": true
-        },
-        {
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        },
-        {
-            "type": "red dye",
-            "drop": true,
-            "spawn": true
-        },
-        {
-            "type": "blue dye",
-            "drop": true,
-            "spawn": true
-        },
-        {
-            "type": "snowball",
-            "spawn": true
-        }
-    ],
-    "time": {
-        "limit": 100,
-        "broadcasts": [
-            {
-                "message": "&6[Spleef] &cTeam-spleefing will result in a punishment!",
-                "interval": 1,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6[Spleef] &eGood luck!",
-                "interval": 5,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6[Spleef] &cThe &6lava &chas been dispensed! Watch your head!",
-                "interval": 15,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill 3 47 4 9 47 9 redstone_block replace beacon",
-                    "execute at @r run fill 4 45 4 8 45 9 lava"
-                ]
-            },
-            {
-                "message": "&6[Spleef] &cNobody is safe from the &6lava&c.",
-                "interval": 20,
-                "repeat": false,
-                "commands": ["execute at @r run fill 2 41 2 10 41 11 lava"]
-            }
-        ]
-    },
-    "damageControl": {
-        "FALL": false,
-        "ENTITY_ATTACK": false
-    },
-    "filters": [
-        {
-            "type": "block-break", "evaluate": "allow", "blocks": ["snow block"], "teams": ["red", "blue"],
-            "regions": ["global"],
-            "message": "&cYou may only break snow blocks."
-        },
-        {
-            "type": "block-place", "evaluate": "deny", "teams": ["red", "blue"],
-            "regions": ["global"]
-        }
-    ]
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "slow digging", "duration": 120, "amplifier": 255, "particles": false}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"type": "item", "material": "red dye", "slot": 1},
+				{"type": "item", "material": "red dye", "slot": 2},
+				{"type": "item", "material": "red dye", "slot": 3},
+				{"type": "item", "material": "red dye", "slot": 4},
+				{"type": "item", "material": "red dye", "slot": 5},
+				{"type": "item", "material": "red dye", "slot": 6},
+				{"type": "item", "material": "red dye", "slot": 7},
+				{"type": "item", "material": "red dye", "slot": 8}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"type": "item", "material": "blue dye", "slot": 1},
+				{"type": "item", "material": "blue dye", "slot": 2},
+				{"type": "item", "material": "blue dye", "slot": 3},
+				{"type": "item", "material": "blue dye", "slot": 4},
+				{"type": "item", "material": "blue dye", "slot": 5},
+				{"type": "item", "material": "blue dye", "slot": 6},
+				{"type": "item", "material": "blue dye", "slot": 7},
+				{"type": "item", "material": "blue dye", "slot": 8}
+			]
+		}
+	],
+	"itemremove": [
+		{
+			"type": "diamond shovel",
+			"drop": true
+		},
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		},
+		{
+			"type": "red dye",
+			"drop": true,
+			"spawn": true
+		},
+		{
+			"type": "blue dye",
+			"drop": true,
+			"spawn": true
+		},
+		{
+			"type": "snowball",
+			"spawn": true
+		}
+	],
+	"time": {
+		"limit": 100,
+		"broadcasts": [
+			{
+				"message": "&6[Spleef] &cTeam-spleefing will result in a punishment!",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[Spleef] &eGood luck!",
+				"interval": 5,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[Spleef] &cThe &6lava &chas been dispensed! Watch your head!",
+				"interval": 15,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 3 47 4 9 47 9 redstone_block replace beacon",
+					"execute at @r run fill 4 45 4 8 45 9 lava"
+				]
+			},
+			{
+				"message": "&6[Spleef] &cNobody is safe from the &6lava&c.",
+				"interval": 20,
+				"repeat": false,
+				"commands": ["execute at @r run fill 2 41 2 10 41 11 lava"]
+			}
+		]
+	},
+	"damageControl": {
+		"FALL": false,
+		"ENTITY_ATTACK": false
+	},
+	"filters": [
+		{
+			"type": "block-break", "evaluate": "allow", "blocks": ["snow block"], "teams": ["red", "blue"],
+			"regions": ["global"],
+			"message": "&cYou may only break snow blocks."
+		}
+	]
 }

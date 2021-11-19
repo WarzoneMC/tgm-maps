@@ -5,7 +5,7 @@
 		{"uuid": "f70b7a8f-93b2-480f-9d54-88e21485a042", "username": "Diamyx"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"teams": [
 		{
 			"id": "purple",
@@ -50,23 +50,23 @@
 	"itemremove": [
 		"stone sword", "bow", "golden apple", "cooked beef", "arrow", "chainmail leggings",
 		{
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
@@ -85,8 +85,5 @@
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

@@ -1,119 +1,112 @@
 {
-    "name": "Forsaken Ruins",
-    "authors": [
-        {"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
-    ],
-    "gametype": "Blitz",
-    "version": "1.3.5",
-    "teams": [
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 10
-        },
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "red",
-            "min": 1,
-            "max": 10
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "0.5, 50, 0.5, 180"},
-        {"teams": ["red"], "coords": "-30, 56, 38, 180"},
-        {"teams": ["blue"], "coords": "2, 56, -117"}
-    ],
-    "time": {
-        "limit": 600
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "golden axe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "oak planks", "slot": 3, "amount": 24},
+	"name": "Forsaken Ruins",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"gametype": "Blitz",
+	"version": "1.3.6",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 10
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 10
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 50, 0.5, 180"},
+		{"teams": ["red"], "coords": "-30, 56, 38, 180"},
+		{"teams": ["blue"], "coords": "2, 56, -117"}
+	],
+	"time": {
+		"limit": 600
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 24},
 
-                {"type": "item", "material": "fire charge", "slot": 6, "displayName": "TNT Ignitor", "amount": 64},
-                {"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
-                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-                {"type": "item", "material": "arrow", "slot": 28, "amount": 24},
+				{"type": "item", "material": "fire charge", "slot": 6, "displayName": "TNT Ignitor", "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 1},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 24},
 
-                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"material": "golden chestplate", "slot": "chestplate","unbreakable": true},
-                {"material": "iron boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        "stone sword", "bow", "golden apple", "cooked beef", "arrow", "golden chestplate",
-        "iron boots", "golden axe", "torch", "grass", "vine", "blue orchid", "oxeye daisy", "oak leaves",
-        "red carpet", "red wool", "orange carpet", "orange wool", "blue carpet", "blue wool", "cyan carpet",
-        "cyan wool", "oak fence", "spruce log", "spruce wood", "oak trapdoor", "cobblestone", "wheat seeds",
-        "oak sapling", "apple", "stone button", "stone pressure plate", "fire charge",
-        {
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "arrow", "amount": 8},
-                    {"material": "golden apple", "amount": 1}
-                ]
-            }
-        },
-        {
-            "count": 2,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "tnt", "amount": 1}
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "golden chestplate", "slot": "chestplate","unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": "1000", "amplifier": 25, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "cooked beef", "arrow", "golden chestplate",
+		"iron boots", "golden axe", "torch", "grass", "vine", "blue orchid", "oxeye daisy", "oak leaves",
+		"red carpet", "red wool", "orange carpet", "orange wool", "blue carpet", "blue wool", "cyan carpet",
+		"cyan wool", "oak fence", "spruce log", "spruce wood", "oak trapdoor", "cobblestone", "wheat seeds",
+		"oak sapling", "apple", "stone button", "stone pressure plate", "fire charge",
+		{
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 8},
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 2,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
 
-                ]
-            }
-        }
-    ],
-    "filters": [
-       {
-            "type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
-            "regions": ["global"],
-            "blocks": ["oak planks", "torch", "grass", "lily pad", "tnt", "vine", "blue orchid", "oxeye daisy",
-                "oak leaves", "red carpet", "red wool", "orange carpet", "orange wool", "blue carpet", "blue wool",
-                "cyan carpet", "cyan wool", "oak fence", "spruce log", "spruce wood", "white stained glass pane",
-                "spruce planks", "oak trapdoor"
-            ], "message": "&cYou may not modify terain here."
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["global"], "blocks": [
+				"oak planks", "torch", "grass", "lily pad", "tnt", "vine", "blue orchid", "oxeye daisy", "oak leaves",
+				"red carpet", "red wool", "orange carpet", "orange wool", "blue carpet", "blue wool", "cyan carpet",
+				"cyan wool", "oak fence", "spruce log", "spruce wood", "white stained glass pane", "spruce planks", "oak trapdoor"
+			],
+			"message": "&cYou may not modify terrain here."
         },
-        {
-            "type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"],
-            "regions": ["global"],
-            "blocks": ["oak planks", "tnt", "spruce planks", "torch", "oak leaves", "lily pad"], "message": "&cYou may not modify terrain here."
-        },
-        {
-            "type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true,
-            "regions": ["void"]
-        },
-        {
-            "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."
-        }
-    ],
-    "regions": [
-        {"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"},
-        {"id": "void", "type": "cuboid", "min": "-40, -oo, 53", "max": "11, oo, -132"}
-    ],
-    "buildHeight": 70
+		{
+			"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["global"], "blocks": [
+				"oak planks", "tnt", "spruce planks", "torch", "oak leaves", "lily pad"
+			],
+			"message": "&cYou may not modify terrain here."
+		},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true, "regions": ["void"]},
+		{"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."}
+	],
+	"regions": [
+		{"id": "void", "type": "cuboid", "min": "-40, -oo, 53", "max": "11, oo, -132"}
+	],
+	"buildHeight": 70
 }

@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "5e1c0b5d-cfdd-4e10-95cd-c53f8ee92150", "username": "Pandaboy999"}
 	],
-	"version": "2.2.1",
+	"version": "2.2.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -73,7 +73,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "oak planks", "cooked beef", "arrow", "stone shovel",
-		"chainmail chestplate", "iron boots",
+		"chainmail chestplate", "iron boots", "golden apple",
 		{
             "type": "leather helmet",
             "death": true,
