@@ -37,12 +37,11 @@
 		{"teams": ["blue"], "coords": ".5, 26, 47.5, 180"},
 		{"teams": ["red"], "coords": ".5, 26, -58.5"}
 	],
-   	 "kits": [
+	"kits": [
 		{
 			"name": "Default",
 			"items": [
 				{"type": "item", "material": "end stone bricks", "canPlaceOn": ["tnt", "quartz block", "quartz stairs", "quartz slab", "end stone bricks", "spawner", "white terracotta"] ,"slot": 0, "amount": 10}
-
 			]
 		}
 	],

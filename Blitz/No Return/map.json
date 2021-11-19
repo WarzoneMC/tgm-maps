@@ -9,7 +9,7 @@
 		{
 			"id": "purple",
 			"name": "Purple",
-			"color": "dark_purple",
+			"color": "dark purple",
 			"min": 1,
 			"max": 25
 		},
@@ -45,23 +45,23 @@
 	"itemremove": [
 		"bow", "golden apple", "bread", "arrow", "iron boots",
 		{
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
@@ -80,8 +80,5 @@
 			"regions": ["global"],
 			"message": "&cYou are not allowed to modify terrain here."
 		}
-	],
-	"regions": [
-		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	]
 }

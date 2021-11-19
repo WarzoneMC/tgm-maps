@@ -41,20 +41,28 @@
 			"name": "red_kit",
 			"teams": ["red"],
 			"items": [
-				{"type": "item", "material": "red stained glass", "canPlaceOn": ["red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass", "dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"], "slot": 0, "amount": 8},
-				
+				{
+					"type": "item", "material": "red stained glass", "canPlaceOn": [
+						"red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass",
+						"dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"
+					],
+					"slot": 0, "amount": 8
+				},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
-
 			]
 		},
 		{
 			"name": "blue_kit",
 			"teams": ["blue"],
 			"items": [
-				{"type": "item", "material": "blue stained glass", "canPlaceOn": ["red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass", "dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"], "slot": 0, "amount": 8},
-				
+				{
+					"type": "item", "material": "blue stained glass", "canPlaceOn": [
+						"red terracotta", "blue terracotta", "brown terracotta", "tnt", "white stained glass", "red stained glass", "blue stained glass",
+						"dark oak stairs", "stone brick stairs", "smooth stone slab", "dark oak slab", "dark oak fence", "iron trapdoor", "white carpet", "spawner"
+					],
+					"slot": 0, "amount": 8
+				},
 				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
-
 			]
 		}
 	]

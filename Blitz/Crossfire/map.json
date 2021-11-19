@@ -25,9 +25,9 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "756.5, 95, 375.5"},
-        	{"teams": ["runners"], "coords": "748.5, 47, 438.5"},
-        	{"teams": ["runners"], "coords": "756.5, 47, 438.5"},
-        	{"teams": ["runners"], "coords": "764.5, 47, 438.5"},
+		{"teams": ["runners"], "coords": "748.5, 47, 438.5"},
+		{"teams": ["runners"], "coords": "756.5, 47, 438.5"},
+		{"teams": ["runners"], "coords": "764.5, 47, 438.5"},
 		{"teams": ["defenders"], "coords": "756.5, 86, 405.5"}
 	],
 	"kits": [
@@ -61,17 +61,17 @@
 		"string", "sponge", "arrow", "stick", "oak planks",  "wooden sword",
 		"oak sign", "acacia sign", "spruce sign", "dark oak sign", "birch sign", "jungle sign",
 		{
-            		"type": "leather helmet",
-            		"drop": true
-        	},
+			"type": "leather helmet",
+			"drop": true
+		},
 		{
-            		"type": "leather chestplate",
-            		"drop": true
-        	},
+			"type": "leather chestplate",
+			"drop": true
+		},
 		{
-            		"type": "leather leggings",
-            		"drop": true
-        	}
+			"type": "leather leggings",
+			"drop": true
+		}
 	],
     "damageControl": {
    		"FALL": false

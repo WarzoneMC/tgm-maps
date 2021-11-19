@@ -59,21 +59,21 @@
 	"itemremove": [
 		"iron sword", "bow", "arrow", "golden carrot",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
+			"type": "leather helmet",
+			"drop": true
+		},
 		{
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -89,16 +89,16 @@
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou are not allowed to enter this region."},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter this region."}
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou are not allowed to enter this region."}
 	],
 	"regions": [
-			{"id": "red-spawn-protection", "type": "cuboid", "min": "149, 0, -10", "max": "160, oo, 0"},
-        	{"id": "blue-spawn-protection", "type": "cuboid", "min": "211, 0, 51", "max": "220, oo, 60"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "149, -oo, -10", "max": "160, oo, 0"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "211, -oo, 51", "max": "220, oo, 60"}
 	],
 	"damageControl": {
 		"fall": false
 	},
 	"time": {
-        "limit": 600
-    }
+		"limit": 600
+	}
 }

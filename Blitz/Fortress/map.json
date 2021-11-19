@@ -47,22 +47,22 @@
 	"itemremove": [
 		"stone sword", "bow", "oak planks", "golden apple", "cooked beef", "arrow", "chainmail leggings",
 		{
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	]
 }
