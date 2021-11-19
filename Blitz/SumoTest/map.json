@@ -89,7 +89,6 @@
 		}
 	],
 	"itemremove": [
-		  "black dye",
 		{
 			"type": "leather helmet",
 			"drop": true
