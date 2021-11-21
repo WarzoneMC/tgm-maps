@@ -5,7 +5,7 @@
 		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "Wesdial_"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0",
+	"version": "1.1.0",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -24,7 +24,7 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-2.5, 139, 0.5, 0.8"},
+		{"teams": ["spectators"], "coords": "-0.5, 139, -0.5"},
 		{"teams": ["blue"], "coords": "6.5, 84, 5.5, 90"},
 		{"teams": ["blue"], "coords": "6.5, 84, 4.5, 90"},
 		{"teams": ["blue"], "coords": "6.5, 84, 3.5, 90"},
@@ -79,12 +79,25 @@
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "black dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true}
 			],
 			"effects": [
 				{"type": "saturation", "duration": 99999, "amplifier": 4, "particles": true},
 				{"type": "regeneration", "duration": 99999, "amplifier": 0, "particles": true}
+			]
+		},
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"type": "item", "material": "blue dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"type": "item", "material": "red dye", "displayName": "&cSUMO WEAPON", "slot": 0}
 			]
 		}
 	],
@@ -106,6 +119,63 @@
 		"fall": false
 	},
 	"time": {
-        	"limit": 600
-    	}
+		"limit": 600,
+		"broadcasts": [
+			{
+				"message": "&cWatch out! The top platform is breaking!",
+				"interval": 20,
+				"repeat": false,
+				"commands":
+				[
+					"execute at @r run fill 9 80 9 -11 83 -11 blue_stained_glass replace blue_terracotta",
+					"execute at @r run fill 9 80 9 -11 83 -11 red_stained_glass replace red_terracotta",
+					"execute at @r run fill 9 80 9 -11 83 -11 black_stained_glass replace black_terracotta",
+					"execute at @r run fill 9 80 9 -11 83 -11 white_stained_glass replace white_terracotta"
+				]
+			},
+			{
+				"message": "&cThe top platform has crumbled!",
+				"interval": 30,
+				"repeat": false,
+				"commands":
+				["execute at @r run fill 9 80 9 -11 83 -11 air destroy"]
+			},
+			{
+				"message": "&cWatch out! The second layer of platforms is breaking!",
+				"interval": 50,
+				"repeat": false,
+				"commands":
+				[
+					"execute at @r run fill -25 65 -25 23 67 23 black_stained_glass replace black_terracotta",
+					"execute at @r run fill -25 65 -25 23 67 23 white_stained_glass replace white_terracotta"
+				]
+			},
+			{
+				"message": "&cThe second layer of platforms has crumbled!",
+				"interval": 60,
+				"repeat": false,
+				"commands":
+				["execute at @r run fill -25 65 -25 23 67 23 air destroy"]
+			},
+			{
+				"message": "&cWatch out! The third layer of platforms is breaking!",
+				"interval": 80,
+				"repeat": false,
+				"commands":
+				[
+					"execute at @r run fill 9 40 9 -11 37 -11 blue_stained_glass replace blue_terracotta",
+					"execute at @r run fill 9 40 9 -11 37 -11 red_stained_glass replace red_terracotta",
+					"execute at @r run fill 9 40 9 -11 37 -11 black_stained_glass replace black_terracotta",
+					"execute at @r run fill 9 40 9 -11 37 -11 white_stained_glass replace white_terracotta"
+				]
+			},
+			{
+				"message": "&cThe third layer of platforms has crumbled!",
+				"interval": 90,
+				"repeat": false,
+				"commands":
+				["execute at @r run fill 9 40 9 -11 37 -11 air destroy"]
+			}
+		]
+	}
 }
