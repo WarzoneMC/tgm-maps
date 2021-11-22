@@ -1,174 +1,176 @@
 {
-    "name": "Rampant",
-    "authors": [
-        {"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
-    ],
-    "version": "1.2.2",
-    "gametype": "CTF",
-    "teams": [
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 15
-        },
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "dark red",
-            "min": 1,
-            "max": 15
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "133.5, 41, 56, -90"},
-        {"teams": ["blue"], "coords": "154.5, 30.5, 137.5, -90"},
-        {"teams": ["red"], "coords": "177.5, 30.5, -25.5, 90"}
-    ],
+	"name": "Rampant",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.2.3",
+	"gametype": "CTF",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "133.5, 41, 56, -90"},
+		{"teams": ["blue"], "coords": "154.5, 30.5, 137.5, -90"},
+		{"teams": ["red"], "coords": "177.5, 30.5, -25.5, 90"}
+	],
 	"time": {
 		"limit": 1200
 	},
-    "ctf": {
-        "objective": "amount",
-        "options": {
-            "captures": 3
-        },
-        "flags": [
-            {
-                "team": "red",
-                "location": "156, 32, -12",
-                "type": "red",
-                "patterns": [],
-                "rotation": "east",
-                "effects": [
-                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false}
-                ]
-            },
-            {
-                "team": "blue",
-                "location": "175, 32, 123",
-                "type": "blue",
-                "patterns": [],
-                "rotation": "west",
-                "effects": [
-                    {"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false}
-                ]
-            }
-        ],
-        "bases": [
-            {"region": "red-net", "team": "red"},
-            {"region": "blue-net", "team": "blue"}
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 3
+		},
+		"flags": [
+			{
+				"team": "red",
+				"location": "156, 32, -12",
+				"type": "red",
+				"patterns": [],
+				"rotation": "east",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
+					{"type": "speed", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "increase damage", "duration": 1000000, "amplifier": 0, "particles": false}
+				]
+			},
+			{
+				"team": "blue",
+				"location": "175, 32, 123",
+				"type": "blue",
+				"patterns": [],
+				"rotation": "west",
+				"effects": [
+					{"type": "health boost", "duration": 1000000, "amplifier": -3, "particles": false},
+					{"type": "speed", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "increase damage", "duration": 1000000, "amplifier": 0, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "red-net", "team": "red"},
+			{"region": "blue-net", "team": "blue"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
 
-                {"type": "item", "material": "spruce planks", "slot": 4, "amount": 48},
-                {"type": "item", "material": "cobblestone", "slot": 5, "amount": 24},
+				{"type": "item", "material": "spruce planks", "slot": 4, "amount": 48},
+				{"type": "item", "material": "cobblestone", "slot": 5, "amount": 24},
 
-                {"type": "item", "material": "arrow", "slot": 7, "amount": 24},
-                {"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
 
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "damage resistance", "duration": 60, "amplifier": 10, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        "stone sword", "bow", "stone pickaxe", "stone axe",
-        "spruce log", "spruce planks", "cobblestone",
-        "arrow", "golden carrot",
-        "chainmail chestplate", "iron boots",
-        {
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1},
-                    {"material": "cobblestone", "amount": 8},
-                    {"material": "arrow", "amount": 8}
-                ]
-            }
-        },
-        {
-            "count": 6,
-            "repeat": false,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 3},
-                    {"material": "flint and steel", "durability": 61}
-                ]
-            }
-        },
-        {
-            "count": 8,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "tnt"}
-                ]
-            }
-        }
-    ],
-    "respawn": {
-        "rules": [
-            {"delay": 2500}
-        ]
-    },
-    "filters": [
-        {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage resistance", "duration": 60, "amplifier": 10, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "spruce log", "spruce planks", "cobblestone",
+		"arrow", "golden carrot", "golden apple", "chainmail chestplate", "iron boots",
+		{
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "cobblestone", "amount": 8},
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		},
+		{
+			"count": 6,
+			"repeat": false,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 3},
+					{"material": "flint and steel", "durability": 61}
+				]
+			}
+		},
+		{
+			"count": 8,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt"}
+				]
+			}
+		}
+	],
+	"respawn": {
+		"rules": [
+			{"delay": 2500}
+		]
+	},
+	"filters": [
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
 
-        {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-base-block", "red-base-block", "blue-net-extra-protection", "red-net-extra-protection"], "message": "&cYou may not modify terrain here."},
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-base-block", "red-base-block", "blue-net-extra-protection", "red-net-extra-protection"], "message": "&cYou may not modify terrain here."},
 
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base-entry"], "message": "&cYou may not enter this region."},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base-entry"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base-entry"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base-entry"], "message": "&cYou may not enter this region."},
 
-        {"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-castle-build-limit", "red-castle-build-limit", "middle-region-build-limit"], "message": "&cYou have reached the build height limit."}
-    ],
-    "regions": [
-        {"id": "blue-base-block", "type": "cuboid", "min": "175, 0, 134", "max": "149, 36, 140"},
-        {"id": "red-base-block", "type": "cuboid", "min": "156, 0, -23", "max": "182, 36, -29"},
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-castle-build-limit", "red-castle-build-limit", "middle-region-build-limit"], "message": "&cYou have reached the build height limit."}
+	],
+	"regions": [
+		{"id": "blue-base-block", "type": "cuboid", "min": "175, 0, 134", "max": "149, 36, 140"},
+		{"id": "red-base-block", "type": "cuboid", "min": "156, 0, -23", "max": "182, 36, -29"},
 
-        {"id": "blue-base-entry", "type": "cuboid", "min": "175, 0, 135", "max": "149, 35, 140"},
-        {"id": "red-base-entry", "type": "cuboid", "min": "156, 0, -24", "max": "182, 35, -29"},
+		{"id": "blue-base-entry", "type": "cuboid", "min": "175, 0, 135", "max": "149, 35, 140"},
+		{"id": "red-base-entry", "type": "cuboid", "min": "156, 0, -24", "max": "182, 35, -29"},
 
-        {"id": "blue-net", "type": "cuboid", "min": "174, 30, 122", "max": "176, 35, 124"},
-        {"id": "red-net", "type": "cuboid", "min": "155, 30, -13", "max": "157, 35, -11"},
+		{"id": "blue-net", "type": "cuboid", "min": "174, 30, 122", "max": "176, 35, 124"},
+		{"id": "red-net", "type": "cuboid", "min": "155, 30, -13", "max": "157, 35, -11"},
 
-        {"id": "blue-net-extra-protection", "type": "cuboid", "min": "175, 30, 121", "max": "175, 35, 125"},
-        {"id": "red-net-extra-protection", "type": "cuboid", "min": "156, 30, -14", "max": "156, 35, -10"},
+		{"id": "blue-net-extra-protection", "type": "cuboid", "min": "175, 30, 121", "max": "175, 35, 125"},
+		{"id": "red-net-extra-protection", "type": "cuboid", "min": "156, 30, -14", "max": "156, 35, -10"},
 
-        {"id": "blue-castle-build-limit", "type": "cuboid", "min": "182, 48, 109", "max": "149, oo, 140"},
-        {"id": "red-castle-build-limit", "type": "cuboid", "min": "149, 48, 2", "max": "182, oo, -29"},
+		{"id": "blue-castle-build-limit", "type": "cuboid", "min": "182, 48, 109", "max": "149, oo, 140"},
+		{"id": "red-castle-build-limit", "type": "cuboid", "min": "149, 48, 2", "max": "182, oo, -29"},
 
-        {"id": "middle-region-build-limit", "type": "cuboid", "min": "149, 38, 3", "max": "182, oo, 108"},
+		{"id": "middle-region-build-limit", "type": "cuboid", "min": "149, 38, 3", "max": "182, oo, 108"},
 
-        {"id": "map", "type": "cuboid", "min": "149, 0, -29", "max": "182, oo, 140"}
-    ]
+		{"id": "map", "type": "cuboid", "min": "149, 0, -29", "max": "182, oo, 140"}
+	]
 }
