@@ -32,7 +32,7 @@
 			{
 				"name": "Monument",
 				"teams": ["purple"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "381, 17, -665",
 					"max": "381, 19, -665"
@@ -42,7 +42,7 @@
 			{
 				"name": "Monument&r",
 				"teams": ["green"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "434, 17, -555",
 					"max": "434, 19, -555"
