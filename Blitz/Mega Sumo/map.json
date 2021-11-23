@@ -1,0 +1,282 @@
+{
+	"name": "Mega Sumo",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "__iMan"},
+		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "Wesdial_"},
+		{"uuid": "6ff4ade9-e968-4acd-80eb-1a6fa89629fb", "username": "_Pear"},
+		{"uuid": "d9efc01d-cd33-46c2-afe5-a6fc3f419f77", "username": "_NotMaria"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0",
+	"stats": {"disable": true},
+	"gamerules": {
+		"logAdminCommands": false
+	},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Light Blue",
+			"color": "aqua",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "dark_green",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark_purple",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "lime",
+			"name": "Lime",
+			"color": "green",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark_aqua",
+			"min": 1,
+			"max": 4
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 60, 0.5, 0.8"},
+		{"teams": ["blue"], "coords": "14.5, 41, -13.5, 44.3"},
+		{"teams": ["red"], "coords": "14.5, 41, 14.5, 135"},
+		{"teams": ["green"], "coords": "20.5, 41, 0.5, 90"},
+		{"teams": ["purple"], "coords": "0.5, 41, 20.5, -180"},
+		{"teams": ["lime"], "coords": "-13.5, 41, 14.5, -135.2"},
+		{"teams": ["orange"], "coords": "-19.5, 41, 0.5, -90"},
+		{"teams": ["yellow"], "coords": "-13.5, 41, -13.5, -45"},
+		{"teams": ["cyan"], "coords": "0.5, 41, -19.5, 0.4"}
+	],
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "black dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 99999, "amplifier": 4, "particles": true},
+				{"type": "regeneration", "duration": 99999, "amplifier": 0, "particles": true}
+			]
+		}
+	],
+	"itemremove": [
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "black dye",
+			"drop": true
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "purple", "lime", "orange", "yellow", "cyan"], "regions": ["global"], "message": "&cDon't touch!"}
+	
+    	],
+	"damageControl": {
+		"fall": false
+	},
+	"time": {
+        	"limit": 600,
+			"broadcasts": [
+			{
+				"message": "&cWatch out! The first platform will break in 10 seconds!",
+				"interval": 19,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe first platform will break in 5 seconds!",
+				"interval": 25,
+				"repeat": false,
+				"commands": []
+			},
+			{
+			    "message": "&cThe First platform will break in 4 seconds!",
+				"interval": 26,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe First platform will break in 3 seconds!",
+				"interval": 27,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe First platform will break in 2 seconds!",
+				"interval": 28,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe First platform will break in 1 second!",
+				"interval": 29,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&eThe first platform has crumbled!",
+				"interval": 30,
+				"repeat": false,
+				"commands":
+				[
+					"execute at @r run fill 19 29 -17 -18 24 18 air"
+				]
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 10 seconds!",
+				"interval": 40,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 5 seconds!",
+				"interval": 45,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 4 seconds!",
+				"interval": 46,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 3 seconds!",
+				"interval": 47,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 2 seconds!",
+				"interval": 48,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe second layer of platforms will break in 1 second!",
+				"interval": 49,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&eThe second layer of platforms has crumbled!",
+				"interval": 50,
+				"repeat": false,
+				"commands": ["execute at @r run fill 21 24 -19 -20 15 20 air"]
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 10 seconds!",
+				"interval": 60,
+				"repeat": false,
+				"commands": [] 
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 5 seconds!",
+				"interval": 65,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 4 seconds!",
+				"interval": 66,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 3 seconds!", 
+				"interval": 67,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 2 seconds!",
+				"interval": 68,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe third layer of platforms will break in 1 second!",
+				"interval": 69,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&eThe third layer of platforms has crumbled!",
+				"interval": 70,
+				"repeat": false,
+				"commands": ["execute at @r run fill -22 13 23 23 7 -23 air"]
+			},
+			{
+				"message": "&cWATCH OUT! The World border has appeared.",
+				"interval": 90,
+				"repeat": false,
+				"commands": [
+				"execute at @r run worldborder center 0.5 0.522",
+				"execute at @r run worldborder set 52"
+				]
+			},
+			{
+				"message": "&cThe World border will start shrinking in 3 seconds!",
+				"interval": 95,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe World border will start shrinking in 2 seconds!",
+				"interval": 96,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe World border will start shrinking in 1 second!",
+				"interval": 97,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cOh Boy here we go, &eThe world border is now shrinking!",
+				"interval": 98,
+				"repeat": false,
+				"commands": ["execute at @r run worldborder set 1 20"]
+			}
+		]
+	}
+}
+
