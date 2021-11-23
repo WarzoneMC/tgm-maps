@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "38ab65dd-95f9-406f-917c-6accc995421f", "username": "GoldenOre"}
 	],
-	"version": "1.4.2",
+	"version": "1.5.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -32,7 +32,7 @@
 			{
 				"name": "Monument",
 				"teams": ["purple"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "381, 17, -665",
 					"max": "381, 19, -665"
@@ -42,7 +42,7 @@
 			{
 				"name": "Monument&r",
 				"teams": ["green"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "434, 17, -555",
 					"max": "434, 19, -555"
@@ -107,10 +107,44 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 598, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&61 second until the monuments change.", "interval": 599, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4beacons&r&6.",
+				"interval": 600,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 381 17 -665 381 19 -665 beacon replace obsidian",
+					"execute at @r run fill 434 17 -555 434 19 -555 beacon replace obsidian",
+					"execute at @r run playsound minecraft:block.beacon.deactivate master @a 407.5 20 -610 100 0"
+				]
+			},
+			{"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6.", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{"message": "&63 second until the monuments change.", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 407.5 20 -610 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4coal blocks&r&6.",
+				"interval": 900,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 381 17 -665 381 19 -665 coal_block replace beacon",
+					"execute at @r run fill 434 17 -555 434 19 -555 coal_block replace beacon",
+					"execute at @r run playsound minecraft:block.beacon.deactivate master @a 407.5 20 -610 100 0"
+				]
+			}
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["purple", "green"],
-			"regions": ["purple-spawn-protection", "green-spawn-protection"],
+			"regions": ["purple-spawn-protection", "green-spawn-protection", "beacon-prot"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
@@ -125,6 +159,14 @@
 	"regions": [
 		{"id": "purple-spawn-protection", "type": "cuboid", "min": "446, -oo, -687", "max": "450, oo, -682"},
 		{"id": "green-spawn-protection", "type": "cuboid", "min": "365, -oo, -533", "max": "369, oo, -538"},
+		{
+			"id": "beacon-prot", "type": "meta", "regions": [
+				{"min": "377, 31, -675", "max": "379, 31, -673"},
+				{"min": "378, 32, -674", "max": "378, oo, -674"},
+				{"min": "436, 31, -547", "max": "438, 31, -545"},
+				{"min": "437, 32, -546", "max": "437, oo, -546"}
+			]
+		},
 		{"id": "map", "type": "cuboid", "min": "345, -oo, -707", "max": "470, oo, -513"}
 	],
 	"buildHeight": 45
