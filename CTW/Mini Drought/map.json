@@ -50,7 +50,8 @@
 		}
 	],
 	"itemremove": [
-		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string", "stone sword", "iron pickaxe", "bow", "golden axe",
+		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string",
+		"stone sword", "iron pickaxe", "bow", "golden axe", "golden apple",
 		{
 			"type": "leather chestplate",
 			"death": true
