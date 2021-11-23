@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -49,13 +49,13 @@
 			]
 		}
 	],
-
 	"itemremove": [
-		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string", "stone sword", "iron pickaxe", "bow", "golden axe",
+		"cooked chicken", "sandstone", "birch planks", "ladder", "cobweb", "arrow", "bucket", "water bucket", "glass bottle", "string",
+		"stone sword", "iron pickaxe", "bow", "golden axe", "golden apple",
 		{
-            		"type": "leather chestplate",
-            		"death": true
-        	}
+			"type": "leather chestplate",
+			"death": true
+		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "-9.5, 12, -330.5, 45"},
@@ -63,46 +63,44 @@
 		{"teams": ["blue"], "coords": "-1.5, 9, -268.5, 135"}
 	],
 	"regions": [
-		
-
-		{"id": "blue-base", "min": "8, 0, -279", "max": "-12, oo, -259"},
-        	{
-            		"id": "blue-base-bridges", "type": "meta",
-            		"regions": [
-                		{"min": "-7, 0, -284", "max": "3, oo, -280"},
-				{"min": "-17, 0, -274", "max": "-13, oo, -264"}
-            		]
-        	},
-		{"id": "red-base", "min": "-81, 0, -328", "max": "-61, oo, -348"},
-        	{
-            		"id": "red-base-bridges", "type": "meta",
-            		"regions": [
-               			{"min": "-67, 0, -324", "max": "-77, oo, -328"},
-				{"min": "-57, 0, -334", "max": "-61, oo, -344"}
-            		]
-        	},
-		{"id": "center", "type": "cuboid", "min": "-54, 0, -321", "max": "-20, oo, -287"},
-        	{
-            		"id": "red-wool-rooms", "type": "meta",
-            		"regions": [
-                		{"min": "-78, 0, -360", "max": "-71, oo, -353"},
-				{"min": "-93, 0, -338", "max": "-86, oo, -345"}
-            		]
-        	},
+		{"id": "blue-base", "min": "8, -oo, -279", "max": "-12, oo, -259"},
 		{
-            		"id": "red-wool-build", "type": "meta",
-            		"regions": [
-                		{"min": "-78, 0, -360", "max": "-72, oo, -353"},
-				{"min": "-93, 0, -339", "max": "-86, oo, -345"}
-            		]
-        	},
-        	{
-            		"id": "blue-wool-rooms", "type": "meta",
-            		"regions": [
-                		{"min": "-2, 0, -254", "max": "5, oo, -247"},
-				{"min": "13, 0, -269", "max": "20, oo, -262"}
-            		]
-        	}
+			"id": "blue-base-bridges", "type": "meta",
+			"regions": [
+				{"min": "-7, -oo, -284", "max": "3, oo, -280"},
+				{"min": "-17, -oo, -274", "max": "-13, oo, -264"}
+			]
+		},
+		{"id": "red-base", "min": "-81, -oo, -328", "max": "-61, oo, -348"},
+		{
+			"id": "red-base-bridges", "type": "meta",
+			"regions": [
+				{"min": "-67, -oo, -324", "max": "-77, oo, -328"},
+				{"min": "-57, -oo, -334", "max": "-61, oo, -344"}
+			]
+		},
+		{"id": "center", "type": "cuboid", "min": "-54, 0, -321", "max": "-20, oo, -287"},
+		{
+			"id": "red-wool-rooms", "type": "meta",
+			"regions": [
+				{"min": "-78, -oo, -360", "max": "-71, oo, -353"},
+				{"min": "-93, -oo, -338", "max": "-86, oo, -345"}
+			]
+		},
+		{
+			"id": "red-wool-build", "type": "meta",
+			"regions": [
+				{"min": "-78, -oo, -360", "max": "-72, oo, -353"},
+				{"min": "-93, -oo, -339", "max": "-86, oo, -345"}
+			]
+		},
+		{
+			"id": "blue-wool-rooms", "type": "meta",
+			"regions": [
+				{"min": "-2, -oo, -254", "max": "5, oo, -247"},
+				{"min": "13, -oo, -269", "max": "20, oo, -262"}
+			]
+		}
 	],
 	"filters": [
 		{
@@ -110,21 +108,21 @@
 			"regions": ["blue-wool-rooms"],
 			"message": "&cYou may not break your own wool room!"
 		},
-        {
+		{
 			"type": "block-interact", "evaluate": "deny", "teams": ["red"],
 			"regions": ["red-wool-build"],
 			"message": "&cYou may not break your own wool room!"
 		},
-        {
+		{
 			"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["blue-wool-rooms", "red-wool-rooms"],
 			"blocks": ["chest", "pink wool", "purple wool", "green wool", "lime wool"],
-            "message": "&cYou may not break wool chests"
+			"message": "&cYou may not break wool chests"
 		},
-        {
+		{
 			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["blue-wool-rooms", "red-wool-rooms"],
-            "message": "&cYou may not place blocks here"
+			"message": "&cYou may not place blocks here"
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["red-wool-rooms"], "message": "&cYou may not enter your own wool room!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base", "blue-base-bridges"], "message": "&cYou may not enter the enemy team's base!"},
@@ -132,9 +130,9 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base", "red-base-bridges"], "message": "&cYou may not enter the enemy team's base!"},
 		{
 			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
-	  		"inverted": true,
-	  		"regions": ["center"],
-	  		"message": "&cYou cannot build outside the map area!"
+			"inverted": true,
+			"regions": ["center"],
+			"message": "&cYou cannot build outside the map area!"
 		},
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
@@ -144,7 +142,7 @@
 		{
 			"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["blue-base", "red-base", "blue-base-bridges", "red-base-bridges"],
-            "message": "&cYou may not place blocks here"
+			"message": "&cYou may not place blocks here"
 		}
 	],
 	"ctw": {
@@ -179,10 +177,10 @@
 			}
 		]
 	},
-    "crafting": {
-    	"remove": [
-            "birch boat"
-        ]
-    },
+	"crafting": {
+		"remove": [
+			"birch boat"
+		]
+	},
 	"buildHeight": 23
 }
