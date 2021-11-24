@@ -1,0 +1,107 @@
+{
+	"name": "Trenches DTM",
+	"authors": [
+		{"uuid": "8baf96fd-0ea9-4ed8-b804-48752bece664", "username": "Lorddevington"},
+        {"uuid": "652ed2c0-eb3d-471f-8fa8-e997bf351361", "username": "Beears"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 30
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 30
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-28.0, 75, -20.0, 45"},
+		{"teams": ["red"], "coords": "28.5, 6, -76.5, 45"},
+		{"teams": ["blue"], "coords": "-83.5, 6, 36.5, -135"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Blue Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian"],
+				"region": { 
+					"min": "-63, 14, 45",
+					"max": "-63, 13, 45" 
+				},
+				"health": 2
+			},
+			{
+				"name": "Red Monument&r",
+				"teams": ["red"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "7, 14, -86",
+					"max": "7, 13, -86" 
+				},
+				"health": 2
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+                {"type": "item", "material": "iron shovel", "slot": 4, "unbreakable": true},
+                {"type": "item", "material": "bread", "slot": 5, "amount": 64},
+                {"type": "item", "material": "spruce planks", "slot": 6, "amount": 64},
+                {"type": "item", "material": "arrow", "slot": 28, "amount": 32},
+
+                {"type": "item", "material": "chainmail helmet", "slot": "helmet", "unbreakable": true},
+                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+                {"type": "item", "material": "chainmail boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "iron axe", "iron shovel", "bread", "spruce planks", "arrow",
+        "chainmail helmet", "leather chestplate", "chainmail leggings", "chainmail boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+			{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["world"], "message": "&cYou may not build over the void."},
+			
+			{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["red-spawn-protection", "blue-spawn-protection"], "message": "&cYou may not modify terrain here."},
+			
+			{"type": "enter", "evaluate": "deny", "teams": ["red",], "regions": ["blue-spawn-protection-main"], "message": "&cYou may not enter the enemy spawn."},
+			{"type": "enter", "evaluate": "deny", "teams": ["blue",], "regions": ["red-spawn-protection-main"], "message": "&cYou may not enter the enemy spawn."}
+    ],
+    "regions": [
+        {"id": "world", "type": "cuboid", "min": "-103, 0, -96", "max": "47, oo, 55"},
+        
+        {"id": "red-spawn-protection", "type": "cuboid", "min": "20.5, 0, -71.5", "max": "38.5, oo, -85.5"},
+        {"id": "blue-spawn-protection", "type": "cuboid", "min": "-75.5, 0, 31.5", "max": "-93.5, oo, 45.5"},
+		
+		{"id": "red-spawn-protection-main", "type": "cuboid", "min": "20.5, 0, -71.5", "max": "38.5, oo, -85.5"},
+		{"id": "blue-spawn-protection-main", "type": "cuboid", "min": "-76.5, 0, 31.5", "max": "-93.5, oo, 45,5"}
+	],
+	"buildHeight": 39
+}
