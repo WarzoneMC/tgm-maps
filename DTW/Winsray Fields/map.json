@@ -1,0 +1,178 @@
+{
+	"name": "Winsray Fields",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 30
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 30
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "12.5, 63, 81.5, -90"},
+		{"teams": ["blue"], "coords": "64.5, 13, -46.5"},
+		{"teams": ["blue"], "coords": "52.5, 13, -46.5"},
+		{"teams": ["blue"], "coords": "44, 13, -36, -90"},
+		{"teams": ["red"], "coords": "103.5, 13, 209.5, 180"},
+		{"teams": ["red"], "coords": "115.5, 13, 209.5, 180"},
+		{"teams": ["red"], "coords": "124, 13, 199, 90"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Monument&r",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "37, 23, 7",
+					"max": "39, 26, 9"
+				},
+				"health": 14
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "106, 19, -31",
+					"max": "108, 22, -33"
+				},
+				"health": 14
+			},
+			{
+				"name": "Left Monument&r",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "128, 23, 153",
+					"max": "130, 26, 155"
+				},
+				"health": 14
+			},
+			{
+				"name": "Right Monument&r",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "59, 19, 193",
+					"max": "61, 22, 195"
+				},
+				"health": 14
+			}
+		]
+	},
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"spruce boat",
+			"birch boat",
+			"jungle boat",
+			"acacia boat",
+			"dark oak boat"
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"material": "iron axe", "slot": 3, "unbreakable": true},
+				{"material": "oak planks", "slot": 4, "amount": 64},
+				{"material": "glass", "slot": 5, "amount": 32},
+				{"material": "golden carrot", "slot": 6, "amount": 64},
+				{"material": "golden apple", "slot": 7, "amount": 1},
+				{"material": "bucket", "slot": 8, "amount": 1},
+
+				{"material": "arrow", "slot": 28, "amount": 32},
+
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "glass", "golden carrot",
+		"golden apple", "bucket", "arrow", "chainmail leggings", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8},
+					{"material": "oak planks", "amount": 16}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection", "beacon-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build over the void."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{
+			"id": "blue-spawn-protection", "type": "meta",
+			"regions": [
+				{"min": "40, -oo, -51", "max": "53, oo, -27"},
+				{"min": "54, -oo, -51", "max": "68, oo, -31"},
+				{"min": "69, -oo, -51", "max": "72, oo, -39"}
+			]
+		},
+		{
+			"id": "red-spawn-protection", "type": "meta",
+			"regions": [
+				{"min": "114, -oo, 189", "max": "127, oo, 213"},
+				{"min": "99, -oo, 193", "max": "113, oo, 213"},
+				{"min": "95, -oo, 201", "max": "98, oo, 213"}
+			]
+		},
+		{
+			"id": "beacon-protection", "type": "meta",
+			"regions": [
+				{"min": "107, -oo, -41", "max": "107, oo, -41"},
+				{"min": "30, -oo, 8", "max": "30, oo, 8"},
+				{"min": "60, -oo, 203", "max": "60, oo, 203"},
+				{"min": "137, -oo, 154", "max": "137, oo, 154"}
+			]
+		}
+	],
+	"buildHeight": 40
+}
