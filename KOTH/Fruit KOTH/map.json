@@ -1,0 +1,147 @@
+{
+	"name": "Fruit KOTH",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "__iMan"},
+		{"uuid": "6ff4ade9-e968-4acd-80eb-1a6fa89629fb", "username": "_Pear"},
+		{"uuid": "3d741e18-8da0-4780-a6b1-ca38e6768022", "username": "Svnti"},
+		{"uuid": "d9efc01d-cd33-46c2-afe5-a6fc3f419f77", "username": "_NotMaria"},
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"}
+	],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "pear",
+			"name": "Pears",
+			"color": "green",
+			"min": 1,
+			"max": 12
+		},
+		{
+			"id": "apple",
+			"name": "Apples",
+			"color": "red",
+			"min": 1,
+			"max": 12
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "72.5, 37, -19.5, 90"},
+		{"teams": ["pear"], "coords": "0.5, 15, 55.5, -180"},
+		{"teams": ["apple"], "coords": "0.5, 15, -55.5, 0.1"}
+	],
+	"points": {
+		"target": 1000
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Mid Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"type": "cylinder", "base": "0.5, 6, 0.5", "radius": 5, "height": 4},
+						{"min": "0, 12, 0", "max": "0, 13, 0"}
+					]
+				}
+			},
+			{
+				"name": "A Point",
+				"region": {
+					"type": "cylinder", "base": "29.5, 2, -26.5", "radius": 5, "height": 6
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"type": "cylinder", "base": "-28.5, 2, 27.5", "radius": 5, "height": 6
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "oak leaves", "slot": 2, "amount": 12},
+				{"type": "item", "material": "shears", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+
+				{"type": "item", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "oak leaves", "shears", "arrow", "golden carrot",
+		"iron helmet", "chainmail chestplate", "golden apple",
+		{
+            "type": "leather leggings",
+            "drop": true
+        },
+        {
+            "type": "leather boots",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&7[&6Fruit TIP&7] &eFall damage is disabled on this map!",
+				"interval": 2,
+				"repeat": false,
+				"commands": []
+			}
+		]
+	},
+	"damageControl": {
+		"FALL": false
+	},
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["pear", "apple"], "regions": ["top-protection", "a-protection", "b-protection", "apple-spawnprotection", "pear-spawnprotection"], "message": "&cYou are not allowed to modify terrain here."},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["apple", "pear"],
+			"regions": ["global"],
+			"blocks": ["oak leaves"], "message": "&cYou may only break oak leaves!"
+		},
+		{
+			"type": "blockPlace", "evaluate": "allow", "teams": ["apple", "pear"],
+			"regions": ["global"],
+			"blocks": ["oak leaves"], "message": "&cYou may only place oak leaves!"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["pear"], "regions": ["apple-spawn"], "message": "&cYou may not enter Apple's spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["apple"], "regions": ["pear-spawn"], "message": "&cYou may not enter Pear's spawn!"},
+		
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["apple", "pear"], "regions": ["apple-protection"], "message": "&cYou may not modifiy the terrain here!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["apple", "pear"], "regions": ["apple-protection"], "message": "&cYou may not modifiy the terrain here!"},
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["pear", "apple"], "regions": ["pear-protection"], "message": "&cYou may not modifiy the terrain here!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["pear", "apple"], "regions": ["pear-protection"], "message": "&cYou may not modifiy the terrain here!"}
+	],
+	"regions": [
+		{"id": "mid-protection", "min": "3, 8, 3", "max": "-3, oo, -3"},
+		{"id": "a-protection", "min": "19, 2, -17", "max": "25, oo, -23"},
+		{"id": "b-protection", "min": "-19, 2, 17", "max": "-25, oo, 23"},
+
+		{"id": "pear-spawn", "min": "-11.5, 15, 23.5", "max": "14.5, 32, 71"},
+		{"id": "pear-protection", "min": "-11.5, 15, 23.5", "max": "14.5, 32, 71"},
+		{"id": "apple-spawn", "min": "11.5, 15, -22.5", "max": "-11.5, 32, -69.5"},
+		{"id": "apple-protection", "min": "11.5, 15, -22.5", "max": "-11.5, 32, -69.5"}
+	],
+	"buildHeight": 18
+}
