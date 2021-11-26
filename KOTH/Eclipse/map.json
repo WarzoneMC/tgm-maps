@@ -1,0 +1,114 @@
+{
+	"name": "Eclipse",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"}
+	],
+	"version": "1.0.1",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-121.5, 10, 17.5, 90"},
+		{"teams": ["purple"], "coords": "-117.5, 1, 17.5, 90"},
+		{"teams": ["green"], "coords": "-151.5, 1, 17.5, -90"}
+	],
+	"points": {
+		"target": 300
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "A Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-137, 4, 29", "max": "-133, 4, 33"},
+						{"min": "-137, 5, 29", "max": "-132, 6, 34"}
+					]
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-137, 4, 1", "max": "-133, 4, 5"},
+						{"min": "-137, 5, 1", "max": "-132, 6, 6"}
+					]
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 3, "amount": 8},
+				{"type": "item", "material": "golden apple", "slot": 8, "amount": 1},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false},
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden carrot", "arrow", "golden apple", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["purple", "green"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"}
+	],
+	"regions": [
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-122, 1, 15", "max": "-115, 4, 19"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "-155, 1, 15", "max": "-148, 4, 19"}
+	]
+}
