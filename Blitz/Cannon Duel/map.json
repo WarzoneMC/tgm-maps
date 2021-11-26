@@ -163,7 +163,7 @@
         {
             "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
             "regions": ["red-platform", "blue-platform"]
-        }
+        },
         {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
             "regions": ["map"], "message": "&cYou cannot build outside of the map."
