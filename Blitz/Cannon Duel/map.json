@@ -5,7 +5,8 @@
         {"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.1",
+    "version": "1.0.2",
+	"objective": "Be the first to eliminate the other player with TNT cannons! Platforms connect after 3 minutes!",
     "stats": {"disable": true},
     "teams": [
         {
@@ -118,7 +119,7 @@
         "limit": 300,
         "broadcasts": [
             {
-                "message": "&cYou have 30 seconds to sort your inventory",
+                "message": "&cYou have 30 seconds to sort your inventory. Look at all the stuff you have!",
                 "interval": 1,
                 "repeat": false,
                 "commands": ["execute at @r run fill 31 25 17 31 25 57 minecraft:air"]
@@ -151,6 +152,13 @@
         
         {"id": "red-waiting", "type": "cuboid", "min": "34, 51, 9", "max": "28, 55, 15"},
         {"id": "blue-waiting", "type": "cuboid", "min": "34, 51, 65", "max": "28, 55, 59"},
+	{
+            "id": "build", "type": "meta",
+            "regions": [
+                	{"min": "34, 25, 9", "max": "28, 40, 15"},
+			{"min": "34, 25, 65", "max": "28, 40, 59"},
+            ]
+        },
         {"id": "map", "type": "cuboid", "min": "37, 0, 6", "max": "25, oo, 68"}
     ],
     "filters": [
@@ -176,13 +184,13 @@
         },
         {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
-            "regions": ["map"], "message": "&cYou cannot build outside of the map."
+            "regions": ["build"], "message": "&cYou may not build here!"
         },
         {
 			"type": "block-interact", "evaluate": "deny", "teams": ["red-player", "blue-player"],
 			"regions": ["red-waiting", "blue-waiting"],
 			"message": "&cYou may not interact with the Waiting Room!."
-		}
+	}
     ],
     "buildHeight": 34
 }
