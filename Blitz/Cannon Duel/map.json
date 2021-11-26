@@ -1,0 +1,175 @@
+{
+    "name": "Cannon Duel",
+    "authors": [
+        {"uuid": "3fbec7dd-0a5f-40bf-9d11-885a54507112", "username": "Cubist"},
+        {"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"}
+    ],
+    "gametype": "Blitz",
+    "version": "1.0.0",
+    "stats": {"disable": true},
+    "teams": [
+        {
+            "id": "red-player",
+            "name": "Red Player",
+            "color": "dark_red",
+            "min": 1,
+            "max": 1
+        },
+        {
+            "id": "blue-player",
+            "name": "Blue Player",
+            "color": "blue",
+            "min": 1,
+            "max": 1
+        }
+    ],
+    "spawns": [
+        {"teams": ["spectators"], "coords": "31.5, 58, 37.5, 90"},
+        {"teams": ["red-player"], "coords": "31.5, 52, 12.5"},
+        {"teams": ["blue-player"], "coords": "31.5, 52, 62.5, 180"}
+    ],
+    "kits": [
+        {
+            "name": "Parent",
+            "items": [
+                {"material": "tnt", "slot": 9, "amount": 64},
+                {"material": "tnt", "slot": 18, "amount": 64},
+                {"material": "tnt", "slot": 27, "amount": 64},
+                {"material": "diamond pickaxe", "slot": 0},
+
+                {"material": "tnt", "slot": 10, "amount": 64},
+                {"material": "tnt", "slot": 19, "amount": 64},
+                {"material": "tnt", "slot": 28, "amount": 64},
+                {"material": "dispenser", "slot": 1, "amount": 16},
+
+                {"material": "tnt", "slot": 11, "amount": 64},
+                {"material": "tnt", "slot": 20, "amount": 64},
+                {"material": "tnt", "slot": 29, "amount": 64},
+                {"material": "cobblestone stair", "slot": 2, "amount": 16},
+
+                {"material": "oak trap door", "slot": 13, "amount": 16},
+                {"material": "ladder", "slot": 22, "amount": 16},
+                {"material": "crafting table", "slot": 31},
+                {"material": "nether brick fence", "slot": 4, "amount": 64},
+
+                {"material": "piston", "slot": 14, "amount": 16},
+                {"material": "lever", "slot": 23, "amount": 16},
+                {"material": "stone pressure plate", "slot": 32, "amount": 16},
+                {"material": "stone button", "slot": 5, "amount": 16},
+
+                {"material": "water bucket", "slot": 15},
+                {"material": "water bucket", "slot": 24},
+                {"material": "water bucket", "slot": 33},
+                {"material": "water bucket", "slot": 6},
+
+                {"material": "tnt", "slot": 17, "amount": 64},
+                {"material": "tnt", "slot": 26, "amount": 64},
+                {"material": "tnt", "slot": 35, "amount": 64},
+                {"material": "tnt", "slot": 8, "amount": 64},
+
+                {"material": "leather helmet", "enchantments": ["respiration:3"], "slot": "helmet", "unbreakable": true},
+                {"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+                {"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+                {"material": "leather boots", "slot": "boots", "unbreakable": true}
+            ],
+            "effects": [
+                {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false},
+                {"type": "saturation", "duration": 99999999, "amplifier": 100, "particles": false},
+                // time in seconds or ticks? needs to be 35 seconds
+                {"type": "resistance", "duration": 35, "amplifier": 5, "particles": false},
+                {"type": "health", "duration": 35, "amplifier": 5, "particles": false}
+            ]
+        },
+        {
+            "name": "Red Gear",
+            "teams": ["red-player"],
+            "items": [
+                {"material": "red stained glass", "slot": 12, "amount": 64},
+                {"material": "red terracotta", "slot": 21, "amount": 64},
+                {"material": "red terracotta", "slot": 30, "amount": 64},
+                {"material": "red terracotta", "slot": 3, "amount": 64}
+            ]
+        },
+        {
+            "name": "Blue Gear",
+            "teams": ["blue-player"],
+            "items": [
+                {"material": "blue stained glass", "slot": 12, "amount": 64},
+                {"material": "blue terracotta", "slot": 21, "amount": 64},
+                {"material": "blue terracotta", "slot": 30, "amount": 64},
+                {"material": "blue terracotta", "slot": 3, "amount": 64}
+            ]
+        },
+        {
+            "name": "The Watchers",
+            "teams": ["spectators"],
+            "effects": [
+                {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false}
+            ]
+        }
+    ],
+    "itemremove": "*",
+    "time": {
+        "limit": 300,
+        // 5 minutes?
+        "broadcasts": [
+            {
+                "message": "&cYou have 30 seconds to sort your inventory",
+                "interval": 1
+            },
+            {
+                "message": "&cDropping you into the map",
+                "interval": 30,
+                "repeat": false,
+                "commands": [
+                    "execute at @r run fill 27 16 8 36 35 17 minecraft:air replace minecraft:gray_stained_glass",
+                    "execute at @r run fill 27 16 58 36 35 67 minecraft:air replace minecraft:gray_stained_glass"
+                ]
+            },
+            {
+                "message": "&cConnecting the platforms",
+                "interval": 210,
+                "repeat": false,
+                "commands": [
+                    "execute at @r run fill 31 25 17 32 46 58 minecraft:gray_stained_glass replace minecraft:air"
+                ]
+            }
+        ]
+    },
+    "gamerules": {
+        "logAdminCommands": false,
+        "sendCommandFeedback": false
+    },
+    "regions": [
+        {"id": "red-platform", "type": "cuboid", "min": "34, 25, 9", "max": "28, 25, 15"},
+        {"id": "blue-platform", "type": "cuboid", "min": "34, 25, 65", "max": "28, 25, 59"},
+        {"id": "map", "type": "cuboid", "min": "37, 0, 6", "max": "25, oo, 68"}
+    ],
+    "filters": [
+        {
+            "type": "blockBreak", "evaluate": "deny", "teams": ["red-player", "blue-player"],
+            "regions": ["global"],
+            "blocks": ["light grey stained glass", "gray stained glass"],
+            "message": "&cYou may not break this!"
+        },
+        {
+            "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
+            "regions": ["blue-wool-sphere", "red-wool-sphere"],
+            "blocks": ["light grey stained glass", "gray stained glass"]
+        }
+        {
+            "type": "blockBreak", "evaluate": "deny", "teams": ["red-player", "blue-player"],
+            "regions": ["red-platform", "blue-platform"],
+            "message": "&cYou may not break this!"
+        },
+        {
+            "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
+            "regions": ["red-platform", "blue-platform"]
+        }
+        {
+            "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
+            "regions": ["map"], "message": "&cYou cannot build outside of the map."
+        }
+    ],
+    "buildHeight": 50
+}
