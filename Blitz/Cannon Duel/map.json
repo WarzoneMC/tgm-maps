@@ -5,7 +5,7 @@
         {"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "stats": {"disable": true},
     "teams": [
         {
@@ -62,6 +62,11 @@
                 {"material": "water bucket", "slot": 33},
                 {"material": "water bucket", "slot": 6},
 
+                {"material": "repeater", "slot": 16, "amount": 16},
+                {"material": "redstone torch", "slot": 25, "amount": 16},
+                {"material": "restone block", "slot": 34, "amount": 16},
+                {"material": "restone", "slot": 7, "amount": 16},
+
                 {"material": "tnt", "slot": 17, "amount": 64},
                 {"material": "tnt", "slot": 26, "amount": 64},
                 {"material": "tnt", "slot": 35, "amount": 64},
@@ -74,9 +79,7 @@
             ],
             "effects": [
                 {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false},
-                {"type": "saturation", "duration": 99999999, "amplifier": 100, "particles": false},
-                {"type": "resistance", "duration": 35, "amplifier": 5, "particles": false},
-                {"type": "health", "duration": 35, "amplifier": 5, "particles": false}
+                {"type": "saturation", "duration": 99999999, "amplifier": 100, "particles": false}
             ]
         },
         {
@@ -108,6 +111,9 @@
         }
     ],
     "itemremove": "*",
+    "damageControl": {
+        "fall": false
+    },
     "time": {
         "limit": 300,
         "broadcasts": [
@@ -115,15 +121,14 @@
                 "message": "&cYou have 30 seconds to sort your inventory",
                 "interval": 1,
                 "repeat": false,
-                "commands": []
+                "commands": ["execute at @r run fill 31 25 17 31 25 57 minecraft:air"]
             },
             {
                 "message": "&cDropping you into the map",
                 "interval": 30,
                 "repeat": false,
                 "commands": [
-                    "execute at @r run fill 27 16 8 36 35 17 minecraft:air replace minecraft:gray_stained_glass",
-                    "execute at @r run fill 27 16 58 36 35 67 minecraft:air replace minecraft:gray_stained_glass"
+                   "execute at @r run fill 36 51 7 26 51 67 minecraft:air replace minecraft:gray_stained_glass"
                 ]
             },
             {
@@ -131,7 +136,7 @@
                 "interval": 210,
                 "repeat": false,
                 "commands": [
-                    "execute at @r run fill 31 25 17 32 46 58 minecraft:gray_stained_glass replace minecraft:air"
+                    "execute at @r run fill 31 25 17 31 25 57 minecraft:gray_stained_glass"
                 ]
             }
         ]
@@ -143,18 +148,21 @@
     "regions": [
         {"id": "red-platform", "type": "cuboid", "min": "34, 25, 9", "max": "28, 25, 15"},
         {"id": "blue-platform", "type": "cuboid", "min": "34, 25, 65", "max": "28, 25, 59"},
+        
+        {"id": "red-waiting", "type": "cuboid", "min": "34, 51, 9", "max": "28, 55, 15"},
+        {"id": "blue-waiting", "type": "cuboid", "min": "34, 51, 65", "max": "28, 55, 59"},
         {"id": "map", "type": "cuboid", "min": "37, 0, 6", "max": "25, oo, 68"}
     ],
     "filters": [
         {
             "type": "blockBreak", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["global"],
+            "regions": ["map"],
             "blocks": ["light grey stained glass", "gray stained glass"],
             "message": "&cYou may not break this!"
         },
         {
             "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["blue-wool-sphere", "red-wool-sphere"],
+            "regions": ["map"],
             "blocks": ["light grey stained glass", "gray stained glass"]
         },
         {
@@ -169,7 +177,12 @@
         {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
             "regions": ["map"], "message": "&cYou cannot build outside of the map."
-        }
+        },
+        {
+			"type": "block-interact", "evaluate": "deny", "teams": ["red-player", "blue-player"],
+			"regions": ["red-waiting", "blue-waiting"],
+			"message": "&cYou may not interact with the Waiting Room!."
+		}
     ],
-    "buildHeight": 50
+    "buildHeight": 34
 }
