@@ -65,8 +65,8 @@
 
                 {"material": "repeater", "slot": 16, "amount": 16},
                 {"material": "redstone torch", "slot": 25, "amount": 16},
-                {"material": "restone block", "slot": 34, "amount": 16},
-                {"material": "restone", "slot": 7, "amount": 16},
+                {"material": "redstone block", "slot": 34, "amount": 16},
+                {"material": "redstone", "slot": 7, "amount": 16},
 
                 {"material": "tnt", "slot": 17, "amount": 64},
                 {"material": "tnt", "slot": 26, "amount": 64},
