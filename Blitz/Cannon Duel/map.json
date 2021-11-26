@@ -46,7 +46,7 @@
                 {"material": "tnt", "slot": 11, "amount": 64},
                 {"material": "tnt", "slot": 20, "amount": 64},
                 {"material": "tnt", "slot": 29, "amount": 64},
-                {"material": "cobblestone stair", "slot": 2, "amount": 16},
+                {"material": "cobblestone slab", "slot": 2, "amount": 16},
 
                 {"material": "oak trap door", "slot": 13, "amount": 16},
                 {"material": "ladder", "slot": 22, "amount": 16},
