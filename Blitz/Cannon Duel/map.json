@@ -154,7 +154,7 @@
             "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
             "regions": ["blue-wool-sphere", "red-wool-sphere"],
             "blocks": ["light grey stained glass", "gray stained glass"]
-        }
+        },
         {
             "type": "blockBreak", "evaluate": "deny", "teams": ["red-player", "blue-player"],
             "regions": ["red-platform", "blue-platform"],
