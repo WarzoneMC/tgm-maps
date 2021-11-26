@@ -113,7 +113,9 @@
         "broadcasts": [
             {
                 "message": "&cYou have 30 seconds to sort your inventory",
-                "interval": 1
+                "interval": 1,
+                "repeat": false,
+                "commands": []
             },
             {
                 "message": "&cDropping you into the map",
