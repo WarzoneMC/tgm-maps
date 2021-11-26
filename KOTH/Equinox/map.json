@@ -127,6 +127,5 @@
 				{"type": "cylinder", "base": "68, 23, -128", "radius": 7, "height": 3}
 			]
 		}
-	],
-	"buildHeight": 20
+	]
 }
