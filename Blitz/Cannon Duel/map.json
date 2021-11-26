@@ -5,8 +5,8 @@
         {"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.2",
-	"objective": "Be the first to eliminate the other player with TNT cannons! Platforms connect after 3 minutes!",
+    "version": "1.0.3",
+	"objective": "Be the first to eliminate the other player with TNT cannons! Make sure to sort your inventory before the match begins!",
     "stats": {"disable": true},
     "teams": [
         {
@@ -26,8 +26,8 @@
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "31.5, 58, 37.5, 90"},
-        {"teams": ["red-player"], "coords": "31.5, 52, 12.5"},
-        {"teams": ["blue-player"], "coords": "31.5, 52, 62.5, 180"}
+        {"teams": ["red-player"], "coords": "31.5, 26, 12.5"},
+        {"teams": ["blue-player"], "coords": "31.5, 26, 62.5, 180"}
     ],
     "kits": [
         {
@@ -47,6 +47,11 @@
                 {"material": "tnt", "slot": 20, "amount": 64},
                 {"material": "tnt", "slot": 29, "amount": 64},
                 {"material": "cobblestone slab", "slot": 2, "amount": 16},
+		    
+		{"material": "black stained glass", "slot": 12, "amount": 64},
+                {"material": "black terracotta", "slot": 21, "amount": 64},
+                {"material": "black terracotta", "slot": 30, "amount": 64},
+                {"material": "black terracotta", "slot": 3, "amount": 64}
 
                 {"material": "oak trapdoor", "slot": 13, "amount": 16},
                 {"material": "ladder", "slot": 22, "amount": 16},
@@ -82,33 +87,6 @@
                 {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false},
                 {"type": "saturation", "duration": 99999999, "amplifier": 100, "particles": false}
             ]
-        },
-        {
-            "name": "Red Gear",
-            "teams": ["red-player"],
-            "items": [
-                {"material": "red stained glass", "slot": 12, "amount": 64},
-                {"material": "red terracotta", "slot": 21, "amount": 64},
-                {"material": "red terracotta", "slot": 30, "amount": 64},
-                {"material": "red terracotta", "slot": 3, "amount": 64}
-            ]
-        },
-        {
-            "name": "Blue Gear",
-            "teams": ["blue-player"],
-            "items": [
-                {"material": "blue stained glass", "slot": 12, "amount": 64},
-                {"material": "blue terracotta", "slot": 21, "amount": 64},
-                {"material": "blue terracotta", "slot": 30, "amount": 64},
-                {"material": "blue terracotta", "slot": 3, "amount": 64}
-            ]
-        },
-        {
-            "name": "The Watchers",
-            "teams": ["spectators"],
-            "effects": [
-                {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false}
-            ]
         }
     ],
     "itemremove": "*",
@@ -119,22 +97,14 @@
         "limit": 300,
         "broadcasts": [
             {
-                "message": "&cYou have 30 seconds to sort your inventory. Look at all the stuff you have!",
+                "message": "&cBe the first to eliminate the other player with TNT cannons! Platforms connect after 3 minutes!",
                 "interval": 1,
                 "repeat": false,
                 "commands": ["execute at @r run fill 31 25 17 31 25 57 minecraft:air"]
             },
             {
-                "message": "&cDropping you into the map",
-                "interval": 30,
-                "repeat": false,
-                "commands": [
-                   "execute at @r run fill 36 51 7 26 51 67 minecraft:air replace minecraft:gray_stained_glass"
-                ]
-            },
-            {
                 "message": "&cConnecting the platforms",
-                "interval": 210,
+                "interval": 180,
                 "repeat": false,
                 "commands": [
                     "execute at @r run fill 31 25 17 31 25 57 minecraft:gray_stained_glass"
