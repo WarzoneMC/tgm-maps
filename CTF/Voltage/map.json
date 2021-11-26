@@ -1,0 +1,128 @@
+{
+	"name": "Voltage",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"}
+	],
+	"version": "1.0.5",
+	"gametype": "CTF",
+	"time": {
+		"limit": 600
+	},
+	"teams": [
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 5
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 5
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-10.5, 19, 48.5, -135"},
+		{"teams": ["purple"], "coords": "-36.5, 6, 37, -90"},
+		{"teams": ["green"], "coords": "1, 6, 74.5, 180"}
+	],
+	"ctf": {
+		"objective": "amount",
+		"options": {
+			"captures": 3
+		},
+		"flags": [
+			{
+				"team": "purple",
+				"location": "-23, 11, 49",
+				"respawn-time": 5,
+				"type": "purple",
+				"patterns": [
+					{"color": "purple", "type": "base"}
+				],
+				"rotation": "north east",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "slow", "duration": 1000000, "amplifier": 0, "particles": false}
+				]
+			},
+			{
+				"team": "green",
+				"location": "-12, 11, 60",
+				"respawn-time": 5,
+				"type": "lime",
+				"patterns": [
+					{"color": "lime", "type": "base"}
+				],
+				"rotation": "north east",
+				"effects": [
+					{"type": "glowing", "duration": 1000000, "amplifier": 1, "particles": false},
+					{"type": "slow", "duration": 1000000, "amplifier": 0, "particles": false}
+				]
+			}
+		],
+		"bases": [
+			{"region": "purple-net", "team": "purple"},
+			{"region": "green-net", "team": "green"}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 8},
+
+				{"material": "golden helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "iron leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "damage_resistance", "duration": 120, "amplifier": 10, "particles": false},
+				{"type": "saturation", "duration": 1000000, "amplifier": 100, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "arrow",
+		"golden helmet", "iron leggings",
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["purple", "green"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain on this map."
+		}
+	],
+	"regions": [
+		{"id": "purple-net", "type": "cylinder", "base": "-23, 10, 49", "radius": 1, "height": 3},
+		{"id": "green-net", "type": "cylinder", "base": "-12, 10, 60", "radius": 1, "height": 3}
+	],
+	"buildHeight": 24
+}
