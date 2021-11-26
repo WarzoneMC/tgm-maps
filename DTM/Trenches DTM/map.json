@@ -76,7 +76,7 @@
         	"chainmail helmet", "chainmail leggings", "chainmail boots",
 		{
             		"type": "leather chestplate",
-            		"drop": true,
+            		"drop": true
         	}
 	],
 	"killstreaks": [
