@@ -72,6 +72,14 @@
 				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false},
 				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
 			]
+		},
+		{
+			"name": "specs",
+			"teams": ["spectators"],
+			"items": [],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 1, "particles": false}
+			]
 		}
 	],
 	"itemremove": [
