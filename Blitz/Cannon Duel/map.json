@@ -48,7 +48,7 @@
                 {"material": "tnt", "slot": 29, "amount": 64},
                 {"material": "cobblestone slab", "slot": 2, "amount": 16},
 
-                {"material": "oak trap door", "slot": 13, "amount": 16},
+                {"material": "oak trapdoor", "slot": 13, "amount": 16},
                 {"material": "ladder", "slot": 22, "amount": 16},
                 {"material": "crafting table", "slot": 31},
                 {"material": "nether brick fence", "slot": 4, "amount": 64},
