@@ -51,7 +51,7 @@
 		{"material": "black stained glass", "slot": 12, "amount": 64},
                 {"material": "black terracotta", "slot": 21, "amount": 64},
                 {"material": "black terracotta", "slot": 30, "amount": 64},
-                {"material": "black terracotta", "slot": 3, "amount": 64}
+                {"material": "black terracotta", "slot": 3, "amount": 64},
 
                 {"material": "oak trapdoor", "slot": 13, "amount": 16},
                 {"material": "ladder", "slot": 22, "amount": 16},
