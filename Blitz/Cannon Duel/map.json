@@ -151,7 +151,7 @@
         {"id": "blue-platform", "type": "cuboid", "min": "34, 25, 65", "max": "28, 25, 59"},
         
         {"id": "red-waiting", "type": "cuboid", "min": "36, 50, 8", "max": "27, 56, 17"},
-        {"id": "blue-waiting", "type": "cuboid", "min": "36, 51, 67", "max": "27, 55, 58"},
+        {"id": "blue-waiting", "type": "cuboid", "min": "36, 50, 67", "max": "27, 55, 58"},
 	{
             "id": "build", "type": "meta",
             "regions": [
@@ -170,8 +170,7 @@
         },
         {
             "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["map"],
-            "blocks": ["light grey stained glass", "gray stained glass"]
+            "regions": ["map"]
         },
         {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
