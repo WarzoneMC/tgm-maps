@@ -65,8 +65,8 @@
 
                 {"material": "repeater", "slot": 16, "amount": 16},
                 {"material": "redstone torch", "slot": 25, "amount": 16},
-                {"material": "restone block", "slot": 34, "amount": 16},
-                {"material": "restone", "slot": 7, "amount": 16},
+                {"material": "redstone block", "slot": 34, "amount": 16},
+                {"material": "redstone", "slot": 7, "amount": 16},
 
                 {"material": "tnt", "slot": 17, "amount": 64},
                 {"material": "tnt", "slot": 26, "amount": 64},
@@ -150,8 +150,8 @@
         {"id": "red-platform", "type": "cuboid", "min": "34, 25, 9", "max": "28, 25, 15"},
         {"id": "blue-platform", "type": "cuboid", "min": "34, 25, 65", "max": "28, 25, 59"},
         
-        {"id": "red-waiting", "type": "cuboid", "min": "34, 51, 9", "max": "28, 55, 15"},
-        {"id": "blue-waiting", "type": "cuboid", "min": "34, 51, 65", "max": "28, 55, 59"},
+        {"id": "red-waiting", "type": "cuboid", "min": "36, 50, 8", "max": "27, 56, 17"},
+        {"id": "blue-waiting", "type": "cuboid", "min": "36, 51, 67", "max": "27, 55, 58"},
 	{
             "id": "build", "type": "meta",
             "regions": [
@@ -174,17 +174,13 @@
             "blocks": ["light grey stained glass", "gray stained glass"]
         },
         {
-            "type": "blockBreak", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["red-platform", "blue-platform"],
-            "message": "&cYou may not break this!"
-        },
-        {
-            "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["red-platform", "blue-platform"]
-        },
-        {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
             "regions": ["build"], "message": "&cYou may not build here!"
+        },
+        {
+            "type": "block-explode", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
+            "regions": ["build"],
+            "blocks": ["light grey stained glass", "gray stained glass"]
         },
         {
 			"type": "block-interact", "evaluate": "deny", "teams": ["red-player", "blue-player"],
