@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "c14862ba-058a-44a2-a1c3-bfb0b462e198", "username": "Ro_G"}
 	],
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -75,7 +75,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond pickaxe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "cooked beef", "arrow", "golden apple",
 		"chainmail chestplate", "iron boots",
 		{
             "type": "leather helmet",
