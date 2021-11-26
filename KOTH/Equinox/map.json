@@ -1,0 +1,132 @@
+{
+	"name": "Equinox",
+	"authors": [
+		{"uuid": "62c41f0e-133d-4192-ad33-f0896f47d23a", "username": "nixter1029"},
+		{"uuid": "57f5535d-6b9e-4013-ad71-e2cc63ec8d7c", "username": "ItzaMeLuigi_"}
+	],
+	"version": "1.2.1",
+	"gametype": "KOTH",
+	"damageControl": {
+		"FALL": false
+	},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 30
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 30
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-0.5, 54, -138.5"},
+		{"teams": ["blue"], "coords": "-69.5, 23, -149.5, -45"},
+		{"teams": ["blue"], "coords": "-69.5, 23, -127.5, -135"},
+		{"teams": ["red"], "coords": "68.5, 23, -149.5, 45"},
+		{"teams": ["red"], "coords": "68.5, 23, -127.5, 135"}
+	],
+	"points": {
+		"target": 300
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Hill",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"type": "cylinder", "base": "-1, 29, -139", "radius": 7.5, "height": 3},
+						{"type": "cylinder", "base": "0, 29, -138", "radius": 6.5, "height": 3},
+						{"min": "-6, 37, -144 ", "max": "4, 37, -134"}
+					]
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "cooked beef", "slot": 2, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 36},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 45, "amplifier": 50000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "cooked beef", "arrow", "golden apple", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		}
+	],
+	"portals": [
+		{"from": "blue-portal", "to": "-16.5, 33, -138.5, -90", "sound": true, "teams": ["blue", "red"]},
+		{"from": "red-portal", "to": "15.5, 33, -138.5, 90", "sound": true, "teams": ["red", "blue"]}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"}
+	],
+	"regions": [
+		{"id": "blue-portal", "type": "cuboid", "min": "-9, 24, -140", "max": "-9, 26, -138"},
+		{"id": "red-portal", "type": "cuboid", "min": "7, 24, -140", "max": "7, 26, -138"},
+		{
+			"id": "blue-spawn-protection", "type": "meta",
+			"regions": [
+				{"type": "cylinder", "base": "-70, 23, -150", "radius": 7, "height": 3},
+				{"type": "cylinder", "base": "-70, 23, -128", "radius": 7, "height": 3}
+			]
+		},
+		{
+			"id": "red-spawn-protection", "type": "meta",
+			"regions": [
+				{"type": "cylinder", "base": "68, 23, -150", "radius": 7, "height": 3},
+				{"type": "cylinder", "base": "68, 23, -128", "radius": 7, "height": 3}
+			]
+		}
+	],
+	"buildHeight": 20
+}
