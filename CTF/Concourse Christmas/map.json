@@ -7,9 +7,9 @@
 	"gametype": "KOTF",
 	"teams": [
 		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
+			"id": "green",
+			"name": "Green",
+			"color": "dark green",
 			"min": 1,
 			"max": 20
 		},
@@ -23,7 +23,7 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "3.5,53,-445.5,0"},
-		{"teams": ["blue"], "coords": "3.5,8,-442.5,0"},
+		{"teams": ["green"], "coords": "3.5,8,-442.5,0"},
 		{"teams": ["red"], "coords": "3.5,8,-448.5,180"}
 	],
 	"respawn": {
@@ -106,6 +106,6 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou may not modify the map."}
+		{"type": "build", "evaluate": "deny", "teams": ["green", "red"], "regions": ["global"], "message": "&cYou may not modify the map."}
 	]
 }
