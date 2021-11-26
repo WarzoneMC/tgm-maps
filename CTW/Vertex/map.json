@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -144,7 +144,9 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "cyan-wool-room"], "message": "&cYou may not enter this region."},
 		{"type": "build", "evaluate": "deny", "teams": ["blue"], "regions": ["orange-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "build", "evaluate": "deny", "teams": ["red"], "regions": ["cyan-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["cyan-wool-room", "orange-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+		{"type": "blockBreak", "evaluate": "allow", "teams": ["blue"], "regions": ["cyan-wool-room"], "blocks": ["cobweb"], "message": "&cYou may only break cobwebs!"},
+		{"type": "blockBreak", "evaluate": "allow", "teams": ["red"], "regions": ["orange-wool-room"], "blocks": ["cobweb"], "message": "&cYou may only break cobwebs!"},
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["orange-wool-room", "cyan-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou may not build over the void."},
 		{
 			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
