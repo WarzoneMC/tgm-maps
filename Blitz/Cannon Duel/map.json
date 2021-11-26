@@ -169,17 +169,12 @@
             "message": "&cYou may not break this!"
         },
         {
-            "type": "block-explode", "evaluate": "deny", "teams": ["red-player", "blue-player"],
-            "regions": ["map"]
-        },
-        {
             "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
             "regions": ["build"], "message": "&cYou may not build here!"
         },
         {
             "type": "block-explode", "evaluate": "deny", "inverted": true, "teams": ["red-player", "blue-player"],
-            "regions": ["build"],
-            "blocks": ["light grey stained glass", "gray stained glass"]
+            "regions": ["build"]
         },
         {
 			"type": "block-interact", "evaluate": "deny", "teams": ["red-player", "blue-player"],
