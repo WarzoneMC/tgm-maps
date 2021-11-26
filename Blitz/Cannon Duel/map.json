@@ -75,7 +75,6 @@
             "effects": [
                 {"type": "night vision", "duration": 99999999, "amplifier": 100, "particles": false},
                 {"type": "saturation", "duration": 99999999, "amplifier": 100, "particles": false},
-                // time in seconds or ticks? needs to be 35 seconds
                 {"type": "resistance", "duration": 35, "amplifier": 5, "particles": false},
                 {"type": "health", "duration": 35, "amplifier": 5, "particles": false}
             ]
@@ -111,7 +110,6 @@
     "itemremove": "*",
     "time": {
         "limit": 300,
-        // 5 minutes?
         "broadcasts": [
             {
                 "message": "&cYou have 30 seconds to sort your inventory",
