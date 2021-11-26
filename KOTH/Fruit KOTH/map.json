@@ -9,6 +9,7 @@
 	],
 	"version": "1.0.0",
 	"gametype": "KOTH",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "pear",
