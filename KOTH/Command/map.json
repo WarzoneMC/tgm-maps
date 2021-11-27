@@ -1,0 +1,119 @@
+{
+	"name": "Command",
+	"authors": [
+		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
+	],
+	"version": "1.0",
+	"gametype": "KOTH",
+	"respawn": {
+		"rules": [
+			{
+				"delay": 5000
+			}
+		]
+	},
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 27, 27.5, 180"},
+		{"teams": ["blue"], "coords": "37.5, 10, 0.5, 90"},
+		{"teams": ["red"], "coords": "-36.5, 10, 0.5, -90"}
+	],
+	"time": {
+		"limit": 1200
+	},
+	"points": {
+		"target": 1500
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Top Point",
+				"time": 10,
+				"region": {
+					"min": {"x": -3, "y": 9, "z": 21},
+					"max": {"x": 4, "y": 12, "z": 28}
+				}
+			},
+			{
+				"name": "Middle Point",
+				"time": 10,
+				"region": {
+					"min": {"x": -3, "y": 6, "z": -3},
+					"max": {"x": 4, "y": 9, "z": 4}
+				}
+			},
+			{
+				"name": "Bottom Point",
+				"time": 10,
+				"region": {
+					"min": {"x": -3, "y": 4, "z": -21},
+					"max": {"x": 4, "y": 7, "z": -14}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 16},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["projectile protection:2"], "unbreakable": true}
+			],
+            		"effects": [
+                		{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 80, "amplifier": 9, "particles": false},
+				{"type": "regeneration", "duration": 80, "amplifier": 9, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "arrow", "golden apple",
+    		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		}
+	],
+	"filters": [
+    		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "33, 6, 5", "max": "40, 15, -5"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-33, 6, 5", "max": "-40, 13, -5"}
+	]
+}
