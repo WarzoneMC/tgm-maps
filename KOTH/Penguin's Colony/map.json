@@ -1,0 +1,135 @@
+{
+	"name": "Penguin's Colony",
+	"authors": [
+		{"uuid": "a22f2197-5992-4e69-a483-5e5f7a44a0ad", "username": "Piinoy"},
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
+		{"uuid": "b390b87a-47e8-40d8-968a-9e7e2582a88b", "username": "MewTwoKing"},
+		{"uuid": "f36bdc4f-7dab-462b-87b6-dee2e3af8490", "username": "_Stay"},
+		{"uuid": "5a098b06-e7f6-4501-add4-bf8a027da261", "username": "revinition"},
+		{"uuid": "0e7cf4ed-6741-4fd4-b619-297377c76154", "username": "yhan"}
+	],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-78.5, 80, -275.5, 90"},
+		{"teams": ["blue"], "coords": "-26.5, 37, -250.5, 40, -10"},
+		{"teams": ["red"], "coords": "-130.5, 37, -232.5, -140, -10"}
+	],
+	"points": {
+		"target": 1250
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "A Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-101, 42, -223", "max": "-110, 44, -231"},
+						{"min": "-105, 64, -226", "max": "-107, 70, -228"}
+					]
+				}
+			},
+			{
+				"name": "Middle Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"type": "cylinder", "base": "-79, 43, -242", "radius": 6.5, "height": 3},
+						{"type": "cylinder", "base": "-78, 43, -241", "radius": 6.5, "height": 3}
+					]
+				}
+			},
+			{
+				"name": "B Point",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "-47, 42, -252", "max": "-56, 44, -261"},
+						{"min": "-51, 64, -256", "max": "-53, 70, -258"}
+					]
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "spruce leaves", "slot": 2, "amount": 8},
+				{"type": "item", "material": "shears", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 16},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "enchantments": ["projectile protection:2"], "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "spruce leaves", "shears", "arrow", "golden carrot", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 6}
+				]
+			}
+		}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], ",message": "&cYou are not allowed to modify terrain here."},
+		{"type": "blockBreak", "evaluate": "allow", "teams": ["red", "yellow"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only break leaves!"},
+		{"type": "blockPlace", "evaluate": "allow", "teams": ["red", "yellow"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only place leaves!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "min": "-45, -oo, -259", "max": "-17, oo, -230"},
+		{"id": "red-spawn-protection", "min": "-136, -oo, -254", "max": "-111, oo, -225"}
+	],
+	"buildHeight": 47
+}
