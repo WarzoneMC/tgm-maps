@@ -115,43 +115,43 @@
         	"limit": 600,
 			"broadcasts": [
 			{
-				"message": "&cWatch out! The First platform will break in 10 seconds!",
+				"message": "&cWatch out! The first platform will break in 10 seconds!",
 				"interval": 19,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 5 seconds!",
+				"message": "&cThe first platform will break in 5 seconds!",
 				"interval": 25,
 				"repeat": false,
 				"commands": []
 			},
 			{
-			   	"message": "&cThe First platform will break in 4 seconds!",
+			   	"message": "&cThe first platform will break in 4 seconds!",
 				"interval": 26,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 3 seconds!",
+				"message": "&cThe first platform will break in 3 seconds!",
 				"interval": 27,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 2 seconds!",
+				"message": "&cThe first platform will break in 2 seconds!",
 				"interval": 28,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 1 second!",
+				"message": "&cThe first platform will break in 1 second!",
 				"interval": 29,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&eThe First platform has crumbled!",
+				"message": "&eThe first platform has crumbled!",
 				"interval": 30,
 				"repeat": false,
 				"commands":
