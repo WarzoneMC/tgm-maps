@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"gametype": "CTF",
 	"gamerules": {
 		"doFireTick": true
