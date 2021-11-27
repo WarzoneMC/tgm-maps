@@ -4,7 +4,7 @@
 		{"uuid": "91295196-9cd2-4963-b7ec-afd1a110edbe", "username": "PandaBattalion"},
 		{"uuid": "41373965-b60a-40d5-8fad-72e61d951ea2", "username": "Rokosnocone"}
 	],
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -139,7 +139,7 @@
 		{"id": "purple-room", "min": "-17, -oo, -66", "max": "-37, oo, -78"},
 		{"id": "yellow-room", "min": "17, -oo, -66", "max": "37, oo, -78"},
 
-		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, -oo, -55", "max": "7, oo, -82"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-7, -oo, -56", "max": "7, oo, -82"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-7, -oo, 56", "max": "7, oo, 83"},
 		
 		{"id": "map", "type": "cuboid", "min": "-31, -oo, -51", "max": "30, oo, 51"}
