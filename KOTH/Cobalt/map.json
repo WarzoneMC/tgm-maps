@@ -1,5 +1,5 @@
 {
-	"name": "Cobalt Ranked",
+	"name": "Cobalt",
 	"authors": [
 		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"},
 		{"uuid": "3a64dcf4-5d71-4664-80bf-4e5c54e41b86", "username": "Zaquez"}
@@ -10,32 +10,32 @@
 		"rules": [
 			{
 				"confirm": false,
-				"delay": 3000
+				"delay": 5000
 			}
 		]
 	},
 	"teams": [
 		{
-			"id": "red",
-			"name": "Red",
-			"color": "red",
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 5
+			"max": 15
 		},
 		{
-			"id": "blue",
-			"name": "Blue",
-			"color": "blue",
+			"id": "green",
+			"name": "Green",
+			"color": "green",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 5
+			"max": 15
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "245.5, 33, 95.5, -90"},
-		{"teams": ["red"], "coords": "289.5, 38, 59.6, 0"},
-		{"teams": ["blue"], "coords": "289.5, 38, 131.5, 180"}
+		{"teams": ["orange"], "coords": "289.5, 38, 59.6, 0"},
+		{"teams": ["green"], "coords": "289.5, 38, 131.5, 180"}
 	],
 	"generators": [
 		{
@@ -48,11 +48,8 @@
 			"interval": 100
 		}
 	],
-	"time": {
-		"limit": 1200
-	},
 	"points": {
-		"target": 1500
+		"target": 2000
 	},
 	"koth": {
 		"hills": [
@@ -89,22 +86,22 @@
 				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
-				{"type": "item", "material": "arrow", "slot": 8, "amount": 16},
+				{"type": "item", "material": "arrow", "slot": 3, "amount": 20},
 				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["projectile protection:2"], "unbreakable": true}
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "enchantments": ["projectile protection:2"], "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["feather falling:1"], "unbreakable": true}
 			],
             	"effects": [
                 		{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
-				{"type": "damage resistance", "duration": 80, "amplifier": 254, "particles": false},
-                    		{"type": "night vision", "duration": 1000000, "particles": false}
+						{"type": "damage resistance", "duration": 80, "amplifier": 254, "particles": false},
+                    	{"type": "night vision", "duration": 1000000, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "leather helmet", "chainmail chestplate", 
-		"leather leggings", "iron boots", "golden apple", "arrow"
+		"stone sword", "bow", "leather helmet", "leather chestplate", 
+		"chainmail leggings", "iron boots", "golden apple", "arrow"
 	],
 	"killstreaks": [
 		{
@@ -113,7 +110,7 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1},
-					{"material": "arrow", "amount": 6}
+					{"material": "arrow", "amount": 8}
 				]
 			}
 		}
