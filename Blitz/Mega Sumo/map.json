@@ -289,7 +289,7 @@
 				"message": "&cThe World Border is now shrinking",
 				"interval": 100,
 				"repeat": false,
-				"commands": [execute @r run world border damage buffer 0]
+				"commands": [execute @r run worldborder damage buffer 0]
 			}
 	],
 	"border": {
