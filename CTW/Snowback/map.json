@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "Rockymine"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -159,5 +159,8 @@
         },
 		{"id": "map", "type": "cuboid", "min": "-43, 0, -72", "max": "43, 255, 72"}
 	],
+	"crafting": {
+        	"remove": ["flint and steel"]
+    	},
 	"buildHeight": 31
 }
