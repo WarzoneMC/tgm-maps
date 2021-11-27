@@ -1,0 +1,124 @@
+{
+	"name": "Smoke KOTH TE",
+	"authors": [
+		{"uuid": "2958ea4c-3501-404e-88cc-12e8632f68cc", "username": "Nixani"},
+		{"uuid": "6bec5c3a-4934-4b19-9aa8-c7c569820f7d", "username": "Claf"},
+		{"uuid": "9929437a-9b7d-4d7a-b05d-e22fe93ac042", "username": "triplezko"}
+	],
+	"version": "1.0.7",
+	"gametype": "KOTH",
+	"respawn": {
+		"rules": [
+			{
+				"confirm": false,
+				"delay": 5000
+			}
+		]
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 7
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 7
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "81.5, 14.5, -291.5, 135"},
+		{"teams": ["red"], "coords": "49.5, 22, -265.5, -90"},
+		{"teams": ["yellow"], "coords": "107.5, 22, -323.5, 0"}
+	],
+	"time": {
+		"limit": 1200
+	},
+	"points": {
+		"target": 2850
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Top",
+				"time": 10,
+				"points": 2,
+				"region": {
+					"min": {"x": 60, "y": 20, "z": -313},
+					"max": {"x": 67, "y": 26, "z": -306}
+				}
+			},
+			{
+				"name": "Bottom",
+				"time": 10,
+				"points": 2,
+				"region": {
+					"min": {"x": 77, "y": 13, "z": -296},
+					"max": {"x": 84, "y": 19, "z": -289}
+				}
+			},
+			{
+				"name": "Cave",
+				"time": 10,
+				"points": 2,
+				"region": {
+					"min": {"x": 61, "y": 8, "z": -312},
+					"max": {"x": 68, "y": 14, "z": -305}
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 8, "amount": 16},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["projectile protection:2"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 80, "amplifier": 9, "particles": false},
+				{"type": "regeneration", "duration": 80, "amplifier": 9, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden apple", "arrow", "chainmail chestplate", "iron boots",
+		{
+			"item": "leather helmet",
+			"drop": true
+		},
+		{
+			"item": "leather leggings",
+			"drop": true
+		}
+	],
+	"itemkeep": [
+		"golden apple", "arrow"
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		}
+	]
+}

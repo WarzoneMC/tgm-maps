@@ -5,7 +5,7 @@
 		{"uuid": "6bec5c3a-4934-4b19-9aa8-c7c569820f7d", "username": "Claf"},
 		{"uuid": "9929437a-9b7d-4d7a-b05d-e22fe93ac042", "username": "triplezko"}
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"gametype": "KOTH",
 	"respawn": {
 		"rules": [
@@ -22,7 +22,7 @@
 			"color": "red",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 7
+			"max": 15
 		},
 		{
 			"id": "yellow",
@@ -30,7 +30,7 @@
 			"color": "yellow",
 			"gamemode": "adventure",
 			"min": 1,
-			"max": 7
+			"max": 15
 		}
 	],
 	"spawns": [
@@ -88,20 +88,27 @@
 				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["projectile protection:2"], "unbreakable": true}
 			],
-            		"effects": [
-                		{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+			"effects": [
+				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
 				{"type": "damage resistance", "duration": 80, "amplifier": 9, "particles": false},
 				{"type": "regeneration", "duration": 80, "amplifier": 9, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "arrow", "golden apple",
-    		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"stone sword", "bow", "golden apple", "arrow", "chainmail chestplate", "iron boots",
+		{
+			"item": "leather helmet",
+			"drop": true
+		},
+		{
+			"item": "leather leggings",
+			"drop": true
+		}
 	],
 	"itemkeep": [
 		"golden apple", "arrow"
-	],	
+	],
 	"killstreaks": [
 		{
 			"count": 1,
