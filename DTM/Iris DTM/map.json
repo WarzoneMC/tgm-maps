@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "3a549b18-08ed-4756-a78c-b34d29a4fd87", "username": "Torn_Ares"}
     ],
-    "version": "1.4.4",
+    "version": "1.4.5",
     "gametype": "DTM",
     "respawn": {
         "rules": [
@@ -119,7 +119,7 @@
                 "commands": [
                     "execute at @r run fill -63 31 -129 -63 33 -129 minecraft:beacon replace minecraft:obsidian",
                     "execute at @r run fill 29 31 -129 29 33 -129 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run playsound minecraft:block.beacon.deactivate master @a -17 35 -129 100 0"
+                    "execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
                 ]
             },
             {"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
@@ -134,7 +134,7 @@
                 "commands": [
                     "execute at @r run fill -63 31 -129 -63 33 -129 minecraft:coal_block replace minecraft:beacon",
                     "execute at @r run fill 29 31 -129 29 33 -129 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run playsound minecraft:block.beacon.deactivate master @a -17 35 -129 100 0"
+                    "execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
                 ]
             }
         ]
