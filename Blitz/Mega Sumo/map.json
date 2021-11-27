@@ -127,25 +127,25 @@
 				"commands": []
 			},
 			{
-			    "message": "&cThe First platform will break in 4 seconds!",
+			   	"message": "&cThe first platform will break in 4 seconds!",
 				"interval": 26,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 3 seconds!",
+				"message": "&cThe first platform will break in 3 seconds!",
 				"interval": 27,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 2 seconds!",
+				"message": "&cThe first platform will break in 2 seconds!",
 				"interval": 28,
 				"repeat": false,
 				"commands": []
 			},
 			{
-				"message": "&cThe First platform will break in 1 second!",
+				"message": "&cThe first platform will break in 1 second!",
 				"interval": 29,
 				"repeat": false,
 				"commands": []
@@ -156,7 +156,7 @@
 				"repeat": false,
 				"commands":
 				[
-					"execute at @r run fill 19 29 -17 -18 24 18 air"
+					"execute at @r run fill -25 42 -32 28 36 28 air"
 				]
 			},
 			{
@@ -199,7 +199,7 @@
 				"message": "&eThe second layer of platforms has crumbled!",
 				"interval": 50,
 				"repeat": false,
-				"commands": ["execute at @r run fill 21 24 -19 -20 15 20 air"]
+				"commands": ["execute at @r run fill -15 24 -16 16 29 17 air"]
 			},
 			{
 				"message": "&cThe third layer of platforms will break in 10 seconds!",
@@ -241,42 +241,63 @@
 				"message": "&eThe third layer of platforms has crumbled!",
 				"interval": 70,
 				"repeat": false,
-				"commands": ["execute at @r run fill -22 13 23 23 7 -23 air"]
+				"commands": ["execute at @r run fill 24 24 -19 -20 16 20 air"]
 			},
 			{
-				"message": "&cWATCH OUT! The World border has appeared.",
+				"message": "&cThe fourth layer of platforms will break in 10 seconds",
+				"interval": 80,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe fourth layer of platforms will break in 5 seconds!",
+				"interval": 85,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe fourth layer of platforms will break in 4 seconds!",
+				"interval": 86,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe fourth layer of platforms will break in 3 seconds!",
+				"interval": 87,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe fourth layer of platforms will break in 2 seconds!",
+				"interval": 88,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&cThe fourth layer of platforms will break in 1 second!",
+				"interval": 89,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&eThe fourth layer of platforms has crumbled",
 				"interval": 90,
 				"repeat": false,
-				"commands": [
-				"execute at @r run worldborder center 0.5 0.522",
-				"execute at @r run worldborder set 52"
-				]
+				"commands": ["execute at @r run fill 23 7 24 -23 11 -23 air"]
 			},
 			{
-				"message": "&cThe World border will start shrinking in 3 seconds!",
-				"interval": 95,
+				"message": "&cThe world border is now shrinking",
+				"interval": 100,
 				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe World border will start shrinking in 2 seconds!",
-				"interval": 96,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe World border will start shrinking in 1 second!",
-				"interval": 97,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cOh Boy here we go, &eThe world border is now shrinking!",
-				"interval": 98,
-				"repeat": false,
-				"commands": ["execute at @r run worldborder set 1 20"]
+				"commands": ["execute @r run worldborder damage buffer 0"]
 			}
-		]
+	],
+	"border": {
+        "startingSize": 52,
+        "endSize": 1,
+        "center": "0, 2, 0",
+        "delay": 100
+
+		}
 	}
 }
-
