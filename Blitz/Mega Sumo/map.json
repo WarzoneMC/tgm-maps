@@ -262,7 +262,7 @@
 				"commands": []
 			},
 			{
-				"message": "&cThe fourth layer of platform will break in 3 seconds!",
+				"message": "&cThe fourth layer of platforms will break in 3 seconds!",
 				"interval": 87,
 				"repeat": false,
 				"commands": []
@@ -274,7 +274,7 @@
 				"commands": []
 			},
 			{
-				"message": "&cThe fourth layer of platform will break in 1 second!",
+				"message": "&cThe fourth layer of platforms will break in 1 second!",
 				"interval": 89,
 				"repeat": false,
 				"commands": []
@@ -289,7 +289,7 @@
 				"message": "&cThe World Border is now shrinking",
 				"interval": 100,
 				"repeat": false,
-				"commands": [execute @r run worldborder damage buffer 0]
+				"commands": ["execute @r run worldborder damage buffer 0"]
 			}
 	],
 	"border": {
