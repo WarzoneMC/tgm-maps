@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"}
     ],
-    "version": "2.2.1",
+    "version": "2.2.2",
     "gametype": "CTW",
     "teams": [
         {
@@ -128,18 +128,21 @@
     ],
     "filters": [
         {
-            "type": "build", "evaluate": "deny", "teams": ["red"],
+            "type": "build", "evaluate": "deny", "teams": ["blue"],
             "regions": ["red-spawn-protection", "blue-spawn-protection", "lime-wool-room", "green-wool-room"],
             "message": "&cYou are not allowed to modify terrain here."
         },
         {
-            "type": "build", "evaluate": "deny", "teams": ["blue"],
+            "type": "build", "evaluate": "deny", "teams": ["red"],
             "regions": ["red-spawn-protection", "blue-spawn-protection", "light-blue-wool-room", "light-grey-wool-room"],
             "message": "&cYou are not allowed to modify terrain here."
         },
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-wool-room", "green-wool-room"], "message": "&cYou may not enter this region."},
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "light-grey-wool-room", "light-blue-wool-room"], "message": "&cYou may not enter this region."},
-	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["light-grey-wool-room", "light-blue-wool-room", "lime-wool-room", "green-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+	{"type": "blockBreak", "evaluate": "allow", "teams": ["red"], "regions": ["lime-wool-room", "green-wool-room"], "blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."},
+	{"type": "blockPlace", "evaluate": "deny", "teams": ["red"], "regions": ["lime-wool-room", "green-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
+	{"type": "blockBreak", "evaluate": "allow", "teams": ["blue"], "regions": ["light-grey-wool-room", "light-blue-wool-room"], "blocks": ["cobweb"], "message": "&cYou are not allowed to modify terrain here."},
+	{"type": "blockPlace", "evaluate": "deny", "teams": ["blue"], "regions": ["light-grey-wool-room", "light-blue-wool-room"], "message": "&cYou are not allowed to modify terrain here."},
 	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["voidbuild"], "message": "&cYou may not build over the void."}
     ],
     "regions": [
