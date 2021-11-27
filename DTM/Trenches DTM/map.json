@@ -72,7 +72,7 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron axe", "iron shovel", "bread", "spruce planks", "arrow",
+		"iron sword", "bow", "iron axe", "diamond pickaxe", "iron shovel", "bread", "spruce planks", "arrow",
         	"chainmail helmet", "chainmail leggings", "chainmail boots",
 		{
             		"type": "leather chestplate",
