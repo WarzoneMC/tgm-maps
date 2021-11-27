@@ -6,7 +6,7 @@
 		{"uuid": "6d24722c-dba4-4224-9d14-b3d08a8d9620", "username": "MrPetrus"}
 	],
 	"gametype": "Infected",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -65,6 +65,22 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "leather chestplate", "leather leggings", "leather boots", "chainmail chestplate", "chainmail leggings"
+		"iron sword", "bow", "cooked beef", "arrow", "leather helmet", "chainmail chestplate", "chainmail leggings",
+		{
+			"item": "leather helmet",
+			"drop": true
+		},
+		{
+			"item": "leather chestplate",
+			"drop": true
+		},
+		{
+			"item": "leather leggings",
+			"drop": true
+		},
+		{
+			"item": "leather boots",
+			"drop": true
+		}
 	]
 }
