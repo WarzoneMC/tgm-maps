@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "KOTH",
 	"teams": [
 		{
@@ -27,7 +27,7 @@
 		{"teams": ["red"], "coords": "-318, 8, -6, 90"}
 	],
 	"points": {
-		"target": 300
+		"target": 1250
 	},
 	"koth": {
 		"hills": [
