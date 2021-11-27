@@ -115,7 +115,7 @@
         	"limit": 600,
 			"broadcasts": [
 			{
-				"message": "&cWatch out! The first platform will break in 10 seconds!",
+				"message": "&cWatch out! The First platform will break in 10 seconds!",
 				"interval": 19,
 				"repeat": false,
 				"commands": []
@@ -127,7 +127,7 @@
 				"commands": []
 			},
 			{
-			    "message": "&cThe First platform will break in 4 seconds!",
+			   	"message": "&cThe First platform will break in 4 seconds!",
 				"interval": 26,
 				"repeat": false,
 				"commands": []
@@ -244,7 +244,7 @@
 				"commands": ["execute at @r run fill 24 24 -19 -20 16 20 air"]
 			},
 			{
-				"message": "&cThe fourth layer will break in 10 seconds",
+				"message": "&cThe fourth layer of platforms will break in 10 seconds",
 				"interval": 80,
 				"repeat": false,
 				"commands": []
@@ -286,7 +286,7 @@
 				"commands": ["execute at @r run fill 23 7 24 -23 11 -23 air"]
 			},
 			{
-				"message": "&cThe World Border is now shrinking",
+				"message": "&cThe world border is now shrinking",
 				"interval": 100,
 				"repeat": false,
 				"commands": ["execute @r run worldborder damage buffer 0"]
