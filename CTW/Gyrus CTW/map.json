@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "1154d26d-fa5d-4c42-9a38-aa3506d6ac7e", "username": "Stuarts"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -219,5 +219,5 @@
 
 		{"id": "global", "type": "cuboid", "min": "-oo, -oo, -oo", "max": "oo, oo, oo"}
 	],
-	"buildHeight": 95
+	"buildHeight": 90
 }
