@@ -1,286 +1,225 @@
 {
-    "name": "Sunrise Over Paradise",
-    "authors": [
-        {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
-    ],
-    "version": "1.3.6",
-    "gametype": "DTM",
-    "teams": [
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "dark_red",
-            "min": 1,
-            "max": 16
-        },
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 16
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
-        {"teams": ["red"], "coords": "0.5, 3, 80.5, 180"},
-        {"teams": ["blue"], "coords": "0.5, 3, -79.5"}
-    ],
-    "dtm": {
-        "monuments": [
-            {
-                "name": "Right Monument",
-                "teams": ["blue"],
-                "materials": ["obsidian", "beacon", "black_terracotta"],
-                "region": {
-                    "min": "45, 8, -51",
-                    "max": "46, 6, -50"
-                },
-                "health": 2
-            },
-            {
-                "name": "Left Monument",
-                "teams": ["blue"],
-                "materials": ["obsidian", "beacon", "black_terracotta"],
-                "region": {
-                    "min": "-45, 8, -51",
-                    "max": "-44, 6, -50"
-                },
-                "health": 2
-            },
-            {
-                "name": "Right Monument",
-                "teams": ["red"],
-                "materials": ["obsidian", "beacon", "black_terracotta"],
-                "region": {
-                    "min": "-45, 8, 51",
-                    "max": "-44, 6, 52"
-                },
-                "health": 2
-            },
-            {
-                "name": "Left Monument",
-                "teams": ["red"],
-                "materials": ["obsidian", "beacon", "black_terracotta"],
-                "region": {
-                    "min": "45, 8, 51",
-                    "max": "46, 6, 52"
-                },
-                "health": 2
-            }
-        ]
-    },
-    "time": {
-        "broadcasts": [
-            {
-                "message": "&61 minute until the monuments change to &l&4beacons&r&6!",
-                "interval": 840,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&620 seconds until the monuments change!",
-                "interval": 880,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&63 seconds until the monuments change!",
-                "interval": 897,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&62 seconds until the monuments change!",
-                "interval": 898,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&61 second until the monuments change!",
-                "interval": 899,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6The monuments have changed to &l&4beacons&r&6.",
-                "interval": 900,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:beacon replace minecraft:obsidian"
-                ]
-            },
+	"name": "Sunrise Over Paradise",
+	"authors": [
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
+	],
+	"version": "1.3.7",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
+		{"teams": ["red"], "coords": "0.5, 3, 80.5, 180"},
+		{"teams": ["blue"], "coords": "0.5, 3, -79.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Right Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian", "beacon", "coal block", "black terracotta"],
+				"region": {
+					"min": "45, 8, -51",
+					"max": "46, 6, -50"
+				},
+				"health": 2
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian", "beacon", "coal block", "black terracotta"],
+				"region": {
+					"min": "-45, 8, -51",
+					"max": "-44, 6, -50"
+				},
+				"health": 2
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["red"],
+				"materials": ["obsidian", "beacon", "coal block", "black terracotta"],
+				"region": {
+					"min": "-45, 8, 51",
+					"max": "-44, 6, 52"
+				},
+				"health": 2
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["red"],
+				"materials": ["obsidian", "beacon", "coal block", "black terracotta"],
+				"region": {
+					"min": "45, 8, 51",
+					"max": "46, 6, 52"
+				},
+				"health": 2
+			}
+		]
+	},
+	"time": {
+		"broadcasts": [
+			{"message": "&61 minute until the monuments change to &l&4beacons&r&6!", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6!", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&63 seconds until the monuments change!", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&62 seconds until the monuments change!", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&61 second until the monuments change!", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4beacons&r&6.",
+				"interval": 900,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 45 6 -51 45 7 -51 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill -45 6 -51 -45 7 -51 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill -45 6 51 -45 7 51 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill 45 6 51 45 7 51 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a 0 10 0 100 0"
+				]
+			},
+			{"message": "&61 minute until the monuments change to &l&4coal blocks&r&6!", "interval": 1140, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6!", "interval": 1180, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&63 seconds until the monuments change!", "interval": 1197, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&62 seconds until the monuments change!", "interval": 1198, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&61 second until the monuments change!", "interval": 1199, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4coal blocks&r&6.",
+				"interval": 1200,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 45 6 -51 45 7 -51 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill -45 6 -51 -45 7 -51 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill -45 6 51 -45 7 51 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill 45 6 51 45 7 51 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a 0 10 0 100 0"
+				]
+			},
+			{"message": "&61 minute until the monuments change to &l&4black terracotta&r&6!", "interval": 1740, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4black terracotta&r&6!", "interval": 1780, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&63 seconds until the monuments change!", "interval": 1797, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&62 seconds until the monuments change!", "interval": 1798, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&61 second until the monuments change!", "interval": 1799, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4black terracotta&r&6.",
+				"interval": 1800,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
+					"execute at @r run fill -45 6 -51 -45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
+					"execute at @r run fill -45 6 51 -45 7 51 minecraft:black_terracotta replace minecraft:coal_block",
+					"execute at @r run fill 45 6 51 45 7 51 minecraft:black_terracotta replace minecraft:coal_block",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a 0 10 0 100 0"
+				]
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
 
-            {
-                "message": "&61 minute until the monuments change to &l&4coal blocks&r&6!",
-                "interval": 1140,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&620 seconds until the monuments change!",
-                "interval": 1180,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&63 seconds until the monuments change!",
-                "interval": 1197,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&62 seconds until the monuments change!",
-                "interval": 1198,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&61 second until the monuments change!",
-                "interval": 1199,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6The monuments have changed to &l&4coal blocks&r&6.",
-                "interval": 1200,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:coal_block replace minecraft:beacon"
-                ]
-            },
+				{"type": "item", "material": "oak log", "slot": 4, "amount": 32},
+				{"type": "item", "material": "glass", "slot": 5, "amount": 32},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
 
-            {
-                "message": "&61 minute until the monuments change to black terracotta!",
-                "interval": 1740,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&620 seconds until the monuments change!",
-                "interval": 1780,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&63 seconds until the monuments change!",
-                "interval": 1797,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&62 seconds until the monuments change!",
-                "interval": 1798,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&61 second until the monuments change!",
-                "interval": 1799,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6The monuments have changed to &l&4black terracotta&r&6.",
-                "interval": 1800,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:black_terracotta replace minecraft:coal_block",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:black_terracotta replace minecraft:coal_block",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:black_terracotta replace minecraft:coal_block"
-                ]
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "iron axe", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
-
-                {"type": "item", "material": "oak log", "slot": 4, "amount": 32},
-                {"type": "item", "material": "glass", "slot": 5, "amount": 32},
-                {"type": "item", "material": "cooked cod", "slot": 8, "amount": 32},
-                {"type": "item", "material": "arrow", "slot": 28, "amount": 1},
-
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        "stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow",
-        "oak planks", "obsidian", "beacon", "black_terracotta", "string", "wheat seeds",
-        {
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1}
-                ]
-            }
-        }
-    ],
-    "regions": [
-        {"id": "red-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
-        {"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25 },
-        {"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
-    ],
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["red", "blue"],
-            "regions": ["red-spawn-protection", "blue-spawn-protection"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {
-            "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red", "blue"],
-            "regions": ["playable"], "message": "&cYou cannot build outside of the map."
-        }
-    ],
-    "crafting": {
-        "remove": [
-            "oak boat",
-            "jungle boat"
-        ]
-    },
-    "gamerules": {
-        "doFireTick": true,
-        "doDaylightCycle": true
-    },
-    "buildHeight": 19
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow",
+		"oak planks", "obsidian", "beacon", "black terracotta", "string", "wheat seeds", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
+		{"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25},
+		{
+			"id": "monument-protection", "type": "meta",
+			"regions": [
+				{"min": "45, 6, -51", "max": "45, 7, -51"},
+				{"min": "-45, 6, -51", "max": "-45, 7, -51"},
+				{"min": "-45, 6, 51", "max": "-45, 7, 51"},
+				{"min": "45, 6, 51", "max": "45, 7, 51"}
+			]
+		},
+		{"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["red-spawn-protection", "blue-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["monument-protection"]
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["red", "blue"],
+			"regions": ["playable"], "message": "&cYou cannot build outside of the map."
+		}
+	],
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"jungle boat"
+		]
+	},
+	"gamerules": {
+		"doFireTick": true,
+		"doDaylightCycle": true
+	},
+	"buildHeight": 19
 }

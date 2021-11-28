@@ -1,217 +1,206 @@
 {
-    "name": "Sunrise Over Lava",
-    "authors": [
-        {"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
-    ],
-    "version": "2.0.4",
-    "gametype": "DTM",
-    "teams": [
-        {
-            "id": "fire",
-            "name": "Fire Nation",
-            "color": "dark_red",
-            "min": 1,
-            "max": 16
-        },
-        {
-            "id": "water",
-            "name": "Water Nation",
-            "color": "blue",
-            "min": 1,
-            "max": 16
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
-        {"teams": ["fire"], "coords": "0.5, 3, 80.5, 180"},
-        {"teams": ["water"], "coords": "0.5, 3, -79.5"}
-    ],
-    "dtm": {
-        "monuments": [
-            {
-                "name": "Right Monument",
-                "teams": ["water"],
-                "materials": ["obsidian", "end stone"],
-                "region": {
-                    "min": "45, 8, -51",
-                    "max": "46, 6, -50"
-                },
-                "health": 2
-            },
-            {
-                "name": "Left Monument",
-                "teams": ["water"],
-                "materials": ["obsidian", "end stone"],
-                "region": {
-                    "min": "-45, 8, -51",
-                    "max": "-44, 6, -50"
-                },
-                "health": 2
-            },
-            {
-                "name": "Right Monument",
-                "teams": ["fire"],
-                "materials": ["obsidian", "end stone"],
-                "region": {
-                    "min": "-45, 8, 51",
-                    "max": "-44, 6, 52"
-                },
-                "health": 2
-            },
-            {
-                "name": "Left Monument",
-                "teams": ["fire"],
-                "materials": ["obsidian", "end stone"],
-                "region": {
-                    "min": "45, 8, 51",
-                    "max": "46, 6, 52"
-                },
-                "health": 2
-            }
-        ]
-    },
-    "time": {
-        "broadcasts": [
-            {
-                "message": "&61 minute until the monuments change to &l&4end stone&r&6!",
-                "interval": 1740,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&620 seconds until the monuments change!",
-                "interval": 1780,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&63 seconds until the monuments change!",
-                "interval": 1797,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&62 seconds until the monuments change!",
-                "interval": 1798,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&61 second until the monuments change!",
-                "interval": 1799,
-                "repeat": false,
-                "commands": []
-            },
-            {
-                "message": "&6The monuments have changed to &l&4end stone&r&6.",
-                "interval": 1800,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill 45 6 -51 45 7 -51 minecraft:end_stone replace minecraft:obsidian",
-                    "execute at @r run fill -45 6 -51 -45 7 -51 minecraft:end_stone replace minecraft:obsidian",
-                    "execute at @r run fill -45 6 51 -45 7 51 minecraft:end_stone replace minecraft:obsidian",
-                    "execute at @r run fill 45 6 51 45 7 51 minecraft:end_stone replace minecraft:obsidian"
-                ]
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "iron shovel", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
+	"name": "Sunrise Over Lava",
+	"authors": [
+		{"uuid": "ef4ea031-998f-4ec9-b7b6-1bdd428bcef8", "username": "Plastix"}
+	],
+	"version": "2.0.5",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "fire",
+			"name": "Fire Nation",
+			"color": "dark red",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "water",
+			"name": "Water Nation",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-44.5, 35, 0.5, -90"},
+		{"teams": ["fire"], "coords": "0.5, 3, 80.5, 180"},
+		{"teams": ["water"], "coords": "0.5, 3, -79.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Right Monument",
+				"teams": ["water"],
+				"materials": ["obsidian", "end stone"],
+				"region": {
+					"min": "45, 8, -51",
+					"max": "46, 6, -50"
+				},
+				"health": 2
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["water"],
+				"materials": ["obsidian", "end stone"],
+				"region": {
+					"min": "-45, 8, -51",
+					"max": "-44, 6, -50"
+				},
+				"health": 2
+			},
+			{
+				"name": "Right Monument",
+				"teams": ["fire"],
+				"materials": ["obsidian", "end stone"],
+				"region": {
+					"min": "-45, 8, 51",
+					"max": "-44, 6, 52"
+				},
+				"health": 2
+			},
+			{
+				"name": "Left Monument",
+				"teams": ["fire"],
+				"materials": ["obsidian", "end stone"],
+				"region": {
+					"min": "45, 8, 51",
+					"max": "46, 6, 52"
+				},
+				"health": 2
+			}
+		]
+	},
+	"time": {
+		"broadcasts": [
+			{"message": "&61 minute until the monuments change to &l&4end stone&r&6!", "interval": 1740, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4end stone&r&6!", "interval": 1780, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&63 seconds until the monuments change!", "interval": 1797, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&62 seconds until the monuments change!", "interval": 1798, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{"message": "&61 second until the monuments change!", "interval": 1799, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a 0 10 0 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4end stone&r&6.",
+				"interval": 1800,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill 45 6 -51 45 7 -51 minecraft:end_stone replace minecraft:obsidian",
+					"execute at @r run fill -45 6 -51 -45 7 -51 minecraft:end_stone replace minecraft:obsidian",
+					"execute at @r run fill -45 6 51 -45 7 51 minecraft:end_stone replace minecraft:obsidian",
+					"execute at @r run fill 45 6 51 45 7 51 minecraft:end_stone replace minecraft:obsidian",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a 0 10 0 100 0"
+				]
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "enchantments": ["infinity:1"], "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron shovel", "enchantments": ["efficiency:1"], "slot": 3, "unbreakable": true},
 
-                {"type": "item", "material": "cooked cod", "slot": 8, "amount": 32},
-                {"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 32},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
 
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ],
-            "effects": [
-                {"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
-            ]
-        },
-        {
-            "name": "Fire Kit",
-            "teams": ["fire"],
-            "items": [
-                {"type": "item", "material": "red terracotta", "slot": 4, "amount": 64},
-                {"type": "item", "material": "red stained glass", "slot": 5, "amount": 32}
-            ]
-        },
-        {
-            "name": "Water Kit",
-            "teams": ["water"],
-            "items": [
-                {"type": "item", "material": "blue terracotta", "slot": 4, "amount": 64},
-                {"type": "item", "material": "blue stained glass", "slot": 5, "amount": 32}
-            ]
-        }
-    ],
-    "itemremove": [
-        "stone sword", "bow", "diamond pickaxe", "iron shovel", "glass", "oak log", "cooked cod", "arrow",
-        "oak planks", "obsidian", "end stone", "blue terracotta", "red terracotta", "blue stained glass", "red stained glass", "string", "wheat seeds",
-        {
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1}
-                ]
-            }
-        }
-    ],
-    "regions": [
-        {"id": "fire-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
-        {"id": "water-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25 },
-        {"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
-    ],
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["fire", "water"],
-            "regions": ["fire-spawn-protection", "water-spawn-protection"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
-        {"type": "enter", "evaluate": "deny", "teams": ["fire"], "regions": ["water-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["water"], "regions": ["fire-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {
-            "type": "build", "evaluate": "deny", "inverted": true, "teams": ["fire", "water"],
-            "regions": ["playable"], "message": "&cYou cannot build outside of the map."
-        }
-    ],
-    "crafting": {
-        "remove": [
-            "oak boat",
-            "jungle boat",
-            "bucket"
-        ]
-    },
-    "gamerules": {
-        "doFireTick": true,
-        "doDaylightCycle": true
-    },
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "enchantments": ["projectile_protection:2"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
+			]
+		},
+		{
+			"name": "Fire Kit",
+			"teams": ["fire"],
+			"items": [
+				{"type": "item", "material": "red terracotta", "slot": 4, "amount": 64},
+				{"type": "item", "material": "red stained glass", "slot": 5, "amount": 32}
+			]
+		},
+		{
+			"name": "Water Kit",
+			"teams": ["water"],
+			"items": [
+				{"type": "item", "material": "blue terracotta", "slot": 4, "amount": 64},
+				{"type": "item", "material": "blue stained glass", "slot": 5, "amount": 32}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "iron shovel", "glass", "oak log", "cooked cod", "arrow",
+		"oak planks", "obsidian", "blue terracotta", "red terracotta", "blue stained glass", "red stained glass", "string", "wheat seeds", "golden apple",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"regions": [
+		{"id": "fire-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
+		{"id": "water-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25},
+		{
+			"id": "monument-protection", "type": "meta",
+			"regions": [
+				{"min": "45, 6, -51", "max": "45, 7, -51"},
+				{"min": "-45, 6, -51", "max": "-45, 7, -51"},
+				{"min": "-45, 6, 51", "max": "-45, 7, 51"},
+				{"min": "45, 6, 51", "max": "45, 7, 51"}
+			]
+		},
+		{"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["fire", "water"],
+			"regions": ["fire-spawn-protection", "water-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["monument-protection"]
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["fire"], "regions": ["water-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["water"], "regions": ["fire-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["fire", "water"],
+			"regions": ["playable"], "message": "&cYou cannot build outside of the map."
+		}
+	],
+	"crafting": {
+		"remove": [
+			"oak boat",
+			"jungle boat",
+			"bucket"
+		]
+	},
+	"gamerules": {
+		"doFireTick": true,
+		"doDaylightCycle": true
+	},
 	"buildHeight": 19
 }
