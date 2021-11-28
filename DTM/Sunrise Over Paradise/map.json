@@ -182,14 +182,27 @@
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cylinder", "base": "0.5, 0, 80.5", "radius": 9.5, "height": 25},
-		{"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25 },
-		{"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25 }
+		{"id": "blue-spawn-protection", "type": "cylinder", "base": "0.5, 0, -79.5", "radius": 9.5, "height": 25},
+		{
+			"id": "monument-protection", "type": "meta",
+			"regions": [
+				{"min": "45, 6, -51", "max": "45, 7, -51"},
+				{"min": "-45, 6, -51", "max": "-45, 7, -51"},
+				{"min": "-45, 6, 51", "max": "-45, 7, 51"},
+				{"min": "45, 6, 51", "max": "45, 7, 51"}
+			]
+		},
+		{"id": "playable", "type": "cylinder", "base": "0.5, 0, 0.5", "radius": 101, "height": 25}
 	],
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
 			"regions": ["red-spawn-protection", "blue-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["monument-protection"]
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
