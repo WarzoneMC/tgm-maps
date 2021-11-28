@@ -5,7 +5,7 @@
 		{"uuid": "9ec82338-4c1d-4b38-97b2-fedd0a92923c", "username": "D_A_N_G_E_R"},
 		{"uuid": "a9f11454-beac-4cc3-a138-1780802c8794", "username": "Blaszczak"}
 	],
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -33,7 +33,7 @@
 			{
 				"name": "Right Monument",
 				"teams": ["yellow"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "-45, 67, 145",
 					"max": "-45, 67, 145"
@@ -43,7 +43,7 @@
 			{
 				"name": "Left Monument",
 				"teams": ["yellow"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "41, 67, 145",
 					"max": "41, 67, 145"
@@ -53,7 +53,7 @@
 			{
 				"name": "Right Monument ",
 				"teams": ["white"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "41, 67, -29",
 					"max": "41, 67, -29"
@@ -63,7 +63,7 @@
 			{
 				"name": "Left Monument ",
 				"teams": ["white"],
-				"materials": ["obsidian"],
+				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
 					"min": "-45, 67, -29",
 					"max": "-45, 67, -29"
@@ -98,21 +98,21 @@
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "glass", "golden apple", "cooked beef", "arrow",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "chainmail leggings",
-            "drop": true
-        },
-        {
-            "type": "iron boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "chainmail leggings",
+			"drop": true
+		},
+		{
+			"type": "iron boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -125,6 +125,56 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &eKill enemies to receive infused shards!\n&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eTrade infused shards at spawn to upgrade your pickaxe!",
+				"interval": 120,
+				"repeat": true,
+				"commands": []
+			},
+			{"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 598, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&61 second until the monuments change.", "interval": 599, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4beacons&r&6.",
+				"interval": 600,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill -45 67 -29 -45 67 -29 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill 41 67 -29 41 67 -29 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill 41 67 145 41 67 145 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill -45 67 145 -45 67 145 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -2 80 58 100 0"
+				]
+			},
+			{"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6.", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{"message": "&63 second until the monuments change.", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4coal blocks&r&6.",
+				"interval": 900,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill -45 67 -29 -45 67 -29 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill 41 67 -29 41 67 -29 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill 41 67 145 41 67 145 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill -45 67 145 -45 67 145 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -2 80 58 100 0"
+				]
+			}
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],
@@ -132,7 +182,7 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}, 
+		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "white"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
@@ -140,5 +190,5 @@
 		{"id": "white-spawn-protection", "type": "cuboid", "min": "9, 0, -47", "max": "-13, 78, -26"},
 		{"id": "map", "type": "cuboid", "min": "-40, 0, -35", "max": "36, 255, 151"}
 	],
-    	"buildHeight": 100
+	"buildHeight": 100
 }
