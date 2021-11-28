@@ -151,7 +151,7 @@
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked cod", "arrow",
-		"oak planks", "obsidian", "beacon", "black_terracotta", "string", "wheat seeds",
+		"oak planks", "obsidian", "beacon", "black terracotta", "string", "wheat seeds", "golden apple",
 		{
 			"type": "leather helmet",
 			"drop": true
