@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "KOTH",
 	"respawn": {
 		"rules": [
@@ -88,8 +88,15 @@
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "arrow", "golden apple",
-    		"leather helmet", "chainmail chestplate", "leather leggings", "iron boots"
+		"stone sword", "bow", "arrow", "golden apple", "chainmail chestplate", "iron boots",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

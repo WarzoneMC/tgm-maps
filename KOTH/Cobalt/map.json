@@ -4,7 +4,7 @@
 		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"},
 		{"uuid": "3a64dcf4-5d71-4664-80bf-4e5c54e41b86", "username": "Zaquez"}
 	],
-	"version": "2.1.4",
+	"version": "2.1.5",
 	"gametype": "KOTH",
 	"respawn": {
 		"rules": [
@@ -92,16 +92,23 @@
 				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "enchantments": ["projectile protection:2"], "unbreakable": true},
 				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["feather falling:1"], "unbreakable": true}
 			],
-            	"effects": [
-                		{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
-						{"type": "damage resistance", "duration": 80, "amplifier": 254, "particles": false},
-                    	{"type": "night vision", "duration": 1000000, "particles": false}
+			"effects": [
+				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 80, "amplifier": 254, "particles": false},
+				{"type": "night vision", "duration": 1000000, "particles": false}
 			]
 		}
 	],
 	"itemremove": [
-		"stone sword", "bow", "leather helmet", "leather chestplate", 
-		"chainmail leggings", "iron boots", "golden apple", "arrow"
+		"stone sword", "bow", "chainmail leggings", "iron boots", "golden apple", "arrow",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
