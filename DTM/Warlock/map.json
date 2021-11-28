@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "e5953ddf-c1fc-4405-9ac9-6939631cd185", "username": "McSpider"}
 	],
-	"version": "1.4.7",
+	"version": "1.4.8",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -142,6 +142,12 @@
 			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn-protection", "red-spawn-protection", "monuments"]
 		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["green", "blue"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
@@ -165,6 +171,13 @@
 			"regions": [
 				{"min": "77, 1, -37", "max": "77, 2, -37"},
 				{"min": "77, 1, 37", "max": "77, 2, 37"}
+			]
+		},
+		{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				{"min": "26, -oo, -27", "max": "119, oo, 27"},
+				{"min": "67, -oo, -48", "max": "89, oo, 48"}
 			]
 		}
 	],
