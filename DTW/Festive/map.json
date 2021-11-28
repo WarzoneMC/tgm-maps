@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
 	],
-	"version": "1.0",
+	"version": "1.0.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -60,7 +60,6 @@
 				{"material": "iron shovel", "slot": 3, "unbreakable": true},
 
 				{"material": "oak planks", "slot": 4, "amount": 64},
-				{"material": "oak planks", "slot": 5, "amount": 64},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				{"material": "arrow", "slot": 9, "amount": 32},
 
@@ -86,8 +85,8 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron axe", "iron shovel", "oak planks", "cooked beef", "arrow", "golden apple",
-		"chainmail chestplate", "chainmail leggings",
+		"iron sword", "bow", "iron axe", "iron shovel", "oak planks", "green stained glass", "red stained glass", "cooked beef", "arrow", "golden apple",
+		"chainmail chestplate", "chainmail leggings", "snowball",
 		{
             "type": "leather helmet",
             "drop": true
