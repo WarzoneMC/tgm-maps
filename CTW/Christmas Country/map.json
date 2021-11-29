@@ -8,7 +8,7 @@
 		{"uuid": "d1e3251c-def5-4328-a7e9-09335934d316", "username": "byRobo"},
 		{"uuid": "2f4ec1a6-10bd-4a5c-8054-b7c56999d79b", "username": "Alex_Plosivo"}
 	],
-	"version": "1.0.2",
+	"version": "1.1.3",
 	"gametype": "CTW",
 	"teams": [
 		{
@@ -85,19 +85,19 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "arrow", "golden apple", "cooked beef", "chainmail leggings",
+		"iron sword", "bow", "iron pickaxe", "iron axe", "oak planks", "arrow", "golden apple", "cooked beef", "chainmail leggings", "snowball",
 		{
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
@@ -131,6 +131,12 @@
 			"regions": ["green-spawn-protection", "blue-spawn-protection", "blue-wool", "green-wool-protection", "height-limit"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
+		{
+			"type": "voidbuild", "evaluate": "deny", "teams": ["green", "blue"],
+			"inverted": true,
+			"regions": ["buildable-void"],
+			"message": "&cYou may not build over the void."
+		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["green-spawn-protection", "blue-wool", "blue-wool-protection"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["blue-spawn-protection", "green-wool", "red-wool-protection"], "message": "&cYou may not enter this region."}
 	],
@@ -143,7 +149,18 @@
 
 		{"id": "green-wool-protection", "type": "cuboid", "min": "545, 0, oo", "max": "523,  oo, -100"},
 		{"id": "blue-wool-protection", "type": "cuboid", "min": "523, 0, -oo", "max": "545, oo, -353"},
-		{"id": "height-limit", "type": "cuboid", "min": "oo, 250 ,oo", "max": "-oo, oo, -oo"}
+		{
+			"id": "buildable-void", "type": "meta",
+			"regions": [
+				{"min": "501, -oo, -338", "max": "509, oo, 329"},
+				{"min": "559, -oo, -338", "max": "567, oo, -329"},
+				{"min": "501, -oo, -295", "max": "567, oo, -246"},
+				{"min": "495, -oo, -247", "max": "574, oo, -206"},
+				{"min": "501, -oo, -207", "max": "567, oo, -158"},
+				{"min": "501, -oo, -124", "max": "509, oo, -115"},
+				{"min": "559, -oo, -124", "max": "567, oo, -115"}
+			]
+		}
 	],
 	"buildHeight": 23
 }
