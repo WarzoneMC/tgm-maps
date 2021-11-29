@@ -8,7 +8,7 @@
 		{"uuid": "5a098b06-e7f6-4501-add4-bf8a027da261", "username": "revinition"},
 		{"uuid": "0e7cf4ed-6741-4fd4-b619-297377c76154", "username": "yhan"}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"gametype": "KOTH",
 	"teams": [
 		{
