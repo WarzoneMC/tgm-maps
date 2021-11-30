@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"gametype": "CTF",
 	"gamerules": {
 		"doFireTick": true
@@ -77,8 +77,8 @@
 				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
 				{"type": "item", "material": "stone axe", "slot": 3, "enchantments": ["efficiency:1"], "unbreakable": true},
 
-				{"type": "item", "material": "spruce planks", "slot": 4, "amount": 48},
-				{"type": "item", "material": "cobblestone", "slot": 5, "amount": 24},
+				{"type": "item", "material": "spruce planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "cobblestone", "slot": 5, "amount": 48},
 
 				{"type": "item", "material": "arrow", "slot": 7, "amount": 24},
 				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
@@ -116,8 +116,8 @@
 			"actions": {
 				"items": [
 					{"material": "golden apple", "amount": 1},
-					{"material": "cobblestone", "amount": 8},
-					{"material": "arrow", "amount": 8}
+					{"material": "cobblestone", "amount": 4},
+					{"material": "arrow", "amount": 6}
 				]
 			}
 		},
