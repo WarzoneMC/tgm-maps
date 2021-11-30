@@ -4,7 +4,7 @@
 		{"uuid": "03caac2d-978a-4b70-851b-549207c9c950", "username": "Brakkie"}
 	],
 	"gametype": "Infected",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -65,19 +65,19 @@
 	"itemremove": [
 		"iron sword", "bow", "cooked beef", "arrow",
 		{
-			"item": "leather helmet",
+			"type": "leather helmet",
 			"drop": true
 		},
 		{
-			"item": "leather chestplate",
+			"type": "leather chestplate",
 			"drop": true
 		},
 		{
-			"item": "leather leggings",
+			"type": "leather leggings",
 			"drop": true
 		},
 		{
-			"item": "leather boots",
+			"type": "leather boots",
 			"drop": true
 		}
 	]
