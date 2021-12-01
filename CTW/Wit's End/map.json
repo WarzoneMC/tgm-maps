@@ -1,174 +1,172 @@
 {
-    "name": "Wit's End",
-    "authors": [
-        {"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"},
+	"name": "Wit's End",
+	"authors": [
+		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"},
 		{"uuid": "dbe909c6-2b15-4528-b12a-c77ed4031496", "username": "teheggy"}
-    ],
-    "version": "1.2.0",
-    "gametype": "CTW",
-    "teams": [
+	],
+	"version": "1.2.1",
+	"gametype": "CTW",
+	"teams": [
 		{
-            "id": "red",
-            "name": "Red",
-            "color": "dark red",
-            "min": 1,
-            "max": 24
-        },
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 24
-        }
-
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "0, 30, -53, 90"},
-        {"teams": ["red"], "coords": "-140, 5, 0, -90"},
-        {"teams": ["blue"], "coords": "140, 5, 0, 90"}
-    ],
-    "ctw": {
-        "wools": [
-            {
-                "name": "Yellow",
-                "color": "yellow",
-                "woolcolor": "yellow",
-                "teams": ["blue"],
-                "region": {"min": "142, 6, -5", "max": "142, 6, -5"}
-            },
-            {
-                "name": "Orange",
-                "color": "gold",
-                "woolcolor": "orange",
-                "teams": ["blue"],
-                "region": {"min": "142, 6, 4", "max": "142, 6, 4"}
-            },
-            {
-                "name": "Cyan",
-                "color": "dark aqua",
-                "woolcolor": "cyan",
-                "teams": ["red"],
-                "region": {"min": "-143, 6, 4", "max": "-143, 6, 4"}
-            },
-            {
-                "name": "Light Blue",
-                "color": "aqua",
-                "woolcolor": "light blue",
-                "teams": ["red"],
-                "region": {"min": "-143, 6, -5", "max": "-143, 6, -5"}
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"material": "stone sword", "slot": 0, "unbreakable": true},
-                {"material": "bow", "slot": 1, "unbreakable": true},
-                {"material": "diamond pickaxe", "slot": 2, "enchantments": ["efficiency:2", "unbreaking:3"], "unbreakable": true},
-                {"material": "quartz block", "slot": 3, "amount": 64},
-                {"material": "quartz block", "slot": 4, "amount": 64},
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 24
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 24
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0, 30, -53, 90"},
+		{"teams": ["red"], "coords": "-140, 5, 0, -90"},
+		{"teams": ["blue"], "coords": "140, 5, 0, 90"}
+	],
+	"ctw": {
+		"wools": [
+			{
+				"name": "Yellow",
+				"color": "yellow",
+				"woolcolor": "yellow",
+				"teams": ["blue"],
+				"region": {"min": "142, 6, -5", "max": "142, 6, -5"}
+			},
+			{
+				"name": "Orange",
+				"color": "gold",
+				"woolcolor": "orange",
+				"teams": ["blue"],
+				"region": {"min": "142, 6, 4", "max": "142, 6, 4"}
+			},
+			{
+				"name": "Cyan",
+				"color": "dark aqua",
+				"woolcolor": "cyan",
+				"teams": ["red"],
+				"region": {"min": "-143, 6, 4", "max": "-143, 6, 4"}
+			},
+			{
+				"name": "Light Blue",
+				"color": "aqua",
+				"woolcolor": "light blue",
+				"teams": ["red"],
+				"region": {"min": "-143, 6, -5", "max": "-143, 6, -5"}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "diamond pickaxe", "slot": 2, "enchantments": ["efficiency:2", "unbreaking:3"], "unbreakable": true},
+				{"material": "quartz block", "slot": 3, "amount": 64},
+				{"material": "quartz block", "slot": 4, "amount": 64},
 				{"material": "glass", "slot": 5, "amount": 64},
 				{"material": "oak log", "slot": 6, "amount": 64},
 				{"material": "ladder", "slot": 7, "amount": 32},
 				{"material": "golden carrot", "slot": 8, "amount": 32},
 
-                {"material": "arrow", "slot": 28, "amount": 48},
+				{"material": "arrow", "slot": 28, "amount": 48},
 				{"material": "stick", "slot": 29, "amount": 2},
-                {"material": "quartz block", "slot": 30, "amount": 64},
-                {"material": "quartz block", "slot": 31, "amount": 64},
+				{"material": "quartz block", "slot": 30, "amount": 64},
+				{"material": "quartz block", "slot": 31, "amount": 64},
 
-                {"material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"material": "leather chestplate", "slot": "chestplate","enchantments": ["projectile_protection:1"], "unbreakable": true}
-            ],
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "leather chestplate", "slot": "chestplate","enchantments": ["projectile_protection:1"], "unbreakable": true}
+			],
 			"effects": [
 				{"type": "DAMAGE_RESISTANCE", "duration": 4, "amplifier": 4, "particles": false},
 				{"type": "NIGHT VISION", "duration": 1000000, "amplifier": 1, "particles": false}
-            ]
-        }
-    ],
-    "itemremove": [
-        "stone sword", "bow", "diamond pickaxe", "arrow", "golden carrot", "string", "obsidian", "beacon", "stick", "ladder", "quartz block", "oak log", "glass", 
-		"yellow wool", "orange wool", "light blue wool", "cyan wool",
-        {
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
-
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1},
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "diamond pickaxe", "arrow", "golden carrot", "string", "obsidian", "beacon", "stick", "ladder", "quartz block", "oak log", "glass",
+		"yellow wool", "orange wool", "light blue wool", "cyan wool", "golden apple",
+		{
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
 					{"material": "quartz block", "amount": 16},
 					{"material": "glass", "amount": 8}
-                ]
-            }
-        },
-        {
-            "count": 5,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "arrow", "amount": 8}
-                ]
-            }
-        }
-    ],
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["blue"],
-            "regions": ["cyan-wool-room", "light-blue-wool-room"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
-        {
-            "type": "build", "evaluate": "deny", "teams": ["red"],
-            "regions": ["orange-wool-room", "yellow-wool-room"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue"],
+			"regions": ["cyan-wool-room", "light-blue-wool-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["red"],
+			"regions": ["orange-wool-room", "yellow-wool-room"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
 		{"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["red-spawn-protection", "blue-spawn-protection"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "blockBreak", "evaluate": "allow", "teams": ["blue", "red"], "regions": ["red-spawn-protection", "blue-spawn-protection"], "blocks": ["gold block"], "message": "&cYou may only break gold blocks in spawn!"},
-        {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "cyan-wool-room", "light-blue-wool-room"], "message": "&cYou may not enter this region."},
-        {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-wool-room", "orange-wool-room"], "message": "&cYou may not enter this region."},
-	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["yellow-wool-room", "orange-wool-room", "cyan-wool-room", "light-blue-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
-	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["voidbuild"], "blocks": ["spawner"], "message": "&cYou are not allowed to break the TNT spawner!"},
-	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["voidbuild"], "blocks": ["beacon"], "message": "&cYou may not destroy the beacons."},
-	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["voidbuild"], "message": "&cYou may not build over the void."},
-	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["spawnvoid-blue", "spawnvoid-red"], "message": "&cYou may not build over the void."},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "cyan-wool-room", "light-blue-wool-room"], "message": "&cYou may not enter this region."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "yellow-wool-room", "orange-wool-room"], "message": "&cYou may not enter this region."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["yellow-wool-room", "orange-wool-room", "cyan-wool-room", "light-blue-wool-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["voidbuild"], "blocks": ["spawner"], "message": "&cYou are not allowed to break the TNT spawner!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["voidbuild"], "blocks": ["beacon"], "message": "&cYou may not destroy the beacons."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["voidbuild"], "message": "&cYou may not build over the void."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["spawnvoid-blue", "spawnvoid-red"], "message": "&cYou may not build over the void."},
 		{
 			"type": "renewableBlocks",
 			"regions": ["red-spawn-protection", "blue-spawn-protection"],
 			"delay": 50,
 			"block": "gold block"
 		}
-    ],
-    "regions": [
-        {"id": "cyan-wool-room", "min": "78, 0, 42", "max": "90, oo, 54"},
-        {"id": "light-blue-wool-room", "min": "78, 0, -54", "max": "90, oo, -42"},
+	],
+	"regions": [
+		{"id": "cyan-wool-room", "min": "78, 0, 42", "max": "90, oo, 54"},
+		{"id": "light-blue-wool-room", "min": "78, 0, -54", "max": "90, oo, -42"},
 
-        {"id": "yellow-wool-room", "min": "-78, 0, -54", "max": "-90, oo, -42"},
-        {"id": "orange-wool-room", "min": "-78, 0, -42", "max": "-90, oo, -54"},
+		{"id": "yellow-wool-room", "min": "-78, 0, -54", "max": "-90, oo, -42"},
+		{"id": "orange-wool-room", "min": "-78, 0, -42", "max": "-90, oo, -54"},
 
-        {"id": "red-spawn-protection", "type": "cuboid", "min": "-146, 0, -10", "max": "-126, oo, 10"},
-        {"id": "blue-spawn-protection", "type": "cuboid", "min": "126, 0, -10", "max": "146, oo, 10"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-146, 0, -10", "max": "-126, oo, 10"},
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "126, 0, -10", "max": "146, oo, 10"},
 
-        {"id": "voidbuild", "type": "cuboid", "min": "78, 0, 30", "max": "-78, oo, -30"},
+		{"id": "voidbuild", "type": "cuboid", "min": "78, 0, 30", "max": "-78, oo, -30"},
 		{"id": "spawnvoid-blue", "type": "cuboid", "min": "103, 0, -6", "max": "90, oo, 6"},
 		{"id": "spawnvoid-red", "type": "cuboid", "min": "-103, 0, 6", "max": "-90, oo, -6"},
-        
-	{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
-    ],
-    "buildHeight": 28
+
+		{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
+	],
+	"buildHeight": 28
 }
