@@ -7,44 +7,15 @@
 		{"uuid": "d9efc01d-cd33-46c2-afe5-a6fc3f419f77", "username": "_NotMaria"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"stats": {"disable": true},
-	"gamerules": {
-		"logAdminCommands": false
-	},
+	"gamerules": {"logAdminCommands": false},
+	"damageControl": {"fall": false},
 	"teams": [
-		{
-			"id": "blue",
-			"name": "Light Blue",
-			"color": "aqua",
-			"min": 1,
-			"max": 4
-		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"min": 1,
-			"max": 4
-		},
-		{
-			"id": "green",
-			"name": "Green",
-			"color": "dark_green",
-			"min": 1,
-			"max": 4
-		},
-		{
-			"id": "purple",
-			"name": "Purple",
-			"color": "dark_purple",
-			"min": 1,
-			"max": 4
-		},
-		{
-			"id": "lime",
-			"name": "Lime",
-			"color": "green",
 			"min": 1,
 			"max": 4
 		},
@@ -63,241 +34,226 @@
 			"max": 4
 		},
 		{
+			"id": "lime",
+			"name": "Lime",
+			"color": "green",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "dark green",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "light blue",
+			"name": "Light Blue",
+			"color": "aqua",
+			"min": 1,
+			"max": 4
+		},
+		{
 			"id": "cyan",
 			"name": "Cyan",
-			"color": "dark_aqua",
+			"color": "dark aqua",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
 			"min": 1,
 			"max": 4
 		}
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0.5, 60, 0.5, 0.8"},
-		{"teams": ["blue"], "coords": "14.5, 41, -13.5, 44.3"},
 		{"teams": ["red"], "coords": "14.5, 41, 14.5, 135"},
-		{"teams": ["green"], "coords": "20.5, 41, 0.5, 90"},
-		{"teams": ["purple"], "coords": "0.5, 41, 20.5, -180"},
-		{"teams": ["lime"], "coords": "-13.5, 41, 14.5, -135.2"},
 		{"teams": ["orange"], "coords": "-19.5, 41, 0.5, -90"},
 		{"teams": ["yellow"], "coords": "-13.5, 41, -13.5, -45"},
-		{"teams": ["cyan"], "coords": "0.5, 41, -19.5, 0.4"}
+		{"teams": ["lime"], "coords": "-13.5, 41, 14.5, -135.2"},
+		{"teams": ["green"], "coords": "20.5, 41, 0.5, 90"},
+		{"teams": ["light blue"], "coords": "14.5, 41, -13.5, 44.3"},
+		{"teams": ["cyan"], "coords": "0.5, 41, -19.5, 0.4"},
+		{"teams": ["purple"], "coords": "0.5, 41, 20.5, -180"}
 	],
 	"kits": [
 		{
 			"name": "default",
 			"items": [
-				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-				{"type": "item", "material": "black dye", "displayName": "&cSUMO WEAPON", "slot": 0}
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
 			],
 			"effects": [
-				{"type": "saturation", "duration": 99999, "amplifier": 4, "particles": true},
-				{"type": "regeneration", "duration": 99999, "amplifier": 0, "particles": true}
+				{"type": "saturation", "duration": 99999, "amplifier": 4, "particles": false},
+				{"type": "regeneration", "duration": 99999, "amplifier": 0, "particles": false}
 			]
-		}
-	],
-	"itemremove": [
-		{
-			"type": "leather helmet",
-			"drop": true
 		},
 		{
-			"type": "black dye",
-			"drop": true
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"type": "item", "material": "red dye", "displayName": "&c&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Orange",
+			"teams": ["orange"],
+			"items": [
+				{"type": "item", "material": "orange dye", "displayName": "&6&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Yellow",
+			"teams": ["yellow"],
+			"items": [
+				{"type": "item", "material": "yellow dye", "displayName": "&e&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Lime",
+			"teams": ["lime"],
+			"items": [
+				{"type": "item", "material": "lime dye", "displayName": "&a&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Green",
+			"teams": ["green"],
+			"items": [
+				{"type": "item", "material": "green dye", "displayName": "&2&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Light Blue",
+			"teams": ["light blue"],
+			"items": [
+				{"type": "item", "material": "light blue dye", "displayName": "&b&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Cyan",
+			"teams": ["cyan"],
+			"items": [
+				{"type": "item", "material": "cyan dye", "displayName": "&3&lSUMO WEAPON", "slot": 0}
+			]
+		},
+		{
+			"name": "Purple",
+			"teams": ["purple"],
+			"items": [
+				{"type": "item", "material": "purple dye", "displayName": "&5&lSUMO WEAPON", "slot": 0}
+			]
 		}
+
 	],
-	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["red", "blue", "green", "purple", "lime", "orange", "yellow", "cyan"], "regions": ["global"], "message": "&cDon't touch!"}
-	
-    	],
-	"damageControl": {
-		"fall": false
-	},
+	"itemremove": "*",
 	"time": {
-        	"limit": 600,
-			"broadcasts": [
+		"limit": 160,
+		"broadcasts": [
 			{
 				"message": "&cWatch out! The first platform will break in 10 seconds!",
-				"interval": 19,
+				"interval": 20,
 				"repeat": false,
-				"commands": []
+				"commands": [
+					"execute at @r run setblock -5 6 -29 redstone_block"
+				]
 			},
-			{
-				"message": "&cThe first platform will break in 5 seconds!",
-				"interval": 25,
-				"repeat": false,
-				"commands": []
-			},
-			{
-			   	"message": "&cThe first platform will break in 4 seconds!",
-				"interval": 26,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe first platform will break in 3 seconds!",
-				"interval": 27,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe first platform will break in 2 seconds!",
-				"interval": 28,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe first platform will break in 1 second!",
-				"interval": 29,
-				"repeat": false,
-				"commands": []
-			},
+			{"message": "&cThe first platform will break in 5 seconds!", "interval": 25, "repeat": false, "commands": []},
+			{"message": "&cThe first platform will break in 4 seconds!", "interval": 26, "repeat": false, "commands": []},
+			{"message": "&cThe first platform will break in 3 seconds!", "interval": 27, "repeat": false, "commands": []},
+			{"message": "&cThe first platform will break in 2 seconds!", "interval": 28, "repeat": false, "commands": []},
+			{"message": "&cThe first platform will break in 1 second!", "interval": 29, "repeat": false, "commands": []},
 			{
 				"message": "&eThe first platform has crumbled!",
 				"interval": 30,
 				"repeat": false,
-				"commands":
-				[
-					"execute at @r run fill -25 42 -32 28 36 28 air"
+				"commands": [
+					"execute at @r run setblock -4 6 -29 redstone_block"
 				]
 			},
 			{
 				"message": "&cThe second layer of platforms will break in 10 seconds!",
 				"interval": 40,
 				"repeat": false,
-				"commands": []
+				"commands": [
+					"execute at @r run setblock -3 6 -29 redstone_block"
+				]
 			},
-			{
-				"message": "&cThe second layer of platforms will break in 5 seconds!",
-				"interval": 45,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe second layer of platforms will break in 4 seconds!",
-				"interval": 46,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe second layer of platforms will break in 3 seconds!",
-				"interval": 47,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe second layer of platforms will break in 2 seconds!",
-				"interval": 48,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe second layer of platforms will break in 1 second!",
-				"interval": 49,
-				"repeat": false,
-				"commands": []
-			},
+			{"message": "&cThe second layer of platforms will break in 5 seconds!", "interval": 45, "repeat": false, "commands": []},
+			{"message": "&cThe second layer of platforms will break in 4 seconds!", "interval": 46, "repeat": false, "commands": []},
+			{"message": "&cThe second layer of platforms will break in 3 seconds!", "interval": 47, "repeat": false, "commands": []},
+			{"message": "&cThe second layer of platforms will break in 2 seconds!", "interval": 48, "repeat": false, "commands": []},
+			{"message": "&cThe second layer of platforms will break in 1 second!", "interval": 49, "repeat": false, "commands": []},
 			{
 				"message": "&eThe second layer of platforms has crumbled!",
 				"interval": 50,
 				"repeat": false,
-				"commands": ["execute at @r run fill -15 24 -16 16 29 17 air"]
+				"commands": [
+					"execute at @r run setblock -2 6 -29 redstone_block"
+				]
 			},
 			{
 				"message": "&cThe third layer of platforms will break in 10 seconds!",
 				"interval": 60,
 				"repeat": false,
-				"commands": [] 
+				"commands": [
+					"execute at @r run setblock -1 6 -29 redstone_block"
+				]
 			},
-			{
-				"message": "&cThe third layer of platforms will break in 5 seconds!",
-				"interval": 65,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe third layer of platforms will break in 4 seconds!",
-				"interval": 66,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe third layer of platforms will break in 3 seconds!", 
-				"interval": 67,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe third layer of platforms will break in 2 seconds!",
-				"interval": 68,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe third layer of platforms will break in 1 second!",
-				"interval": 69,
-				"repeat": false,
-				"commands": []
-			},
+			{"message": "&cThe third layer of platforms will break in 5 seconds!", "interval": 65, "repeat": false, "commands": []},
+			{"message": "&cThe third layer of platforms will break in 4 seconds!", "interval": 66, "repeat": false, "commands": []},
+			{"message": "&cThe third layer of platforms will break in 3 seconds!", "interval": 67, "repeat": false, "commands": []},
+			{"message": "&cThe third layer of platforms will break in 2 seconds!", "interval": 68, "repeat": false, "commands": []},
+			{"message": "&cThe third layer of platforms will break in 1 second!", "interval": 69, "repeat": false, "commands": []},
 			{
 				"message": "&eThe third layer of platforms has crumbled!",
 				"interval": 70,
 				"repeat": false,
-				"commands": ["execute at @r run fill 24 24 -19 -20 16 20 air"]
+				"commands": [
+					"execute at @r run setblock 0 6 -29 redstone_block"
+				]
 			},
 			{
-				"message": "&cThe fourth layer of platforms will break in 10 seconds",
+				"message": "&cThe fourth layer of platforms will break in 10 seconds!",
 				"interval": 80,
 				"repeat": false,
-				"commands": []
+				"commands": [
+					"execute at @r run setblock 1 6 -29 redstone_block"
+				]
 			},
+			{"message": "&cThe fourth layer of platforms will break in 5 seconds!", "interval": 85, "repeat": false, "commands": []},
+			{"message": "&cThe fourth layer of platforms will break in 4 seconds!", "interval": 86, "repeat": false, "commands": []},
+			{"message": "&cThe fourth layer of platforms will break in 3 seconds!", "interval": 87, "repeat": false, "commands": []},
+			{"message": "&cThe fourth layer of platforms will break in 2 seconds!", "interval": 88, "repeat": false, "commands": []},
+			{"message": "&cThe fourth layer of platforms will break in 1 second!", "interval": 89, "repeat": false, "commands": []},
 			{
-				"message": "&cThe fourth layer of platforms will break in 5 seconds!",
-				"interval": 85,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe fourth layer of platforms will break in 4 seconds!",
-				"interval": 86,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe fourth layer of platforms will break in 3 seconds!",
-				"interval": 87,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe fourth layer of platforms will break in 2 seconds!",
-				"interval": 88,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&cThe fourth layer of platforms will break in 1 second!",
-				"interval": 89,
-				"repeat": false,
-				"commands": []
-			},
-			{
-				"message": "&eThe fourth layer of platforms has crumbled",
+				"message": "&eThe fourth layer of platforms has crumbled!",
 				"interval": 90,
 				"repeat": false,
-				"commands": ["execute at @r run fill 23 7 24 -23 11 -23 air"]
+				"commands": [
+					"execute at @r run setblock 2 6 -29 redstone_block"
+				]
 			},
 			{
-				"message": "&cThe world border is now shrinking",
+				"message": "&cWatch out! The world border is getting close!",
 				"interval": 100,
 				"repeat": false,
-				"commands": ["execute @r run worldborder damage buffer 0"]
+				"commands": [
+					"execute @r run worldborder damage buffer 0", "execute at @r run worldborder damage amount 100"
+				]
 			}
-	],
+		]
+	},
 	"border": {
-        "startingSize": 52,
-        "endSize": 1,
-        "center": "0, 2, 0",
-        "delay": 100
-
-		}
-	}
+		"startingSize": 250,
+		"endSize": 3,
+		"center": "0.5, 0, 0.5",
+		"delay": 125
+	},
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "green", "light blue", "cyan", "purple"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."}
+	]
 }

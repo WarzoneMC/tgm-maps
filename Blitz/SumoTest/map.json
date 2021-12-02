@@ -5,7 +5,7 @@
 		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "Wesdial_"}
 	],
 	"gametype": "Blitz",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"stats": {"disable": true},
 	"teams": [
 		{
@@ -138,7 +138,7 @@
 				"interval": 30,
 				"repeat": false,
 				"commands":
-				["execute at @r run fill 9 80 9 -11 83 -11 air destroy"]
+				["execute at @r run fill 9 80 9 -11 83 -11 air"]
 			},
 			{
 				"message": "&cWatch out! The second layer of platforms is breaking!",
@@ -155,7 +155,7 @@
 				"interval": 60,
 				"repeat": false,
 				"commands":
-				["execute at @r run fill -25 65 -25 23 67 23 air destroy"]
+				["execute at @r run fill -25 65 -25 23 67 23 air"]
 			},
 			{
 				"message": "&cWatch out! The third layer of platforms is breaking!",
@@ -174,7 +174,7 @@
 				"interval": 90,
 				"repeat": false,
 				"commands":
-				["execute at @r run fill 9 40 9 -11 37 -11 air destroy"]
+				["execute at @r run fill 9 40 9 -11 37 -11 air"]
 			}
 		]
 	}
