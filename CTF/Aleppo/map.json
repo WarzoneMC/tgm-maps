@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "7ab24d14-0801-48ba-8fea-147ddf400067", "username": "samtheman43"}
 	],
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"gametype": "CTF",
 	"teams": [
 		{
@@ -111,25 +111,25 @@
 	],
 	"itemremove": [
 		"iron sword", "bow", "iron axe", "arrow", "cooked mutton", "spruce fence", "dark oak fence",
-		"iron chestplate", "golden chestplate", "iron boots",
+		"iron chestplate", "golden chestplate", "iron boots", "golden apple",
 		{
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
 		{
-            "type": "tnt",
-            "death": true,
-            "drop": true,
-            "spawn": true
-        }
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "tnt",
+			"death": true,
+			"drop": true,
+			"spawn": true
+		}
 	],
 	"killstreaks": [
 		{
