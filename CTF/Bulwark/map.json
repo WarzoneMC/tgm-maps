@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"gametype": "CTF",
 	"time": {
 		"limit": 600
@@ -149,5 +149,8 @@
 		{"id": "blue-net", "type": "cylinder", "base": "-101, 7, -229", "radius": 1, "height": 3},
 		{"id": "red-net", "type": "cylinder", "base": "-116, 7, -153", "radius": 1, "height": 3}
 	],
+	"gamerules": {
+		"doFireTick": true
+	},
 	"buildHeight": 24
 }
