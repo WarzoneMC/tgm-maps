@@ -1,9 +1,9 @@
 {
-	"name": "IttyBitty CTW",
+	"name": "Itty Bitty CTW",
 	"authors": [
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
 	],
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"gametype": "CTW",
 	"stats": {"disable": true},
 	"teams": [
@@ -78,23 +78,23 @@
 	"itemremove": [
 		"iron sword", "stone axe", "oak planks", "cooked beef", "chainmail chestplate", "magenta wool", "light blue wool", "purple wool", "cyan wool", "golden apple",
 		{
-            "type": "leather helmet",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
