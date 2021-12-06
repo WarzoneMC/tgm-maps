@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"}
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -126,7 +126,7 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
 	],
 	"regions": [
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "-82, 0, 231", "max": "-91, oo, 215"},
-		{"id": "green-spawn-protection", "type": "cuboid", "min": "-85, 0, 31", "max": "-94, oo, 15"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "-82, 69, 231", "max": "-92, oo, 215"},
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "-84, 69, 31", "max": "-94, oo, 15"}
 	]
 }
