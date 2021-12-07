@@ -1,0 +1,126 @@
+{
+	"name": "Euphoria Town",
+	"objective": "&eAfter terrorizing a town for years, A Group of trained hunters had decided to hunt down the beasts and eliminate them once and for all, Are you the hunter or the beast?",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
+		{"uuid": "6ff4ade9-e968-4acd-80eb-1a6fa89629fb", "username": "_Pear"},
+		{"uuid": "edbd4cdb-63a5-4cec-944c-2b6bda56f51f", "username": "Owehttamy"},
+		{"uuid": "3fa22f5e-098d-49f7-b9ad-92566f045cbc", "username": "BigTonyMC"}
+	],
+	"gametype": "Blitz",
+	"version": "1.0.0",
+	"teams": [
+		{
+			"id": "hunters",
+			"name": "Hunters",
+			"color": "blue",
+			"min": 1,
+			"max": 24
+		},
+		{
+			"id": "beasts",
+			"name": "Beasts",
+			"color": "red",
+			"min": 1,
+			"max": 4
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-58.5, 67, 1.5"},
+		{"teams": ["hunters"], "coords": "-2.5, 34, 44.5, 180"},
+		{"teams": ["beasts"], "coords": "59.5, 39, -37.5, 45"}
+	],
+	"generators": [
+		{
+			"id": "gapples",
+			"item": {
+				"material": "golden apple"
+			},
+			"location": "-2.5, 34, 2.5",
+			"range": 0,
+			"interval": 10
+		}
+	],
+	"blitz" : {
+		"death-title": "&cYou died!",
+		"death-subtitle": "&aRemaining lives: &e%lives%",
+		"actionbar": "&bRemaining lives: &a%lives%",
+		"lives": [
+			{"team": "hunters", "lives": 5},
+			{"team": "beasts", "lives": 1}
+		]
+	},
+	"kits": [
+		{
+			"name": "hunters",
+			"teams": ["hunters"],
+			"items": [
+				{"material": "stone sword", "slot": 0, "unbreakable": true},
+				{"material": "bow", "slot": 1, "unbreakable": true},
+				{"material": "cooked beef", "amount": 64, "slot": 8},
+				{"material": "arrow", "slot": 28, "amount": 32, "unbreakable": true},
+				{"material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "iron chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		},
+		{
+			"name": "beasts",
+			"teams": ["beasts"],
+			"items": [
+				{"material": "iron sword", "enchantments": ["shaprness:2"], "slot": 0, "unbreakable": true},
+				{"material": "bow", "enchantments": ["power:1"], "slot": 1, "unbreakable": true}, 
+				{"material": "cooked beef", "amount": 64, "slot": 8},
+				{"material": "arrow", "amount": 32, "slot": 28},
+				{"material": "diamond helmet", "slot": "helmet", "unbreakable": true},
+				{"material": "diamond chestplate", "slot": "chestplate", "unbreakable": true},
+				{"material": "diamond leggings", "slot": "leggings", "unbreakable": true},
+				{"material": "diamond boots", "slot": "boots", "unbreakable": true}
+			],
+			"effects": [
+				{"type": "night vision", "duration": 999999999, "amplifier": 1, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond boots", "diamond chestplate", "diamond helmet", "diamond leggings", "cooked beef", "arrow", "stone sword",
+		"iron boots",
+		{
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "iron chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
+	],
+	"filters": [
+		{
+			"type": "blockBreak", "evaluate": "deny", "teams": ["beasts", "hunters"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain on this map."
+		},
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["beasts", "hunters"],
+			"regions": ["global"],
+			"message": "&cYou are not allowed to modify terrain on this map."
+		}
+	]
+}
