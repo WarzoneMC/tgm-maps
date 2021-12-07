@@ -94,7 +94,11 @@
         {
             "type": "leather boots",
             "drop": true
-        }
+        },
+		{
+			"type": "player head",
+			"spawn": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -116,6 +120,14 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+				"interval": 1, "repeat": false, "commands": []
+			}
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red", "green"],
@@ -123,7 +135,9 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "green"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+
 	],
 	"regions": [
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-82, 69, 231", "max": "-92, oo, 215"},
