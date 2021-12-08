@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "8242e55e-cc6a-458a-b272-a2b34918045f", "username": "kaimyr"}
 	],
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -127,11 +127,13 @@
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."}
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["purple", "red"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "purple-spawn", "type": "cylinder", "base": "14, 70, -872", "radius": 8, "height": 12},
-		{"id": "red-spawn", "type": "cylinder", "base": "14, 70, -762", "radius": 8, "height": 12}
+		{"id": "red-spawn", "type": "cylinder", "base": "14, 70, -762", "radius": 8, "height": 12},
+		{"id": "map", "min": "-17, -oo, -889", "max": "45, oo, -745"}
 	],
 	"buildHeight": 93
 }
