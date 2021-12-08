@@ -140,7 +140,13 @@
 		]
 	},
 	"time": {
-        "limit": 24000
+        "limit": 24000,
+		"broadcasts": [
+			{
+				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+				"interval": 1, "repeat": false, "commands": []
+			}
+		]
     },
 	"filters": [
 		{
@@ -160,7 +166,8 @@
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["void"],
 			"message": "&cYou are not allowed to build in the void!"
-		}
+		},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
 	],
 	"regions": [
 		{"id": "blue-spawn", "type": "cuboid", "min": "-106, 0, -56", "max": "-117, oo, -64"},

@@ -102,7 +102,11 @@
             "death": true,
             "drop": true,
             "spawn": false
-        }
+        },
+		{
+			"type": "player head",
+			"spawn": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -116,6 +120,14 @@
 			}
 		}
 	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+				"interval": 1, "repeat": false, "commands": []
+			}
+		]
+	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["red"],
@@ -130,7 +142,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "green-room", "cyan-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "purple-room", "yellow-room"], "message": "&cYou may not enter this region."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["purple-room", "yellow-room", "cyan-room", "green-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["purple-room", "yellow-room", "cyan-room", "green-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
 	],
 	"regions": [
 		{"id": "green-room", "min": "17, -oo, 66", "max": "37, oo, 79"},

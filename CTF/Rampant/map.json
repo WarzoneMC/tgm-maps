@@ -30,7 +30,13 @@
 		{"teams": ["red"], "coords": "177.5, 30.5, -25.5, 90"}
 	],
 	"time": {
-		"limit": 1200
+		"limit": 1200,
+		"broadcasts": [
+			{
+				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+				"interval": 1, "repeat": false, "commands": []
+			}
+		]
 	},
 	"ctf": {
 		"objective": "amount",
@@ -154,7 +160,8 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-base-entry"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-base-entry"], "message": "&cYou may not enter this region."},
 
-		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-castle-build-limit", "red-castle-build-limit", "middle-region-build-limit"], "message": "&cYou have reached the build height limit."}
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["blue-castle-build-limit", "red-castle-build-limit", "middle-region-build-limit"], "message": "&cYou have reached the build height limit."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
 	],
 	"regions": [
 		{"id": "blue-base-block", "type": "cuboid", "min": "175, 0, 134", "max": "149, 36, 140"},

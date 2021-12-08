@@ -112,6 +112,10 @@
 		{
 			"type": "iron boots",
 			"drop": true
+		},
+		{
+			"type": "player head",
+			"spawn": true
 		}
 	],
 	"killstreaks": [
@@ -127,6 +131,10 @@
 	],
 	"time": {
 		"broadcasts": [
+			{
+				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+				"interval": 1, "repeat": false, "commands": []
+			},
 			{"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
 			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
 			{"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
@@ -171,7 +179,8 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["yellow"], "regions": ["white-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["white"], "regions": ["yellow-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "white"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["yellow", "white"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["yellow", "white"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
 	],
 	"regions": [
 		{"id": "yellow-spawn-protection", "type": "cuboid", "min": "9, 0, 142", "max": "-13, 78, 163"},
