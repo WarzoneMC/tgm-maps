@@ -1,163 +1,163 @@
 {
-  "name": "Dead Waters",
-  "authors": [
-	{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
-  ],
-  "version": "1.1.0",
-  "gametype": "DTM",
-  "teams": [
-	{
-	  "id": "blue",
-	  "name": "Blue",
-	  "color": "blue",
-	  "min": 1,
-	  "max": 7
-	},
-	{
-	  "id": "red",
-	  "name": "Red",
-	  "color": "red",
-	  "min": 1,
-	  "max": 7
-	}
-  ],
-  "spawns": [
-	{"teams": ["spectators"], "coords": "-372, 24, 80, -90"},
-	{"teams": ["blue"], "coords": "-370.5, 7, 78.5, -170"},
-	{"teams": ["blue"], "coords": "-370.5, 7, 81.5, -10"},
-	{"teams": ["red"], "coords": "-285.5, 7, 81.5, 10"},
-	{"teams": ["red"], "coords": "-285.5, 7, 78.5, 170"}
-  ],
-  "dtm": {
-	"monuments": [
-	  {
-		"name": "Monument",
-		"teams": ["blue"],
-		"materials": ["gold block"],
-		"region": {
-		  "min": "-356, 7, 79",
-		  "max": "-355, 10, 80"
+	"name": "Dead Waters",
+	"authors": [
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
+	],
+	"version": "1.1.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 7
 		},
-		"health": 6
-	  },
-	  {
-		"name": "Monument",
-		"teams": ["red"],
-		"materials": ["gold block"],
-		"region": {
-		  "min": "-302, 7, 79",
-		  "max": "-301, 10, 80"
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 7
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-372, 24, 80, -90"},
+		{"teams": ["blue"], "coords": "-370.5, 7, 78.5, -170"},
+		{"teams": ["blue"], "coords": "-370.5, 7, 81.5, -10"},
+		{"teams": ["red"], "coords": "-285.5, 7, 81.5, 10"},
+		{"teams": ["red"], "coords": "-285.5, 7, 78.5, 170"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["gold block"],
+				"region": {
+					"min": "-356, 7, 79",
+					"max": "-355, 10, 80"
+				},
+				"health": 6
+			},
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["gold block"],
+				"region": {
+					"min": "-302, 7, 79",
+					"max": "-301, 10, 80"
+				},
+				"health": 6
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "jungle planks", "slot": 4, "amount": 48},
+				{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 24},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
 		},
-		"health": 6
-	  }
-	]
-  },
-  "kits": [
-	{
-	  "name": "Default",
-	  "items": [
-		{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
-		{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-		{"type": "item", "material": "stone pickaxe", "slot": 2, "unbreakable": true},
-		{"type": "item", "material": "stone axe", "slot": 3, "unbreakable": true},
-		{"type": "item", "material": "jungle planks", "slot": 4, "amount": 48},
-		{"type": "item", "material": "golden carrot", "slot": 8, "amount": 64},
-		{"type": "item", "material": "arrow", "slot": 28, "amount": 24},
-		{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-		{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "unbreakable": true},
-		{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-		{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
-	  ]
-	},
-	{
-		"name": "Blue",
-		"teams": ["blue"],
-		"items": [
-			{"material": "blue terracotta", "slot": 5, "amount": 36}
-		]
-	},
-	{
-		"name": "Red",
-		"teams": ["red"],
-		"items": [
-			{"material": "red terracotta", "slot": 5, "amount": 36}
-		]
-	}
-  ],
-  "itemremove": [
-	"stone sword", "bow", "stone pickaxe", "stone axe", "jungle planks", "golden carrot", "golden apple", "arrow",
-	"blue terracotta", "red terracotta", "chainmail chestplate", "iron boots",
-	{
-		"type": "leather helmet",
-		"death": true,
-		"drop": true,
-		"spawn": false
-	},
-	{
-		"type": "leather leggings",
-		"death": true,
-		"drop": true,
-		"spawn": false
-	}
-  ],
-  "killstreaks": [
-	{
-	  "count": 1,
-	  "repeat": true,
-	  "actions": {
-		"items": [
-		  {"material": "golden apple", "amount": 1},
-		  {"material": "arrow", "amount": 4},
-		  {"material": "jungle planks", "amount": 8},
-		  {"material": "gold ingot", "amount": 2}
-		]
-	  }
-	},
-	{
-	  "count": 6,
-	  "repeat": false,
-	  "actions": {
-		"items": [
-		  {"material": "golden apple", "amount": 1}
-		]
-	  }
-	},
-	{
-	  "count": 8,
-	  "repeat": true,
-	  "actions": {
-		"items": [
-		  {"material": "tnt", "amount": 1}
-		]
-	  }
-	}
-  ],
-  "filters": [
-	{
-	  "type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
-	  "regions": ["blue-spawn", "red-spawn"]
-	},
-	{
-	  "type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
-	  "regions": ["blue-spawn", "red-spawn"], "blocks": ["cobweb"],
-	  "message": "&cYou may only break cobwebs in spawn."
-	},
-	{
-	  "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-	  "inverted": true,
-	  "regions": ["map"],
-	  "message": "&cYou may not build/modify here!"
-	},
-	  {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
-	  {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
-	  {"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "blue-monument", "red-spawn", "red-monument"], "message": "&cYou are not allowed to detonate terrain here."}
-  ],
-  "regions": [
-	  {"id": "blue-spawn", "type": "cuboid", "min": "-367, 6, 66", "max": "-375, 14, 93"},
-	  {"id": "blue-monument", "type": "cuboid", "min": "-356, 7, 79", "max": "-355, 10, 80"},
-	  {"id": "red-spawn", "type": "cuboid", "min": "-290, 6, 66", "max": "-282, 14, 93"},
-	  {"id": "red-monument", "type": "cuboid", "min": "-302, 7, 79", "max": "-301, 10, 80"},
-	  {"id": "map", "type": "cuboid", "min": "-377, -oo, 54", "max": "-280, oo, 105"}
-  ],
-  "buildHeight": 17
+		{
+			"name": "Blue",
+			"teams": ["blue"],
+			"items": [
+				{"material": "blue terracotta", "slot": 5, "amount": 36}
+			]
+		},
+		{
+			"name": "Red",
+			"teams": ["red"],
+			"items": [
+				{"material": "red terracotta", "slot": 5, "amount": 36}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "stone pickaxe", "stone axe", "jungle planks", "golden carrot", "golden apple", "arrow",
+		"blue terracotta", "red terracotta", "chainmail chestplate", "iron boots",
+		{
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 4},
+					{"material": "jungle planks", "amount": 8},
+					{"material": "gold ingot", "amount": 2}
+				]
+			}
+		},
+		{
+			"count": 6,
+			"repeat": false,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 8,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "tnt", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn", "red-spawn"]
+		},
+		{
+			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
+			"regions": ["blue-spawn", "red-spawn"], "blocks": ["cobweb"],
+			"message": "&cYou may only break cobwebs in spawn."
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build/modify here!"
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn", "blue-monument", "red-spawn", "red-monument"], "message": "&cYou are not allowed to detonate terrain here."}
+	],
+	"regions": [
+		{"id": "blue-spawn", "type": "cuboid", "min": "-367, 6, 66", "max": "-375, 14, 93"},
+		{"id": "blue-monument", "type": "cuboid", "min": "-356, 7, 79", "max": "-355, 10, 80"},
+		{"id": "red-spawn", "type": "cuboid", "min": "-290, 6, 66", "max": "-282, 14, 93"},
+		{"id": "red-monument", "type": "cuboid", "min": "-302, 7, 79", "max": "-301, 10, 80"},
+		{"id": "map", "type": "cuboid", "min": "-377, -oo, 54", "max": "-280, oo, 105"}
+	],
+	"buildHeight": 17
 }
