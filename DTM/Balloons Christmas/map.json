@@ -119,11 +119,18 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["otherHeads"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-19, 0, -21", "max": "-27, oo, -33"},
-		{"id": "red-spawn-protection", "type": "cuboid", "min": "19, 0, 21", "max": "27, oo, 33"}
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "19, 0, 21", "max": "27, oo, 33"},
+		{
+			"id": "otherHeads", "type": "meta",
+			"regions": [
+				{"min": "-2, 10, -35", "max": "-2, 10, -35"},
+				{"min": "2, 10, 35", "max": "2, 10, 35"}
+			]
+		}
 	],
 	"buildHeight": 31
 }
