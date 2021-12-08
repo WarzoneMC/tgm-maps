@@ -5,7 +5,7 @@
         {"uuid": "dad8b95c-cf6a-44df-982e-8c8dd70201e0", "username": "ElectroidFilms"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.3",
+    "version": "1.0.4",
 	"objective": "Be the first to eliminate the other player with TNT cannons! Make sure to sort your inventory before the match begins!",
     "stats": {"disable": true},
     "teams": [
@@ -26,8 +26,8 @@
     ],
     "spawns": [
         {"teams": ["spectators"], "coords": "31.5, 58, 37.5, 90"},
-        {"teams": ["red-player"], "coords": "31.5, 26, 12.5"},
-        {"teams": ["blue-player"], "coords": "31.5, 26, 62.5, 180"}
+        {"teams": ["red-player"], "coords": "31.5, 30, 12.5"},
+        {"teams": ["blue-player"], "coords": "31.5, 30, 62.5, 180"}
     ],
     "kits": [
         {
