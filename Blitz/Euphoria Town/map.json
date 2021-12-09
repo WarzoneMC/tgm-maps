@@ -8,7 +8,7 @@
 		{"uuid": "3fa22f5e-098d-49f7-b9ad-92566f045cbc", "username": "BigTonyMC"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"teams": [
 		{
 			"id": "hunters",
@@ -20,7 +20,7 @@
 		{
 			"id": "beasts",
 			"name": "Beasts",
-			"color": "red",
+			"color": "green",
 			"min": 1,
 			"max": 4
 		}
@@ -37,8 +37,8 @@
 				"material": "golden apple"
 			},
 			"location": "-2.5, 34, 2.5",
-			"range": 0,
-			"interval": 10
+			"range": 6,
+			"interval": 200
 		}
 	],
 	"blitz" : {
@@ -84,43 +84,49 @@
 		}
 	],
 	"itemremove": [
-		"iron sword", "bow", "diamond boots", "diamond chestplate", "diamond helmet", "diamond leggings", "cooked beef", "arrow", "stone sword",
-		"iron boots",
+		"iron sword", "stone sword", "arrow", "bow", "cooked beef", "arrow",
 		{
 			"type": "leather helmet",
-			"death": true,
-			"drop": true,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "iron chestplate",
-			"death": true,
-			"drop": true,
-			"spawn": false
-		},
-		{
-			"type": "leather boots",
-			"death": true,
-			"drop": true,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "leather leggings",
-			"death": true,
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		},
+		{
+			"type": "diamond helmet",
 			"drop": true,
-			"spawn": false
+			"death": false
+		},
+		{
+			"type": "diamond chestplate",
+			"drop": true,
+			"death": false
+		},
+		{
+			"type": "diamond leggings",
+			"drop": true,
+			"death": false
+		},
+		{
+			"type": "diamond boots",
+			"drop": true,
+			"death": false
 		}
 	],
 	"filters": [
 		{
-			"type": "blockBreak", "evaluate": "deny", "teams": ["beasts", "hunters"],
+			"type": "build", "evaluate": "deny", "teams": ["beasts", "hunters"],
 			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain on this map."
-		},
-		{
-			"type": "blockPlace", "evaluate": "deny", "teams": ["beasts", "hunters"],
-			"regions": ["global"],
-			"message": "&cYou are not allowed to modify terrain on this map."
+			"message": "&cYou are not allowed to modifiy the terrain on this map."
 		}
 	]
 }
