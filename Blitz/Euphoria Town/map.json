@@ -87,51 +87,39 @@
 		"iron sword", "stone sword", "arrow", "bow", "cooked beef", "arrow",
 		{
 			"type": "leather helmet",
-			"drop": true,
-			"death": false,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "iron chestplate",
-			"drop": true,
-			"death": false,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "leather leggings",
-			"drop": true,
-			"death": false,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "leather boots",
-			"drop": true,
-			"death": false,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "diamond helmet",
 			"drop": true,
-			"death": false,
-			"spawn": false
+			"death": false
 		},
 		{
 			"type": "diamond chestplate",
 			"drop": true,
-			"death": false,
-			"spawn": false
+			"death": false
 		},
 		{
 			"type": "diamond leggings",
 			"drop": true,
-			"death": false,
-			"spawn": false
+			"death": false
 		},
 		{
 			"type": "diamond boots",
 			"drop": true,
-			"death": false,
-			"spawn": false
+			"death": false
 		}
 	],
 	"filters": [
