@@ -8,7 +8,8 @@
 		{"uuid": "3fa22f5e-098d-49f7-b9ad-92566f045cbc", "username": "BigTonyMC"}
 	],
 	"gametype": "Blitz",
-	"version": "1.0.1",
+	"version": "1.1.0",
+	"stats": {"disable": true},
 	"teams": [
 		{
 			"id": "hunters",
