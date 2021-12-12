@@ -4,7 +4,7 @@
         {"uuid": "53af1e46-7424-485b-97de-7bf8d854a2aa", "username": "__BT"}
     ],
     "gametype": "Blitz",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "stats": {"disable": true},
     "teams": [
         {
@@ -185,16 +185,16 @@
             "name": "Blue",
             "teams": ["blue"],
             "items": [
-                {"type": "item", "material": "light_blue_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
-                {"type": "item", "material": "light_blue_dye", "slot": "0"},
-                {"type": "item", "material": "light_blue_dye", "slot": "1"},
-                {"type": "item", "material": "light_blue_dye", "slot": "2"},
-                {"type": "item", "material": "light_blue_dye", "slot": "3"},
-                {"type": "item", "material": "light_blue_dye", "slot": "4"},
-                {"type": "item", "material": "light_blue_dye", "slot": "5"},
-                {"type": "item", "material": "light_blue_dye", "slot": "6"},
-                {"type": "item", "material": "light_blue_dye", "slot": "7"},
-                {"type": "item", "material": "light_blue_dye", "slot": "8"}
+                {"type": "item", "material": "blue_stained_glass", "slot": "helmet", "enchantments": ["binding_curse:1"], "flags": ["hide enchants"]},
+                {"type": "item", "material": "blue_dye", "slot": "0"},
+                {"type": "item", "material": "blue_dye", "slot": "1"},
+                {"type": "item", "material": "blue_dye", "slot": "2"},
+                {"type": "item", "material": "blue_dye", "slot": "3"},
+                {"type": "item", "material": "blue_dye", "slot": "4"},
+                {"type": "item", "material": "blue_dye", "slot": "5"},
+                {"type": "item", "material": "blue_dye", "slot": "6"},
+                {"type": "item", "material": "blue_dye", "slot": "7"},
+                {"type": "item", "material": "blue_dye", "slot": "8"}
             ]
         },
         {
@@ -272,7 +272,7 @@
             "drop": true
         },
         {
-            "type": "light_blue_stained_glass",
+            "type": "blue_stained_glass",
             "drop": true
         },
         {
