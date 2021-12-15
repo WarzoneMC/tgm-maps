@@ -1,0 +1,120 @@
+{
+	"name": "Beveta",
+	"authors": [
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"}
+	],
+	"version": "1.0.0",
+	"gametype": "KOTH",
+	"respawn": {
+		"rules": [
+			{
+				"confirm": false,
+				"delay": 5000
+			}
+		]
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 15
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"gamemode": "adventure",
+			"min": 1,
+			"max": 15
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "0.5, 55, 0.5, 90"},
+		{"teams": ["red"], "coords": "0.5, 55, 34.5, -180"},
+		{"teams": ["blue"], "coords": "0.5, 55, -33.5, 0.5"}
+	],
+	"generators": [
+		{
+			"id": "gapples",
+			"item": {
+				"material": "golden apple"
+			},
+			"location": "0, 43, 0",
+			"range": 6,
+			"interval": 100
+		}
+	],
+	"points": {
+		"target": 2000
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "Mid Hill",
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"type": "cylinder", "base": "0.5, 47, 0.5", "radius": 6, "height": 4}
+				]
+				}
+			},
+			{
+				"name": "West Hill",
+				"region": {
+					"type": "cylinder", "base": "-38.5, 46, 0.5", "radius": 5, "height": 6
+				}
+			},
+			{
+				"name": "East Hill",
+				"region": {
+					"type": "cylinder", "base": "38.5, 46, 0.5", "radius": 5, "height": 6
+				}
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "golden apple", "slot": 2, "amount": 1},
+				{"type": "item", "material": "arrow", "slot": 3, "amount": 20},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "enchantments": ["projectile protection:2"], "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["feather falling:1"], "unbreakable": true}
+			],
+			"effects": [
+				{"type": "saturation", "duration": 1000000, "amplifier": 1, "particles": false},
+				{"type": "damage resistance", "duration": 80, "amplifier": 254, "particles": false}
+			]
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "chainmail leggings", "iron boots", "golden apple", "arrow",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1},
+					{"material": "arrow", "amount": 8}
+				]
+			}
+		}
+	]
+}
