@@ -167,7 +167,11 @@
 		{
 			"type": "build", "evaluate": "deny", "teams": ["cyan", "yellow"], "regions": ["cyan-spawn", "yellow-spawn"],
 			"message": "&cYou may not modify terrain here."
-		}
+		},
+		{
+            		"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+            		"regions": ["global"]
+        	}
 	],
 	"regions": [
 		{"id": "cyan-portal", "type": "cuboid", "min": "-96, 22, 69", "max": "-95, 24, 70"},
