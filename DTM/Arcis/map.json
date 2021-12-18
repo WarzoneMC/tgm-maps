@@ -121,7 +121,7 @@
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn-protection-1", "red-spawn-protection-1"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
 			"message": "&cYou are not allowed to modify terrain here."
 		},
 		{
@@ -136,9 +136,6 @@
 		}
 	],
 	"regions": [
-		{"id": "blue-spawn-protection-1", "type": "cuboid", "min": "-81, 0, -9", "max": "-97, oo, -22"},
-		{"id": "red-spawn-protection-1", "type": "cuboid", "min": "13, 0, -7", "max": "29, oo, 6"},
-		
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "13, 0, -7", "max": "29, oo, 6"},
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-81, 0, -9", "max": "-97, oo, -22"}
 	],
