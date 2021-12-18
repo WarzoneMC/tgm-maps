@@ -146,7 +146,11 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection-enter", "magenta-room", "purple-room"], "message": "&cYou may not enter this region."},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection-enter", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["orange-room", "yellow-room", "magenta-room", "purple-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["orange-room", "yellow-room", "magenta-room", "purple-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+		{
+            		"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+            		"regions": ["orange-room", "yellow-room", "magenta-room", "purple-room", "blue-spawn-protection-top", "blue-spawn-protection-bottom", "blue-spawn-protection-extra", "red-spawn-protection-top", "red-spawn-protection-bottom", "red-spawn-protection-extra"]
+        	}
 	],
 	"regions": [
 		{"id": "orange-room", "min": "84, 0, -74", "max": "68, oo, -58"},
