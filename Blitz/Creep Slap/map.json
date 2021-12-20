@@ -12,14 +12,14 @@
 			"id": "blue",
 			"name": "Blue",
 			"color": "blue",
-			"min": 0,
+			"min": 2,
 			"max": 4
 		},
 		{
 			"id": "red",
 			"name": "Red",
 			"color": "red",
-			"min": 0,
+			"min": 2,
 			"max": 4
 		}
 	],
