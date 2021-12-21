@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -89,15 +89,11 @@
 		"blue terracotta", "red terracotta", "chainmail chestplate", "iron boots",
 		{
 			"type": "leather helmet",
-			"death": true,
-			"drop": true,
-			"spawn": false
+			"drop": true
 		},
 		{
 			"type": "leather leggings",
-			"death": true,
-			"drop": true,
-			"spawn": false
+			"drop": true
 		}
 	],
 	"killstreaks": [
@@ -118,7 +114,7 @@
 			"repeat": false,
 			"actions": {
 				"items": [
-					{"material": "golden apple", "amount": 1}
+					{"material": "golden apple", "amount": 3}
 				]
 			}
 		},
@@ -134,13 +130,15 @@
 	],
 	"filters": [
 		{
-			"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"],
-			"regions": ["blue-spawn", "red-spawn"]
+			"type": "build", "evaluate": "deny", "teams": ["red", "blue"],
+			"regions": ["blue-spawn", "red-spawn"],
+			"message": "&cYou may not modify the spawn area."
 		},
 		{
-			"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"],
-			"regions": ["blue-spawn", "red-spawn"], "blocks": ["cobweb"],
-			"message": "&cYou may only break cobwebs in spawn."
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not interact with that material here."
 		},
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
@@ -159,5 +157,10 @@
 		{"id": "red-monument", "type": "cuboid", "min": "-302, 7, 79", "max": "-301, 10, 80"},
 		{"id": "map", "type": "cuboid", "min": "-377, -oo, 54", "max": "-280, oo, 105"}
 	],
+	"crafting": {
+		"remove": [
+			"jungle boat"
+		]
+	},
 	"buildHeight": 17
 }
