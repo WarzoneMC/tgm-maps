@@ -5,7 +5,7 @@
 		{"uuid": "e79fbdc9-627e-4dac-97a6-81a3046220d7", "username": "AtlasGames"}
 	],
 	"gametype": "Blitz",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"stats": {"disable": true},
     "teams": [
 		{
@@ -47,8 +47,8 @@
 		"death-subtitle": "&aRemaining lives: &e%lives%",
 		"actionbar": "&bRemaining lives: &a%lives%",
 		"lives": [
-			{"team": "blue", "lives": 5},
-			{"team": "red", "lives": 5}
+			{"team": "blue", "lives": 2},
+			{"team": "red", "lives": 2}
 		]
 	},
 	"time": {
@@ -72,7 +72,8 @@
 				{"type": "resistance", "duration": 999999999, "amplifier": 1, "particles": false},
 				{"type": "night vision", "duration": 999999999, "amplifier": 0, "particles": false},
 				{"type": "speed", "duration": 999999999, "amplifier": 1, "particles": false},
-				{"type": "saturation", "duration": 999999999, "amplifier": 1, "particles": false}
+				{"type": "saturation", "duration": 999999999, "amplifier": 1, "particles": false},
+                		{"type": "health boost", "duration": 99999999, "amplifier": -2, "particles": false}
 			]
 		},
 		{
