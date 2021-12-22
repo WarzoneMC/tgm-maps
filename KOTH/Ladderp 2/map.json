@@ -25,56 +25,56 @@
 			"id": "dolan-team",
 			"name": "tem dolan",
 			"color": "blue",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "grifindoor-team",
 			"name": "grifindoor",
 			"color": "dark_red",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "creper-team",
 			"name": "tem creper",
 			"color": "green",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "doge-team",
 			"name": "doge team",
 			"color": "yellow",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "offline-team",
 			"name": "tem offline",
 			"color": "dark_aqua",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "swehg-team",
 			"name": "swehg tem",
 			"color": "light_purple",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "fier-team",
 			"name": "fier creper",
 			"color": "gold",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		},
 		{
 			"id": "purlp-team",
 			"name": "purlp team",
 			"color": "dark_purple",
-			"min": 1,
+			"min": 0,
 			"max": 69
 		}
 	],
