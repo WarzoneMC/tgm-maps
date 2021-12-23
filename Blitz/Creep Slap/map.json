@@ -5,7 +5,7 @@
 		{"uuid": "e79fbdc9-627e-4dac-97a6-81a3046220d7", "username": "AtlasGames"}
 	],
 	"gametype": "Blitz",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"stats": {"disable": true},
     "teams": [
 		{
@@ -47,8 +47,8 @@
 		"death-subtitle": "&aRemaining lives: &e%lives%",
 		"actionbar": "&bRemaining lives: &a%lives%",
 		"lives": [
-			{"team": "blue", "lives": 2},
-			{"team": "red", "lives": 2}
+			{"team": "blue", "lives": 1},
+			{"team": "red", "lives": 1}
 		]
 	},
 	"time": {
