@@ -2,7 +2,8 @@
 	"name": "Halloween Terras",
 	"authors": [
 		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
-		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"}
+		{"uuid": "c48598a7-c085-4e0f-b242-48c7fc452089", "username": "FlammingFreak296"},
+		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
 	"version": "1.0.1",
 	"gametype": "KOTH",
