@@ -5,9 +5,9 @@
 		{"uuid": "e79fbdc9-627e-4dac-97a6-81a3046220d7", "username": "AtlasGames"}
 	],
 	"gametype": "Blitz",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"stats": {"disable": true},
-    "teams": [
+    	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
@@ -25,21 +25,21 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "0.5, 1, 15.5, 180"},
-        {   
-    		"teams": ["red"],
-    		"region": {
-        		"id": "red-spawn", "type": "cuboid",
-        		"min": "9, 0.5, -10", "max": "10, 0.5, 11"
-    		},
-    		"yaw": 90
+        	{   
+    			"teams": ["red"],
+    			"region": {
+        			"id": "red-spawn", "type": "cuboid",
+        			"min": "9, 0.5, -10", "max": "10, 0.5, 11"
+    			},
+    			"yaw": 90
 		},
-        {   
-    		"teams": ["blue"],
-    		"region": {
-        		"id": "blue-spawn", "type": "cuboid",
-        		"min": "-9, 0.5, -10", "max": "-8, 0.5, 11"
-    		},
-    		"yaw": -90
+        	{   
+    			"teams": ["blue"],
+    			"region": {
+        			"id": "blue-spawn", "type": "cuboid",
+        			"min": "-9, 0.5, -10", "max": "-8, 0.5, 11"
+    			},
+    			"yaw": -90
 		}
 	],
 	"blitz" : {
@@ -52,12 +52,12 @@
 		]
 	},
 	"time": {
-		"limit": 120,
+		"limit": 180,
 		"broadcasts": [
-			{"message": "&c10 seconds remaining!", "interval": 110, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
-			{"message": "&c3 seconds remaining!", "interval": 117, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
-			{"message": "&c2 seconds remaining!", "interval": 118, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
-			{"message": "&c1 second remaining!", "interval": 119, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]}
+			{"message": "&c10 seconds remaining!", "interval": 170, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
+			{"message": "&c3 seconds remaining!", "interval": 177, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
+			{"message": "&c2 seconds remaining!", "interval": 178, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]},
+			{"message": "&c1 second remaining!", "interval": 179, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -53 25 -116 100 1"]}
 		]
 	},
 	"kits": [
@@ -88,385 +88,313 @@
 	"itemremove": [
 		"flint and steel", "creeper spawn egg", 
 		{
-            "type": "gunpowder",
-            "drop": true
-        }
-	],
-	"killstreaks": [
-		{
-			"count": 1,
-			"repeat": true,
-			"actions": {
-				"items": [
-					{"material": "creeper spawn egg", "amount": 4}
-				]
-			}
-		}
+            		"type": "gunpowder",
+            		"drop": true
+        	}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."},
-        {
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to break this."},
+        	{
 			"type": "block-interact", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["red-lane", "blue-lane"],
 			"message": "&cYou are not allowed to spawn creepers here!"
 		}
 	],
-    "regions": [
+    	"regions": [
 		{"id": "red-lane", "min": "7, 0, -12", "max": "11, 10, 12"},
 		{"id": "blue-lane", "min": "-7, 0, -12", "max": "-11, 10, 12"}
 	],
 	"gamerules": {
-        "mobGriefing": false
-    },
-    "generators": [
-    	{
-      		"id": "creeper-gen-red-right1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-        	"hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
+        	"mobGriefing": false
     	},
-        {
-      		"id": "creeper-gen-red-right2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-right3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-right4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
+    	"generators": [
+    		{
+      			"id": "creeper-gen-red-right1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+        		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-red-right2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-right3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-right4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
 		{
-      		"id": "creeper-gen-red-middle1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-            "hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
-    	},
-        {
-      		"id": "creeper-gen-red-middle2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-middle3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-middle4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
+      			"id": "creeper-gen-red-middle1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+            		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-red-middle2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-middle3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-middle4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
 		{
-      		"id": "creeper-gen-red-left1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-            "hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
-    	},
-        {
-      		"id": "creeper-gen-red-left2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-left3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-red-left4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-
+      			"id": "creeper-gen-red-left1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+            		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-red-left2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-left3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-red-left4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
 		{
-      		"id": "creeper-gen-blue-right1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-            "hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
-    	},
-        {
-      		"id": "creeper-gen-blue-right2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-right3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-right4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
+      			"id": "creeper-gen-blue-right1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+            		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-blue-right2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-right3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-right4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
 		{
-      		"id": "creeper-gen-blue-middle1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-            "hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
-    	},
-        {
-      		"id": "creeper-gen-blue-middle2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-middle3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-middle4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, 0",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
+      			"id": "creeper-gen-blue-middle1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+            		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-blue-middle2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-middle3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-middle4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, 0",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
 		{
-      		"id": "creeper-gen-blue-left1",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200,
-            "hologram": {
-        		"timeUnit": "seconds",
-        		"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
-      		},
-            "upgrades": {
-        		"type": "scheduled",
-        		"sequence": [
-          			{
-            			"time": 3600,
-            			"interval": 600,
-            			"message": "&eYou should not see this",
-            			"item": {
-              				"material": "porkchop"
-            			},
-            			"holoContent": "&aBT &eis coming in &c%time% &6%span%"
-          			}
-        		]
-            }
-    	},
-        {
-      		"id": "creeper-gen-blue-left2",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-left3",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	},
-        {
-      		"id": "creeper-gen-blue-left4",
-      		"item": {
-        		"material": "creeper spawn egg"
-      		},
-      		"location": "-10, 1, -9",
-      		"limit": 8,
-      		"range": 30,
-      		"interval": 200
-    	}
+      			"id": "creeper-gen-blue-left1",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200,
+            		"hologram": {
+        			"timeUnit": "seconds",
+        			"content": "&2Creeper Egg &ewill spawn in &a%time% &e%span%"
+      			},
+            		"upgrades": {
+        			"type": "scheduled",
+        			"sequence": [
+          				{
+            					"time": 4000,
+            					"interval": 600,
+            					"message": "&eYou should not see this",
+            					"item": {"material": "porkchop"},
+            					"holoContent": "&aBT &eis coming in &c%time% &6%span%"
+          				}
+        			]
+            		}
+    		},
+        	{
+      			"id": "creeper-gen-blue-left2",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-left3",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		},
+        	{
+      			"id": "creeper-gen-blue-left4",
+      			"item": {"material": "creeper spawn egg"},
+      			"location": "-10, 1, -9",
+      			"limit": 8,
+      			"range": 30,
+      			"interval": 200
+    		}
   	]
 }
