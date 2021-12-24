@@ -5,6 +5,9 @@
 	],
 	"version": "1.0.3",
 	"gametype": "CTW",
+	"gamerules": {
+		"doFireTick": true
+	},
 	"teams": [
 		{
 			"id": "blue",
