@@ -122,8 +122,8 @@
 	],
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-spawn-protection", "red-spawn-protection"], ",message": "&cYou are not allowed to modify terrain here."},
-		{"type": "blockBreak", "evaluate": "allow", "teams": ["red", "yellow"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only break leaves!"},
-		{"type": "blockPlace", "evaluate": "allow", "teams": ["red", "yellow"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only place leaves!"},
+		{"type": "blockBreak", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only break leaves!"},
+		{"type": "blockPlace", "evaluate": "allow", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["spruce leaves"], "message": "&cYou may only place leaves!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn!"}
 	],
