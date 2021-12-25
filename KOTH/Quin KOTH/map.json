@@ -1,133 +1,127 @@
 {
-  "name": "Quin KOTH",
-  "objective": "&eParkour your way to the top while avoiding knockback. Capture as many hills as possible with your team. Knock your enemy off the map to defend your hills.",
-  "authors": [
-    {"uuid": "6ff4ade9-e968-4acd-80eb-1a6fa89629fb", "username": "_Pear"},
-    {"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
-    {"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "_iMan"},
-    {"uuid": "3d741e18-8da0-4780-a6b1-ca38e6768022", "username": "Svnti"}
-  ],
-  "gametype": "KOTH",
-  "version": "1.0.0",
-  "stats": { "disable": true },
-  "damageControl": { "fall": false },
-  "teams": [
-    {
-      "id": "red",
-      "name": "Red",
-      "color": "red",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "orange",
-      "name": "Orange",
-      "color": "gold",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "yellow",
-      "name": "Yellow",
-      "color": "yellow",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "lime",
-      "name": "Lime",
-      "color": "green",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "blue",
-      "name": "Blue",
-      "color": "blue",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "cyan",
-      "name": "Cyan",
-      "color": "dark aqua",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "pink",
-      "name": "Pink",
-      "color": "light purple",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    },
-    {
-      "id": "purple",
-      "name": "Purple",
-      "color": "dark purple",
-      "gamemode": "adventure",
-      "min": 1,
-      "max": 8
-    }
-  ],
-  "spawns": [
-    {"teams": ["spectators"], "coords": "-12.5, 69, 38.5, -180"},
-    {"teams": ["red"], "coords": "-12.5, 20, 71.5, -180"},
-    {"teams": ["orange"], "coords": "11.5, 20, 62.5, 135.5"},
-    {"teams": ["yellow"], "coords": "20.5, 20, 38.5, 90"},
-    {"teams": ["lime"], "coords": "11.5, 20, 14.5, 45"},
-    {"teams": ["blue"], "coords": "-12.5, 20, 5.5, -0"},
-    {"teams": ["cyan"], "coords": "-36.5, 20, 14.5, -45"},
-    {"teams": ["pink"], "coords": "-45.5, 20, 38.5, -90"},
-    {"teams": ["purple"], "coords": "-36.5, 20, 62.5, -135"}
-  ],
-  "filters": [
-    {"type": "enter", "evaluate": "deny", "teams": ["orange", "yellow", "lime", "blue", "cyan", "pink", "purple"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "yellow", "lime", "blue", "cyan", "pink", "purple"], "regions": ["orange-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "lime", "blue", "cyan", "pink", "purple"], "regions": ["yellow-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "blue", "cyan", "pink", "purple"], "regions": ["lime-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "cyan", "pink", "purple"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "pink", "purple"], "regions": ["cyan-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "cyan", "purple"], "regions": ["pink-spawn"], "message": "&cYou may not enter the enemy spawn."},
-    {"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "cyan", "pink"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."}
-  ],
-  "regions": [
+	"name": "Quid KOTH",
+	"objective": "&eParkour your way to the top while avoiding knockback. Capture as many hills as possible with your team. Knock your enemy off the map to defend your hills.",
+	"authors": [
+		{"uuid": "6ff4ade9-e968-4acd-80eb-1a6fa89629fb", "username": "_Pear"},
+		{"uuid": "571c1d9d-4d49-43bd-bfdb-30563e920ca9", "username": "Wesdial"},
+		{"uuid": "f3a45bea-dbde-4791-8155-0988b644ac3b", "username": "_iMan"},
+		{"uuid": "3d741e18-8da0-4780-a6b1-ca38e6768022", "username": "Svnti"}
+	],
+	"gametype": "KOTH",
+	"version": "1.0.0",
+	"stats": { "disable": true },
+	"damageControl": { "fall": false },
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "orange",
+			"name": "Orange",
+			"color": "gold",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "yellow",
+			"name": "Yellow",
+			"color": "yellow",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "lime",
+			"name": "Lime",
+			"color": "green",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "cyan",
+			"name": "Cyan",
+			"color": "dark aqua",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "pink",
+			"name": "Pink",
+			"color": "light purple",
+			"min": 1,
+			"max": 8
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 8
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-12.5, 69, 38.5, -180"},
+		{"teams": ["red"], "coords": "-12.5, 20, 71.5, -180"},
+		{"teams": ["orange"], "coords": "11.5, 20, 62.5, 135.5"},
+		{"teams": ["yellow"], "coords": "20.5, 20, 38.5, 90"},
+		{"teams": ["lime"], "coords": "11.5, 20, 14.5, 45"},
+		{"teams": ["blue"], "coords": "-12.5, 20, 5.5, -0"},
+		{"teams": ["cyan"], "coords": "-36.5, 20, 14.5, -45"},
+		{"teams": ["pink"], "coords": "-45.5, 20, 38.5, -90"},
+		{"teams": ["purple"], "coords": "-36.5, 20, 62.5, -135"}
+	],
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "cyan", "pink", "purple"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain here."},
+
+		{"type": "enter", "evaluate": "deny", "teams": ["orange", "yellow", "lime", "blue", "cyan", "pink", "purple"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "yellow", "lime", "blue", "cyan", "pink", "purple"], "regions": ["orange-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "lime", "blue", "cyan", "pink", "purple"], "regions": ["yellow-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "blue", "cyan", "pink", "purple"], "regions": ["lime-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "cyan", "pink", "purple"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "pink", "purple"], "regions": ["cyan-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "cyan", "purple"], "regions": ["pink-spawn"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red", "orange", "yellow", "lime", "blue", "cyan", "pink"], "regions": ["purple-spawn"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
 		{"id": "red-spawn", "type": "cuboid", "min": "-16, 0, 68", "max": "-10, oo, 74"},
 		{"id": "orange-spawn", "type": "cuboid", "min": "14, 0, 59", "max": "8, oo, 65"},
-    {"id": "yellow-spawn", "type": "cuboid", "min": "17, 0, 41", "max": "23, oo, 35"},
-    {"id": "lime-spawn", "type": "cuboid", "min": "8, 0, 11", "max": "14, oo, 17"},
-    {"id": "blue-spawn", "type": "cuboid", "min": "-16, 0, 2", "max": "-10, oo, 8"},
-    {"id": "cyan-spawn", "type": "cuboid", "min": "-40, 0, 17", "max": "-34, oo, 11"},
-    {"id": "pink-spawn", "type": "cuboid", "min": "-43, 0, 41", "max": "-49, oo, 35"},
-    {"id": "purple-spawn", "type": "cuboid", "min": "-34, 0, 65", "max": "-40, oo, 59"}
-  ],
-  "points": {
-    "target": 2000
-  },
-  "koth": {
-    "hills": [
-      {
-        "name": "1st Point",
-        "time": 3,
-			  "points": 1,
+		{"id": "yellow-spawn", "type": "cuboid", "min": "17, 0, 41", "max": "23, oo, 35"},
+		{"id": "lime-spawn", "type": "cuboid", "min": "8, 0, 11", "max": "14, oo, 17"},
+		{"id": "blue-spawn", "type": "cuboid", "min": "-16, 0, 2", "max": "-10, oo, 8"},
+		{"id": "cyan-spawn", "type": "cuboid", "min": "-40, 0, 17", "max": "-34, oo, 11"},
+		{"id": "pink-spawn", "type": "cuboid", "min": "-43, 0, 41", "max": "-49, oo, 35"},
+		{"id": "purple-spawn", "type": "cuboid", "min": "-34, 0, 65", "max": "-40, oo, 59"}
+	],
+	"points": {
+		"target": 2000
+	},
+	"koth": {
+		"hills": [
+			{
+				"name": "1st Point",
+				"time": 3,
+				"points": 1,
 				"region": {
-					"type": "meta",
-					"regions": [
-						{"type": "cylinder", "base": "-13.5, 18, 38.5", "radius": 14.5, "height": 4},
-						{"min": "-13, 4, 38", "max": "-13, 4, 38"}
-					]
+				"type": "meta",
+				"regions": [
+					{"type": "cylinder", "base": "-13.5, 18, 38.5", "radius": 14.5, "height": 4},
+					{"min": "-13, 4, 38", "max": "-13, 4, 38"}
+				]
 				}
 			},
 			{
 				"name": "2nd Point",
-        "time": 4,
+				"time": 4,
 				"points": 2,
 				"region": {
 					"type": "cylinder", "base": "-13.5, 27, 38.5", "radius": 12, "height": 4
@@ -135,7 +129,7 @@
 			},
 			{
 				"name": "3rd Point",
-        "time": 6,
+				"time": 6,
 				"points": 3,
 				"region": {
 					"type": "cylinder", "base": "-13.5, 36, 38.5", "radius": 8, "height": 4
@@ -143,7 +137,7 @@
 			},
 			{
 				"name": "4th Point",
-        "time": 7,
+				"time": 7,
 				"points": 4,
 				"region": {
 					"type": "cylinder", "base": "-13.5, 45, 38.5", "radius": 4.5, "height": 4
@@ -151,97 +145,96 @@
 			},
 			{
 				"name": "5th Point",
-        "time": 8,
+				"time": 8,
 				"points": 5,
 				"region": {
 					"type": "cylinder", "base": "-13.5, 54, 38.5", "radius": 7, "height": 4
 				}
 			}
 		]
-    },
-    "kits": [
-      {
-        "name": "default",
-        "items": [
-          {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-          {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
-          {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-          {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true},
-          {"type": "item", "material": "wooden sword", "slot": 0, "unbreakable": true},
-          {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-          {"type": "item", "material": "golden apple", "slot": 2},
-          {"type": "item", "material": "arrow", "slot": 8, "amount": 2}
-        ],
-        "effects": [
-          {
-            "type": "saturation",
-            "duration": 999999,
-            "amplifier": 1,
-            "particles": false
-          }
-        ]
-      }
-    ],
-	  "time": {
-		  "broadcasts": [
-        {
-          "message": "&6[TIP] &eThe higher you go, the more points you can get!",
-          "interval": 1,
-          "repeat": false,
-          "commands": []
-        },
-        {
-          "message": "&6[TIP] &eFall damage is disabled on this map!",
-          "interval": 2,
-          "repeat": false,
-          "commands": []
-        }
-      ]
-    },
-    "itemremove": [
-      "wooden sword", "bow", "golden apple", "arrow",
-      {
-        "type": "leather helmet",
-        "drop": true
-      },
-      {
-        "type": "leather chestplate",
-        "drop": true
-      },
-      {
-        "type": "leather leggings",
-        "drop": true
-      },
-      {
-        "type": "leather boots",
-        "drop": true
-
+	},
+	"kits": [
+		{
+			"name": "default",
+			"items": [
+			{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+			{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+			{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+			{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true},
+			{"type": "item", "material": "wooden sword", "slot": 0, "unbreakable": true},
+			{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+			{"type": "item", "material": "golden apple", "slot": 2},
+			{"type": "item", "material": "arrow", "slot": 8, "amount": 2}
+		],
+		"effects": [
+			{
+				"type": "saturation",
+				"duration": 999999,
+				"amplifier": 1,
+				"particles": false
+			}
+		]
 		}
-    ],
-    "killstreaks": [
-      {
-        "count": 1,
-        "repeat": true,
-        "actions": {
-          "items": [
-            {
-              "material": "golden apple", 
-              "amount": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 5,
-        "repeat": true,
-        "actions": {
-          "items": [
-            {
-              "material": "arrow",
-              "amount": 1
-            }
-          ]
-        }
-      }
-    ]
-  }
+	],
+	"time": {
+		"broadcasts": [
+			{
+				"message": "&6[TIP] &eThe higher you go, the more points you can get!",
+				"interval": 1,
+				"repeat": false,
+				"commands": []
+			},
+			{
+				"message": "&6[TIP] &eFall damage is disabled on this map!",
+				"interval": 2,
+				"repeat": false,
+				"commands": []
+			}
+		]
+	},
+	"itemremove": [
+		"wooden sword", "bow", "golden apple", "arrow",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+			"items": [
+				{
+					"material": "golden apple", 
+					"amount": 1
+				}
+			]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"actions": {
+			"items": [
+				{
+					"material": "arrow",
+					"amount": 1
+				}
+			]
+			}
+		}
+		]
+	}
