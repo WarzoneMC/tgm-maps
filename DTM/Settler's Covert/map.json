@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -22,7 +22,7 @@
 		}
 	],
 	"spawns": [
-		{"teams": ["spectators"], "coords": "-9, 25, 3"},
+		{"teams": ["spectators"], "coords": "-9, 53, 3, -90"},
 		{"teams": ["blue"], "coords": "-19.5, 7, 45.5, 180"},
 		{"teams": ["red"], "coords": "1.5, 7, -39.5"}
 	],
