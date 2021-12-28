@@ -8,7 +8,7 @@
 		{"uuid": "3d741e18-8da0-4780-a6b1-ca38e6768022", "username": "Svnti"}
 	],
 	"gametype": "KOTH",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"stats": { "disable": true },
 	"damageControl": { "fall": false },
 	"teams": [
@@ -161,7 +161,7 @@
 			{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
 			{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
 			{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true},
-			{"type": "item", "material": "wooden sword", "slot": 0, "unbreakable": true},
+			{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
 			{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
 			{"type": "item", "material": "golden apple", "slot": 2},
 			{"type": "item", "material": "arrow", "slot": 8, "amount": 2}
@@ -193,7 +193,7 @@
 		]
 	},
 	"itemremove": [
-		"wooden sword", "bow", "golden apple", "arrow",
+		"stone sword", "bow", "golden apple", "arrow",
 		{
 			"type": "leather helmet",
 			"drop": true
