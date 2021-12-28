@@ -113,5 +113,6 @@
 
 		{"id": "red-wool", "type": "cuboid", "min": "-69, 23, -209", "max": "-71, 27, -207"},
 		{"id": "blue-wool", "type": "cuboid", "min": "-29, 27, 47", "max": "-31, 23, 49"}
-	]
+	],
+	"buildHeight": 41
 }
