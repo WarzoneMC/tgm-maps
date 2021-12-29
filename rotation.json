@@ -200,5 +200,26 @@
 			"Raid",
 			"Yowzer Stadium"
 		]
+	},
+	{
+		"name": "Gift Hunt",
+		"maps": [
+			"Snowstone",
+			"Desolate Gully CTW",
+			"Gelid 2",
+			"Equinox ",
+			"Twin Peaks",
+			"Rampant",
+			"Balloons Christmas",
+			"Aerial Conquest",
+			"A New Day",
+			"Christmas Country",
+			"Kyoto",
+			"Snowback",
+			"Deepwind Jungle",
+			"Festive",
+			"Unix Holiday",
+			"Museum"	
+		]
 	}
 ]
