@@ -130,47 +130,20 @@
 		}
 	],
 	"time": {
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			},
-			{"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&62 seconds until the monuments change.", "interval": 598, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&61 second until the monuments change.", "interval": 599, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{
-				"message": "&6The monuments have changed to &l&4beacons&r&6.",
-				"interval": 600,
-				"repeat": false,
-				"commands": [
-					"execute at @r run fill -45 67 -29 -45 67 -29 minecraft:beacon replace minecraft:obsidian",
-					"execute at @r run fill 41 67 -29 41 67 -29 minecraft:beacon replace minecraft:obsidian",
-					"execute at @r run fill 41 67 145 41 67 145 minecraft:beacon replace minecraft:obsidian",
-					"execute at @r run fill -45 67 145 -45 67 145 minecraft:beacon replace minecraft:obsidian",
-					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -2 80 58 100 0"
-				]
-			},
-			{"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6.", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&63 seconds until the monuments change.", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&62 seconds until the monuments change.", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{"message": "&63 second until the monuments change.", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -2 80 58 100 1"]},
-			{
-				"message": "&6The monuments have changed to &l&4coal blocks&r&6.",
-				"interval": 900,
-				"repeat": false,
-				"commands": [
-					"execute at @r run fill -45 67 -29 -45 67 -29 minecraft:coal_block replace minecraft:beacon",
-					"execute at @r run fill 41 67 -29 41 67 -29 minecraft:coal_block replace minecraft:beacon",
-					"execute at @r run fill 41 67 145 41 67 145 minecraft:coal_block replace minecraft:beacon",
-					"execute at @r run fill -45 67 145 -45 67 145 minecraft:coal_block replace minecraft:beacon",
-					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -2 80 58 100 0"
-				]
-			}
-		]
-	},
+        "limit": 600,
+        "broadcasts": [
+            {
+                "message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
+                "interval": 1, "repeat": false, "commands": []
+            },
+            {"message": "&c&l[EVENT] &cMatch will end after 10 minutes!", "interval": 5, "repeat": false, "commands": []},
+            {"message": "&c&l[EVENT] &cTime runs out in 1 minute!", "interval": 540, "repeat": false, "commands": []},
+            {"message": "&c&l[EVENT] &cTime runs out in 30 seconds!", "interval": 570, "repeat": false, "commands": []},
+            {"message": "&c&l[EVENT] &cTime runs out in 3 seconds!", "interval": 597, "repeat": false, "commands": []},
+            {"message": "&c&l[EVENT] &cTime runs out in 2 seconds!", "interval": 598, "repeat": false, "commands": []},
+            {"message": "&c&l[EVENT] &cTime runs out in 1 second!", "interval": 599, "repeat": false, "commands": []}
+        ]
+    },
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["yellow", "white"],
