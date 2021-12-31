@@ -204,21 +204,21 @@
 	{
 		"name": "Gift Hunt",
 		"maps": [
-			"Snowstone",
-			"Desolate Gully CTW",
-			"Gelid 2",
-			"Equinox ",
-			"Twin Peaks",
-			"Rampant",
 			"Balloons Christmas",
-			"Aerial Conquest",
+			"Rampant",
+			"Equinox ",
 			"A New Day",
-			"Christmas Country",
 			"Kyoto",
-			"Snowback",
-			"Deepwind Jungle",
 			"Festive",
+			"Aerial Conquest",
+			"Snowback",
+			"Twin Peaks",
+			"Desolate Gully CTW",
 			"Unix Holiday",
+			"Snowstone",
+			"Gelid 2",			
+			"Christmas Country",
+			"Deepwind Jungle",
 			"Museum"	
 		]
 	}
