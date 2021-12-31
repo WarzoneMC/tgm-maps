@@ -121,18 +121,11 @@
         }
     ],
     "time": {
-        "limit": 600,
         "broadcasts": [
             {
                 "message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
                 "interval": 1, "repeat": false, "commands": []
-            },
-            {"message": "&c&l[EVENT] &cMatch will end after 10 minutes!", "interval": 5, "repeat": false, "commands": []},
-            {"message": "&c&l[EVENT] &cTime runs out in 1 minute!", "interval": 540, "repeat": false, "commands": []},
-            {"message": "&c&l[EVENT] &cTime runs out in 30 seconds!", "interval": 570, "repeat": false, "commands": []},
-            {"message": "&c&l[EVENT] &cTime runs out in 3 seconds!", "interval": 597, "repeat": false, "commands": []},
-            {"message": "&c&l[EVENT] &cTime runs out in 2 seconds!", "interval": 598, "repeat": false, "commands": []},
-            {"message": "&c&l[EVENT] &cTime runs out in 1 second!", "interval": 599, "repeat": false, "commands": []}
+            }
         ]
     },
     "filters": [
