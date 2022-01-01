@@ -85,11 +85,7 @@
         {
             "type": "leather boots",
             "drop": true
-        },
-		{
-			"type": "player head",
-			"spawn": true
-		}
+        }
 	],
 	"killstreaks": [
 		{
@@ -102,14 +98,6 @@
 			}
 		}
 	],
-	"time": {
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			}
-		]
-	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
@@ -123,8 +111,7 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "177, 0, -164", "max": "200, oo, -115"},

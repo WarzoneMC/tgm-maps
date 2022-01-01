@@ -120,14 +120,6 @@
             }
         }
     ],
-    "time": {
-        "broadcasts": [
-            {
-                "message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-                "interval": 1, "repeat": false, "commands": []
-            }
-        ]
-    },
     "filters": [
         {
             "type": "build", "evaluate": "deny", "teams": ["red"],
@@ -141,14 +133,13 @@
         },
         {"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection", "lime-room", "purple-room"], "message": "&cYou may not enter this region."},
         {"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection", "orange-room", "yellow-room"], "message": "&cYou may not enter this region."},
-        {"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["lime-room", "purple-room", "orange-room", "yellow-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
+	{"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["lime-room", "purple-room", "orange-room", "yellow-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
         {
             "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
             "regions": ["spectators"],
             "message": "&cYou are not allowed to modify terrain here."
         },
-        {"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-        {"type": "blockBreak", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+	{"type": "voidbuild", "evaluate": "deny", "teams": ["red", "blue"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
     ],
     "regions": [
         {"id": "yellow-room", "min": "79, 0, 106", "max": "109, oo, 135"},
@@ -165,7 +156,7 @@
         {"id": "blue-spawn-protection", "type": "cuboid", "min": "-109, 0, 198", "max": "-132, oo, 224"},
 
         {"id": "spectators", "type": "sphere", "center": "-7, 21, 300", "radius": 10},
-        {"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
+	{"id": "map", "type": "cuboid", "min": "-73, 0, 169", "max": "59, oo, 253"}
     ],
     "buildHeight": 28
 }

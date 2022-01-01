@@ -122,10 +122,6 @@
 				"interval": 1,
 				"repeat": false,
 				"commands": ["execute at @r run setblock -346 2 -40 redstone_block"]
-			},
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
 			}
 		]
 	},

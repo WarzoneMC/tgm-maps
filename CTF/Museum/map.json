@@ -14,13 +14,7 @@
 		]
 	},
 	"time": {
-		"limit": 1200,
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			}
-		]
+		"limit": 1200
 	},
 	"teams": [
 		{

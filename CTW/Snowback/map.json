@@ -95,11 +95,7 @@
         {
             "type": "leather leggings",
             "drop": true
-        },
-		{
-			"type": "player head",
-			"spawn": true
-		}
+        }
 	],
 	"killstreaks": [
 		{
@@ -112,14 +108,6 @@
 			}
 		}
 	],
-	"time": {
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			}
-		]
-	},
 	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["reindeer"],
@@ -147,8 +135,7 @@
 		{"type": "blockBreak", "evaluate": "allow", "teams": ["elves"], "regions": ["light-blue-room", "blue-room"], "blocks": ["cobweb", "blue stained glass", "light blue stained glass"], "message": "&cYou may only break cobwebs and glass."},
 		{"type": "blockBreak", "evaluate": "allow", "teams": ["reindeer"], "regions": ["magenta-room", "pink-room"], "blocks": ["cobweb", "magenta stained glass", "pink stained glass"], "message": "&cYou may only break cobwebs and glass."},
 		{"type": "blockPlace", "evaluate": "deny", "teams": ["elves"], "regions": ["light-blue-room", "blue-room"], "message": "&cYou may not modify terrain here."},
-		{"type": "blockPlace", "evaluate": "deny", "teams": ["reindeer"], "regions": ["magenta-room", "pink-room"], "message": "&cYou may not modify terrain here."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["elves", "reindeer"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+		{"type": "blockPlace", "evaluate": "deny", "teams": ["reindeer"], "regions": ["magenta-room", "pink-room"], "message": "&cYou may not modify terrain here."}
 	],
 	"regions": [
 		{"id": "light-blue-room", "min": "-24, 0, 120", "max": "-48, oo, 137"},

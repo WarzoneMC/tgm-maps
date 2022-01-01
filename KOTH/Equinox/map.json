@@ -118,14 +118,6 @@
 		{"from": "side1-portal", "to": "-0.5, 33, -170.5", "sound": true, "teams": ["blue", "red"]},
 		{"from": "side2-portal", "to": "-0.5, 33, -106.5, 180", "sound": true, "teams": ["blue", "red"]}
 	],
-	"time": {
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			}
-		]
-	},
 	"filters": [
 		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain on this map."},
 

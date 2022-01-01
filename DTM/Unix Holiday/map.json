@@ -108,11 +108,7 @@
         {
             "type": "leather leggings",
             "drop": true
-        },
-		{
-			"type": "player head",
-			"spawn": true
-		}
+        }
 	],
 	"killstreaks": [
 		{
@@ -125,14 +121,6 @@
 			}
 		}
 	],
-	"time": {
-		"broadcasts": [
-			{
-				"message": "&c&l[EVENT] &r&cThere's a &lsecret present &r&chidden in this map! If you can find and screenshot all 16 gifts hidden across multiple maps, then you can win a holiday tag! Head to #events in the Discord server for more information!",
-				"interval": 1, "repeat": false, "commands": []
-			}
-		]
-	},
 	"filters": [
 		{
 			"type": "blockBreak", "evaluate": "allow", "teams": ["cynx", "cyprone"],
@@ -146,8 +134,7 @@
 		},
 		{"type": "enter", "evaluate": "deny", "teams": ["cynx"], "regions": ["cyprone-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["cyprone"], "regions": ["cynx-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-		{"type": "voidbuild", "evaluate": "deny", "teams": ["cynx", "cyprone"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["cynx", "cyprone"], "regions": ["global"], "blocks": ["player head"], "message": "&cYou are not allowed to break the presents, take a screenshot instead!"}
+		{"type": "voidbuild", "evaluate": "deny", "teams": ["cynx", "cyprone"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."}
 	],
 	"regions": [
 		{"id": "cynx-spawn-protection", "type": "cuboid", "min": "-649, 0, -1119", "max": "-685, oo, -1086"},
