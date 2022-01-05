@@ -4,7 +4,7 @@
 		{"uuid": "130be12a-f3b9-4b7d-ad39-7b45e84d3d0f", "username": "Veiyl"},
 		{"uuid": "36dc036a-dfbc-4627-b66a-501223f08075", "username": "ieatboulders2"}
 	],
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -30,17 +30,7 @@
 	"dtm": {
 		"monuments": [
 			{
-				"name": "North Tower&r",
-				"teams": ["blue"],
-				"materials": ["obsidian", "beacon", "coal block"],
-				"region": {
-					"min": "-290, 27, 1154",
-					"max": "-290, 28, 1154"
-				},
-				"health": 2
-			},
-			{
-				"name": "South Tower&r",
+				"name": "Right Tower",
 				"teams": ["blue"],
 				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
@@ -50,7 +40,17 @@
 				"health": 2
 			},
 			{
-				"name": "North Tower&r",
+				"name": "Left Tower",
+				"teams": ["blue"],
+				"materials": ["obsidian", "beacon", "coal block"],
+				"region": {
+					"min": "-290, 27, 1154",
+					"max": "-290, 28, 1154"
+				},
+				"health": 2
+			},
+			{
+				"name": "Right Tower",
 				"teams": ["red"],
 				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
@@ -60,7 +60,7 @@
 				"health": 2
 			},
 			{
-				"name": "South Tower&r",
+				"name": "Left Tower",
 				"teams": ["red"],
 				"materials": ["obsidian", "beacon", "coal block"],
 				"region": {
