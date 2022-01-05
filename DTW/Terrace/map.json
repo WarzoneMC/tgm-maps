@@ -1,9 +1,9 @@
 {
 	"name": "Terrace",
 	"authors": [
-		{"uuid": "adc72590-0a22-4f29-b04b-b4e05e1c7b60", "username": "ItzLany"}
+		{"uuid": "adc72590-0a22-4f29-b04b-b4e05e1c7b60", "username": "34_"}
 	],
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -107,5 +107,6 @@
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "-92, 3, 196", "max": "-98, 23, 202"},
 		{"id": "red-spawn-protection", "type": "cuboid", "min": "-98, 3, 58", "max": "-92, 23, 52"}
-	]
+	],
+	"buildHeight": 43
 }
