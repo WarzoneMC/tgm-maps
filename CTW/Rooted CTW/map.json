@@ -3,7 +3,7 @@
     "authors": [
         {"uuid": "fe3608b7-d105-4029-8800-34b3147065b6", "username": "rockymine"}
     ],
-    "version": "2.2.3",
+    "version": "2.2.4",
     "gametype": "CTW",
     "teams": [
         {
@@ -87,8 +87,8 @@
         }
     ],
     "itemremove": [
-        "stone sword", "iron sword", "bow", "shears", "arrow", "stone axe", "iron axe", "iron pickaxe", "iron shovel", "iron helmet", "iron leggings", "iron boots", "stone", "dirt", "poppy", "wheat seeds", "oak sapling", "tall grass", "golden carrot", "apple", "flint",
-	"light blue wool", "light gray wool", "lime wool", "green wool",    
+        "stone sword", "iron sword", "bow", "oak leaves", "oak planks", "shears", "arrow", "stone axe", "iron axe", "iron pickaxe", "iron shovel", "iron helmet", "iron leggings", "iron boots", "stone", "dirt", "poppy", "wheat seeds", "oak sapling", "tall grass", "golden carrot", "cobweb", "apple", "golden apple", "flint",
+	"light blue wool", "light gray wool", "lime wool", "green wool",
         {
             "type": "iron chestplate",
             "drop": true
