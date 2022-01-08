@@ -6,7 +6,7 @@
         {"uuid": "c29bef37-d8e2-42a9-b746-04f2df78f374", "username": "Legoche"},
         {"uuid": "0b8f95fa-0f40-4f28-9fd0-b8e243bb6800", "username": "Fouled"}
     ],
-    "version": "1.1.0",
+    "version": "1.1.2",
     "gametype": "DTM",
     "teams": [
         {
@@ -94,7 +94,7 @@
     ],
     "itemremove": [
         "iron sword", "bow", "diamond pickaxe",
-        "golden apple", "oak log", "oak planks", "glass", "apple", "arrow",
+        "golden apple", "stone axe", "oak log", "oak planks", "glass", "apple", "arrow",
         "leather helmet"
     ],
     "killstreaks": [
