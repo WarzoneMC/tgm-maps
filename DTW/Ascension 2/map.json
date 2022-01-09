@@ -3,7 +3,7 @@
 	"authors": [
 		{"uuid": "bf331953-4f92-43ee-8abc-7544b8234936", "username": "ViceWatercolour"}
 	],
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"gametype": "DTM",
 	"teams": [
 		{
@@ -63,10 +63,10 @@
 				{"material": "arrow", "slot": 7, "amount": 32},
 				{"material": "cooked beef", "slot": 8, "amount": 64},
 				
-				{"type": "helmet", "material": "iron helmet", "unbreakable": true},
-				{"type": "chestplate", "material": "leather chestplate", "unbreakable": true},
-				{"type": "leggings", "material": "leather leggings", "unbreakable": true},
-				{"type": "boots", "material": "iron boots", "unbreakable": true}
+				{"type": "helmet", "material": "iron helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "chestplate", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "leggings", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "boots", "material": "iron boots", "slot": "boots", "unbreakable": true}
 			]
 		}
 	],
