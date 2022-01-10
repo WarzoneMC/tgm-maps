@@ -1,0 +1,118 @@
+{
+	"name": "North Winds",
+	"authors": [
+		{"uuid": "0c44ca5a-6a42-49b7-81f2-58dc6d2ae3e9", "username": "Xerocoles"}
+	],
+	"version": "1.0.2",
+	"gametype": "KOTH",
+	"objective": "Reach 750 points before the opposing team!",
+	"points": {
+		"target": 750
+	},
+	"time": {
+        "broadcasts": [
+            {
+                "message": "&0[&fTIP&0] &cThe Upper Hill is worth twice as much as the Lower Hill!",
+                "interval": 4,
+                "repeat": false,
+                "commands": []
+            }
+        ]
+    },
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "dark red",
+			"min": 1,
+			"max": 4
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 4
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "45.5, 33, -17.5"},
+		{"teams": ["red"], "coords": "56, 20, -18.5"},
+		{"teams": ["blue"], "coords": "32, 20, -18.5"}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "stone sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "enchantments": ["infinity:1"], "unbreakable": true},
+				{"type": "item", "material": "golden carrot", "slot": 2, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 28, "amount": 1},
+				
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "enchantments": ["feather falling:1"], "unbreakable": true}
+			]
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"itemremove": [
+		"stone sword", "bow", "golden carrot", "golden apple", "arrow",
+		{"type": "leather helmet", "drop": true},
+		{"type": "leather chestplate", "drop": true},
+		{"type": "chainmail leggings", "drop": true},
+		{"type": "iron boots", "drop": true}
+	],
+	"koth": {
+		"hills": [
+			{
+				"name": "Upper Hill",
+				"time": 4,
+				"points": 4,
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "41, 25, 28", "max": "47, 26, 32"},
+						{"min": "46, 25, 33", "max": "42, 26, 27"}
+					]
+				}
+			},
+			{
+				"name": "Lower Hill",
+				"time": 4,
+				"points": 2,
+				"region": {
+					"type": "meta",
+					"regions": [
+						{"min": "43, 18, 14", "max": "45, 19, 10"},
+						{"min": "46, 18, 11", "max": "42, 19, 13"}
+					]
+				}
+			}
+		]
+	},
+	"filters": [
+		{"type": "build", "evaluate": "deny", "teams": ["red", "blue"], "regions": ["global"], "message": "&cYou are not allowed to modify terrain!"}
+	],
+	"gamerules": {
+        "doTileDrops": false,
+        "doDaylightCycle": false
+    },
+    "regions": [
+		{"id": "portal", "min": "44, 19, 19", "max": "43, 21, 18"}
+	],
+    "portals": [ 
+        {"from": "portal", "to": "44, 26, 26.5", "teams": ["blue", "red"], "sound": true}
+    ]
+}
