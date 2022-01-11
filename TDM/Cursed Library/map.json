@@ -4,8 +4,7 @@
 		{"uuid": "f690a591-348b-482e-a18d-7779d0c0a28c", "username": "mitchiii"}
 	],
 	"gametype": "TDM",
-	"version": "1.1.1",
-	"stats": {"disable": true},
+	"version": "1.1.2",
 	"teams": [
 		{
 			"id": "blue",
