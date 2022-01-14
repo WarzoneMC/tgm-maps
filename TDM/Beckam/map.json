@@ -4,9 +4,9 @@
 		{"uuid": "e3fdaea1-8a19-4378-8ad7-41cf63f5d141", "username": "Avaleer"}
 	],
 	"gametype": "TDM",
-	"objective": "Be the team with the most kills after 7 minutes!"
+	"objective": "Be the team with the most kills after 7 minutes!",
 	"version": "1.1.1",
-    	"teams": [
+	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
