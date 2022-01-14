@@ -6,7 +6,7 @@
 	"gametype": "TDM",
 	"objective": "Be the team with the most kills after 7 minutes!",
 	"version": "1.1.1",
-    "teams": [
+	"teams": [
 		{
 			"id": "blue",
 			"name": "Blue",
