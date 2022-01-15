@@ -6,7 +6,7 @@
 		{"uuid": "2ca8072f-74be-4798-85b8-bbce03aa91af", "username": "Tywnis"},
 		{"uuid": "e37f18f1-117b-47db-8806-6d3a0854b518", "username": "Chicky"}
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"gametype": "CTW",
 	"respawn": {
 		"rules": [
@@ -121,9 +121,7 @@
 		{"type": "build", "evaluate": "deny", "teams": ["blue"], "regions": ["red-room"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "build", "evaluate": "deny", "teams": ["red"], "regions": ["blue-room"], "message": "&cYou are not allowed to modify terrain here."},
 		{"type": "voidbuild", "evaluate": "deny", "teams": ["blue", "red"], "inverted": true, "regions": ["map"], "message": "&cYou may not build over the void."},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "red-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"},
-		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "blocks": ["blue wool", "red wool"], "message": "&cYou are not allowed to break wool blocks!"},
-		{"type": "blockPlace", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["global"], "blocks": ["blue wool", "red wool"], "message": "&cYou are not allowed to place wool blocks!"}
+		{"type": "blockBreak", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["blue-room", "red-room"], "blocks": ["chest"], "message": "&cYou are not allowed to break the chests!"}
 	],
 	"regions": [
 		{"id": "blue-spawn-protection", "type": "cuboid", "min": "9, 8, -39", "max": "38, oo, -26"},
