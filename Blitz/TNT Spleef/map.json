@@ -1,0 +1,156 @@
+{
+	"name": "TNT Spleef",
+	"version": "1.0.3",
+	"authors": [
+		{"uuid": "e5eea785-51c1-40fe-a2d0-f83d4c035cd9", "username": "pikpikmerchant"},
+		{"uuid": "459fd919-0d58-401a-9601-6cab1eb721ab", "username": "Reshif"}
+	],
+	"gametype": "Blitz",
+	"objective": "Spleef everyone else using TNT!",
+	"stats": {"disable": true},
+	"damageControl": {
+		"FALL": false,
+		"ENTITY_ATTACK": false
+	},
+    "gamerules": {
+        "doTileDrops": false,
+        "logAdminCommands": false,
+        "sendCommandFeedback": false
+    },
+	"teams": [
+		{
+			"id": "spleefers",
+			"name": "Spleefers",
+			"color": "gray",
+			"min": 1,
+			"max": 150
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-0.5, 60, 0.5, 90"},
+        {   
+    		"teams": ["spleefers"],
+    		"region": "spawn",
+    		"face-coordinates": "0.5, 4, 0.5"
+		}
+	],
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"material": "tnt", "slot": 0, "amount": 64},
+                {"material": "tnt", "slot": 1, "amount": 64},
+                {"material": "tnt", "slot": 2, "amount": 64},
+                {"material": "tnt", "slot": 3, "amount": 64},
+                {"material": "tnt", "slot": 4, "amount": 64},
+                {"material": "tnt", "slot": 5, "amount": 64},
+                {"material": "tnt", "slot": 6, "amount": 64},
+                {"material": "tnt", "slot": 7, "amount": 64},
+                {"material": "tnt", "slot": 8, "amount": 64},
+				{
+                    "material": "chainmail chestplate", "slot": "chestplate",
+                    "enchantments": ["blast protection:10"], "unbreakable": true
+                }
+			],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false},
+                {"type": "saturation", "duration": 999999999, "amplifier": 1, "particles": false}
+			]
+		},
+        {
+			"name": "Specatators",
+			"items": [],
+			"effects": [
+				{"type": "night vision", "duration": 1000000, "amplifier": 0, "particles": false}
+			]
+		}
+	],
+	"itemremove": "*",
+	"time": {
+		"limit": 180,
+		"broadcasts": [
+			{
+				"message": "&eThe floor is now TNT; run for your lives!",
+				"interval": 160,
+				"repeat": false,
+				"commands": [
+                    "execute at @r run fill 35 2 35 -35 2 -35 minecraft:tnt replace minecraft:snow_block"
+                ]
+			}
+		]
+	},
+	"filters": [
+		{
+			"type": "block-break", "evaluate": "deny", "teams": ["spleefers"],
+			"regions": ["global"],
+			"message": "&cYou may only break blocks using TNT."
+		},
+        {
+            "type": "block-explode", "evaluate": "deny", "inverted": true, "teams": ["spleefers"],
+            "regions": ["i-hate-this"]
+        },
+        {
+			"type": "renewableBlocks",
+			"regions": ["renewables"],
+			"delay": 600,
+			"block": "clay"
+		},
+        {
+			"type": "renewableBlocks",
+			"regions": ["renewables"],
+			"delay": 600,
+			"block": "snow block"
+		}
+	],
+    "regions": [
+        {	
+            "id": "i-hate-this", "type": "meta",
+			"regions": [
+                {"min": "-5, 0, -34", "max": "5, 3, -34"},
+                {"min": "-10, 0, -33", "max": "10, 3, -33"},
+                {"min": "-13, 0, -32", "max": "13, 3, -32"},
+                {"min": "-15, 0, -31", "max": "15, 3, -31"},
+                {"min": "-17, 0, -30", "max": "17, 3, -30"},
+                {"min": "-18, 0, -29", "max": "18, 3, -29"},
+                {"min": "-20, 0, -28", "max": "20, 3, -28"},
+                {"min": "-21, 0, -27", "max": "21, 3, -27"},
+                {"min": "-23, 0, -26", "max": "23, 3, -26"},
+                {"min": "-24, 0, -25", "max": "24, 3, -25"},
+                {"min": "-25, 0, -24", "max": "25, 3, -24"},
+                {"min": "-26, 0, -22", "max": "26, 3, -23"},
+                {"min": "-27, 0, -21", "max": "27, 3, -21"},
+                {"min": "-28, 0, -19", "max": "28, 3, -20"},
+                {"min": "-29, 0, -18", "max": "29, 3, -18"},
+                {"min": "-30, 0, -17", "max": "30, 3, -16"},
+                {"min": "-31, 0, -14", "max": "31, 3, -15"},
+                {"min": "-32, 0, -11", "max": "32, 3, -13"},
+                {"min": "-33, 0, -10", "max": "33, 3, -6"},
+
+                {"min": "-34, 0, -5", "max": "34, 3, 5"},
+                
+                {"min": "-33, 0, 10", "max": "33, 3, 6"},
+                {"min": "-32, 0, 11", "max": "32, 3, 13"},
+                {"min": "-31, 0, 14", "max": "31, 3, 15"},
+                {"min": "-30, 0, 17", "max": "30, 3, 16"},
+                {"min": "-29, 0, 18", "max": "29, 3, 18"},
+                {"min": "-28, 0, 19", "max": "28, 3, 20"},
+                {"min": "-27, 0, 21", "max": "27, 3, 21"},
+                {"min": "-26, 0, 22", "max": "26, 3, 23"},
+                {"min": "-25, 0, 24", "max": "25, 3, 24"},
+                {"min": "-24, 0, 25", "max": "24, 3, 25"},
+                {"min": "-23, 0, 26", "max": "23, 3, 26"},
+                {"min": "-21, 0, 27", "max": "21, 3, 27"},
+                {"min": "-20, 0, 28", "max": "20, 3, 28"},
+                {"min": "-18, 0, 29", "max": "18, 3, 29"},
+                {"min": "-17, 0, 30", "max": "17, 3, 30"},
+                {"min": "-15, 0, 31", "max": "15, 3, 31"},
+                {"min": "-13, 0, 32", "max": "13, 3, 32"},
+                {"min": "-10, 0, 33", "max": "10, 3, 33"},
+                {"min": "-5, 0, 34", "max": "5, 3, 34"}
+            ]
+        },
+        {"id": "spawn", "type": "cylinder", "base": "0.5, 3, 0.5", "radius": 30, "height": 1},
+        {"id": "renewables", "type": "cylinder", "base": "0.5, 2, 0.5", "radius": 35, "height": 1}
+        
+    ]
+}
