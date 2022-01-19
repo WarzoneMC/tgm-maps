@@ -5,7 +5,7 @@
 		{"uuid": "485fb56b-261c-4b6c-a0df-b4afec6382b2", "username": "RetroMudkip"},
 		{"uuid": "fc945568-a454-450a-ba9f-baf5d2a9574a", "username": "Zurtel"}
 	],
-	"version": "1.0,0",
+	"version": "1.0.0",
 	"gametype": "DTM",
 	"teams": [
 		{
