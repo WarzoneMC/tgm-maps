@@ -6,7 +6,7 @@
 		{"uuid": "fc945568-a454-450a-ba9f-baf5d2a9574a", "username": "Zurtel"}
 	],
 	"version": "1.0.0",
-	"stats": { "disable": true },
+	"stats": {"disable": true},
 	"gametype": "DTM",
 	"teams": [
 		{
