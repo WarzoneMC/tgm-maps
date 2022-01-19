@@ -3,7 +3,8 @@
 	"authors": [
 		{"uuid": "0fee9b73-72ce-4793-926f-c2c45340f480", "username": "Nightsent"}
 	],
-	"version": "1.0",
+	"version": "1.0.0",
+	"stats": { "disable": true },
 	"gametype": "DTM",
 	"teams": [
 		{
