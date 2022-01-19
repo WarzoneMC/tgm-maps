@@ -4,7 +4,7 @@
 		{"uuid": "665f52b7-7ecf-4694-877c-d4adc176bb6f", "username": "BlockHeads36"}
 	],
 	"version": "1.0.0",
-	"stats": { "disable": true },
+	"stats": {"disable": true},
 	"gametype": "DTM",
 	"teams": [
 		{
