@@ -3,7 +3,8 @@
 	"authors": [
 		{"uuid": "2dc9b2a1-6063-499b-9685-aa97b978707a", "username": "Luuke"}
 	],
-	"version": "1.0",
+	"version": "1.0,0",
+	"stats": { "disable": true },
 	"gametype": "DTM",
 	"teams": [
 		{
