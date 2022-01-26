@@ -98,17 +98,17 @@
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "stone shovel", "glass", "oak planks", "bread",
 		"golden apple", "arrow", "iron helmet", "iron boots",
 		{
-            "type": "leather chestplate",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        },
-        {
-            "type": "leather leggings",
-            "death": true,
-            "drop": true,
-            "spawn": false
-        }
+			"type": "leather chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{
