@@ -91,13 +91,13 @@
 		"iron sword", "bow", "stone axe", "iron pickaxe", "spruce boat", "arrow", "cooked beef", "gold block",
 		"iron chestplate", "iron leggings",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

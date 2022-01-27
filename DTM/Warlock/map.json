@@ -109,17 +109,17 @@
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak planks", "cooked beef", 
 		"arrow", "chainmail chestplate", "golden apple",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

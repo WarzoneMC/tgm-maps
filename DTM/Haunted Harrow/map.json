@@ -94,21 +94,21 @@
 	"itemremove": [
 		"stone sword", "bow", "stone pickaxe", "stone axe", "oak planks", "cooked beef", "arrow",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "chainmail leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "chainmail leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -120,7 +120,7 @@
 				]
 			}
 		},
-        {
+		{
 			"count": 2,
 			"repeat": true,
 			"actions": {
@@ -130,12 +130,12 @@
 			}
 		}
 	],
-    "regions": [
+	"regions": [
 		{"id": "red-spawn", "type": "cuboid", "min": "-151, 0, -48", "max": "-159, oo, -40"},
 		{"id": "blue-spawn", "type": "cuboid", "min": "-19, 0, -43", "max": "-27, oo, -35"},
-        {"id": "map", "type": "cuboid", "min": "-169, 0, -84", "max": "-10, oo, -1"}
+		{"id": "map", "type": "cuboid", "min": "-169, 0, -84", "max": "-10, oo, -1"}
 	],
-    "filters": [
+	"filters": [
 		{
 			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
 			"regions": ["blue-spawn", "red-spawn"],
@@ -150,5 +150,5 @@
 			"message": "&cYou may not build outside the map!"
 		}
 	],
-    "buildHeight": 66
+	"buildHeight": 66
 }

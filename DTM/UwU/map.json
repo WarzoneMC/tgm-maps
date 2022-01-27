@@ -79,13 +79,13 @@
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "golden apple", "pumpkin pie", "arrow",
 		"chainmail leggings", "obsidian",
 		{
-            "type": "leather chestplate",
-            "spawn": false
-        },
-        {
-            "type": "leather boots",
-            "spawn": false
-        }
+			"type": "leather chestplate",
+			"spawn": false
+		},
+		{
+			"type": "leather boots",
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{

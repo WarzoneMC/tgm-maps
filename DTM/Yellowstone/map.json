@@ -135,13 +135,13 @@
 		"stone sword", "bow", "diamond pickaxe", "cobblestone", "golden apple", "cooked beef", "arrow",
 		"chainmail chestplate", "iron boots",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

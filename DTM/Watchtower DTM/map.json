@@ -46,39 +46,39 @@
 		{"id": "blue-spawn", "type": "cuboid", "min": "258, 0, 5", "max": "227, oo, -9"},
 		{"id": "red-spawn", "type": "cuboid", "min": "227, 0, 111", "max": "258, oo, 126"},
 		{
-            "id": "lanes", "type": "meta",
-            "regions": [
-                {"min": "196, 0, 83", "max": "204, oo, 35"},
+			"id": "lanes", "type": "meta",
+			"regions": [
+				{"min": "196, 0, 83", "max": "204, oo, 35"},
 				{"min": "252, 0, 91", "max": "260, oo, 66"},
 				{"min": "232, 0, 50", "max": "260, oo, 67"},
 				{"min": "233, 0, 51", "max": "224, oo, 25"},
 				{"min": "289, 0, 33", "max": "280, oo, 82"}
-            ]
-        },
-        {
-            "id": "water-lanes", "type": "meta",
-            "regions": [
-                {"min": "196, 0, 83", "max": "204, oo, 35"},
+			]
+		},
+		{
+			"id": "water-lanes", "type": "meta",
+			"regions": [
+				{"min": "196, 0, 83", "max": "204, oo, 35"},
 				{"min": "252, 0, 91", "max": "260, oo, 66"},
 				{"min": "232, 0, 50", "max": "260, oo, 66"},
 				{"min": "232, 0, 51", "max": "224, oo, 25"},
 				{"min": "288, 0, 33", "max": "280, oo, 82"},
-                
-                {"min": "229, 0, 4", "max": "235.5, oo, 12"},
+
+				{"min": "229, 0, 4", "max": "235.5, oo, 12"},
 				{"min": "249, 0, 4", "max": "255.5, oo, 12"},
 				{"min": "229, 0, 104", "max": "235.5, oo, 112"},
 				{"min": "249, 0, 104", "max": "255.5, oo, 112"}
-            ]
-        },
-        {
-            "id": "spawn-water-lanes", "type": "meta",
-            "regions": [
-                {"min": "229.5, -oo, 4.5", "max": "235.5, oo, 12.5"},
+			]
+		},
+		{
+			"id": "spawn-water-lanes", "type": "meta",
+			"regions": [
+				{"min": "229.5, -oo, 4.5", "max": "235.5, oo, 12.5"},
 				{"min": "249.5, -oo, 4.5", "max": "255.5, oo, 12.5"},
 				{"min": "229.5, -oo, 104.5", "max": "235.5, oo, 112.5"},
 				{"min": "249.5, -oo, 104.5", "max": "255.5, oo, 112.5"}
-            ]
-        }
+			]
+		}
 	],
 	"filters": [
 		{
@@ -127,21 +127,21 @@
 	"itemremove": [
 		"iron sword", "bow", "diamond pickaxe", "iron axe", "iron pickaxe", "oak planks", "cooked beef", "arrow", "glass", "golden apple",
 	{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "chainmail chestplate",
-            "drop": true
-        },
-        {
-            "type": "chainmail leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "chainmail chestplate",
+			"drop": true
+		},
+		{
+			"type": "chainmail leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -163,11 +163,11 @@
 			}
 		}
 	],
-    "crafting": {
-        "remove": [
-            	"flint and steel",
+	"crafting": {
+		"remove": [
+				"flint and steel",
 		"oak boat"
-        ]
-    },
+		]
+	},
 	"buildHeight": 24
 }
