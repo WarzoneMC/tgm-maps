@@ -165,8 +165,7 @@
 	],
 	"crafting": {
 		"remove": [
-				"flint and steel",
-		"oak boat"
+			"flint and steel", "oak boat"
 		]
 	},
 	"buildHeight": 24
