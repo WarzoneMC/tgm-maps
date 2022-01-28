@@ -99,17 +99,17 @@
 		"golden apple", "oak planks", "oak log", "sandstone",
 		"bread", "arrow",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

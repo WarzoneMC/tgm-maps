@@ -1,217 +1,217 @@
 {
-    "name": "Midnight Train",
-    "authors": [
-        {"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "PepsiDog"},
-        {"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "dinner1111"}
-    ],
-    "version": "1.2.7",
-    "gametype": "DTM",
-    "teams": [
-        {
-            "id": "green",
-            "name": "Green",
-            "color": "green",
-            "min": 1,
-            "max": 40
-        },
-        {
-            "id": "purple",
-            "name": "Purple",
-            "color": "dark purple",
-            "min": 1,
-            "max": 40
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90"},
-        {"teams": ["green"], "coords": "-87.0, 29, -201.0"},
-        {"teams": ["purple"], "coords": "-87.0, 29, -14.9, 180"}
-    ],
-    "dtm": {
-        "monuments": [
-            {
-                "name": "Monument B",
-                "teams": ["green"],
-                "materials": ["obsidian"],
-                "region": {
-                    "min": "-136, 28, -180",
-                    "max": "-136, 28, -180"
-                },
-                "health": 1
-            },
-            {
-                "name": "Monument A",
-                "teams": ["green"],
-                "materials": ["obsidian"],
-                "region": {
-                    "min": "-39, 28, -182",
-                    "max": "-39, 28, -182"
-                },
-                "health": 1
-            },
-            {
-                "name": "Monument B&r",
-                "teams": ["purple"],
-                "materials": ["obsidian"],
-                "region": {
-                    "min": "-136, 28, -35",
-                    "max": "-136, 28, -35"
-                },
-                "health": 1
-            },
-            {
-                "name": "Monument A&r",
-                "teams": ["purple"],
-                "materials": ["obsidian"],
-                "region": {
-                    "min": "-39, 28, -37",
-                    "max": "-39, 28, -37"
-                },
-                "health": 1
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
-
-                {"type": "item", "material": "glass", "slot": 4, "amount": 64},
-                {"type": "item", "material": "oak log", "slot": 5, "amount": 64},
-                {"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
-                {"type": "item", "material": "arrow", "slot": 9, "amount": 64},
-
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
-                {"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
-                {"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
-            ]
-        }
-    ],
-     "itemremove": [
-        "iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked beef", "arrow", "beacon",
-        {
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "chainmail chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1}
-                ]
-            }
-        }
-    ],
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["green", "purple"],
-            "regions": ["green-spawn-protection", "purple-spawn-protection"],
-            "message": "&cYou are not allowed to modify terrain here."
-        },
-        {"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
-        {
-	     "type": "blockBreak", "evaluate": "deny", "teams": ["green", "purple"],
-	     "regions": ["chests"],
-	     "blocks": ["chest"], "message": "&cYou are not able to break this chest!."
+	"name": "Midnight Train",
+	"authors": [
+		{"uuid": "060baa18-2852-40d8-afcb-e61607c04be3", "username": "PepsiDog"},
+		{"uuid": "22ba442b-cf26-4d09-b290-8d4e50a551b2", "username": "dinner1111"}
+	],
+	"version": "1.2.7",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "green",
+			"name": "Green",
+			"color": "green",
+			"min": 1,
+			"max": 40
+		},
+		{
+			"id": "purple",
+			"name": "Purple",
+			"color": "dark purple",
+			"min": 1,
+			"max": 40
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-193.4, 33, -108.5, -90"},
+		{"teams": ["green"], "coords": "-87.0, 29, -201.0"},
+		{"teams": ["purple"], "coords": "-87.0, 29, -14.9, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument B",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-136, 28, -180",
+					"max": "-136, 28, -180"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A",
+				"teams": ["green"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 28, -182",
+					"max": "-39, 28, -182"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument B&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-136, 28, -35",
+					"max": "-136, 28, -35"
+				},
+				"health": 1
+			},
+			{
+				"name": "Monument A&r",
+				"teams": ["purple"],
+				"materials": ["obsidian"],
+				"region": {
+					"min": "-39, 28, -37",
+					"max": "-39, 28, -37"
+				},
+				"health": 1
+			}
+		]
 	},
-        {
-	     "type": "voidbuild", "evaluate": "deny", "teams": ["green", "purple"],
-	     "inverted": true, "regions": ["map"],
-	     "message": "&cYou may not build over the void."
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+
+				{"type": "item", "material": "glass", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 64},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "chainmail chestplate", "slot": "chestplate", "enchantments": ["blast_protection:1"], "unbreakable": true},
+				{"type": "item", "material": "leather leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	 "itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "glass", "oak log", "cooked beef", "arrow", "beacon",
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "chainmail chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["green", "purple"],
+			"regions": ["green-spawn-protection", "purple-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["green"], "regions": ["purple-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["purple"], "regions": ["green-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{
+		 "type": "blockBreak", "evaluate": "deny", "teams": ["green", "purple"],
+		 "regions": ["chests"],
+		 "blocks": ["chest"], "message": "&cYou are not able to break this chest!."
+	},
+		{
+		 "type": "voidbuild", "evaluate": "deny", "teams": ["green", "purple"],
+		 "inverted": true, "regions": ["map"],
+		 "message": "&cYou may not build over the void."
 	}
-    ],
-    "regions": [
-        {"id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189"},
-        {"id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6"},
-        {"id": "map", "type": "cuboid", "min": "-166, 0, -213", "max": "-9, oo, -4"},
-        {
-            "id": "chests", "type": "meta",
-            "regions": [
-                {"min": "-137, 8, -69", "max": "-137, 11, -70"},
-                {"min": "-137, 8, -62", "max": "-137, 11, -61"},
-                {"min": "-139, 8, -59", "max": "-139, 11, -59"},
-                {"min": "-144, 8, -59", "max": "-144, 11, -59"},
-                {"min": "-146, 8, -61", "max": "-146, 11, -62"},
-                {"min": "-146, 8, -65", "max": "-146, 11, -66"},
-                {"min": "-146, 8, -69", "max": "-146, 11, -70"},
-        	
-                {"min": "-29, 8, -70", "max": "-29, 11, -69"},
-                {"min": "-29, 8, -66", "max": "-29, 11, -65"},
-                {"min": "-29, 8, -62", "max": "-29, 11, -61"},
-                {"min": "-31, 8, -59", "max": "-31, 11, -59"},
-                {"min": "-36, 8, -59", "max": "-36, 11, -59"},
-                {"min": "-38, 8, -61", "max": "-38, 11, -62"},
-                {"min": "-38, 8, -69", "max": "-38, 11, -70"},
-                
-                {"min": "-158, 21, -61", "max": "-157, 21, -61"},
-                {"min": "-20, 19, -57", "max": "-19, 19, -57"},
-                
-                {"min": "-145, 18, -22", "max": "-145, 20, -22"},
-                {"min": "-142, 18, -19", "max": "-142, 20, -18"},
-                {"min": "-142, 18, -16", "max": "-142, 20, -15"},
-                {"min": "-142, 18, -13", "max": "-142, 20, -12"},
-                {"min": "-145, 18, -9", "max": "-146, 20, -9"},
-                {"min": "-148, 18, -9", "max": "-149, 20, -9"},
-                {"min": "-151, 18, -9", "max": "-152, 20, -9"},
-                {"min": "-155, 18, -12", "max": "-155, 20, -13"},
-                {"min": "-155, 18, -15", "max": "-155, 20, -16"},
-                {"min": "-155, 18, -18", "max": "-155, 20, -19"},
-                {"min": "-152, 18, -22", "max": "-152, 20, -22"},
-        
+	],
+	"regions": [
+		{"id": "green-spawn-protection", "type": "cuboid", "min": "-77, 23, -211", "max": "-95, oo, -189"},
+		{"id": "purple-spawn-protection", "type": "cuboid", "min": "-80, 23, -28", "max": "-95, oo, -6"},
+		{"id": "map", "type": "cuboid", "min": "-166, 0, -213", "max": "-9, oo, -4"},
+		{
+			"id": "chests", "type": "meta",
+			"regions": [
+				{"min": "-137, 8, -69", "max": "-137, 11, -70"},
+				{"min": "-137, 8, -62", "max": "-137, 11, -61"},
+				{"min": "-139, 8, -59", "max": "-139, 11, -59"},
+				{"min": "-144, 8, -59", "max": "-144, 11, -59"},
+				{"min": "-146, 8, -61", "max": "-146, 11, -62"},
+				{"min": "-146, 8, -65", "max": "-146, 11, -66"},
+				{"min": "-146, 8, -69", "max": "-146, 11, -70"},
+
+				{"min": "-29, 8, -70", "max": "-29, 11, -69"},
+				{"min": "-29, 8, -66", "max": "-29, 11, -65"},
+				{"min": "-29, 8, -62", "max": "-29, 11, -61"},
+				{"min": "-31, 8, -59", "max": "-31, 11, -59"},
+				{"min": "-36, 8, -59", "max": "-36, 11, -59"},
+				{"min": "-38, 8, -61", "max": "-38, 11, -62"},
+				{"min": "-38, 8, -69", "max": "-38, 11, -70"},
+
+				{"min": "-158, 21, -61", "max": "-157, 21, -61"},
+				{"min": "-20, 19, -57", "max": "-19, 19, -57"},
+
+				{"min": "-145, 18, -22", "max": "-145, 20, -22"},
+				{"min": "-142, 18, -19", "max": "-142, 20, -18"},
+				{"min": "-142, 18, -16", "max": "-142, 20, -15"},
+				{"min": "-142, 18, -13", "max": "-142, 20, -12"},
+				{"min": "-145, 18, -9", "max": "-146, 20, -9"},
+				{"min": "-148, 18, -9", "max": "-149, 20, -9"},
+				{"min": "-151, 18, -9", "max": "-152, 20, -9"},
+				{"min": "-155, 18, -12", "max": "-155, 20, -13"},
+				{"min": "-155, 18, -15", "max": "-155, 20, -16"},
+				{"min": "-155, 18, -18", "max": "-155, 20, -19"},
+				{"min": "-152, 18, -22", "max": "-152, 20, -22"},
+
 		
-                {"min": "-38, 8, -147", "max": "-38, 11, -148"},
-                {"min": "-38, 8, -155", "max": "-38, 11, -156"},
-                {"min": "-36, 8, -158", "max": "-36, 11, -158"},
-                {"min": "-31, 8, -158", "max": "-31, 11, -158"},
-                {"min": "-29, 8, -156", "max": "-29, 11, -155"},
-                {"min": "-29, 8, -152", "max": "-29, 11, -151"},
-                {"min": "-29, 8, -148", "max": "-29, 11, -147"},
-        	
-                {"min": "-146, 8, -147", "max": "-146, 11, -148"},
-                {"min": "-146, 8, -151", "max": "-146, 11, -152"},
-                {"min": "-146, 8, -155", "max": "-146, 11, -156"},
-                {"min": "-144, 8, -158", "max": "-144, 11, -158"},
-                {"min": "-140, 8, -158", "max": "-140, 11, -158"},
-                {"min": "-137, 8, -156", "max": "-137, 11, -155"},
-                {"min": "-137, 8, -148", "max": "-137, 11, -147"},
-               	
-                {"min": "-155, 19, -160", "max": "-156, 19, -160"},
-                {"min": "-17, 21, -156", "max": "-18, 21, -156"},
-                
-                {"min": "-30, 18, -195", "max": "-30, 20, -195"},
-                {"min": "-33, 18, -198", "max": "-33, 20, -199"},
-                {"min": "-33, 18, -201", "max": "-33, 20, -202"},
-                {"min": "-33, 18, -204", "max": "-33, 20, -205"},
-                {"min": "-30, 18, -208", "max": "-29, 20, -208"},
-                {"min": "-27, 18, -208", "max": "-26, 20, -208"},
-                {"min": "-24, 18, -208", "max": "-23, 20, -208"},
-                {"min": "-20, -18, -205", "max": "-20, 20, -204"},
-                {"min": "-20, 18, -202", "max": "-20, 20, -201"},
-                {"min": "-20, 18, -199", "max": "-20, 20, -198"},
-                {"min": "-23, 18, -195", "max": "-23, 20, -195"}
-            ]
-        }
-    ],
+				{"min": "-38, 8, -147", "max": "-38, 11, -148"},
+				{"min": "-38, 8, -155", "max": "-38, 11, -156"},
+				{"min": "-36, 8, -158", "max": "-36, 11, -158"},
+				{"min": "-31, 8, -158", "max": "-31, 11, -158"},
+				{"min": "-29, 8, -156", "max": "-29, 11, -155"},
+				{"min": "-29, 8, -152", "max": "-29, 11, -151"},
+				{"min": "-29, 8, -148", "max": "-29, 11, -147"},
+
+				{"min": "-146, 8, -147", "max": "-146, 11, -148"},
+				{"min": "-146, 8, -151", "max": "-146, 11, -152"},
+				{"min": "-146, 8, -155", "max": "-146, 11, -156"},
+				{"min": "-144, 8, -158", "max": "-144, 11, -158"},
+				{"min": "-140, 8, -158", "max": "-140, 11, -158"},
+				{"min": "-137, 8, -156", "max": "-137, 11, -155"},
+				{"min": "-137, 8, -148", "max": "-137, 11, -147"},
+
+				{"min": "-155, 19, -160", "max": "-156, 19, -160"},
+				{"min": "-17, 21, -156", "max": "-18, 21, -156"},
+
+				{"min": "-30, 18, -195", "max": "-30, 20, -195"},
+				{"min": "-33, 18, -198", "max": "-33, 20, -199"},
+				{"min": "-33, 18, -201", "max": "-33, 20, -202"},
+				{"min": "-33, 18, -204", "max": "-33, 20, -205"},
+				{"min": "-30, 18, -208", "max": "-29, 20, -208"},
+				{"min": "-27, 18, -208", "max": "-26, 20, -208"},
+				{"min": "-24, 18, -208", "max": "-23, 20, -208"},
+				{"min": "-20, -18, -205", "max": "-20, 20, -204"},
+				{"min": "-20, 18, -202", "max": "-20, 20, -201"},
+				{"min": "-20, 18, -199", "max": "-20, 20, -198"},
+				{"min": "-23, 18, -195", "max": "-23, 20, -195"}
+			]
+		}
+	],
 	"buildHeight": 40
 }

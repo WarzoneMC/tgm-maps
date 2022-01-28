@@ -156,7 +156,7 @@
     "regions": [
         {"id": "cyan-spawn-protection", "type": "cylinder", "base": "4, 23, -714", "height": 7, "radius": 15},
         {"id": "purple-spawn-protection", "type": "cylinder", "base": "4, 23, -821", "height": 7, "radius": 15},
-	    {"id": "cyan-bridge-spawn-protection", "type": "cuboid", "min": "-2, 31, -729", "max": "10, 0, -740"},
-	    {"id": "purple-bridge-spawn-protection", "type": "cuboid", "min": "-2, 0, -795", "max": "10, 31, -806"}
+        {"id": "cyan-bridge-spawn-protection", "type": "cuboid", "min": "-2, 31, -729", "max": "10, 0, -740"},
+        {"id": "purple-bridge-spawn-protection", "type": "cuboid", "min": "-2, 0, -795", "max": "10, 31, -806"}
     ]
 }

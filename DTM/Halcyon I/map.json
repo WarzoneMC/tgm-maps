@@ -96,17 +96,17 @@
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "apple", "arrow", "oak log",
 		"oak planks", "iron leggings", "golden apple", "glass",
 		{
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

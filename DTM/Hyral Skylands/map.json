@@ -91,29 +91,29 @@
 				{"type": "item", "material": "leather boots", "slot": "boots", "unbreakable": true}
 			],
 			"effects": [
-                {"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
-            ]
+				{"type": "DAMAGE_RESISTANCE", "duration": 90, "amplifier": 10000, "particles": false}
+			]
 		}
 	],
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "iron axe", "oak planks", "glass", "arrow", "apple",
 		"obsidian", "wheat seeds",
 		{
-            "type": "iron helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "leather leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "iron helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "leather leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{
@@ -135,9 +135,9 @@
 		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn"], "message": "&cYou may not enter the enemy spawn."},
 		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn"], "message": "&cYou may not enter the enemy spawn."},
 		{
-            "type": "build", "evaluate": "deny", "inverted": true, "teams": ["red", "blue"],
-            "regions": ["map"], "message": "&cYou cannot build outside of the map."
-        }
+			"type": "build", "evaluate": "deny", "inverted": true, "teams": ["red", "blue"],
+			"regions": ["map"], "message": "&cYou cannot build outside of the map."
+		}
 	],
 	"regions": [
 		{"id": "red-spawn", "type": "cylinder", "base": "0, 0, -88", "radius": 5, "height": 70 },

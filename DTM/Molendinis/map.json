@@ -97,21 +97,21 @@
 	"itemremove": [
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "stone shovel", "arrow", "wheat seeds", "string", "bread", "obsidian", "beacon", "emerald block", "birch planks",
 		{
-            "type": "iron helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        },
-        {
-            "type": "iron leggings",
-            "drop": true
-        },
-        {
-            "type": "leather boots",
-            "drop": true
-        }
+			"type": "iron helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		},
+		{
+			"type": "iron leggings",
+			"drop": true
+		},
+		{
+			"type": "leather boots",
+			"drop": true
+		}
 	],
 	"killstreaks": [
 		{

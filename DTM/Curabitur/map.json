@@ -99,29 +99,29 @@
 		"stone sword", "bow", "diamond pickaxe", "stone axe", "golden apple", "cooked beef", 
 		"glass", "stone", "oak planks", "arrow",
 		{
-            "type": "leather helmet",
-	    "death": true,
-            "drop": true,
- 	    "spawn": false
-        },
-        {
-            "type": "chainmail chestplate",
-	    "death": true,
-            "drop": true,
-	    "spawn": false
-        },
-	{
-            "type": "leather leggings",
-	    "death": true,
-            "drop": true,
-	    "spawn": false
-        },
-        {
-            "type": "iron boots",
-	    "death": true,
-            "drop": true,
-	    "spawn": false
-        }
+			"type": "leather helmet",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "chainmail chestplate",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "leather leggings",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		},
+		{
+			"type": "iron boots",
+			"death": true,
+			"drop": true,
+			"spawn": false
+		}
 	],
 	"killstreaks": [
 		{

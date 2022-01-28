@@ -1,178 +1,178 @@
 {
-    "name": "Iris DTM",
-    "authors": [
-        {"uuid": "3a549b18-08ed-4756-a78c-b34d29a4fd87", "username": "Torn_Ares"}
-    ],
-    "version": "1.4.5",
-    "gametype": "DTM",
-    "respawn": {
-        "rules": [
-            {
-                "freeze": false,
-                "blindness": true,
-                "confirm": false,
-                "delay": 0
-            }
-        ]
-    },
-    "teams": [
-        {
-            "id": "red",
-            "name": "Red",
-            "color": "red",
-            "min": 1,
-            "max": 16
-        },
-        {
-            "id": "blue",
-            "name": "Blue",
-            "color": "blue",
-            "min": 1,
-            "max": 16
-        }
-    ],
-    "spawns": [
-        {"teams": ["spectators"], "coords": "-16.5, 36, 13.5"},
-        {"teams": ["red"], "coords": "29.5, 160, -99.5"},
-        {"teams": ["blue"], "coords": "-62.5, 160, -99.5"}
-    ],
-    "dtm": {
-        "monuments": [
-            {
-                "name": "Monument",
-                "teams": ["red"],
-                "materials": ["obsidian", "beacon", "coal block"],
-                "region": {
-                    "min": "27, 37, -126",
-                    "max": "32, 31, -131"
-                },
-                "health": 3
-            },
-            {
-                "name": "Monument",
-                "teams": ["blue"],
-                "materials": ["obsidian", "beacon", "coal block"],
-                "region": {
-                    "min": "-65, 37, -126",
-                    "max": "-60, 31, -131"
-                },
-                "health": 3
-            }
-        ]
-    },
-    "kits": [
-        {
-            "name": "Default",
-            "items": [
-                {"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
-                {"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
-                {"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
-                {"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
-                {"type": "item", "material": "birch log", "slot": 5, "amount": 64},
-                {"type": "item", "material": "golden apple", "slot": 7, "amount": 3},
-                {"type": "item", "material": "cooked cod", "slot": 8, "amount": 12},
-                {"type": "item", "material": "arrow", "slot": 27, "amount": 64},
-                {"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
-                {"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
-            ]
-        }
-    ],
-    "itemremove": [
-        "iron sword", "bow", "diamond pickaxe", "iron axe", "birch log", "birch planks", "golden apple", "cooked cod", "arrow",
-        {
-            "type": "obsidian",
-            "drop": true,
-            "death": true,
-            "spawn": true
-        },
-        {
-            "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "leather chestplate",
-            "drop": true
-        }
-    ],
-    "killstreaks": [
-        {
-            "count": 1,
-            "repeat": true,
-            "actions": {
-                "items": [
-                    {"material": "golden apple", "amount": 1}
-                ]
-            }
-        }
-    ],
-    "time": {
-        "broadcasts": [
-            {"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&62 seconds until the monuments change.", "interval": 598, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&61 second until the monuments change.", "interval": 599, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {
-                "message": "&6The monuments have changed to &l&4beacons&r&6.",
-                "interval": 600,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill -63 31 -129 -63 33 -129 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run fill 29 31 -129 29 33 -129 minecraft:beacon replace minecraft:obsidian",
-                    "execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
-                ]
-            },
-            {"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6.", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&63 seconds until the monuments change.", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&62 seconds until the monuments change.", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {"message": "&63 second until the monuments change.", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
-            {
-                "message": "&6The monuments have changed to &l&4coal blocks&r&6.",
-                "interval": 900,
-                "repeat": false,
-                "commands": [
-                    "execute at @r run fill -63 31 -129 -63 33 -129 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run fill 29 31 -129 29 33 -129 minecraft:coal_block replace minecraft:beacon",
-                    "execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
-                ]
-            }
-        ]
-    },
-    "filters": [
-        {
-            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["blue-spawn-pool", "red-spawn-pool", "beacon-prot"],
-            "message": "&cNo touchie touchie!"
-        },
-        {
-            "type": "build", "evaluate": "deny", "teams": ["blue", "red"],
-            "inverted": true,
-            "regions": ["map"],
-            "message": "&cYou may not build/modify here!"
-        },
-        {
-            "type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
-            "regions": ["beacon-prot", "monument-prot", "blue-spawn-pool", "red-spawn-pool"]
-        }
-    ],
-    "regions": [
-        {"id": "red-spawn-pool", "type": "cuboid", "min": "33, 26, -93", "max": "26, oo, -86"},
-        {"id": "blue-spawn-pool", "type": "cuboid", "min": "-66, 26, -86", "max": "-59, oo, -93"},
-        {
-            "id": "beacon-prot", "type": "meta", "regions": [
-                {"min": "28, 37, -130", "max": "30, 37, -128"},
-                {"min": "29, 38, -129", "max": "29, oo, -129"},
-                {"min": "-64, 37, -130", "max": "-62, 37, -128"},
-                {"min": "-63, 38, -129", "max": "-63, oo, -129"}
-            ]
-        },
-        {
-            "id": "monument-prot", "type": "meta", "regions": [
-                {"min": "27, 37, -126", "max": "32, 31, -131"},
-                {"min": "-65, 37, -126", "max": "-60, 31, -131"}
-            ]
-        },
-        {"id": "map", "type": "cuboid", "min": "57, 0, -206", "max": "-91, 80, -55"}
-    ]
+	"name": "Iris DTM",
+	"authors": [
+		{"uuid": "3a549b18-08ed-4756-a78c-b34d29a4fd87", "username": "Torn_Ares"}
+	],
+	"version": "1.4.5",
+	"gametype": "DTM",
+	"respawn": {
+		"rules": [
+			{
+				"freeze": false,
+				"blindness": true,
+				"confirm": false,
+				"delay": 0
+			}
+		]
+	},
+	"teams": [
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 16
+		},
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 16
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "-16.5, 36, 13.5"},
+		{"teams": ["red"], "coords": "29.5, 160, -99.5"},
+		{"teams": ["blue"], "coords": "-62.5, 160, -99.5"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Monument",
+				"teams": ["red"],
+				"materials": ["obsidian", "beacon", "coal block"],
+				"region": {
+					"min": "27, 37, -126",
+					"max": "32, 31, -131"
+				},
+				"health": 3
+			},
+			{
+				"name": "Monument",
+				"teams": ["blue"],
+				"materials": ["obsidian", "beacon", "coal block"],
+				"region": {
+					"min": "-65, 37, -126",
+					"max": "-60, 31, -131"
+				},
+				"health": 3
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "diamond pickaxe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "iron axe", "slot": 3, "unbreakable": true},
+				{"type": "item", "material": "birch log", "slot": 5, "amount": 64},
+				{"type": "item", "material": "golden apple", "slot": 7, "amount": 3},
+				{"type": "item", "material": "cooked cod", "slot": 8, "amount": 12},
+				{"type": "item", "material": "arrow", "slot": 27, "amount": 64},
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "diamond pickaxe", "iron axe", "birch log", "birch planks", "golden apple", "cooked cod", "arrow",
+		{
+			"type": "obsidian",
+			"drop": true,
+			"death": true,
+			"spawn": true
+		},
+		{
+			"type": "leather helmet",
+			"drop": true
+		},
+		{
+			"type": "leather chestplate",
+			"drop": true
+		}
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		}
+	],
+	"time": {
+		"broadcasts": [
+			{"message": "&61 minute until the monuments change to &l&4beacons&r&6.", "interval": 540, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4beacons&r&6.", "interval": 580, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 597, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 598, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&61 second until the monuments change.", "interval": 599, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4beacons&r&6.",
+				"interval": 600,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill -63 31 -129 -63 33 -129 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run fill 29 31 -129 29 33 -129 minecraft:beacon replace minecraft:obsidian",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
+				]
+			},
+			{"message": "&61 minute until the monuments change to &l&4coal blocks&r&6.", "interval": 840, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&620 seconds until the monuments change to &l&4coal blocks&r&6.", "interval": 880, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&63 seconds until the monuments change.", "interval": 897, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&62 seconds until the monuments change.", "interval": 898, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{"message": "&63 second until the monuments change.", "interval": 899, "repeat": false, "commands": ["execute at @r run playsound minecraft:block.note_block.hat master @a -17 35 -129 100 1"]},
+			{
+				"message": "&6The monuments have changed to &l&4coal blocks&r&6.",
+				"interval": 900,
+				"repeat": false,
+				"commands": [
+					"execute at @r run fill -63 31 -129 -63 33 -129 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run fill 29 31 -129 29 33 -129 minecraft:coal_block replace minecraft:beacon",
+					"execute at @r run playsound minecraft:entity.elder_guardian.curse master @a -17 35 -129 100 0"
+				]
+			}
+		]
+	},
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-pool", "red-spawn-pool", "beacon-prot"],
+			"message": "&cNo touchie touchie!"
+		},
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"inverted": true,
+			"regions": ["map"],
+			"message": "&cYou may not build/modify here!"
+		},
+		{
+			"type": "block-explode", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["beacon-prot", "monument-prot", "blue-spawn-pool", "red-spawn-pool"]
+		}
+	],
+	"regions": [
+		{"id": "red-spawn-pool", "type": "cuboid", "min": "33, 26, -93", "max": "26, oo, -86"},
+		{"id": "blue-spawn-pool", "type": "cuboid", "min": "-66, 26, -86", "max": "-59, oo, -93"},
+		{
+			"id": "beacon-prot", "type": "meta", "regions": [
+				{"min": "28, 37, -130", "max": "30, 37, -128"},
+				{"min": "29, 38, -129", "max": "29, oo, -129"},
+				{"min": "-64, 37, -130", "max": "-62, 37, -128"},
+				{"min": "-63, 38, -129", "max": "-63, oo, -129"}
+			]
+		},
+		{
+			"id": "monument-prot", "type": "meta", "regions": [
+				{"min": "27, 37, -126", "max": "32, 31, -131"},
+				{"min": "-65, 37, -126", "max": "-60, 31, -131"}
+			]
+		},
+		{"id": "map", "type": "cuboid", "min": "57, 0, -206", "max": "-91, 80, -55"}
+	]
 }
