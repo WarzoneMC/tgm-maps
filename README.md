@@ -1,8 +1,8 @@
 # TGM Maps
+**NOTE:** This repository is no longer maintained, and support may be limited. Map development efforts have moved to [PublicMaps](https://github.com/Warzone/PublicMaps) to support Warzone's transition to [PGM](https://github.com/PGMDev/PGM).
+
 The maps and active rotation used on the Minehut [Warzone](https://warz.one) server.
 Maps in this repository are exclusively setup to work with [TGM](https://github.com/Warzone/TGM) (Team Game Manager) and run on the latest version of Minecraft.
-
-**NOTE:** This repository is no longer maintained, and support may be limited. Map development efforts have moved to [PublicMaps](https://github.com/Warzone/PublicMaps) to support Warzone's transition to [PGM](https://github.com/PGMDev/PGM).
 
 ## Updating the Repo
 When adding or modifying any map in this repo, please note some of the requirements we have for our maps.
